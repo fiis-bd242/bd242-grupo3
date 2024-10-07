@@ -1,5 +1,5 @@
 -- Poblamiento de la tabla Cargo_empleado
-INSERT INTO Cargo_empleado (ID_Cargo, Nombre_cargo) VALUES
+INSERT INTO Cargo_empleado (Id_Cargo, Nombre_cargo) VALUES
 (1, 'Jefe'),
 (2, 'Técnico'),
 (3, 'Supervisor');
@@ -195,3 +195,65 @@ INSERT INTO ActvempleadoXOrdenTrabajo (Id_actvempleado, ID_Orden) VALUES
 (10, 20),
 (15, 20);
 
+-- Poblamiento de la tabla Almacen
+INSERT INTO Almacen (Cod_almacen, Codigo_empleado, Codigo_categoria, Codigo_estado, Direccion, Capacidad) 
+VALUES 
+(1, 19, 2, 1, 'Almacen Central 1', 1000),
+(2, 20, 4, 1, 'Almacen Secundario 1', 500),
+(3, 10, 3, 1, 'Almacen Central 2', 800),
+(4, 8, 1, 1, 'Almacen de Seguridad 1', 300);
+
+-- Poblamiento de la tabla Categoria_Almacen
+INSERT INTO Categoria_Almacen (Codigo_categoria, Nombre_categoria) 
+VALUES 
+(1, 'Lubricantes')
+(2, 'Repuestos'),
+(3, 'Herramientas'),
+(4, 'Materiales de seguridad');
+
+-- Poblamiento de la tabla Estado_Almacen
+INSERT INTO Estado_Almacen (Codigo_estado, Nombre_estado) 
+VALUES 
+(1, 'Operativo'),
+(2, 'Inactivo');
+
+-- Poblamiento de la tabla Equipo_de_Soporte
+INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Tipo_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Cod_almacen, Codigo_disponibilidad, Codigo_estado) 
+VALUES 
+(1, 'Generador Electrico', 'Herramienta', '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 1, 1),
+(2, 'Compresor de Aire', 'Herramienta', '2019-11-22', 'Compresor de aire de alta presion', 500, 3, 1, 2),
+(3, 'Torre de Iluminacion', 'Equipo de Seguridad', '2018-07-15', 'Torre movil de iluminacion', 1200, 4, 1, 3),
+(4, 'Taladro Neumatico', 'Herramienta', '2021-03-05', 'Taladro neumatico para perforaciones', 300, 3, 2, 4),
+(5, 'Cámara de Seguridad', 'Equipo de Seguridad', '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 4, 1, 1),
+(6, 'Detector de Gas', 'Equipo de Seguridad', '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 4, 1, 1),
+(7, 'Sistema de Comunicación de Emergencia', 'Equipo de Comunicación', '2023-03-05', 'Radios para comunicación en zonas remotas', 150, 3, 2, 1),
+(8, 'Botiquín de Primeros Auxilios', 'Equipo de Seguridad', '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 4, 1, 1),
+(9, 'Dispositivo de Monitoreo de Fatiga', 'Equipo de Seguridad', '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 4, 2, 1);
+
+-- Poblamiento de la tabla Disponibilidad_equipo_soporte
+INSERT INTO Disponibilidad_Equipo_Soporte (Codigo_disponibilidad, Nombre_disponibilidad) 
+VALUES 
+(1, 'Disponible'),
+(2, 'Ocupado');
+
+-- Poblamiento de la tabla Estado_equipo_soporte 
+INSERT INTO Estado_Equipo_Soporte (Codigo_estado, Nombre_estado) 
+VALUES 
+(1, 'Optimo'),
+(2, 'Bueno'),
+(3, 'Regular'),
+(4, 'Deficiente');
+
+-- Poblamiento de la tabla EquipoSoporteXMatenmiento
+INSERT INTO EquipoSoporteXMantenimiento (Id_eqsoportexmantto, Id_equipo_soporte, Cod_act_mantto) 
+VALUES 
+(1, 8, 1),
+(2, 9, 1),
+(3, 3, 1),
+(4, 1, 2),
+(5, 3, 2),
+(6, 4, 2),
+(7, 9, 3),
+(8, 1, 3),
+(9, 4, 4),
+(10, 5, 4);
