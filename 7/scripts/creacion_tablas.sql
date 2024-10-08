@@ -18,7 +18,7 @@ CREATE TABLE Empleado
 ( 
     Codigo_empleado INT PRIMARY KEY, 
     Nombre VARCHAR(100) NOT NULL, 
-    DNI VARCHAR(9) NOT NULL, 
+    DNI CHAR(8) NOT NULL, 
     Direccion VARCHAR(255), 
     Estado_civil VARCHAR(25), 
     Sexo VARCHAR(10), 
@@ -57,12 +57,12 @@ CREATE TABLE Actividad_empleado
 DROP TABLE IF EXISTS Orden_de_trabajo;
 CREATE TABLE Orden_de_trabajo
 (
-  ID_Orden INT NOT NULL,
+  Id_Orden INT NOT NULL,
   Fecha_Orden DATE NOT NULL,
   Descripcion VARCHAR(10000) NOT NULL,
   Empleado_asigna INT NOT NULL,
   Prioridad INT NOT NULL,
-  PRIMARY KEY (ID_Orden),
+  PRIMARY KEY (Id_Orden),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Codigo_empleado),
   FOREIGN KEY (Prioridad) REFERENCES Criticidad(Id_criticidad)
 );
@@ -71,10 +71,10 @@ DROP TABLE IF EXISTS ActvempleadoXOrdenTrabajo;
 CREATE TABLE ActvempleadoXOrdenTrabajo
 (
   Id_actvempleado INT NOT NULL,
-  ID_Orden INT NOT NULL,
+  Id_Orden INT NOT NULL,
   PRIMARY KEY (Id_actvempleado, ID_Orden),
   FOREIGN KEY (Id_actvempleado) REFERENCES Actividad_empleado(Id_actvempleado),
-  FOREIGN KEY (ID_Orden) REFERENCES Orden_de_trabajo(ID_Orden)
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden)
 );
 
 DROP TABLE IF EXISTS Categoria_Almacen;
@@ -99,7 +99,7 @@ CREATE TABLE Almacen
     Codigo_categoria INT,
     Codigo_estado INT,
     Direccion VARCHAR(255),
-    Capacidad INTEGER,
+    Capacidad INT,
     CONSTRAINT fk_empleado_almacen FOREIGN KEY (Codigo_empleado) REFERENCES Empleado (Codigo_empleado),
     CONSTRAINT fk_categoria_almacen FOREIGN KEY (Codigo_categoria) REFERENCES Categoria_Almacen (Codigo_categoria),
     CONSTRAINT fk_estado_almacen FOREIGN KEY (Codigo_estado) REFERENCES Estado_Almacen (Codigo_estado)
@@ -134,7 +134,7 @@ CREATE TABLE Equipo_de_Soporte
     Codigo_tipo INT,
     Fecha_adquisicion DATE,
     Descripcion VARCHAR(255),
-    Horas_uso INTEGER,
+    Horas_uso INT,
     Cod_almacen INT,
     Codigo_disponibilidad INT,
     Codigo_estado INT,
@@ -143,7 +143,7 @@ CREATE TABLE Equipo_de_Soporte
     CONSTRAINT fk_almacen FOREIGN KEY (Cod_almacen) REFERENCES Almacen (Cod_almacen),
     CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
     CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado),
-    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES Orden_de_trabajo (Id_cargo)
+    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES Orden_de_trabajo (Id_orden)
 );
 
 DROP TABLE IF EXISTS EquipoSoporteXMantenimiento;
@@ -152,7 +152,8 @@ CREATE TABLE EquipoSoporteXMantenimiento
     Id_eqsoportexmantto INT PRIMARY KEY,
     Id_equipo_soporte INT,
     Cod_act_mantto INT,
-    CONSTRAINT fk_equipo_soporte FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte (Id_equipo_soporte)
+    CONSTRAINT fk_equipo_soporte FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte (Id_equipo_soporte),
+    CONSTRAINT fk_act_mantto FOREIGN KEY (Cod_Act_mantto) REFERENCES Mantenimiento (Cod_Act_mantto)
 );
 
 DROP TABLE IF EXISTS Identificacion_del_riesgo;
@@ -434,12 +435,12 @@ CREATE TABLE Mantenimiento
     Peligros VARCHAR(30),
     Fecha_inicio programado DATE,
     Fecha_fin_programado DATE,
-    ID_Orden INT NOT NULL,
+    Id_Orden INT NOT NULL,
     Codigo_plan INT NOT NULL,
     Num_serie VARCHAR NOT NULL,
     id_tipo_mant CHAR(2) NOT NULL,
     PRIMARY KEY (Cod_Act_mantto),
-    CONSTRAINT fk_orden_mant FOREIGN KEY (ID_Orden) REFERENCES Orden_de_trabajo (ID_Orden),
+    CONSTRAINT fk_orden_mant FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo (Id_Orden),
     CONSTRAINT fk_plan_mant FOREIGN KEY (Codigo_plan) REFERENCES Plan_de_mantenimiento (Codigo_plan),
     CONSTRAINT fk_maquina_mant FOREIGN KEY (Num_serie) REFERENCES Maquina (Num_serie),
     CONSTRAINT fk_orden_mant FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant),
