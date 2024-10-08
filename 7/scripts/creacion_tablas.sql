@@ -148,7 +148,6 @@ CREATE TABLE Equipo_de_Soporte
     CONSTRAINT fk_actvempleado FOREIGN KEY (Id_actvempleado) REFERENCES ActvempleadoXOrdenTrabajo (Id_actvempleado)
 );
 
-
 DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
 CREATE TABLE Identificacion_del_riesgo
 (
