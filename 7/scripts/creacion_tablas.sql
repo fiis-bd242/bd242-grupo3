@@ -138,3 +138,213 @@ CREATE TABLE EquipoSoporteXMantenimiento
     Cod_act_mantto INT,
     CONSTRAINT fk_equipo_soporte FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte (Id_equipo_soporte)
 );
+
+CREATE TABLE Tipos_Contacto
+(
+  Id_tipo_contacto INT NOT NULL,
+  Nombre_tipo_contacto CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_contacto)
+);
+
+CREATE TABLE Tipos_Peligro
+(
+  Id_tipo_peligro INT NOT NULL,
+  Nombre_tipo_peligro CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_peligro)
+);
+
+CREATE TABLE Tipo_Riesgo
+(
+  Id_tipo_riesgo INT NOT NULL,
+  Nombre_tipo_riesgo CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_riesgo)
+);
+
+CREATE TABLE Tipo_Medida_Control
+(
+  Id_tipo_med_control INT NOT NULL,
+  Nombre_tipo_med_control CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_med_control)
+);
+
+CREATE TABLE Tipo_Estrategia_Control
+(
+  Id_tipo_estgia_control INT NOT NULL,
+  Nombre_tipo_estgia_control CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_estgia_control)
+);
+
+CREATE TABLE Tipo_Probabilidad
+(
+  Id_tipo_probabilidad INT NOT NULL,
+  Nombre_tipo_probabilidad CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_probabilidad)
+);
+
+CREATE TABLE Tipo_Severidad
+(
+  Id_tipo_severidad INT NOT NULL,
+  Nombre_tipo_severidad CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_severidad)
+);
+
+CREATE TABLE Tipo_Q_control
+(
+  Id_tipo_Qcontrol INT NOT NULL,
+  Nombre_tipo_Qcontrol CHAR NOT NULL,
+  PRIMARY KEY (Id_tipo_Qcontrol)
+);
+
+CREATE TABLE Equipo_evaluador
+(
+  Id_equipo_evaluador INT NOT NULL,
+  Cant_empleados INT NOT NULL,
+  Codigo_empleado INT NOT NULL,
+  PRIMARY KEY (Id_equipo_evaluador),
+  FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
+);
+
+CREATE TABLE proceso
+(
+  Descripcion_proceso CHAR NOT NULL,
+  Id_proceso INT NOT NULL,
+  Id_equipo_evaluador INT NOT NULL,
+  PRIMARY KEY (Id_proceso),
+  FOREIGN KEY (Id_equipo_evaluador) REFERENCES Equipo_evaluador(Id_equipo_evaluador)
+);
+
+CREATE TABLE Identificacion_del_riesgo
+(
+  Descripcion_peligro CHAR NOT NULL,
+  Evento_no_deseado CHAR NOT NULL,
+  Id_riesgo INT NOT NULL,
+  PRIMARY KEY (Id_riesgo)
+);
+
+CREATE TABLE Analisis_riesgo
+(
+  Afectado CHAR NOT NULL,
+  Consecuencia CHAR NOT NULL,
+  Id_analisis INT NOT NULL,
+  Id_riesgo INT NOT NULL,
+  Id_tipo_contacto INT NOT NULL,
+  Id_tipo_peligro INT NOT NULL,
+  PRIMARY KEY (Id_analisis),
+  FOREIGN KEY (Id_riesgo) REFERENCES Identificacion_del_riesgo(Id_riesgo),
+  FOREIGN KEY (Id_tipo_contacto) REFERENCES Tipos_Contacto(Id_tipo_contacto),
+  FOREIGN KEY (Id_tipo_peligro) REFERENCES Tipos_Peligro(Id_tipo_peligro)
+);
+
+CREATE TABLE Valoracion_del_riesgo_inicial
+(
+  id_valoracion_inicial INT NOT NULL,
+  Id_tipo_severidad INT NOT NULL,
+  Id_tipo_probabilidad INT NOT NULL,
+  Id_tipo_riesgo INT NOT NULL,
+  PRIMARY KEY (id_valoracion_inicial),
+  FOREIGN KEY (Id_tipo_severidad) REFERENCES Tipo_Severidad(Id_tipo_severidad),
+  FOREIGN KEY (Id_tipo_probabilidad) REFERENCES Tipo_Probabilidad(Id_tipo_probabilidad),
+  FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo)
+);
+
+CREATE TABLE Actividades
+(
+  Id_actividad INT NOT NULL,
+  Descripcion_actividad CHAR NOT NULL,
+  Id_proceso INT NOT NULL,
+  PRIMARY KEY (Id_actividad),
+  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
+);
+
+CREATE TABLE Tareas
+(
+  Descriçion_tarea CHAR NOT NULL,
+  Puesto_trabajo CHAR NOT NULL,
+  Cond_operacional CHAR NOT NULL,
+  Id_tarea INT NOT NULL,
+  Id_actividad INT NOT NULL,
+  PRIMARY KEY (Id_tarea),
+  FOREIGN KEY (Id_actividad) REFERENCES Actividades(Id_actividad)
+);
+
+CREATE TABLE Control
+(
+  Id_control INT NOT NULL,
+  Descripcion_control CHAR NOT NULL,
+  Id_tipo_estgia_control INT NOT NULL,
+  Id_tipo_med_control INT NOT NULL,
+  Id_tipo_Qcontrol INT NOT NULL,
+  PRIMARY KEY (Id_control),
+  FOREIGN KEY (Id_tipo_estgia_control) REFERENCES Tipo_Estrategia_Control(Id_tipo_estgia_control),
+  FOREIGN KEY (Id_tipo_med_control) REFERENCES Tipo_Medida_Control(Id_tipo_med_control),
+  FOREIGN KEY (Id_tipo_Qcontrol) REFERENCES Tipo_Q_control(Id_tipo_Qcontrol)
+);
+
+CREATE TABLE TareasXIdentRiesgo
+(
+  Id_tarea INT NOT NULL,
+  Id_riesgo INT NOT NULL,
+  PRIMARY KEY (Id_tarea, Id_riesgo),
+  FOREIGN KEY (Id_tarea) REFERENCES Tareas(Id_tarea),
+  FOREIGN KEY (Id_riesgo) REFERENCES Identificacion_del_riesgo(Id_riesgo)
+);
+
+CREATE TABLE Valorizacion_del_riesgo
+(
+  Id_valoracion_residual INT NOT NULL,
+  Cantidad_controles INT NOT NULL,
+  Id_valoracion_inicial INT NOT NULL,
+  Id_control INT NOT NULL,
+  Id_tipo_riesgo INT NOT NULL,
+  PRIMARY KEY (Id_valoracion_residual),
+  FOREIGN KEY (Id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
+  FOREIGN KEY (Id_control) REFERENCES Control(Id_control),
+  FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo)
+);
+
+CREATE TABLE Plan_de_accion_de_mejora
+(
+  Accion_que CHAR NOT NULL,
+  Fecha_cuando DATE NOT NULL,
+  Cantidad_empleados INT NOT NULL,
+  Id_plan_mejora INT NOT NULL,
+  Id_valoracion_residual INT NOT NULL,
+  PRIMARY KEY (Id_plan_mejora),
+  FOREIGN KEY (Id_valoracion_residual) REFERENCES Valorizacion_del_riesgo(Id_valoracion_residual)
+);
+
+CREATE TABLE PlanaccionxEmpleado
+(
+  id_plan_mejora INT NOT NULL,
+  Codigo_empleado INT NOT NULL,
+  PRIMARY KEY (id_plan_mejora, Codigo_empleado),
+  FOREIGN KEY (id_plan_mejora) REFERENCES Plan_de_accion_de_mejora(Id_plan_mejora),
+  FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
+);
+
+CREATE TABLE Registros_por_Riesgos
+(
+  Id_registro_riesgo INT NOT NULL,
+  id_valoracion_inicial INT NOT NULL,
+  Id_plan_mejora INT NOT NULL,
+  Id_analisis INT NOT NULL,
+  Id_valoracion_residual INT NOT NULL,
+  PRIMARY KEY (Id_registro_riesgo),
+  FOREIGN KEY (id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
+  FOREIGN KEY (Id_plan_mejora) REFERENCES Plan_de_accion_de_mejora(Id_plan_mejora),
+  FOREIGN KEY (Id_analisis) REFERENCES Analisis_riesgo(Id_analisis),
+  FOREIGN KEY (Id_valoracion_residual) REFERENCES Valorizacion_del_riesgo(Id_valoracion_residual)
+);
+
+
+CREATE TABLE Registro_IPERC
+(
+  Fecha_registro DATE NOT NULL,
+  Id_reg_iperc INT NOT NULL,
+  Cant_riesgos_analizados INT NOT NULL,
+  Id_proceso INT NOT NULL,
+  Id_registro_riesgo INT NOT NULL,
+  PRIMARY KEY (Id_reg_iperc),
+  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso),
+  FOREIGN KEY (Id_registro_riesgo) REFERENCES Registros_por_Riesgos(Id_registro_riesgo)
+);
