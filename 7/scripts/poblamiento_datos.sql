@@ -542,3 +542,123 @@ INSERT INTO Registro_IPERC (Id_reg_iperc, Id_proceso, Fecha_registro, Cant_riesg
 (7, 5, '2024-06-20', 5, 7),
 (8, 6, '2024-07-25', 4, 8);
 
+-- Poblamiento de la tabla Tipo_maquina
+INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
+(A, 'Excavadora'),
+(B, 'Tractor'),
+(C, 'Topador'),
+(D, 'Perforadora'),
+(E, 'Cargador');
+
+-- Poblamiento de la tabla Estado_maquina
+INSERT INTO Estado_maquina (id_estado, nombre_estado) VALUES
+(A, 'Operativa'),
+(B, 'Mantenimiento'),
+(C, 'Fuera de servicio');
+
+-- Poblamiento de la tabla Maquina
+INSERT INTO Maquina (Num_serie, Fecha_ultima_inspeccion, Fecha_adquisicion, Modelo, Marca, id_tipo_maquina, id_estado) VALUES
+('SN001', '2024-05-01', '2021-08-15', 'MX200', 'Caterpillar', 'A', 'A'),
+('SN002', '2024-03-10', '2020-07-22', 'B34', 'Komatsu', 'E', 'B'),
+('SN003', '2023-12-22', '2019-01-05', 'ZT100', 'Hitachi', 'C', 'C'),
+('SN004', '2024-01-17', '2018-09-17', 'X120', 'Volvo', 'D', 'B'),
+('SN005', '2024-02-14', '2022-03-10', 'HD200', 'JCB', 'A', 'A'),
+('SN006', '2023-11-21', '2020-10-25', 'G50', 'John Deere', 'B', 'C'),
+('SN007', '2024-04-19', '2021-04-05', 'TX400', 'Caterpillar', 'C', 'A'),
+('SN008', '2024-06-07', '2022-06-25', 'K200', 'Komatsu', 'D', 'B'),
+('SN009', '2023-12-03', '2019-12-11', 'MT500', 'Hitachi', 'A', 'C'),
+('SN010', '2024-02-09', '2021-09-09', 'RT300', 'Volvo', 'E', 'A'),
+('SN011', '2023-10-28', '2018-12-02', 'ZT500', 'JCB', 'C', 'B'),
+('SN012', '2024-03-18', '2021-11-23', 'VZ400', 'John Deere', 'D', 'A'),
+('SN013', '2023-11-06', '2020-08-14', 'PX200', 'Caterpillar', 'A', 'B'),
+('SN014', '2024-04-26', '2019-05-17', 'X500', 'Komatsu', 'B', 'C'),
+('SN015', '2023-12-19', '2020-03-20', 'G700', 'Hitachi', 'C', 'A'),
+('SN016', '2024-02-23', '2022-01-15', 'L450', 'Volvo', 'D', 'B'),
+('SN017', '2023-10-30', '2021-07-05', 'HD300', 'JCB', 'A', 'C'),
+('SN018', '2024-03-11', '2020-10-30', 'R300', 'John Deere', 'B', 'A'),
+('SN019', '2023-11-26', '2019-09-10', 'TX600', 'Caterpillar', 'C', 'B'),
+('SN020', '2024-05-08', '2022-04-28', 'K300', 'Komatsu', 'E', 'A');
+
+-- Poblamiento de la tabla Tipo_mantenimiento
+INSERT INTO Tipo_mantenimiento (id_tipo_mant, nombre_tipo_mant) VALUES
+('PR', 'Preventivo'),
+('CR', 'Correctivo'),
+('PM', 'Predictivo');
+
+-- Poblamiento de la tabla Mantenimiento
+INSERT INTO Mantenimiento (Cod_Act_mantto, Descripcion, Tarea, Peligros, Fecha_inicio_programado, Fecha_fin_programado, ID_Orden, Codigo_plan, Num_serie, id_tipo_mant)
+VALUES
+(1, 'Reemplazo de motor principal en la línea de producción', 'Cambio de motor', 'Golpes y caídas durante la instalación', '2024-01-08', '2024-01-10', 1, 1, 'SN001', 'CR'),
+(2, 'Revisión del sistema de control eléctrico y ajuste de cables', 'Inspección y ajuste de conexiones', 'Descarga eléctrica', '2024-02-10', '2024-02-15', 2, 2, 'SN002', 'CR'),
+(3, 'Inspección de seguridad de maquinaria en la planta de ensamblaje', 'Revisión de sistemas de seguridad', 'Golpes y aplastamientos', '2024-03-15', '2024-03-20', 3, 3, 'SN003', 'PM'),
+(4, 'Mantenimiento preventivo en maquinaria del área de pintura', 'Limpieza y lubricación de componentes', 'Inhalación de productos químicos', '2024-04-20', '2024-04-25', 4, 4, 'SN004', 'PR'),
+(5, 'Reemplazo de filtros del sistema de ventilación', 'Cambio de filtros', 'Inhalación de polvo', '2024-05-25', '2024-05-30', 5, 5, 'SN005', 'CR'),
+(6, 'Actualización de software de monitoreo del sistema', 'Instalación y configuración de software', 'Caída del sistema', '2024-06-01', '2024-06-05', 6, 6, 'SN006', 'PM'),
+(7, 'Inspección y revisión de maquinaria pesada', 'Evaluación estructural y funcional', 'Aplastamientos y caídas', '2024-07-05', '2024-07-10', 7, 7, 'SN007', 'PR'),
+(8, 'Reparación del sistema hidráulico', 'Sustitución de mangueras y ajuste de válvulas', 'Fugas de fluidos y sobrepresión', '2024-08-10', '2024-08-15', 8, 8, 'SN008', 'CR'),
+(9, 'Evaluación del sistema de refrigeración en toda la planta', 'Pruebas de rendimiento y ajuste', 'Sobrecarga térmica', '2024-09-15', '2024-09-20', 9, 9, 'SN009', 'PM'),
+(10, 'Verificación y ajuste de sistemas de alarma en el área de producción', 'Revisión de sensores y conexiones', 'Falsos positivos', '2024-10-20', '2024-10-25', 10, 10, 'SN010', 'PR'),
+(11, 'Mantenimiento del sistema de iluminación de la planta', 'Sustitución de lámparas y ajuste de conexiones', 'Cortes eléctricos', '2024-11-01', '2024-11-05', 11, 11, 'SN011', 'CR'),
+(12, 'Revisión de protocolos de seguridad y sistemas asociados', 'Inspección de procedimientos de emergencia', 'Fallas en la detección de emergencias', '2024-12-05', '2024-12-10', 12, 12, 'SN012', 'PM'),
+(13, 'Actualización y ajuste de maquinaria en la línea de ensamblaje', 'Instalación de nuevos componentes', 'Golpes y atrapamientos', '2025-01-10', '2025-01-15', 13, 13, 'SN013', 'PR'),
+(14, 'Inspección del sistema de control de calidad', 'Revisión de calibración de equipos', 'Errores de medición', '2025-02-15', '2025-02-20', 14, 14, 'SN014', 'CR'),
+(15, 'Reemplazo de componentes electrónicos obsoletos', 'Sustitución de tarjetas y circuitos', 'Cortocircuitos y fallos eléctricos', '2025-03-20', '2025-03-25', 15, 15, 'SN015', 'PM'),
+(16, 'Optimización de la línea de empaquetado', 'Reconfiguración de maquinaria', 'Fallas mecánicas y paradas imprevistas', '2025-04-25', '2025-04-30', 16, 16, 'SN016', 'PR'),
+(17, 'Evaluación bimestral del sistema de ventilación', 'Limpieza de ductos y ajuste de ventiladores', 'Inhalación de polvo', '2025-05-01', '2025-05-05', 17, 17, 'SN017', 'CR'),
+(18, 'Mantenimiento preventivo de sistemas de refrigeración', 'Ajuste de compresores y verificación de fluidos', 'Sobrecarga de sistemas', '2025-06-05', '2025-06-10', 18, 18, 'SN018', 'PM'),
+(19, 'Revisión trimestral de sistemas de alarma', 'Verificación y ajuste de sensores', 'Falsos positivos y fallos de detección', '2025-07-10', '2025-07-15', 19, 19, 'SN019', 'PR'),
+(20, 'Actualización de software de control semestral', 'Instalación de nuevas versiones de software', 'Errores en el sistema', '2025-08-15', '2025-08-20', 20, 20, 'SN020', 'CR');
+
+-- Poblamiento de la tabla Auditoria
+INSERT INTO Auditoria (Codigo_Auditoria, Cod_Act_mantto, Fecha_auditoria, ubi_auditoria, resp_auditoria, Descripcion, objetivo)
+VALUES
+(1, 1, '2024-01-12', 'Planta de producción - Línea 1', 'Juan Pérez', 'Auditoría para verificar el reemplazo adecuado del motor en la línea de producción', 'Verificar cumplimiento de los estándares de instalación del motor'),
+(2, 2, '2024-02-18', 'Planta de sistemas eléctricos', 'Ana Rodríguez', 'Revisión de la correcta inspección y ajuste del sistema de control eléctrico', 'Asegurar la seguridad eléctrica y el funcionamiento continuo del sistema'),
+(3, 3, '2024-03-23', 'Planta de ensamblaje', 'Carlos Gómez', 'Auditoría de los sistemas de seguridad tras la inspección en la planta de ensamblaje', 'Comprobar la efectividad de las medidas de seguridad implementadas'),
+(4, 4, '2024-04-28', 'Área de pintura', 'Laura Fernández', 'Verificación del mantenimiento preventivo en los equipos del área de pintura', 'Asegurar la funcionalidad y seguridad de los equipos de pintura'),
+(5, 5, '2024-06-02', 'Sistema de ventilación - Planta 3', 'Miguel Ramírez', 'Auditoría del reemplazo de filtros en el sistema de ventilación', 'Comprobar el adecuado funcionamiento del sistema tras el cambio de filtros'),
+(6, 6, '2024-06-07', 'Centro de monitoreo - Planta principal', 'Luis Sánchez', 'Verificación de la actualización del software de monitoreo', 'Evaluar la correcta instalación y funcionamiento del software actualizado'),
+(7, 7, '2024-07-15', 'Área de maquinaria pesada', 'Carolina Díaz', 'Revisión post-inspección de maquinaria pesada', 'Verificar el estado funcional y de seguridad de la maquinaria revisada'),
+(8, 8, '2024-08-20', 'Taller de hidráulica - Planta 4', 'Ricardo Torres', 'Auditoría de la reparación del sistema hidráulico', 'Asegurar la funcionalidad del sistema tras las reparaciones realizadas'),
+(9, 9, '2024-09-25', 'Planta de refrigeración', 'Elena Ruiz', 'Verificación de la evaluación del sistema de refrigeración', 'Evaluar la eficiencia del sistema tras las pruebas de rendimiento realizadas'),
+(10, 10, '2024-10-28', 'Área de alarmas - Planta 2', 'Fernando Gutiérrez', 'Auditoría de la verificación de sistemas de alarma', 'Comprobar el correcto funcionamiento y ajuste de los sistemas de alarma'),
+(11, 11, '2024-11-10', 'Planta de iluminación', 'Sofía Martínez', 'Auditoría del mantenimiento de sistemas de iluminación', 'Asegurar la correcta instalación y operación de las lámparas sustituidas'),
+(12, 12, '2024-12-15', 'Centro de seguridad - Planta 5', 'Daniel Ortega', 'Verificación de la revisión de protocolos de seguridad', 'Comprobar que los protocolos revisados cumplan con los estándares de seguridad'),
+(13, 13, '2025-01-20', 'Línea de ensamblaje - Planta 1', 'Gabriela Vega', 'Auditoría de la actualización de maquinaria en la línea de ensamblaje', 'Verificar la instalación de los nuevos componentes y su correcto funcionamiento'),
+(14, 14, '2025-02-25', 'Control de calidad - Planta 2', 'Martín Salazar', 'Revisión de la inspección de sistemas de control de calidad', 'Asegurar la calibración adecuada de los equipos de control de calidad'),
+(15, 15, '2025-03-28', 'Área de sistemas electrónicos', 'Jorge López', 'Auditoría del reemplazo de componentes electrónicos', 'Comprobar que los componentes reemplazados funcionen correctamente'),
+(16, 16, '2025-05-02', 'Línea de empaquetado - Planta 6', 'Mariana Herrera', 'Auditoría de la optimización de la línea de empaquetado', 'Asegurar que la reconfiguración de maquinaria optimice la producción'),
+(17, 17, '2025-05-07', 'Sistema de ventilación - Planta 4', 'César García', 'Revisión post-mantenimiento del sistema de ventilación', 'Comprobar el buen funcionamiento del sistema tras la limpieza de ductos'),
+(18, 18, '2025-06-15', 'Planta de refrigeración', 'Olga Vázquez', 'Auditoría del mantenimiento preventivo del sistema de refrigeración', 'Evaluar la condición del sistema de refrigeración tras el mantenimiento'),
+(19, 19, '2025-07-18', 'Área de alarmas - Planta 2', 'Rubén Méndez', 'Verificación trimestral de sistemas de alarma', 'Comprobar el correcto funcionamiento de los sensores tras la revisión'),
+(20, 20, '2025-08-25', 'Centro de control - Planta 5', 'Gloria Paredes', 'Auditoría de la actualización del software de control semestral', 'Evaluar la instalación y operación del nuevo software en el sistema de control');
+
+--Poblamiento de la tabla Capacitaciones
+INSERT INTO Capacitaciones (Codigo_Capacitacion, Fecha_Capacitacion, Descripcion, Duracion, Instructor, Evaluador)
+VALUES
+(1, '2024-01-15', 'Capacitación en seguridad laboral y manejo de maquinaria pesada', 8.5, 'Juan Rodríguez', 'Ana Gómez'),
+(2, '2024-03-10', 'Capacitación sobre actualización de software de control de producción', 6.0, 'Carlos Pérez', 'Lucía Fernández'),
+(3, '2024-05-05', 'Taller de prevención de riesgos laborales y primeros auxilios', 4.5, 'Marta Ruiz', 'Pedro Ramírez'),
+(4, '2024-06-20', 'Capacitación técnica en mantenimiento de maquinaria industrial', 7.0, 'Luis Vargas', 'Carlos Sánchez'),
+(5, '2024-08-30', 'Capacitación avanzada en optimización de líneas de producción', 5.5, 'Laura Espinoza', 'Diego Morales'),
+(6, '2024-09-15', 'Capacitación sobre manejo de sistemas de control eléctrico', 9.0, 'Sofía López', 'Andrés Ruiz'),
+(7, '2024-10-25', 'Curso de actualización en normas de seguridad y prevención de incendios', 4.0, 'Fernando Vega', 'Gabriela Torres'),
+(8, '2024-11-10', 'Taller práctico en eficiencia energética y sostenibilidad', 5.0, 'María Torres', 'Raúl Mendoza'),
+(9, '2025-01-18', 'Capacitación sobre el uso de equipos hidráulicos', 6.5, 'Jorge Herrera', 'Camila Rojas'),
+(10, '2025-03-05', 'Taller sobre gestión de mantenimiento predictivo', 3.0, 'Elena Castillo', 'Valentina Díaz');
+
+--Poblamiento de la tabla EmpleadoxCapacitacion
+INSERT INTO EmpleadoxCapacitacion (Codigo_empleado, Codigo_Capacitacion)
+VALUES
+(1, 1), (2, 1), (3, 1),
+(4, 2), (5, 2), (6, 2),
+(7, 3), (8, 3), (9, 3),
+(10, 4), (11, 4), (12, 4),
+(13, 5), (14, 5), (15, 5),
+(16, 6), (17, 6), (18, 6),
+(19, 7), (20, 7), (1, 7),
+(2, 8), (3, 8), (4, 8),
+(5, 9), (6, 9), (7, 9),
+(8, 10), (9, 10), (10, 10);
+
+
