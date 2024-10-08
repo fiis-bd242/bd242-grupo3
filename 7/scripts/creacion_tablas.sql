@@ -336,7 +336,6 @@ CREATE TABLE Registros_por_Riesgos
   FOREIGN KEY (Id_valoracion_residual) REFERENCES Valorizacion_del_riesgo(Id_valoracion_residual)
 );
 
-
 CREATE TABLE Registro_IPERC
 (
   Fecha_registro DATE NOT NULL,
