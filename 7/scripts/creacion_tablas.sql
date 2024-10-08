@@ -50,12 +50,12 @@ CREATE TABLE Actividad_empleado
 
 CREATE TABLE Orden_de_trabajo
 (
-  ID_Orden INT NOT NULL,
+  Id_Orden INT NOT NULL,
   Fecha_Orden DATE NOT NULL,
   Descripcion VARCHAR(10000) NOT NULL,
   Empleado_asigna INT NOT NULL,
   Id_criticidad INT NOT NULL,
-  PRIMARY KEY (ID_Orden),
+  PRIMARY KEY (Id_Orden),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Codigo_empleado),
   FOREIGN KEY (Id_criticidad) REFERENCES Criticidad(Id_criticidad)
 );
@@ -67,18 +67,6 @@ CREATE TABLE ActvempleadoXOrdenTrabajo
   PRIMARY KEY (Id_actvempleado, ID_Orden),
   FOREIGN KEY (Id_actvempleado) REFERENCES Actividad_empleado(Id_actvempleado),
   FOREIGN KEY (ID_Orden) REFERENCES Orden_de_trabajo(ID_Orden)
-);
-
-CREATE TABLE Almacen
-(
-    Cod_almacen INT PRIMARY KEY,
-    Codigo_empleado INT,
-    Codigo_categoria INT,
-    Codigo_estado INT,
-    Direccion VARCHAR(255),
-    Capacidad INTEGER,
-    CONSTRAINT fk_categoria FOREIGN KEY (Codigo_categoria) REFERENCES Categoria_Almacen (Codigo_categoria),
-    CONSTRAINT fk_estado_almacen FOREIGN KEY (Codigo_estado) REFERENCES Estado_Almacen (Codigo_estado)
 );
 
 CREATE TABLE Categoria_Almacen 
@@ -93,20 +81,23 @@ CREATE TABLE Estado_Almacen
     Nombre_estado VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE Equipo_de_Soporte 
+CREATE TABLE Almacen
 (
-    Id_equipo_soporte INT PRIMARY KEY,
-    Nombre_equipo_soporte VARCHAR(100) NOT NULL,
-    Tipo_equipo_soporte VARCHAR(100),
-    Fecha_adquisicion DATE,
-    Descripcion VARCHAR(255),
-    Horas_uso INTEGER,
-    Cod_almacen INT,
-    Codigo_disponibilidad INT,
+    Cod_almacen INT PRIMARY KEY,
+    Codigo_empleado INT,
+    Codigo_categoria INT,
     Codigo_estado INT,
-    CONSTRAINT fk_almacen FOREIGN KEY (Cod_almacen) REFERENCES Almacen (Cod_almacen),
-    CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
-    CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado)
+    Direccion VARCHAR(255),
+    Capacidad INTEGER,
+    CONSTRAINT fk_empleado_almacen FOREIGN KEY (Codigo_empleado) REFERENCES Empleado (Codigo_empleado),
+    CONSTRAINT fk_categoria_almacen FOREIGN KEY (Codigo_categoria) REFERENCES Categoria_Almacen (Codigo_categoria),
+    CONSTRAINT fk_estado_almacen FOREIGN KEY (Codigo_estado) REFERENCES Estado_Almacen (Codigo_estado)
+);
+
+CREATE TABLE Tipo_Equipo_Soporte
+(
+  Codigo_tipo INT PRIMARY KEY,
+  Nombre_tipo VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Disponibilidad_Equipo_Soporte 
@@ -119,6 +110,25 @@ CREATE TABLE Estado_Equipo_Soporte
 (
     Codigo_estado INT PRIMARY KEY,
     Nombre_estado VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Equipo_de_Soporte 
+(
+    Id_equipo_soporte INT PRIMARY KEY,
+    Nombre_equipo_soporte VARCHAR(100) NOT NULL,
+    Codigo_tipo INT,
+    Fecha_adquisicion DATE,
+    Descripcion VARCHAR(255),
+    Horas_uso INTEGER,
+    Cod_almacen INT,
+    Codigo_disponibilidad INT,
+    Codigo_estado INT,
+    Id_orden INT,
+    CONSTRAINT fk_tipo FOREIGN KEY (Codigo_tipo) REFERENCES Tipo_Equipo_Soporte (Codigo_tipo),
+    CONSTRAINT fk_almacen FOREIGN KEY (Cod_almacen) REFERENCES Almacen (Cod_almacen),
+    CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
+    CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado),
+    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES Orden_de_trabajo (Id_cargo)
 );
 
 CREATE TABLE EquipoSoporteXMantenimiento 
