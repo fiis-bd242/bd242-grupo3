@@ -350,7 +350,7 @@ CREATE TABLE Registro_IPERC
   FOREIGN KEY (Id_registro_riesgo) REFERENCES Registros_por_Riesgos(Id_registro_riesgo)
 );
 
-#lenin:
+-- lenin:
 
 CREATE TABLE Tipo_maquina
 (
