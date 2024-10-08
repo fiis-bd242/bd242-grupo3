@@ -139,61 +139,70 @@ CREATE TABLE EquipoSoporteXMantenimiento
     CONSTRAINT fk_equipo_soporte FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte (Id_equipo_soporte)
 );
 
+CREATE TABLE Identificacion_del_riesgo
+(
+  Descripcion_peligro CHAR(255) NOT NULL,
+  Evento_no_deseado CHAR(255) NOT NULL,
+  Id_riesgo INT NOT NULL,
+  PRIMARY KEY (Id_riesgo)
+);
+
 CREATE TABLE Tipos_Contacto
 (
-  Id_tipo_contacto INT NOT NULL,
-  Nombre_tipo_contacto CHAR NOT NULL,
+  Id_tipo_contacto CHAR(4) NOT NULL,
+  Nombre_tipo_contacto CHAR(255) NOT NULL,
   PRIMARY KEY (Id_tipo_contacto)
 );
 
 CREATE TABLE Tipos_Peligro
 (
-  Id_tipo_peligro INT NOT NULL,
-  Nombre_tipo_peligro CHAR NOT NULL,
+  Id_tipo_peligro CHAR(7) NOT NULL,
+  Nombre_tipo_peligro CHAR(255) NOT NULL,
   PRIMARY KEY (Id_tipo_peligro)
 );
 
 CREATE TABLE Tipo_Riesgo
 (
-  Id_tipo_riesgo INT NOT NULL,
-  Nombre_tipo_riesgo CHAR NOT NULL,
+  Id_tipo_riesgo CHAR(2) NOT NULL,
+  Nombre_tipo_riesgo CHAR(50) NOT NULL,
   PRIMARY KEY (Id_tipo_riesgo)
 );
 
 CREATE TABLE Tipo_Medida_Control
 (
-  Id_tipo_med_control INT NOT NULL,
-  Nombre_tipo_med_control CHAR NOT NULL,
+  Id_tipo_med_control CHAR(3) NOT NULL,
+  Nombre_tipo_med_control CHAR(50) NOT NULL,
   PRIMARY KEY (Id_tipo_med_control)
 );
 
 CREATE TABLE Tipo_Estrategia_Control
 (
-  Id_tipo_estgia_control INT NOT NULL,
-  Nombre_tipo_estgia_control CHAR NOT NULL,
+  Id_tipo_estgia_control CHAR(1) NOT NULL,
+  Nombre_tipo_estgia_control CHAR(50) NOT NULL,
   PRIMARY KEY (Id_tipo_estgia_control)
 );
 
 CREATE TABLE Tipo_Probabilidad
 (
-  Id_tipo_probabilidad INT NOT NULL,
-  Nombre_tipo_probabilidad CHAR NOT NULL,
+  Id_tipo_probabilidad CHAR(5) NOT NULL,
+  Nombre_tipo_probabilidad CHAR(50) NOT NULL,
   PRIMARY KEY (Id_tipo_probabilidad)
 );
 
 CREATE TABLE Tipo_Severidad
 (
-  Id_tipo_severidad INT NOT NULL,
-  Nombre_tipo_severidad CHAR NOT NULL,
+  Id_tipo_severidad CHAR(2) NOT NULL,
+  Nombre_tipo_severidad CHAR(50) NOT NULL,
   PRIMARY KEY (Id_tipo_severidad)
 );
 
 CREATE TABLE Tipo_Q_control
 (
-  Id_tipo_Qcontrol INT NOT NULL,
-  Nombre_tipo_Qcontrol CHAR NOT NULL,
+  Id_tipo_Qcontrol CHAR(1) NOT NULL,
+  Nombre_tipo_Qcontrol CHAR(255) NOT NULL,
   PRIMARY KEY (Id_tipo_Qcontrol)
 );
+
 
 CREATE TABLE Equipo_evaluador
 (
@@ -206,29 +215,21 @@ CREATE TABLE Equipo_evaluador
 
 CREATE TABLE proceso
 (
-  Descripcion_proceso CHAR NOT NULL,
+  Descripcion_proceso CHAR(255) NOT NULL,
   Id_proceso INT NOT NULL,
   Id_equipo_evaluador INT NOT NULL,
   PRIMARY KEY (Id_proceso),
   FOREIGN KEY (Id_equipo_evaluador) REFERENCES Equipo_evaluador(Id_equipo_evaluador)
 );
 
-CREATE TABLE Identificacion_del_riesgo
-(
-  Descripcion_peligro CHAR NOT NULL,
-  Evento_no_deseado CHAR NOT NULL,
-  Id_riesgo INT NOT NULL,
-  PRIMARY KEY (Id_riesgo)
-);
-
 CREATE TABLE Analisis_riesgo
 (
-  Afectado CHAR NOT NULL,
-  Consecuencia CHAR NOT NULL,
+  Afectado CHAR(255) NOT NULL,
+  Consecuencia CHAR(255) NOT NULL,
   Id_analisis INT NOT NULL,
   Id_riesgo INT NOT NULL,
-  Id_tipo_contacto INT NOT NULL,
-  Id_tipo_peligro INT NOT NULL,
+  Id_tipo_contacto CHAR(4) NOT NULL,
+  Id_tipo_peligro CHAR(7) NOT NULL,
   PRIMARY KEY (Id_analisis),
   FOREIGN KEY (Id_riesgo) REFERENCES Identificacion_del_riesgo(Id_riesgo),
   FOREIGN KEY (Id_tipo_contacto) REFERENCES Tipos_Contacto(Id_tipo_contacto),
@@ -238,9 +239,9 @@ CREATE TABLE Analisis_riesgo
 CREATE TABLE Valoracion_del_riesgo_inicial
 (
   id_valoracion_inicial INT NOT NULL,
-  Id_tipo_severidad INT NOT NULL,
-  Id_tipo_probabilidad INT NOT NULL,
-  Id_tipo_riesgo INT NOT NULL,
+  Id_tipo_severidad CHAR(2) NOT NULL,
+  Id_tipo_probabilidad CHAR(5) NOT NULL,
+  Id_tipo_riesgo CHAR(2) NOT NULL,
   PRIMARY KEY (id_valoracion_inicial),
   FOREIGN KEY (Id_tipo_severidad) REFERENCES Tipo_Severidad(Id_tipo_severidad),
   FOREIGN KEY (Id_tipo_probabilidad) REFERENCES Tipo_Probabilidad(Id_tipo_probabilidad),
@@ -250,7 +251,7 @@ CREATE TABLE Valoracion_del_riesgo_inicial
 CREATE TABLE Actividades
 (
   Id_actividad INT NOT NULL,
-  Descripcion_actividad CHAR NOT NULL,
+  Descripcion_actividad CHAR(255) NOT NULL,
   Id_proceso INT NOT NULL,
   PRIMARY KEY (Id_actividad),
   FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
@@ -258,9 +259,9 @@ CREATE TABLE Actividades
 
 CREATE TABLE Tareas
 (
-  Descriçion_tarea CHAR NOT NULL,
-  Puesto_trabajo CHAR NOT NULL,
-  Cond_operacional CHAR NOT NULL,
+  Descripcion_tarea CHAR(255) NOT NULL,
+  Puesto_trabajo CHAR(255) NOT NULL,
+  Cond_operacional CHAR(255) NOT NULL,
   Id_tarea INT NOT NULL,
   Id_actividad INT NOT NULL,
   PRIMARY KEY (Id_tarea),
@@ -270,10 +271,10 @@ CREATE TABLE Tareas
 CREATE TABLE Control
 (
   Id_control INT NOT NULL,
-  Descripcion_control CHAR NOT NULL,
-  Id_tipo_estgia_control INT NOT NULL,
-  Id_tipo_med_control INT NOT NULL,
-  Id_tipo_Qcontrol INT NOT NULL,
+  Descripcion_control CHAR(255) NOT NULL,
+  Id_tipo_estgia_control CHAR(1) NOT NULL,
+  Id_tipo_med_control CHAR(3) NOT NULL,
+  Id_tipo_Qcontrol CHAR(1) NOT NULL,
   PRIMARY KEY (Id_control),
   FOREIGN KEY (Id_tipo_estgia_control) REFERENCES Tipo_Estrategia_Control(Id_tipo_estgia_control),
   FOREIGN KEY (Id_tipo_med_control) REFERENCES Tipo_Medida_Control(Id_tipo_med_control),
@@ -295,7 +296,7 @@ CREATE TABLE Valorizacion_del_riesgo
   Cantidad_controles INT NOT NULL,
   Id_valoracion_inicial INT NOT NULL,
   Id_control INT NOT NULL,
-  Id_tipo_riesgo INT NOT NULL,
+  Id_tipo_riesgo CHAR(2) NOT NULL,
   PRIMARY KEY (Id_valoracion_residual),
   FOREIGN KEY (Id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
   FOREIGN KEY (Id_control) REFERENCES Control(Id_control),
@@ -304,7 +305,7 @@ CREATE TABLE Valorizacion_del_riesgo
 
 CREATE TABLE Plan_de_accion_de_mejora
 (
-  Accion_que CHAR NOT NULL,
+  Accion_que CHAR(255) NOT NULL,
   Fecha_cuando DATE NOT NULL,
   Cantidad_empleados INT NOT NULL,
   Id_plan_mejora INT NOT NULL,
@@ -347,3 +348,5 @@ CREATE TABLE Registro_IPERC
   FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso),
   FOREIGN KEY (Id_registro_riesgo) REFERENCES Registros_por_Riesgos(Id_registro_riesgo)
 );
+
+    
