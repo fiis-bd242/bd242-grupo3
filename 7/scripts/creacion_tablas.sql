@@ -350,4 +350,92 @@ CREATE TABLE Registro_IPERC
   FOREIGN KEY (Id_registro_riesgo) REFERENCES Registros_por_Riesgos(Id_registro_riesgo)
 );
 
+#lenin:
+
+CREATE TABLE Tipo_maquina
+(
+    id_tipo_maquina CHAR(1) NOT NULL,
+    nombre_tipo VARCHAR(30),
+    PRIMARY KEY (id_tipo_maquina)
+);
+
+CREATE TABLE Estado_maquina
+(
+    id_estado CHAR(1) NOT NULL,
+    nombre_estado VARCHAR(30),
+    PRIMARY KEY (id_estado)
+);
+
+CREATE TABLE Maquina
+(
+    Num_serie VARCHAR NOT NULL,
+    Fecha_ultima_inspeccion DATE NOT NULL,
+    Fecha_adquisicion DATE NOT NULL,
+    Modelo VARCHAR NOT NULL,
+    Marca VARCHAR NOT NULL,
+    id_tipo_maquina CHAR(1) NOT NULL, 
+    id_estado CHAR(1) NOT NULL,
+    PRIMARY KEY (Num_serie),
+    CONSTRAINT fk_tipo_maquina FOREIGN KEY (id_tipo_maquina) REFERENCES Tipo_maquina(id_tipo_maquina),
+    CONSTRAINT fk_estado_maquina FOREIGN KEY (id_estado) REFERENCES Estado_maquina(id_estado)
+);
+
+CREATE TABLE Tipo_mantenimiento
+(
+    id_tipo_mant CHAR(2) NOT NULL,
+    nombre_tipo_mant VARCHAR(30),
+    PRIMARY KEY (id_tipo_mant)
+);
+
+CREATE TABLE Mantenimiento
+(
+    Cod_Act_mantto INT NOT NULL,
+    Descripcion VARCHAR(300),
+    Tarea VARCHAR(40),
+    Peligros VARCHAR(30),
+    Fecha_inicio programado DATE,
+    Fecha_fin_programado DATE,
+    ID_Orden INT NOT NULL,
+    Codigo_plan INT NOT NULL,
+    Num_serie VARCHAR NOT NULL,
+    id_tipo_mant CHAR(2) NOT NULL,
+    PRIMARY KEY (Cod_Act_mantto),
+    CONSTRAINT fk_orden_mant FOREIGN KEY (ID_Orden) REFERENCES Orden_de_trabajo (ID_Orden),
+    CONSTRAINT fk_plan_mant FOREIGN KEY (Codigo_plan) REFERENCES Plan_de_mantenimiento (Codigo_plan),
+    CONSTRAINT fk_maquina_mant FOREIGN KEY (Num_serie) REFERENCES Maquina (Num_serie),
+    CONSTRAINT fk_orden_mant FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant),
+);
+
+CREATE TABLE Auditoria
+(
+    Codigo_Auditoria INT NOT NULL,
+    Cod_Act_mantto INT NOT NULL,
+    Fecha_auditoria DATE,
+    ubi_auditoria VARCHAR(200),
+    resp_auditoria VARCHAR(64),
+    Descripcion VARCHAR(300),
+    objetivo VARCHAR(200),
+    PRIMARY KEY (Codigo_Auditoria),
+    CONSTRAINT fk_mant_auditoria FOREIGN KEY (Cod_Act_mantto) REFERENCES Mantenimiento (Cod_Act_mantto)
+);
+
+CREATE TABLE Capacitaciones
+(
+    Codigo_Capacitacion INT NOT NULL,
+    Fecha_Capacitacion DATE,
+    Descripcion VARCHAR(1000),
+    Duracion FLOAT,
+    Instructor VARCHAR(200),
+    Evaluador VARCHAR(200),
+    PRIMARY KEY (Codigo_Capacitacion)
+);
+
+CREATE TABLE EmpleadoxCapacitacion
+(
+    Codigo_empleado INT NOT NULL,
+    Codigo_Capacitacion INT NOT NULL,
+    CONSTRAINT fk_empleado_capacitacion_1 FOREIGN KEY (Codigo_empleado) REFERENCES Empleado (Codigo_empleado),
+    CONSTRAINT fk_empleado_capacitacion_2 FOREIGN KEY (Codigo_Capacitacion) REFERENCES Capacitaciones (Codigo_Capacitacion)
+);
+
     
