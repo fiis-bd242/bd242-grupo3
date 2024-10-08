@@ -266,3 +266,279 @@ VALUES
 (8, 1, 3),
 (9, 4, 4),
 (10, 5, 4);
+
+INSERT INTO Tipo_Severidad (Id_tipo_severidad, Nombre_tipo_severidad) VALUES
+('CA', 'Catastrófico'),
+('MO', 'Mortalidad'),
+('PE', 'Permanente'),
+('TE', 'Temporal'),
+('ME', 'Menor');
+
+INSERT INTO Tipo_Estrategia_Control (Id_tipo_estgia_control, Nombre_tipo_estgia_control) VALUES
+('P', 'Preventivo'),
+('M', 'Mitigación');
+
+INSERT INTO Tipo_Medida_Control (Id_tipo_med_control, Nombre_tipo_med_control) VALUES
+('ELI', 'Eliminación'),
+('SUS', 'Sustitución'),
+('INH', 'Ingeniería'),
+('ADM', 'Administrativo'),
+('EPP', 'Equipo de Protección Personal (EPP)');
+
+INSERT INTO Tipo_Q_Control (Id_tipo_Qcontrol, Nombre_tipo_Qcontrol) VALUES
+('A', 'TOTAL: Los controles eliminan prácticamente la probabilidad o impacto del riesgo'),
+('B', 'ALTA: Los controles limitan significativamente la probabilidad o impacto del riesgo'),
+('C', 'MEDIA: Los controles limitan la probabilidad o impacto, pero no drásticamente'),
+('D', 'BAJA: Los controles muestran debilidades significativas'),
+('E', 'MUY BAJA: Controles inexistentes o poco efectivos');
+
+INSERT INTO Tipo_Riesgo (Id_tipo_riesgo, Nombre_tipo_riesgo) VALUES
+('BA', 'Bajo'),
+('ME', 'Medio'),
+('AL', 'Alto');
+
+INSERT INTO Tipos_Contacto (Id_tipo_contacto, Nombre_tipo_contacto) VALUES
+('TC01', 'Golpear contra (corriendo hacia o tropezando con)'),
+('TC02', 'Golpeado por (objeto en movimiento)'),
+('TC03', 'Caída al mismo nivel (resbalar, tropezar, volcarse)'),
+('TC04', 'Caída a distinto nivel (el cuerpo cae)'),
+('TC05', 'Atrapado en (enganchado, agarrado)'),
+('TC06', 'Objetos punzantes o cortantes'),
+('TC07', 'Aplastado/Chancado entre o debajo de objetos'),
+('TC08', 'Energía (neumática, radiación, etc.)'),
+('TC09', 'Materiales químicos'),
+('TC10', 'Materiales biológicos'),
+('TC11', 'Ergonómicos'),
+('TC12', 'Psicosociales');
+
+INSERT INTO Tipos_Peligro (Id_tipo_peligro, Nombre_tipo_peligro) VALUES
+('TC01.01', 'Materiales'),
+('TC01.02', 'Pisos, hastiales y carga'),
+('TC02.01', 'Operación de vehículos y equipos móviles'),
+('TC02.02', 'Estabilidad de presas y depósitos'),
+('TC02.03', 'Estabilidad de macizo rocoso'),
+('TC02.04', 'Carro minero'),
+('TC02.05', 'Tubería, manguera de aire comprimido o accesorios'),
+('TC02.06', 'Herramientas'),
+('TC02.07', 'Materiales (que caen)'),
+('TC02.08', 'Proyección de partículas'),
+('TC02.09', 'Proyección de balas'),
+('TC02.10', 'Equipo de izaje, grúas o carga'),
+('TC03.01', 'Pisos resbaladizos'),
+('TC03.02', 'Piso desnivelado'),
+('TC04.01', 'Izaje en piques'),
+('TC04.02', 'Subir/Bajar escaleras'),
+('TC04.03', 'Espacios abiertos'),
+('TC04.04', 'Andamios y plataformas elevadas'),
+('TC04.05', 'Tolvas/Echaderos'),
+('TC05.01', 'Fajas transportadoras'),
+('TC05.02', 'Partes móviles o giratorias'),
+('TC06.01', 'Herramientas punzo cortantes'),
+('TC06.02', 'Mallas electrosoldadas'),
+('TC07.01', 'Carga suspendida'),
+('TC07.02', 'Succión (tolvas, echaderos, labores antiguas, subsidencias)'),
+('TC07.03', 'Material de excavaciones y zanjas'),
+('TC07.04', 'Materiales apilados'),
+('TC08.01', 'Energía eléctrica'),
+('TC08.02', 'Transporte de personal'),
+('TC08.03', 'Tormenta eléctrica'),
+('TC08.04', 'Equipos/Instalaciones neumáticos o hidráulicos (gases comprimidos, calderos, otros)'),
+('TC08.05', 'Temperaturas extremas (calor, frío)'),
+('TC08.06', 'Radiación (solar, radioactiva, soldadura, otros)'),
+('TC08.07', 'Ruido (que sobrepase el LMP)'),
+('TC09.01', 'Gases interior mina (Ventilación)'),
+('TC09.02', 'Explosivos'),
+('TC09.03', 'Materiales químicos peligrosos'),
+('TC09.04', 'Otros gases'),
+('TC09.05', 'Otros químicos'),
+('TC09.06', 'Humo (combustión, soldadura, otros)'),
+('TC09.07', 'Hidrocarburos'),
+('TC09.08', 'Material inflamable / Combustible'),
+('TC09.09', 'Polvo'),
+('TC10.01', 'Fluidos Corporales'),
+('TC10.02', 'Animales'),
+('TC10.03', 'Vectores (roedores, insectos, otros)'),
+('TC10.04', 'Microorganismos'),
+('TC10.05', 'COVID-19'),
+('TC11.01', 'Iluminación (excesiva/deficiente)'),
+('TC11.02', 'Vibraciones'),
+('TC11.03', 'Movimientos repetitivos'),
+('TC11.04', 'Manipulación manual de cargas'),
+('TC11.05', 'Posturas'),
+('TC12.01', 'Agresiones físicas y verbales'),
+('TC12.02', 'Delincuencia común'),
+('TC12.03', 'Acoso laboral (hostilización)'),
+('TC12.04', 'Carga de trabajo (horarios, sobretiempo, descanso, otros)'),
+('TC12.05', 'Nivel de Cultura de Seguridad (Liderazgo)'),
+('TC12.06', 'Hostigamiento sexual');
+
+INSERT INTO Tipo_Probabilidad (Id_tipo_probabilidad, Nombre_tipo_probabilidad) VALUES
+('P-ALT', 'Común'),
+('P-MED', 'Ha sucedido'),
+('P-BAJ', 'Podría suceder'),
+('P-RAR', 'Raro que suceda'),
+('P-IMP', 'Prácticamente imposible que suceda');
+
+INSERT INTO equipo_evaluador (Id_equipo_evaluador, Cant_empleados, Codigo_empleado) VALUES
+(1, 5, 1),
+(2, 6, 2),
+(3, 4, 3),
+(4, 7, 4),
+(5, 5, 5),
+(6, 6, 6),
+(7, 4, 7),
+(8, 7, 8);
+
+-- Poblar la tabla Proceso
+INSERT INTO proceso (Id_proceso, Descripcion_proceso, Id_equipo_evaluador) VALUES
+(1, 'MANTTO PLANTA', 1),
+(2, 'MTTO.ELECTRICO', 2),
+(3, 'MTTO. EQUIPOS', 3),
+(4, 'MTTO. SERVICIOS', 4),
+(5, 'INSPECCIÓN DE SEGURIDAD', 2),
+(6, 'MANTENIMIENTO PREDICTIVO', 3),
+(7, 'REVISION DE SISTEMAS ELÉCTRICOS', 4),
+(8, 'PRUEBAS DE CARGA', 1);
+
+
+
+-- Poblar la tabla Actividades
+INSERT INTO Actividades (Id_actividad, Descripcion_actividad, Id_proceso) VALUES
+(1, 'Revisión de equipos mecánicos', 1),
+(2, 'Mantenimiento preventivo eléctrico', 2),
+(3, 'Inspección de sistemas de seguridad', 3),
+(4, 'Pruebas de funcionamiento', 4),
+(5, 'Supervisión del personal', 5),
+(6, 'Evaluación de procedimientos operativos', 6),
+(7, 'Control de calidad en planta', 7),
+(8, 'Verificación de condiciones de trabajo', 8);
+
+INSERT INTO Tareas (Id_tarea, Descripcion_tarea, Puesto_trabajo, Cond_operacional, Id_actividad) 
+VALUES
+(1, 'Lubricar los equipos mecánicos', 'Técnico de Mantenimiento', 'El equipo debe estar apagado y bloqueado antes de la lubricación', 1),
+(2, 'Revisar el estado de los cables eléctricos', 'Electricista', 'Uso de guantes dieléctricos y herramientas aisladas', 2),
+(3, 'Inspeccionar las alarmas de seguridad', 'Supervisor de Seguridad', 'Realizar pruebas sin interferir con la operación', 3),
+(4, 'Verificar el correcto funcionamiento de las válvulas', 'Técnico de Procesos', 'El sistema debe estar presurizado', 4),
+(5, 'Supervisar el uso de los equipos de protección personal (EPP)', 'Jefe de Seguridad', 'Asegurar que todo el personal cuente con el EPP adecuado', 5),
+(6, 'Evaluar los procedimientos de operación', 'Supervisor de Planta', 'Todos los trabajadores deben conocer los procedimientos', 6),
+(7, 'Controlar la calidad del producto terminado', 'Inspector de Calidad', 'Inspeccionar visualmente y realizar pruebas de laboratorio', 7),
+(8, 'Asegurar que los equipos están en condiciones adecuadas para trabajar', 'Técnico de Seguridad', 'Verificar antes del inicio de cada turno', 8),
+(9, 'Verificar el estado de los extintores en el área de producción', 'Supervisor de Seguridad', 'Revisar fechas de vencimiento y estado de los equipos', 4),
+(10, 'Supervisar el correcto uso de las herramientas de trabajo', 'Jefe de Producción', 'Inspeccionar herramientas antes y después de cada turno', 7);
+
+
+-- Poblar la tabla Identificacion_del_riesgo
+INSERT INTO Identificacion_del_riesgo (Id_riesgo, Descripcion_peligro, Evento_no_deseado) VALUES
+(1, 'Caída de objetos', 'Golpeado por objeto caído'),
+(2, 'Fallo eléctrico', 'Electrocución'),
+(3, 'Exposición a productos químicos', 'Inhalación de químicos'),
+(4, 'Deslizamiento de materiales', 'Resbalones en la superficie'),
+(5, 'Mal uso de maquinaria', 'Atrapado en maquinaria'),
+(6, 'Explosión de gas', 'Quemaduras'),
+(7, 'Derrame de líquidos peligrosos', 'Contacto con sustancias tóxicas'),
+(8, 'Sobrecalentamiento de equipos', 'Incendio en planta');
+
+
+-- Poblar la tabla Valoracion_del_riesgo_inicial
+INSERT INTO Valoracion_del_riesgo_inicial (Id_valoracion_inicial, Id_tipo_severidad, Id_tipo_probabilidad, Id_tipo_riesgo) VALUES
+(1, 'CA', 'P-ALT', 'AL'),  -- Riesgo alto con severidad catastrófica y alta probabilidad
+(2, 'MO', 'P-MED', 'ME'),  -- Riesgo medio con severidad mortalidad y probabilidad media
+(3, 'PE', 'P-BAJ', 'BA'),  -- Riesgo bajo con severidad permanente y baja probabilidad
+(4, 'TE', 'P-RAR', 'ME'),  -- Riesgo medio con severidad temporal y rara probabilidad
+(5, 'ME', 'P-IMP', 'BA'),  -- Riesgo bajo con severidad menor e imposible probabilidad
+(6, 'CA', 'P-ALT', 'AL'),  -- Riesgo alto con severidad catastrófica y alta probabilidad
+(7, 'MO', 'P-MED', 'ME'),  -- Riesgo medio con severidad mortalidad y probabilidad media
+(8, 'TE', 'P-IMP', 'BA');  -- Riesgo bajo con severidad temporal e imposible probabilidad
+
+
+-- Poblar la tabla Control
+INSERT INTO Control (Id_control, Descripcion_control, Id_tipo_estgia_control, Id_tipo_med_control, Id_tipo_Qcontrol) VALUES
+(1, 'Instalación de barandillas en plataformas elevadas', 'P', 'INH', 'A'),
+(2, 'Mantenimiento preventivo de equipos eléctricos', 'P', 'ADM', 'B'),
+(3, 'Uso obligatorio de equipo de protección personal (EPP)', 'M', 'EPP', 'C'),
+(4, 'Sustitución de sustancias químicas peligrosas', 'P', 'SUS', 'B'),
+(5, 'Implementación de procedimientos de seguridad', 'M', 'ADM', 'A'),
+(6, 'Eliminación de riesgos en zonas de trabajo', 'P', 'ELI', 'A'),
+(7, 'Monitoreo constante de niveles de gases peligrosos', 'P', 'INH', 'B'),
+(8, 'Capacitación regular del personal en seguridad', 'M', 'ADM', 'C');
+
+
+-- Poblar la tabla Valorizacion_del_riesgo
+INSERT INTO Valorizacion_del_riesgo (Id_valoracion_residual, Cantidad_controles, Id_valoracion_inicial, Id_control, Id_tipo_riesgo) 
+VALUES
+(1, 3, 1, 1, 'AL'),  -- Riesgo alto
+(2, 2, 2, 2, 'ME'),  -- Riesgo medio
+(3, 5, 3, 3, 'BA'),  -- Riesgo bajo
+(4, 4, 4, 4, 'ME'),  -- Riesgo medio
+(5, 3, 5, 5, 'BA'),  -- Riesgo bajo
+(6, 2, 6, 6, 'AL'),  -- Riesgo alto
+(7, 1, 7, 7, 'ME'),  -- Riesgo medio
+(8, 4, 8, 8, 'BA');  -- Riesgo bajo
+
+-- Poblar la tabla Plan_de_accion_de_mejora
+INSERT INTO Plan_de_accion_de_mejora (Id_plan_mejora, Id_valoracion_residual, Accion_que, Cantidad_empleados, Fecha_cuando) VALUES
+(1, 1, 'Implementar señalización de seguridad en áreas críticas', 5, '2024-01-10'),
+(2, 2, 'Realizar mantenimiento preventivo en los equipos eléctricos', 3, '2024-02-15'),
+(3, 3, 'Capacitar al personal sobre manejo de químicos peligrosos', 10, '2024-03-20'),
+(4, 4, 'Instalar barreras físicas para evitar caídas de materiales', 4, '2024-04-25'),
+(5, 5, 'Revisar y ajustar los procedimientos de trabajo con maquinaria', 7, '2024-05-05'),
+(6, 6, 'Actualizar los sistemas de detección de gases en planta', 6, '2024-06-10'),
+(7, 7, 'Implementar sistemas de ventilación en áreas confinadas', 8, '2024-07-18'),
+(8, 8, 'Realizar simulacros de emergencia ante incendios', 12, '2024-08-30');
+
+-- Poblar la tabla Analisis_riesgo
+INSERT INTO Analisis_riesgo (Id_analisis, Afectado, Consecuencia, Id_riesgo, Id_tipo_contacto, Id_tipo_peligro) VALUES
+(1, 'Trabajador de Mantenimiento', 'Lesiones por caída al mismo nivel', 1, 'TC03', 'TC03.01'), -- Caída al mismo nivel
+(2, 'Operador de Máquina', 'Golpes por objetos en movimiento', 2, 'TC02', 'TC02.07'), -- Golpes por objetos
+(3, 'Personal de Limpieza', 'Exposición a materiales peligrosos', 3, 'TC09', 'TC09.01'), -- Contacto con sustancias químicas
+(4, 'Supervisor de Área', 'Caída desde altura', 4, 'TC04', 'TC04.01'), -- Caída a distinto nivel
+(5, 'Trabajador de Almacén', 'Aplastamiento por cargas pesadas', 5, 'TC07', 'TC07.01'), -- Atrapado o aplastado por objetos
+(6, 'Personal de Oficina', 'Estrés por acoso laboral', 6, 'TC12', 'TC12.03'), -- Psicosocial
+(7, 'Trabajador Externo', 'Quemaduras por contacto con objetos calientes', 7, 'TC08', 'TC08.05'), -- Energía térmica
+(8, 'Operador de Grúa', 'Golpes por caída de materiales suspendidos', 8, 'TC07', 'TC07.04'); -- Aplastamiento
+
+-- Poblar la tabla TareasXIdentRiesgo
+INSERT INTO TareasXIdentRiesgo (Id_tarea, Id_riesgo) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
+(7, 7),
+(8, 8);
+
+-- Poblar la tabla PlanaccionxEmpleado
+INSERT INTO PlanaccionxEmpleado (Id_plan_mejora, Codigo_empleado) VALUES
+(1, 1),  -- Juan Pérez participa en el plan de mejora 1
+(2, 2),  -- Ana Gómez participa en el plan de mejora 2
+(3, 3),  -- Carlos Sánchez participa en el plan de mejora 3
+(4, 4),  -- Lucía Fernández participa en el plan de mejora 4
+(5, 5),  -- Pedro Ramírez participa en el plan de mejora 5
+(6, 6),  -- María Torres participa en el plan de mejora 6
+(7, 7),  -- Diego Morales participa en el plan de mejora 7
+(8, 8);  -- Laura Espinoza participa en el plan de mejora 8
+
+
+-- Poblar la tabla Registros_por_Riesgos
+INSERT INTO Registros_por_Riesgos (Id_registro_riesgo, id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual) VALUES
+(1, 1, 1, 1, 1),
+(2, 2, 2, 2, 2),
+(3, 3, 3, 3, 3),
+(4, 4, 4, 4, 4),
+(5, 5, 5, 5, 5),
+(6, 6, 6, 6, 6),
+(7, 7, 7, 7, 7),
+(8, 8, 8, 8, 8);
+
+-- Poblar la tabla Registro_IPERC
+INSERT INTO Registro_IPERC (Id_reg_iperc, Id_proceso, Fecha_registro, Cant_riesgos_analizados, Id_registro_riesgo) VALUES
+(1, 1, '2022-01-02', 5, 1),
+(2, 1, '2023-12-12', 3, 2),
+(3, 2, '2024-02-01', 4, 3),
+(4, 3, '2024-03-05', 2, 4),
+(5, 3, '2024-04-10', 6, 5),
+(6, 4, '2024-05-15', 3, 6),
+(7, 5, '2024-06-20', 5, 7),
+(8, 6, '2024-07-25', 4, 8);
+
