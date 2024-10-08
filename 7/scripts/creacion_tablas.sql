@@ -144,23 +144,10 @@ CREATE TABLE Equipo_de_Soporte
     CONSTRAINT fk_almacen FOREIGN KEY (Cod_almacen) REFERENCES Almacen (Cod_almacen),
     CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
     CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado),
-<<<<<<< HEAD
     CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES ActvempleadoXOrdenTrabajo (Id_orden),
     CONSTRAINT fk_actvempleado FOREIGN KEY (Id_actvempleado) REFERENCES ActvempleadoXOrdenTrabajo (Id_actvempleado)
-=======
-    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES Orden_de_trabajo (ID_ORDEN)
 );
 
-DROP TABLE IF EXISTS EquipoSoporteXMantenimiento CASCADE;
-CREATE TABLE EquipoSoporteXMantenimiento 
-(
-    Id_eqsoportexmantto INT PRIMARY KEY,
-    Id_equipo_soporte INT,
-    Cod_act_mantto INT,
-    CONSTRAINT fk_equipo_soporte FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte (Id_equipo_soporte),
-    CONSTRAINT fk_act_mantto FOREIGN KEY (Cod_Act_mantto) REFERENCES Mantenimiento (Cod_Act_mantto)
->>>>>>> a889863fa0de2278f0b11187d9d9fb62b40d53aa
-);
 
 DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
 CREATE TABLE Identificacion_del_riesgo
