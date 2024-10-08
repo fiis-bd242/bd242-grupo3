@@ -32,11 +32,12 @@ CREATE TABLE Plan_de_mantenimiento
 (
   Codigo_plan INT NOT NULL,
   Observaciones VARCHAR(5000) NOT NULL,
+  Fecha_plan DATE NOT NULL,
   Empleado_asigna INT NOT NULL,
-  Id_criticidad INT NOT NULL,
+  Criticidad INT NOT NULL,
   PRIMARY KEY (Codigo_plan),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Codigo_empleado),
-  FOREIGN KEY (Id_criticidad) REFERENCES Criticidad(Id_criticidad)
+  FOREIGN KEY (Criticidad) REFERENCES Criticidad(Id_criticidad)
 );
 
 CREATE TABLE Actividad_empleado
@@ -50,14 +51,14 @@ CREATE TABLE Actividad_empleado
 
 CREATE TABLE Orden_de_trabajo
 (
-  Id_Orden INT NOT NULL,
+  ID_Orden INT NOT NULL,
   Fecha_Orden DATE NOT NULL,
   Descripcion VARCHAR(10000) NOT NULL,
   Empleado_asigna INT NOT NULL,
-  Id_criticidad INT NOT NULL,
-  PRIMARY KEY (Id_Orden),
+  Prioridad INT NOT NULL,
+  PRIMARY KEY (ID_Orden),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Codigo_empleado),
-  FOREIGN KEY (Id_criticidad) REFERENCES Criticidad(Id_criticidad)
+  FOREIGN KEY (Prioridad) REFERENCES Criticidad(Id_criticidad)
 );
 
 CREATE TABLE ActvempleadoXOrdenTrabajo
