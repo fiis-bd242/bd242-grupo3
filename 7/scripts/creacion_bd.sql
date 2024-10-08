@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS buenaventura;
 CREATE DATABASE buenaventura
     WITH
     OWNER = postgres

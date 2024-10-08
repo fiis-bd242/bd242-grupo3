@@ -1,9 +1,11 @@
+DROP TABLE IF EXISTS Cargo_empleado;
 CREATE TABLE Cargo_empleado 
 ( 
     Id_cargo INT PRIMARY KEY, 
     Nombre_cargo VARCHAR(50) NOT NULL 
 );
 
+DROP TABLE IF EXISTS Criticidad;
 CREATE TABLE Criticidad
 (
   Id_criticidad INT NOT NULL,
@@ -11,6 +13,7 @@ CREATE TABLE Criticidad
   PRIMARY KEY (Id_criticidad)
 );
 
+DROP TABLE IF EXISTS Empleado;
 CREATE TABLE Empleado 
 ( 
     Codigo_empleado INT PRIMARY KEY, 
@@ -28,6 +31,7 @@ CREATE TABLE Empleado
     CONSTRAINT fk_cargo_empleado FOREIGN KEY (Id_cargo) REFERENCES Cargo_empleado(Id_cargo) 
 );
 
+DROP TABLE IF EXISTS Plan_de_mantenimiento;
 CREATE TABLE Plan_de_mantenimiento
 (
   Codigo_plan INT NOT NULL,
@@ -40,6 +44,7 @@ CREATE TABLE Plan_de_mantenimiento
   FOREIGN KEY (Criticidad) REFERENCES Criticidad(Id_criticidad)
 );
 
+DROP TABLE IF EXISTS Actividad_empleado;
 CREATE TABLE Actividad_empleado
 (
   Id_actvempleado INT NOT NULL,
@@ -49,6 +54,7 @@ CREATE TABLE Actividad_empleado
   FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
 );
 
+DROP TABLE IF EXISTS Orden_de_trabajo;
 CREATE TABLE Orden_de_trabajo
 (
   ID_Orden INT NOT NULL,
@@ -61,6 +67,7 @@ CREATE TABLE Orden_de_trabajo
   FOREIGN KEY (Prioridad) REFERENCES Criticidad(Id_criticidad)
 );
 
+DROP TABLE IF EXISTS ActvempleadoXOrdenTrabajo;
 CREATE TABLE ActvempleadoXOrdenTrabajo
 (
   Id_actvempleado INT NOT NULL,
@@ -70,18 +77,21 @@ CREATE TABLE ActvempleadoXOrdenTrabajo
   FOREIGN KEY (ID_Orden) REFERENCES Orden_de_trabajo(ID_Orden)
 );
 
+DROP TABLE IF EXISTS Categoria_Almacen;
 CREATE TABLE Categoria_Almacen 
 (
     Codigo_categoria INT PRIMARY KEY,
     Nombre_categoria VARCHAR(50) NOT NULL
 );
 
+DROP TABLE IF EXISTS Estado_Almacen;
 CREATE TABLE Estado_Almacen 
 (
     Codigo_estado INT PRIMARY KEY,
     Nombre_estado VARCHAR(50) NOT NULL
 );
 
+DROP TABLE IF EXISTS Almacen;
 CREATE TABLE Almacen
 (
     Cod_almacen INT PRIMARY KEY,
@@ -95,24 +105,28 @@ CREATE TABLE Almacen
     CONSTRAINT fk_estado_almacen FOREIGN KEY (Codigo_estado) REFERENCES Estado_Almacen (Codigo_estado)
 );
 
+DROP TABLE IF EXISTS Tipo_Equipo_Soporte;
 CREATE TABLE Tipo_Equipo_Soporte
 (
   Codigo_tipo INT PRIMARY KEY,
   Nombre_tipo VARCHAR(50) NOT NULL
 );
 
+DROP TABLE IF EXISTS Disponibilidad_Equipo_Soporte;
 CREATE TABLE Disponibilidad_Equipo_Soporte 
 (
     Codigo_disponibilidad INT PRIMARY KEY,
     Nombre_disponibilidad VARCHAR(50) NOT NULL
 );
 
+DROP TABLE IF EXISTS Estado_Equipo_Soporte;
 CREATE TABLE Estado_Equipo_Soporte
 (
     Codigo_estado INT PRIMARY KEY,
     Nombre_estado VARCHAR(50) NOT NULL
 );
 
+DROP TABLE IF EXISTS Equipo_de_Soporte;
 CREATE TABLE Equipo_de_Soporte 
 (
     Id_equipo_soporte INT PRIMARY KEY,
@@ -132,6 +146,7 @@ CREATE TABLE Equipo_de_Soporte
     CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES Orden_de_trabajo (Id_cargo)
 );
 
+DROP TABLE IF EXISTS EquipoSoporteXMantenimiento;
 CREATE TABLE EquipoSoporteXMantenimiento 
 (
     Id_eqsoportexmantto INT PRIMARY KEY,
@@ -140,6 +155,7 @@ CREATE TABLE EquipoSoporteXMantenimiento
     CONSTRAINT fk_equipo_soporte FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte (Id_equipo_soporte)
 );
 
+DROP TABLE IF EXISTS Identificacion_del_riesgo;
 CREATE TABLE Identificacion_del_riesgo
 (
   Descripcion_peligro CHAR(255) NOT NULL,
@@ -148,6 +164,7 @@ CREATE TABLE Identificacion_del_riesgo
   PRIMARY KEY (Id_riesgo)
 );
 
+DROP TABLE IF EXISTS Tipos_Contacto;
 CREATE TABLE Tipos_Contacto
 (
   Id_tipo_contacto CHAR(4) NOT NULL,
@@ -155,6 +172,7 @@ CREATE TABLE Tipos_Contacto
   PRIMARY KEY (Id_tipo_contacto)
 );
 
+DROP TABLE IF EXISTS Tipos_Peligro;
 CREATE TABLE Tipos_Peligro
 (
   Id_tipo_peligro CHAR(7) NOT NULL,
@@ -162,6 +180,7 @@ CREATE TABLE Tipos_Peligro
   PRIMARY KEY (Id_tipo_peligro)
 );
 
+DROP TABLE IF EXISTS Tipo_Riesgo;
 CREATE TABLE Tipo_Riesgo
 (
   Id_tipo_riesgo CHAR(2) NOT NULL,
@@ -169,6 +188,7 @@ CREATE TABLE Tipo_Riesgo
   PRIMARY KEY (Id_tipo_riesgo)
 );
 
+DROP TABLE IF EXISTS Tipo_Medida_Control;
 CREATE TABLE Tipo_Medida_Control
 (
   Id_tipo_med_control CHAR(3) NOT NULL,
@@ -176,6 +196,7 @@ CREATE TABLE Tipo_Medida_Control
   PRIMARY KEY (Id_tipo_med_control)
 );
 
+DROP TABLE IF EXISTS Tipo_Estrategia_Control;
 CREATE TABLE Tipo_Estrategia_Control
 (
   Id_tipo_estgia_control CHAR(1) NOT NULL,
@@ -183,6 +204,7 @@ CREATE TABLE Tipo_Estrategia_Control
   PRIMARY KEY (Id_tipo_estgia_control)
 );
 
+DROP TABLE IF EXISTS Tipo_Probabilidad;
 CREATE TABLE Tipo_Probabilidad
 (
   Id_tipo_probabilidad CHAR(5) NOT NULL,
@@ -190,6 +212,7 @@ CREATE TABLE Tipo_Probabilidad
   PRIMARY KEY (Id_tipo_probabilidad)
 );
 
+DROP TABLE IF EXISTS Tipo_Severidad;
 CREATE TABLE Tipo_Severidad
 (
   Id_tipo_severidad CHAR(2) NOT NULL,
@@ -197,6 +220,7 @@ CREATE TABLE Tipo_Severidad
   PRIMARY KEY (Id_tipo_severidad)
 );
 
+DROP TABLE IF EXISTS Tipo_Q_control;
 CREATE TABLE Tipo_Q_control
 (
   Id_tipo_Qcontrol CHAR(1) NOT NULL,
@@ -204,7 +228,7 @@ CREATE TABLE Tipo_Q_control
   PRIMARY KEY (Id_tipo_Qcontrol)
 );
 
-
+DROP TABLE IF EXISTS Equipo_evaluador;
 CREATE TABLE Equipo_evaluador
 (
   Id_equipo_evaluador INT NOT NULL,
@@ -214,6 +238,7 @@ CREATE TABLE Equipo_evaluador
   FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
 );
 
+DROP TABLE IF EXISTS proceso;
 CREATE TABLE proceso
 (
   Descripcion_proceso CHAR(255) NOT NULL,
@@ -223,6 +248,7 @@ CREATE TABLE proceso
   FOREIGN KEY (Id_equipo_evaluador) REFERENCES Equipo_evaluador(Id_equipo_evaluador)
 );
 
+DROP TABLE IF EXISTS Analisis_riesgo;
 CREATE TABLE Analisis_riesgo
 (
   Afectado CHAR(255) NOT NULL,
@@ -237,6 +263,7 @@ CREATE TABLE Analisis_riesgo
   FOREIGN KEY (Id_tipo_peligro) REFERENCES Tipos_Peligro(Id_tipo_peligro)
 );
 
+DROP TABLE IF EXISTS Valoracion_del_riesgo_inicial;
 CREATE TABLE Valoracion_del_riesgo_inicial
 (
   id_valoracion_inicial INT NOT NULL,
@@ -249,6 +276,7 @@ CREATE TABLE Valoracion_del_riesgo_inicial
   FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo)
 );
 
+DROP TABLE IF EXISTS Actividades;
 CREATE TABLE Actividades
 (
   Id_actividad INT NOT NULL,
@@ -258,6 +286,7 @@ CREATE TABLE Actividades
   FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
 );
 
+DROP TABLE IF EXISTS Tareas;
 CREATE TABLE Tareas
 (
   Descripcion_tarea CHAR(255) NOT NULL,
@@ -269,6 +298,7 @@ CREATE TABLE Tareas
   FOREIGN KEY (Id_actividad) REFERENCES Actividades(Id_actividad)
 );
 
+DROP TABLE IF EXISTS Control;
 CREATE TABLE Control
 (
   Id_control INT NOT NULL,
@@ -282,6 +312,7 @@ CREATE TABLE Control
   FOREIGN KEY (Id_tipo_Qcontrol) REFERENCES Tipo_Q_control(Id_tipo_Qcontrol)
 );
 
+DROP TABLE IF EXISTS TareasXIdentRiesgo;
 CREATE TABLE TareasXIdentRiesgo
 (
   Id_tarea INT NOT NULL,
@@ -291,6 +322,7 @@ CREATE TABLE TareasXIdentRiesgo
   FOREIGN KEY (Id_riesgo) REFERENCES Identificacion_del_riesgo(Id_riesgo)
 );
 
+DROP TABLE IF EXISTS Valorizacion_del_riesgo;
 CREATE TABLE Valorizacion_del_riesgo
 (
   Id_valoracion_residual INT NOT NULL,
@@ -304,6 +336,7 @@ CREATE TABLE Valorizacion_del_riesgo
   FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo)
 );
 
+DROP TABLE IF EXISTS Plan_de_accion_de_mejora;
 CREATE TABLE Plan_de_accion_de_mejora
 (
   Accion_que CHAR(255) NOT NULL,
@@ -315,6 +348,7 @@ CREATE TABLE Plan_de_accion_de_mejora
   FOREIGN KEY (Id_valoracion_residual) REFERENCES Valorizacion_del_riesgo(Id_valoracion_residual)
 );
 
+DROP TABLE IF EXISTS PlanaccionxEmpleado;
 CREATE TABLE PlanaccionxEmpleado
 (
   id_plan_mejora INT NOT NULL,
@@ -324,6 +358,7 @@ CREATE TABLE PlanaccionxEmpleado
   FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
 );
 
+DROP TABLE IF EXISTS Registros_por_Riesgos;
 CREATE TABLE Registros_por_Riesgos
 (
   Id_registro_riesgo INT NOT NULL,
@@ -338,6 +373,7 @@ CREATE TABLE Registros_por_Riesgos
   FOREIGN KEY (Id_valoracion_residual) REFERENCES Valorizacion_del_riesgo(Id_valoracion_residual)
 );
 
+DROP TABLE IF EXISTS Registro_IPERC;
 CREATE TABLE Registro_IPERC
 (
   Fecha_registro DATE NOT NULL,
@@ -350,8 +386,7 @@ CREATE TABLE Registro_IPERC
   FOREIGN KEY (Id_registro_riesgo) REFERENCES Registros_por_Riesgos(Id_registro_riesgo)
 );
 
--- lenin:
-
+DROP TABLE IF EXISTS Tipo_maquina;
 CREATE TABLE Tipo_maquina
 (
     id_tipo_maquina CHAR(1) NOT NULL,
@@ -359,6 +394,7 @@ CREATE TABLE Tipo_maquina
     PRIMARY KEY (id_tipo_maquina)
 );
 
+DROP TABLE IF EXISTS Estado_maquina;
 CREATE TABLE Estado_maquina
 (
     id_estado CHAR(1) NOT NULL,
@@ -366,6 +402,7 @@ CREATE TABLE Estado_maquina
     PRIMARY KEY (id_estado)
 );
 
+DROP TABLE IF EXISTS Maquina;
 CREATE TABLE Maquina
 (
     Num_serie VARCHAR NOT NULL,
@@ -380,6 +417,7 @@ CREATE TABLE Maquina
     CONSTRAINT fk_estado_maquina FOREIGN KEY (id_estado) REFERENCES Estado_maquina(id_estado)
 );
 
+DROP TABLE IF EXISTS Tipo_mantenimiento;
 CREATE TABLE Tipo_mantenimiento
 (
     id_tipo_mant CHAR(2) NOT NULL,
@@ -387,6 +425,7 @@ CREATE TABLE Tipo_mantenimiento
     PRIMARY KEY (id_tipo_mant)
 );
 
+DROP TABLE IF EXISTS Mantenimiento;
 CREATE TABLE Mantenimiento
 (
     Cod_Act_mantto INT NOT NULL,
@@ -406,6 +445,7 @@ CREATE TABLE Mantenimiento
     CONSTRAINT fk_orden_mant FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant),
 );
 
+DROP TABLE IF EXISTS Auditoria;
 CREATE TABLE Auditoria
 (
     Codigo_Auditoria INT NOT NULL,
@@ -419,6 +459,7 @@ CREATE TABLE Auditoria
     CONSTRAINT fk_mant_auditoria FOREIGN KEY (Cod_Act_mantto) REFERENCES Mantenimiento (Cod_Act_mantto)
 );
 
+DROP TABLE IF EXISTS Capacitaciones;
 CREATE TABLE Capacitaciones
 (
     Codigo_Capacitacion INT NOT NULL,
@@ -430,6 +471,7 @@ CREATE TABLE Capacitaciones
     PRIMARY KEY (Codigo_Capacitacion)
 );
 
+DROP TABLE IF EXISTS EmpleadoxCapacitacion;
 CREATE TABLE EmpleadoxCapacitacion
 (
     Codigo_empleado INT NOT NULL,
