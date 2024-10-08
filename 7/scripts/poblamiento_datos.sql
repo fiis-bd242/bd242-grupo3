@@ -12,26 +12,26 @@ INSERT INTO Criticidad (Id_criticidad, Nivel) VALUES
 
 -- Poblamiento de la tabla Empleado
 INSERT INTO Empleado (Codigo_empleado, Nombre, DNI, Direccion, Estado_civil, Sexo, Fecha_Nacimiento, Fecha_ingreso, Numero_contacto, Email_contacto, Contraseña, ID_Cargo) VALUES
-(1, 'Juan Pérez', '12345678A', 'Av. Principal 123', 'Soltero', 'Masculino', '1985-03-12', '2010-01-15', '987654321', 'juan.perez@empresa.com', 'password123', 1),
-(2, 'Ana Gómez', '23456789B', 'Calle Secundaria 45', 'Casado', 'Femenino', '1990-06-25', '2012-06-20', '987123456', 'ana.gomez@empresa.com', 'password456', 2),
-(3, 'Carlos Sánchez', '34567890C', 'Jr. Terciario 678', 'Divorciado', 'Masculino', '1978-11-05', '2005-09-10', '987987654', 'carlos.sanchez@empresa.com', 'password789', 2),
-(4, 'Lucía Fernández', '45678901D', 'Av. Los Álamos 89', 'Soltero', 'Femenino', '1982-02-19', '2008-04-01', '987321654', 'lucia.fernandez@empresa.com', 'password101', 3),
-(5, 'Pedro Ramírez', '56789012E', 'Calle las Rosas 56', 'Casado', 'Masculino', '1995-09-30', '2015-03-10', '987654123', 'pedro.ramirez@empresa.com', 'password102', 1),
-(6, 'María Torres', '67890123F', 'Jr. Los Pinos 33', 'Viudo', 'Femenino', '1988-07-17', '2011-11-20', '987321987', 'maria.torres@empresa.com', 'password103', 2),
-(7, 'Diego Morales', '78901234G', 'Av. Los Cedros 12', 'Soltero', 'Masculino', '1992-05-25', '2014-05-05', '987987123', 'diego.morales@empresa.com', 'password104', 3),
-(8, 'Laura Espinoza', '89012345H', 'Calle el Sol 77', 'Casado', 'Femenino', '1981-12-11', '2009-09-30', '987456321', 'laura.espinoza@empresa.com', 'password105', 2),
-(9, 'Raúl Mendoza', '90123456I', 'Jr. Las Palmeras 9', 'Soltero', 'Masculino', '1996-01-15', '2016-07-15', '987123789', 'raul.mendoza@empresa.com', 'password106', 1),
-(10, 'Elena Castillo', '12345679J', 'Av. Los Laureles 44', 'Casado', 'Femenino', '1983-04-10', '2010-10-25', '987654987', 'elena.castillo@empresa.com', 'password107', 3),
-(11, 'Miguel Ángel', '23456780K', 'Calle Nueva 101', 'Soltero', 'Masculino', '1987-08-22', '2013-03-18', '987654322', 'miguel.angel@empresa.com', 'password108', 2),
-(12, 'Sofía López', '34567891L', 'Av. Central 202', 'Casada', 'Femenino', '1991-11-30', '2014-07-12', '987654323', 'sofia.lopez@empresa.com', 'password109', 3),
-(13, 'Andrés Ruiz', '45678902M', 'Jr. El Mirador 303', 'Divorciado', 'Masculino', '1984-05-14', '2009-02-20', '987654324', 'andres.ruiz@empresa.com', 'password110', 1),
-(14, 'Valentina Díaz', '56789013N', 'Calle Las Flores 404', 'Soltera', 'Femenino', '1993-09-09', '2015-08-25', '987654325', 'valentina.diaz@empresa.com', 'password111', 2),
-(15, 'Jorge Herrera', '67890124O', 'Av. Las Palmas 505', 'Casado', 'Masculino', '1980-12-01', '2007-06-30', '987654326', 'jorge.herrera@empresa.com', 'password112', 3),
-(16, 'Isabella Morales', '78901235P', 'Calle San Juan 606', 'Soltera', 'Femenino', '1994-04-18', '2016-09-14', '987654327', 'isabella.morales@empresa.com', 'password113', 1),
-(17, 'Luis Castillo', '89012346Q', 'Jr. Las Lomas 707', 'Viudo', 'Masculino', '1986-07-07', '2012-12-05', '987654328', 'luis.castillo@empresa.com', 'password114', 2),
-(18, 'Camila Rojas', '90123457R', 'Av. El Sol 808', 'Casada', 'Femenino', '1992-10-20', '2013-11-22', '987654329', 'camila.rojas@empresa.com', 'password115', 3),
-(19, 'Fernando Vega', '12345670S', 'Calle Luna 909', 'Soltero', 'Masculino', '1989-02-28', '2014-04-18', '987654330', 'fernando.vega@empresa.com', 'password116', 1),
-(20, 'Gabriela Torres', '23456781T', 'Jr. Los Sauces 1010', 'Casada', 'Femenino', '1995-06-05', '2017-01-10', '987654331', 'gabriela.torres@empresa.com', 'password117', 2);
+(1, 'Juan Pérez', '12345678', 'Av. Principal 123', 'Soltero', 'Masculino', '1985-03-12', '2010-01-15', '987654321', 'juan.perez@empresa.com', 'password123', 1),
+(2, 'Ana Gómez', '23456789', 'Calle Secundaria 45', 'Casado', 'Femenino', '1990-06-25', '2012-06-20', '987123456', 'ana.gomez@empresa.com', 'password456', 2),
+(3, 'Carlos Sánchez', '34567890', 'Jr. Terciario 678', 'Divorciado', 'Masculino', '1978-11-05', '2005-09-10', '987987654', 'carlos.sanchez@empresa.com', 'password789', 2),
+(4, 'Lucía Fernández', '45678901', 'Av. Los Álamos 89', 'Soltero', 'Femenino', '1982-02-19', '2008-04-01', '987321654', 'lucia.fernandez@empresa.com', 'password101', 3),
+(5, 'Pedro Ramírez', '56789012', 'Calle las Rosas 56', 'Casado', 'Masculino', '1995-09-30', '2015-03-10', '987654123', 'pedro.ramirez@empresa.com', 'password102', 1),
+(6, 'María Torres', '67890123', 'Jr. Los Pinos 33', 'Viudo', 'Femenino', '1988-07-17', '2011-11-20', '987321987', 'maria.torres@empresa.com', 'password103', 2),
+(7, 'Diego Morales', '78901234', 'Av. Los Cedros 12', 'Soltero', 'Masculino', '1992-05-25', '2014-05-05', '987987123', 'diego.morales@empresa.com', 'password104', 3),
+(8, 'Laura Espinoza', '89012345', 'Calle el Sol 77', 'Casado', 'Femenino', '1981-12-11', '2009-09-30', '987456321', 'laura.espinoza@empresa.com', 'password105', 2),
+(9, 'Raúl Mendoza', '90123456', 'Jr. Las Palmeras 9', 'Soltero', 'Masculino', '1996-01-15', '2016-07-15', '987123789', 'raul.mendoza@empresa.com', 'password106', 1),
+(10, 'Elena Castillo', '12345679', 'Av. Los Laureles 44', 'Casado', 'Femenino', '1983-04-10', '2010-10-25', '987654987', 'elena.castillo@empresa.com', 'password107', 3),
+(11, 'Miguel Ángel', '23456780', 'Calle Nueva 101', 'Soltero', 'Masculino', '1987-08-22', '2013-03-18', '987654322', 'miguel.angel@empresa.com', 'password108', 2),
+(12, 'Sofía López', '34567891', 'Av. Central 202', 'Casada', 'Femenino', '1991-11-30', '2014-07-12', '987654323', 'sofia.lopez@empresa.com', 'password109', 3),
+(13, 'Andrés Ruiz', '45678902', 'Jr. El Mirador 303', 'Divorciado', 'Masculino', '1984-05-14', '2009-02-20', '987654324', 'andres.ruiz@empresa.com', 'password110', 1),
+(14, 'Valentina Díaz', '56789013', 'Calle Las Flores 404', 'Soltera', 'Femenino', '1993-09-09', '2015-08-25', '987654325', 'valentina.diaz@empresa.com', 'password111', 2),
+(15, 'Jorge Herrera', '67890124', 'Av. Las Palmas 505', 'Casado', 'Masculino', '1980-12-01', '2007-06-30', '987654326', 'jorge.herrera@empresa.com', 'password112', 3),
+(16, 'Isabella Morales', '78901235', 'Calle San Juan 606', 'Soltera', 'Femenino', '1994-04-18', '2016-09-14', '987654327', 'isabella.morales@empresa.com', 'password113', 1),
+(17, 'Luis Castillo', '89012346', 'Jr. Las Lomas 707', 'Viudo', 'Masculino', '1986-07-07', '2012-12-05', '987654328', 'luis.castillo@empresa.com', 'password114', 2),
+(18, 'Camila Rojas', '90123457', 'Av. El Sol 808', 'Casada', 'Femenino', '1992-10-20', '2013-11-22', '987654329', 'camila.rojas@empresa.com', 'password115', 3),
+(19, 'Fernando Vega', '12345670', 'Calle Luna 909', 'Soltero', 'Masculino', '1989-02-28', '2014-04-18', '987654330', 'fernando.vega@empresa.com', 'password116', 1),
+(20, 'Gabriela Torres', '23456781', 'Jr. Los Sauces 1010', 'Casada', 'Femenino', '1995-06-05', '2017-01-10', '987654331', 'gabriela.torres@empresa.com', 'password117', 2);
 
 -- Poblamiento de la tabla Plan_de_mantenimiento
 INSERT INTO Plan_de_mantenimiento (Codigo_plan, Observaciones, Empleado_asigna, Id_criticidad) VALUES
@@ -217,8 +217,8 @@ VALUES
 (4, 10, 1, 2, 'Lugar 4', 300);
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
-insert into tipo_equipo_soporte  (Codigo_tipo, nombre_tipo)
-values
+INSERT INTO tipo_equipo_soporte  (Codigo_tipo, nombre_tipo)
+VALUES
 (1, 'Equipo de vigilancia y monitorio'),
 (2, 'Equipo de comunicación'),
 (3, 'EPP'),
@@ -240,32 +240,18 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Codigo_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Cod_almacen, Codigo_disponibilidad, Codigo_estado) 
+INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Codigo_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Cod_almacen, Codigo_disponibilidad, Codigo_estado, Id_actvempleado, Id_orden) 
 VALUES 
-(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 1, 1),
-(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 1, 3),
-(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4),
-(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 1, 1),
-(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 1, 1),
-(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 1, 1),
-(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1),
-(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta',500,3,1,1),
-(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales',400,3,1,2),
-(10, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento',1000,3,1,2);
-
--- Poblamiento de la tabla EquipoSoporteXMatenmiento
-INSERT INTO EquipoSoporteXMantenimiento (Id_eqsoportexmantto, Id_equipo_soporte, Cod_act_mantto) 
-VALUES 
-(1, 8, 1),
-(2, 9, 1),
-(3, 3, 1),
-(4, 1, 2),
-(5, 3, 2),
-(6, 4, 2),
-(7, 9, 3),
-(8, 1, 3),
-(9, 4, 4),
-(10, 5, 4);
+(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 1, 1, 1, 1),
+(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 1, 3, 10, 1),
+(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4, 20, 1),
+(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 1, 1, 2, 2),
+(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 1, 1, 11 , 2),
+(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 1, 1, NULL, NULL),
+(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1, NULL, NULL),
+(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta', 500, 3, 1, 1, NULL, NULL),
+(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales', 400, 3, 1, 2, NULL, NULL),
+(10, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2, NULL, NULL);
 
 INSERT INTO Tipo_Severidad (Id_tipo_severidad, Nombre_tipo_severidad) VALUES
 ('CA', 'Catastrófico'),
