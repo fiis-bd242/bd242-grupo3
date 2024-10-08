@@ -138,14 +138,80 @@ CREATE TABLE Equipo_de_Soporte
     Cod_almacen INT,
     Codigo_disponibilidad INT,
     Codigo_estado INT,
-    Id_actvempleado INT NULL,
-    Id_orden INT NULL,
+    Id_orden INT,
     CONSTRAINT fk_tipo FOREIGN KEY (Codigo_tipo) REFERENCES Tipo_Equipo_Soporte (Codigo_tipo),
     CONSTRAINT fk_almacen FOREIGN KEY (Cod_almacen) REFERENCES Almacen (Cod_almacen),
     CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
     CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado),
-    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES ActvempleadoXOrdenTrabajo (Id_orden),
-    CONSTRAINT fk_actvempleado FOREIGN KEY (Id_actvempleado) REFERENCES ActvempleadoXOrdenTrabajo (Id_actvempleado)
+    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES Orden_de_trabajo (ID_ORDEN)
+);
+DROP TABLE IF EXISTS Tipo_maquina CASCADE;
+CREATE TABLE Tipo_maquina
+(
+    id_tipo_maquina CHAR(1) NOT NULL,
+    nombre_tipo VARCHAR(30),
+    PRIMARY KEY (id_tipo_maquina)
+);
+
+DROP TABLE IF EXISTS Estado_maquina CASCADE;
+CREATE TABLE Estado_maquina
+(
+    id_estado CHAR(1) NOT NULL,
+    nombre_estado VARCHAR(30),
+    PRIMARY KEY (id_estado)
+);
+
+DROP TABLE IF EXISTS Maquina CASCADE;
+CREATE TABLE Maquina
+(
+    Num_serie VARCHAR NOT NULL,
+    Fecha_ultima_inspeccion DATE NOT NULL,
+    Fecha_adquisicion DATE NOT NULL,
+    Modelo VARCHAR NOT NULL,
+    Marca VARCHAR NOT NULL,
+    id_tipo_maquina CHAR(1) NOT NULL, 
+    id_estado CHAR(1) NOT NULL,
+    PRIMARY KEY (Num_serie),
+    CONSTRAINT fk_tipo_maquina FOREIGN KEY (id_tipo_maquina) REFERENCES Tipo_maquina(id_tipo_maquina),
+    CONSTRAINT fk_estado_maquina FOREIGN KEY (id_estado) REFERENCES Estado_maquina(id_estado)
+);
+
+DROP TABLE IF EXISTS Tipo_mantenimiento CASCADE;
+CREATE TABLE Tipo_mantenimiento
+(
+    id_tipo_mant CHAR(2) NOT NULL,
+    nombre_tipo_mant VARCHAR(30),
+    PRIMARY KEY (id_tipo_mant)
+);
+
+DROP TABLE IF EXISTS Mantenimiento CASCADE;
+CREATE TABLE Mantenimiento
+(
+    Cod_Act_mantto INT NOT NULL,
+    Descripcion VARCHAR(300),
+    Tarea VARCHAR(40),
+    Peligros VARCHAR(30), 
+    Fecha_inicio_programado DATE, 
+    Fecha_fin_programado DATE, 
+    ID_Orden INT NOT NULL,
+    Codigo_plan INT NOT NULL,
+    Num_serie VARCHAR NOT NULL,
+    id_tipo_mant CHAR(2) NOT NULL,
+    PRIMARY KEY (Cod_Act_mantto),
+    CONSTRAINT fk_orden_mant FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo (Id_Orden),
+    CONSTRAINT fk_plan_mant FOREIGN KEY (Codigo_plan) REFERENCES Plan_de_mantenimiento (Codigo_plan),
+    CONSTRAINT fk_maquina_mant FOREIGN KEY (Num_serie) REFERENCES Maquina (Num_serie),
+    CONSTRAINT fk_tipo_mant FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant)
+);
+
+DROP TABLE IF EXISTS EquipoSoporteXMantenimiento CASCADE;
+CREATE TABLE EquipoSoporteXMantenimiento 
+(
+    Id_eqsoportexmantto INT PRIMARY KEY,
+    Id_equipo_soporte INT,
+    Cod_act_mantto INT,
+    CONSTRAINT fk_equipo_soporte FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte (Id_equipo_soporte),
+    CONSTRAINT fk_act_mantto FOREIGN KEY (Cod_Act_mantto) REFERENCES Mantenimiento (Cod_Act_mantto)
 );
 
 DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
@@ -379,64 +445,7 @@ CREATE TABLE Registro_IPERC
   FOREIGN KEY (Id_registro_riesgo) REFERENCES Registros_por_Riesgos(Id_registro_riesgo)
 );
 
-DROP TABLE IF EXISTS Tipo_maquina CASCADE;
-CREATE TABLE Tipo_maquina
-(
-    id_tipo_maquina CHAR(1) NOT NULL,
-    nombre_tipo VARCHAR(30),
-    PRIMARY KEY (id_tipo_maquina)
-);
 
-DROP TABLE IF EXISTS Estado_maquina CASCADE;
-CREATE TABLE Estado_maquina
-(
-    id_estado CHAR(1) NOT NULL,
-    nombre_estado VARCHAR(30),
-    PRIMARY KEY (id_estado)
-);
-
-DROP TABLE IF EXISTS Maquina CASCADE;
-CREATE TABLE Maquina
-(
-    Num_serie VARCHAR NOT NULL,
-    Fecha_ultima_inspeccion DATE NOT NULL,
-    Fecha_adquisicion DATE NOT NULL,
-    Modelo VARCHAR NOT NULL,
-    Marca VARCHAR NOT NULL,
-    id_tipo_maquina CHAR(1) NOT NULL, 
-    id_estado CHAR(1) NOT NULL,
-    PRIMARY KEY (Num_serie),
-    CONSTRAINT fk_tipo_maquina FOREIGN KEY (id_tipo_maquina) REFERENCES Tipo_maquina(id_tipo_maquina),
-    CONSTRAINT fk_estado_maquina FOREIGN KEY (id_estado) REFERENCES Estado_maquina(id_estado)
-);
-
-DROP TABLE IF EXISTS Tipo_mantenimiento CASCADE;
-CREATE TABLE Tipo_mantenimiento
-(
-    id_tipo_mant CHAR(2) NOT NULL,
-    nombre_tipo_mant VARCHAR(30),
-    PRIMARY KEY (id_tipo_mant)
-);
-
-DROP TABLE IF EXISTS Mantenimiento CASCADE;
-CREATE TABLE Mantenimiento
-(
-    Cod_Act_mantto INT NOT NULL,
-    Descripcion VARCHAR(300),
-    Tarea VARCHAR(40),
-    Peligros VARCHAR(30), 
-    Fecha_inicio_programado DATE, 
-    Fecha_fin_programado DATE, 
-    ID_Orden INT NOT NULL,
-    Codigo_plan INT NOT NULL,
-    Num_serie VARCHAR NOT NULL,
-    id_tipo_mant CHAR(2) NOT NULL,
-    PRIMARY KEY (Cod_Act_mantto),
-    CONSTRAINT fk_orden_mant FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo (Id_Orden),
-    CONSTRAINT fk_plan_mant FOREIGN KEY (Codigo_plan) REFERENCES Plan_de_mantenimiento (Codigo_plan),
-    CONSTRAINT fk_maquina_mant FOREIGN KEY (Num_serie) REFERENCES Maquina (Num_serie),
-    CONSTRAINT fk_tipo_mant FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant)
-);
 
 DROP TABLE IF EXISTS Auditoria CASCADE;
 CREATE TABLE Auditoria
@@ -473,4 +482,70 @@ CREATE TABLE EmpleadoxCapacitacion
     CONSTRAINT fk_empleado_capacitacion_2 FOREIGN KEY (Codigo_Capacitacion) REFERENCES Capacitaciones (Codigo_Capacitacion)
 );
 
+
+DROP TABLE IF EXISTS Reportes CASCADE;
+CREATE TABLE Reportes
+(
+  ID_Reporte INT NOT NULL,
+  Fecha_reporte DATE NOT NULL,
+  Estado INT NOT NULL CHECK (Estado IN (1, 2, 3)),
+  Comentarios TEXT,
+  Supervisor_id INT NOT NULL,
+  PRIMARY KEY (ID_Reporte),
+  FOREIGN KEY (Supervisor_id) REFERENCES Empleado(Codigo_empleado)
+);
+
+DROP TABLE IF EXISTS Registro CASCADE;
+CREATE TABLE Registro
+(
+  Codigo_registro INT NOT NULL,
+  Fecha_registro DATE NOT NULL,
+  Fecha_inicial DATE NOT NULL,
+  Duracion FLOAT NOT NULL,
+  Codigo_empleado INT NOT NULL,
+  mantenimiento_id INT NOT NULL,
+  Costos NUMERIC(10, 2) CHECK (Costos >= 0),
+  Observaciones CHAR(255),
+  PRIMARY KEY (Codigo_registro),
+  FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado),
+  FOREIGN KEY (mantenimiento_id) REFERENCES Mantenimiento(Cod_Act_mantto)
+);
+
+DROP TABLE IF EXISTS Notificaciones CASCADE;
+CREATE TABLE Notificaciones
+(
+  ID_Notificacion INT NOT NULL,
+  Fecha_notificacion DATE NOT NULL,
+  Mensaje TEXT NOT NULL,
+  Remitente INT NOT NULL,
+  Destinatario INT NOT NULL,
+  Registro_id INT NOT NULL,
+  Reporte_id INT NOT NULL,
+  PRIMARY KEY (ID_Notificacion),
+  FOREIGN KEY (Registro_id) REFERENCES Registro(Codigo_registro),
+  FOREIGN KEY (Reporte_id) REFERENCES Reportes(ID_Reporte),
+  FOREIGN KEY (Remitente) REFERENCES Empleado(Codigo_empleado),
+  FOREIGN KEY (Destinatario) REFERENCES Empleado(Codigo_empleado)
+);
+
+DROP TABLE IF EXISTS EstadoReporte CASCADE;
+CREATE TABLE EstadoReporte
+(
+  Codigo_estado INT NOT NULL,
+  Estado TEXT NOT NULL,
+  PRIMARY KEY (Codigo_estado)
+);
+
+DROP TABLE IF EXISTS AnalisisReporte CASCADE;
+CREATE TABLE AnalisisReporte
+(
+  ID_Analisis INT NOT NULL,
+  Reporte_id INT NOT NULL,
+  Fecha_analisis DATE NOT NULL,
+  Analisis TEXT NOT NULL,
+  Supervisor INT NOT NULL,
+  PRIMARY KEY (ID_Analisis),
+  FOREIGN KEY (Reporte_id) REFERENCES Reportes(ID_Reporte),
+  FOREIGN KEY (Supervisor) REFERENCES Empleado(Codigo_empleado)
+);
     
