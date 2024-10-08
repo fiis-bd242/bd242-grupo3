@@ -543,7 +543,7 @@ CREATE TABLE AnalisisReporte
   Reporte_id INT NOT NULL,
   Fecha_analisis DATE NOT NULL,
   Analisis TEXT NOT NULL,
-  Supervisor INT NOT NULL,
+  Supervisor_id INT NOT NULL,
   PRIMARY KEY (ID_Analisis),
   FOREIGN KEY (Reporte_id) REFERENCES Reportes(ID_Reporte),
   FOREIGN KEY (Supervisor) REFERENCES Empleado(Codigo_empleado)

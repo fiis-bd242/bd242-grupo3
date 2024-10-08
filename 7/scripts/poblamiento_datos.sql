@@ -648,3 +648,32 @@ VALUES
 (8, 10), (9, 10), (10, 10);
 
 
+-- EstadoReporte
+INSERT INTO EstadoReporte (Codigo_estado, Estado) VALUES 
+(1, 'Pendiente'),
+(2, 'En Progreso'),
+(3, 'Cerrado');
+
+-- Reportes
+INSERT INTO Reportes (ID_Reporte, Fecha_reporte, Estado, Comentarios, Supervisor_id) VALUES 
+(1, '2024-09-15', 1, 'Revisión necesaria', 1),
+(2, '2024-09-16', 2, 'En espera de información adicional', 2),
+(3, '2024-09-17', 3, 'Problema resuelto', 3);
+
+-- Registro
+INSERT INTO Registro (Codigo_registro, Fecha_registro, Fecha_inicial, Duracion, Codigo_empleado, mantenimiento_id, Costos, Observaciones) VALUES 
+(1, '2024-09-15', '2024-09-14', 2.5, 1, 1, 150.00, 'Reparación de caldera'),
+(2, '2024-09-16', '2024-09-15', 3.0, 2, 2, 200.00, 'Mantenimiento preventivo'),
+(3, '2024-09-17', '2024-09-16', 1.5, 3, 3, 75.00, 'Cambio de filtros');
+
+-- Notificaciones
+INSERT INTO Notificaciones (ID_Notificacion, Fecha_notificacion, Mensaje, Remitente, Destinatario, Registro_id, Reporte_id) VALUES 
+(1, '2024-09-15', 'Se ha creado un nuevo reporte.', 1, 2, 1, 1),
+(2, '2024-09-16', 'Actualización en el estado del reporte.', 2, 3, 2, 2),
+(3, '2024-09-17', 'El reporte ha sido cerrado.', 3, 1, 3, 3);
+
+-- AnalisisReporte
+INSERT INTO AnalisisReporte (ID_Analisis, Reporte_id, Fecha_analisis, Analisis, Supervisor_id) VALUES 
+(1, 1, '2024-09-16', 'Se requiere más información.', 1),
+(2, 2, '2024-09-17', 'El problema fue analizado y solucionado.', 2),
+(3, 3, '2024-09-18', 'Todo en orden.', 3);
