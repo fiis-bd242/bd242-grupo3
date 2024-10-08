@@ -650,30 +650,58 @@ VALUES
 
 -- EstadoReporte
 INSERT INTO EstadoReporte (Codigo_estado, Estado) VALUES 
-(1, 'Pendiente'),
-(2, 'En Progreso'),
-(3, 'Cerrado');
+(1, 'No Verificado'),
+(2, 'Verificado'),
+(3, 'Notificado');
 
 -- Reportes
 INSERT INTO Reportes (ID_Reporte, Fecha_reporte, Estado, Comentarios, Supervisor_id) VALUES 
 (1, '2024-09-15', 1, 'Revisión necesaria', 1),
-(2, '2024-09-16', 2, 'En espera de información adicional', 2),
-(3, '2024-09-17', 3, 'Problema resuelto', 3);
+(2, '2024-09-16', 2, 'En espera de información adicional', 1),
+(3, '2024-09-17', 3, 'Problema resuelto', 1),
+(4, '2024-09-18', 1, 'Requiere seguimiento', 2),
+(5, '2024-09-19', 2, 'Información incompleta', 2),
+(6, '2024-09-20', 3, 'Cierre exitoso', 2),
+(7, '2024-09-21', 1, 'Consulta de mantenimiento', 3),
+(8, '2024-09-22', 2, 'Pendiente de revisión', 3),
+(9, '2024-09-23', 3, 'Finalizado sin incidencias', 3),
+(10, '2024-09-24', 1, 'Se requiere atención urgente', 1);
 
 -- Registro
 INSERT INTO Registro (Codigo_registro, Fecha_registro, Fecha_inicial, Duracion, Codigo_empleado, mantenimiento_id, Costos, Observaciones) VALUES 
 (1, '2024-09-15', '2024-09-14', 2.5, 1, 1, 150.00, 'Reparación de caldera'),
-(2, '2024-09-16', '2024-09-15', 3.0, 2, 2, 200.00, 'Mantenimiento preventivo'),
-(3, '2024-09-17', '2024-09-16', 1.5, 3, 3, 75.00, 'Cambio de filtros');
+(2, '2024-09-16', '2024-09-15', 3.0, 1, 2, 200.00, 'Mantenimiento preventivo'),
+(3, '2024-09-17', '2024-09-16', 1.5, 2, 3, 75.00, 'Cambio de filtros'),
+(4, '2024-09-18', '2024-09-17', 4.0, 2, 1, 300.00, 'Reparación de válvulas'),
+(5, '2024-09-19', '2024-09-18', 2.0, 3, 2, 100.00, 'Mantenimiento general'),
+(6, '2024-09-20', '2024-09-19', 1.0, 3, 3, 50.00, 'Inspección de equipos'),
+(7, '2024-09-21', '2024-09-20', 3.5, 1, 1, 180.00, 'Instalación de nuevos sistemas'),
+(8, '2024-09-22', '2024-09-21', 2.2, 2, 2, 120.00, 'Mantenimiento correctivo'),
+(9, '2024-09-23', '2024-09-22', 5.0, 3, 3, 250.00, 'Actualización de software'),
+(10, '2024-09-24', '2024-09-23', 2.8, 1, 1, 130.00, 'Reparación de fugas');
 
 -- Notificaciones
 INSERT INTO Notificaciones (ID_Notificacion, Fecha_notificacion, Mensaje, Remitente, Destinatario, Registro_id, Reporte_id) VALUES 
 (1, '2024-09-15', 'Se ha creado un nuevo reporte.', 1, 2, 1, 1),
-(2, '2024-09-16', 'Actualización en el estado del reporte.', 2, 3, 2, 2),
-(3, '2024-09-17', 'El reporte ha sido cerrado.', 3, 1, 3, 3);
+(2, '2024-09-16', 'Actualización en el estado del reporte.', 1, 3, 2, 2),
+(3, '2024-09-17', 'El reporte ha sido cerrado.', 2, 1, 3, 3),
+(4, '2024-09-18', 'Nuevo registro de mantenimiento.', 1, 2, 4, 4),
+(5, '2024-09-19', 'Requiere revisión.', 2, 3, 5, 5),
+(6, '2024-09-20', 'Se ha actualizado el registro.', 3, 1, 6, 6),
+(7, '2024-09-21', 'Notificación de mantenimiento programado.', 1, 2, 7, 7),
+(8, '2024-09-22', 'Se ha cerrado el registro.', 2, 3, 8, 8),
+(9, '2024-09-23', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9),
+(10, '2024-09-24', 'El registro ha sido actualizado.', 1, 2, 10, 10);
 
 -- AnalisisReporte
 INSERT INTO AnalisisReporte (ID_Analisis, Reporte_id, Fecha_analisis, Analisis, Supervisor_id) VALUES 
 (1, 1, '2024-09-16', 'Se requiere más información.', 1),
-(2, 2, '2024-09-17', 'El problema fue analizado y solucionado.', 2),
-(3, 3, '2024-09-18', 'Todo en orden.', 3);
+(2, 2, '2024-09-17', 'El problema fue analizado y solucionado.', 1),
+(3, 3, '2024-09-18', 'Todo en orden.', 2),
+(4, 4, '2024-09-19', 'Análisis de mantenimiento completo.', 2),
+(5, 5, '2024-09-20', 'Pendiente de revisión final.', 3),
+(6, 6, '2024-09-21', 'Se observan algunas irregularidades.', 1),
+(7, 7, '2024-09-22', 'Mantenimiento exitoso.', 1),
+(8, 8, '2024-09-23', 'Análisis de seguimiento requerido.', 2),
+(9, 9, '2024-09-24', 'El reporte está completo.', 3),
+(10, 10, '2024-09-25', 'Revisar el próximo mantenimiento.', 1);
