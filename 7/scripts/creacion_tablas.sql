@@ -239,7 +239,7 @@ DROP TABLE IF EXISTS Tipo_maquina CASCADE;
 CREATE TABLE Tipo_maquina
 (
     id_tipo_maquina CHAR(1) NOT NULL,
-    nombre_tipo VARCHAR(30),
+    nombre_tipo VARCHAR(300),
     PRIMARY KEY (id_tipo_maquina)
 );
 
@@ -247,7 +247,7 @@ DROP TABLE IF EXISTS Estado_maquina CASCADE;
 CREATE TABLE Estado_maquina
 (
     id_estado CHAR(1) NOT NULL,
-    nombre_estado VARCHAR(30),
+    nombre_estado VARCHAR(300),
     PRIMARY KEY (id_estado)
 );
 
@@ -270,7 +270,7 @@ DROP TABLE IF EXISTS Tipo_mantenimiento CASCADE;
 CREATE TABLE Tipo_mantenimiento
 (
     id_tipo_mant CHAR(2) NOT NULL,
-    nombre_tipo_mant VARCHAR(30),
+    nombre_tipo_mant VARCHAR(300),
     PRIMARY KEY (id_tipo_mant)
 );
 
@@ -278,9 +278,9 @@ DROP TABLE IF EXISTS Mantenimiento CASCADE;
 CREATE TABLE Mantenimiento
 (
     Cod_Act_mantto INT NOT NULL,
-    Descripcion VARCHAR(300),
-    Tarea VARCHAR(40),
-    Peligros VARCHAR(30), 
+    Descripcion VARCHAR(1000),
+    Tarea VARCHAR(1000),
+    Peligros VARCHAR(1000), 
     Fecha_inicio_programado DATE, 
     Fecha_fin_programado DATE, 
     ID_Orden INT NOT NULL,
@@ -564,10 +564,10 @@ CREATE TABLE Auditoria
     Codigo_Auditoria INT NOT NULL,
     Cod_Act_mantto INT NOT NULL,
     Fecha_auditoria DATE,
-    ubi_auditoria VARCHAR(200),
-    resp_auditoria VARCHAR(64),
-    Descripcion VARCHAR(300),
-    objetivo VARCHAR(200),
+    ubi_auditoria VARCHAR(2000),
+    resp_auditoria VARCHAR(1000),
+    Descripcion VARCHAR(3000),
+    objetivo VARCHAR(2000),
     PRIMARY KEY (Codigo_Auditoria),
     CONSTRAINT fk_mant_auditoria FOREIGN KEY (Cod_Act_mantto) REFERENCES Mantenimiento (Cod_Act_mantto)
 );
@@ -579,8 +579,8 @@ CREATE TABLE Capacitaciones
     Fecha_Capacitacion DATE,
     Descripcion VARCHAR(1000),
     Duracion FLOAT,
-    Instructor VARCHAR(200),
-    Evaluador VARCHAR(200),
+    Instructor VARCHAR(20000),
+    Evaluador VARCHAR(20000),
     PRIMARY KEY (Codigo_Capacitacion)
 );
 
