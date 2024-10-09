@@ -5,13 +5,13 @@ CREATE TABLE Cargo_empleado
     Nombre_cargo VARCHAR(50) NOT NULL 
 );
 
-<<<<<<< HEAD
 DROP TABLE IF EXISTS Acceso_empleado CASCADE;
 CREATE TABLE Acceso_empleado
 (
     Cod_acceso INT PRIMARY KEY,
     Nombre_acceso VARCHAR(50) NOT NULL
-=======
+);
+
 DROP TABLE IF EXISTS Proveedor CASCADE;
 CREATE TABLE Proveedor
 (
@@ -40,7 +40,6 @@ CREATE TABLE Estado
   Cod_estad CHAR(2) NOT NULL,
   Tipo_estad VARCHAR(255) NOT NULL,
   PRIMARY KEY (Cod_estad)
->>>>>>> a17888288760a8a63faf58de5e7030d437896c81
 );
 
 DROP TABLE IF EXISTS Criticidad CASCADE;
@@ -221,19 +220,21 @@ CREATE TABLE Equipo_de_Soporte
 (
     Id_equipo_soporte INT PRIMARY KEY,
     Nombre_equipo_soporte VARCHAR(100) NOT NULL,
-    Codigo_tipo INT,
     Fecha_adquisicion DATE,
     Descripcion VARCHAR(255),
     Horas_uso INT,
     Cod_almacen INT,
-    Codigo_disponibilidad INT,
     Codigo_estado INT,
-    Id_orden INT,
+    Codigo_disponibilidad INT,
+    Codigo_tipo INT,
+    Cod_Act_mantto INT NULL,
+    Id_orden INT NULL,
     CONSTRAINT fk_tipo FOREIGN KEY (Codigo_tipo) REFERENCES Tipo_Equipo_Soporte (Codigo_tipo),
     CONSTRAINT fk_almacen FOREIGN KEY (Cod_almacen) REFERENCES Almacen (Cod_almacen),
     CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
     CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado),
-    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES Orden_de_trabajo (ID_ORDEN)
+    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES ActvempleadoXOrdenTrabajo (Id_orden),
+    CONSTRAINT fk_act_mantto FOREIGN KEY (Cod_Act_mantto) REFERENCES ActvempleadoXOrdenTrabajo (Cod_Act_mantto)
 );
 DROP TABLE IF EXISTS Tipo_maquina CASCADE;
 CREATE TABLE Tipo_maquina
