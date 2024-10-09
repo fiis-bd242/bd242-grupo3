@@ -676,6 +676,13 @@ CREATE TABLE Estado_Sesion (
     Descripcion VARCHAR(255) NOT NULL
 );
 
+
+DROP TABLE IF EXISTS Estado_autenticador CASCADE;
+CREATE TABLE Estado_autenticador (
+    Codigo_autenticacion INT PRIMARY KEY,
+    Descripcion VARCHAR(50) NOT NULL
+);
+
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
 CREATE TABLE Autenticacion_en_2_pasos (
     ID_Autenticacion INT PRIMARY KEY,
@@ -708,12 +715,6 @@ CREATE TABLE Sesion_Empleado (
     FOREIGN KEY (Codigo_Empleado) REFERENCES Empleado(Codigo_Empleado),
     FOREIGN KEY (Estado_Sesion) REFERENCES Estado_Sesion(Codigo_Estado_E),
     FOREIGN KEY (Cargo) REFERENCES Tiempo_max_sesion(Cargo)
-);
-
-DROP TABLE IF EXISTS Estado_autenticador CASCADE;
-CREATE TABLE Estado_autenticador (
-    Codigo_autenticacion INT PRIMARY KEY,
-    Descripcion VARCHAR(50) NOT NULL
 );
 
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
