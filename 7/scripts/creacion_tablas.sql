@@ -5,6 +5,13 @@ CREATE TABLE Cargo_empleado
     Nombre_cargo VARCHAR(50) NOT NULL 
 );
 
+DROP TABLE IF EXISTS Acceso_empleado CASCADE;
+CREATE TABLE Acceso_empleado
+(
+    Cod_acceso INT PRIMARY KEY,
+    Nombre_acceso VARCHAR(50) NOT NULL
+);
+
 DROP TABLE IF EXISTS Criticidad CASCADE;
 CREATE TABLE Criticidad
 (
@@ -28,7 +35,9 @@ CREATE TABLE Empleado
     Email_contacto VARCHAR(100), 
     Contraseña VARCHAR(255), 
     Id_cargo INT, 
-    CONSTRAINT fk_cargo_empleado FOREIGN KEY (Id_cargo) REFERENCES Cargo_empleado(Id_cargo) 
+    Cod_acceso INT,
+    CONSTRAINT fk_cargo_empleado FOREIGN KEY (Id_cargo) REFERENCES Cargo_empleado(Id_cargo),
+    CONSTRAINT fk_acceso_empleado FOREIGN KEY (Cod_acceso) REFERENCES Acceso_empleado(Cod_acceso)
 );
 
 DROP TABLE IF EXISTS Plan_de_mantenimiento CASCADE;
