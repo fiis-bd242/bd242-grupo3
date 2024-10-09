@@ -140,18 +140,6 @@ CREATE TABLE Orden_de_trabajo
   FOREIGN KEY (Prioridad) REFERENCES Criticidad(Id_criticidad)
 );
 
-DROP TABLE IF EXISTS ActvempleadoXOrdenTrabajo CASCADE;
-CREATE TABLE ActvempleadoXOrdenTrabajo
-(
-  Id_actvempleado INT NOT NULL,
-  Id_Orden INT NOT NULL,
-  Id_equipo_soporte INT NOT NULL,
-  PRIMARY KEY (Id_actvempleado, ID_Orden),
-  FOREIGN KEY (Id_actvempleado) REFERENCES Actividad_empleado(Id_actvempleado),
-  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden),
-  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
-);
-
 DROP TABLE IF EXISTS Categoria_Almacen CASCADE;
 CREATE TABLE Categoria_Almacen 
 (
@@ -178,22 +166,6 @@ CREATE TABLE Almacen
     CONSTRAINT fk_empleado_almacen FOREIGN KEY (Codigo_empleado) REFERENCES Empleado (Codigo_empleado),
     CONSTRAINT fk_categoria_almacen FOREIGN KEY (Codigo_categoria) REFERENCES Categoria_Almacen (Codigo_categoria),
     CONSTRAINT fk_estado_almacen FOREIGN KEY (Codigo_estado) REFERENCES Estado_Almacen (Codigo_estado)
-);
-
-DROP TABLE IF EXISTS Registro_compra_recursos CASCADE;
-CREATE TABLE Registro_compra_recursos
-(
-  Fecha_registro DATE NOT NULL,
-  Descripcion VARCHAR(255) NOT NULL,
-  Cod_reg_recurso CHAR(9) NOT NULL,
-  Cantidad INT NOT NULL,
-  Cod_almacen INT NOT NULL,
-  Cod_orden_compra CHAR(9) NOT NULL,
-  Cod_recurso CHAR(9) NOT NULL,
-  PRIMARY KEY (Cod_reg_recurso),
-  FOREIGN KEY (Cod_almacen) REFERENCES Almacen(Cod_almacen),
-  FOREIGN KEY (Cod_orden_compra) REFERENCES Orden_de_compra(Cod_orden_compra),
-  FOREIGN KEY (Cod_recurso) REFERENCES Recurso(Cod_recurso)
 );
 
 DROP TABLE IF EXISTS Tipo_Equipo_Soporte CASCADE;
@@ -234,6 +206,35 @@ CREATE TABLE Equipo_de_Soporte
     CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
     CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado)
 );
+
+DROP TABLE IF EXISTS ActvempleadoXOrdenTrabajo CASCADE;
+CREATE TABLE ActvempleadoXOrdenTrabajo
+(
+  Id_actvempleado INT NOT NULL,
+  Id_Orden INT NOT NULL,
+  Id_equipo_soporte INT NOT NULL,
+  PRIMARY KEY (Id_actvempleado, ID_Orden),
+  FOREIGN KEY (Id_actvempleado) REFERENCES Actividad_empleado(Id_actvempleado),
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden),
+  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
+);
+
+DROP TABLE IF EXISTS Registro_compra_recursos CASCADE;
+CREATE TABLE Registro_compra_recursos
+(
+  Fecha_registro DATE NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
+  Cod_reg_recurso CHAR(9) NOT NULL,
+  Cantidad INT NOT NULL,
+  Cod_almacen INT NOT NULL,
+  Cod_orden_compra CHAR(9) NOT NULL,
+  Cod_recurso CHAR(9) NOT NULL,
+  PRIMARY KEY (Cod_reg_recurso),
+  FOREIGN KEY (Cod_almacen) REFERENCES Almacen(Cod_almacen),
+  FOREIGN KEY (Cod_orden_compra) REFERENCES Orden_de_compra(Cod_orden_compra),
+  FOREIGN KEY (Cod_recurso) REFERENCES Recurso(Cod_recurso)
+);
+
 DROP TABLE IF EXISTS Tipo_maquina CASCADE;
 CREATE TABLE Tipo_maquina
 (
@@ -676,31 +677,17 @@ CREATE TABLE Estado_Sesion (
     Descripcion VARCHAR(255) NOT NULL
 );
 
-
-DROP TABLE IF EXISTS Estado_autenticador CASCADE;
-CREATE TABLE Estado_autenticador (
-    Codigo_autenticacion INT PRIMARY KEY,
-    Descripcion VARCHAR(50) NOT NULL
-);
-
-DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
-CREATE TABLE Autenticacion_en_2_pasos (
-    ID_Autenticacion INT PRIMARY KEY,
-    Fecha_Hora_Envio DATE NOT NULL,
-    Contador_Intentos INT DEFAULT 0,
-    Cod_Verificacion INT NOT NULL,
-    ID_sesion INT NOT NULL,
-    Estado_Codigo INT NOT NULL,
-    FOREIGN KEY (ID_sesion) REFERENCES Sesion_empleado(ID_sesion),
-    FOREIGN KEY (Estado_Codigo) REFERENCES Estado_autenticador(Codigo_autenticacion)
-
-);
-
 DROP TABLE IF EXISTS Tiempo_max_sesion CASCADE;
 CREATE TABLE Tiempo_max_sesion (
     Cargo VARCHAR(50) PRIMARY KEY,
     T_max_cargo INT NOT NULL,
     Codigo INT NOT NULL
+);
+
+DROP TABLE IF EXISTS Estado_autenticador CASCADE;
+CREATE TABLE Estado_autenticador (
+    Codigo_autenticacion INT PRIMARY KEY,
+    Descripcion VARCHAR(50) NOT NULL
 );
 
 DROP TABLE IF EXISTS Sesion_Empleado CASCADE;
@@ -720,13 +707,14 @@ CREATE TABLE Sesion_Empleado (
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
 CREATE TABLE Autenticacion_en_2_pasos (
     ID_Autenticacion INT PRIMARY KEY,
-    Fecha_Hora_Envio TIMESTAMP NOT NULL,  
+    Fecha_Hora_Envio DATE NOT NULL,
     Contador_Intentos INT DEFAULT 0,
     Cod_Verificacion INT NOT NULL,
     ID_sesion INT NOT NULL,
     Estado_Codigo INT NOT NULL,
-    FOREIGN KEY (ID_sesion) REFERENCES Sesion_Empleado(ID_Sesion),
+    FOREIGN KEY (ID_sesion) REFERENCES Sesion_empleado(ID_sesion),
     FOREIGN KEY (Estado_Codigo) REFERENCES Estado_autenticador(Codigo_autenticacion)
+
 );
 
 DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
