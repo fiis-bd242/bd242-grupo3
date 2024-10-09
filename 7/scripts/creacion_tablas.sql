@@ -699,9 +699,8 @@ CREATE TABLE Tiempo_max_sesion (
     Codigo INT NOT NULL
 );
 
--- Sesion_Empleado 
+
 DROP TABLE IF EXISTS Sesion_Empleado CASCADE;
--- Crear la tabla Sesion_Empleado
 CREATE TABLE Sesion_Empleado (
     ID_Sesion INT PRIMARY KEY,
     Codigo_Empleado INT NOT NULL,
