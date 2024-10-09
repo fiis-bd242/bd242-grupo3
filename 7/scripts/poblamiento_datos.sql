@@ -970,6 +970,21 @@ VALUES
 (8, 8, 'Abortada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 10:40:00', '192.168.0.11', 'Iquitos, Peru', 'Investigar incidencia'),
 (9, 9, 'En espera', '00:1B:44:11:3A:J5', 'PC', '2024-10-09 14:50:00', '192.168.0.12', 'Pucallpa, Peru', 'Enviar alerta al equipo');
 
+-- Notificacion administrador
+INSERT INTO Notificacion_Administrador (ID_Notificacion, ID_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa)
+VALUES 
+(1, 5001, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1),
+(2, 5002, 'Fallo de Autenticación', '2024-10-02 09:50:00', 'Enviada', 'Varios intentos fallidos de autenticación desde Cusco', 'Media', 2),
+(3, 5003, 'Recuperación de Contraseña', '2024-10-03 11:20:00', 'Leída', 'Solicitud de recuperación de contraseña desde Arequipa', 'Baja', 3),
+(4, 5004, 'Acceso Bloqueado', '2024-10-04 12:00:00', 'Resuelta', 'Acceso bloqueado debido a actividad sospechosa en Piura', 'Alta', 4),
+(5, 5005, 'Cambio de Contraseña', '2024-10-05 14:10:00', 'En Proceso', 'Cambio de contraseña solicitado desde Trujillo', 'Media', 5),
+(6, 5006, 'Reintento de Autenticación', '2024-10-06 10:30:00', 'Enviada', 'Reintento de autenticación fallido detectado en Tacna', 'Baja', 6),
+(7, 5007, 'Inicio de Sesión No Reconocido', '2024-10-07 15:20:00', 'Pendiente', 'Inicio de sesión no reconocido desde Chiclayo', 'Alta', 7),
+(8, 5008, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8),
+(9, 5009, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9),
+(10, 5010, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10);
+
+
 
 
 
