@@ -537,17 +537,17 @@ INSERT INTO Registro_IPERC (Id_reg_iperc, Id_proceso, Fecha_registro, Cant_riesg
 
 -- Poblamiento de la tabla Tipo_maquina
 INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
-(A, 'Excavadora'),
-(B, 'Tractor'),
-(C, 'Topador'),
-(D, 'Perforadora'),
-(E, 'Cargador');
+('A', 'Excavadora'),
+('B', 'Tractor'),
+('C', 'Topador'),
+('D', 'Perforadora'),
+('E', 'Cargador');
 
 -- Poblamiento de la tabla Estado_maquina
 INSERT INTO Estado_maquina (id_estado, nombre_estado) VALUES
-(A, 'Operativa'),
-(B, 'Mantenimiento'),
-(C, 'Fuera de servicio');
+('A', 'Operativa'),
+('B', 'Mantenimiento'),
+('C', 'Fuera de servicio');
 
 -- Poblamiento de la tabla Maquina
 INSERT INTO Maquina (Num_serie, Fecha_ultima_inspeccion, Fecha_adquisicion, Modelo, Marca, id_tipo_maquina, id_estado) VALUES
