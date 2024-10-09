@@ -723,7 +723,7 @@ CREATE TABLE Autenticacion_en_2_pasos (
     Contador_Intentos INT DEFAULT 0,
     Cod_Verificacion INT NOT NULL,
     ID_sesion INT NOT NULL,
-    Estado_Codigo VARCHAR(20) NOT NULL,
+    Estado_Codigo INT NOT NULL,
     FOREIGN KEY (ID_sesion) REFERENCES Sesion_Empleado(ID_Sesion),
     FOREIGN KEY (Estado_Codigo) REFERENCES Estado_autenticador(Codigo_autenticacion)
 );
