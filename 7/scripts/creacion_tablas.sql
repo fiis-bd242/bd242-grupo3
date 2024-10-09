@@ -671,20 +671,42 @@ CREATE TABLE Notificacion_Administrador (
 
 );
 
-DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
+DROP TABLE IF EXISTS Estado_Sesion CASCADE;
 
-CREATE TABLE Sesion_sospechosa (
-    ID_Sesion_sospechosa INT NOT NULL,
-    Id_autenticacion INT NOT NULL,
-    Estado_sesion VARCHAR(20) NOT NULL,
-    Direccion_mac VARCHAR(17) NOT NULL,
-    Tipo_Dispositivo VARCHAR(50) NOT NULL,
-    Fecha_Hora_sospecha TIMESTAMP NOT NULL,  
-    Direccion_ip VARCHAR(25) NOT NULL,
-    Ubicacion VARCHAR(100) NOT NULL,
-    Acciones_tomadas VARCHAR(255) NOT NULL,
-    PRIMARY KEY (ID_Sesion_sospechosa, Id_autenticacion),
-    FOREIGN KEY (Id_autenticacion) REFERENCES Autenticacion_en_2_pasos(ID_Autenticacion)
+-- Estado_Sesion
+CREATE TABLE Estado_Sesion (
+    Codigo_Estado_E INT PRIMARY KEY,
+    Descripcion VARCHAR(255) NOT NULL
+);
+
+DROP TABLE IF EXISTS Tiempo_max_sesion CASCADE;
+CREATE TABLE Tiempo_max_sesion (
+    Cargo VARCHAR(50) PRIMARY KEY,
+    T_max_cargo INT NOT NULL,
+    Codigo INT NOT NULL
+);
+
+-- Sesion_Empleado 
+DROP TABLE IF EXISTS Sesion_Empleado CASCADE;
+-- Crear la tabla Sesion_Empleado
+CREATE TABLE Sesion_Empleado (
+    ID_Sesion INT PRIMARY KEY,
+    Codigo_Empleado INT NOT NULL,
+    Fecha_Hora_Inicio TIMESTAMP NOT NULL,  
+    Fecha_Hora_Final TIMESTAMP,            
+    Direccion_IP VARCHAR(45),
+    Estado_Sesion INT,            
+    Cargo VARCHAR(50),                    
+    FOREIGN KEY (Codigo_Empleado) REFERENCES Empleado(Codigo_Empleado),
+    FOREIGN KEY (Estado_Sesion) REFERENCES Estado_Sesion(Codigo_Estado_E),
+    FOREIGN KEY (Cargo) REFERENCES Tiempo_max_sesion(Cargo)
+);
+
+DROP TABLE IF EXISTS Estado_autenticador CASCADE;
+
+CREATE TABLE Estado_autenticador (
+    Codigo_autenticacion INT PRIMARY KEY,
+    Descripcion VARCHAR(50) NOT NULL
 );
 
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
@@ -700,45 +722,20 @@ CREATE TABLE Autenticacion_en_2_pasos (
     FOREIGN KEY (Estado_Codigo) REFERENCES Estado_autenticador(Codigo_autenticacion)
 );
 
-DROP TABLE IF EXISTS Estado_autenticador CASCADE;
+DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
 
-CREATE TABLE Estado_autenticador (
-    Codigo_autenticacion INT PRIMARY KEY,
-    Descripcion VARCHAR(50) NOT NULL
-);
-
-DROP TABLE IF EXISTS Estado_Sesion CASCADE;
-
--- Estado_Sesion
-CREATE TABLE Estado_Sesion (
-    Codigo_Estado_E INT PRIMARY KEY,
-    Descripcion VARCHAR(255) NOT NULL
-);
-
--- Sesion_Empleado 
-DROP TABLE IF EXISTS Sesion_Empleado CASCADE;
-
--- Crear la tabla Sesion_Empleado
-CREATE TABLE Sesion_Empleado (
-    ID_Sesion INT PRIMARY KEY,
-    Codigo_Empleado INT NOT NULL,
-    Fecha_Hora_Inicio TIMESTAMP NOT NULL,  
-    Fecha_Hora_Final TIMESTAMP,            
-    Direccion_IP VARCHAR(45),
-    Estado_Sesion INT,            
-    Cargo VARCHAR(50),                    
-    FOREIGN KEY (Codigo_Empleado) REFERENCES Empleado(Codigo_Empleado),
-    FOREIGN KEY (Estado_Sesion) REFERENCES Estado_Sesion(Codigo_Estado_E),
-    FOREIGN KEY (Cargo) REFERENCES Tiempo_max_sesion(Cargo)
-);
-
-DROP TABLE IF EXISTS Tiempo_max_sesion CASCADE;
-
--
-CREATE TABLE Tiempo_max_sesion (
-    Cargo VARCHAR(50) PRIMARY KEY,
-    T_max_cargo INT NOT NULL,
-    Codigo INT NOT NULL
+CREATE TABLE Sesion_sospechosa (
+    ID_Sesion_sospechosa INT NOT NULL,
+    Id_autenticacion INT NOT NULL,
+    Estado_sesion VARCHAR(20) NOT NULL,
+    Direccion_mac VARCHAR(17) NOT NULL,
+    Tipo_Dispositivo VARCHAR(50) NOT NULL,
+    Fecha_Hora_sospecha TIMESTAMP NOT NULL,  
+    Direccion_ip VARCHAR(25) NOT NULL,
+    Ubicacion VARCHAR(100) NOT NULL,
+    Acciones_tomadas VARCHAR(255) NOT NULL,
+    PRIMARY KEY (ID_Sesion_sospechosa, Id_autenticacion),
+    FOREIGN KEY (Id_autenticacion) REFERENCES Autenticacion_en_2_pasos(ID_Autenticacion)
 );
 
 DROP TABLE IF EXISTS Estado_codigo CASCADE;
