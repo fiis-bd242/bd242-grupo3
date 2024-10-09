@@ -591,7 +591,6 @@ CREATE TABLE EmpleadoxCapacitacion
     CONSTRAINT fk_empleado_capacitacion_2 FOREIGN KEY (Codigo_Capacitacion) REFERENCES Capacitaciones (Codigo_Capacitacion)
 );
 
-
 DROP TABLE IF EXISTS Reportes CASCADE;
 CREATE TABLE Reportes
 (
@@ -657,9 +656,9 @@ CREATE TABLE AnalisisReporte
   FOREIGN KEY (Reporte_id) REFERENCES Reportes(ID_Reporte),
   FOREIGN KEY (Supervisor_id) REFERENCES Empleado(Codigo_empleado)
 );
----------------------------------------------
-DROP TABLE IF EXISTS Notificacion_Administrador CASCADE;
 
+
+DROP TABLE IF EXISTS Notificacion_Administrador CASCADE;
 CREATE TABLE Notificacion_Administrador (
     ID_Notificacion INT PRIMARY KEY,
     ID_Administrador INT NOT NULL,
@@ -672,8 +671,6 @@ CREATE TABLE Notificacion_Administrador (
 );
 
 DROP TABLE IF EXISTS Estado_Sesion CASCADE;
-
--- Estado_Sesion
 CREATE TABLE Estado_Sesion (
     Codigo_Estado_E INT PRIMARY KEY,
     Descripcion VARCHAR(255) NOT NULL
@@ -682,7 +679,7 @@ CREATE TABLE Estado_Sesion (
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
 CREATE TABLE Autenticacion_en_2_pasos (
     ID_Autenticacion INT PRIMARY KEY,
-    Fecha_Hora_Envio DATETIME NOT NULL,
+    Fecha_Hora_Envio DATE NOT NULL,
     Contador_Intentos INT DEFAULT 0,
     Cod_Verificacion INT NOT NULL,
     ID_sesion INT NOT NULL,
@@ -699,7 +696,6 @@ CREATE TABLE Tiempo_max_sesion (
     Codigo INT NOT NULL
 );
 
-
 DROP TABLE IF EXISTS Sesion_Empleado CASCADE;
 CREATE TABLE Sesion_Empleado (
     ID_Sesion INT PRIMARY KEY,
@@ -715,14 +711,12 @@ CREATE TABLE Sesion_Empleado (
 );
 
 DROP TABLE IF EXISTS Estado_autenticador CASCADE;
-
 CREATE TABLE Estado_autenticador (
     Codigo_autenticacion INT PRIMARY KEY,
     Descripcion VARCHAR(50) NOT NULL
 );
 
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
-
 CREATE TABLE Autenticacion_en_2_pasos (
     ID_Autenticacion INT PRIMARY KEY,
     Fecha_Hora_Envio TIMESTAMP NOT NULL,  
@@ -735,7 +729,6 @@ CREATE TABLE Autenticacion_en_2_pasos (
 );
 
 DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
-
 CREATE TABLE Sesion_sospechosa (
     ID_Sesion_sospechosa INT NOT NULL,
     Id_autenticacion INT NOT NULL,
@@ -751,15 +744,12 @@ CREATE TABLE Sesion_sospechosa (
 );
 
 DROP TABLE IF EXISTS Estado_codigo CASCADE;
-
 CREATE TABLE Estado_codigo (
     Codigo_recu VARCHAR(20) PRIMARY KEY,  
     Descripcion VARCHAR(50) NOT NULL      
 );
 
 DROP TABLE IF EXISTS Recuperacion_de_contraseña CASCADE;
-
---  Recuperacion_de_contraseña
 CREATE TABLE Recuperacion_de_contraseña (
     ID_recupcontra INT PRIMARY KEY,               
     ID_sesion INT,                               
