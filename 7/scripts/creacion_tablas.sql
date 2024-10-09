@@ -5,6 +5,36 @@ CREATE TABLE Cargo_empleado
     Nombre_cargo VARCHAR(50) NOT NULL 
 );
 
+DROP TABLE IF EXISTS Proveedor CASCADE;
+CREATE TABLE Proveedor
+(
+  RUC CHAR(12) NOT NULL,
+  Empresa VARCHAR(255) NOT NULL,
+  Contacto VARCHAR(255) NOT NULL,
+  Email VARCHAR(255) NOT NULL,
+  Categoria VARCHAR(255) NOT NULL,
+  Telefono CHAR(10) NOT NULL,
+  Direccion VARCHAR(255) NOT NULL,
+  PRIMARY KEY (RUC)
+);
+
+DROP TABLE IF EXISTS Recurso CASCADE;
+CREATE TABLE Recurso
+(
+  Cod_recurso CHAR(9) NOT NULL,
+  Cantidad INT NOT NULL,
+  Nombre VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Cod_recurso)
+);
+
+DROP TABLE IF EXISTS Estado CASCADE;
+CREATE TABLE Estado
+(
+  Cod_estad CHAR(2) NOT NULL,
+  Tipo_estad VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Cod_estad)
+);
+
 DROP TABLE IF EXISTS Criticidad CASCADE;
 CREATE TABLE Criticidad
 (
@@ -42,6 +72,40 @@ CREATE TABLE Plan_de_mantenimiento
   PRIMARY KEY (Codigo_plan),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Codigo_empleado),
   FOREIGN KEY (Criticidad) REFERENCES Criticidad(Id_criticidad)
+);
+
+DROP TABLE IF EXISTS Pedido CASCADE;
+CREATE TABLE Pedido
+(
+  Numero VARCHAR(255) NOT NULL,
+  Cant_pedid INT NOT NULL,
+  Fecha DATE NOT NULL,
+  Est_inactividad CHAR(2) NOT NULL,
+  Cod_recurso CHAR(9) NOT NULL,
+  Codigo_empleado INT NOT NULL,
+  Cod_estad CHAR(2) NOT NULL,
+  PRIMARY KEY (Numero),
+  FOREIGN KEY (Cod_recurso) REFERENCES Recurso(Cod_recurso),
+  FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado),
+  FOREIGN KEY (Cod_estad) REFERENCES Estado(Cod_estad)
+);
+
+DROP TABLE IF EXISTS Orden_de_compra CASCADE;
+CREATE TABLE Orden_de_compra
+(
+  Fecha_emision DATE NOT NULL,
+  Fecha_posible._entrega DATE NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
+  Cantidad INT NOT NULL,
+  Prioridad VARCHAR NOT NULL,
+  Precio_unitario FLOAT NOT NULL,
+  Cod_orden_compra CHAR(9) NOT NULL,
+  Descripcion_product VARCHAR(255) NOT NULL,
+  RUC_proveedor CHAR(12) NOT NULL,
+  Codigo_empleado INT NOT NULL,
+  PRIMARY KEY (Cod_orden_compra),
+  FOREIGN KEY (RUC_proveedor) REFERENCES Proveedor(RUC),
+  FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
 );
 
 DROP TABLE IF EXISTS Actividad_empleado CASCADE;
@@ -103,6 +167,22 @@ CREATE TABLE Almacen
     CONSTRAINT fk_empleado_almacen FOREIGN KEY (Codigo_empleado) REFERENCES Empleado (Codigo_empleado),
     CONSTRAINT fk_categoria_almacen FOREIGN KEY (Codigo_categoria) REFERENCES Categoria_Almacen (Codigo_categoria),
     CONSTRAINT fk_estado_almacen FOREIGN KEY (Codigo_estado) REFERENCES Estado_Almacen (Codigo_estado)
+);
+
+DROP TABLE IF EXISTS Registro_compra_recursos CASCADE;
+CREATE TABLE Registro_compra_recursos
+(
+  Fecha_registro DATE NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
+  Cod_reg_recurso CHAR(9) NOT NULL,
+  Cantidad INT NOT NULL,
+  Cod_almacen INT NOT NULL,
+  Cod_orden_compra CHAR(9) NOT NULL,
+  Cod_recurso CHAR(9) NOT NULL,
+  PRIMARY KEY (Cod_reg_recurso),
+  FOREIGN KEY (Cod_almacen) REFERENCES Almacen(Cod_almacen),
+  FOREIGN KEY (Cod_orden_compra) REFERENCES Orden_de_compra(Cod_orden_compra),
+  FOREIGN KEY (Cod_recurso) REFERENCES Recurso(Cod_recurso)
 );
 
 DROP TABLE IF EXISTS Tipo_Equipo_Soporte CASCADE;
@@ -202,6 +282,17 @@ CREATE TABLE Mantenimiento
     CONSTRAINT fk_plan_mant FOREIGN KEY (Codigo_plan) REFERENCES Plan_de_mantenimiento (Codigo_plan),
     CONSTRAINT fk_maquina_mant FOREIGN KEY (Num_serie) REFERENCES Maquina (Num_serie),
     CONSTRAINT fk_tipo_mant FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant)
+);
+
+DROP TABLE IF EXISTS RecursoXMantenimiento CASCADE;
+CREATE TABLE RecursoXMantenimiento
+(
+  Id_RecursoXMantto INT NOT NULL,
+  Cod_Act_mantto INT NOT NULL,
+  Cod_recurso CHAR(9) NOT NULL,
+  PRIMARY KEY (Id_RecursoXMantto),
+  FOREIGN KEY (Cod_Act_mantto) REFERENCES Mantenimiento(Cod_Act_mantto),
+  FOREIGN KEY (Cod_recurso) REFERENCES Recurso(Cod_recurso)
 );
 
 DROP TABLE IF EXISTS EquipoSoporteXMantenimiento CASCADE;
