@@ -505,6 +505,13 @@ INSERT INTO PlanaccionxEmpleado (Id_plan_mejora, Codigo_empleado) VALUES
 (7, 7),  -- Diego Morales participa en el plan de mejora 7
 (8, 8);  -- Laura Espinoza participa en el plan de mejora 8
 
+INSERT INTO EquipoEvaluadorXEmpleado (id_equipo_evaluador, codigo_empleado) VALUES 
+(1, 4), 
+(2, 3), 
+(3, 2), 
+(4, 2), 
+(5, 5), 
+(6, 1);
 
 -- Poblar la tabla Registros_por_Riesgos
 INSERT INTO Registros_por_Riesgos (Id_registro_riesgo, id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual) VALUES
