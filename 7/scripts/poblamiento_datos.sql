@@ -861,3 +861,72 @@ INSERT INTO Estado (Cod_estad, Tipo_estad) VALUES
 (1, 'Aprobado'),
 (2, 'En proceso de envío'),
 (3, 'Enviado');
+ 
+-- Estado_autenticador 
+INSERT INTO Estado_autenticador (Codigo_autenticacion, Descripcion)
+VALUES 
+(1, 'Generado'),
+(2, 'Utilizado'),
+(3, 'Expirado');
+-- Estado_sesion
+INSERT INTO Estado_Sesion (Codigo_Estado_E, Descripcion)
+VALUES 
+(1, 'Activa'),
+(2, 'Inactiva'),
+(3, 'Bloqueada'),
+(4, 'Proceso de logeo');
+
+-- Tiempo_max_sesion 
+INSERT INTO Tiempo_max_sesion (Cargo, T_max_cargo, Codigo)
+VALUES 
+('Usuario', 60, 101),
+('Administrador', 120, 102),
+('Master', 180, 103);
+
+--Sesion empleado
+
+INSERT INTO Sesion_Empleado (ID_Sesion, Codigo_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Estado_Sesion, Cargo)
+VALUES 
+(1, 1001, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 1, 'Usuario'),
+(2, 1002, '2024-10-02 09:30:00', '2024-10-02 11:30:00', '192.168.0.2', 2, 'Administrador'),
+(3, 1003, '2024-10-03 11:00:00', '2024-10-03 12:30:00', '192.168.0.3', 3, 'Master'),
+(4, 1004, '2024-10-04 13:00:00', '2024-10-04 14:45:00', '192.168.0.4', 4, 'Supervisor'),
+(5, 1005, '2024-10-05 14:15:00', '2024-10-05 15:30:00', '192.168.0.5', 5, 'Operador'),
+(6, 1006, '2024-10-06 09:00:00', '2024-10-06 11:00:00', '192.168.0.6', 6, 'Auditor'),
+(7, 1007, '2024-10-07 12:00:00', '2024-10-07 13:30:00', '192.168.0.7', 7, 'Gerente'),
+(8, 1008, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 8, 'Asistente'),
+(9, 1009, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 9, 'Técnico'),
+(10, 1010, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 10, 'Consultor');
+
+--Autenticacion_en_2_pasos
+INSERT INTO Autenticacion_en_2_pasos (ID_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, Cod_Verificacion, ID_sesion, Estado_Codigo)
+VALUES 
+(1, '2024-10-01 08:05:00', 1, 123456, 1, 1),
+(2, '2024-10-02 09:35:00', 2, 654321, 2, 2),
+(3, '2024-10-03 11:05:00', 3, 987654, 3, 3),
+(4, '2024-10-04 13:10:00', 1, 321654, 4, 4),
+(5, '2024-10-05 14:20:00', 2, 456789, 5, 5),
+(6, '2024-10-06 09:10:00', 1, 987321, 6, 6),
+(7, '2024-10-07 12:10:00', 3, 654789, 7, 7),
+(8, '2024-10-08 10:20:00', 2, 321987, 8, 8),
+(9, '2024-10-09 14:30:00', 3, 789123, 9, 9),
+(10, '2024-10-10 11:25:00', 1, 123789, 10, 10);
+
+--Sesion_sospechosa
+INSERT INTO Sesion_sospechosa (ID_Sesion_sospechosa, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
+VALUES 
+(1, 1, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.4', 'Lima, Peru', 'Alertar al administrador'),
+(2, 2, 'Inactiva', '00:1B:44:11:3A:C8', 'Móvil', '2024-10-02 09:45:00', '192.168.0.5', 'Cusco, Peru', 'Bloquear el acceso'),
+(3, 3, 'Expirada', '00:1B:44:11:3A:D9', 'Tablet', '2024-10-03 11:15:00', '192.168.0.6', 'Arequipa, Peru', 'Revisar actividad'),
+(4, 4, 'Bloqueada', '00:1B:44:11:3A:E0', 'Laptop', '2024-10-04 13:25:00', '192.168.0.7', 'Piura, Peru', 'Notificar a seguridad'),
+(5, 5, 'Finalizada', '00:1B:44:11:3A:F1', 'Servidor', '2024-10-05 14:35:00', '192.168.0.8', 'Trujillo, Peru', 'Cerrar sesión automáticamente'),
+(6, 6, 'Reiniciada', '00:1B:44:11:3A:G2', 'PC', '2024-10-06 09:20:00', '192.168.0.9', 'Tacna, Peru', 'Solicitar autenticación'),
+(7, 7, 'Pendiente', '00:1B:44:11:3A:H3', 'Móvil', '2024-10-07 12:30:00', '192.168.0.10', 'Chiclayo, Peru', 'Monitorear actividad'),
+(8, 8, 'Abortada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 10:40:00', '192.168.0.11', 'Iquitos, Peru', 'Investigar incidencia'),
+(9, 9, 'En espera', '00:1B:44:11:3A:J5', 'PC', '2024-10-09 14:50:00', '192.168.0.12', 'Pucallpa, Peru', 'Enviar alerta al equipo');
+
+
+
+
+
+
