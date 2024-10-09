@@ -487,29 +487,29 @@ INSERT INTO Valoracion_del_riesgo_inicial (Id_valoracion_inicial, Id_tipo_severi
 (8, 'TE', 'P-IMP', 'BA');  -- Riesgo bajo con severidad temporal e imposible probabilidad
 
 
+
+-- Poblar la tabla Valoracion_del_riesgo
+INSERT INTO Valoracion_del_riesgo (Id_valoracion_residual, Cantidad_controles, Id_valoracion_inicial, Id_tipo_riesgo) VALUES
+(1, 3, 1, 'AL'), -- Riesgo alto
+(2, 2, 2, 'ME'), -- Riesgo medio
+(3, 3, 3, 'BA'), -- Riesgo bajo
+(4, 4, 4, 'ME'), -- Riesgo medio
+(5, 3, 5, 'BA'), -- Riesgo bajo
+(6, 2, 6, 'AL'), -- Riesgo alto
+(7, 1, 7, 'ME'), -- Riesgo medio
+(8, 4, 8, 'BA'); -- Riesgo bajo
+
+
 -- Poblar la tabla Control
-INSERT INTO Control (Id_control, Descripcion_control, Id_tipo_estgia_control, Id_tipo_med_control, Id_tipo_Qcontrol) VALUES
-(1, 'Instalación de barandillas en plataformas elevadas', 'P', 'INH', 'A'),
-(2, 'Mantenimiento preventivo de equipos eléctricos', 'P', 'ADM', 'B'),
-(3, 'Uso obligatorio de equipo de protección personal (EPP)', 'M', 'EPP', 'C'),
-(4, 'Sustitución de sustancias químicas peligrosas', 'P', 'SUS', 'B'),
-(5, 'Implementación de procedimientos de seguridad', 'M', 'ADM', 'A'),
-(6, 'Eliminación de riesgos en zonas de trabajo', 'P', 'ELI', 'A'),
-(7, 'Monitoreo constante de niveles de gases peligrosos', 'P', 'INH', 'B'),
-(8, 'Capacitación regular del personal en seguridad', 'M', 'ADM', 'C');
-
-
--- Poblar la tabla Valorizacion_del_riesgo
-INSERT INTO Valorizacion_del_riesgo (Id_valoracion_residual, Cantidad_controles, Id_valoracion_inicial, Id_control, Id_tipo_riesgo) 
-VALUES
-(1, 3, 1, 1, 'AL'),  -- Riesgo alto
-(2, 2, 2, 2, 'ME'),  -- Riesgo medio
-(3, 5, 3, 3, 'BA'),  -- Riesgo bajo
-(4, 4, 4, 4, 'ME'),  -- Riesgo medio
-(5, 3, 5, 5, 'BA'),  -- Riesgo bajo
-(6, 2, 6, 6, 'AL'),  -- Riesgo alto
-(7, 1, 7, 7, 'ME'),  -- Riesgo medio
-(8, 4, 8, 8, 'BA');  -- Riesgo bajo
+INSERT INTO Control (Id_control, Descripcion_control, Id_tipo_estgia_control, Id_tipo_med_control, Id_tipo_Qcontrol, Id_valoracion_residual) VALUES
+(1, 'Instalación de barandillas en plataformas elevadas', 'P', 'INH', 'A', 1),
+(2, 'Mantenimiento preventivo de equipos eléctricos', 'P', 'ADM', 'B', 2),
+(3, 'Uso obligatorio de equipo de protección personal (EPP)', 'M', 'EPP', 'C', 3),
+(4, 'Sustitución de sustancias químicas peligrosas', 'P', 'SUS', 'B', 4),
+(5, 'Implementación de procedimientos de seguridad', 'M', 'ADM', 'A', 5),
+(6, 'Eliminación de riesgos en zonas de trabajo', 'P', 'ELI', 'A', 6),
+(7, 'Monitoreo constante de niveles de gases peligrosos', 'P', 'INH', 'B', 7),
+(8, 'Capacitación regular del personal en seguridad', 'M', 'ADM', 'C', 8);
 
 -- Poblar la tabla Plan_de_accion_de_mejora
 INSERT INTO Plan_de_accion_de_mejora (Id_plan_mejora, Id_valoracion_residual, Accion_que, Cantidad_empleados, Fecha_cuando) VALUES
@@ -563,27 +563,25 @@ INSERT INTO EquipoEvaluadorXEmpleado (id_equipo_evaluador, codigo_empleado) VALU
 (5, 5), 
 (6, 1);
 
--- Poblar la tabla Registros_por_Riesgos
-INSERT INTO Registros_por_Riesgos (Id_registro_riesgo, id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual) VALUES
-(1, 1, 1, 1, 1),
-(2, 2, 2, 2, 2),
-(3, 3, 3, 3, 3),
-(4, 4, 4, 4, 4),
-(5, 5, 5, 5, 5),
-(6, 6, 6, 6, 6),
-(7, 7, 7, 7, 7),
-(8, 8, 8, 8, 8);
+INSERT INTO Registro_IPERC (Id_reg_iperc, Id_proceso, Fecha_registro, Cant_riesgos_analizados) VALUES
+(1, 1, '2022-01-02', 5),
+(2, 1, '2023-12-12', 3),
+(3, 2, '2024-02-01', 4),
+(4, 3, '2024-03-05', 2),
+(5, 3, '2024-04-10', 6),
+(6, 4, '2024-05-15', 3),
+(7, 5, '2024-06-20', 5),
+(8, 6, '2024-07-25', 4);
 
--- Poblar la tabla Registro_IPERC
-INSERT INTO Registro_IPERC (Id_reg_iperc, Id_proceso, Fecha_registro, Cant_riesgos_analizados, Id_registro_riesgo) VALUES
-(1, 1, '2022-01-02', 5, 1),
-(2, 1, '2023-12-12', 3, 2),
-(3, 2, '2024-02-01', 4, 3),
-(4, 3, '2024-03-05', 2, 4),
-(5, 3, '2024-04-10', 6, 5),
-(6, 4, '2024-05-15', 3, 6),
-(7, 5, '2024-06-20', 5, 7),
-(8, 6, '2024-07-25', 4, 8);
+INSERT INTO Registros_por_Riesgos (Id_registro_riesgo, Id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual, Id_reg_iperc) VALUES
+(1, 1, 1, 1, 1, 1),
+(2, 2, 2, 2, 2, 1),
+(3, 3, 3, 3, 3, 2),
+(4, 4, 4, 4, 4, 3),
+(5, 5, 5, 5, 5, 4),
+(6, 6, 6, 6, 6, 5),
+(7, 7, 7, 7, 7, 6),
+(8, 8, 8, 8, 8, 7);
 
 -- Poblamiento de la tabla Tipo_maquina
 INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
