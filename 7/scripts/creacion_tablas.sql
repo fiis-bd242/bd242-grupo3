@@ -593,6 +593,14 @@ CREATE TABLE EmpleadoxCapacitacion
     CONSTRAINT fk_empleado_capacitacion_2 FOREIGN KEY (Codigo_Capacitacion) REFERENCES Capacitaciones (Codigo_Capacitacion)
 );
 
+DROP TABLE IF EXISTS EstadoReporte CASCADE;
+CREATE TABLE EstadoReporte
+(
+  Codigo_estado INT NOT NULL,
+  Estado TEXT NOT NULL,
+  PRIMARY KEY (Codigo_estado)
+);
+
 DROP TABLE IF EXISTS Reportes CASCADE;
 CREATE TABLE Reportes
 (
@@ -602,6 +610,7 @@ CREATE TABLE Reportes
   Comentarios TEXT,
   Supervisor_id INT NOT NULL,
   PRIMARY KEY (ID_Reporte),
+  FOREIGN KEY (Estado) REFERENCES EstadoReporte(Codigo_estado),
   FOREIGN KEY (Supervisor_id) REFERENCES Empleado(Codigo_empleado)
 );
 
@@ -638,13 +647,6 @@ CREATE TABLE Notificaciones
   FOREIGN KEY (Destinatario) REFERENCES Empleado(Codigo_empleado)
 );
 
-DROP TABLE IF EXISTS EstadoReporte CASCADE;
-CREATE TABLE EstadoReporte
-(
-  Codigo_estado INT NOT NULL,
-  Estado TEXT NOT NULL,
-  PRIMARY KEY (Codigo_estado)
-);
 
 DROP TABLE IF EXISTS AnalisisReporte CASCADE;
 CREATE TABLE AnalisisReporte
