@@ -661,7 +661,22 @@ CREATE TABLE AnalisisReporte
   FOREIGN KEY (Supervisor_id) REFERENCES Empleado(Codigo_empleado)
 );
 
+-- Eliminar la tabla Sesion_sospechosa si existe
+DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
+CREATE TABLE Sesion_sospechosa (
+    ID_Sesion_sospechosa INT NOT NULL,
+    Id_autenticacion INT NOT NULL,
+    Estado_sesion VARCHAR(20) NOT NULL,
+    Direccion_mac VARCHAR(17) NOT NULL,
+    Tipo_Dispositivo VARCHAR(50) NOT NULL,
+    Fecha_Hora_sospecha TIMESTAMP NOT NULL,  
+    Direccion_ip VARCHAR(25) NOT NULL,
+    Ubicacion VARCHAR(100) NOT NULL,
+    Acciones_tomadas VARCHAR(255) NOT NULL,
+    PRIMARY KEY (ID_Sesion_sospechosa, Id_autenticacion)
+);
 
+-- Eliminar la tabla Notificacion_Administrador si existe
 DROP TABLE IF EXISTS Notificacion_Administrador CASCADE;
 CREATE TABLE Notificacion_Administrador (
     ID_Notificacion INT PRIMARY KEY,
@@ -670,8 +685,10 @@ CREATE TABLE Notificacion_Administrador (
     Fecha_Hora_Notificacion TIMESTAMP NOT NULL,  
     Estado_Notificacion VARCHAR(20) NOT NULL,
     Mensaje_Notificacion VARCHAR(255) NOT NULL,
-    Prioridad VARCHAR(10) NOT NULL
-
+    Prioridad VARCHAR(10) NOT NULL,
+    ID_Sesion_sospechosa INT NOT NULL,
+    Id_autenticacion INT NOT NULL,
+    FOREIGN KEY (ID_Sesion_sospechosa, Id_autenticacion) REFERENCES Sesion_sospechosa(ID_Sesion_sospechosa, Id_autenticacion)
 );
 
 DROP TABLE IF EXISTS Estado_Sesion CASCADE;
@@ -720,20 +737,7 @@ CREATE TABLE Autenticacion_en_2_pasos (
 
 );
 
-DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
-CREATE TABLE Sesion_sospechosa (
-    ID_Sesion_sospechosa INT NOT NULL,
-    Id_autenticacion INT NOT NULL,
-    Estado_sesion VARCHAR(20) NOT NULL,
-    Direccion_mac VARCHAR(17) NOT NULL,
-    Tipo_Dispositivo VARCHAR(50) NOT NULL,
-    Fecha_Hora_sospecha TIMESTAMP NOT NULL,  
-    Direccion_ip VARCHAR(25) NOT NULL,
-    Ubicacion VARCHAR(100) NOT NULL,
-    Acciones_tomadas VARCHAR(255) NOT NULL,
-    PRIMARY KEY (ID_Sesion_sospechosa, Id_autenticacion),
-    FOREIGN KEY (Id_autenticacion) REFERENCES Autenticacion_en_2_pasos(ID_Autenticacion)
-);
+
 
 DROP TABLE IF EXISTS Estado_codigo CASCADE;
 CREATE TABLE Estado_codigo (

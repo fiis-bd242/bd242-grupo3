@@ -1,4 +1,4 @@
--- Poblamiento de la tabla Cargo_empleado
+--- Poblamiento de la tabla Cargo_empleado
 INSERT INTO Cargo_empleado (Id_Cargo, Nombre_cargo) VALUES
 (1, 'Jefe'),
 (2, 'Técnico'),
@@ -761,120 +761,52 @@ INSERT INTO AnalisisReporte (ID_Analisis, Reporte_id, Fecha_analisis, Analisis, 
 (9, 9, '2024-09-24', 'El reporte está completo.', 3),
 (10, 10, '2024-09-25', 'Revisar el próximo mantenimiento.', 1);
 
--- RecursoXMantenimiento
-INSERT INTO RecursoXMantenimiento (Id_RecursoXMantto, Cod_Act_mantto, Cod_recurso) VALUES
-(1, 1001, 501),
-(2, 1002, 502),
-(3, 1003, 503),
-(4, 1004, 504),
-(5, 1005, 505),
-(6, 1006, 506),
-(7, 1007, 507),
-(8, 1008, 508),
-(9, 1009, 509),
-(10, 1010, 510),
-(11, 1011, 511),
-(12, 1012, 512),
-(13, 1013, 513),
-(14, 1014, 514),
-(15, 1015, 515),
-(16, 1016, 516),
-(17, 1017, 517),
-(18, 1018, 518),
-(19, 1019, 519),
-(20, 1020, 520);
-
--- Registro_compra_recursos
-INSERT INTO Registro_compra_recursos (Fecha_registro, Descripcion, Cod_reg_recurso, Cantidad, Cod_almacen, Cod_orden_compra, Cod_recurso) VALUES
-('2024-01-15', 'Compra de martillos', 101, 30, 301, 2001, 501),
-('2024-02-20', 'Compra de taladros', 102, 50, 302, 2002, 502),
-('2024-03-22', 'Compra de clavos', 103, 100, 303, 2003, 503),
-('2024-04-11', 'Compra de sierras', 104, 25, 304, 2004, 504),
-('2024-05-18', 'Compra de destornilladores', 105, 70, 305, 2005, 505),
-('2024-06-02', 'Compra de alicates', 106, 60, 306, 2006, 506),
-('2024-07-15', 'Compra de cables', 107, 80, 307, 2007, 507),
-('2024-08-10', 'Compra de guantes', 108, 200, 308, 2008, 508),
-('2024-09-05', 'Compra de mascarillas', 109, 150, 309, 2009, 509),
-('2024-09-20', 'Compra de botas de seguridad', 110, 40, 310, 2010, 510),
-('2024-10-01', 'Compra de cascos', 111, 100, 311, 2011, 511),
-('2024-10-15', 'Compra de chalecos reflectantes', 112, 120, 312, 2012, 512),
-('2024-11-03', 'Compra de gafas de protección', 113, 180, 313, 2013, 513),
-('2024-11-18', 'Compra de extinguidores', 114, 35, 314, 2014, 514),
-('2024-12-01', 'Compra de señales de emergencia', 115, 15, 315, 2015, 515),
-('2024-12-15', 'Compra de conos de seguridad', 116, 50, 316, 2016, 516),
-('2025-01-07', 'Compra de linternas', 117, 60, 317, 2017, 517),
-('2025-01-22', 'Compra de medidores eléctricos', 118, 45, 318, 2018, 518),
-('2025-02-05', 'Compra de baterías recargables', 119, 100, 319, 2019, 519),
-('2025-02-18', 'Compra de kits de primeros auxilios', 120, 25, 320, 2020, 520);
-
--- Orden_de_compra
-INSERT INTO Orden_de_compra (Fecha_emision, Fecha_posible_entrega, Descripcion, Cantidad, Prioridad, Precio_unitario, Cod_orden_compra, Descripcion_product, RUC_proveedor, Codigo_empleado) VALUES
-('2024-01-10', '2024-01-20', 'Orden para martillos', 30, 'Alta', 15.50, 2001, 'Martillos de acero', '20512345678', 1001),
-('2024-02-05', '2024-02-15', 'Orden para taladros', 50, 'Media', 45.00, 2002, 'Taladros industriales', '20512345679', 1002),
-('2024-03-01', '2024-03-11', 'Orden para clavos', 100, 'Alta', 0.10, 2003, 'Clavos de 3 pulgadas', '20512345680', 1003),
-('2024-03-25', '2024-04-05', 'Orden para sierras', 25, 'Baja', 12.00, 2004, 'Sierras manuales', '20512345681', 1004),
-('2024-04-10', '2024-04-20', 'Orden para destornilladores', 70, 'Alta', 5.00, 2005, 'Destornilladores planos', '20512345682', 1005),
-('2024-05-01', '2024-05-11', 'Orden para alicates', 60, 'Media', 8.50, 2006, 'Alicates multifunción', '20512345683', 1006),
-('2024-06-05', '2024-06-15', 'Orden para cables', 80, 'Alta', 1.20, 2007, 'Cables de cobre', '20512345684', 1007),
-('2024-07-10', '2024-07-20', 'Orden para guantes', 200, 'Media', 3.00, 2008, 'Guantes de seguridad', '20512345685', 1008),
-('2024-08-15', '2024-08-25', 'Orden para mascarillas', 150, 'Alta', 0.80, 2009, 'Mascarillas protectoras', '20512345686', 1009),
-('2024-09-01', '2024-09-11', 'Orden para botas de seguridad', 40, 'Baja', 25.00, 2010, 'Botas de seguridad industrial', '20512345687', 1010),
-('2024-09-18', '2024-09-28', 'Orden para cascos', 100, 'Alta', 15.00, 2011, 'Cascos de protección', '20512345688', 1011),
-('2024-10-05', '2024-10-15', 'Orden para chalecos reflectantes', 120, 'Media', 7.50, 2012, 'Chalecos reflectantes', '20512345689', 1012),
-('2024-10-20', '2024-10-30', 'Orden para gafas de protección', 180, 'Alta', 3.20, 2013, 'Gafas de seguridad', '20512345690', 1013),
-('2024-11-02', '2024-11-12', 'Orden para extinguidores', 35, 'Media', 40.00, 2014, 'Extinguidores ABC', '20512345691', 1014),
-('2024-11-20', '2024-11-30', 'Orden para señales de emergencia', 15, 'Baja', 12.00, 2015, 'Señales de emergencia', '20512345692', 1015),
-('2024-12-01', '2024-12-11', 'Orden para conos de seguridad', 50, 'Alta', 10.00, 2016, 'Conos reflectantes', '20512345693', 1016),
-('2024-12-15', '2024-12-25', 'Orden para linternas', 60, 'Media', 20.00, 2017, 'Linternas de alta potencia', '20512345694', 1017),
-('2025-01-10', '2025-01-20', 'Orden para medidores eléctricos', 45, 'Alta', 50.00, 2018, 'Medidores de tensión', '20512345695', 1018),
-('2025-01-25', '2025-02-05', 'Orden para baterías recargables', 100, 'Media', 5.00, 2019, 'Baterías de larga duración', '20512345696', 1019),
-('2025-02-05', '2025-02-15', 'Orden para kits de primeros auxilios', 25, 'Alta', 30.00, 2020, 'Kits médicos', '20512345697', 1020);
-
--- Pedido
-INSERT INTO Pedido (Numero, Cant_pedid, Fecha, Est_inactividad, Cod_recurso, Codigo_empleado, Cod_estad) VALUES
-(3001, 30, '2024-01-10', '1', 501, 1001, 401),
-(3002, 50, '2024-02-05', '1', 502, 1002, 402),
-(3003, 100, '2024-03-01', '0', 503, 1003, 403),
-(3004, 25, '2024-03-25', '1', 504, 1004, 404),
-(3005, 70, '2024-04-10', '1', 505, 1005, 405),
-(3006, 60, '2024-05-01', '0', 506, 1006, 406),
-(3007, 80, '2024-06-05', '1', 507, 1007, 407),
-(3008, 200, '2024-07-10', '1', 508, 1008, 408),
-(3009, 150, '2024-08-15', '0', 509, 1009, 409),
-(3010, 40, '2024-09-01', '1', 510, 1010, 410),
-(3011, 100, '2024-09-18', '1', 511, 1011, 411),
-(3012, 120, '2024-10-05', '0', 512, 1012, 412),
-(3013, 180, '2024-10-20', '1', 513, 1013, 413),
-(3014, 35, '2024-11-02', '1', 514, 1014, 414),
-(3015, 15, '2024-11-20', '0', 515, 1015, 415),
-(3016, 50, '2024-12-01', '1', 516, 1016, 416),
-(3017, 60, '2024-12-15', '0', 517, 1017, 417),
-(3018, 45, '2025-01-10', '1', 518, 1018, 418),
-(3019, 100, '2025-01-25', '0', 519, 1019, 419),
-(3020, 25, '2025-02-05', '1', 520, 1020, 420);
-
 -- Recurso
 INSERT INTO Recurso (Cod_recurso, Cantidad, Nombre) VALUES
-(501, 100, 'Martillo'),
-(502, 200, 'Taladro'),
-(503, 1000, 'Clavo'),
-(504, 500, 'Sierra'),
-(505, 300, 'Destornillador'),
-(506, 400, 'Alicate'),
-(507, 800, 'Cable'),
-(508, 600, 'Guantes'),
-(509, 1200, 'Mascarilla'),
-(510, 150, 'Botas de seguridad'),
-(511, 500, 'Casco'),
-(512, 700, 'Chaleco reflectante'),
-(513, 900, 'Gafas de protección'),
-(514, 50, 'Extintor'),
-(515, 100, 'Señal de emergencia'),
-(516, 300, 'Cono de seguridad'),
-(517, 250, 'Linterna'),
-(518, 120, 'Medidor eléctrico'),
-(519, 400, 'Batería recargable'),
-(520, 50, 'Kit de primeros auxilios');
+('501', 100, 'Martillo'),
+('502', 200, 'Taladro'),
+('503', 1000, 'Clavo'),
+('504', 500, 'Sierra'),
+('505', 300, 'Destornillador'),
+('506', 400, 'Alicate'),
+('507', 800, 'Cable'),
+('508', 600, 'Guantes'),
+('509', 1200, 'Mascarilla'),
+('510', 150, 'Botas de seguridad'),
+('511', 500, 'Casco'),
+('512', 700, 'Chaleco reflectante'),
+('513', 900, 'Gafas de protección'),
+('514', 50, 'Extintor'),
+('515', 100, 'Señal de emergencia'),
+('516', 300, 'Cono de seguridad'),
+('517', 250, 'Linterna'),
+('518', 120, 'Medidor eléctrico'),
+('519', 400, 'Batería recargable'),
+('520', 50, 'Kit de primeros auxilios');
+
+
+-- RecursoXMantenimiento
+INSERT INTO RecursoXMantenimiento (Id_RecursoXMantto, Cod_Act_mantto, Cod_recurso) VALUES
+(1, 1, '501'),
+(2, 2, '502'),
+(3, 3, '503'),
+(4, 4, '504'),
+(5, 5, '505'),
+(6, 6, '506'),
+(7, 7, '507'),
+(8, 8, '508'),
+(9, 9, '509'),
+(10, 10, '510'),
+(11, 11, '511'),
+(12, 12, '512'),
+(13, 13, '513'),
+(14, 14, '514'),
+(15, 15, '515'),
+(16, 16, '516'),
+(17, 17, '517'),
+(18, 18, '518'),
+(19, 19, '519'),
+(20, 20, '520');
 
 -- Proveedor
 INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direccion) VALUES
@@ -899,11 +831,82 @@ INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direc
 ('20512345696', 'Baterías Recargables SAC', 'Javier Delgado', 'javier@baterias.com', 'Electricidad', '654789123', 'Calle Recarga 987'),
 ('20512345697', 'Primera Ayuda SAC', 'Clara Huamán', 'clara@primerosauxilios.com', 'Salud', '321987123', 'Av. Emergencia 321');
 
+
+-- Orden_de_compra
+INSERT INTO Orden_de_compra (Fecha_emision, Fecha_posible_entrega, Descripcion, Cantidad, Prioridad, Precio_unitario, Cod_orden_compra, Descripcion_product, RUC_proveedor, Codigo_empleado) VALUES
+('2024-01-10', '2024-01-20', 'Orden para martillos', 30, 'Alta', 15.50, '2001', 'Martillos de acero', '20512345678', 1),
+('2024-02-05', '2024-02-15', 'Orden para taladros', 50, 'Media', 45.00, '2002', 'Taladros industriales', '20512345679', 2),
+('2024-03-01', '2024-03-11', 'Orden para clavos', 100, 'Alta', 0.10, '2003', 'Clavos de 3 pulgadas', '20512345680', 3),
+('2024-03-25', '2024-04-05', 'Orden para sierras', 25, 'Baja', 12.00, '2004', 'Sierras manuales', '20512345681', 4),
+('2024-04-10', '2024-04-20', 'Orden para destornilladores', 70, 'Alta', 5.00, '2005', 'Destornilladores planos', '20512345682', 5),
+('2024-05-01', '2024-05-11', 'Orden para alicates', 60, 'Media', 8.50, '2006', 'Alicates multifunción', '20512345683', 6),
+('2024-06-05', '2024-06-15', 'Orden para cables', 80, 'Alta', 1.20, '2007', 'Cables de cobre', '20512345684', 7),
+('2024-07-10', '2024-07-20', 'Orden para guantes', 200, 'Media', 3.00, '2008', 'Guantes de seguridad', '20512345685', 8),
+('2024-08-15', '2024-08-25', 'Orden para mascarillas', 150, 'Alta', 0.80, '2009', 'Mascarillas protectoras', '20512345686', 9),
+('2024-09-01', '2024-09-11', 'Orden para botas de seguridad', 40, 'Baja', 25.00, '2010', 'Botas de seguridad industrial', '20512345687', 10),
+('2024-09-18', '2024-09-28', 'Orden para cascos', 100, 'Alta', 15.00, '2011', 'Cascos de protección', '20512345688', 11),
+('2024-10-05', '2024-10-15', 'Orden para chalecos reflectantes', 120, 'Media', 7.50, '2012', 'Chalecos reflectantes', '20512345689', 12),
+('2024-10-20', '2024-10-30', 'Orden para gafas de protección', 180, 'Alta', 3.20, '2013', 'Gafas de seguridad', '20512345690', 13),
+('2024-11-02', '2024-11-12', 'Orden para extinguidores', 35, 'Media', 40.00, '2014', 'Extinguidores ABC', '20512345691', 14),
+('2024-11-20', '2024-11-30', 'Orden para señales de emergencia', 15, 'Baja', 12.00, '2015', 'Señales de emergencia', '20512345692', 15),
+('2024-12-01', '2024-12-11', 'Orden para conos de seguridad', 50, 'Alta', 10.00, '2016', 'Conos reflectantes', '20512345693', 16),
+('2024-12-15', '2024-12-25', 'Orden para linternas', 60, 'Media', 20.00, '2017', 'Linternas de alta potencia', '20512345694', 17),
+('2025-01-10', '2025-01-20', 'Orden para medidores eléctricos', 45, 'Alta', 50.00, '2018', 'Medidores de tensión', '20512345695', 18),
+('2025-01-25', '2025-02-05', 'Orden para baterías recargables', 100, 'Media', 5.00, '2019', 'Baterías de larga duración', '20512345696', 19),
+('2025-02-05', '2025-02-15', 'Orden para kits de primeros auxilios', 25, 'Alta', 30.00, '2020', 'Kits médicos', '20512345697', 20);
+
+-- Registro_compra_recursos
+INSERT INTO Registro_compra_recursos (Fecha_registro, Descripcion, Cod_reg_recurso, Cantidad, Cod_almacen, Cod_orden_compra, Cod_recurso) VALUES
+('2024-01-15', 'Compra de martillos', 101, 30, 1, '2001', 501),
+('2024-02-20', 'Compra de taladros', 102, 50, 2, '2002', 502),
+('2024-03-22', 'Compra de clavos', 103, 100, 4, '2003', 503),
+('2024-04-11', 'Compra de sierras', 104, 25, 4, '2004', 504),
+('2024-05-18', 'Compra de destornilladores', 105, 70, 2, '2005', 505),
+('2024-06-02', 'Compra de alicates', 106, 60, 1, '2006', 506),
+('2024-07-15', 'Compra de cables', 107, 80, 2, '2007', 507),
+('2024-08-10', 'Compra de guantes', 108, 200, 1, '2008', 508),
+('2024-09-05', 'Compra de mascarillas', 109, 150, 2, '2009', 509),
+('2024-09-20', 'Compra de botas de seguridad', 110, 40, 1, '2010', 510),
+('2024-10-01', 'Compra de cascos', 111, 100, 2, '2011', 511),
+('2024-10-15', 'Compra de chalecos reflectantes', 112, 120, 4, '2012', 512),
+('2024-11-03', 'Compra de gafas de protección', 113, 180, 4, '2013', 513),
+('2024-11-18', 'Compra de extinguidores', 114, 35, 2, '2014', 514),
+('2024-12-01', 'Compra de señales de emergencia', 115, 15, 1, '2015', 515),
+('2024-12-15', 'Compra de conos de seguridad', 116, 50, 4, '2016', 516),
+('2025-01-07', 'Compra de linternas', 117, 60, 1, '2017', 517),
+('2025-01-22', 'Compra de medidores eléctricos', 118, 45, 2, '2018', 518),
+('2025-02-05', 'Compra de baterías recargables', 119, 100, 4, '2019', 519),
+('2025-02-18', 'Compra de kits de primeros auxilios', 120, 25, 2, '2020', 520);
+
 -- Estado
 INSERT INTO Estado (Cod_estad, Tipo_estad) VALUES
-(1, 'Aprobado'),
-(2, 'En proceso de envío'),
-(3, 'Enviado');
+('1', 'Aprobado'),
+('2', 'En proceso de envío'),
+('3', 'Enviado');
+
+-- Pedido
+INSERT INTO Pedido (Numero, Cant_pedid, Fecha, Est_inactividad, Cod_recurso, Codigo_empleado, Cod_estad) VALUES
+(3001, 30, '2024-01-10', '1', 501, 1, '1'),
+(3002, 50, '2024-02-05', '1', 502, 2, '2'),
+(3003, 100, '2024-03-01', '0', 503, 3, '3'),
+(3004, 25, '2024-03-25', '1', 504, 4, '1'),
+(3005, 70, '2024-04-10', '1', 505, 5, '2'),
+(3006, 60, '2024-05-01', '0', 506, 6, '3'),
+(3007, 80, '2024-06-05', '1', 507, 7, '1'),
+(3008, 200, '2024-07-10', '1', 508, 8, '2'),
+(3009, 150, '2024-08-15', '0', 509, 9, '3'),
+(3010, 40, '2024-09-01', '1', 510, 10, '1'),
+(3011, 100, '2024-09-18', '1', 511, 11, '2'),
+(3012, 120, '2024-10-05', '0', 512, 12, '3'),
+(3013, 180, '2024-10-20', '1', 513, 13, '1'),
+(3014, 35, '2024-11-02', '1', 514, 14, '2'),
+(3015, 15, '2024-11-20', '0', 515, 15, '3'),
+(3016, 50, '2024-12-01', '1', 516, 16, '1'),
+(3017, 60, '2024-12-15', '0', 517, 17, '2'),
+(3018, 45, '2025-01-10', '1', 518, 18, '3'),
+(3019, 100, '2025-01-25', '0', 519, 19, '1'),
+(3020, 25, '2025-02-05', '1', 520, 20, '2');
+
  
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Codigo_autenticacion, Descripcion)
@@ -911,6 +914,7 @@ VALUES
 (1, 'Generado'),
 (2, 'Utilizado'),
 (3, 'Expirado');
+
 -- Estado_sesion
 INSERT INTO Estado_Sesion (Codigo_Estado_E, Descripcion)
 VALUES 
@@ -926,20 +930,18 @@ VALUES
 ('Administrador', 120, 102),
 ('Master', 180, 103);
 
---Sesion empleado
-
 INSERT INTO Sesion_Empleado (ID_Sesion, Codigo_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Estado_Sesion, Cargo)
 VALUES 
-(1, 1001, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 1, 'Usuario'),
-(2, 1002, '2024-10-02 09:30:00', '2024-10-02 11:30:00', '192.168.0.2', 2, 'Administrador'),
-(3, 1003, '2024-10-03 11:00:00', '2024-10-03 12:30:00', '192.168.0.3', 3, 'Master'),
-(4, 1004, '2024-10-04 13:00:00', '2024-10-04 14:45:00', '192.168.0.4', 4, 'Supervisor'),
-(5, 1005, '2024-10-05 14:15:00', '2024-10-05 15:30:00', '192.168.0.5', 5, 'Operador'),
-(6, 1006, '2024-10-06 09:00:00', '2024-10-06 11:00:00', '192.168.0.6', 6, 'Auditor'),
-(7, 1007, '2024-10-07 12:00:00', '2024-10-07 13:30:00', '192.168.0.7', 7, 'Gerente'),
-(8, 1008, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 8, 'Asistente'),
-(9, 1009, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 9, 'Técnico'),
-(10, 1010, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 10, 'Consultor');
+(1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario'),
+(2, 2, '2024-10-02 09:30:00', '2024-10-02 11:30:00', '192.168.0.2', 2, 'Administrador'),
+(3, 3, '2024-10-03 11:00:00', '2024-10-03 12:30:00', '192.168.0.3', 2, 'Master'),
+(4, 4, '2024-10-04 13:00:00', '2024-10-04 14:45:00', '192.168.0.4', 2, 'Usuario'),
+(5, 5, '2024-10-05 14:15:00', '2024-10-05 15:30:00', '192.168.0.5', 2, 'Administrador'),
+(6, 6, '2024-10-06 09:00:00', '2024-10-06 11:00:00', '192.168.0.6', 2, 'Administrador'),
+(7, 7, '2024-10-07 12:00:00', '2024-10-07 13:30:00', '192.168.0.7', 2, 'Usuario'),
+(8, 8, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 2, 'Usuario'),
+(9, 9, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 2, 'Master'),
+(10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario');
 
 --Autenticacion_en_2_pasos
 INSERT INTO Autenticacion_en_2_pasos (ID_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, Cod_Verificacion, ID_sesion, Estado_Codigo)
@@ -947,42 +949,40 @@ VALUES
 (1, '2024-10-01 08:05:00', 1, 123456, 1, 1),
 (2, '2024-10-02 09:35:00', 2, 654321, 2, 2),
 (3, '2024-10-03 11:05:00', 3, 987654, 3, 3),
-(4, '2024-10-04 13:10:00', 1, 321654, 4, 4),
-(5, '2024-10-05 14:20:00', 2, 456789, 5, 5),
-(6, '2024-10-06 09:10:00', 1, 987321, 6, 6),
-(7, '2024-10-07 12:10:00', 3, 654789, 7, 7),
-(8, '2024-10-08 10:20:00', 2, 321987, 8, 8),
-(9, '2024-10-09 14:30:00', 3, 789123, 9, 9),
-(10, '2024-10-10 11:25:00', 1, 123789, 10, 10);
+(4, '2024-10-04 13:10:00', 1, 321654, 4, 1),
+(5, '2024-10-05 14:20:00', 2, 456789, 5, 2),
+(6, '2024-10-06 09:10:00', 1, 987321, 6, 3),
+(7, '2024-10-07 12:10:00', 3, 654789, 7, 1),
+(8, '2024-10-08 10:20:00', 2, 321987, 8, 2),
+(9, '2024-10-09 14:30:00', 3, 789123, 9, 2),
+(10, '2024-10-10 11:25:00', 1, 123789, 10, 1);
 
---Sesion_sospechosa
+-- Poblar la tabla Sesion_sospechosa con 10 registros
 INSERT INTO Sesion_sospechosa (ID_Sesion_sospechosa, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
 VALUES 
-(1, 1, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.4', 'Lima, Peru', 'Alertar al administrador'),
-(2, 2, 'Inactiva', '00:1B:44:11:3A:C8', 'Móvil', '2024-10-02 09:45:00', '192.168.0.5', 'Cusco, Peru', 'Bloquear el acceso'),
-(3, 3, 'Expirada', '00:1B:44:11:3A:D9', 'Tablet', '2024-10-03 11:15:00', '192.168.0.6', 'Arequipa, Peru', 'Revisar actividad'),
-(4, 4, 'Bloqueada', '00:1B:44:11:3A:E0', 'Laptop', '2024-10-04 13:25:00', '192.168.0.7', 'Piura, Peru', 'Notificar a seguridad'),
-(5, 5, 'Finalizada', '00:1B:44:11:3A:F1', 'Servidor', '2024-10-05 14:35:00', '192.168.0.8', 'Trujillo, Peru', 'Cerrar sesión automáticamente'),
-(6, 6, 'Reiniciada', '00:1B:44:11:3A:G2', 'PC', '2024-10-06 09:20:00', '192.168.0.9', 'Tacna, Peru', 'Solicitar autenticación'),
-(7, 7, 'Pendiente', '00:1B:44:11:3A:H3', 'Móvil', '2024-10-07 12:30:00', '192.168.0.10', 'Chiclayo, Peru', 'Monitorear actividad'),
-(8, 8, 'Abortada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 10:40:00', '192.168.0.11', 'Iquitos, Peru', 'Investigar incidencia'),
-(9, 9, 'En espera', '00:1B:44:11:3A:J5', 'PC', '2024-10-09 14:50:00', '192.168.0.12', 'Pucallpa, Peru', 'Enviar alerta al equipo');
-
--- Notificacion administrador
-INSERT INTO Notificacion_Administrador (ID_Notificacion, ID_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa)
+(1, 101, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.6', 'Lima, Peru', 'Alertar al administrador'),
+(2, 102, 'Inactiva', '00:1B:44:11:3A:C8', 'Móvil', '2024-10-02 09:45:00', '192.168.0.7', 'Cusco, Peru', 'Bloquear el acceso'),
+(3, 103, 'Expirada', '00:1B:44:11:3A:D9', 'Tablet', '2024-10-03 11:15:00', '192.168.0.8', 'Arequipa, Peru', 'Revisar actividad'),
+(4, 104, 'Bloqueada', '00:1B:44:11:3A:E0', 'Laptop', '2024-10-04 13:25:00', '192.168.0.9', 'Piura, Peru', 'Notificar a seguridad'),
+(5, 105, 'Finalizada', '00:1B:44:11:3A:F1', 'Servidor', '2024-10-05 14:35:00', '192.168.0.10', 'Trujillo, Peru', 'Cerrar sesión automáticamente'),
+(6, 106, 'Activa', '00:1B:44:11:3A:G2', 'PC', '2024-10-06 15:00:00', '192.168.0.11', 'Tacna, Peru', 'Solicitar autenticación'),
+(7, 107, 'Expirada', '00:1B:44:11:3A:H3', 'Móvil', '2024-10-07 16:20:00', '192.168.0.12', 'Chiclayo, Peru', 'Monitorear actividad'),
+(8, 108, 'Bloqueada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 17:45:00', '192.168.0.13', 'Iquitos, Peru', 'Investigar incidencia'),
+(9, 109, 'Finalizada', '00:1B:44:11:3A:J5', 'Laptop', '2024-10-09 18:15:00', '192.168.0.14', 'Pucallpa, Peru', 'Enviar alerta al equipo'),
+(10, 110, 'Activa', '00:1B:44:11:3A:K6', 'Servidor', '2024-10-10 19:00:00', '192.168.0.15', 'Tarapoto, Peru', 'Revisar actividad en detalle');
+-- Poblar la tabla Notificacion_Administrador con 10 registros
+INSERT INTO Notificacion_Administrador (ID_Notificacion, ID_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa, Id_autenticacion)
 VALUES 
-(1, 5001, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1),
-(2, 5002, 'Fallo de Autenticación', '2024-10-02 09:50:00', 'Enviada', 'Varios intentos fallidos de autenticación desde Cusco', 'Media', 2),
-(3, 5003, 'Recuperación de Contraseña', '2024-10-03 11:20:00', 'Leída', 'Solicitud de recuperación de contraseña desde Arequipa', 'Baja', 3),
-(4, 5004, 'Acceso Bloqueado', '2024-10-04 12:00:00', 'Resuelta', 'Acceso bloqueado debido a actividad sospechosa en Piura', 'Alta', 4),
-(5, 5005, 'Cambio de Contraseña', '2024-10-05 14:10:00', 'En Proceso', 'Cambio de contraseña solicitado desde Trujillo', 'Media', 5),
-(6, 5006, 'Reintento de Autenticación', '2024-10-06 10:30:00', 'Enviada', 'Reintento de autenticación fallido detectado en Tacna', 'Baja', 6),
-(7, 5007, 'Inicio de Sesión No Reconocido', '2024-10-07 15:20:00', 'Pendiente', 'Inicio de sesión no reconocido desde Chiclayo', 'Alta', 7),
-(8, 5008, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8),
-(9, 5009, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9),
-(10, 5010, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10);
-
-
+(1, 5001, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1, 101),
+(2, 5002, 'Fallo de Autenticación', '2024-10-02 09:50:00', 'Enviada', 'Varios intentos fallidos de autenticación desde Cusco', 'Media', 2, 102),
+(3, 5003, 'Recuperación de Contraseña', '2024-10-03 11:20:00', 'Leída', 'Solicitud de recuperación de contraseña desde Arequipa', 'Baja', 3, 103),
+(4, 5004, 'Acceso Bloqueado', '2024-10-04 12:00:00', 'Resuelta', 'Acceso bloqueado debido a actividad sospechosa en Piura', 'Alta', 4, 104),
+(5, 5005, 'Cambio de Contraseña', '2024-10-05 14:10:00', 'En Proceso', 'Cambio de contraseña solicitado desde Trujillo', 'Media', 5, 105),
+(6, 5006, 'Reintento de Autenticación', '2024-10-06 10:30:00', 'Enviada', 'Reintento de autenticación fallido detectado en Tacna', 'Baja', 6, 106),
+(7, 5007, 'Inicio de Sesión No Reconocido', '2024-10-07 15:20:00', 'Pendiente', 'Inicio de sesión no reconocido desde Chiclayo', 'Alta', 7, 107),
+(8, 5008, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8, 108),
+(9, 5009, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 109),
+(10, 5010, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 110);
 
 
 
