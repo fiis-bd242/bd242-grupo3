@@ -5,13 +5,13 @@ CREATE TABLE Cargo_empleado
     Nombre_cargo VARCHAR(50) NOT NULL 
 );
 
-<<<<<<< HEAD
 DROP TABLE IF EXISTS Acceso_empleado CASCADE;
 CREATE TABLE Acceso_empleado
 (
     Cod_acceso INT PRIMARY KEY,
     Nombre_acceso VARCHAR(50) NOT NULL
-=======
+);
+
 DROP TABLE IF EXISTS Proveedor CASCADE;
 CREATE TABLE Proveedor
 (
@@ -40,7 +40,6 @@ CREATE TABLE Estado
   Cod_estad CHAR(2) NOT NULL,
   Tipo_estad VARCHAR(255) NOT NULL,
   PRIMARY KEY (Cod_estad)
->>>>>>> a17888288760a8a63faf58de5e7030d437896c81
 );
 
 DROP TABLE IF EXISTS Criticidad CASCADE;
