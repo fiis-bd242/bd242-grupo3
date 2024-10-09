@@ -517,6 +517,7 @@ CREATE TABLE PlanaccionxEmpleado
   FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
 );
 
+DROP TABLE IF EXISTS EquipoEvaluadorXEmpleado CASCADE;
 CREATE TABLE EquipoEvaluadorXEmpleado (
     id_equipo_evaluador INT NOT NULL,
     codigo_empleado INT NOT NULL,
@@ -759,3 +760,4 @@ CREATE TABLE Recuperacion_de_contraseña (
     Estado_codigo VARCHAR(20),                   
     FOREIGN KEY (ID_sesion) REFERENCES Sesion_empleado(ID_sesion),  
     FOREIGN KEY (Estado_codigo) REFERENCES Estado_codigo(Codigo_recu)  
+);
