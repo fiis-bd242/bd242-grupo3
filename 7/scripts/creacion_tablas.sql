@@ -508,6 +508,14 @@ CREATE TABLE PlanaccionxEmpleado
   FOREIGN KEY (Codigo_empleado) REFERENCES Empleado(Codigo_empleado)
 );
 
+CREATE TABLE EquipoEvaluadorXEmpleado (
+    id_equipo_evaluador INT NOT NULL,
+    codigo_empleado INT NOT NULL,
+    PRIMARY KEY (id_equipo_evaluador, codigo_empleado),
+    FOREIGN KEY (id_equipo_evaluador) REFERENCES Equipo_evaluador(id_equipo_evaluador),
+    FOREIGN KEY (codigo_empleado) REFERENCES Empleado(codigo_empleado)
+);
+
 DROP TABLE IF EXISTS Registros_por_Riesgos CASCADE;
 CREATE TABLE Registros_por_Riesgos
 (
