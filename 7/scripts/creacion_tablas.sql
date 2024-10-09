@@ -145,9 +145,11 @@ CREATE TABLE ActvempleadoXOrdenTrabajo
 (
   Id_actvempleado INT NOT NULL,
   Id_Orden INT NOT NULL,
+  Id_equipo_soporte INT NOT NULL,
   PRIMARY KEY (Id_actvempleado, ID_Orden),
   FOREIGN KEY (Id_actvempleado) REFERENCES Actividad_empleado(Id_actvempleado),
-  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden)
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden),
+  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
 );
 
 DROP TABLE IF EXISTS Categoria_Almacen CASCADE;
@@ -227,14 +229,10 @@ CREATE TABLE Equipo_de_Soporte
     Codigo_estado INT,
     Codigo_disponibilidad INT,
     Codigo_tipo INT,
-    Cod_Act_mantto INT NULL,
-    Id_orden INT NULL,
     CONSTRAINT fk_tipo FOREIGN KEY (Codigo_tipo) REFERENCES Tipo_Equipo_Soporte (Codigo_tipo),
     CONSTRAINT fk_almacen FOREIGN KEY (Cod_almacen) REFERENCES Almacen (Cod_almacen),
     CONSTRAINT fk_disponibilidad FOREIGN KEY (Codigo_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Codigo_disponibilidad),
-    CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado),
-    CONSTRAINT fk_orden FOREIGN KEY (Id_orden) REFERENCES ActvempleadoXOrdenTrabajo (Id_orden),
-    CONSTRAINT fk_act_mantto FOREIGN KEY (Cod_Act_mantto) REFERENCES ActvempleadoXOrdenTrabajo (Cod_Act_mantto)
+    CONSTRAINT fk_estado FOREIGN KEY (Codigo_estado) REFERENCES Estado_Equipo_Soporte (Codigo_estado)
 );
 DROP TABLE IF EXISTS Tipo_maquina CASCADE;
 CREATE TABLE Tipo_maquina
