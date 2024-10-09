@@ -3,6 +3,7 @@ INSERT INTO Cargo_empleado (Id_Cargo, Nombre_cargo) VALUES
 (1, 'Jefe'),
 (2, 'Técnico'),
 (3, 'Supervisor');
+(4, 'Encargado de sistema')
 
 INSERT INTO Acceso_empleado (Cod_acceso, Nombre_acceso) VALUES
 (1, 'Master'),
@@ -211,7 +212,7 @@ VALUES
 INSERT INTO Estado_Almacen (Codigo_estado, Nombre_estado) 
 VALUES 
 (1, 'Operativo'),
-(2, '0');
+(2, 'Inoperativo');
 
 -- Poblamiento de la tabla Almacen
 INSERT INTO Almacen (Cod_almacen, Codigo_empleado, Codigo_categoria, Codigo_estado, Direccion, Capacidad) 
@@ -245,18 +246,18 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Codigo_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Cod_almacen, Codigo_disponibilidad, Codigo_estado, Id_orden) 
+INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Codigo_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Cod_almacen, Codigo_disponibilidad, Codigo_estado, Cod_Act_mantto, Id_orden) 
 VALUES 
-(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 1, 1, 1),
-(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 1, 3, 1),
-(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4, 1),
-(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 1, 1, 2),
-(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 1, 1, 2),
-(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 1, 1, NULL),
-(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1, NULL),
-(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta', 500, 3, 1, 1, NULL),
-(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales', 400, 3, 1, 2, NULL),
-(10, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2, NULL);
+(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 1, 1, NULL, NULL),
+(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 2, 3, 1, 1),
+(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4, 10, 1),
+(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 2, 1, 20, 1),
+(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 2, 1, 4, 4),
+(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 2, 1, 19, 3),
+(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1, 2, 2),
+(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta', 500, 3, 2, 1, 12, 3),
+(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales', 400, 3, 2, 2, 3, 3),
+(10, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 2, 2, 11, 2);
 
 INSERT INTO Tipo_Severidad (Id_tipo_severidad, Nombre_tipo_severidad) VALUES
 ('CA', 'Catastrófico'),
