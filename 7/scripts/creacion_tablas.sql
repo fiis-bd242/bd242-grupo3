@@ -457,19 +457,7 @@ CREATE TABLE Tareas
   FOREIGN KEY (Id_actividad) REFERENCES Actividades(Id_actividad)
 );
 
-DROP TABLE IF EXISTS Control CASCADE;
-CREATE TABLE Control
-(
-  Id_control INT NOT NULL,
-  Descripcion_control CHAR(255) NOT NULL,
-  Id_tipo_estgia_control CHAR(1) NOT NULL,
-  Id_tipo_med_control CHAR(3) NOT NULL,
-  Id_tipo_Qcontrol CHAR(1) NOT NULL,
-  PRIMARY KEY (Id_control),
-  FOREIGN KEY (Id_tipo_estgia_control) REFERENCES Tipo_Estrategia_Control(Id_tipo_estgia_control),
-  FOREIGN KEY (Id_tipo_med_control) REFERENCES Tipo_Medida_Control(Id_tipo_med_control),
-  FOREIGN KEY (Id_tipo_Qcontrol) REFERENCES Tipo_Q_control(Id_tipo_Qcontrol)
-);
+
 
 DROP TABLE IF EXISTS TareasXIdentRiesgo CASCADE;
 CREATE TABLE TareasXIdentRiesgo
@@ -481,18 +469,32 @@ CREATE TABLE TareasXIdentRiesgo
   FOREIGN KEY (Id_riesgo) REFERENCES Identificacion_del_riesgo(Id_riesgo)
 );
 
-DROP TABLE IF EXISTS Valorizacion_del_riesgo CASCADE;
-CREATE TABLE Valorizacion_del_riesgo
+DROP TABLE IF EXISTS Valoracion_del_riesgo CASCADE;
+CREATE TABLE Valoracion_del_riesgo
 (
   Id_valoracion_residual INT NOT NULL,
   Cantidad_controles INT NOT NULL,
   Id_valoracion_inicial INT NOT NULL,
-  Id_control INT NOT NULL,
   Id_tipo_riesgo CHAR(2) NOT NULL,
   PRIMARY KEY (Id_valoracion_residual),
   FOREIGN KEY (Id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
-  FOREIGN KEY (Id_control) REFERENCES Control(Id_control),
   FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo)
+);
+
+DROP TABLE IF EXISTS Control CASCADE;
+CREATE TABLE Control
+(
+  Id_control INT NOT NULL,
+  Descripcion_control CHAR(255) NOT NULL,
+  Id_tipo_estgia_control CHAR(1) NOT NULL,
+  Id_tipo_med_control CHAR(3) NOT NULL,
+  Id_tipo_Qcontrol CHAR(1) NOT NULL,
+  Id_valoracion_residual INT NOT NULL,
+  PRIMARY KEY (Id_control),
+  FOREIGN KEY (Id_tipo_estgia_control) REFERENCES Tipo_Estrategia_Control(Id_tipo_estgia_control),
+  FOREIGN KEY (Id_tipo_med_control) REFERENCES Tipo_Medida_Control(Id_tipo_med_control),
+  FOREIGN KEY (Id_tipo_Qcontrol) REFERENCES Tipo_Q_control(Id_tipo_Qcontrol),
+  FOREIGN KEY (Id_valoracion_residual) REFERENCES Valoracion_del_riesgo(Id_valoracion_residual)
 );
 
 DROP TABLE IF EXISTS Plan_de_accion_de_mejora CASCADE;
@@ -504,7 +506,7 @@ CREATE TABLE Plan_de_accion_de_mejora
   Id_plan_mejora INT NOT NULL,
   Id_valoracion_residual INT NOT NULL,
   PRIMARY KEY (Id_plan_mejora),
-  FOREIGN KEY (Id_valoracion_residual) REFERENCES Valorizacion_del_riesgo(Id_valoracion_residual)
+  FOREIGN KEY (Id_valoracion_residual) REFERENCES Valoracion_del_riesgo(Id_valoracion_residual)
 );
 
 DROP TABLE IF EXISTS PlanaccionxEmpleado CASCADE;
@@ -526,20 +528,6 @@ CREATE TABLE EquipoEvaluadorXEmpleado (
     FOREIGN KEY (codigo_empleado) REFERENCES Empleado(codigo_empleado)
 );
 
-DROP TABLE IF EXISTS Registros_por_Riesgos CASCADE;
-CREATE TABLE Registros_por_Riesgos
-(
-  Id_registro_riesgo INT NOT NULL,
-  id_valoracion_inicial INT NOT NULL,
-  Id_plan_mejora INT NOT NULL,
-  Id_analisis INT NOT NULL,
-  Id_valoracion_residual INT NOT NULL,
-  PRIMARY KEY (Id_registro_riesgo),
-  FOREIGN KEY (id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
-  FOREIGN KEY (Id_plan_mejora) REFERENCES Plan_de_accion_de_mejora(Id_plan_mejora),
-  FOREIGN KEY (Id_analisis) REFERENCES Analisis_riesgo(Id_analisis),
-  FOREIGN KEY (Id_valoracion_residual) REFERENCES Valorizacion_del_riesgo(Id_valoracion_residual)
-);
 
 DROP TABLE IF EXISTS Registro_IPERC CASCADE;
 CREATE TABLE Registro_IPERC
@@ -548,13 +536,26 @@ CREATE TABLE Registro_IPERC
   Id_reg_iperc INT NOT NULL,
   Cant_riesgos_analizados INT NOT NULL,
   Id_proceso INT NOT NULL,
-  Id_registro_riesgo INT NOT NULL,
   PRIMARY KEY (Id_reg_iperc),
-  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso),
-  FOREIGN KEY (Id_registro_riesgo) REFERENCES Registros_por_Riesgos(Id_registro_riesgo)
+  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
 );
 
-
+DROP TABLE IF EXISTS Registros_por_Riesgos CASCADE;
+CREATE TABLE Registros_por_Riesgos
+(
+  Id_registro_riesgo INT NOT NULL,
+  id_valoracion_inicial INT NOT NULL,
+  Id_plan_mejora INT NOT NULL,
+  Id_analisis INT NOT NULL,
+  Id_valoracion_residual INT NOT NULL,
+  Id_reg_iperc INT NOT NULL,
+  PRIMARY KEY (Id_registro_riesgo),
+  FOREIGN KEY (id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
+  FOREIGN KEY (Id_plan_mejora) REFERENCES Plan_de_accion_de_mejora(Id_plan_mejora),
+  FOREIGN KEY (Id_analisis) REFERENCES Analisis_riesgo(Id_analisis),
+  FOREIGN KEY (Id_valoracion_residual) REFERENCES Valoracion_del_riesgo(Id_valoracion_residual),
+  FOREIGN KEY (id_reg_iperc) REFERENCES Registro_IPERC(id_reg_iperc)
+);
 
 DROP TABLE IF EXISTS Auditoria CASCADE;
 CREATE TABLE Auditoria
