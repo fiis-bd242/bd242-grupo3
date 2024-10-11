@@ -530,33 +530,34 @@ CREATE TABLE EquipoEvaluadorXEmpleado (
     FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado)
 );
 
-
-DROP TABLE IF EXISTS Registro_IPERC CASCADE;
-CREATE TABLE Registro_IPERC
+-- Eliminar y crear la tabla Informe_IPERC
+DROP TABLE IF EXISTS Informe_IPERC CASCADE;
+CREATE TABLE Informe_IPERC
 (
   Fecha_registro DATE NOT NULL,
-  Id_reg_iperc INT NOT NULL,
+  Id_informe_iperc INT NOT NULL,
   Cant_riesgos_analizados INT NOT NULL,
   Id_proceso INT NOT NULL,
-  PRIMARY KEY (Id_reg_iperc),
+  PRIMARY KEY (Id_informe_iperc),
   FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
 );
 
-DROP TABLE IF EXISTS Registros_por_Riesgos CASCADE;
-CREATE TABLE Registros_por_Riesgos
+-- Eliminar y crear la tabla Reg_riesgo_analizado
+DROP TABLE IF EXISTS Reg_riesgo_analizado CASCADE;
+CREATE TABLE Reg_riesgo_analizado
 (
-  Id_registro_riesgo INT NOT NULL,
+  Id_reg_riesgo_analizado INT NOT NULL,
   id_valoracion_inicial INT NOT NULL,
   Id_plan_mejora INT NOT NULL,
   Id_analisis INT NOT NULL,
   Id_valoracion_residual INT NOT NULL,
-  Id_reg_iperc INT NOT NULL,
-  PRIMARY KEY (Id_registro_riesgo),
+  Id_informe_iperc INT NOT NULL,
+  PRIMARY KEY (Id_reg_riesgo_analizado),
   FOREIGN KEY (id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
   FOREIGN KEY (Id_plan_mejora) REFERENCES Plan_de_accion_de_mejora(Id_plan_mejora),
   FOREIGN KEY (Id_analisis) REFERENCES Analisis_riesgo(Id_analisis),
   FOREIGN KEY (Id_valoracion_residual) REFERENCES Valoracion_del_riesgo(Id_valoracion_residual),
-  FOREIGN KEY (id_reg_iperc) REFERENCES Registro_IPERC(id_reg_iperc)
+  FOREIGN KEY (Id_informe_iperc) REFERENCES Informe_IPERC(Id_informe_iperc)
 );
 
 DROP TABLE IF EXISTS Auditoria CASCADE;
