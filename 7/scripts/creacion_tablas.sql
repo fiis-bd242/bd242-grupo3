@@ -755,3 +755,4 @@ CREATE TABLE Recuperacion_de_contraseña (
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_Empleado (Id_Sesion),  
     FOREIGN KEY (Id_estado_codigo) REFERENCES Estado_codigo (Id_estado_codigo)  
 );
+
