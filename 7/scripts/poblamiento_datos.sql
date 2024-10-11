@@ -563,7 +563,8 @@ INSERT INTO EquipoEvaluadorXEmpleado (id_equipo_evaluador, codigo_empleado) VALU
 (5, 5), 
 (6, 1);
 
-INSERT INTO Registro_IPERC (Id_reg_iperc, Id_proceso, Fecha_registro, Cant_riesgos_analizados) VALUES
+-- Poblar la tabla Informe_IPERC
+INSERT INTO Informe_IPERC (Id_informe_iperc, Id_proceso, Fecha_registro, Cant_riesgos_analizados) VALUES
 (1, 1, '2022-01-02', 5),
 (2, 1, '2023-12-12', 3),
 (3, 2, '2024-02-01', 4),
@@ -573,7 +574,8 @@ INSERT INTO Registro_IPERC (Id_reg_iperc, Id_proceso, Fecha_registro, Cant_riesg
 (7, 5, '2024-06-20', 5),
 (8, 6, '2024-07-25', 4);
 
-INSERT INTO Registros_por_Riesgos (Id_registro_riesgo, Id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual, Id_reg_iperc) VALUES
+-- Poblar la tabla Reg_riesgo_analizado 
+INSERT INTO Reg_riesgo_analizado (Id_reg_riesgo_analizado, Id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual, Id_informe_iperc) VALUES
 (1, 1, 1, 1, 1, 1),
 (2, 2, 2, 2, 2, 1),
 (3, 3, 3, 3, 3, 2),
@@ -582,6 +584,7 @@ INSERT INTO Registros_por_Riesgos (Id_registro_riesgo, Id_valoracion_inicial, Id
 (6, 6, 6, 6, 6, 5),
 (7, 7, 7, 7, 7, 6),
 (8, 8, 8, 8, 8, 7);
+
 
 -- Poblamiento de la tabla Tipo_maquina
 INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
