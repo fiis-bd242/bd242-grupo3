@@ -86,7 +86,7 @@ INSERT INTO Actividad_empleado (Id_actvempleado, Descripcion_actv, Codigo_emplea
 (20, 'Ajustar maquinaria de ensamblaje preventivamente', 20);
 
 -- Poblamiento de la tabla Orden_de_trabajo
-INSERT INTO Orden_de_trabajo (ID_Orden, Fecha_Orden, Descripcion, Empleado_asigna, Prioridad) VALUES
+INSERT INTO Orden_de_trabajo (ID_Orden, Fecha_Orden, Descripcion, Empleado_asigna, Criticidad) VALUES
 (1, '2024-01-10', 'Reemplazo de motor en línea de producción', 1, 3),
 (2, '2024-02-15', 'Revisión de sistema de control eléctrico', 2, 2),
 (3, '2024-03-20', 'Inspección de seguridad en planta de ensamblaje', 3, 3),

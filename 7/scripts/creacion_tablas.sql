@@ -134,10 +134,10 @@ CREATE TABLE Orden_de_trabajo
   Fecha_Orden DATE NOT NULL,
   Descripcion VARCHAR(10000) NOT NULL,
   Empleado_asigna INT NOT NULL,
-  Prioridad INT NOT NULL,
+  Criticidad INT NOT NULL,
   PRIMARY KEY (Id_Orden),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Codigo_empleado),
-  FOREIGN KEY (Prioridad) REFERENCES Criticidad(Id_criticidad)
+  FOREIGN KEY (Criticidad) REFERENCES Criticidad(Id_criticidad)
 );
 
 DROP TABLE IF EXISTS Categoria_Almacen CASCADE;
