@@ -585,40 +585,51 @@ INSERT INTO Registros_por_Riesgos (Id_registro_riesgo, Id_valoracion_inicial, Id
 
 -- Poblamiento de la tabla Tipo_maquina
 INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
-('A', 'Excavadora'),
-('B', 'Tractor'),
-('C', 'Topador'),
-('D', 'Perforadora'),
-('E', 'Cargador');
+(1, 'Excavadora'),
+(2, 'Tractor'),
+(3, 'Topador'),
+(4, 'Perforadora'),
+(5, 'Cargador');
 
 -- Poblamiento de la tabla Estado_maquina
 INSERT INTO Estado_maquina (id_estado, nombre_estado) VALUES
-('A', 'Operativa'),
-('B', 'Mantenimiento'),
-('C', 'Fuera de servicio');
+(1, 'Operativa'),
+(2, 'Mantenimiento'),
+(3, 'Fuera de servicio');
+
+INSERT INTO Marca_maquina (id_marca, nombre_marca) VALUES
+( 1, 'Caterpellir (CAT)' ),
+( 2 , 'Komatsu' ),
+( 3 , 'Sandvik' ),
+( 4 , 'Atlas Copco' ),
+( 5 , 'John Deere' ).
+( 6 , 'Volvo' ),
+( 7 , 'JLG' ),
+( 8 , 'Manitou' ),
+( 9 , 'Epiroc' )
 
 -- Poblamiento de la tabla Maquina
-INSERT INTO Maquina (Num_serie, Fecha_ultima_inspeccion, Fecha_adquisicion, Modelo, Marca, id_tipo_maquina, id_estado) VALUES
-('SN001', '2024-05-01', '2021-08-15', 'MX200', 'Caterpillar', 'A', 'A'),
-('SN002', '2024-03-10', '2020-07-22', 'B34', 'Komatsu', 'E', 'B'),
-('SN003', '2023-12-22', '2019-01-05', 'ZT100', 'Hitachi', 'C', 'C'),
-('SN004', '2024-01-17', '2018-09-17', 'X120', 'Volvo', 'D', 'B'),
-('SN005', '2024-02-14', '2022-03-10', 'HD200', 'JCB', 'A', 'A'),
-('SN006', '2023-11-21', '2020-10-25', 'G50', 'John Deere', 'B', 'C'),
-('SN007', '2024-04-19', '2021-04-05', 'TX400', 'Caterpillar', 'C', 'A'),
-('SN008', '2024-06-07', '2022-06-25', 'K200', 'Komatsu', 'D', 'B'),
-('SN009', '2023-12-03', '2019-12-11', 'MT500', 'Hitachi', 'A', 'C'),
-('SN010', '2024-02-09', '2021-09-09', 'RT300', 'Volvo', 'E', 'A'),
-('SN011', '2023-10-28', '2018-12-02', 'ZT500', 'JCB', 'C', 'B'),
-('SN012', '2024-03-18', '2021-11-23', 'VZ400', 'John Deere', 'D', 'A'),
-('SN013', '2023-11-06', '2020-08-14', 'PX200', 'Caterpillar', 'A', 'B'),
-('SN014', '2024-04-26', '2019-05-17', 'X500', 'Komatsu', 'B', 'C'),
-('SN015', '2023-12-19', '2020-03-20', 'G700', 'Hitachi', 'C', 'A'),
-('SN016', '2024-02-23', '2022-01-15', 'L450', 'Volvo', 'D', 'B'),
-('SN017', '2023-10-30', '2021-07-05', 'HD300', 'JCB', 'A', 'C'),
-('SN018', '2024-03-11', '2020-10-30', 'R300', 'John Deere', 'B', 'A'),
-('SN019', '2023-11-26', '2019-09-10', 'TX600', 'Caterpillar', 'C', 'B'),
-('SN020', '2024-05-08', '2022-04-28', 'K300', 'Komatsu', 'E', 'A');
+INSERT INTO Maquina (id_maquina, Fecha_ultima_inspeccion, Fecha_adquisicion, id_marca, id_tipo_maquina, id_estado) VALUES
+(1, 'Maquina 1', '2024-05-01', '2021-08-15', 1, 1, 1),
+(2, 'Maquina 2', '2024-03-10', '2020-07-22', 1, 5, 2),
+(3, 'Maquina 3', '2023-12-22', '2019-01-05', 1, 3, 3),
+(4, 'Maquina 4', '2024-01-17', '2018-09-17', 2, 4, 2),
+(5, 'Maquina 5', '2024-02-14', '2022-03-10', 2, 1, 1),
+(6, 'Maquina 6', '2023-11-21', '2020-10-25', 2, 2, 3),
+(7, 'Maquina 7', '2024-04-19', '2021-04-05', 2, 3, 1),
+(8, 'Maquina 8', '2024-06-07', '2022-06-25', 3, 4, 2),
+(9, 'Maquina 9', '2023-12-03', '2019-12-11', 3, 1, 3),
+(10, 'Maquina 10', '2024-02-09', '2021-09-09', 4, 5, 1),
+(11, 'Maquina 11', '2023-10-28', '2018-12-02', 4, 3, 2),
+(12, 'Maquina 12', '2024-03-18', '2021-11-23', 4, 4, 1),
+(13, 'Maquina 13', '2023-11-06', '2020-08-14', 5, 1, 2),
+(14, 'Maquina 14', '2024-04-26', '2019-05-17', 5, 2, 3),
+(15, 'Maquina 15', '2023-12-19', '2020-03-20', 6, 3, 1),
+(16, 'Maquina 16', '2024-02-23', '2022-01-15', 6, 4, 2),
+(17, 'Maquina 17', '2023-10-30', '2021-07-05', 7, 1, 3),
+(18, 'Maquina 18', '2024-03-11', '2020-10-30', 7, 2, 1),
+(19, 'Maquina 19', '2023-11-26', '2019-09-10', 8, 3, 2),
+(20, 'Maquina 20', '2024-05-08', '2022-04-28', 8, 5, 1);
 
 -- Poblamiento de la tabla Tipo_mantenimiento
 INSERT INTO Tipo_mantenimiento (id_tipo_mant, nombre_tipo_mant) VALUES

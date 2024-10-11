@@ -73,12 +73,12 @@ CREATE TABLE Empleado
 DROP TABLE IF EXISTS Plan_de_mantenimiento CASCADE;
 CREATE TABLE Plan_de_mantenimiento
 (
-  Codigo_plan INT NOT NULL,
+  Id_plan INT NOT NULL,
   Observaciones VARCHAR(5000) NOT NULL,
   Fecha_plan DATE NOT NULL,
   Empleado_asigna INT NOT NULL,
   Criticidad INT NOT NULL,
-  PRIMARY KEY (Codigo_plan),
+  PRIMARY KEY (Id_plan),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Codigo_empleado),
   FOREIGN KEY (Criticidad) REFERENCES Criticidad(Id_criticidad)
 );
@@ -238,7 +238,7 @@ CREATE TABLE Registro_compra_recursos
 DROP TABLE IF EXISTS Tipo_maquina CASCADE;
 CREATE TABLE Tipo_maquina
 (
-    id_tipo_maquina CHAR(1) NOT NULL,
+    id_tipo_maquina INT NOT NULL,
     nombre_tipo VARCHAR(300),
     PRIMARY KEY (id_tipo_maquina)
 );
@@ -246,30 +246,37 @@ CREATE TABLE Tipo_maquina
 DROP TABLE IF EXISTS Estado_maquina CASCADE;
 CREATE TABLE Estado_maquina
 (
-    id_estado CHAR(1) NOT NULL,
+    id_estado_maquina INT NOT NULL,
     nombre_estado VARCHAR(300),
     PRIMARY KEY (id_estado)
+);
+
+DROP TABLE IF EXISTS Marca_maquina CASCADE;
+CREATE TABLE Marca_maquina
+(
+    id_marca_maquina INT NOT NULL,
+    nombre_marca VARCHAR(100) NOT NULL
 );
 
 DROP TABLE IF EXISTS Maquina CASCADE;
 CREATE TABLE Maquina
 (
-    Num_serie VARCHAR NOT NULL,
+    id_maquina INT NOT NULL,
     Fecha_ultima_inspeccion DATE NOT NULL,
     Fecha_adquisicion DATE NOT NULL,
-    Modelo VARCHAR NOT NULL,
-    Marca VARCHAR NOT NULL,
-    id_tipo_maquina CHAR(1) NOT NULL, 
-    id_estado CHAR(1) NOT NULL,
-    PRIMARY KEY (Num_serie),
+    id_marca_maquina INT NOT NULL,
+    id_tipo_maquina INT NOT NULL, 
+    id_estado_maquina INT NOT NULL,
+    PRIMARY KEY (Id_maquina),
+    CONSTRAINT fk_marca FOREIGN KEY (id_marca_maquina) REFERENCES Marca_maquina(id_marca_maquina),
     CONSTRAINT fk_tipo_maquina FOREIGN KEY (id_tipo_maquina) REFERENCES Tipo_maquina(id_tipo_maquina),
-    CONSTRAINT fk_estado_maquina FOREIGN KEY (id_estado) REFERENCES Estado_maquina(id_estado)
+    CONSTRAINT fk_estado_maquina FOREIGN KEY (id_estado_maquina) REFERENCES Estado_maquina(id_estado_maquina)
 );
 
 DROP TABLE IF EXISTS Tipo_mantenimiento CASCADE;
 CREATE TABLE Tipo_mantenimiento
 (
-    id_tipo_mant CHAR(2) NOT NULL,
+    id_tipo_mant INT NOT NULL,
     nombre_tipo_mant VARCHAR(300),
     PRIMARY KEY (id_tipo_mant)
 );
@@ -277,20 +284,20 @@ CREATE TABLE Tipo_mantenimiento
 DROP TABLE IF EXISTS Mantenimiento CASCADE;
 CREATE TABLE Mantenimiento
 (
-    Cod_Act_mantto INT NOT NULL,
+    Id_Act_mantto INT NOT NULL,
     Descripcion VARCHAR(1000),
     Tarea VARCHAR(1000),
     Peligros VARCHAR(1000), 
     Fecha_inicio_programado DATE, 
     Fecha_fin_programado DATE, 
-    ID_Orden INT NOT NULL,
-    Codigo_plan INT NOT NULL,
-    Num_serie VARCHAR NOT NULL,
+    Id_Orden INT NOT NULL,
+    Id_plan INT NOT NULL,
+    Id_maquina VARCHAR NOT NULL,
     id_tipo_mant CHAR(2) NOT NULL,
-    PRIMARY KEY (Cod_Act_mantto),
+    PRIMARY KEY (Id_Act_mantto),
     CONSTRAINT fk_orden_mant FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo (Id_Orden),
-    CONSTRAINT fk_plan_mant FOREIGN KEY (Codigo_plan) REFERENCES Plan_de_mantenimiento (Codigo_plan),
-    CONSTRAINT fk_maquina_mant FOREIGN KEY (Num_serie) REFERENCES Maquina (Num_serie),
+    CONSTRAINT fk_plan_mant FOREIGN KEY (Id_plan) REFERENCES Plan_de_mantenimiento (Id_plan),
+    CONSTRAINT fk_maquina_mant FOREIGN KEY (Id_maquina) REFERENCES Maquina (Id_maquina),
     CONSTRAINT fk_tipo_mant FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant)
 );
 
