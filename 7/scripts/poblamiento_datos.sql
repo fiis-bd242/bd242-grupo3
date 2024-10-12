@@ -943,18 +943,19 @@ VALUES
 ('Administrador', 120, 102),
 ('Master', 180, 103);
 
-INSERT INTO Sesion_Empleado (Id_Sesion, Id_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Id_estado_Sesion, Cargo)
+INSERT INTO Sesion_Empleado (Id_Sesion, Id_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Id_estado_Sesion, Cargo, t_inactividad)
 VALUES 
-(1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario'),
-(2, 2, '2024-10-02 09:30:00', '2024-10-02 11:30:00', '192.168.0.2', 2, 'Administrador'),
-(3, 3, '2024-10-03 11:00:00', '2024-10-03 12:30:00', '192.168.0.3', 2, 'Master'),
-(4, 4, '2024-10-04 13:00:00', '2024-10-04 14:45:00', '192.168.0.4', 2, 'Usuario'),
-(5, 5, '2024-10-05 14:15:00', '2024-10-05 15:30:00', '192.168.0.5', 2, 'Administrador'),
-(6, 6, '2024-10-06 09:00:00', '2024-10-06 11:00:00', '192.168.0.6', 2, 'Administrador'),
-(7, 7, '2024-10-07 12:00:00', '2024-10-07 13:30:00', '192.168.0.7', 2, 'Usuario'),
-(8, 8, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 2, 'Usuario'),
-(9, 9, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 2, 'Master'),
-(10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario');
+(1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario', INTERVAL '10 minutes'),
+(2, 2, '2024-10-02 09:30:00', '2024-10-02 11:30:00', '192.168.0.2', 2, 'Administrador', INTERVAL '15 minutes'),
+(3, 3, '2024-10-03 11:00:00', '2024-10-03 12:30:00', '192.168.0.3', 2, 'Master', INTERVAL '5 minutes'),
+(4, 4, '2024-10-04 13:00:00', '2024-10-04 14:45:00', '192.168.0.4', 2, 'Usuario', INTERVAL '20 minutes'),
+(5, 5, '2024-10-05 14:15:00', '2024-10-05 15:30:00', '192.168.0.5', 2, 'Administrador', INTERVAL '12 minutes'),
+(6, 6, '2024-10-06 09:00:00', '2024-10-06 11:00:00', '192.168.0.6', 2, 'Administrador', INTERVAL '18 minutes'),
+(7, 7, '2024-10-07 12:00:00', '2024-10-07 13:30:00', '192.168.0.7', 2, 'Usuario', INTERVAL '8 minutes'),
+(8, 8, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 2, 'Usuario', INTERVAL '25 minutes'),
+(9, 9, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 2, 'Master', INTERVAL '7 minutes'),
+(10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario', INTERVAL '10 minutes');
+
 
 --Autenticacion_en_2_pasos
 INSERT INTO Autenticacion_en_2_pasos (Id_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, cod_Verificacion, Id_sesion, Id_Estado_autenticador)
@@ -997,7 +998,7 @@ VALUES
 (9, 9, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 9),
 (10, 10, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 10);
 
-INSERT INTO Estado_codigo (Codigo_recu, Descripcion)
+INSERT INTO Estado_codigo (Id_estado_codigo, Descripcion)
 VALUES 
 ('Generado', 'Código generado para recuperación'),
 ('Utilizado', 'Código de recuperación usado'),
@@ -1011,7 +1012,7 @@ VALUES
 ('Deshabilitado', 'Recuperación deshabilitada temporalmente');
 
 
-INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, ID_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Estado_codigo)
+INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, ID_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Id_estado_codigo)
 VALUES 
 (1, 2, '2024-10-01 08:20:00', 'newPass123', 'user1@example.com', 'Generado'),
 (2, 2, '2024-10-02 09:45:00', 'securePass456', 'user2@example.com', 'Utilizado'),

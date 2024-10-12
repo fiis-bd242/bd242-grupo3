@@ -721,11 +721,13 @@ CREATE TABLE Sesion_Empleado (
     Fecha_Hora_Final TIMESTAMP,            
     Direccion_IP VARCHAR(45),
     Id_estado_sesion INT,            
-    Cargo VARCHAR(50),                    
+    Cargo VARCHAR(50),
+    t_inactividad INTERVAL,  
     FOREIGN KEY (Id_Empleado) REFERENCES Empleado(Id_Empleado),
     FOREIGN KEY (Id_estado_sesion) REFERENCES Estado_Sesion(Id_estado_sesion),
     FOREIGN KEY (Cargo) REFERENCES Tiempo_max_sesion(Cargo)
 );
+
 
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
 CREATE TABLE Autenticacion_en_2_pasos (
