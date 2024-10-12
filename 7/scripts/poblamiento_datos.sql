@@ -997,6 +997,31 @@ VALUES
 (9, 9, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 9),
 (10, 10, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 10);
 
+INSERT INTO Estado_codigo (Codigo_recu, Descripcion)
+VALUES 
+('Generado', 'Código generado para recuperación'),
+('Utilizado', 'Código de recuperación usado'),
+('Expirado', 'Código de recuperación expirado'),
+('Fallido', 'Intento de recuperación fallido'),
+('Validado', 'Código validado con éxito'),
+('Reintento', 'Nuevo intento de recuperación'),
+('Cancelado', 'Recuperación cancelada por el usuario'),
+('Pendiente', 'Código pendiente de uso'),
+('Revocado', 'Código revocado por seguridad'),
+('Deshabilitado', 'Recuperación deshabilitada temporalmente');
 
+
+INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, ID_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Estado_codigo)
+VALUES 
+(1, 2, '2024-10-01 08:20:00', 'newPass123', 'user1@example.com', 'Generado'),
+(2, 2, '2024-10-02 09:45:00', 'securePass456', 'user2@example.com', 'Utilizado'),
+(3, 2, '2024-10-03 10:30:00', 'resetPass789', 'user3@example.com', 'Expirado'),
+(4, 2, '2024-10-04 11:15:00', 'safePass012', 'user4@example.com', 'Fallido'),
+(5, 2, '2024-10-05 12:00:00', 'changePass345', 'user5@example.com', 'Validado'),
+(6, 2, '2024-10-06 13:45:00', 'retryPass678', 'user6@example.com', 'Reintento'),
+(7, 2, '2024-10-07 14:30:00', 'tempPass901', 'user7@example.com', 'Cancelado'),
+(8, 2, '2024-10-08 15:15:00', 'quickPass234', 'user8@example.com', 'Pendiente'),
+(9, 2, '2024-10-09 16:00:00', 'fastPass567', 'user9@example.com', 'Revocado'),
+(10, 2, '2024-10-10 17:45:00', 'finalPass890', 'user10@example.com', 'Deshabilitado');
 
 
