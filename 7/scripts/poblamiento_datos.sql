@@ -5,7 +5,7 @@ INSERT INTO Cargo_empleado (Id_Cargo, Nombre_cargo) VALUES
 (3, 'Supervisor'),
 (4, 'Encargado de sistema');
 
-INSERT INTO Acceso_empleado (Cod_acceso, Nombre_acceso) VALUES
+INSERT INTO Acceso_empleado (Id_acceso, Nombre_acceso) VALUES
 (1, 'Master'),
 (2, 'Administrador'),
 (3, 'Usuario');
@@ -17,7 +17,7 @@ INSERT INTO Criticidad (Id_criticidad, Nivel) VALUES
 (3, 'Alto');
 
 -- Poblamiento de la tabla Empleado
-INSERT INTO Empleado (Codigo_empleado, Nombre, DNI, Direccion, Estado_civil, Sexo, Fecha_Nacimiento, Fecha_ingreso, Numero_contacto, Email_contacto, Contraseña, ID_Cargo, Cod_acceso) VALUES
+INSERT INTO Empleado (Id_empleado, Nombre, DNI, Direccion, Estado_civil, Sexo, Fecha_Nacimiento, Fecha_ingreso, Numero_contacto, Email_contacto, Contraseña, Id_Cargo, Id_acceso) VALUES
 (1, 'Juan Pérez', '12345678', 'Av. Principal 123', 'Soltero', 'Masculino', '1985-03-12', '2010-01-15', '987654321', 'juan.perez@empresa.com', 'password123', 1, 2),
 (2, 'Ana Gómez', '23456789', 'Calle Secundaria 45', 'Casado', 'Femenino', '1990-06-25', '2012-06-20', '987123456', 'ana.gomez@empresa.com', 'password456', 2, 3),
 (3, 'Carlos Sánchez', '34567890', 'Jr. Terciario 678', 'Divorciado', 'Masculino', '1978-11-05', '2005-09-10', '987987654', 'carlos.sanchez@empresa.com', 'password789', 2, 3),
@@ -40,7 +40,7 @@ INSERT INTO Empleado (Codigo_empleado, Nombre, DNI, Direccion, Estado_civil, Sex
 (20, 'Gabriela Torres', '23456781', 'Jr. Los Sauces 1010', 'Casada', 'Femenino', '1995-06-05', '2017-01-10', '987654331', 'gabriela.torres@empresa.com', 'password117', 2, 3);
 
 -- Poblamiento de la tabla Plan_de_mantenimiento con fechas aleatorias de los últimos 2 meses
-INSERT INTO Plan_de_mantenimiento (Codigo_plan, Observaciones, Fecha_plan, Empleado_asigna, Criticidad) VALUES
+INSERT INTO Plan_de_mantenimiento (Id_plan, Observaciones, Fecha_plan, Empleado_asigna, Id_criticidad) VALUES
 (1, 'Mantenimiento preventivo mensual de maquinaria principal', '2024-09-07', 1, 3),
 (2, 'Revisión trimestral de sistemas eléctricos', '2024-09-20', 2, 2),
 (3, 'Inspección anual de seguridad en planta', '2024-08-15', 3, 3),
@@ -63,7 +63,7 @@ INSERT INTO Plan_de_mantenimiento (Codigo_plan, Observaciones, Fecha_plan, Emple
 (20, 'Ajustes preventivos en maquinaria de ensamblaje', '2024-08-29', 20, 2);
 
 -- Poblamiento de la tabla Actividad_empleado
-INSERT INTO Actividad_empleado (Id_actvempleado, Descripcion_actv, Codigo_empleado) VALUES
+INSERT INTO Actividad_empleado (Id_actvempleado, Descripcion_actv, Id_empleado) VALUES
 (1, 'Responsable: Supervisar el mantenimiento preventivo de maquinaria principal', 1),
 (2, 'Verificar el estado de los sistemas eléctricos', 2),
 (3, 'Responsable: Realizar inspección anual de seguridad en la planta', 3),
@@ -86,7 +86,7 @@ INSERT INTO Actividad_empleado (Id_actvempleado, Descripcion_actv, Codigo_emplea
 (20, 'Ajustar maquinaria de ensamblaje preventivamente', 20);
 
 -- Poblamiento de la tabla Orden_de_trabajo
-INSERT INTO Orden_de_trabajo (ID_Orden, Fecha_Orden, Descripcion, Empleado_asigna, Criticidad) VALUES
+INSERT INTO Orden_de_trabajo (ID_Orden, Fecha_Orden, Descripcion, Empleado_asigna, Id_criticidad) VALUES
 (1, '2024-01-10', 'Reemplazo de motor en línea de producción', 1, 3),
 (2, '2024-02-15', 'Revisión de sistema de control eléctrico', 2, 2),
 (3, '2024-03-20', 'Inspección de seguridad en planta de ensamblaje', 3, 3),
@@ -109,20 +109,20 @@ INSERT INTO Orden_de_trabajo (ID_Orden, Fecha_Orden, Descripcion, Empleado_asign
 (20, '2025-08-20', 'Actualización de software de control semestral', 20, 2);
 
 -- Poblamiento de la tabla Categoria_Almacen
-INSERT INTO Categoria_Almacen (Codigo_categoria, Nombre_categoria) 
+INSERT INTO Categoria_Almacen (Id_categoria, Nombre_categoria) 
 VALUES 
 (1, 'Lubricantes'),
 (2, 'Repuestos'),
 (3, 'Equipos de soporte');
 
 -- Poblamiento de la tabla Estado_Almacen
-INSERT INTO Estado_Almacen (Codigo_estado, Nombre_estado) 
+INSERT INTO Estado_Almacen (Id_estado, Nombre_estado) 
 VALUES 
 (1, 'Operativo'),
 (2, 'Inoperativo');
 
 -- Poblamiento de la tabla Almacen
-INSERT INTO Almacen (Cod_almacen, Codigo_empleado, Codigo_categoria, Codigo_estado, Direccion, Capacidad) 
+INSERT INTO Almacen (Id_almacen, Id_empleado, Id_categoria, Id_estado, Direccion, Capacidad) 
 VALUES 
 (1, 5, 2, 1, 'Lugar 1', 1000),
 (2, 2, 2, 1, 'Lugar 2', 500),
@@ -130,7 +130,7 @@ VALUES
 (4, 10, 1, 2, 'Lugar 4', 300);
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
-INSERT INTO tipo_equipo_soporte  (Codigo_tipo, nombre_tipo)
+INSERT INTO tipo_equipo_soporte  (Id_tipo, nombre_tipo)
 VALUES
 (1, 'Equipo de vigilancia y monitorio'),
 (2, 'Equipo de comunicación'),
@@ -139,13 +139,13 @@ VALUES
 (5, 'Equipo de apoyo mecánico');
 
 -- Poblamiento de la tabla Disponibilidad_equipo_soporte
-INSERT INTO Disponibilidad_Equipo_Soporte (Codigo_disponibilidad, Nombre_disponibilidad) 
+INSERT INTO Disponibilidad_Equipo_Soporte (Id_disponibilidad, Nombre_disponibilidad) 
 VALUES 
 (1, 'Disponible'),
 (2, 'Ocupado');
 
 -- Poblamiento de la tabla Estado_equipo_soporte 
-INSERT INTO Estado_Equipo_Soporte (Codigo_estado, Nombre_estado) 
+INSERT INTO Estado_Equipo_Soporte (Id_estado, Nombre_estado) 
 VALUES 
 (1, 'Optimo'),
 (2, 'Bueno'),
@@ -153,7 +153,7 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Codigo_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Cod_almacen, Codigo_disponibilidad, Codigo_estado) 
+INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Id_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Id_almacen, Id_disponibilidad, Id_estado) 
 VALUES 
 (1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
 (2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 2, 3),
@@ -415,7 +415,7 @@ INSERT INTO Tipo_Probabilidad (Id_tipo_probabilidad, Nombre_tipo_probabilidad) V
 ('P-RAR', 'Raro que suceda'),
 ('P-IMP', 'Prácticamente imposible que suceda');
 
-INSERT INTO equipo_evaluador (Id_equipo_evaluador, Cant_empleados, Codigo_empleado) VALUES
+INSERT INTO equipo_evaluador (Id_equipo_evaluador, Cant_empleados, Id_empleado) VALUES
 (1, 5, 1),
 (2, 6, 2),
 (3, 4, 3),
@@ -545,7 +545,7 @@ INSERT INTO TareasXIdentRiesgo (Id_tarea, Id_riesgo) VALUES
 (8, 8);
 
 -- Poblar la tabla PlanaccionxEmpleado
-INSERT INTO PlanaccionxEmpleado (Id_plan_mejora, Codigo_empleado) VALUES
+INSERT INTO PlanaccionxEmpleado (Id_plan_mejora, Id_empleado) VALUES
 (1, 1),  -- Juan Pérez participa en el plan de mejora 1
 (2, 2),  -- Ana Gómez participa en el plan de mejora 2
 (3, 3),  -- Carlos Sánchez participa en el plan de mejora 3
@@ -555,7 +555,7 @@ INSERT INTO PlanaccionxEmpleado (Id_plan_mejora, Codigo_empleado) VALUES
 (7, 7),  -- Diego Morales participa en el plan de mejora 7
 (8, 8);  -- Laura Espinoza participa en el plan de mejora 8
 
-INSERT INTO EquipoEvaluadorXEmpleado (id_equipo_evaluador, codigo_empleado) VALUES 
+INSERT INTO EquipoEvaluadorXEmpleado (id_equipo_evaluador, Id_empleado) VALUES 
 (1, 4), 
 (2, 3), 
 (3, 2), 
@@ -595,24 +595,24 @@ INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
 (5, 'Cargador');
 
 -- Poblamiento de la tabla Estado_maquina
-INSERT INTO Estado_maquina (id_estado, nombre_estado) VALUES
+INSERT INTO Estado_maquina (id_estado_maquina, nombre_estado) VALUES
 (1, 'Operativa'),
 (2, 'Mantenimiento'),
 (3, 'Fuera de servicio');
 
-INSERT INTO Marca_maquina (id_marca, nombre_marca) VALUES
+INSERT INTO Marca_maquina (id_marca_maquina, nombre_marca) VALUES
 ( 1, 'Caterpellir (CAT)' ),
 ( 2 , 'Komatsu' ),
 ( 3 , 'Sandvik' ),
 ( 4 , 'Atlas Copco' ),
-( 5 , 'John Deere' ).
+( 5 , 'John Deere' ),
 ( 6 , 'Volvo' ),
 ( 7 , 'JLG' ),
 ( 8 , 'Manitou' ),
-( 9 , 'Epiroc' )
+( 9 , 'Epiroc' );
 
 -- Poblamiento de la tabla Maquina
-INSERT INTO Maquina (id_maquina, Fecha_ultima_inspeccion, Fecha_adquisicion, id_marca, id_tipo_maquina, id_estado) VALUES
+INSERT INTO Maquina (id_maquina, nombre_maquina, Fecha_ultima_inspeccion, Fecha_adquisicion, id_marca_maquina, id_tipo_maquina, id_estado_maquina) VALUES
 (1, 'Maquina 1', '2024-05-01', '2021-08-15', 1, 1, 1),
 (2, 'Maquina 2', '2024-03-10', '2020-07-22', 1, 5, 2),
 (3, 'Maquina 3', '2023-12-22', '2019-01-05', 1, 3, 3),
@@ -636,36 +636,36 @@ INSERT INTO Maquina (id_maquina, Fecha_ultima_inspeccion, Fecha_adquisicion, id_
 
 -- Poblamiento de la tabla Tipo_mantenimiento
 INSERT INTO Tipo_mantenimiento (id_tipo_mant, nombre_tipo_mant) VALUES
-('PR', 'Preventivo'),
-('CR', 'Correctivo'),
-('PM', 'Predictivo');
+(1, 'Preventivo'),
+(2, 'Correctivo'),
+(3, 'Predictivo');
 
 -- Poblamiento de la tabla Mantenimiento
-INSERT INTO Mantenimiento (Cod_Act_mantto, Descripcion, Tarea, Peligros, Fecha_inicio_programado, Fecha_fin_programado, ID_Orden, Codigo_plan, Num_serie, id_tipo_mant)
+INSERT INTO Mantenimiento (Id_Act_mantto, Descripcion, Tarea, Peligros, Fecha_inicio_programado, Fecha_fin_programado, Id_Orden, Id_plan, id_maquina, id_tipo_mant)
 VALUES
-(1, 'Reemplazo de motor principal en la línea de producción', 'Cambio de motor', 'Golpes y caídas durante la instalación', '2024-01-08', '2024-01-10', 1, 1, 'SN001', 'CR'),
-(2, 'Revisión del sistema de control eléctrico y ajuste de cables', 'Inspección y ajuste de conexiones', 'Descarga eléctrica', '2024-02-10', '2024-02-15', 2, 2, 'SN002', 'CR'),
-(3, 'Inspección de seguridad de maquinaria en la planta de ensamblaje', 'Revisión de sistemas de seguridad', 'Golpes y aplastamientos', '2024-03-15', '2024-03-20', 3, 3, 'SN003', 'PM'),
-(4, 'Mantenimiento preventivo en maquinaria del área de pintura', 'Limpieza y lubricación de componentes', 'Inhalación de productos químicos', '2024-04-20', '2024-04-25', 4, 4, 'SN004', 'PR'),
-(5, 'Reemplazo de filtros del sistema de ventilación', 'Cambio de filtros', 'Inhalación de polvo', '2024-05-25', '2024-05-30', 5, 5, 'SN005', 'CR'),
-(6, 'Actualización de software de monitoreo del sistema', 'Instalación y configuración de software', 'Caída del sistema', '2024-06-01', '2024-06-05', 6, 6, 'SN006', 'PM'),
-(7, 'Inspección y revisión de maquinaria pesada', 'Evaluación estructural y funcional', 'Aplastamientos y caídas', '2024-07-05', '2024-07-10', 7, 7, 'SN007', 'PR'),
-(8, 'Reparación del sistema hidráulico', 'Sustitución de mangueras y ajuste de válvulas', 'Fugas de fluidos y sobrepresión', '2024-08-10', '2024-08-15', 8, 8, 'SN008', 'CR'),
-(9, 'Evaluación del sistema de refrigeración en toda la planta', 'Pruebas de rendimiento y ajuste', 'Sobrecarga térmica', '2024-09-15', '2024-09-20', 9, 9, 'SN009', 'PM'),
-(10, 'Verificación y ajuste de sistemas de alarma en el área de producción', 'Revisión de sensores y conexiones', 'Falsos positivos', '2024-10-20', '2024-10-25', 10, 10, 'SN010', 'PR'),
-(11, 'Mantenimiento del sistema de iluminación de la planta', 'Sustitución de lámparas y ajuste de conexiones', 'Cortes eléctricos', '2024-11-01', '2024-11-05', 11, 11, 'SN011', 'CR'),
-(12, 'Revisión de protocolos de seguridad y sistemas asociados', 'Inspección de procedimientos de emergencia', 'Fallas en la detección de emergencias', '2024-12-05', '2024-12-10', 12, 12, 'SN012', 'PM'),
-(13, 'Actualización y ajuste de maquinaria en la línea de ensamblaje', 'Instalación de nuevos componentes', 'Golpes y atrapamientos', '2025-01-10', '2025-01-15', 13, 13, 'SN013', 'PR'),
-(14, 'Inspección del sistema de control de calidad', 'Revisión de calibración de equipos', 'Errores de medición', '2025-02-15', '2025-02-20', 14, 14, 'SN014', 'CR'),
-(15, 'Reemplazo de componentes electrónicos obsoletos', 'Sustitución de tarjetas y circuitos', 'Cortocircuitos y fallos eléctricos', '2025-03-20', '2025-03-25', 15, 15, 'SN015', 'PM'),
-(16, 'Optimización de la línea de empaquetado', 'Reconfiguración de maquinaria', 'Fallas mecánicas y paradas imprevistas', '2025-04-25', '2025-04-30', 16, 16, 'SN016', 'PR'),
-(17, 'Evaluación bimestral del sistema de ventilación', 'Limpieza de ductos y ajuste de ventiladores', 'Inhalación de polvo', '2025-05-01', '2025-05-05', 17, 17, 'SN017', 'CR'),
-(18, 'Mantenimiento preventivo de sistemas de refrigeración', 'Ajuste de compresores y verificación de fluidos', 'Sobrecarga de sistemas', '2025-06-05', '2025-06-10', 18, 18, 'SN018', 'PM'),
-(19, 'Revisión trimestral de sistemas de alarma', 'Verificación y ajuste de sensores', 'Falsos positivos y fallos de detección', '2025-07-10', '2025-07-15', 19, 19, 'SN019', 'PR'),
-(20, 'Actualización de software de control semestral', 'Instalación de nuevas versiones de software', 'Errores en el sistema', '2025-08-15', '2025-08-20', 20, 20, 'SN020', 'CR');
+(1, 'Reemplazo de motor principal en la línea de producción', 'Cambio de motor', 'Golpes y caídas durante la instalación', '2024-01-08', '2024-01-10', 1, 1, 1, 2),
+(2, 'Revisión del sistema de control eléctrico y ajuste de cables', 'Inspección y ajuste de conexiones', 'Descarga eléctrica', '2024-02-10', '2024-02-15', 2, 2, 2, 2),
+(3, 'Inspección de seguridad de maquinaria en la planta de ensamblaje', 'Revisión de sistemas de seguridad', 'Golpes y aplastamientos', '2024-03-15', '2024-03-20', 3, 3, 3, 3),
+(4, 'Mantenimiento preventivo en maquinaria del área de pintura', 'Limpieza y lubricación de componentes', 'Inhalación de productos químicos', '2024-04-20', '2024-04-25', 4, 4, 4, 1),
+(5, 'Reemplazo de filtros del sistema de ventilación', 'Cambio de filtros', 'Inhalación de polvo', '2024-05-25', '2024-05-30', 5, 5, 5, 2),
+(6, 'Actualización de software de monitoreo del sistema', 'Instalación y configuración de software', 'Caída del sistema', '2024-06-01', '2024-06-05', 6, 6, 6, 3),
+(7, 'Inspección y revisión de maquinaria pesada', 'Evaluación estructural y funcional', 'Aplastamientos y caídas', '2024-07-05', '2024-07-10', 7, 7, 7, 1),
+(8, 'Reparación del sistema hidráulico', 'Sustitución de mangueras y ajuste de válvulas', 'Fugas de fluidos y sobrepresión', '2024-08-10', '2024-08-15', 8, 8, 8, 2),
+(9, 'Evaluación del sistema de refrigeración en toda la planta', 'Pruebas de rendimiento y ajuste', 'Sobrecarga térmica', '2024-09-15', '2024-09-20', 9, 9, 9, 3),
+(10, 'Verificación y ajuste de sistemas de alarma en el área de producción', 'Revisión de sensores y conexiones', 'Falsos positivos', '2024-10-20', '2024-10-25', 10, 10, 10, 1),
+(11, 'Mantenimiento del sistema de iluminación de la planta', 'Sustitución de lámparas y ajuste de conexiones', 'Cortes eléctricos', '2024-11-01', '2024-11-05', 11, 11, 11, 2),
+(12, 'Revisión de protocolos de seguridad y sistemas asociados', 'Inspección de procedimientos de emergencia', 'Fallas en la detección de emergencias', '2024-12-05', '2024-12-10', 12, 12, 12, 3),
+(13, 'Actualización y ajuste de maquinaria en la línea de ensamblaje', 'Instalación de nuevos componentes', 'Golpes y atrapamientos', '2025-01-10', '2025-01-15', 13, 13, 13, 1),
+(14, 'Inspección del sistema de control de calidad', 'Revisión de calibración de equipos', 'Errores de medición', '2025-02-15', '2025-02-20', 14, 14, 14, 2),
+(15, 'Reemplazo de componentes electrónicos obsoletos', 'Sustitución de tarjetas y circuitos', 'Cortocircuitos y fallos eléctricos', '2025-03-20', '2025-03-25', 15, 15, 15, 3),
+(16, 'Optimización de la línea de empaquetado', 'Reconfiguración de maquinaria', 'Fallas mecánicas y paradas imprevistas', '2025-04-25', '2025-04-30', 16, 16, 16, 1),
+(17, 'Evaluación bimestral del sistema de ventilación', 'Limpieza de ductos y ajuste de ventiladores', 'Inhalación de polvo', '2025-05-01', '2025-05-05', 17, 17, 17, 2),
+(18, 'Mantenimiento preventivo de sistemas de refrigeración', 'Ajuste de compresores y verificación de fluidos', 'Sobrecarga de sistemas', '2025-06-05', '2025-06-10', 18, 18, 18, 3),
+(19, 'Revisión trimestral de sistemas de alarma', 'Verificación y ajuste de sensores', 'Falsos positivos y fallos de detección', '2025-07-10', '2025-07-15', 19, 19, 19, 1),
+(20, 'Actualización de software de control semestral', 'Instalación de nuevas versiones de software', 'Errores en el sistema', '2025-08-15', '2025-08-20', 20, 20, 20, 2);
 
 -- Poblamiento de la tabla Auditoria
-INSERT INTO Auditoria (Codigo_Auditoria, Cod_Act_mantto, Fecha_auditoria, ubi_auditoria, resp_auditoria, Descripcion, objetivo)
+INSERT INTO Auditoria (Id_Auditoria, Id_Act_mantto, Fecha_auditoria, ubi_auditoria, resp_auditoria, Descripcion, objetivo)
 VALUES
 (1, 1, '2024-01-12', 'Planta de producción - Línea 1', 'Juan Pérez', 'Auditoría para verificar el reemplazo adecuado del motor en la línea de producción', 'Verificar cumplimiento de los estándares de instalación del motor'),
 (2, 2, '2024-02-18', 'Planta de sistemas eléctricos', 'Ana Rodríguez', 'Revisión de la correcta inspección y ajuste del sistema de control eléctrico', 'Asegurar la seguridad eléctrica y el funcionamiento continuo del sistema'),
@@ -689,7 +689,7 @@ VALUES
 (20, 20, '2025-08-25', 'Centro de control - Planta 5', 'Gloria Paredes', 'Auditoría de la actualización del software de control semestral', 'Evaluar la instalación y operación del nuevo software en el sistema de control');
 
 --Poblamiento de la tabla Capacitaciones
-INSERT INTO Capacitaciones (Codigo_Capacitacion, Fecha_Capacitacion, Descripcion, Duracion, Instructor, Evaluador)
+INSERT INTO Capacitaciones (Id_Capacitacion, Fecha_Capacitacion, Descripcion, Duracion, Instructor, Evaluador)
 VALUES
 (1, '2024-01-15', 'Capacitación en seguridad laboral y manejo de maquinaria pesada', 8.5, 'Juan Rodríguez', 'Ana Gómez'),
 (2, '2024-03-10', 'Capacitación sobre actualización de software de control de producción', 6.0, 'Carlos Pérez', 'Lucía Fernández'),
@@ -703,7 +703,7 @@ VALUES
 (10, '2025-03-05', 'Taller sobre gestión de mantenimiento predictivo', 3.0, 'Elena Castillo', 'Valentina Díaz');
 
 --Poblamiento de la tabla EmpleadoxCapacitacion
-INSERT INTO EmpleadoxCapacitacion (Codigo_empleado, Codigo_Capacitacion)
+INSERT INTO EmpleadoxCapacitacion (Id_empleado, Id_Capacitacion)
 VALUES
 (1, 1), (2, 1), (3, 1),
 (4, 2), (5, 2), (6, 2),
@@ -718,13 +718,13 @@ VALUES
 
 
 -- EstadoReporte
-INSERT INTO EstadoReporte (Codigo_estado, Estado) VALUES 
+INSERT INTO Estado_Reporte (Id_estado_reporte, nombre_estado) VALUES 
 (1, 'No Verificado'),
 (2, 'Verificado'),
 (3, 'Notificado');
 
 -- Reportes
-INSERT INTO Reportes (ID_Reporte, Fecha_reporte, Estado, Comentarios, Supervisor_id) VALUES 
+INSERT INTO Reportes (Id_Reporte, Fecha_reporte, Id_estado_reporte, Comentarios, Id_supervisor) VALUES 
 (1, '2024-09-15', 1, 'Revisión necesaria', 1),
 (2, '2024-09-16', 2, 'En espera de información adicional', 1),
 (3, '2024-09-17', 3, 'Problema resuelto', 1),
@@ -737,7 +737,7 @@ INSERT INTO Reportes (ID_Reporte, Fecha_reporte, Estado, Comentarios, Supervisor
 (10, '2024-09-24', 1, 'Se requiere atención urgente', 1);
 
 -- Registro
-INSERT INTO Registro (Codigo_registro, Fecha_registro, Fecha_inicial, Duracion, Codigo_empleado, mantenimiento_id, Costos, Observaciones) VALUES 
+INSERT INTO Registro (Id_registro, Fecha_registro, Fecha_inicial, Duracion, Id_empleado, Id_act_mantto, Costos, Observaciones) VALUES 
 (1, '2024-09-15', '2024-09-14', 2.5, 1, 1, 150.00, 'Reparación de caldera'),
 (2, '2024-09-16', '2024-09-15', 3.0, 1, 2, 200.00, 'Mantenimiento preventivo'),
 (3, '2024-09-17', '2024-09-16', 1.5, 2, 3, 75.00, 'Cambio de filtros'),
@@ -750,7 +750,7 @@ INSERT INTO Registro (Codigo_registro, Fecha_registro, Fecha_inicial, Duracion, 
 (10, '2024-09-24', '2024-09-23', 2.8, 1, 1, 130.00, 'Reparación de fugas');
 
 -- Notificaciones
-INSERT INTO Notificaciones (ID_Notificacion, Fecha_notificacion, Mensaje, Remitente, Destinatario, Registro_id, Reporte_id) VALUES 
+INSERT INTO Notificaciones (Id_Notificacion, Fecha_notificacion, Mensaje, Id_remitente, Id_destinatario, Id_registro, Id_reporte) VALUES 
 (1, '2024-09-15', 'Se ha creado un nuevo reporte.', 1, 2, 1, 1),
 (2, '2024-09-16', 'Actualización en el estado del reporte.', 1, 3, 2, 2),
 (3, '2024-09-17', 'El reporte ha sido cerrado.', 2, 1, 3, 3),
@@ -763,7 +763,7 @@ INSERT INTO Notificaciones (ID_Notificacion, Fecha_notificacion, Mensaje, Remite
 (10, '2024-09-24', 'El registro ha sido actualizado.', 1, 2, 10, 10);
 
 -- AnalisisReporte
-INSERT INTO AnalisisReporte (ID_Analisis, Reporte_id, Fecha_analisis, Analisis, Supervisor_id) VALUES 
+INSERT INTO Analisis_Reporte (Id_Analisis_reporte, Id_reporte, Fecha_analisis, Analisis, Id_supervisor) VALUES 
 (1, 1, '2024-09-16', 'Se requiere más información.', 1),
 (2, 2, '2024-09-17', 'El problema fue analizado y solucionado.', 1),
 (3, 3, '2024-09-18', 'Todo en orden.', 2),
@@ -775,52 +775,51 @@ INSERT INTO AnalisisReporte (ID_Analisis, Reporte_id, Fecha_analisis, Analisis, 
 (9, 9, '2024-09-24', 'El reporte está completo.', 3),
 (10, 10, '2024-09-25', 'Revisar el próximo mantenimiento.', 1);
 
--- Recurso
-INSERT INTO Recurso (Cod_recurso, Cantidad, Nombre) VALUES
-('501', 100, 'Martillo'),
-('502', 200, 'Taladro'),
-('503', 1000, 'Clavo'),
-('504', 500, 'Sierra'),
-('505', 300, 'Destornillador'),
-('506', 400, 'Alicate'),
-('507', 800, 'Cable'),
-('508', 600, 'Guantes'),
-('509', 1200, 'Mascarilla'),
-('510', 150, 'Botas de seguridad'),
-('511', 500, 'Casco'),
-('512', 700, 'Chaleco reflectante'),
-('513', 900, 'Gafas de protección'),
-('514', 50, 'Extintor'),
-('515', 100, 'Señal de emergencia'),
-('516', 300, 'Cono de seguridad'),
-('517', 250, 'Linterna'),
-('518', 120, 'Medidor eléctrico'),
-('519', 400, 'Batería recargable'),
-('520', 50, 'Kit de primeros auxilios');
 
+INSERT INTO Herramienta (Id_herramienta, Cantidad, Nombre) VALUES
+(1, 100, 'Martillo'),
+(2, 200, 'Taladro'),
+(3, 1000, 'Clavo'),
+(4, 500, 'Sierra'),
+(5, 300, 'Destornillador'),
+(6, 400, 'Alicate'),
+(7, 800, 'Cable'),
+(8, 600, 'Guantes'),
+(9, 1200, 'Mascarilla'),
+(10, 150, 'Botas de seguridad'),
+(11, 500, 'Casco'),
+(12, 700, 'Chaleco reflectante'),
+(13, 900, 'Gafas de protección'),
+(14, 50, 'Extintor'),
+(15, 100, 'Señal de emergencia'),
+(16, 300, 'Cono de seguridad'),
+(17, 250, 'Linterna'),
+(18, 120, 'Medidor eléctrico'),
+(19, 400, 'Batería recargable'),
+(20, 50, 'Kit de primeros auxilios');
 
 -- RecursoXMantenimiento
-INSERT INTO RecursoXMantenimiento (Id_RecursoXMantto, Cod_Act_mantto, Cod_recurso) VALUES
-(1, 1, '501'),
-(2, 2, '502'),
-(3, 3, '503'),
-(4, 4, '504'),
-(5, 5, '505'),
-(6, 6, '506'),
-(7, 7, '507'),
-(8, 8, '508'),
-(9, 9, '509'),
-(10, 10, '510'),
-(11, 11, '511'),
-(12, 12, '512'),
-(13, 13, '513'),
-(14, 14, '514'),
-(15, 15, '515'),
-(16, 16, '516'),
-(17, 17, '517'),
-(18, 18, '518'),
-(19, 19, '519'),
-(20, 20, '520');
+INSERT INTO HerramientaXMantenimiento (Id_HerrXMantto, Id_Act_mantto, Id_Herramienta) VALUES
+(1, 1, 2),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5),
+(6, 6, 6),
+(7, 7, 7),
+(8, 8, 8),
+(9, 9, 9),
+(10, 10, 10),
+(11, 11, 11),
+(12, 12, 12),
+(13, 13, 13),
+(14, 14, 14),
+(15, 15, 15),
+(16, 16, 16),
+(17, 17, 17),
+(18, 18, 18),
+(19, 19, 19),
+(20, 20, 20);
 
 -- Proveedor
 INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direccion) VALUES
@@ -847,90 +846,90 @@ INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direc
 
 
 -- Orden_de_compra
-INSERT INTO Orden_de_compra (Fecha_emision, Fecha_posible_entrega, Descripcion, Cantidad, Prioridad, Precio_unitario, Cod_orden_compra, Descripcion_product, RUC_proveedor, Codigo_empleado) VALUES
-('2024-01-10', '2024-01-20', 'Orden para martillos', 30, 'Alta', 15.50, '2001', 'Martillos de acero', '20512345678', 1),
-('2024-02-05', '2024-02-15', 'Orden para taladros', 50, 'Media', 45.00, '2002', 'Taladros industriales', '20512345679', 2),
-('2024-03-01', '2024-03-11', 'Orden para clavos', 100, 'Alta', 0.10, '2003', 'Clavos de 3 pulgadas', '20512345680', 3),
-('2024-03-25', '2024-04-05', 'Orden para sierras', 25, 'Baja', 12.00, '2004', 'Sierras manuales', '20512345681', 4),
-('2024-04-10', '2024-04-20', 'Orden para destornilladores', 70, 'Alta', 5.00, '2005', 'Destornilladores planos', '20512345682', 5),
-('2024-05-01', '2024-05-11', 'Orden para alicates', 60, 'Media', 8.50, '2006', 'Alicates multifunción', '20512345683', 6),
-('2024-06-05', '2024-06-15', 'Orden para cables', 80, 'Alta', 1.20, '2007', 'Cables de cobre', '20512345684', 7),
-('2024-07-10', '2024-07-20', 'Orden para guantes', 200, 'Media', 3.00, '2008', 'Guantes de seguridad', '20512345685', 8),
-('2024-08-15', '2024-08-25', 'Orden para mascarillas', 150, 'Alta', 0.80, '2009', 'Mascarillas protectoras', '20512345686', 9),
-('2024-09-01', '2024-09-11', 'Orden para botas de seguridad', 40, 'Baja', 25.00, '2010', 'Botas de seguridad industrial', '20512345687', 10),
-('2024-09-18', '2024-09-28', 'Orden para cascos', 100, 'Alta', 15.00, '2011', 'Cascos de protección', '20512345688', 11),
-('2024-10-05', '2024-10-15', 'Orden para chalecos reflectantes', 120, 'Media', 7.50, '2012', 'Chalecos reflectantes', '20512345689', 12),
-('2024-10-20', '2024-10-30', 'Orden para gafas de protección', 180, 'Alta', 3.20, '2013', 'Gafas de seguridad', '20512345690', 13),
-('2024-11-02', '2024-11-12', 'Orden para extinguidores', 35, 'Media', 40.00, '2014', 'Extinguidores ABC', '20512345691', 14),
-('2024-11-20', '2024-11-30', 'Orden para señales de emergencia', 15, 'Baja', 12.00, '2015', 'Señales de emergencia', '20512345692', 15),
-('2024-12-01', '2024-12-11', 'Orden para conos de seguridad', 50, 'Alta', 10.00, '2016', 'Conos reflectantes', '20512345693', 16),
-('2024-12-15', '2024-12-25', 'Orden para linternas', 60, 'Media', 20.00, '2017', 'Linternas de alta potencia', '20512345694', 17),
-('2025-01-10', '2025-01-20', 'Orden para medidores eléctricos', 45, 'Alta', 50.00, '2018', 'Medidores de tensión', '20512345695', 18),
-('2025-01-25', '2025-02-05', 'Orden para baterías recargables', 100, 'Media', 5.00, '2019', 'Baterías de larga duración', '20512345696', 19),
-('2025-02-05', '2025-02-15', 'Orden para kits de primeros auxilios', 25, 'Alta', 30.00, '2020', 'Kits médicos', '20512345697', 20);
+INSERT INTO Orden_de_compra (Id_orden_compra, Fecha_emision, Fecha_posible_entrega, Descripcion, Cantidad, Prioridad, Precio_unitario, Descripcion_product, RUC_proveedor, Id_empleado) VALUES
+(1, '2024-01-10', '2024-01-20', 'Orden para martillos', 30, 'Alta', 15.50, 'Martillos de acero', '20512345678', 1),
+(2, '2024-02-05', '2024-02-15', 'Orden para taladros', 50, 'Media', 45.00, 'Taladros industriales', '20512345679', 2),
+(3, '2024-03-01', '2024-03-11', 'Orden para clavos', 100, 'Alta', 0.10, 'Clavos de 3 pulgadas', '20512345680', 3),
+(4, '2024-03-25', '2024-04-05', 'Orden para sierras', 25, 'Baja', 12.00, 'Sierras manuales', '20512345681', 4),
+(5, '2024-04-10', '2024-04-20', 'Orden para destornilladores', 70, 'Alta', 5.00, 'Destornilladores planos', '20512345682', 5),
+(6, '2024-05-01', '2024-05-11', 'Orden para alicates', 60, 'Media', 8.50, 'Alicates multifunción', '20512345683', 6),
+(7, '2024-06-05', '2024-06-15', 'Orden para cables', 80, 'Alta', 1.20, 'Cables de cobre', '20512345684', 7),
+(8, '2024-07-10', '2024-07-20', 'Orden para guantes', 200, 'Media', 3.00, 'Guantes de seguridad', '20512345685', 8),
+(9, '2024-08-15', '2024-08-25', 'Orden para mascarillas', 150, 'Alta', 0.80, 'Mascarillas protectoras', '20512345686', 9),
+(10, '2024-09-01', '2024-09-11', 'Orden para botas de seguridad', 40, 'Baja', 25.00, 'Botas de seguridad industrial', '20512345687', 10),
+(11, '2024-09-18', '2024-09-28', 'Orden para cascos', 100, 'Alta', 15.00, 'Cascos de protección', '20512345688', 11),
+(12, '2024-10-05', '2024-10-15', 'Orden para chalecos reflectantes', 120, 'Media', 7.50, 'Chalecos reflectantes', '20512345689', 12),
+(13, '2024-10-20', '2024-10-30', 'Orden para gafas de protección', 180, 'Alta', 3.20, 'Gafas de seguridad', '20512345690', 13),
+(14, '2024-11-02', '2024-11-12', 'Orden para extinguidores', 35, 'Media', 40.00, 'Extinguidores ABC', '20512345691', 14),
+(15, '2024-11-20', '2024-11-30', 'Orden para señales de emergencia', 15, 'Baja', 12.00, 'Señales de emergencia', '20512345692', 15),
+(16, '2024-12-01', '2024-12-11', 'Orden para conos de seguridad', 50, 'Alta', 10.00, 'Conos reflectantes', '20512345693', 16),
+(17, '2024-12-15', '2024-12-25', 'Orden para linternas', 60, 'Media', 20.00, 'Linternas de alta potencia', '20512345694', 17),
+(18, '2025-01-10', '2025-01-20', 'Orden para medidores eléctricos', 45, 'Alta', 50.00, 'Medidores de tensión', '20512345695', 18),
+(19, '2025-01-25', '2025-02-05', 'Orden para baterías recargables', 100, 'Media', 5.00, 'Baterías de larga duración', '20512345696', 19),
+(20, '2025-02-05', '2025-02-15', 'Orden para kits de primeros auxilios', 25, 'Alta', 30.00, 'Kits médicos', '20512345697', 20);
 
 -- Registro_compra_recursos
-INSERT INTO Registro_compra_recursos (Fecha_registro, Descripcion, Cod_reg_recurso, Cantidad, Cod_almacen, Cod_orden_compra, Cod_recurso) VALUES
-('2024-01-15', 'Compra de martillos', 101, 30, 1, '2001', 501),
-('2024-02-20', 'Compra de taladros', 102, 50, 2, '2002', 502),
-('2024-03-22', 'Compra de clavos', 103, 100, 4, '2003', 503),
-('2024-04-11', 'Compra de sierras', 104, 25, 4, '2004', 504),
-('2024-05-18', 'Compra de destornilladores', 105, 70, 2, '2005', 505),
-('2024-06-02', 'Compra de alicates', 106, 60, 1, '2006', 506),
-('2024-07-15', 'Compra de cables', 107, 80, 2, '2007', 507),
-('2024-08-10', 'Compra de guantes', 108, 200, 1, '2008', 508),
-('2024-09-05', 'Compra de mascarillas', 109, 150, 2, '2009', 509),
-('2024-09-20', 'Compra de botas de seguridad', 110, 40, 1, '2010', 510),
-('2024-10-01', 'Compra de cascos', 111, 100, 2, '2011', 511),
-('2024-10-15', 'Compra de chalecos reflectantes', 112, 120, 4, '2012', 512),
-('2024-11-03', 'Compra de gafas de protección', 113, 180, 4, '2013', 513),
-('2024-11-18', 'Compra de extinguidores', 114, 35, 2, '2014', 514),
-('2024-12-01', 'Compra de señales de emergencia', 115, 15, 1, '2015', 515),
-('2024-12-15', 'Compra de conos de seguridad', 116, 50, 4, '2016', 516),
-('2025-01-07', 'Compra de linternas', 117, 60, 1, '2017', 517),
-('2025-01-22', 'Compra de medidores eléctricos', 118, 45, 2, '2018', 518),
-('2025-02-05', 'Compra de baterías recargables', 119, 100, 4, '2019', 519),
-('2025-02-18', 'Compra de kits de primeros auxilios', 120, 25, 2, '2020', 520);
+INSERT INTO Registro_compra_herramienta (id_reg_herramienta, fecha_registro, Descripcion, Cantidad, id_almacen, id_orden_compra, id_herramienta) VALUES
+(1, '2024-01-15', 'Compra de martillos', 30, 1, 1, 1),
+(2, '2024-02-20', 'Compra de taladros', 50, 2, 2, 2),
+(3, '2024-03-22', 'Compra de clavos', 100, 4, 3, 3),
+(4, '2024-04-11', 'Compra de sierras', 25, 4, 4, 4),
+(5, '2024-05-18', 'Compra de destornilladores', 70, 2, 5, 5),
+(6, '2024-06-02', 'Compra de alicates', 60, 1, 6, 6),
+(7, '2024-07-15', 'Compra de cables', 80, 2, 7, 7),
+(8, '2024-08-10', 'Compra de guantes', 200, 1, 8, 8),
+(9, '2024-09-05', 'Compra de mascarillas', 150, 2, 9, 9),
+(10, '2024-09-20', 'Compra de botas de seguridad', 40, 1, 10, 10),
+(11, '2024-10-01', 'Compra de cascos', 100, 2, 11, 11),
+(12, '2024-10-15', 'Compra de chalecos reflectantes', 120, 4, 12, 12),
+(13, '2024-11-03', 'Compra de gafas de protección', 180, 4, 13, 13),
+(14, '2024-11-18', 'Compra de extinguidores', 35, 2, 14, 14),
+(15, '2024-12-01', 'Compra de señales de emergencia', 15, 1, 15, 15),
+(16, '2024-12-15', 'Compra de conos de seguridad', 50, 4, 16, 16),
+(17, '2025-01-07', 'Compra de linternas', 60, 1, 17, 17),
+(18, '2025-01-22', 'Compra de medidores eléctricos', 45, 2, 18, 18),
+(19, '2025-02-05', 'Compra de baterías recargables', 100, 4, 19, 19),
+(20, '2025-02-18', 'Compra de kits de primeros auxilios', 25, 2, 20, 20);
 
 -- Estado
-INSERT INTO Estado (Cod_estad, Tipo_estad) VALUES
-('1', 'Aprobado'),
-('2', 'En proceso de envío'),
-('3', 'Enviado');
+INSERT INTO Estado_pedido (id_estado_pedido, nombre_estado) VALUES
+(1, 'Aprobado'),
+(2, 'En proceso de envío'),
+(3, 'Enviado');
 
 -- Pedido
-INSERT INTO Pedido (Numero, Cant_pedid, Fecha, Est_inactividad, Cod_recurso, Codigo_empleado, Cod_estad) VALUES
-(3001, 30, '2024-01-10', '1', 501, 1, '1'),
-(3002, 50, '2024-02-05', '1', 502, 2, '2'),
-(3003, 100, '2024-03-01', '0', 503, 3, '3'),
-(3004, 25, '2024-03-25', '1', 504, 4, '1'),
-(3005, 70, '2024-04-10', '1', 505, 5, '2'),
-(3006, 60, '2024-05-01', '0', 506, 6, '3'),
-(3007, 80, '2024-06-05', '1', 507, 7, '1'),
-(3008, 200, '2024-07-10', '1', 508, 8, '2'),
-(3009, 150, '2024-08-15', '0', 509, 9, '3'),
-(3010, 40, '2024-09-01', '1', 510, 10, '1'),
-(3011, 100, '2024-09-18', '1', 511, 11, '2'),
-(3012, 120, '2024-10-05', '0', 512, 12, '3'),
-(3013, 180, '2024-10-20', '1', 513, 13, '1'),
-(3014, 35, '2024-11-02', '1', 514, 14, '2'),
-(3015, 15, '2024-11-20', '0', 515, 15, '3'),
-(3016, 50, '2024-12-01', '1', 516, 16, '1'),
-(3017, 60, '2024-12-15', '0', 517, 17, '2'),
-(3018, 45, '2025-01-10', '1', 518, 18, '3'),
-(3019, 100, '2025-01-25', '0', 519, 19, '1'),
-(3020, 25, '2025-02-05', '1', 520, 20, '2');
+INSERT INTO Pedido (Id_pedido, Cant_pedid, Fecha, Est_inactividad, Id_herramienta, Id_empleado, Id_estado_pedido) VALUES
+(1, 30, '2024-01-10', '1', 1, 1, 1),
+(2, 50, '2024-02-05', '1', 2, 2, 2),
+(3, 100, '2024-03-01', '0', 3, 3, 3),
+(4, 25, '2024-03-25', '1', 4, 4, 1),
+(5, 70, '2024-04-10', '1', 5, 5, 2),
+(6, 60, '2024-05-01', '0', 6, 6, 3),
+(7, 80, '2024-06-05', '1', 7, 7, 1),
+(8, 200, '2024-07-10', '1', 8, 8, 2),
+(9, 150, '2024-08-15', '0', 9, 9, 3),
+(10, 40, '2024-09-01', '1', 10, 10, 1),
+(11, 100, '2024-09-18', '1', 11, 11, 2),
+(12, 120, '2024-10-05', '0', 12, 12, 3),
+(13, 180, '2024-10-20', '1', 13, 13, 1),
+(14, 35, '2024-11-02', '1', 14, 14, 2),
+(15, 15, '2024-11-20', '0', 15, 15, 3),
+(16, 50, '2024-12-01', '1', 16, 16, 1),
+(17, 60, '2024-12-15', '0', 17, 17, 2),
+(18, 45, '2025-01-10', '1', 18, 18, 3),
+(19, 100, '2025-01-25', '0', 19, 19, 1),
+(20, 25, '2025-02-05', '1', 20, 20, 2);
 
  
 -- Estado_autenticador 
-INSERT INTO Estado_autenticador (Codigo_autenticacion, Descripcion)
+INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
 VALUES 
 (1, 'Generado'),
 (2, 'Utilizado'),
 (3, 'Expirado');
 
 -- Estado_sesion
-INSERT INTO Estado_Sesion (Codigo_Estado_E, Descripcion)
+INSERT INTO Estado_Sesion (Id_estado_sesion, Descripcion)
 VALUES 
 (1, 'Activa'),
 (2, 'Inactiva'),
@@ -944,7 +943,7 @@ VALUES
 ('Administrador', 120, 102),
 ('Master', 180, 103);
 
-INSERT INTO Sesion_Empleado (ID_Sesion, Codigo_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Estado_Sesion, Cargo)
+INSERT INTO Sesion_Empleado (Id_Sesion, Id_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Id_estado_Sesion, Cargo)
 VALUES 
 (1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario'),
 (2, 2, '2024-10-02 09:30:00', '2024-10-02 11:30:00', '192.168.0.2', 2, 'Administrador'),
@@ -958,7 +957,7 @@ VALUES
 (10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario');
 
 --Autenticacion_en_2_pasos
-INSERT INTO Autenticacion_en_2_pasos (ID_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, Cod_Verificacion, ID_sesion, Estado_Codigo)
+INSERT INTO Autenticacion_en_2_pasos (Id_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, cod_Verificacion, Id_sesion, Id_Estado_autenticador)
 VALUES 
 (1, '2024-10-01 08:05:00', 1, 123456, 1, 1),
 (2, '2024-10-02 09:35:00', 2, 654321, 2, 2),
@@ -974,30 +973,29 @@ VALUES
 -- Poblar la tabla Sesion_sospechosa con 10 registros
 INSERT INTO Sesion_sospechosa (ID_Sesion_sospechosa, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
 VALUES 
-(1, 101, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.6', 'Lima, Peru', 'Alertar al administrador'),
-(2, 102, 'Inactiva', '00:1B:44:11:3A:C8', 'Móvil', '2024-10-02 09:45:00', '192.168.0.7', 'Cusco, Peru', 'Bloquear el acceso'),
-(3, 103, 'Expirada', '00:1B:44:11:3A:D9', 'Tablet', '2024-10-03 11:15:00', '192.168.0.8', 'Arequipa, Peru', 'Revisar actividad'),
-(4, 104, 'Bloqueada', '00:1B:44:11:3A:E0', 'Laptop', '2024-10-04 13:25:00', '192.168.0.9', 'Piura, Peru', 'Notificar a seguridad'),
-(5, 105, 'Finalizada', '00:1B:44:11:3A:F1', 'Servidor', '2024-10-05 14:35:00', '192.168.0.10', 'Trujillo, Peru', 'Cerrar sesión automáticamente'),
-(6, 106, 'Activa', '00:1B:44:11:3A:G2', 'PC', '2024-10-06 15:00:00', '192.168.0.11', 'Tacna, Peru', 'Solicitar autenticación'),
-(7, 107, 'Expirada', '00:1B:44:11:3A:H3', 'Móvil', '2024-10-07 16:20:00', '192.168.0.12', 'Chiclayo, Peru', 'Monitorear actividad'),
-(8, 108, 'Bloqueada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 17:45:00', '192.168.0.13', 'Iquitos, Peru', 'Investigar incidencia'),
-(9, 109, 'Finalizada', '00:1B:44:11:3A:J5', 'Laptop', '2024-10-09 18:15:00', '192.168.0.14', 'Pucallpa, Peru', 'Enviar alerta al equipo'),
-(10, 110, 'Activa', '00:1B:44:11:3A:K6', 'Servidor', '2024-10-10 19:00:00', '192.168.0.15', 'Tarapoto, Peru', 'Revisar actividad en detalle');
+(1, 1, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.6', 'Lima, Peru', 'Alertar al administrador'),
+(2, 2, 'Inactiva', '00:1B:44:11:3A:C8', 'Móvil', '2024-10-02 09:45:00', '192.168.0.7', 'Cusco, Peru', 'Bloquear el acceso'),
+(3, 3, 'Expirada', '00:1B:44:11:3A:D9', 'Tablet', '2024-10-03 11:15:00', '192.168.0.8', 'Arequipa, Peru', 'Revisar actividad'),
+(4, 4, 'Bloqueada', '00:1B:44:11:3A:E0', 'Laptop', '2024-10-04 13:25:00', '192.168.0.9', 'Piura, Peru', 'Notificar a seguridad'),
+(5, 5, 'Finalizada', '00:1B:44:11:3A:F1', 'Servidor', '2024-10-05 14:35:00', '192.168.0.10', 'Trujillo, Peru', 'Cerrar sesión automáticamente'),
+(6, 6, 'Activa', '00:1B:44:11:3A:G2', 'PC', '2024-10-06 15:00:00', '192.168.0.11', 'Tacna, Peru', 'Solicitar autenticación'),
+(7, 7, 'Expirada', '00:1B:44:11:3A:H3', 'Móvil', '2024-10-07 16:20:00', '192.168.0.12', 'Chiclayo, Peru', 'Monitorear actividad'),
+(8, 8, 'Bloqueada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 17:45:00', '192.168.0.13', 'Iquitos, Peru', 'Investigar incidencia'),
+(9, 9, 'Finalizada', '00:1B:44:11:3A:J5', 'Laptop', '2024-10-09 18:15:00', '192.168.0.14', 'Pucallpa, Peru', 'Enviar alerta al equipo'),
+(10, 10, 'Activa', '00:1B:44:11:3A:K6', 'Servidor', '2024-10-10 19:00:00', '192.168.0.15', 'Tarapoto, Peru', 'Revisar actividad en detalle');
 -- Poblar la tabla Notificacion_Administrador con 10 registros
-INSERT INTO Notificacion_Administrador (ID_Notificacion, ID_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa, Id_autenticacion)
+INSERT INTO Notificacion_Administrador (ID_Notificacion, Id_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa, Id_autenticacion)
 VALUES 
-(1, 5001, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1, 101),
-(2, 5002, 'Fallo de Autenticación', '2024-10-02 09:50:00', 'Enviada', 'Varios intentos fallidos de autenticación desde Cusco', 'Media', 2, 102),
-(3, 5003, 'Recuperación de Contraseña', '2024-10-03 11:20:00', 'Leída', 'Solicitud de recuperación de contraseña desde Arequipa', 'Baja', 3, 103),
-(4, 5004, 'Acceso Bloqueado', '2024-10-04 12:00:00', 'Resuelta', 'Acceso bloqueado debido a actividad sospechosa en Piura', 'Alta', 4, 104),
-(5, 5005, 'Cambio de Contraseña', '2024-10-05 14:10:00', 'En Proceso', 'Cambio de contraseña solicitado desde Trujillo', 'Media', 5, 105),
-(6, 5006, 'Reintento de Autenticación', '2024-10-06 10:30:00', 'Enviada', 'Reintento de autenticación fallido detectado en Tacna', 'Baja', 6, 106),
-(7, 5007, 'Inicio de Sesión No Reconocido', '2024-10-07 15:20:00', 'Pendiente', 'Inicio de sesión no reconocido desde Chiclayo', 'Alta', 7, 107),
-(8, 5008, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8, 108),
-(9, 5009, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 109),
-(10, 5010, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 110);
-
+(1, 1, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1, 1),
+(2, 2, 'Fallo de Autenticación', '2024-10-02 09:50:00', 'Enviada', 'Varios intentos fallidos de autenticación desde Cusco', 'Media', 2, 2),
+(3, 3, 'Recuperación de Contraseña', '2024-10-03 11:20:00', 'Leída', 'Solicitud de recuperación de contraseña desde Arequipa', 'Baja', 3, 3),
+(4, 4, 'Acceso Bloqueado', '2024-10-04 12:00:00', 'Resuelta', 'Acceso bloqueado debido a actividad sospechosa en Piura', 'Alta', 4, 4),
+(5, 5, 'Cambio de Contraseña', '2024-10-05 14:10:00', 'En Proceso', 'Cambio de contraseña solicitado desde Trujillo', 'Media', 5, 5),
+(6, 6, 'Reintento de Autenticación', '2024-10-06 10:30:00', 'Enviada', 'Reintento de autenticación fallido detectado en Tacna', 'Baja', 6, 6),
+(7, 7, 'Inicio de Sesión No Reconocido', '2024-10-07 15:20:00', 'Pendiente', 'Inicio de sesión no reconocido desde Chiclayo', 'Alta', 7, 7),
+(8, 8, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8, 8),
+(9, 9, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 9),
+(10, 10, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 10);
 
 
 

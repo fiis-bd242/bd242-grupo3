@@ -27,21 +27,21 @@ CREATE TABLE Proveedor
   PRIMARY KEY (RUC)
 );
 
-DROP TABLE IF EXISTS Recurso CASCADE;
-CREATE TABLE Recurso
+DROP TABLE IF EXISTS Herramienta CASCADE;
+CREATE TABLE Herramienta
 (
-  Id_recurso INT NOT NULL,
+  Id_herramienta INT NOT NULL,
   Cantidad INT NOT NULL,
   Nombre VARCHAR(255) NOT NULL,
-  PRIMARY KEY ( Id_recurso)
+  PRIMARY KEY (Id_herramienta)
 );
 
-DROP TABLE IF EXISTS Estado CASCADE;
-CREATE TABLE Estado
+DROP TABLE IF EXISTS Estado_pedido CASCADE;
+CREATE TABLE Estado_pedido
 (
-  Id_estado INT NOT NULL,
-  Tipo_estado VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Id_estado)
+  Id_estado_pedido INT NOT NULL,
+  Nombre_estado VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_estado_pedido)
 );
 
 DROP TABLE IF EXISTS Criticidad CASCADE;
@@ -89,29 +89,29 @@ CREATE TABLE Plan_de_mantenimiento
 DROP TABLE IF EXISTS Pedido CASCADE;
 CREATE TABLE Pedido
 (
-  Numero VARCHAR(255) NOT NULL,
+  Id_pedido INT NOT NULL,
   Cant_pedid INT NOT NULL,
   Fecha DATE NOT NULL,
   Est_inactividad CHAR(2) NOT NULL,
-  Id_recurso INT NOT NULL,
+  Id_herramienta INT NOT NULL,
   Id_empleado INT NOT NULL,
-  Id_estado INT NOT NULL,
-  PRIMARY KEY (Numero),
-  FOREIGN KEY (Id_recurso) REFERENCES Recurso (Id_recurso),
+  Id_estado_pedido INT NOT NULL,
+  PRIMARY KEY (Id_pedido),
+  FOREIGN KEY (Id_herramienta) REFERENCES Herramienta (Id_herramienta),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado (Id_empleado),
-  FOREIGN KEY (Id_estado) REFERENCES Estado (Id_estado)
+  FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_pedido (Id_estado_pedido)
 );
 
 DROP TABLE IF EXISTS Orden_de_compra CASCADE;
 CREATE TABLE Orden_de_compra
 (
+  Id_orden_compra INT NOT NULL,
   Fecha_emision DATE NOT NULL,
   Fecha_posible_entrega DATE NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
   Cantidad INT NOT NULL,
   Prioridad VARCHAR NOT NULL,
   Precio_unitario FLOAT NOT NULL,
-  Id_orden_compra INT NOT NULL,
   Descripcion_product VARCHAR(255) NOT NULL,
   RUC_proveedor CHAR(12) NOT NULL,
   Id_empleado INT NOT NULL,
@@ -222,20 +222,20 @@ CREATE TABLE ActvempleadoXOrdenTrabajo
   FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
 );
 
-DROP TABLE IF EXISTS Registro_compra_recursos CASCADE;
-CREATE TABLE Registro_compra_recursos
+DROP TABLE IF EXISTS Registro_compra_herramienta CASCADE;
+CREATE TABLE Registro_compra_herramienta
 (
+  Id_reg_herramienta INT NOT NULL,
   Fecha_registro DATE NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
-  Id_reg_recurso INT NOT NULL,
   Cantidad INT NOT NULL,
   Id_almacen INT NOT NULL,
   Id_orden_compra INT NOT NULL,
-  Id_recurso INT NOT NULL,
-  PRIMARY KEY (Id_reg_recurso),
+  Id_herramienta INT NOT NULL,
+  PRIMARY KEY (Id_reg_herramienta),
   FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen),
   FOREIGN KEY (Id_orden_compra) REFERENCES Orden_de_compra(Id_orden_compra),
-  FOREIGN KEY (Id_recurso) REFERENCES Recurso(Id_recurso)
+  FOREIGN KEY (Id_herramienta) REFERENCES Herramienta (Id_herramienta)
 );
 
 DROP TABLE IF EXISTS Tipo_maquina CASCADE;
@@ -266,6 +266,7 @@ DROP TABLE IF EXISTS Maquina CASCADE;
 CREATE TABLE Maquina
 (
     id_maquina INT NOT NULL,
+    nombre_maquina VARCHAR(50) NOT NULL,
     Fecha_ultima_inspeccion DATE NOT NULL,
     Fecha_adquisicion DATE NOT NULL,
     id_marca_maquina INT NOT NULL,
@@ -305,15 +306,15 @@ CREATE TABLE Mantenimiento
     FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant)
 );
 
-DROP TABLE IF EXISTS RecursoXMantenimiento CASCADE;
-CREATE TABLE RecursoXMantenimiento
+DROP TABLE IF EXISTS HerramientaXMantenimiento CASCADE;
+CREATE TABLE HerramientaXMantenimiento
 (
-  Id_RecursoXMantto INT NOT NULL,
+  Id_HerrXMantto INT NOT NULL,
   Id_Act_mantto INT NOT NULL,
-  Id_recurso INT NOT NULL,
-  PRIMARY KEY (Id_RecursoXMantto),
+  Id_herramienta INT NOT NULL,
+  PRIMARY KEY (Id_HerrXMantto),
   FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto),
-  FOREIGN KEY (Id_recurso) REFERENCES Recurso(Id_recurso)
+  FOREIGN KEY (Id_herramienta) REFERENCES Herramienta (Id_herramienta)
 );
 
 DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
@@ -651,7 +652,7 @@ CREATE TABLE Notificaciones
 
 
 DROP TABLE IF EXISTS Analisis_Reporte CASCADE;
-CREATE TABLE AnalisisReporte
+CREATE TABLE Analisis_Reporte
 (
   Id_Analisis_reporte INT NOT NULL,
   Id_reporte INT NOT NULL,
