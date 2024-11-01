@@ -623,14 +623,23 @@ CREATE TABLE Registro
   Id_registro INT NOT NULL,
   Fecha_registro DATE NOT NULL,
   Fecha_inicial DATE NOT NULL,
-  Duracion FLOAT NOT NULL,
   Id_empleado INT NOT NULL,
   Id_Act_mantto INT NOT NULL,
-  Costos NUMERIC(10, 2) CHECK (Costos >= 0),
+  Calificacion INT NOT NULL,
   Observaciones VARCHAR(255),
   PRIMARY KEY (Id_registro),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto)
+);
+
+DROP TABLE IF EXISTS Incidencias_Tags CASCADE;
+CREATE TABLE Incidencias_Tags
+(
+  Id_incidencias INT NOT NULL,
+  Incidencia VARCHAR(50) NOT NULL,
+  id_Registro INT NOT NULL, 
+  PRIMARY KEY (Id_incidencias),
+  FOREIGN KEY (id_Registro) REFERENCES Registro(Id_registro)
 );
 
 DROP TABLE IF EXISTS Notificaciones CASCADE;
@@ -638,11 +647,12 @@ CREATE TABLE Notificaciones
 (
   Id_Notificacion INT NOT NULL,
   Fecha_notificacion DATE NOT NULL,
+  Asunto VARCHAR(255) NOT NULL,
   Mensaje TEXT NOT NULL,
   id_remitente INT NOT NULL,
   id_destinatario INT NOT NULL,
-  id_registro INT NOT NULL,
-  id_reporte INT NOT NULL,
+  id_registro INT,
+  id_reporte INT,
   PRIMARY KEY (Id_Notificacion),
   FOREIGN KEY (id_registro) REFERENCES Registro(Id_registro),
   FOREIGN KEY (Id_reporte) REFERENCES Reportes(Id_Reporte),

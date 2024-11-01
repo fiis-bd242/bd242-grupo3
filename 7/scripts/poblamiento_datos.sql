@@ -737,30 +737,38 @@ INSERT INTO Reportes (Id_Reporte, Fecha_reporte, Id_estado_reporte, Comentarios,
 (10, '2024-09-24', 1, 'Se requiere atención urgente', 1);
 
 -- Registro
-INSERT INTO Registro (Id_registro, Fecha_registro, Fecha_inicial, Duracion, Id_empleado, Id_act_mantto, Costos, Observaciones) VALUES 
-(1, '2024-09-15', '2024-09-14', 2.5, 1, 1, 150.00, 'Reparación de caldera'),
-(2, '2024-09-16', '2024-09-15', 3.0, 1, 2, 200.00, 'Mantenimiento preventivo'),
-(3, '2024-09-17', '2024-09-16', 1.5, 2, 3, 75.00, 'Cambio de filtros'),
-(4, '2024-09-18', '2024-09-17', 4.0, 2, 1, 300.00, 'Reparación de válvulas'),
-(5, '2024-09-19', '2024-09-18', 2.0, 3, 2, 100.00, 'Mantenimiento general'),
-(6, '2024-09-20', '2024-09-19', 1.0, 3, 3, 50.00, 'Inspección de equipos'),
-(7, '2024-09-21', '2024-09-20', 3.5, 1, 1, 180.00, 'Instalación de nuevos sistemas'),
-(8, '2024-09-22', '2024-09-21', 2.2, 2, 2, 120.00, 'Mantenimiento correctivo'),
-(9, '2024-09-23', '2024-09-22', 5.0, 3, 3, 250.00, 'Actualización de software'),
-(10, '2024-09-24', '2024-09-23', 2.8, 1, 1, 130.00, 'Reparación de fugas');
+INSERT INTO Registro (Id_registro, Fecha_registro, Fecha_inicial, Id_empleado, Id_act_mantto, Calificacion, Observaciones) VALUES 
+(1, '2024-09-15', '2024-09-14', 1, 1, 2, 'Reparación de caldera'),
+(2, '2024-09-16', '2024-09-15', 1, 2, 3, 'Mantenimiento preventivo'),
+(3, '2024-09-17', '2024-09-16', 2, 3, 5, 'Cambio de filtros'),
+(4, '2024-09-18', '2024-09-17', 2, 1, 4, 'Reparación de válvulas'),
+(5, '2024-09-19', '2024-09-18', 3, 2, 1, 'Mantenimiento general'),
+(6, '2024-09-20', '2024-09-19', 3, 3, 5, 'Inspección de equipos'),
+(7, '2024-09-21', '2024-09-20', 1, 1, 1, 'Instalación de nuevos sistemas'),
+(8, '2024-09-22', '2024-09-21', 2, 2, 2, 'Mantenimiento correctivo'),
+(9, '2024-09-23', '2024-09-22', 3, 3, 2, 'Actualización de software'),
+(10, '2024-09-24', '2024-09-23', 1, 1, 3, 'Reparación de fugas');
+
+-- Incidencias Tags
+INSERT INTO Incidencias_Tags (Id_incidencias,Incidencia,id_Registro) VALUES
+(1, 'Lentitud Personal', 1),
+(2, 'Falta de Material', 2),
+(3, 'Maquinaria Insuficiente',1),
+(4, 'Falta de Personal', 1),
+(5, 'Complicaciones Climaticas', 2);
 
 -- Notificaciones
-INSERT INTO Notificaciones (Id_Notificacion, Fecha_notificacion, Mensaje, Id_remitente, Id_destinatario, Id_registro, Id_reporte) VALUES 
-(1, '2024-09-15', 'Se ha creado un nuevo reporte.', 1, 2, 1, 1),
-(2, '2024-09-16', 'Actualización en el estado del reporte.', 1, 3, 2, 2),
-(3, '2024-09-17', 'El reporte ha sido cerrado.', 2, 1, 3, 3),
-(4, '2024-09-18', 'Nuevo registro de mantenimiento.', 1, 2, 4, 4),
-(5, '2024-09-19', 'Requiere revisión.', 2, 3, 5, 5),
-(6, '2024-09-20', 'Se ha actualizado el registro.', 3, 1, 6, 6),
-(7, '2024-09-21', 'Notificación de mantenimiento programado.', 1, 2, 7, 7),
-(8, '2024-09-22', 'Se ha cerrado el registro.', 2, 3, 8, 8),
-(9, '2024-09-23', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9),
-(10, '2024-09-24', 'El registro ha sido actualizado.', 1, 2, 10, 10);
+INSERT INTO Notificaciones (Id_Notificacion, Fecha_notificacion, Asunto,Mensaje, Id_remitente, Id_destinatario, Id_registro, Id_reporte) VALUES 
+(1, '2024-09-15', 'Importante','Se ha creado un nuevo reporte.', 1, 2, 1, 1),
+(2, '2024-09-16', 'Sigue con Errores','Actualización en el estado del reporte.', 1, 3, 2, 2),
+(3, '2024-09-17', 'Escoge uno','El reporte ha sido cerrado.', 2, 1, 3, 3),
+(4, '2024-09-18', 'Asunto Generico','Nuevo registro de mantenimiento.', 1, 2, 4, 4),
+(5, '2024-09-19', 'Asunto Generico','Requiere revisión.', 2, 3, 5, 5),
+(6, '2024-09-20', 'Asunto Generico', 'Se ha actualizado el registro.', 3, 1, 6, 6),
+(7, '2024-09-21', 'Asunto Generico', 'Notificación de mantenimiento programado.', 1, 2, 7, 7),
+(8, '2024-09-22', 'Asunto Generico', 'Se ha cerrado el registro.', 2, 3, 8, 8),
+(9, '2024-09-23', 'Asunto Generico', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9),
+(10, '2024-09-24','Asunto Generico',  'El registro ha sido actualizado.', 1, 2, 10, 10);
 
 -- AnalisisReporte
 INSERT INTO Analisis_Reporte (Id_Analisis_reporte, Id_reporte, Fecha_analisis, Analisis, Id_supervisor) VALUES 
