@@ -535,13 +535,15 @@ CREATE TABLE EquipoEvaluadorXEmpleado (
 DROP TABLE IF EXISTS Informe_IPERC CASCADE;
 CREATE TABLE Informe_IPERC
 (
-  Fecha_registro DATE NOT NULL,
   Id_informe_iperc INT NOT NULL,
+  Fecha_registro DATE NOT NULL,
   Cant_riesgos_analizados INT NOT NULL,
-  Id_proceso INT NOT NULL,
-  PRIMARY KEY (Id_informe_iperc),
-  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
+  Unidad_minera CHAR(50) NOT NULL,
+  Area CHAR(50) NOT NULL,
+  Proceso CHAR(100) NOT NULL,
+  PRIMARY KEY (Id_informe_iperc)
 );
+
 
 -- Eliminar y crear la tabla Reg_riesgo_analizado
 DROP TABLE IF EXISTS Reg_riesgo_analizado CASCADE;
