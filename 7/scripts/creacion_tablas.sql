@@ -600,7 +600,7 @@ CREATE TABLE EmpleadoxCapacitacion
 DROP TABLE IF EXISTS Estado_Reporte CASCADE;
 CREATE TABLE Estado_Reporte
 (
-  id_estado_reporte INT NOT NULL,
+  id_estado_reporte SERIAL,
   nombre_estado VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_estado_reporte)
 );
@@ -608,7 +608,7 @@ CREATE TABLE Estado_Reporte
 DROP TABLE IF EXISTS Reportes CASCADE;
 CREATE TABLE Reportes
 (
-  Id_reporte INT NOT NULL,
+  Id_reporte SERIAL,
   Fecha_reporte TIMESTAMP NOT NULL,
   id_estado_reporte INT NOT NULL,
   Id_supervisor INT,
@@ -622,7 +622,7 @@ CREATE TABLE Reportes
 DROP TABLE IF EXISTS Registro CASCADE;
 CREATE TABLE Registro
 (
-  Id_registro INT NOT NULL,
+  Id_registro SERIAL,
   Fecha_registro TIMESTAMP NOT NULL,
   Fecha_inicial TIMESTAMP NOT NULL,
   Id_empleado INT NOT NULL,
@@ -637,7 +637,7 @@ CREATE TABLE Registro
 DROP TABLE IF EXISTS Incidencias_Tags CASCADE;
 CREATE TABLE Incidencias_Tags
 (
-  Id_incidencias INT NOT NULL,
+  Id_incidencias SERIAL,
   Incidencia VARCHAR(50) NOT NULL,
   id_Registro INT NOT NULL, 
   PRIMARY KEY (Id_incidencias),
@@ -647,7 +647,7 @@ CREATE TABLE Incidencias_Tags
 DROP TABLE IF EXISTS Notificaciones CASCADE;
 CREATE TABLE Notificaciones
 (
-  Id_Notificacion INT NOT NULL,
+  Id_Notificacion SERIAL ,
   Fecha_notificacion TIMESTAMP NOT NULL,
   Asunto VARCHAR(255) NOT NULL,
   Mensaje TEXT NOT NULL,
@@ -663,18 +663,6 @@ CREATE TABLE Notificaciones
 );
 
 
-DROP TABLE IF EXISTS Analisis_Reporte CASCADE;
-CREATE TABLE Analisis_Reporte
-(
-  Id_Analisis_reporte INT NOT NULL,
-  Id_reporte INT NOT NULL,
-  Fecha_analisis DATE NOT NULL,
-  Analisis TEXT NOT NULL,
-  Id_supervisor INT NOT NULL,
-  PRIMARY KEY (Id_Analisis_reporte),
-  FOREIGN KEY (Id_reporte) REFERENCES Reportes(Id_reporte),
-  FOREIGN KEY (Id_supervisor) REFERENCES Empleado(Id_empleado)
-);
 
 -- Eliminar la tabla Sesion_sospechosa si existe
 DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
