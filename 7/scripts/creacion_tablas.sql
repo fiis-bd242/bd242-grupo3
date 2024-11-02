@@ -608,12 +608,13 @@ DROP TABLE IF EXISTS Reportes CASCADE;
 CREATE TABLE Reportes
 (
   Id_reporte INT NOT NULL,
-  Fecha_reporte DATE NOT NULL,
+  Fecha_reporte TIMESTAMP NOT NULL,
   id_estado_reporte INT NOT NULL,
-  Comentarios VARCHAR(255),
-  Id_supervisor INT NOT NULL,
+  Id_supervisor INT,
+  id_jefe INT NOT NULL,
   PRIMARY KEY (Id_reporte),
   FOREIGN KEY (id_estado_reporte) REFERENCES Estado_Reporte (id_estado_reporte),
+  FOREIGN KEY (id_jefe) REFERENCES Empleado (Id_empleado),
   FOREIGN KEY (id_supervisor) REFERENCES Empleado (Id_empleado)
 );
 
@@ -621,8 +622,8 @@ DROP TABLE IF EXISTS Registro CASCADE;
 CREATE TABLE Registro
 (
   Id_registro INT NOT NULL,
-  Fecha_registro DATE NOT NULL,
-  Fecha_inicial DATE NOT NULL,
+  Fecha_registro TIMESTAMP NOT NULL,
+  Fecha_inicial TIMESTAMP NOT NULL,
   Id_empleado INT NOT NULL,
   Id_Act_mantto INT NOT NULL,
   Calificacion INT NOT NULL,
@@ -646,7 +647,7 @@ DROP TABLE IF EXISTS Notificaciones CASCADE;
 CREATE TABLE Notificaciones
 (
   Id_Notificacion INT NOT NULL,
-  Fecha_notificacion DATE NOT NULL,
+  Fecha_notificacion TIMESTAMP NOT NULL,
   Asunto VARCHAR(255) NOT NULL,
   Mensaje TEXT NOT NULL,
   id_remitente INT NOT NULL,

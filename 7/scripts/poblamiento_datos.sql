@@ -724,17 +724,17 @@ INSERT INTO Estado_Reporte (Id_estado_reporte, nombre_estado) VALUES
 (3, 'Notificado');
 
 -- Reportes
-INSERT INTO Reportes (Id_Reporte, Fecha_reporte, Id_estado_reporte, Comentarios, Id_supervisor) VALUES 
-(1, '2024-09-15', 1, 'Revisión necesaria', 1),
-(2, '2024-09-16', 2, 'En espera de información adicional', 1),
-(3, '2024-09-17', 3, 'Problema resuelto', 1),
-(4, '2024-09-18', 1, 'Requiere seguimiento', 2),
-(5, '2024-09-19', 2, 'Información incompleta', 2),
-(6, '2024-09-20', 3, 'Cierre exitoso', 2),
-(7, '2024-09-21', 1, 'Consulta de mantenimiento', 3),
-(8, '2024-09-22', 2, 'Pendiente de revisión', 3),
-(9, '2024-09-23', 3, 'Finalizado sin incidencias', 3),
-(10, '2024-09-24', 1, 'Se requiere atención urgente', 1);
+INSERT INTO Reportes (Id_Reporte, Fecha_reporte, Id_estado_reporte, Id_supervisor, id_jefe) VALUES 
+(1, '2024-09-15', 1, 1, 2),
+(2, '2024-09-16', 2, 1, 2),
+(3, '2024-09-17', 3, 1, 3),
+(4, '2024-09-18', 1, 2, 3),
+(5, '2024-09-19', 2, 2, 2),
+(6, '2024-09-20', 3, 2, 2),
+(7, '2024-09-21', 1, 3, 3),
+(8, '2024-09-22', 2, 3, 2),
+(9, '2024-09-23', 3, 3, 2),
+(10, '2024-09-24',1, 1, 2);
 
 -- Registro
 INSERT INTO Registro (Id_registro, Fecha_registro, Fecha_inicial, Id_empleado, Id_act_mantto, Calificacion, Observaciones) VALUES 
