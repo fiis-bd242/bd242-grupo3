@@ -394,8 +394,7 @@ DROP TABLE IF EXISTS Equipo_evaluador CASCADE;
 CREATE TABLE Equipo_evaluador
 (
   Id_equipo_evaluador SERIAL PRIMARY KEY,
-  Cant_empleados INT,
-  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
+  Cant_empleados INT
 );
 
 DROP TABLE IF EXISTS proceso CASCADE;
