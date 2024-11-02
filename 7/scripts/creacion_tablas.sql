@@ -395,7 +395,6 @@ CREATE TABLE Equipo_evaluador
 (
   Id_equipo_evaluador SERIAL PRIMARY KEY,
   Cant_empleados INT,
-  Id_empleado INT,
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
 
