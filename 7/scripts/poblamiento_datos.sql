@@ -415,15 +415,15 @@ INSERT INTO Tipo_Probabilidad (Id_tipo_probabilidad, Nombre_tipo_probabilidad) V
 ('P-RAR', 'Raro que suceda'),
 ('P-IMP', 'Prácticamente imposible que suceda');
 
-INSERT INTO equipo_evaluador (Id_equipo_evaluador, Cant_empleados, Id_empleado) VALUES
-(1, 5, 1),
-(2, 6, 2),
-(3, 4, 3),
-(4, 7, 4),
-(5, 5, 5),
-(6, 6, 6),
-(7, 4, 7),
-(8, 7, 8);
+INSERT INTO equipo_evaluador (Id_equipo_evaluador, Cant_empleados) VALUES
+(1, 5),
+(2, 6),
+(3, 4),
+(4, 7),
+(5, 5),
+(6, 6),
+(7, 4),
+(8, 7);
 
 -- Poblar la tabla Proceso
 INSERT INTO proceso (Id_proceso, Descripcion_proceso, Id_equipo_evaluador) VALUES
