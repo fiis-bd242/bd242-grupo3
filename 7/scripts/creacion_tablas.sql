@@ -539,8 +539,9 @@ CREATE TABLE Informe_IPERC
   Cant_riesgos_analizados INT NOT NULL,
   Unidad_minera CHAR(50) NOT NULL,
   Area CHAR(50) NOT NULL,
-  Proceso CHAR(100) NOT NULL,
-  PRIMARY KEY (Id_informe_iperc)
+  Id_proceso INT NOT NULL,
+  PRIMARY KEY (Id_informe_iperc),
+  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
 );
 
 

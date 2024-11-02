@@ -563,20 +563,16 @@ INSERT INTO EquipoEvaluadorXEmpleado (id_equipo_evaluador, Id_empleado) VALUES
 (5, 5), 
 (6, 1);
 
--- Poblar la tabla Informe_IPERC con ejemplos
-INSERT INTO Informe_IPERC (Id_informe_iperc, Unidad_minera, Area, Proceso, Fecha_registro, Cant_riesgos_analizados) VALUES
-(1, 'Uchucchacua', 'Mantenimiento', 'Mantto de Servicios', '2022-01-02', 5),
-(2, 'Uchucchacua', 'Mantenimiento', 'Mantto de Equipos Trackless', '2023-12-12', 3),
-(3, 'Uchucchacua', 'Mantenimiento', 'Mantto Planta', '2024-02-01', 4),
-(4, 'Cerro Verde', 'Operaciones', 'Extracción Mineral', '2024-03-05', 2),
-(5, 'Trapiche', 'Procesamiento', 'Procesamiento de Mineral', '2024-04-10', 6),
-(6, 'El Faique', 'Logística', 'Distribución de Insumos', '2024-05-15', 3),
-(7, 'Colquijirca', 'Mantenimiento', 'Mantto Planta Concentradora', '2024-06-20', 5),
-(8, 'San Gregorio', 'Exploración', 'Exploración de Nuevas Áreas', '2024-07-25', 4),
-(9, 'Río Seco', 'Producción', 'Producción de Concentrados', '2023-06-20', 5),
-(10, 'Santa Bárbara', 'Transporte', 'Transporte de Carga', '2024-02-14', 3),
-(11, 'Tambomayo', 'Mantenimiento', 'Mantenimiento Eléctrico', '2023-01-10', 7),
-(12, 'La Zanja', 'Operaciones', 'Operación de Desmonte', '2023-03-12', 2);
+-- Poblar la tabla Informe_IPERC con datos de ejemplo
+INSERT INTO Informe_IPERC (Id_informe_iperc, Fecha_registro, Cant_riesgos_analizados, Unidad_minera, Area, Id_proceso) VALUES
+(1, '2022-01-02', 5, 'UCHUCCHACUA', 'MANTENIMIENTO', 1),
+(2, '2023-12-12', 3, 'CERRO VERDE', 'MANTENIMIENTO', 2),
+(3, '2024-02-01', 4, 'TRAPICHE', 'MANTENIMIENTO', 3),
+(4, '2024-03-05', 2, 'EL FAIQUE', 'OPERACIONES', 4),
+(5, '2024-04-10', 6, 'COIMOLACHE SULFUROS', 'MINERIA', 5),
+(6, '2024-05-15', 3, 'COLQUIJIRCA', 'ADMINISTRACION', 6),
+(7, '2024-06-20', 5, 'SAN GREGORIO', 'LOGISTICA', 7),
+(8, '2024-07-25', 4, 'CONENHUA', 'MANTENIMIENTO', 8);
 
 -- Poblar la tabla Reg_riesgo_analizado 
 INSERT INTO Reg_riesgo_analizado (Id_reg_riesgo_analizado, Id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual, Id_informe_iperc) VALUES
