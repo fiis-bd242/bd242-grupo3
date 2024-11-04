@@ -1,0 +1,1001 @@
+id_plan,descripcion,fecha_plan,empleado_asigna,id_criticidad
+1,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-01-07,15,1
+2,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-01-08,19,3
+3,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-01-08,10,1
+4,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-01-10,2,3
+5,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-01-11,7,2
+6,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-01-11,8,3
+7,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-01-13,20,3
+8,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-01-14,4,2
+9,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-01-14,9,3
+10,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-01-16,12,3
+11,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-01-17,4,1
+12,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-01-17,6,3
+13,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-01-19,16,1
+14,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-01-20,5,2
+15,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-01-20,8,3
+16,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-01-22,2,1
+17,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-01-23,19,1
+18,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-01-23,14,1
+19,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-01-25,6,1
+20,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-01-26,5,1
+21,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-01-26,18,3
+22,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-01-28,4,3
+23,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-01-29,16,3
+24,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-01-29,3,3
+25,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-01-31,3,1
+26,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-02-01,18,2
+27,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-02-01,10,1
+28,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-02-03,13,2
+29,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-02-04,16,2
+30,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-02-04,8,1
+31,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-02-06,1,3
+32,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-02-07,10,2
+33,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-02-07,4,3
+34,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-02-09,7,2
+35,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-02-10,13,3
+36,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-02-10,6,3
+37,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-02-12,1,2
+38,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-02-13,7,2
+39,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-02-13,11,3
+40,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-02-15,16,3
+41,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-02-16,15,2
+42,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-02-16,5,1
+43,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-02-18,13,1
+44,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-02-19,1,2
+45,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-02-19,5,2
+46,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-02-21,9,2
+47,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-02-22,5,2
+48,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-02-22,5,3
+49,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-02-24,14,2
+50,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-02-25,9,3
+51,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-02-25,5,2
+52,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-02-27,11,2
+53,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-02-28,20,3
+54,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-02-28,11,1
+55,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-03-02,18,3
+56,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-03-03,4,3
+57,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-03-03,7,3
+58,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-03-05,20,3
+59,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-03-06,19,2
+60,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-03-06,7,1
+61,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-03-08,18,1
+62,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-03-09,10,1
+63,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-03-09,1,3
+64,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-03-11,6,1
+65,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-03-12,2,3
+66,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-03-12,12,1
+67,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-03-14,19,2
+68,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-03-15,11,3
+69,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-03-15,16,2
+70,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-03-17,3,1
+71,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-03-18,3,3
+72,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-03-18,15,3
+73,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-03-20,16,3
+74,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-03-21,10,2
+75,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-03-21,18,3
+76,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-03-23,10,3
+77,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-03-24,2,3
+78,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-03-24,2,3
+79,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-03-26,20,2
+80,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-03-27,8,3
+81,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-03-27,19,1
+82,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-03-29,13,1
+83,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-03-30,6,1
+84,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-03-30,11,1
+85,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-04-01,20,1
+86,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-04-02,13,2
+87,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-04-02,6,1
+88,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-04-04,11,3
+89,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-04-05,9,2
+90,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-04-05,17,3
+91,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-04-07,17,1
+92,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-04-08,4,2
+93,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-04-08,1,1
+94,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-04-10,6,1
+95,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-04-11,14,1
+96,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-04-11,2,3
+97,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-04-13,19,3
+98,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-04-14,20,2
+99,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-04-14,11,1
+100,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-04-16,2,1
+101,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-04-17,12,3
+102,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-04-17,16,3
+103,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-04-19,5,2
+104,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-04-20,13,2
+105,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-04-20,19,1
+106,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-04-22,4,3
+107,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-04-23,20,2
+108,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-04-23,8,3
+109,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-04-25,16,2
+110,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-04-26,11,2
+111,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-04-26,19,2
+112,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-04-28,3,2
+113,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-04-29,7,2
+114,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-04-29,8,3
+115,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-05-01,18,1
+116,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-05-02,1,1
+117,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-05-02,5,3
+118,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-05-04,8,3
+119,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-05-05,3,3
+120,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-05-05,12,2
+121,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-05-07,3,3
+122,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-05-08,7,2
+123,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-05-08,9,3
+124,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-05-10,19,2
+125,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-05-11,16,3
+126,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-05-11,16,1
+127,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-05-13,12,3
+128,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-05-14,14,3
+129,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-05-14,14,2
+130,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-05-16,2,2
+131,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-05-17,14,2
+132,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-05-17,1,3
+133,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-05-19,15,1
+134,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-05-20,4,1
+135,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-05-20,9,3
+136,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-05-22,16,1
+137,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-05-23,1,3
+138,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-05-23,20,1
+139,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-05-25,11,3
+140,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-05-26,16,1
+141,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-05-26,9,3
+142,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-05-28,13,3
+143,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-05-29,20,2
+144,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-05-29,20,3
+145,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-05-31,16,3
+146,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-06-01,4,1
+147,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-06-01,4,2
+148,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-06-03,4,2
+149,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-06-04,12,2
+150,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-06-04,7,3
+151,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-06-06,3,2
+152,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-06-07,12,3
+153,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-06-07,16,2
+154,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-06-09,12,2
+155,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-06-10,12,2
+156,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-06-10,12,3
+157,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-06-12,17,1
+158,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-06-13,13,3
+159,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-06-13,1,1
+160,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-06-15,14,3
+161,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-06-16,8,3
+162,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-06-16,3,3
+163,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-06-18,11,1
+164,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-06-19,8,2
+165,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-06-19,9,2
+166,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-06-21,1,1
+167,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-06-22,4,2
+168,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-06-22,15,3
+169,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-06-24,17,2
+170,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-06-25,5,3
+171,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-06-25,10,2
+172,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-06-27,6,2
+173,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-06-28,8,3
+174,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-06-28,4,3
+175,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-06-30,5,2
+176,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-07-01,20,2
+177,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-07-01,20,3
+178,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-07-03,6,2
+179,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-07-04,5,2
+180,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-07-04,5,3
+181,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-07-06,20,1
+182,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-07-07,16,1
+183,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-07-07,7,1
+184,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-07-09,7,1
+185,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-07-10,20,1
+186,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-07-10,7,2
+187,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-07-12,6,2
+188,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-07-13,3,2
+189,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-07-13,2,1
+190,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-07-15,15,2
+191,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-07-16,7,1
+192,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-07-16,1,3
+193,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-07-18,4,2
+194,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-07-19,8,3
+195,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-07-19,1,3
+196,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-07-21,19,2
+197,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-07-22,2,1
+198,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-07-22,6,3
+199,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-07-24,14,1
+200,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-07-25,19,1
+201,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-07-25,12,2
+202,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-07-27,20,2
+203,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-07-28,11,2
+204,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-07-28,9,1
+205,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-07-30,19,1
+206,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-07-31,10,3
+207,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-07-31,9,2
+208,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-08-02,10,1
+209,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-08-03,18,3
+210,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-08-03,12,1
+211,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-08-05,1,3
+212,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-08-06,7,1
+213,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-08-06,20,2
+214,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-08-08,11,3
+215,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-08-09,3,3
+216,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-08-09,2,2
+217,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-08-11,19,3
+218,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-08-12,13,3
+219,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-08-12,19,3
+220,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-08-14,15,3
+221,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-08-15,4,3
+222,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-08-15,15,2
+223,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-08-17,8,1
+224,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-08-18,6,1
+225,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-08-18,9,2
+226,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-08-20,13,2
+227,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-08-21,9,2
+228,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-08-21,3,1
+229,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-08-23,1,1
+230,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-08-24,15,1
+231,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-08-24,4,2
+232,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-08-26,7,3
+233,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-08-27,19,1
+234,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-08-27,4,1
+235,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-08-29,16,2
+236,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-08-30,11,2
+237,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-08-30,16,1
+238,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-09-01,15,1
+239,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-09-02,1,3
+240,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-09-02,17,1
+241,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-09-04,6,3
+242,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-09-05,16,2
+243,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-09-05,16,3
+244,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-09-07,19,1
+245,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-09-08,11,2
+246,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-09-08,17,1
+247,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-09-10,17,2
+248,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-09-11,19,2
+249,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-09-11,2,2
+250,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-09-13,1,3
+251,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-09-14,14,3
+252,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-09-14,14,3
+253,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-09-16,12,2
+254,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-09-17,5,2
+255,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-09-17,14,2
+256,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-09-19,8,2
+257,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-09-20,4,1
+258,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-09-20,11,2
+259,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-09-22,11,1
+260,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-09-23,2,2
+261,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-09-23,19,1
+262,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-09-25,3,1
+263,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-09-26,3,2
+264,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-09-26,20,2
+265,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-09-28,3,3
+266,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-09-29,3,1
+267,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-09-29,10,3
+268,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-10-01,2,1
+269,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-10-02,5,3
+270,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-10-02,15,2
+271,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-10-04,11,2
+272,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-10-05,4,1
+273,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-10-05,17,1
+274,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-10-07,7,3
+275,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-10-08,18,1
+276,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-10-08,14,1
+277,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-10-10,13,1
+278,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-10-11,18,1
+279,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-10-11,20,2
+280,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-10-13,3,1
+281,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-10-14,4,2
+282,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-10-14,10,2
+283,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-10-16,14,3
+284,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-10-17,17,2
+285,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-10-17,3,2
+286,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-10-19,10,2
+287,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-10-20,5,3
+288,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-10-20,3,1
+289,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-10-22,14,2
+290,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-10-23,1,1
+291,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-10-23,9,2
+292,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-10-25,3,1
+293,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-10-26,12,3
+294,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-10-26,13,3
+295,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-10-28,5,1
+296,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-10-29,7,2
+297,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-10-29,17,2
+298,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-10-31,18,1
+299,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-11-01,5,2
+300,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-11-01,13,2
+301,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-11-03,13,2
+302,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-11-04,20,2
+303,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-11-04,11,2
+304,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-11-06,13,1
+305,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-11-07,3,3
+306,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-11-07,12,1
+307,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-11-09,4,3
+308,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-11-10,18,2
+309,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-11-10,2,1
+310,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-11-12,19,2
+311,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-11-13,9,2
+312,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-11-13,13,1
+313,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-11-15,14,1
+314,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-11-16,4,2
+315,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-11-16,17,2
+316,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-11-18,15,3
+317,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-11-19,5,3
+318,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-11-19,4,3
+319,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-11-21,19,2
+320,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-11-22,7,1
+321,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-11-22,2,3
+322,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-11-24,8,1
+323,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-11-25,3,2
+324,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-11-25,15,2
+325,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-11-27,16,2
+326,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-11-28,3,2
+327,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-11-28,5,2
+328,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-11-30,5,3
+329,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-12-01,4,2
+330,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-12-01,1,1
+331,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-12-03,13,1
+332,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-12-04,1,3
+333,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-12-04,16,1
+334,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-12-06,12,1
+335,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-12-07,18,1
+336,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-12-07,12,3
+337,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-12-09,7,1
+338,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-12-10,9,1
+339,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-12-10,3,3
+340,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-12-12,4,2
+341,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-12-13,14,1
+342,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-12-13,6,2
+343,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-12-15,11,1
+344,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-12-16,4,2
+345,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-12-16,19,2
+346,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-12-18,15,1
+347,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2022-12-19,12,3
+348,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2022-12-19,3,3
+349,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2022-12-21,4,1
+350,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2022-12-22,8,3
+351,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2022-12-22,10,3
+352,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2022-12-24,13,3
+353,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2022-12-25,18,2
+354,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2022-12-25,9,2
+355,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2022-12-27,17,3
+356,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2022-12-28,10,3
+357,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2022-12-28,7,3
+358,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2022-12-30,8,2
+359,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2022-12-31,18,1
+360,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2022-12-31,13,1
+361,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-01-02,11,3
+362,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-01-03,12,2
+363,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-01-03,13,3
+364,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-01-05,9,2
+365,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-01-06,12,1
+366,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-01-06,16,1
+367,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-01-08,8,2
+368,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-01-09,4,2
+369,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-01-09,6,2
+370,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-01-11,1,2
+371,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-01-12,3,3
+372,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-01-12,8,2
+373,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-01-14,17,1
+374,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-01-15,8,2
+375,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-01-15,17,3
+376,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-01-17,5,3
+377,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-01-18,1,1
+378,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-01-18,1,2
+379,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-01-20,16,2
+380,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-01-21,8,3
+381,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-01-21,15,2
+382,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-01-23,11,3
+383,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-01-24,6,2
+384,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-01-24,12,2
+385,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-01-26,7,2
+386,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-01-27,19,1
+387,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-01-27,15,3
+388,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-01-29,6,3
+389,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-01-30,9,2
+390,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-01-30,8,1
+391,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-02-01,13,1
+392,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-02-02,14,3
+393,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-02-02,10,2
+394,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-02-04,5,1
+395,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-02-05,1,1
+396,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-02-05,9,1
+397,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-02-07,20,1
+398,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-02-08,17,1
+399,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-02-08,6,1
+400,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-02-10,1,1
+401,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-02-11,10,2
+402,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-02-11,9,1
+403,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-02-13,16,2
+404,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-02-14,4,3
+405,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-02-14,7,1
+406,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-02-16,15,3
+407,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-02-17,11,3
+408,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-02-17,3,2
+409,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-02-19,20,1
+410,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-02-20,4,2
+411,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-02-20,2,3
+412,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-02-22,12,3
+413,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-02-23,20,2
+414,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-02-23,3,1
+415,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-02-25,8,2
+416,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-02-26,14,2
+417,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-02-26,4,2
+418,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-02-28,11,2
+419,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-03-01,4,3
+420,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-03-01,9,2
+421,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-03-03,3,2
+422,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-03-04,3,2
+423,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-03-04,9,2
+424,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-03-06,14,2
+425,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-03-07,2,1
+426,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-03-07,6,1
+427,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-03-09,20,2
+428,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-03-10,4,1
+429,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-03-10,13,3
+430,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-03-12,5,2
+431,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-03-13,13,3
+432,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-03-13,2,1
+433,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-03-15,5,3
+434,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-03-16,10,2
+435,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-03-16,9,3
+436,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-03-18,20,1
+437,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-03-19,1,3
+438,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-03-19,7,3
+439,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-03-21,14,3
+440,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-03-22,18,1
+441,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-03-22,2,3
+442,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-03-24,12,3
+443,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-03-25,7,3
+444,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-03-25,10,1
+445,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-03-27,10,2
+446,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-03-28,11,2
+447,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-03-28,10,3
+448,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-03-30,17,1
+449,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-03-31,14,1
+450,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-03-31,7,1
+451,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-04-02,13,3
+452,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-04-03,6,3
+453,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-04-03,6,1
+454,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-04-05,8,2
+455,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-04-06,18,2
+456,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-04-06,15,3
+457,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-04-08,4,3
+458,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-04-09,11,2
+459,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-04-09,2,1
+460,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-04-11,15,2
+461,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-04-12,7,3
+462,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-04-12,2,2
+463,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-04-14,5,1
+464,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-04-15,17,3
+465,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-04-15,14,2
+466,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-04-17,9,1
+467,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-04-18,16,1
+468,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-04-18,1,1
+469,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-04-20,1,1
+470,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-04-21,18,1
+471,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-04-21,9,3
+472,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-04-23,4,1
+473,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-04-24,18,1
+474,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-04-24,17,1
+475,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-04-26,2,3
+476,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-04-27,20,1
+477,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-04-27,14,3
+478,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-04-29,4,1
+479,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-04-30,20,1
+480,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-04-30,12,1
+481,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-05-02,8,1
+482,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-05-03,16,3
+483,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-05-03,1,2
+484,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-05-05,3,3
+485,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-05-06,9,1
+486,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-05-06,5,3
+487,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-05-08,5,1
+488,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-05-09,4,1
+489,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-05-09,4,3
+490,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-05-11,6,1
+491,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-05-12,4,3
+492,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-05-12,5,2
+493,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-05-14,12,2
+494,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-05-15,11,2
+495,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-05-15,4,1
+496,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-05-17,2,3
+497,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-05-18,3,1
+498,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-05-18,7,3
+499,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-05-20,20,3
+500,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-05-21,6,3
+501,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-05-21,4,2
+502,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-05-23,2,2
+503,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-05-24,15,1
+504,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-05-24,4,1
+505,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-05-26,10,3
+506,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-05-27,16,1
+507,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-05-27,7,1
+508,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-05-29,16,3
+509,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-05-30,19,3
+510,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-05-30,12,3
+511,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-06-01,20,1
+512,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-06-02,8,2
+513,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-06-02,8,3
+514,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-06-04,5,1
+515,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-06-05,8,2
+516,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-06-05,2,3
+517,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-06-07,3,3
+518,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-06-08,4,2
+519,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-06-08,13,2
+520,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-06-10,19,3
+521,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-06-11,3,3
+522,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-06-11,2,3
+523,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-06-13,6,1
+524,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-06-14,10,2
+525,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-06-14,7,3
+526,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-06-16,9,3
+527,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-06-17,13,1
+528,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-06-17,1,2
+529,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-06-19,6,2
+530,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-06-20,8,2
+531,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-06-20,7,2
+532,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-06-22,15,3
+533,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-06-23,20,1
+534,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-06-23,11,2
+535,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-06-25,7,3
+536,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-06-26,19,3
+537,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-06-26,3,3
+538,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-06-28,5,1
+539,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-06-29,13,2
+540,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-06-29,4,1
+541,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-07-01,20,1
+542,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-07-02,18,3
+543,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-07-02,2,1
+544,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-07-04,8,2
+545,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-07-05,7,3
+546,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-07-05,16,1
+547,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-07-07,13,1
+548,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-07-08,9,2
+549,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-07-08,8,3
+550,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-07-10,7,3
+551,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-07-11,1,3
+552,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-07-11,11,3
+553,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-07-13,11,1
+554,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-07-14,2,2
+555,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-07-14,17,3
+556,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-07-16,9,3
+557,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-07-17,6,3
+558,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-07-17,9,1
+559,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-07-19,2,1
+560,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-07-20,4,3
+561,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-07-20,10,3
+562,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-07-22,16,1
+563,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-07-23,14,3
+564,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-07-23,7,2
+565,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-07-25,16,1
+566,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-07-26,12,1
+567,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-07-26,1,1
+568,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-07-28,16,2
+569,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-07-29,20,3
+570,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-07-29,8,2
+571,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-07-31,17,3
+572,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-08-01,9,2
+573,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-08-01,8,3
+574,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-08-03,2,3
+575,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-08-04,14,3
+576,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-08-04,18,1
+577,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-08-06,19,1
+578,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-08-07,7,3
+579,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-08-07,16,2
+580,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-08-09,17,2
+581,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-08-10,11,3
+582,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-08-10,7,1
+583,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-08-12,11,2
+584,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-08-13,18,3
+585,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-08-13,20,1
+586,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-08-15,3,3
+587,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-08-16,5,1
+588,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-08-16,13,2
+589,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-08-18,18,2
+590,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-08-19,9,1
+591,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-08-19,16,2
+592,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-08-21,6,3
+593,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-08-22,18,1
+594,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-08-22,16,3
+595,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-08-24,13,3
+596,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-08-25,11,1
+597,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-08-25,14,1
+598,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-08-27,8,3
+599,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-08-28,6,2
+600,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-08-28,14,3
+601,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-08-30,4,3
+602,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-08-31,7,1
+603,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-08-31,9,1
+604,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-09-02,13,1
+605,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-09-03,3,3
+606,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-09-03,16,1
+607,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-09-05,16,1
+608,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-09-06,9,2
+609,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-09-06,15,3
+610,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-09-08,3,2
+611,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-09-09,20,2
+612,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-09-09,11,3
+613,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-09-11,7,2
+614,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-09-12,13,1
+615,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-09-12,5,1
+616,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-09-14,4,3
+617,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-09-15,14,1
+618,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-09-15,14,2
+619,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-09-17,12,3
+620,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-09-18,6,2
+621,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-09-18,5,1
+622,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-09-20,17,3
+623,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-09-21,7,3
+624,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-09-21,16,3
+625,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-09-23,10,2
+626,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-09-24,18,3
+627,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-09-24,13,2
+628,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-09-26,9,2
+629,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-09-27,19,2
+630,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-09-27,13,1
+631,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-09-29,16,2
+632,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-09-30,8,1
+633,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-09-30,12,3
+634,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-10-02,12,1
+635,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-10-03,1,3
+636,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-10-03,16,2
+637,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-10-05,14,2
+638,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-10-06,5,2
+639,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-10-06,5,2
+640,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-10-08,11,2
+641,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-10-09,16,3
+642,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-10-09,8,3
+643,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-10-11,14,1
+644,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-10-12,8,2
+645,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-10-12,6,2
+646,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-10-14,1,2
+647,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-10-15,7,2
+648,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-10-15,1,1
+649,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-10-17,7,1
+650,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-10-18,3,1
+651,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-10-18,14,2
+652,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-10-20,13,1
+653,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-10-21,2,1
+654,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-10-21,12,1
+655,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-10-23,6,2
+656,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-10-24,2,1
+657,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-10-24,12,3
+658,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-10-26,17,1
+659,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-10-27,17,3
+660,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-10-27,6,2
+661,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-10-29,20,2
+662,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-10-30,16,3
+663,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-10-30,7,1
+664,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-11-01,14,3
+665,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-11-02,19,1
+666,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-11-02,18,1
+667,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-11-04,20,2
+668,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-11-05,11,2
+669,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-11-05,13,2
+670,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-11-07,2,2
+671,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-11-08,6,3
+672,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-11-08,1,1
+673,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-11-10,10,2
+674,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-11-11,6,2
+675,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-11-11,20,3
+676,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-11-13,6,1
+677,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-11-14,3,2
+678,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-11-14,19,3
+679,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-11-16,20,1
+680,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-11-17,8,1
+681,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-11-17,3,1
+682,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-11-19,14,1
+683,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-11-20,16,3
+684,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-11-20,19,2
+685,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-11-22,19,1
+686,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-11-23,7,1
+687,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-11-23,14,2
+688,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-11-25,20,2
+689,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-11-26,13,1
+690,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-11-26,13,2
+691,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-11-28,9,3
+692,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-11-29,15,1
+693,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-11-29,1,1
+694,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-12-01,17,1
+695,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-12-02,20,3
+696,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-12-02,1,3
+697,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-12-04,7,2
+698,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-12-05,5,3
+699,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-12-05,8,1
+700,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-12-07,7,1
+701,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-12-08,12,3
+702,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-12-08,17,1
+703,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-12-10,6,1
+704,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-12-11,19,3
+705,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-12-11,5,1
+706,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-12-13,16,1
+707,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-12-14,13,3
+708,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-12-14,10,3
+709,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-12-16,1,1
+710,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-12-17,10,1
+711,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2023-12-17,11,1
+712,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2023-12-19,14,2
+713,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2023-12-20,3,3
+714,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2023-12-20,16,1
+715,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2023-12-22,12,2
+716,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2023-12-23,20,2
+717,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2023-12-23,5,2
+718,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2023-12-25,16,1
+719,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2023-12-26,9,1
+720,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2023-12-26,18,3
+721,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2023-12-28,5,3
+722,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2023-12-29,3,3
+723,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2023-12-29,3,3
+724,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2023-12-31,20,2
+725,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-01-01,16,2
+726,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-01-01,3,1
+727,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-01-03,19,2
+728,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-01-04,9,1
+729,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-01-04,20,2
+730,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-01-06,7,3
+731,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-01-07,19,2
+732,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-01-07,4,1
+733,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-01-09,1,1
+734,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-01-10,14,1
+735,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-01-10,6,2
+736,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-01-12,9,2
+737,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-01-13,20,2
+738,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-01-13,3,1
+739,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-01-15,20,1
+740,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-01-16,6,3
+741,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-01-16,6,2
+742,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-01-18,16,2
+743,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-01-19,9,1
+744,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-01-19,8,1
+745,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-01-21,13,1
+746,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-01-22,2,2
+747,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-01-22,17,3
+748,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-01-24,11,3
+749,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-01-25,13,2
+750,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-01-25,2,3
+751,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-01-27,1,3
+752,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-01-28,12,2
+753,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-01-28,12,3
+754,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-01-30,19,3
+755,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-01-31,16,1
+756,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-01-31,7,3
+757,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-02-02,15,1
+758,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-02-03,12,2
+759,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-02-03,11,3
+760,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-02-05,15,3
+761,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-02-06,2,1
+762,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-02-06,15,1
+763,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-02-08,3,1
+764,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-02-09,20,2
+765,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-02-09,15,1
+766,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-02-11,5,3
+767,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-02-12,7,1
+768,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-02-12,9,1
+769,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-02-14,4,3
+770,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-02-15,9,1
+771,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-02-15,15,2
+772,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-02-17,8,2
+773,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-02-18,3,3
+774,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-02-18,18,1
+775,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-02-20,19,1
+776,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-02-21,20,2
+777,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-02-21,13,2
+778,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-02-23,4,2
+779,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-02-24,7,3
+780,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-02-24,9,3
+781,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-02-26,10,3
+782,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-02-27,17,2
+783,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-02-27,12,3
+784,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-02-29,16,2
+785,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-03-01,1,3
+786,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-03-01,20,1
+787,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-03-03,11,3
+788,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-03-04,18,1
+789,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-03-04,7,2
+790,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-03-06,14,1
+791,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-03-07,7,3
+792,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-03-07,18,1
+793,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-03-09,2,1
+794,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-03-10,4,2
+795,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-03-10,11,1
+796,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-03-12,9,1
+797,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-03-13,5,2
+798,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-03-13,12,2
+799,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-03-15,9,3
+800,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-03-16,3,1
+801,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-03-16,9,2
+802,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-03-18,9,3
+803,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-03-19,4,2
+804,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-03-19,11,3
+805,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-03-21,6,1
+806,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-03-22,3,1
+807,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-03-22,8,2
+808,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-03-24,4,3
+809,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-03-25,9,3
+810,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-03-25,8,3
+811,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-03-27,9,2
+812,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-03-28,5,1
+813,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-03-28,18,2
+814,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-03-30,4,1
+815,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-03-31,4,2
+816,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-03-31,20,2
+817,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-04-02,15,3
+818,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-04-03,18,1
+819,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-04-03,16,3
+820,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-04-05,10,1
+821,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-04-06,18,2
+822,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-04-06,17,3
+823,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-04-08,5,1
+824,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-04-09,5,1
+825,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-04-09,20,3
+826,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-04-11,10,1
+827,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-04-12,18,1
+828,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-04-12,12,3
+829,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-04-14,12,3
+830,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-04-15,17,2
+831,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-04-15,4,1
+832,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-04-17,18,1
+833,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-04-18,1,1
+834,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-04-18,1,2
+835,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-04-20,7,2
+836,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-04-21,5,1
+837,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-04-21,19,2
+838,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-04-23,16,2
+839,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-04-24,3,2
+840,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-04-24,9,2
+841,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-04-26,4,1
+842,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-04-27,14,2
+843,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-04-27,7,2
+844,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-04-29,6,1
+845,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-04-30,6,2
+846,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-04-30,14,1
+847,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-05-02,15,3
+848,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-05-03,15,3
+849,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-05-03,14,1
+850,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-05-05,18,1
+851,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-05-06,14,2
+852,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-05-06,17,1
+853,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-05-08,20,2
+854,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-05-09,15,3
+855,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-05-09,14,3
+856,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-05-11,9,3
+857,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-05-12,14,3
+858,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-05-12,6,2
+859,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-05-14,3,3
+860,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-05-15,2,3
+861,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-05-15,4,3
+862,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-05-17,6,2
+863,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-05-18,19,1
+864,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-05-18,1,1
+865,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-05-20,20,1
+866,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-05-21,8,1
+867,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-05-21,13,3
+868,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-05-23,12,2
+869,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-05-24,2,2
+870,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-05-24,13,2
+871,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-05-26,17,2
+872,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-05-27,12,1
+873,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-05-27,19,3
+874,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-05-29,8,1
+875,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-05-30,15,1
+876,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-05-30,15,3
+877,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-06-01,9,2
+878,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-06-02,5,2
+879,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-06-02,9,3
+880,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-06-04,14,2
+881,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-06-05,2,2
+882,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-06-05,5,2
+883,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-06-07,13,3
+884,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-06-08,9,2
+885,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-06-08,16,3
+886,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-06-10,7,2
+887,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-06-11,20,1
+888,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-06-11,3,3
+889,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-06-13,15,1
+890,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-06-14,18,3
+891,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-06-14,17,1
+892,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-06-16,3,2
+893,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-06-17,2,3
+894,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-06-17,4,2
+895,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-06-19,20,2
+896,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-06-20,17,1
+897,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-06-20,14,3
+898,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-06-22,2,3
+899,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-06-23,3,1
+900,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-06-23,7,3
+901,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-06-25,12,3
+902,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-06-26,8,3
+903,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-06-26,3,3
+904,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-06-28,20,3
+905,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-06-29,4,2
+906,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-06-29,2,2
+907,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-07-01,6,2
+908,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-07-02,17,3
+909,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-07-02,6,3
+910,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-07-04,10,3
+911,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-07-05,12,1
+912,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-07-05,3,3
+913,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-07-07,19,1
+914,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-07-08,16,3
+915,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-07-08,15,1
+916,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-07-10,13,3
+917,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-07-11,11,2
+918,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-07-11,6,1
+919,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-07-13,18,2
+920,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-07-14,2,2
+921,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-07-14,3,2
+922,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-07-16,8,3
+923,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-07-17,6,1
+924,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-07-17,5,3
+925,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-07-19,4,1
+926,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-07-20,12,3
+927,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-07-20,1,3
+928,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-07-22,19,1
+929,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-07-23,20,1
+930,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-07-23,13,1
+931,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-07-25,10,2
+932,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-07-26,18,2
+933,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-07-26,6,1
+934,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-07-28,11,3
+935,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-07-29,1,2
+936,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-07-29,15,2
+937,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-07-31,2,2
+938,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-08-01,17,3
+939,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-08-01,2,3
+940,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-08-03,18,2
+941,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-08-04,4,2
+942,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-08-04,13,2
+943,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-08-06,4,3
+944,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-08-07,5,3
+945,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-08-07,3,3
+946,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-08-09,10,2
+947,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-08-10,15,1
+948,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-08-10,19,2
+949,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-08-12,20,1
+950,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-08-13,17,2
+951,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-08-13,6,1
+952,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-08-15,15,1
+953,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-08-16,8,3
+954,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-08-16,16,3
+955,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-08-18,7,1
+956,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-08-19,16,2
+957,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-08-19,5,1
+958,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-08-21,1,3
+959,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-08-22,8,2
+960,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-08-22,3,1
+961,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-08-24,13,1
+962,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-08-25,5,3
+963,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-08-25,4,2
+964,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-08-27,2,2
+965,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-08-28,9,3
+966,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-08-28,4,3
+967,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-08-30,5,3
+968,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-08-31,12,3
+969,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-08-31,10,1
+970,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-09-02,14,2
+971,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-09-03,12,1
+972,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-09-03,7,2
+973,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-09-05,5,2
+974,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-09-06,4,1
+975,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-09-06,12,3
+976,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-09-08,12,3
+977,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-09-09,2,3
+978,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-09-09,2,1
+979,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-09-11,6,1
+980,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-09-12,10,2
+981,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-09-12,16,2
+982,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-09-14,11,2
+983,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-09-15,10,3
+984,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-09-15,12,3
+985,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-09-17,5,3
+986,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-09-18,18,2
+987,Lubricacion de los componentes internos de la prensa para evitar desgastes en zonas de alta friccion.,2024-09-18,14,2
+988,Inspeccion de los rodillos en la cinta transportadora y ajuste de los soportes.,2024-09-20,17,2
+989,Revision del sistema de respaldo electrico para comprobar que funcione en caso de corte de energia.,2024-09-21,11,2
+990,Ajuste de los tensores en los sistemas de transmision para evitar deslizamientos en las correas.,2024-09-21,1,2
+991,Verificacion de los sellos en las bombas hidraulicas para evitar fugas.,2024-09-23,14,3
+992,Inspeccion de los sistemas de lubricacion de los ejes y ajuste de los puntos de engrase.,2024-09-24,13,1
+993,Reemplazo de las piezas desgastadas en las poleas de las maquinas transportadoras.,2024-09-24,14,2
+994,Se realizara una lubricacion a los ejes moviles de la banda elastica para la maquina designada. La lubricacion debera realizarse con dos lubricantes uno para bordes internos y otro para externos.,2024-09-26,9,3
+995,Inspeccion de los sistemas electricos de las maquinas en la linea de produccion. Se revisaran conexiones y el aislamiento de cables.,2024-09-27,14,3
+996,Limpieza de los filtros de aire de los sistemas de ventilacion para asegurar flujo constante de aire en la maquinaria.,2024-09-27,9,1
+997,Reemplazo de piezas desgastadas en la estructura de la cinta transportadora incluidas poleas y engranajes.,2024-09-29,9,3
+998,Revision y ajuste de las conexiones hidraulicas en el sistema de elevacion de carga en la grua.,2024-09-30,17,1
+999,Verificacion del sistema de refrigeracion y reemplazo de componentes defectuosos en las maquinas.,2024-09-30,17,1
+1000,Calibracion de los sensores de presion y temperatura en las maquinas de produccion.,2024-10-02,19,1

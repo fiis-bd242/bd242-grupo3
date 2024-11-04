@@ -48,7 +48,7 @@ DROP TABLE IF EXISTS Criticidad CASCADE;
 CREATE TABLE Criticidad
 (
   Id_criticidad INT NOT NULL,
-  Nivel VARCHAR(20) NOT NULL,
+  Nivel VARCHAR(50) NOT NULL,
   PRIMARY KEY (Id_criticidad)
 );
 
@@ -77,13 +77,13 @@ DROP TABLE IF EXISTS Plan_de_mantenimiento CASCADE;
 CREATE TABLE Plan_de_mantenimiento
 (
   Id_plan INT NOT NULL,
-  Observaciones VARCHAR(5000) NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
   Fecha_plan DATE NOT NULL,
   Empleado_asigna INT NOT NULL,
   Id_criticidad INT NOT NULL,
   PRIMARY KEY (Id_plan),
-  FOREIGN KEY (Empleado_asigna) REFERENCES Empleado (Id_empleado),
-  FOREIGN KEY (Id_criticidad) REFERENCES Criticidad (Id_criticidad)
+  FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Id_empleado),
+  FOREIGN KEY (Id_criticidad) REFERENCES Criticidad(Id_criticidad)
 );
 
 DROP TABLE IF EXISTS Pedido CASCADE;
@@ -120,14 +120,31 @@ CREATE TABLE Orden_de_compra
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
 
+DROP TABLE IF EXISTS Estado_actv CASCADE;
+CREATE TABLE Estado_actv
+(
+  id_estado INT NOT NULL,
+  estado VARCHAR(20) NOT NULL,
+  PRIMARY KEY (id_estado)
+);
+
 DROP TABLE IF EXISTS Actividad_empleado CASCADE;
 CREATE TABLE Actividad_empleado
 (
   Id_actvempleado INT NOT NULL,
-  Descripcion_actv VARCHAR(10000) NOT NULL,
+  nombre_actv VARCHAR(100) NOT NULL,
+  Descripcion_actv VARCHAR(255) NOT NULL,
+  fecha_inicio DATE NOT NULL,
+  fecha_fin DATE NOT NULL,
+  Id_equipo_soporte INT NOT NULL,
   Id_empleado INT NOT NULL,
+  id_estado INT NOT NULL,
+  Id_Orden INT NOT NULL,
   PRIMARY KEY (Id_actvempleado),
-  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
+  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
+  FOREIGN KEY (id_estado) REFERENCES Estado_actv(id_estado),
+  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte),
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden)
 );
 
 DROP TABLE IF EXISTS Orden_de_trabajo CASCADE;
@@ -135,12 +152,8 @@ CREATE TABLE Orden_de_trabajo
 (
   Id_Orden INT NOT NULL,
   Fecha_Orden DATE NOT NULL,
-  Descripcion VARCHAR(10000) NOT NULL,
-  Empleado_asigna INT NOT NULL,
-  Id_criticidad INT NOT NULL,
-  PRIMARY KEY (Id_Orden),
-  FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Id_empleado),
-  FOREIGN KEY (Id_criticidad) REFERENCES Criticidad(Id_criticidad)
+  Descripcion VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_Orden)
 );
 
 DROP TABLE IF EXISTS Categoria_Almacen CASCADE;
@@ -281,29 +294,39 @@ CREATE TABLE Maquina
 DROP TABLE IF EXISTS Tipo_mantenimiento CASCADE;
 CREATE TABLE Tipo_mantenimiento
 (
-    id_tipo_mant INT NOT NULL,
-    nombre_tipo_mant VARCHAR(300),
-    PRIMARY KEY (id_tipo_mant)
+  id_tipo_mant CHAR(2) NOT NULL,
+  nombre_tipo_mant VARCHAR(30) NOT NULL,
+  PRIMARY KEY (id_tipo_mant)
+);
+
+DROP TABLE IF EXISTS Estado_mantto CASCADE;
+CREATE TABLE Estado_mantto
+(
+  id_estado INT NOT NULL,
+  estado VARCHAR(20) NOT NULL,
+  PRIMARY KEY (id_estado)
 );
 
 DROP TABLE IF EXISTS Mantenimiento CASCADE;
 CREATE TABLE Mantenimiento
 (
-    Id_Act_mantto INT NOT NULL,
-    Descripcion VARCHAR(1000),
-    Tarea VARCHAR(1000),
-    Peligros VARCHAR(1000), 
-    Fecha_inicio_programado DATE, 
-    Fecha_fin_programado DATE, 
-    Id_Orden INT NOT NULL,
-    Id_plan INT NOT NULL,
-    Id_maquina INT NOT NULL,
-    id_tipo_mant INT NOT NULL,
-    PRIMARY KEY (Id_Act_mantto),
-    FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo (Id_Orden),
-    FOREIGN KEY (Id_plan) REFERENCES Plan_de_mantenimiento (Id_plan),
-    FOREIGN KEY (Id_maquina) REFERENCES Maquina (Id_maquina),
-    FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento (id_tipo_mant)
+  Descripcion VARCHAR(300) NOT NULL,
+  Id_Act_mantto INT NOT NULL,
+  Tarea VARCHAR(40) NOT NULL,
+  Peligros VARCHAR(30) NOT NULL,
+  Fecha_inicio_programado DATE NOT NULL,
+  Fecha_fin_programado DATE NOT NULL,
+  Id_Orden INT NOT NULL,
+  Id_plan INT NOT NULL,
+  id_tipo_mant CHAR(2) NOT NULL,
+  Id_maquina INT NOT NULL,
+  id_estado INT NOT NULL,
+  PRIMARY KEY (Id_Act_mantto),
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden),
+  FOREIGN KEY (Id_plan) REFERENCES Plan_de_mantenimiento(Id_plan),
+  FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento(id_tipo_mant),
+  FOREIGN KEY (id_maquina) REFERENCES Maquina(Id_maquina),
+  FOREIGN KEY (id_estado) REFERENCES Estado_mantto(id_estado)
 );
 
 DROP TABLE IF EXISTS HerramientaXMantenimiento CASCADE;
@@ -643,22 +666,31 @@ CREATE TABLE Incidencias_Tags
   FOREIGN KEY (id_Registro) REFERENCES Registro(Id_registro)
 );
 
+DROP TABLE IF EXISTS Tipo_notificacion CASCADE;
+CREATE TABLE Tipo_notificacion
+(
+  id_tipo INT NOT NULL,
+  tipo VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id_tipo)
+);
+
 DROP TABLE IF EXISTS Notificaciones CASCADE;
 CREATE TABLE Notificaciones
 (
-  Id_Notificacion SERIAL ,
-  Fecha_notificacion TIMESTAMP NOT NULL,
-  Asunto VARCHAR(255) NOT NULL,
-  Mensaje TEXT NOT NULL,
+  id_notificacion INT NOT NULL,
+  mensaje VARCHAR(255) NOT NULL,
+  fecha_notificacion DATE NOT NULL,
   id_remitente INT NOT NULL,
   id_destinatario INT NOT NULL,
-  id_registro INT,
-  id_reporte INT,
-  PRIMARY KEY (Id_Notificacion),
-  FOREIGN KEY (id_registro) REFERENCES Registro(Id_registro),
-  FOREIGN KEY (Id_reporte) REFERENCES Reportes(Id_Reporte),
-  FOREIGN KEY (Id_remitente) REFERENCES Empleado(Id_empleado),
-  FOREIGN KEY (Id_destinatario) REFERENCES Empleado(Id_empleado)
+  Id_registro INT NOT NULL,
+  Id_reporte INT NOT NULL,
+  id_tipo INT NOT NULL,
+  PRIMARY KEY (id_notificacion),
+  FOREIGN KEY (id_remitente) REFERENCES Empleado(Id_empleado),
+  FOREIGN KEY (id_destinatario) REFERENCES Empleado(Id_empleado),
+  FOREIGN KEY (Id_registro) REFERENCES Registro(Id_registro),
+  FOREIGN KEY (Id_reporte) REFERENCES Reportes(Id_reporte),
+  FOREIGN KEY (id_tipo) REFERENCES Tipo_notificacion(id_tipo)
 );
 
 

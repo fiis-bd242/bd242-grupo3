@@ -1,0 +1,3 @@
+id_estado,estado
+1,Bien
+2,Mal

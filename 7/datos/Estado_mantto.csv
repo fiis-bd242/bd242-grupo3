@@ -1,0 +1,8 @@
+id_estado,estado
+1,Borrador
+2,Notificado
+3,Aceptado
+4,En ejecucion
+5,Ejecutado
+6,En auditoria
+7,Auditado
