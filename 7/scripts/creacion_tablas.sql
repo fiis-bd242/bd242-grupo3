@@ -199,8 +199,8 @@ DROP TABLE IF EXISTS Orden_de_trabajo CASCADE;
 CREATE TABLE Orden_de_trabajo
 (
   Id_Orden INT NOT NULL,
-  Fecha_Orden DATE NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
+  Fecha_Orden DATE NOT NULL,
   PRIMARY KEY (Id_Orden)
 );
 
@@ -212,7 +212,7 @@ CREATE TABLE Actividad_empleado
   Descripcion_actv VARCHAR(255) NOT NULL,
   fecha_inicio DATE NOT NULL,
   fecha_fin DATE NOT NULL,
-  Id_equipo_soporte INT NOT NULL,
+  Id_equipo_soporte INT,
   Id_empleado INT NOT NULL,
   id_estado INT NOT NULL,
   Id_Orden INT NOT NULL,
@@ -310,10 +310,7 @@ CREATE TABLE Estado_mantto
 DROP TABLE IF EXISTS Mantenimiento CASCADE;
 CREATE TABLE Mantenimiento
 (
-  Descripcion VARCHAR(300) NOT NULL,
   Id_Act_mantto INT NOT NULL,
-  Tarea VARCHAR(40) NOT NULL,
-  Peligros VARCHAR(30) NOT NULL,
   Fecha_inicio_programado DATE NOT NULL,
   Fecha_fin_programado DATE NOT NULL,
   Id_Orden INT NOT NULL,
