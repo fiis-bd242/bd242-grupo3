@@ -1,0 +1,1001 @@
+id_actv,nombre_actv,descripcion,fecha_inicio,fecha_fin,id_equipo_soporte,id_empleado,id_estado,id_orden
+1,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-01-07,2022-01-09,,839,3,1
+2,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-01-08,2022-01-10,,352,2,2
+3,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-01-08,2022-01-08,,598,1,3
+4,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-01-10,2022-01-10,,196,4,4
+5,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-01-11,2022-01-11,,671,3,5
+6,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-01-11,2022-01-11,,672,3,6
+7,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-01-13,2022-01-14,,721,7,7
+8,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-01-14,2022-01-15,,755,1,8
+9,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-01-14,2022-01-15,,408,6,9
+10,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-01-16,2022-01-18,,491,2,10
+11,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-01-17,2022-01-19,,597,2,11
+12,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-01-17,2022-01-18,,941,3,12
+13,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-01-19,2022-01-19,,873,4,13
+14,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-01-20,2022-01-22,,514,4,14
+15,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-01-20,2022-01-21,,836,2,15
+16,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-01-22,2022-01-23,,320,6,16
+17,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-01-23,2022-01-24,,592,5,17
+18,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-01-23,2022-01-23,1,870,3,18
+19,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-01-25,2022-01-25,,519,7,19
+20,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-01-26,2022-01-26,,572,6,20
+21,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-01-26,2022-01-28,,934,3,21
+22,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-01-28,2022-01-30,,598,7,22
+23,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-01-29,2022-01-30,,83,4,23
+24,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-01-29,2022-01-30,17,305,5,24
+25,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-01-31,2022-02-01,,726,6,25
+26,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-02-01,2022-02-02,,153,4,26
+27,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-02-01,2022-02-01,,688,1,27
+28,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-02-03,2022-02-05,,527,5,28
+29,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-02-04,2022-02-06,,854,4,29
+30,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-02-04,2022-02-04,,646,6,30
+31,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-02-06,2022-02-07,,936,6,31
+32,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-02-07,2022-02-09,,446,1,32
+33,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-02-07,2022-02-09,,786,7,33
+34,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-02-09,2022-02-10,,667,7,34
+35,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-02-10,2022-02-10,,326,7,35
+36,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-02-10,2022-02-12,,178,6,36
+37,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-02-12,2022-02-12,,747,5,37
+38,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-02-13,2022-02-15,,977,1,38
+39,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-02-13,2022-02-15,,321,3,39
+40,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-02-15,2022-02-16,,130,3,40
+41,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-02-16,2022-02-16,,449,5,41
+42,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-02-16,2022-02-16,,509,4,42
+43,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-02-18,2022-02-19,,841,7,43
+44,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-02-19,2022-02-21,,428,1,44
+45,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-02-19,2022-02-20,4,964,1,45
+46,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-02-21,2022-02-23,,176,5,46
+47,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-02-22,2022-02-22,,796,1,47
+48,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-02-22,2022-02-23,,544,4,48
+49,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-02-24,2022-02-25,,385,7,49
+50,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-02-25,2022-02-25,,997,4,50
+51,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-02-25,2022-02-27,,254,2,51
+52,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-02-27,2022-02-27,9,670,1,52
+53,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-02-28,2022-03-02,3,582,5,53
+54,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-02-28,2022-03-01,,936,3,54
+55,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-03-02,2022-03-02,,192,6,55
+56,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-03-03,2022-03-03,,505,3,56
+57,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-03-03,2022-03-05,,675,4,57
+58,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-03-05,2022-03-06,,492,6,58
+59,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-03-06,2022-03-06,10,360,7,59
+60,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-03-06,2022-03-06,,87,6,60
+61,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-03-08,2022-03-09,,962,3,61
+62,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-03-09,2022-03-09,,373,2,62
+63,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-03-09,2022-03-10,,680,3,63
+64,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-03-11,2022-03-13,,690,4,64
+65,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-03-12,2022-03-12,,448,5,65
+66,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-03-12,2022-03-13,,548,5,66
+67,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-03-14,2022-03-16,,430,7,67
+68,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-03-15,2022-03-16,,836,2,68
+69,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-03-15,2022-03-15,,428,7,69
+70,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-03-17,2022-03-17,,198,3,70
+71,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-03-18,2022-03-20,,540,4,71
+72,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-03-18,2022-03-19,,134,3,72
+73,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-03-20,2022-03-21,,760,5,73
+74,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-03-21,2022-03-22,,579,4,74
+75,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-03-21,2022-03-22,1,770,5,75
+76,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-03-23,2022-03-25,,221,5,76
+77,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-03-24,2022-03-24,,156,5,77
+78,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-03-24,2022-03-26,,839,5,78
+79,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-03-26,2022-03-26,,213,4,79
+80,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-03-27,2022-03-27,,962,4,80
+81,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-03-27,2022-03-28,,105,3,81
+82,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-03-29,2022-03-31,,959,4,82
+83,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-03-30,2022-03-30,,406,6,83
+84,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-03-30,2022-03-31,,464,3,84
+85,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-04-01,2022-04-02,,605,4,85
+86,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-04-02,2022-04-03,,614,5,86
+87,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-04-02,2022-04-03,3,849,2,87
+88,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-04-04,2022-04-06,,613,4,88
+89,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-04-05,2022-04-07,14,607,3,89
+90,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-04-05,2022-04-07,,165,4,90
+91,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-04-07,2022-04-07,,895,5,91
+92,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-04-08,2022-04-08,,262,5,92
+93,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-04-08,2022-04-09,,606,6,93
+94,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-04-10,2022-04-11,,658,7,94
+95,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-04-11,2022-04-13,,570,4,95
+96,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-04-11,2022-04-13,11,518,3,96
+97,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-04-13,2022-04-14,6,865,7,97
+98,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-04-14,2022-04-15,,138,2,98
+99,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-04-14,2022-04-16,,689,2,99
+100,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-04-16,2022-04-18,,310,7,100
+101,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-04-17,2022-04-18,,26,3,101
+102,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-04-17,2022-04-19,,144,4,102
+103,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-04-19,2022-04-21,20,658,2,103
+104,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-04-20,2022-04-20,14,951,7,104
+105,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-04-20,2022-04-20,19,430,3,105
+106,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-04-22,2022-04-22,,584,5,106
+107,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-04-23,2022-04-24,,462,5,107
+108,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-04-23,2022-04-24,,195,5,108
+109,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-04-25,2022-04-27,,369,2,109
+110,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-04-26,2022-04-26,,431,1,110
+111,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-04-26,2022-04-27,8,684,6,111
+112,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-04-28,2022-04-29,,77,1,112
+113,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-04-29,2022-04-29,,563,7,113
+114,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-04-29,2022-04-29,,676,5,114
+115,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-05-01,2022-05-02,,716,1,115
+116,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-05-02,2022-05-03,13,345,7,116
+117,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-05-02,2022-05-04,,977,2,117
+118,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-05-04,2022-05-04,,190,5,118
+119,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-05-05,2022-05-06,,49,7,119
+120,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-05-05,2022-05-06,,523,4,120
+121,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-05-07,2022-05-09,,478,2,121
+122,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-05-08,2022-05-08,,222,3,122
+123,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-05-08,2022-05-09,,368,2,123
+124,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-05-10,2022-05-11,,101,3,124
+125,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-05-11,2022-05-12,,583,7,125
+126,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-05-11,2022-05-13,6,174,4,126
+127,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-05-13,2022-05-15,,139,7,127
+128,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-05-14,2022-05-15,,375,7,128
+129,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-05-14,2022-05-15,,911,2,129
+130,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-05-16,2022-05-17,,960,6,130
+131,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-05-17,2022-05-19,,389,1,131
+132,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-05-17,2022-05-18,16,183,1,132
+133,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-05-19,2022-05-20,,919,2,133
+134,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-05-20,2022-05-22,,664,6,134
+135,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-05-20,2022-05-21,,192,1,135
+136,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-05-22,2022-05-23,,297,7,136
+137,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-05-23,2022-05-23,,867,3,137
+138,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-05-23,2022-05-23,,269,4,138
+139,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-05-25,2022-05-25,,654,1,139
+140,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-05-26,2022-05-27,,189,2,140
+141,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-05-26,2022-05-28,,235,3,141
+142,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-05-28,2022-05-28,,116,3,142
+143,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-05-29,2022-05-31,,472,4,143
+144,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-05-29,2022-05-29,,205,6,144
+145,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-05-31,2022-06-01,,965,7,145
+146,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-06-01,2022-06-03,,539,3,146
+147,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-06-01,2022-06-03,,986,2,147
+148,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-06-03,2022-06-03,,115,4,148
+149,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-06-04,2022-06-05,,868,5,149
+150,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-06-04,2022-06-06,,712,5,150
+151,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-06-06,2022-06-08,,939,5,151
+152,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-06-07,2022-06-09,,997,4,152
+153,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-06-07,2022-06-07,20,801,2,153
+154,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-06-09,2022-06-10,,639,7,154
+155,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-06-10,2022-06-12,13,752,6,155
+156,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-06-10,2022-06-11,,721,3,156
+157,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-06-12,2022-06-14,,680,3,157
+158,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-06-13,2022-06-15,,909,1,158
+159,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-06-13,2022-06-15,,295,7,159
+160,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-06-15,2022-06-15,,32,1,160
+161,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-06-16,2022-06-17,,283,5,161
+162,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-06-16,2022-06-16,,713,4,162
+163,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-06-18,2022-06-20,,948,1,163
+164,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-06-19,2022-06-21,,780,4,164
+165,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-06-19,2022-06-19,,226,1,165
+166,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-06-21,2022-06-21,,425,7,166
+167,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-06-22,2022-06-24,6,853,2,167
+168,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-06-22,2022-06-23,,532,4,168
+169,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-06-24,2022-06-25,,327,2,169
+170,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-06-25,2022-06-25,,393,4,170
+171,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-06-25,2022-06-27,,724,1,171
+172,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-06-27,2022-06-28,,634,5,172
+173,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-06-28,2022-06-30,,560,1,173
+174,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-06-28,2022-06-28,,964,2,174
+175,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-06-30,2022-06-30,,420,6,175
+176,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-07-01,2022-07-01,,471,6,176
+177,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-07-01,2022-07-03,,270,3,177
+178,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-07-03,2022-07-04,3,31,7,178
+179,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-07-04,2022-07-06,,775,6,179
+180,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-07-04,2022-07-04,9,619,5,180
+181,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-07-06,2022-07-08,,772,5,181
+182,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-07-07,2022-07-07,,807,1,182
+183,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-07-07,2022-07-08,,980,3,183
+184,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-07-09,2022-07-11,,328,2,184
+185,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-07-10,2022-07-11,,778,6,185
+186,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-07-10,2022-07-12,,857,1,186
+187,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-07-12,2022-07-12,,99,4,187
+188,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-07-13,2022-07-13,,638,5,188
+189,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-07-13,2022-07-13,,970,5,189
+190,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-07-15,2022-07-17,,898,1,190
+191,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-07-16,2022-07-16,,497,7,191
+192,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-07-16,2022-07-16,,463,1,192
+193,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-07-18,2022-07-19,,296,7,193
+194,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-07-19,2022-07-20,,968,1,194
+195,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-07-19,2022-07-21,,497,5,195
+196,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-07-21,2022-07-22,,722,1,196
+197,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-07-22,2022-07-22,,885,5,197
+198,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-07-22,2022-07-22,,596,4,198
+199,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-07-24,2022-07-25,,383,6,199
+200,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-07-25,2022-07-27,,226,2,200
+201,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-07-25,2022-07-26,,708,5,201
+202,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-07-27,2022-07-27,,405,5,202
+203,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-07-28,2022-07-28,,331,1,203
+204,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-07-28,2022-07-30,,857,2,204
+205,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-07-30,2022-08-01,,411,2,205
+206,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-07-31,2022-07-31,,993,7,206
+207,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-07-31,2022-08-02,,396,1,207
+208,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-08-02,2022-08-04,,504,7,208
+209,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-08-03,2022-08-04,,341,3,209
+210,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-08-03,2022-08-03,4,735,5,210
+211,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-08-05,2022-08-06,,205,6,211
+212,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-08-06,2022-08-07,,816,2,212
+213,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-08-06,2022-08-07,,807,3,213
+214,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-08-08,2022-08-08,,620,4,214
+215,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-08-09,2022-08-09,10,95,6,215
+216,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-08-09,2022-08-10,,679,7,216
+217,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-08-11,2022-08-12,,622,1,217
+218,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-08-12,2022-08-13,,182,2,218
+219,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-08-12,2022-08-12,,988,6,219
+220,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-08-14,2022-08-14,,745,4,220
+221,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-08-15,2022-08-15,,516,6,221
+222,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-08-15,2022-08-15,,268,1,222
+223,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-08-17,2022-08-19,,566,5,223
+224,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-08-18,2022-08-19,,747,5,224
+225,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-08-18,2022-08-18,,802,3,225
+226,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-08-20,2022-08-21,,642,6,226
+227,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-08-21,2022-08-23,,297,1,227
+228,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-08-21,2022-08-23,,577,6,228
+229,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-08-23,2022-08-25,,276,2,229
+230,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-08-24,2022-08-26,,98,2,230
+231,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-08-24,2022-08-24,,421,2,231
+232,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-08-26,2022-08-27,,107,7,232
+233,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-08-27,2022-08-29,15,923,1,233
+234,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-08-27,2022-08-29,,45,7,234
+235,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-08-29,2022-08-29,,605,6,235
+236,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-08-30,2022-08-31,,317,3,236
+237,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-08-30,2022-08-30,,822,6,237
+238,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-09-01,2022-09-01,,251,1,238
+239,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-09-02,2022-09-02,,962,1,239
+240,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-09-02,2022-09-02,,852,5,240
+241,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-09-04,2022-09-04,,218,6,241
+242,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-09-05,2022-09-07,,543,6,242
+243,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-09-05,2022-09-06,20,800,3,243
+244,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-09-07,2022-09-09,,131,7,244
+245,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-09-08,2022-09-10,,50,4,245
+246,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-09-08,2022-09-10,,384,2,246
+247,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-09-10,2022-09-11,,905,1,247
+248,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-09-11,2022-09-12,,207,5,248
+249,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-09-11,2022-09-13,,287,6,249
+250,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-09-13,2022-09-13,,312,5,250
+251,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-09-14,2022-09-16,,177,4,251
+252,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-09-14,2022-09-14,6,136,4,252
+253,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-09-16,2022-09-18,,121,3,253
+254,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-09-17,2022-09-19,,654,6,254
+255,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-09-17,2022-09-17,,944,4,255
+256,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-09-19,2022-09-20,,363,4,256
+257,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-09-20,2022-09-21,,982,6,257
+258,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-09-20,2022-09-20,,533,7,258
+259,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-09-22,2022-09-22,,784,1,259
+260,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-09-23,2022-09-23,,421,1,260
+261,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-09-23,2022-09-24,,927,6,261
+262,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-09-25,2022-09-26,,155,6,262
+263,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-09-26,2022-09-26,,125,4,263
+264,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-09-26,2022-09-28,,153,6,264
+265,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-09-28,2022-09-30,,565,5,265
+266,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-09-29,2022-09-29,,138,5,266
+267,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-09-29,2022-09-30,,362,6,267
+268,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-10-01,2022-10-02,18,185,1,268
+269,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-10-02,2022-10-03,,614,1,269
+270,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-10-02,2022-10-04,,484,5,270
+271,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-10-04,2022-10-04,,923,3,271
+272,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-10-05,2022-10-06,,575,2,272
+273,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-10-05,2022-10-05,,474,3,273
+274,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-10-07,2022-10-08,,133,2,274
+275,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-10-08,2022-10-09,,980,4,275
+276,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-10-08,2022-10-10,,479,7,276
+277,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-10-10,2022-10-12,,185,4,277
+278,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-10-11,2022-10-12,,282,2,278
+279,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-10-11,2022-10-12,,996,4,279
+280,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-10-13,2022-10-14,,234,3,280
+281,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-10-14,2022-10-15,1,635,6,281
+282,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-10-14,2022-10-16,,451,5,282
+283,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-10-16,2022-10-16,,109,6,283
+284,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-10-17,2022-10-19,,191,1,284
+285,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-10-17,2022-10-18,,386,3,285
+286,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-10-19,2022-10-19,,339,4,286
+287,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-10-20,2022-10-21,,183,1,287
+288,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-10-20,2022-10-20,,285,3,288
+289,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-10-22,2022-10-23,,134,2,289
+290,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-10-23,2022-10-24,,426,2,290
+291,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-10-23,2022-10-25,,550,5,291
+292,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-10-25,2022-10-25,,724,1,292
+293,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-10-26,2022-10-26,,708,2,293
+294,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-10-26,2022-10-27,,33,1,294
+295,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-10-28,2022-10-30,,49,4,295
+296,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-10-29,2022-10-30,,310,3,296
+297,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-10-29,2022-10-30,,571,1,297
+298,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-10-31,2022-11-02,,469,1,298
+299,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-11-01,2022-11-03,,428,1,299
+300,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-11-01,2022-11-02,,59,6,300
+301,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-11-03,2022-11-05,,47,3,301
+302,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-11-04,2022-11-04,,503,1,302
+303,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-11-04,2022-11-04,,810,4,303
+304,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-11-06,2022-11-08,,551,3,304
+305,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-11-07,2022-11-09,13,330,3,305
+306,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-11-07,2022-11-07,15,90,4,306
+307,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-11-09,2022-11-09,,775,2,307
+308,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-11-10,2022-11-12,,475,6,308
+309,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-11-10,2022-11-12,,608,6,309
+310,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-11-12,2022-11-13,15,170,1,310
+311,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-11-13,2022-11-14,,404,2,311
+312,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-11-13,2022-11-13,,704,5,312
+313,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-11-15,2022-11-17,,454,7,313
+314,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-11-16,2022-11-17,,386,7,314
+315,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-11-16,2022-11-17,,722,5,315
+316,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-11-18,2022-11-19,,423,4,316
+317,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-11-19,2022-11-20,,156,3,317
+318,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-11-19,2022-11-19,,628,5,318
+319,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-11-21,2022-11-23,,445,2,319
+320,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-11-22,2022-11-23,,523,3,320
+321,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-11-22,2022-11-23,,945,5,321
+322,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-11-24,2022-11-24,,682,2,322
+323,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-11-25,2022-11-27,,634,5,323
+324,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-11-25,2022-11-26,,155,1,324
+325,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-11-27,2022-11-28,13,404,4,325
+326,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-11-28,2022-11-29,,839,5,326
+327,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-11-28,2022-11-29,,37,2,327
+328,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-11-30,2022-12-02,17,140,6,328
+329,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-12-01,2022-12-02,,341,1,329
+330,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-12-01,2022-12-03,,181,3,330
+331,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-12-03,2022-12-03,,494,7,331
+332,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-12-04,2022-12-06,,860,3,332
+333,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-12-04,2022-12-06,,728,2,333
+334,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-12-06,2022-12-08,6,341,5,334
+335,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-12-07,2022-12-07,,55,5,335
+336,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-12-07,2022-12-09,,49,4,336
+337,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-12-09,2022-12-11,,807,4,337
+338,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-12-10,2022-12-10,,434,3,338
+339,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-12-10,2022-12-12,,871,6,339
+340,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-12-12,2022-12-13,,773,7,340
+341,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-12-13,2022-12-13,,751,1,341
+342,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-12-13,2022-12-14,15,397,5,342
+343,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-12-15,2022-12-16,,363,4,343
+344,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-12-16,2022-12-18,15,817,2,344
+345,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-12-16,2022-12-17,,666,3,345
+346,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-12-18,2022-12-19,,495,6,346
+347,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2022-12-19,2022-12-21,17,384,7,347
+348,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2022-12-19,2022-12-19,,201,2,348
+349,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2022-12-21,2022-12-21,,411,3,349
+350,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2022-12-22,2022-12-24,,342,4,350
+351,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2022-12-22,2022-12-23,,529,3,351
+352,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2022-12-24,2022-12-25,,945,5,352
+353,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2022-12-25,2022-12-27,,473,7,353
+354,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2022-12-25,2022-12-25,,907,7,354
+355,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2022-12-27,2022-12-28,,825,7,355
+356,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2022-12-28,2022-12-29,,625,6,356
+357,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2022-12-28,2022-12-29,,803,6,357
+358,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2022-12-30,2022-12-30,,811,6,358
+359,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2022-12-31,2022-12-31,,94,1,359
+360,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2022-12-31,2023-01-01,,801,5,360
+361,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-01-02,2023-01-04,,266,6,361
+362,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-01-03,2023-01-05,,542,6,362
+363,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-01-03,2023-01-05,,732,3,363
+364,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-01-05,2023-01-05,,704,6,364
+365,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-01-06,2023-01-08,,393,3,365
+366,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-01-06,2023-01-06,,187,5,366
+367,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-01-08,2023-01-09,,867,5,367
+368,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-01-09,2023-01-09,,863,2,368
+369,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-01-09,2023-01-10,,141,2,369
+370,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-01-11,2023-01-13,,734,4,370
+371,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-01-12,2023-01-14,,265,6,371
+372,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-01-12,2023-01-14,,934,5,372
+373,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-01-14,2023-01-15,,620,1,373
+374,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-01-15,2023-01-17,,418,7,374
+375,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-01-15,2023-01-17,,227,5,375
+376,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-01-17,2023-01-18,,48,2,376
+377,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-01-18,2023-01-19,,649,4,377
+378,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-01-18,2023-01-18,,281,5,378
+379,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-01-20,2023-01-20,,752,5,379
+380,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-01-21,2023-01-21,,449,4,380
+381,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-01-21,2023-01-23,,942,3,381
+382,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-01-23,2023-01-23,,148,2,382
+383,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-01-24,2023-01-26,16,75,2,383
+384,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-01-24,2023-01-25,,705,2,384
+385,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-01-26,2023-01-26,,138,5,385
+386,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-01-27,2023-01-29,,531,2,386
+387,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-01-27,2023-01-29,,699,3,387
+388,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-01-29,2023-01-31,,389,6,388
+389,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-01-30,2023-01-31,,324,3,389
+390,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-01-30,2023-01-30,,546,2,390
+391,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-02-01,2023-02-01,,490,1,391
+392,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-02-02,2023-02-04,16,339,1,392
+393,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-02-02,2023-02-04,,584,6,393
+394,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-02-04,2023-02-04,,488,5,394
+395,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-02-05,2023-02-07,,547,1,395
+396,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-02-05,2023-02-07,,751,6,396
+397,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-02-07,2023-02-08,,611,5,397
+398,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-02-08,2023-02-09,,218,5,398
+399,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-02-08,2023-02-08,,136,3,399
+400,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-02-10,2023-02-11,,294,1,400
+401,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-02-11,2023-02-11,,498,4,401
+402,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-02-11,2023-02-11,,25,7,402
+403,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-02-13,2023-02-14,,732,3,403
+404,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-02-14,2023-02-16,,838,1,404
+405,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-02-14,2023-02-14,,882,6,405
+406,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-02-16,2023-02-17,,877,4,406
+407,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-02-17,2023-02-17,,392,4,407
+408,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-02-17,2023-02-19,,403,7,408
+409,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-02-19,2023-02-21,,354,3,409
+410,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-02-20,2023-02-22,17,860,5,410
+411,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-02-20,2023-02-22,,128,6,411
+412,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-02-22,2023-02-24,,737,2,412
+413,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-02-23,2023-02-25,,32,4,413
+414,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-02-23,2023-02-25,,359,7,414
+415,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-02-25,2023-02-25,,824,4,415
+416,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-02-26,2023-02-26,,484,6,416
+417,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-02-26,2023-02-28,,372,2,417
+418,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-02-28,2023-03-01,,356,2,418
+419,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-03-01,2023-03-02,,503,5,419
+420,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-03-01,2023-03-02,,382,5,420
+421,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-03-03,2023-03-03,,721,6,421
+422,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-03-04,2023-03-05,,384,6,422
+423,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-03-04,2023-03-06,15,411,7,423
+424,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-03-06,2023-03-06,,748,3,424
+425,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-03-07,2023-03-07,,959,6,425
+426,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-03-07,2023-03-07,,76,6,426
+427,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-03-09,2023-03-09,,864,5,427
+428,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-03-10,2023-03-11,,776,1,428
+429,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-03-10,2023-03-11,,230,5,429
+430,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-03-12,2023-03-12,,893,1,430
+431,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-03-13,2023-03-14,,654,4,431
+432,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-03-13,2023-03-13,,994,1,432
+433,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-03-15,2023-03-17,,801,2,433
+434,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-03-16,2023-03-17,,919,4,434
+435,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-03-16,2023-03-17,,498,7,435
+436,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-03-18,2023-03-20,,997,5,436
+437,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-03-19,2023-03-21,,859,2,437
+438,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-03-19,2023-03-21,,447,6,438
+439,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-03-21,2023-03-21,,473,2,439
+440,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-03-22,2023-03-22,,924,6,440
+441,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-03-22,2023-03-24,,703,3,441
+442,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-03-24,2023-03-24,,368,4,442
+443,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-03-25,2023-03-26,,102,4,443
+444,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-03-25,2023-03-27,,352,4,444
+445,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-03-27,2023-03-27,,237,4,445
+446,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-03-28,2023-03-28,,551,1,446
+447,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-03-28,2023-03-29,,521,1,447
+448,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-03-30,2023-03-30,,367,2,448
+449,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-03-31,2023-03-31,,634,3,449
+450,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-03-31,2023-04-02,,383,2,450
+451,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-04-02,2023-04-02,,711,1,451
+452,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-04-03,2023-04-05,,645,3,452
+453,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-04-03,2023-04-04,,813,6,453
+454,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-04-05,2023-04-05,,618,3,454
+455,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-04-06,2023-04-07,,778,5,455
+456,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-04-06,2023-04-07,,660,3,456
+457,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-04-08,2023-04-09,,119,1,457
+458,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-04-09,2023-04-09,,969,6,458
+459,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-04-09,2023-04-10,,429,5,459
+460,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-04-11,2023-04-13,,433,5,460
+461,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-04-12,2023-04-13,,453,4,461
+462,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-04-12,2023-04-13,,331,5,462
+463,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-04-14,2023-04-15,,750,4,463
+464,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-04-15,2023-04-15,,929,3,464
+465,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-04-15,2023-04-15,,293,6,465
+466,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-04-17,2023-04-18,,475,2,466
+467,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-04-18,2023-04-19,,555,3,467
+468,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-04-18,2023-04-20,,102,4,468
+469,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-04-20,2023-04-20,,842,3,469
+470,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-04-21,2023-04-21,,515,3,470
+471,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-04-21,2023-04-22,,957,6,471
+472,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-04-23,2023-04-23,,490,1,472
+473,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-04-24,2023-04-25,,526,7,473
+474,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-04-24,2023-04-25,,516,4,474
+475,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-04-26,2023-04-26,,630,2,475
+476,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-04-27,2023-04-29,,611,7,476
+477,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-04-27,2023-04-29,,487,7,477
+478,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-04-29,2023-04-29,,74,6,478
+479,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-04-30,2023-05-02,,341,1,479
+480,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-04-30,2023-05-02,,381,5,480
+481,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-05-02,2023-05-04,,402,2,481
+482,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-05-03,2023-05-03,,366,1,482
+483,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-05-03,2023-05-03,,735,2,483
+484,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-05-05,2023-05-05,,389,6,484
+485,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-05-06,2023-05-08,,623,2,485
+486,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-05-06,2023-05-07,,939,5,486
+487,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-05-08,2023-05-08,,846,1,487
+488,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-05-09,2023-05-09,,508,6,488
+489,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-05-09,2023-05-10,,599,7,489
+490,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-05-11,2023-05-11,,665,4,490
+491,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-05-12,2023-05-14,,629,4,491
+492,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-05-12,2023-05-12,,718,6,492
+493,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-05-14,2023-05-16,,444,7,493
+494,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-05-15,2023-05-17,,596,3,494
+495,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-05-15,2023-05-17,5,529,7,495
+496,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-05-17,2023-05-18,,719,4,496
+497,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-05-18,2023-05-19,,883,7,497
+498,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-05-18,2023-05-20,8,363,1,498
+499,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-05-20,2023-05-21,,465,1,499
+500,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-05-21,2023-05-21,3,981,2,500
+501,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-05-21,2023-05-22,,252,7,501
+502,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-05-23,2023-05-23,,767,2,502
+503,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-05-24,2023-05-25,,158,3,503
+504,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-05-24,2023-05-25,,829,4,504
+505,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-05-26,2023-05-27,,105,3,505
+506,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-05-27,2023-05-28,,947,6,506
+507,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-05-27,2023-05-29,,298,2,507
+508,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-05-29,2023-05-29,,547,5,508
+509,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-05-30,2023-05-31,,732,5,509
+510,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-05-30,2023-06-01,,921,3,510
+511,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-06-01,2023-06-03,,552,4,511
+512,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-06-02,2023-06-03,,894,2,512
+513,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-06-02,2023-06-04,,148,2,513
+514,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-06-04,2023-06-05,,290,7,514
+515,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-06-05,2023-06-05,,225,4,515
+516,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-06-05,2023-06-06,,302,5,516
+517,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-06-07,2023-06-09,,823,3,517
+518,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-06-08,2023-06-10,,160,6,518
+519,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-06-08,2023-06-08,,748,1,519
+520,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-06-10,2023-06-10,15,871,7,520
+521,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-06-11,2023-06-11,,356,4,521
+522,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-06-11,2023-06-11,,741,6,522
+523,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-06-13,2023-06-14,,70,1,523
+524,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-06-14,2023-06-15,,998,1,524
+525,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-06-14,2023-06-14,,838,2,525
+526,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-06-16,2023-06-17,,772,4,526
+527,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-06-17,2023-06-17,,654,1,527
+528,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-06-17,2023-06-19,,234,6,528
+529,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-06-19,2023-06-19,,188,4,529
+530,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-06-20,2023-06-22,,423,3,530
+531,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-06-20,2023-06-22,,481,2,531
+532,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-06-22,2023-06-22,,894,4,532
+533,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-06-23,2023-06-24,,956,5,533
+534,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-06-23,2023-06-23,,694,5,534
+535,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-06-25,2023-06-25,,928,7,535
+536,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-06-26,2023-06-27,,372,6,536
+537,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-06-26,2023-06-26,,545,7,537
+538,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-06-28,2023-06-29,,300,3,538
+539,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-06-29,2023-06-29,,718,3,539
+540,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-06-29,2023-07-01,,599,5,540
+541,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-07-01,2023-07-02,,192,3,541
+542,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-07-02,2023-07-03,,113,2,542
+543,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-07-02,2023-07-04,,236,6,543
+544,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-07-04,2023-07-05,,635,3,544
+545,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-07-05,2023-07-06,,506,2,545
+546,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-07-05,2023-07-06,,499,6,546
+547,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-07-07,2023-07-07,,598,1,547
+548,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-07-08,2023-07-10,,815,2,548
+549,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-07-08,2023-07-09,,711,1,549
+550,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-07-10,2023-07-11,,397,2,550
+551,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-07-11,2023-07-12,,353,5,551
+552,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-07-11,2023-07-12,,630,7,552
+553,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-07-13,2023-07-14,,557,6,553
+554,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-07-14,2023-07-15,,737,6,554
+555,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-07-14,2023-07-14,,481,6,555
+556,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-07-16,2023-07-17,,869,6,556
+557,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-07-17,2023-07-19,,409,6,557
+558,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-07-17,2023-07-18,,914,1,558
+559,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-07-19,2023-07-19,,160,4,559
+560,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-07-20,2023-07-21,,200,1,560
+561,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-07-20,2023-07-21,,114,3,561
+562,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-07-22,2023-07-22,,774,2,562
+563,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-07-23,2023-07-25,10,92,2,563
+564,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-07-23,2023-07-24,10,783,6,564
+565,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-07-25,2023-07-25,,125,6,565
+566,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-07-26,2023-07-28,,144,7,566
+567,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-07-26,2023-07-28,6,856,4,567
+568,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-07-28,2023-07-28,,270,1,568
+569,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-07-29,2023-07-29,,648,7,569
+570,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-07-29,2023-07-30,,282,2,570
+571,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-07-31,2023-08-01,,848,3,571
+572,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-08-01,2023-08-02,,769,4,572
+573,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-08-01,2023-08-02,,418,5,573
+574,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-08-03,2023-08-04,,391,6,574
+575,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-08-04,2023-08-05,,578,4,575
+576,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-08-04,2023-08-04,,924,6,576
+577,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-08-06,2023-08-08,,622,2,577
+578,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-08-07,2023-08-09,,278,5,578
+579,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-08-07,2023-08-07,,417,7,579
+580,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-08-09,2023-08-11,,139,7,580
+581,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-08-10,2023-08-11,,256,4,581
+582,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-08-10,2023-08-11,,996,6,582
+583,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-08-12,2023-08-13,,661,3,583
+584,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-08-13,2023-08-13,,208,1,584
+585,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-08-13,2023-08-14,,833,3,585
+586,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-08-15,2023-08-17,,957,4,586
+587,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-08-16,2023-08-16,16,486,1,587
+588,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-08-16,2023-08-18,,858,3,588
+589,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-08-18,2023-08-20,,948,7,589
+590,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-08-19,2023-08-20,12,636,3,590
+591,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-08-19,2023-08-19,,816,2,591
+592,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-08-21,2023-08-22,8,234,1,592
+593,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-08-22,2023-08-23,,767,7,593
+594,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-08-22,2023-08-23,,621,2,594
+595,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-08-24,2023-08-26,,561,7,595
+596,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-08-25,2023-08-27,18,345,7,596
+597,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-08-25,2023-08-27,4,420,1,597
+598,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-08-27,2023-08-29,,467,2,598
+599,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-08-28,2023-08-30,,737,3,599
+600,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-08-28,2023-08-29,13,270,2,600
+601,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-08-30,2023-09-01,,123,6,601
+602,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-08-31,2023-08-31,,47,7,602
+603,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-08-31,2023-09-02,,264,7,603
+604,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-09-02,2023-09-02,,747,7,604
+605,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-09-03,2023-09-05,,117,4,605
+606,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-09-03,2023-09-05,,112,4,606
+607,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-09-05,2023-09-05,,511,7,607
+608,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-09-06,2023-09-06,,395,1,608
+609,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-09-06,2023-09-07,,403,3,609
+610,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-09-08,2023-09-09,,953,5,610
+611,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-09-09,2023-09-10,,867,1,611
+612,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-09-09,2023-09-09,,581,4,612
+613,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-09-11,2023-09-11,,440,6,613
+614,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-09-12,2023-09-12,,236,2,614
+615,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-09-12,2023-09-14,,710,5,615
+616,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-09-14,2023-09-15,,392,6,616
+617,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-09-15,2023-09-15,,285,4,617
+618,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-09-15,2023-09-16,,849,4,618
+619,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-09-17,2023-09-19,,59,6,619
+620,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-09-18,2023-09-20,,345,5,620
+621,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-09-18,2023-09-19,,378,2,621
+622,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-09-20,2023-09-21,,297,1,622
+623,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-09-21,2023-09-23,,634,3,623
+624,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-09-21,2023-09-22,9,27,1,624
+625,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-09-23,2023-09-25,,498,7,625
+626,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-09-24,2023-09-26,,22,1,626
+627,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-09-24,2023-09-25,,728,4,627
+628,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-09-26,2023-09-26,,124,6,628
+629,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-09-27,2023-09-29,,134,2,629
+630,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-09-27,2023-09-27,,903,2,630
+631,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-09-29,2023-09-29,,431,4,631
+632,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-09-30,2023-10-02,,403,2,632
+633,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-09-30,2023-10-01,8,899,7,633
+634,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-10-02,2023-10-04,,745,1,634
+635,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-10-03,2023-10-04,,186,6,635
+636,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-10-03,2023-10-04,9,913,5,636
+637,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-10-05,2023-10-06,,756,4,637
+638,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-10-06,2023-10-06,,619,1,638
+639,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-10-06,2023-10-08,,199,1,639
+640,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-10-08,2023-10-09,,476,6,640
+641,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-10-09,2023-10-09,,76,1,641
+642,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-10-09,2023-10-10,,550,7,642
+643,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-10-11,2023-10-11,,427,3,643
+644,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-10-12,2023-10-13,,952,7,644
+645,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-10-12,2023-10-13,,118,4,645
+646,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-10-14,2023-10-16,,701,3,646
+647,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-10-15,2023-10-17,,643,3,647
+648,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-10-15,2023-10-17,,169,2,648
+649,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-10-17,2023-10-18,,508,2,649
+650,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-10-18,2023-10-19,,553,1,650
+651,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-10-18,2023-10-20,,158,6,651
+652,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-10-20,2023-10-20,,231,5,652
+653,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-10-21,2023-10-22,9,686,3,653
+654,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-10-21,2023-10-23,,707,7,654
+655,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-10-23,2023-10-25,,573,5,655
+656,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-10-24,2023-10-24,,342,5,656
+657,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-10-24,2023-10-24,,713,3,657
+658,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-10-26,2023-10-26,,670,3,658
+659,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-10-27,2023-10-27,,947,3,659
+660,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-10-27,2023-10-29,,426,2,660
+661,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-10-29,2023-10-30,,97,6,661
+662,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-10-30,2023-10-30,,205,4,662
+663,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-10-30,2023-10-31,,232,4,663
+664,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-11-01,2023-11-02,,253,2,664
+665,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-11-02,2023-11-03,,388,7,665
+666,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-11-02,2023-11-04,,814,4,666
+667,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-11-04,2023-11-06,,609,1,667
+668,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-11-05,2023-11-07,,767,2,668
+669,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-11-05,2023-11-07,,67,4,669
+670,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-11-07,2023-11-09,,738,6,670
+671,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-11-08,2023-11-10,,719,7,671
+672,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-11-08,2023-11-08,7,298,7,672
+673,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-11-10,2023-11-10,,198,4,673
+674,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-11-11,2023-11-11,,336,2,674
+675,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-11-11,2023-11-12,,442,7,675
+676,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-11-13,2023-11-13,,648,2,676
+677,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-11-14,2023-11-15,,981,3,677
+678,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-11-14,2023-11-14,,781,5,678
+679,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-11-16,2023-11-17,,928,1,679
+680,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-11-17,2023-11-18,,408,6,680
+681,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-11-17,2023-11-17,,926,1,681
+682,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-11-19,2023-11-21,,593,6,682
+683,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-11-20,2023-11-22,19,854,7,683
+684,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-11-20,2023-11-21,,734,5,684
+685,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-11-22,2023-11-22,,805,4,685
+686,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-11-23,2023-11-23,,216,4,686
+687,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-11-23,2023-11-25,,229,3,687
+688,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-11-25,2023-11-25,,182,5,688
+689,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-11-26,2023-11-28,,139,2,689
+690,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-11-26,2023-11-27,,104,6,690
+691,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-11-28,2023-11-30,,30,3,691
+692,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-11-29,2023-11-29,,190,6,692
+693,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-11-29,2023-12-01,,633,6,693
+694,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-12-01,2023-12-03,,534,6,694
+695,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-12-02,2023-12-04,,837,7,695
+696,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-12-02,2023-12-04,,519,5,696
+697,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-12-04,2023-12-04,,720,6,697
+698,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-12-05,2023-12-07,,267,7,698
+699,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-12-05,2023-12-07,,559,3,699
+700,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-12-07,2023-12-08,,541,4,700
+701,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-12-08,2023-12-08,,679,3,701
+702,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-12-08,2023-12-09,,924,4,702
+703,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-12-10,2023-12-10,,940,3,703
+704,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-12-11,2023-12-13,,836,6,704
+705,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-12-11,2023-12-11,,843,7,705
+706,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-12-13,2023-12-14,,162,5,706
+707,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-12-14,2023-12-15,,47,4,707
+708,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-12-14,2023-12-14,,282,5,708
+709,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-12-16,2023-12-17,,395,7,709
+710,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-12-17,2023-12-18,,654,6,710
+711,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2023-12-17,2023-12-17,,470,6,711
+712,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2023-12-19,2023-12-21,,125,5,712
+713,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2023-12-20,2023-12-21,,198,3,713
+714,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2023-12-20,2023-12-22,18,640,6,714
+715,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2023-12-22,2023-12-23,,897,1,715
+716,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2023-12-23,2023-12-23,,126,2,716
+717,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2023-12-23,2023-12-24,9,590,6,717
+718,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2023-12-25,2023-12-27,,754,7,718
+719,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2023-12-26,2023-12-26,,166,7,719
+720,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2023-12-26,2023-12-28,,91,7,720
+721,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2023-12-28,2023-12-29,,742,5,721
+722,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2023-12-29,2023-12-29,,486,2,722
+723,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2023-12-29,2023-12-30,,469,1,723
+724,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2023-12-31,2024-01-01,6,804,1,724
+725,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-01-01,2024-01-01,,711,7,725
+726,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-01-01,2024-01-02,,190,1,726
+727,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-01-03,2024-01-05,,382,7,727
+728,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-01-04,2024-01-04,,477,3,728
+729,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-01-04,2024-01-04,,363,5,729
+730,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-01-06,2024-01-08,,733,6,730
+731,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-01-07,2024-01-08,,174,2,731
+732,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-01-07,2024-01-08,,876,5,732
+733,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-01-09,2024-01-09,,653,4,733
+734,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-01-10,2024-01-11,,355,6,734
+735,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-01-10,2024-01-11,,826,4,735
+736,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-01-12,2024-01-14,,582,2,736
+737,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-01-13,2024-01-13,,817,7,737
+738,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-01-13,2024-01-15,,607,3,738
+739,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-01-15,2024-01-15,,260,4,739
+740,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-01-16,2024-01-16,,661,4,740
+741,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-01-16,2024-01-16,9,307,4,741
+742,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-01-18,2024-01-18,,858,2,742
+743,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-01-19,2024-01-19,,820,6,743
+744,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-01-19,2024-01-19,,407,7,744
+745,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-01-21,2024-01-21,,700,4,745
+746,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-01-22,2024-01-24,,750,2,746
+747,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-01-22,2024-01-23,,829,3,747
+748,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-01-24,2024-01-24,,175,2,748
+749,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-01-25,2024-01-27,,860,3,749
+750,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-01-25,2024-01-25,,626,6,750
+751,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-01-27,2024-01-27,,52,2,751
+752,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-01-28,2024-01-28,,131,6,752
+753,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-01-28,2024-01-28,,480,1,753
+754,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-01-30,2024-02-01,,987,7,754
+755,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-01-31,2024-02-01,,639,4,755
+756,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-01-31,2024-02-01,,957,4,756
+757,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-02-02,2024-02-03,,295,5,757
+758,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-02-03,2024-02-04,,100,6,758
+759,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-02-03,2024-02-05,19,520,3,759
+760,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-02-05,2024-02-06,,963,1,760
+761,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-02-06,2024-02-06,,115,6,761
+762,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-02-06,2024-02-06,,473,5,762
+763,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-02-08,2024-02-09,,350,5,763
+764,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-02-09,2024-02-10,,704,3,764
+765,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-02-09,2024-02-11,,595,5,765
+766,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-02-11,2024-02-12,,571,1,766
+767,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-02-12,2024-02-14,,368,7,767
+768,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-02-12,2024-02-12,,679,2,768
+769,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-02-14,2024-02-14,,450,4,769
+770,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-02-15,2024-02-16,,255,7,770
+771,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-02-15,2024-02-15,,752,7,771
+772,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-02-17,2024-02-19,,527,4,772
+773,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-02-18,2024-02-19,,678,6,773
+774,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-02-18,2024-02-19,,390,1,774
+775,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-02-20,2024-02-21,,741,6,775
+776,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-02-21,2024-02-21,13,96,5,776
+777,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-02-21,2024-02-23,,973,1,777
+778,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-02-23,2024-02-24,,870,3,778
+779,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-02-24,2024-02-25,,483,7,779
+780,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-02-24,2024-02-26,,50,2,780
+781,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-02-26,2024-02-27,,944,2,781
+782,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-02-27,2024-02-27,,497,1,782
+783,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-02-27,2024-02-28,,498,1,783
+784,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-02-29,2024-03-01,,46,4,784
+785,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-03-01,2024-03-01,,537,6,785
+786,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-03-01,2024-03-01,16,806,2,786
+787,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-03-03,2024-03-05,,814,7,787
+788,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-03-04,2024-03-06,,461,5,788
+789,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-03-04,2024-03-04,,581,4,789
+790,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-03-06,2024-03-07,,745,5,790
+791,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-03-07,2024-03-08,,582,1,791
+792,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-03-07,2024-03-09,,785,1,792
+793,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-03-09,2024-03-09,,69,4,793
+794,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-03-10,2024-03-12,,801,4,794
+795,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-03-10,2024-03-11,18,963,5,795
+796,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-03-12,2024-03-13,,134,2,796
+797,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-03-13,2024-03-13,,604,6,797
+798,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-03-13,2024-03-14,,320,7,798
+799,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-03-15,2024-03-16,,968,2,799
+800,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-03-16,2024-03-17,,472,2,800
+801,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-03-16,2024-03-18,,717,7,801
+802,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-03-18,2024-03-20,,486,7,802
+803,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-03-19,2024-03-19,,876,2,803
+804,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-03-19,2024-03-19,,478,2,804
+805,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-03-21,2024-03-23,,998,3,805
+806,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-03-22,2024-03-24,4,53,2,806
+807,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-03-22,2024-03-23,,984,2,807
+808,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-03-24,2024-03-24,,500,3,808
+809,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-03-25,2024-03-27,,952,1,809
+810,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-03-25,2024-03-26,,524,5,810
+811,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-03-27,2024-03-28,,196,1,811
+812,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-03-28,2024-03-30,,374,5,812
+813,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-03-28,2024-03-29,,286,2,813
+814,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-03-30,2024-03-30,,96,5,814
+815,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-03-31,2024-04-01,,354,5,815
+816,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-03-31,2024-04-01,,783,4,816
+817,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-04-02,2024-04-03,,882,4,817
+818,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-04-03,2024-04-05,,902,5,818
+819,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-04-03,2024-04-03,,1000,7,819
+820,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-04-05,2024-04-07,,889,4,820
+821,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-04-06,2024-04-06,4,384,1,821
+822,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-04-06,2024-04-08,,928,6,822
+823,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-04-08,2024-04-09,,591,3,823
+824,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-04-09,2024-04-11,,788,7,824
+825,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-04-09,2024-04-10,,386,7,825
+826,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-04-11,2024-04-11,7,780,6,826
+827,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-04-12,2024-04-13,,112,1,827
+828,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-04-12,2024-04-13,,286,3,828
+829,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-04-14,2024-04-15,,439,1,829
+830,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-04-15,2024-04-16,,479,5,830
+831,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-04-15,2024-04-15,4,788,6,831
+832,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-04-17,2024-04-17,,31,4,832
+833,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-04-18,2024-04-19,,440,6,833
+834,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-04-18,2024-04-18,,179,7,834
+835,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-04-20,2024-04-20,,191,7,835
+836,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-04-21,2024-04-21,,435,4,836
+837,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-04-21,2024-04-21,,736,5,837
+838,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-04-23,2024-04-23,,794,3,838
+839,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-04-24,2024-04-26,,260,1,839
+840,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-04-24,2024-04-25,12,474,7,840
+841,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-04-26,2024-04-28,,463,7,841
+842,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-04-27,2024-04-27,,625,3,842
+843,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-04-27,2024-04-27,,710,6,843
+844,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-04-29,2024-05-01,,311,4,844
+845,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-04-30,2024-05-02,,341,6,845
+846,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-04-30,2024-05-01,,889,6,846
+847,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-05-02,2024-05-03,,627,6,847
+848,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-05-03,2024-05-05,,592,6,848
+849,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-05-03,2024-05-03,,88,5,849
+850,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-05-05,2024-05-06,,974,1,850
+851,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-05-06,2024-05-08,,284,7,851
+852,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-05-06,2024-05-06,,177,1,852
+853,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-05-08,2024-05-09,,611,4,853
+854,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-05-09,2024-05-11,,165,2,854
+855,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-05-09,2024-05-09,,590,4,855
+856,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-05-11,2024-05-12,19,981,5,856
+857,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-05-12,2024-05-13,,566,7,857
+858,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-05-12,2024-05-13,,289,4,858
+859,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-05-14,2024-05-16,,157,6,859
+860,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-05-15,2024-05-16,2,22,2,860
+861,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-05-15,2024-05-17,,463,1,861
+862,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-05-17,2024-05-19,,916,4,862
+863,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-05-18,2024-05-18,,673,7,863
+864,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-05-18,2024-05-19,,729,5,864
+865,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-05-20,2024-05-22,,462,7,865
+866,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-05-21,2024-05-21,,65,4,866
+867,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-05-21,2024-05-21,,812,1,867
+868,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-05-23,2024-05-25,,218,3,868
+869,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-05-24,2024-05-26,,688,6,869
+870,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-05-24,2024-05-24,,509,2,870
+871,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-05-26,2024-05-28,,588,3,871
+872,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-05-27,2024-05-27,,369,3,872
+873,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-05-27,2024-05-29,,628,3,873
+874,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-05-29,2024-05-30,,261,3,874
+875,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-05-30,2024-05-30,,300,7,875
+876,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-05-30,2024-05-30,,612,5,876
+877,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-06-01,2024-06-01,,637,2,877
+878,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-06-02,2024-06-03,,266,2,878
+879,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-06-02,2024-06-04,,283,6,879
+880,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-06-04,2024-06-04,,458,3,880
+881,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-06-05,2024-06-07,,550,3,881
+882,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-06-05,2024-06-07,,104,7,882
+883,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-06-07,2024-06-09,,985,6,883
+884,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-06-08,2024-06-08,,300,3,884
+885,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-06-08,2024-06-08,,576,3,885
+886,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-06-10,2024-06-10,,864,2,886
+887,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-06-11,2024-06-12,,162,1,887
+888,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-06-11,2024-06-13,,852,2,888
+889,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-06-13,2024-06-14,,535,4,889
+890,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-06-14,2024-06-14,,388,7,890
+891,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-06-14,2024-06-16,,934,2,891
+892,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-06-16,2024-06-16,,221,2,892
+893,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-06-17,2024-06-17,,759,6,893
+894,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-06-17,2024-06-17,,997,3,894
+895,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-06-19,2024-06-21,,899,6,895
+896,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-06-20,2024-06-22,,154,3,896
+897,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-06-20,2024-06-20,,437,3,897
+898,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-06-22,2024-06-22,20,516,5,898
+899,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-06-23,2024-06-23,,215,6,899
+900,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-06-23,2024-06-25,,126,4,900
+901,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-06-25,2024-06-26,,932,6,901
+902,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-06-26,2024-06-27,12,646,2,902
+903,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-06-26,2024-06-28,8,250,4,903
+904,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-06-28,2024-06-29,,704,7,904
+905,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-06-29,2024-06-29,,929,4,905
+906,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-06-29,2024-06-30,5,327,5,906
+907,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-07-01,2024-07-03,,670,6,907
+908,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-07-02,2024-07-02,,898,6,908
+909,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-07-02,2024-07-03,9,308,2,909
+910,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-07-04,2024-07-04,,755,5,910
+911,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-07-05,2024-07-06,,160,4,911
+912,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-07-05,2024-07-05,,551,1,912
+913,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-07-07,2024-07-09,,501,3,913
+914,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-07-08,2024-07-10,,465,1,914
+915,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-07-08,2024-07-10,,38,6,915
+916,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-07-10,2024-07-10,,994,2,916
+917,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-07-11,2024-07-12,,180,5,917
+918,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-07-11,2024-07-12,,32,3,918
+919,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-07-13,2024-07-13,,949,2,919
+920,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-07-14,2024-07-15,,432,1,920
+921,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-07-14,2024-07-14,,862,3,921
+922,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-07-16,2024-07-16,,221,4,922
+923,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-07-17,2024-07-17,,433,4,923
+924,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-07-17,2024-07-18,,730,5,924
+925,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-07-19,2024-07-19,,558,6,925
+926,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-07-20,2024-07-20,,367,5,926
+927,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-07-20,2024-07-21,,533,1,927
+928,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-07-22,2024-07-24,,623,1,928
+929,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-07-23,2024-07-25,12,163,1,929
+930,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-07-23,2024-07-25,1,889,3,930
+931,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-07-25,2024-07-25,,105,5,931
+932,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-07-26,2024-07-26,,359,4,932
+933,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-07-26,2024-07-27,,380,6,933
+934,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-07-28,2024-07-28,,674,4,934
+935,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-07-29,2024-07-31,,634,6,935
+936,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-07-29,2024-07-31,12,635,7,936
+937,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-07-31,2024-08-01,,207,4,937
+938,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-08-01,2024-08-03,,513,2,938
+939,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-08-01,2024-08-03,,47,4,939
+940,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-08-03,2024-08-05,,331,7,940
+941,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-08-04,2024-08-05,,845,2,941
+942,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-08-04,2024-08-05,,884,2,942
+943,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-08-06,2024-08-08,,392,2,943
+944,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-08-07,2024-08-08,,292,7,944
+945,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-08-07,2024-08-08,,672,4,945
+946,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-08-09,2024-08-10,,319,1,946
+947,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-08-10,2024-08-11,,904,5,947
+948,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-08-10,2024-08-12,,757,7,948
+949,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-08-12,2024-08-14,,497,5,949
+950,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-08-13,2024-08-14,,66,2,950
+951,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-08-13,2024-08-13,6,751,2,951
+952,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-08-15,2024-08-15,1,120,3,952
+953,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-08-16,2024-08-17,,117,2,953
+954,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-08-16,2024-08-18,,295,1,954
+955,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-08-18,2024-08-20,,192,6,955
+956,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-08-19,2024-08-20,,197,6,956
+957,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-08-19,2024-08-21,,647,1,957
+958,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-08-21,2024-08-22,,576,7,958
+959,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-08-22,2024-08-24,,256,6,959
+960,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-08-22,2024-08-22,,388,6,960
+961,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-08-24,2024-08-24,,417,3,961
+962,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-08-25,2024-08-25,,546,2,962
+963,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-08-25,2024-08-25,,112,6,963
+964,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-08-27,2024-08-29,,170,5,964
+965,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-08-28,2024-08-29,,818,1,965
+966,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-08-28,2024-08-30,,648,1,966
+967,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-08-30,2024-08-31,,911,6,967
+968,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-08-31,2024-09-01,,592,5,968
+969,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-08-31,2024-08-31,,66,5,969
+970,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-09-02,2024-09-04,,323,1,970
+971,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-09-03,2024-09-04,,991,5,971
+972,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-09-03,2024-09-03,,814,2,972
+973,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-09-05,2024-09-06,,622,4,973
+974,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-09-06,2024-09-08,2,502,2,974
+975,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-09-06,2024-09-06,,933,7,975
+976,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-09-08,2024-09-09,13,28,1,976
+977,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-09-09,2024-09-09,6,152,2,977
+978,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-09-09,2024-09-11,,568,7,978
+979,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-09-11,2024-09-13,,968,2,979
+980,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-09-12,2024-09-12,,456,2,980
+981,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-09-12,2024-09-13,,691,4,981
+982,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-09-14,2024-09-14,,197,4,982
+983,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-09-15,2024-09-16,,112,1,983
+984,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-09-15,2024-09-17,,324,7,984
+985,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-09-17,2024-09-17,,181,6,985
+986,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-09-18,2024-09-18,,368,1,986
+987,Inspeccion de circuitos,Inspeccion de los circuitos electricos y ajuste de conexiones flojas en los tableros de control.,2024-09-18,2024-09-19,,554,3,987
+988,Lubricacion de friccion,El empleado limpiara y lubricara los componentes criticos en el area de alta friccion para evitar el desgaste prematuro.,2024-09-20,2024-09-20,,440,2,988
+989,Prueba de respaldo,Revision de los sistemas de respaldo de energia con prueba de carga para verificar la capacidad de las baterias de emergencia.,2024-09-21,2024-09-21,,302,4,989
+990,Engrase de sistema,Lubricacion de los cojinetes en el sistema de transmision y ajuste de las correas.,2024-09-21,2024-09-23,,504,1,990
+991,Verificacion de temperatura,Inspeccion del sistema de refrigeracion y verificacion de la temperatura en los componentes criticos.,2024-09-23,2024-09-24,,145,6,991
+992,Ajuste de piezas moviles,El empleado ajustara las piezas moviles del transportador y lubricara los puntos de contacto de los ejes.,2024-09-24,2024-09-25,,879,7,992
+993,Limpieza de filtros de aire,El empleado verificara el estado de los filtros de aire y realizara una limpieza en profundidad para asegurar el flujo adecuado.,2024-09-24,2024-09-24,,291,3,993
+994,Lubricacion externa,El empleado lubricara las piezas moviles del sistema transportador y verificara la presion en los engranajes.,2024-09-26,2024-09-28,,650,1,994
+995,Limpieza de filtros,El empleado realizara una limpieza profunda de los filtros de ventilacion y sustituira los obstruidos.,2024-09-27,2024-09-28,,193,2,995
+996,Ajuste de valvulas,Inspeccion y ajuste de las valvulas de presion en el sistema hidraulico para asegurar la correcta operacion.,2024-09-27,2024-09-28,,894,6,996
+997,Calibracion de sensores,Verificacion y calibracion de los sensores de seguridad en la linea de produccion.,2024-09-29,2024-09-30,,381,5,997
+998,Cambio de correas,Reemplazo de correas y ajuste de los tensores en los sistemas de transmision.,2024-09-30,2024-09-30,,282,3,998
+999,Comprobacion de presion,Comprobacion de la presion de los sistemas hidraulicos y ajuste de las valvulas segun los parametros definidos.,2024-09-30,2024-09-30,,436,2,999
+1000,Engrase de cojinetes,Sustitucion de las piezas desgastadas en los ejes de transmision y engrase de los cojinetes.,2024-10-02,2024-10-03,,41,5,1000
