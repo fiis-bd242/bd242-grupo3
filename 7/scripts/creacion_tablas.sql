@@ -128,34 +128,6 @@ CREATE TABLE Estado_actv
   PRIMARY KEY (id_estado)
 );
 
-DROP TABLE IF EXISTS Actividad_empleado CASCADE;
-CREATE TABLE Actividad_empleado
-(
-  Id_actvempleado INT NOT NULL,
-  nombre_actv VARCHAR(100) NOT NULL,
-  Descripcion_actv VARCHAR(255) NOT NULL,
-  fecha_inicio DATE NOT NULL,
-  fecha_fin DATE NOT NULL,
-  Id_equipo_soporte INT NOT NULL,
-  Id_empleado INT NOT NULL,
-  id_estado INT NOT NULL,
-  Id_Orden INT NOT NULL,
-  PRIMARY KEY (Id_actvempleado),
-  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
-  FOREIGN KEY (id_estado) REFERENCES Estado_actv(id_estado),
-  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte),
-  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden)
-);
-
-DROP TABLE IF EXISTS Orden_de_trabajo CASCADE;
-CREATE TABLE Orden_de_trabajo
-(
-  Id_Orden INT NOT NULL,
-  Fecha_Orden DATE NOT NULL,
-  Descripcion VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Id_Orden)
-);
-
 DROP TABLE IF EXISTS Categoria_Almacen CASCADE;
 CREATE TABLE Categoria_Almacen 
 (
@@ -221,6 +193,34 @@ CREATE TABLE Equipo_de_Soporte
     FOREIGN KEY (Id_almacen) REFERENCES Almacen (Id_almacen),
     FOREIGN KEY (Id_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Id_disponibilidad),
     FOREIGN KEY (Id_estado) REFERENCES Estado_Equipo_Soporte (Id_estado)
+);
+
+DROP TABLE IF EXISTS Orden_de_trabajo CASCADE;
+CREATE TABLE Orden_de_trabajo
+(
+  Id_Orden INT NOT NULL,
+  Fecha_Orden DATE NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_Orden)
+);
+
+DROP TABLE IF EXISTS Actividad_empleado CASCADE;
+CREATE TABLE Actividad_empleado
+(
+  Id_actvempleado INT NOT NULL,
+  nombre_actv VARCHAR(100) NOT NULL,
+  Descripcion_actv VARCHAR(255) NOT NULL,
+  fecha_inicio DATE NOT NULL,
+  fecha_fin DATE NOT NULL,
+  Id_equipo_soporte INT NOT NULL,
+  Id_empleado INT NOT NULL,
+  id_estado INT NOT NULL,
+  Id_Orden INT NOT NULL,
+  PRIMARY KEY (Id_actvempleado),
+  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
+  FOREIGN KEY (id_estado) REFERENCES Estado_actv(id_estado),
+  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte),
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden)
 );
 
 DROP TABLE IF EXISTS ActvempleadoXOrdenTrabajo CASCADE;
