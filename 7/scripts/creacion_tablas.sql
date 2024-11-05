@@ -17,12 +17,12 @@ CREATE TABLE Acceso_empleado
 DROP TABLE IF EXISTS Proveedor CASCADE;
 CREATE TABLE Proveedor
 (
-  RUC CHAR(12) NOT NULL,
+  RUC INT NOT NULL,
   Empresa VARCHAR(255) NOT NULL,
   Contacto VARCHAR(255) NOT NULL,
   Email VARCHAR(255) NOT NULL,
   Categoria VARCHAR(255) NOT NULL,
-  Telefono CHAR(10) NOT NULL,
+  Telefono CHAR(20) NOT NULL,
   Direccion VARCHAR(255) NOT NULL,
   PRIMARY KEY (RUC)
 );
@@ -36,11 +36,11 @@ CREATE TABLE Herramienta
   PRIMARY KEY (Id_herramienta)
 );
 
-DROP TABLE IF EXISTS Estado_pedido CASCADE;
-CREATE TABLE Estado_pedido
+DROP TABLE IF EXISTS Estado_Compra CASCADE;
+CREATE TABLE Estado_Compra
 (
   Id_estado_pedido INT NOT NULL,
-  Nombre_estado VARCHAR(255) NOT NULL,
+  nombre_estado VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_estado_pedido)
 );
 
@@ -86,37 +86,43 @@ CREATE TABLE Plan_de_mantenimiento
   FOREIGN KEY (Id_criticidad) REFERENCES Criticidad(Id_criticidad)
 );
 
-DROP TABLE IF EXISTS Pedido CASCADE;
-CREATE TABLE Pedido
+DROP TABLE IF EXISTS Tipo_Urgencia CASCADE;
+CREATE TABLE Tipo_Urgencia
 (
-  Id_pedido INT NOT NULL,
-  Cant_pedid INT NOT NULL,
-  Fecha DATE NOT NULL,
-  Est_inactividad CHAR(2) NOT NULL,
-  Id_herramienta INT NOT NULL,
-  Id_empleado INT NOT NULL,
+  Id_urgencia INT NOT NULL,
+  Tipo_urgencia VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_urgencia)
+);
+
+DROP TABLE IF EXISTS Pedido_Compra CASCADE;
+CREATE TABLE Pedido_Compra
+(
+  Id_pedido_compra INT NOT NULL,
+  Fecha_pedido_compra DATE NOT NULL,
+  Hora_pedido_compra TIME NOT NULL,
+  Descripción VARCHAR(255) NOT NULL,
+  Id_urgencia INT NOT NULL,
   Id_estado_pedido INT NOT NULL,
-  PRIMARY KEY (Id_pedido),
-  FOREIGN KEY (Id_herramienta) REFERENCES Herramienta (Id_herramienta),
-  FOREIGN KEY (Id_empleado) REFERENCES Empleado (Id_empleado),
-  FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_pedido (Id_estado_pedido)
+  Id_empleado INT NOT NULL,
+  PRIMARY KEY (Id_pedido_compra),
+  FOREIGN KEY (Id_urgencia) REFERENCES Tipo_Urgencia(Id_urgencia),
+  FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_Compra(Id_estado_pedido),
+  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
 
 DROP TABLE IF EXISTS Orden_de_compra CASCADE;
 CREATE TABLE Orden_de_compra
 (
-  Id_orden_compra INT NOT NULL,
   Fecha_emision DATE NOT NULL,
   Fecha_posible_entrega DATE NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
-  Cantidad INT NOT NULL,
-  Prioridad VARCHAR NOT NULL,
-  Precio_unitario FLOAT NOT NULL,
-  Descripcion_product VARCHAR(255) NOT NULL,
-  RUC_proveedor CHAR(12) NOT NULL,
+  Id_orden_compra INT NOT NULL,
+  RUC_proveedor INT NOT NULL,
+  Id_pedido_compra INT NOT NULL,
   Id_empleado INT NOT NULL,
   PRIMARY KEY (Id_orden_compra),
   FOREIGN KEY (RUC_proveedor) REFERENCES Proveedor(RUC),
+  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
 
@@ -129,70 +135,109 @@ CREATE TABLE Estado_actv
 );
 
 DROP TABLE IF EXISTS Categoria_Almacen CASCADE;
-CREATE TABLE Categoria_Almacen 
+CREATE TABLE Categoria_Almacen
 (
-    Id_categoria INT PRIMARY KEY,
-    Nombre_categoria VARCHAR(50) NOT NULL
+  Id_categoria INT NOT NULL,
+  Nombre_categoria VARCHAR(50) NOT NULL,
+  PRIMARY KEY (Id_categoria)
 );
 
 DROP TABLE IF EXISTS Estado_Almacen CASCADE;
-CREATE TABLE Estado_Almacen 
+CREATE TABLE Estado_Almacen
 (
-    Id_estado INT PRIMARY KEY,
-    Nombre_estado VARCHAR(50) NOT NULL
+  Id_estado INT NOT NULL,
+  Nombre_estado VARCHAR(50) NOT NULL,
+  PRIMARY KEY (Id_estado)
 );
 
 DROP TABLE IF EXISTS Almacen CASCADE;
 CREATE TABLE Almacen
 (
-    Id_almacen INT PRIMARY KEY,
-    Id_empleado INT,
-    Id_categoria INT,
-    Id_estado INT,
-    Direccion VARCHAR(255),
-    Capacidad INT,
-    FOREIGN KEY (Id_empleado) REFERENCES Empleado (Id_empleado),
-    FOREIGN KEY (Id_categoria) REFERENCES Categoria_Almacen (Id_categoria),
-    FOREIGN KEY (Id_estado) REFERENCES Estado_Almacen (Id_estado)
+  Id_almacen INT NOT NULL,
+  Direccion VARCHAR(255) NOT NULL,
+  Capacidad INT NOT NULL,
+  Id_empleado INT NOT NULL,
+  Id_estado INT NOT NULL,
+  Id_categoria INT NOT NULL,
+  PRIMARY KEY (Id_almacen),
+  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
+  FOREIGN KEY (Id_estado) REFERENCES Estado_Almacen(Id_estado),
+  FOREIGN KEY (Id_categoria) REFERENCES Categoria_Almacen(Id_categoria)
 );
 
 DROP TABLE IF EXISTS Tipo_Equipo_Soporte CASCADE;
 CREATE TABLE Tipo_Equipo_Soporte
 (
-  Id_tipo INT PRIMARY KEY,
-  Nombre_tipo VARCHAR(50) NOT NULL
+  Id_tipo INT NOT NULL,
+  Nombre_tipo VARCHAR(100) NOT NULL,
+  PRIMARY KEY (Id_tipo)
 );
 
 DROP TABLE IF EXISTS Disponibilidad_Equipo_Soporte CASCADE;
-CREATE TABLE Disponibilidad_Equipo_Soporte 
+CREATE TABLE Disponibilidad_Equipo_Soporte
 (
-    Id_disponibilidad INT PRIMARY KEY,
-    Nombre_disponibilidad VARCHAR(50) NOT NULL
+  Id_disponibilidad INT NOT NULL,
+  Nombre_disponibilidad VARCHAR(100) NOT NULL,
+  PRIMARY KEY (Id_disponibilidad)
 );
 
 DROP TABLE IF EXISTS Estado_Equipo_Soporte CASCADE;
 CREATE TABLE Estado_Equipo_Soporte
 (
-    Id_estado INT PRIMARY KEY,
-    Nombre_estado VARCHAR(50) NOT NULL
+  Id_estado INT NOT NULL,
+  Nombre_estado VARCHAR(100) NOT NULL,
+  PRIMARY KEY (Id_estado)
 );
 
 DROP TABLE IF EXISTS Equipo_de_Soporte CASCADE;
-CREATE TABLE Equipo_de_Soporte 
+CREATE TABLE Equipo_de_Soporte
 (
-    Id_equipo_soporte INT PRIMARY KEY,
-    Nombre_equipo_soporte VARCHAR(100) NOT NULL,
-    Fecha_adquisicion DATE,
-    Descripcion VARCHAR(255),
-    Horas_uso INT NOT NULL,
-    Id_almacen INT NOT NULL,
-    Id_estado INT NOT NULL,
-    Id_disponibilidad INT NOT NULL,
-    Id_tipo INT NOT NULL,
-    FOREIGN KEY (Id_tipo) REFERENCES Tipo_Equipo_Soporte (Id_tipo),
-    FOREIGN KEY (Id_almacen) REFERENCES Almacen (Id_almacen),
-    FOREIGN KEY (Id_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte (Id_disponibilidad),
-    FOREIGN KEY (Id_estado) REFERENCES Estado_Equipo_Soporte (Id_estado)
+  Id_equipo_soporte INT NOT NULL,
+  Nombre_equipo_soporte VARCHAR(100) NOT NULL,
+  Fecha_adquisicion DATE NOT NULL,
+  Descripción VARCHAR(255) NOT NULL,
+  Horas_Uso INT NOT NULL,
+  Id_estado INT NOT NULL,
+  Id_disponibilidad INT NOT NULL,
+  Id_tipo INT NOT NULL,
+  PRIMARY KEY (Id_equipo_soporte),
+  FOREIGN KEY (Id_estado) REFERENCES Estado_Equipo_Soporte(Id_estado),
+  FOREIGN KEY (Id_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte(Id_disponibilidad),
+  FOREIGN KEY (Id_tipo) REFERENCES Tipo_Equipo_Soporte(Id_tipo)
+);
+
+DROP TABLE IF EXISTS EquipoSXAlmacen CASCADE;
+CREATE TABLE EquipoSXAlmacen
+(
+  Id_equipo_soporte_alm INT NOT NULL,
+  Cantidad INT NOT NULL,
+  Id_almacen INT NOT NULL,
+  Id_equipo_soporte INT NOT NULL,
+  PRIMARY KEY (Id_equipo_soporte_alm),
+  FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen),
+  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
+);
+
+DROP TABLE IF EXISTS Tipo_producto CASCADE;
+CREATE TABLE Tipo_producto
+(
+  Id_tipo_producto INT NOT NULL,
+  nombre_producto VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_tipo_producto)
+);
+
+DROP TABLE IF EXISTS Detalle_Pedido_Compra CASCADE;
+CREATE TABLE Detalle_Pedido_Compra
+(
+  Id_detalle_pedido INT NOT NULL,
+  Cantidad INT NOT NULL,
+  Id_producto INT NOT NULL,
+  Precio_unitario FLOAT NOT NULL,
+  Id_compra INT NOT NULL,
+  Id_tipo_producto INT NOT NULL,
+  PRIMARY KEY (Id_detalle_pedido),
+  FOREIGN KEY (Id_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
+  FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
 );
 
 DROP TABLE IF EXISTS Orden_de_trabajo CASCADE;
