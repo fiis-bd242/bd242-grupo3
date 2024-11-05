@@ -50,33 +50,26 @@ COPY orden_de_trabajo FROM 'C:\DBD-2024-2\datos\Orden_trabajo.csv' DELIMITER ','
 
 -- Poblamiento de la tabla Categoria_Almacen
 INSERT INTO Categoria_Almacen (Id_categoria, Nombre_categoria) 
-VALUES 
-(1, 'Lubricantes'),
-(2, 'Repuestos'),
-(3, 'Equipos de soporte');
+VALUES
+(1, 'Insumos'),
+(2, 'Herramientas'),
+(3, 'Equipos Pesados');
 
 -- Poblamiento de la tabla Estado_Almacen
 INSERT INTO Estado_Almacen (Id_estado, Nombre_estado) 
 VALUES 
-(1, 'Operativo'),
-(2, 'Inoperativo');
+(1, 'Activo'),
+(2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
-INSERT INTO Almacen (Id_almacen, Id_empleado, Id_categoria, Id_estado, Direccion, Capacidad) 
-VALUES 
-(1, 5, 2, 1, 'Lugar 1', 1000),
-(2, 2, 2, 1, 'Lugar 2', 500),
-(3, 6, 3, 1, 'Lugar 3', 800),
-(4, 10, 1, 2, 'Lugar 4', 300);
+COPY Almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
-INSERT INTO tipo_equipo_soporte  (Id_tipo, nombre_tipo)
-VALUES
-(1, 'Equipo de vigilancia y monitorio'),
-(2, 'Equipo de comunicación'),
-(3, 'EPP'),
-(4, 'Sistema de iluminación'),
-(5, 'Equipo de apoyo mecánico');
+INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
+(1, 'Generador'),
+(2, 'Compresor de Aire'),
+(3, 'Torre de Iluminación'),
+(4, 'Sistema de Bombeo');
 
 -- Poblamiento de la tabla Disponibilidad_equipo_soporte
 INSERT INTO Disponibilidad_Equipo_Soporte (Id_disponibilidad, Nombre_disponibilidad) 
@@ -93,62 +86,10 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Id_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Id_almacen, Id_disponibilidad, Id_estado) 
+INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Id_tipo, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
 VALUES 
-(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
-(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 2, 3),
-(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4),
-(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 2, 1),
-(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 2, 1),
-(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 2, 1),
-(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1),
-(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta', 500, 3, 2, 1),
-(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales', 400, 3, 2, 2),
-(10, 'EquipoA', 5, '2021-05-10', 'Descripcion A', 100, 3, 2, 1),
-(11, 'EquipoB', 5, '2021-05-11', 'Descripcion B', 100, 3, 2, 1),
-(12, 'EquipoC', 5, '2021-05-12', 'Descripcion C', 100, 3, 2, 1),
-(13, 'EquipoD', 5, '2021-05-13', 'Descripcion D', 100, 3, 2, 1),
-(14, 'EquipoE', 5, '2021-05-14', 'Descripcion E', 100, 3, 2, 1),
-(15, 'EquipoF', 5, '2021-05-15', 'Descripcion F', 100, 3, 2, 1),
-(16, 'EquipoG', 5, '2021-05-16', 'Descripcion G', 100, 3, 2, 1),
-(17, 'EquipoH', 5, '2021-05-17', 'Descripcion H', 100, 3, 2, 1),
-(18, 'EquipoI', 5, '2021-05-18', 'Descripcion I', 100, 3, 2, 1),
-(19, 'EquipoJ', 5, '2021-05-19', 'Descripcion J', 100, 3, 2, 1),
-(20, 'EquipoK', 5, '2021-12-10', 'Descripcion K', 100, 3, 2, 1),
-(21, 'EquipoL', 5, '2021-09-11', 'Descripcion L', 100, 3, 2, 1),
-(22, 'EquipoM', 5, '2021-08-12', 'Descripcion M', 100, 3, 2, 1),
-(23, 'EquipoN', 5, '2021-07-13', 'Descripcion N', 100, 3, 2, 1),
-(24, 'EquipoÑ', 5, '2021-05-10', 'Descripcion Ñ', 100, 3, 2, 1),
-(25, 'EquipoO', 5, '2021-05-11', 'Descripcion O', 100, 3, 2, 1),
-(26, 'EquipoP', 5, '2021-05-12', 'Descripcion P', 100, 3, 2, 1),
-(27, 'EquipoQ', 5, '2021-05-13', 'Descripcion Q', 100, 3, 2, 1),
-(28, 'EquipoR', 5, '2021-05-14', 'Descripcion R', 100, 3, 2, 1),
-(29, 'EquipoS', 5, '2021-05-15', 'Descripcion S', 100, 3, 2, 1),
-(30, 'EquipoT', 5, '2021-05-16', 'Descripcion T', 100, 3, 2, 1),
-(31, 'EquipoU', 5, '2021-05-17', 'Descripcion U', 100, 3, 2, 1),
-(32, 'EquipoV', 5, '2021-05-18', 'Descripcion V', 100, 3, 2, 1),
-(33, 'EquipoW', 5, '2021-05-19', 'Descripcion W', 100, 3, 2, 1),
-(34, 'EquipoX', 5, '2021-12-10', 'Descripcion X', 100, 3, 2, 1),
-(35, 'EquipoY', 5, '2021-09-11', 'Descripcion Y', 100, 3, 2, 1),
-(36, 'EquipoZ', 5, '2021-08-12', 'Descripcion Z', 100, 3, 2, 1),
-(37, 'EquipoAA', 5, '2021-07-13', 'Descripcion AA', 100, 3, 2, 1),
-(38, 'EquipoAB', 5, '2021-05-10', 'Descripcion AB', 100, 3, 2, 1),
-(39, 'EquipoAC', 5, '2021-05-11', 'Descripcion AC', 100, 3, 2, 1),
-(40, 'EquipoAD', 5, '2021-05-12', 'Descripcion AD', 100, 3, 2, 1),
-(41, 'EquipoAE', 5, '2021-05-12', 'Descripcion AE', 100, 3, 2, 1),
-(42, 'EquipoAF', 5, '2021-05-13', 'Descripcion AF', 100, 3, 2, 1),
-(43, 'EquipoAG', 5, '2021-05-14', 'Descripcion AG', 100, 3, 2, 1),
-(44, 'EquipoAH', 5, '2021-05-15', 'Descripcion AH', 100, 3, 2, 1),
-(45, 'EquipoAI', 5, '2021-05-16', 'Descripcion AI', 100, 3, 2, 1),
-(46, 'EquipoAJ', 5, '2021-05-17', 'Descripcion AJ', 100, 3, 2, 1),
-(47, 'EquipoAK', 5, '2021-05-18', 'Descripcion AK', 100, 3, 2, 1),
-(48, 'EquipoAL', 5, '2021-05-19', 'Descripcion AL', 100, 3, 2, 1),
-(49, 'EquipoAM', 5, '2021-12-10', 'Descripcion AM', 100, 3, 2, 1),
-(50, 'EquipoAN', 5, '2021-09-11', 'Descripcion AN', 100, 3, 2, 1),
-(51, 'EquipoAÑ', 5, '2021-08-12', 'Descripcion AÑ', 100, 3, 2, 1),
-(52, 'EquipoAO', 5, '2021-08-12', 'Descripcion AO', 100, 3, 1, 1),
-(53, 'EquipoAP', 5, '2021-07-13', 'Descripcion AP', 100, 3, 1, 1),
-(54, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2);
+
+
 
 -- Poblamiento de la tabla Actividad_empleado
 COPY actividad_empleado FROM 'C:\DBD-2024-2\datos\Actividad_empleado.csv' DELIMITER ',' CSV HEADER;

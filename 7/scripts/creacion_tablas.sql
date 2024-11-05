@@ -94,6 +94,14 @@ CREATE TABLE Tipo_Urgencia
   PRIMARY KEY (Id_urgencia)
 );
 
+DROP TABLE IF EXISTS Estado_Pedido CASCADE;
+CREATE TABLE Estado_Pedido
+(
+  Id_estado_pedido INT NOT NULL,
+  nombre_estado VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_estado_pedido)
+);
+
 DROP TABLE IF EXISTS Pedido_Compra CASCADE;
 CREATE TABLE Pedido_Compra
 (
@@ -106,17 +114,17 @@ CREATE TABLE Pedido_Compra
   Id_empleado INT NOT NULL,
   PRIMARY KEY (Id_pedido_compra),
   FOREIGN KEY (Id_urgencia) REFERENCES Tipo_Urgencia(Id_urgencia),
-  FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_Compra(Id_estado_pedido),
+  FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_Pedido(Id_estado_pedido),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
 
 DROP TABLE IF EXISTS Orden_de_compra CASCADE;
 CREATE TABLE Orden_de_compra
 (
+  Id_orden_compra INT NOT NULL,
   Fecha_emision DATE NOT NULL,
   Fecha_posible_entrega DATE NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
-  Id_orden_compra INT NOT NULL,
   RUC_proveedor INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
   Id_empleado INT NOT NULL,
@@ -195,7 +203,7 @@ CREATE TABLE Equipo_de_Soporte
   Id_equipo_soporte INT NOT NULL,
   Nombre_equipo_soporte VARCHAR(100) NOT NULL,
   Fecha_adquisicion DATE NOT NULL,
-  Descripción VARCHAR(255) NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
   Horas_Uso INT NOT NULL,
   Id_estado INT NOT NULL,
   Id_disponibilidad INT NOT NULL,
@@ -233,10 +241,10 @@ CREATE TABLE Detalle_Pedido_Compra
   Cantidad INT NOT NULL,
   Id_producto INT NOT NULL,
   Precio_unitario FLOAT NOT NULL,
-  Id_compra INT NOT NULL,
+  Id_pedido_compra INT NOT NULL,
   Id_tipo_producto INT NOT NULL,
   PRIMARY KEY (Id_detalle_pedido),
-  FOREIGN KEY (Id_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
+  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
   FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
 );
 
@@ -339,7 +347,7 @@ CREATE TABLE Maquina
 DROP TABLE IF EXISTS Tipo_mantenimiento CASCADE;
 CREATE TABLE Tipo_mantenimiento
 (
-  id_tipo_mant CHAR(2) NOT NULL,
+  id_tipo_mant INT NOT NULL,
   nombre_tipo_mant VARCHAR(30) NOT NULL,
   PRIMARY KEY (id_tipo_mant)
 );
@@ -360,7 +368,7 @@ CREATE TABLE Mantenimiento
   Fecha_fin_programado DATE NOT NULL,
   Id_Orden INT NOT NULL,
   Id_plan INT NOT NULL,
-  id_tipo_mant CHAR(2) NOT NULL,
+  id_tipo_mant INT NOT NULL,
   Id_maquina INT NOT NULL,
   id_estado INT NOT NULL,
   PRIMARY KEY (Id_Act_mantto),
