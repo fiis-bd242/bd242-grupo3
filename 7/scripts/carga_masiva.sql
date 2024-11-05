@@ -774,14 +774,14 @@ INSERT INTO Pedido (Id_pedido, Cant_pedid, Fecha, Est_inactividad, Id_herramient
 (20, 25, '2025-02-05', '1', 20, 20, 2);
 
  
--- Estado_autenticador 
+-- Poblamiento de tabla "Estado_autenticador" 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
 VALUES 
 (1, 'Generado'),
 (2, 'Utilizado'),
 (3, 'Expirado');
 
--- Estado_sesion
+-- Poblamiento de tabla "Estado_sesion"
 INSERT INTO Estado_Sesion (Id_estado_sesion, Descripcion)
 VALUES 
 (1, 'Activa'),
@@ -789,13 +789,14 @@ VALUES
 (3, 'Bloqueada'),
 (4, 'Proceso de logeo');
 
--- Tiempo_max_sesion 
+-- Poblamiento de tabla "Tiempo_max_sesion"
 INSERT INTO Tiempo_max_sesion (Cargo, T_max_cargo, Codigo)
 VALUES 
 ('Usuario', 60, 101),
 ('Administrador', 120, 102),
 ('Master', 180, 103);
 
+-- Poblamiento de tabla "Sesion_Empleado"
 INSERT INTO Sesion_Empleado (Id_Sesion, Id_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Id_estado_Sesion, Cargo, t_inactividad)
 VALUES 
 (1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario', INTERVAL '10 minutes'),
@@ -810,7 +811,7 @@ VALUES
 (10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario', INTERVAL '10 minutes');
 
 
---Autenticacion_en_2_pasos
+-- Poblamiento de tabla "Autenticacion_en_2_pasos"
 INSERT INTO Autenticacion_en_2_pasos (Id_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, cod_Verificacion, Id_sesion, Id_Estado_autenticador)
 VALUES 
 (1, '2024-10-01 08:05:00', 1, 123456, 1, 1),
@@ -824,8 +825,8 @@ VALUES
 (9, '2024-10-09 14:30:00', 3, 789123, 9, 2),
 (10, '2024-10-10 11:25:00', 1, 123789, 10, 1);
 
--- Poblar la tabla Sesion_sospechosa con 10 registros
-INSERT INTO Sesion_sospechosa (ID_Sesion_sospechosa, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
+-- Poblamiento de tabla "Sesion_sospechosa"
+INSERT INTO Sesion_sospechosa (Id_Sesion, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
 VALUES 
 (1, 1, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.6', 'Lima, Peru', 'Alertar al administrador'),
 (2, 2, 'Inactiva', '00:1B:44:11:3A:C8', 'Móvil', '2024-10-02 09:45:00', '192.168.0.7', 'Cusco, Peru', 'Bloquear el acceso'),
@@ -837,8 +838,9 @@ VALUES
 (8, 8, 'Bloqueada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 17:45:00', '192.168.0.13', 'Iquitos, Peru', 'Investigar incidencia'),
 (9, 9, 'Finalizada', '00:1B:44:11:3A:J5', 'Laptop', '2024-10-09 18:15:00', '192.168.0.14', 'Pucallpa, Peru', 'Enviar alerta al equipo'),
 (10, 10, 'Activa', '00:1B:44:11:3A:K6', 'Servidor', '2024-10-10 19:00:00', '192.168.0.15', 'Tarapoto, Peru', 'Revisar actividad en detalle');
--- Poblar la tabla Notificacion_Administrador con 10 registros
-INSERT INTO Notificacion_Administrador (ID_Notificacion, Id_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa, Id_autenticacion)
+
+-- Poblamiento de tabla "Notificacion_Administrador"
+INSERT INTO Notificacion_Administrador (ID_Notificacion, Id_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, Id_Sesion, Id_autenticacion)
 VALUES 
 (1, 1, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1, 1),
 (2, 2, 'Fallo de Autenticación', '2024-10-02 09:50:00', 'Enviada', 'Varios intentos fallidos de autenticación desde Cusco', 'Media', 2, 2),
@@ -851,6 +853,7 @@ VALUES
 (9, 9, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 9),
 (10, 10, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 10);
 
+-- Poblamiento de tabla "Estado_codigo"
 INSERT INTO Estado_codigo (Id_estado_codigo, Descripcion)
 VALUES 
 ('Generado', 'Código generado para recuperación'),
@@ -864,8 +867,8 @@ VALUES
 ('Revocado', 'Código revocado por seguridad'),
 ('Deshabilitado', 'Recuperación deshabilitada temporalmente');
 
-
-INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, ID_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Id_estado_codigo)
+-- Poblamiento de tabla "Recuperacion_de_contraseña"
+INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, Id_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Id_estado_codigo)
 VALUES 
 (1, 2, '2024-10-01 08:20:00', 'newPass123', 'user1@example.com', 'Generado'),
 (2, 2, '2024-10-02 09:45:00', 'securePass456', 'user2@example.com', 'Utilizado'),
@@ -877,5 +880,6 @@ VALUES
 (8, 2, '2024-10-08 15:15:00', 'quickPass234', 'user8@example.com', 'Pendiente'),
 (9, 2, '2024-10-09 16:00:00', 'fastPass567', 'user9@example.com', 'Revocado'),
 (10, 2, '2024-10-10 17:45:00', 'finalPass890', 'user10@example.com', 'Deshabilitado');
+
 
 
