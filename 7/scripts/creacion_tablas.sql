@@ -745,35 +745,7 @@ CREATE TABLE Notificaciones
 
 
 
--- Eliminar la tabla Sesion_sospechosa si existe
-DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
-CREATE TABLE Sesion_sospechosa (
-    Id_Sesion_sospechosa INT NOT NULL,
-    Id_autenticacion INT NOT NULL,
-    Estado_sesion VARCHAR(20) NOT NULL,
-    Direccion_mac VARCHAR(17) NOT NULL,
-    Tipo_Dispositivo VARCHAR(50) NOT NULL,
-    Fecha_Hora_sospecha TIMESTAMP NOT NULL,  
-    Direccion_ip VARCHAR(25) NOT NULL,
-    Ubicacion VARCHAR(100) NOT NULL,
-    Acciones_tomadas VARCHAR(255) NOT NULL,
-    PRIMARY KEY (Id_Sesion_sospechosa, Id_autenticacion)
-);
 
--- Eliminar la tabla Notificacion_Administrador si existe
-DROP TABLE IF EXISTS Notificacion_Administrador CASCADE;
-CREATE TABLE Notificacion_Administrador (
-    Id_Notificacion INT PRIMARY KEY,
-    Id_Administrador INT NOT NULL,
-    Tipo_Evento VARCHAR(50) NOT NULL,
-    Fecha_Hora_Notificacion TIMESTAMP NOT NULL,  
-    Estado_Notificacion VARCHAR(20) NOT NULL,
-    Mensaje_Notificacion VARCHAR(255) NOT NULL,
-    Prioridad VARCHAR(10) NOT NULL,
-    Id_Sesion_sospechosa INT NOT NULL,
-    Id_autenticacion INT NOT NULL,
-    FOREIGN KEY (Id_Sesion_sospechosa, Id_autenticacion) REFERENCES Sesion_sospechosa(Id_Sesion_sospechosa, Id_autenticacion)
-);
 
 DROP TABLE IF EXISTS Estado_Sesion CASCADE;
 CREATE TABLE Estado_Sesion (
@@ -841,3 +813,34 @@ CREATE TABLE Recuperacion_de_contraseña (
     FOREIGN KEY (Id_estado_codigo) REFERENCES Estado_codigo (Id_estado_codigo)  
 );
 
+-- Eliminar la tabla Sesion_sospechosa si existe
+DROP TABLE IF EXISTS Sesion_sospechosa CASCADE;
+CREATE TABLE Sesion_sospechosa (
+    Id_Sesion INT NOT NULL,
+    Id_autenticacion INT NOT NULL,
+    Estado_sesion VARCHAR(20) NOT NULL,
+    Direccion_mac VARCHAR(17) NOT NULL,
+    Tipo_Dispositivo VARCHAR(50) NOT NULL,
+    Fecha_Hora_sospecha TIMESTAMP NOT NULL,  
+    Direccion_ip VARCHAR(25) NOT NULL,
+    Ubicacion VARCHAR(100) NOT NULL,
+    Acciones_tomadas VARCHAR(255) NOT NULL,
+    PRIMARY KEY (Id_autenticacion),
+    FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
+);
+
+-- Eliminar la tabla Notificacion_Administrador si existe
+DROP TABLE IF EXISTS Notificacion_Administrador CASCADE;
+CREATE TABLE Notificacion_Administrador (
+    Id_Notificacion INT PRIMARY KEY,
+    Id_Administrador INT NOT NULL,
+    Tipo_Evento VARCHAR(50) NOT NULL,
+    Fecha_Hora_Notificacion TIMESTAMP NOT NULL,  
+    Estado_Notificacion VARCHAR(20) NOT NULL,
+    Mensaje_Notificacion VARCHAR(255) NOT NULL,
+    Prioridad VARCHAR(10) NOT NULL,
+    Id_Sesion INT NOT NULL,
+    Id_autenticacion INT NOT NULL,
+    FOREIGN KEY (Id_autenticacion) REFERENCES Sesion_sospechosa(Id_autenticacion),
+    FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
+);
