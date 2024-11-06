@@ -1,61 +1,61 @@
-Cantidad,Nombre
-100,Aceite para cadenas
-43,Agua destilada para enfriamiento
-92,Inhibidor de corrosi贸n
-91,Grasa para altas temperaturas
-53,L铆quido anticorrosivo
-62,Agua destilada para enfriamiento
-97,Detergente desengrasante
-38,Limpiador de componentes el茅ctricos
-63,Limpiador de circuitos
-94,Limpiador de frenos
-62,Aceite de alta viscosidad
-92,Grasa diel茅ctrica
-70,Fluido de transmisi贸n
-45,Grasa industrial
-94,Desengrasante
-94,Detergente desengrasante
-69,Lubricante para cadenas
-37,Inhibidor de corrosi贸n
-91,Aceite para engranajes
-62,Aceite para cadenas
-38,Protector de cauchos
-62,Aceite de transmisi贸n
-35,Aceite para cadenas
-37,Limpiador de frenos
-80,Detergente desengrasante
-62,Detergente desengrasante
-72,Aceite de alta viscosidad
-88,Detergente desengrasante
-32,Aditivo antifricci贸n
-57,Fluido para frenos
-39,Aceite de silicona
-31,Refrigerante industrial
-61,Aditivo para transmisi贸n autom谩tica
-67,Solvente limpiador
-93,Aditivo para engranajes
-30,Aceite para engranajes
-72,Limpiador de frenos
-47,Lubricante para altas temperaturas
-38,Grasa industrial
-40,Protector de cauchos
-84,Grasa para rodamientos
-87,Lubricante para altas temperaturas
-86,Aceite de transmisi贸n
-49,Aditivo para sistemas hidr谩ulicos
-60,Agua destilada para enfriamiento
-56,Refrigerante para motor
-76,Detergente desengrasante
-81,Lubricante para componentes delicados
-40,Grasa diel茅ctrica
-37,Lubricante multiusos
-70,Desinfectante de piezas
-96,Aditivo antifricci贸n
-83,Inhibidor de corrosi贸n
-73,Limpiador de frenos
-97,Aditivo para engranajes
-75,Lubricante para cadenas
-58,Solvente limpiador
-81,Aceite de alta presi贸n
-66,Agente desoxidante
-42,Aditivo para frenos
+Columna1;Cantidad;Nombre
+1;100;Aceite para cadenas
+2;43;Agua destilada para enfriamiento
+3;92;Inhibidor de corrosi髇
+4;91;Grasa para altas temperaturas
+5;53;L韖uido anticorrosivo
+6;62;Agua destilada para enfriamiento
+7;97;Detergente desengrasante
+8;38;Limpiador de componentes el閏tricos
+9;63;Limpiador de circuitos
+10;94;Limpiador de frenos
+11;62;Aceite de alta viscosidad
+12;92;Grasa diel閏trica
+13;70;Fluido de transmisi髇
+14;45;Grasa industrial
+15;94;Desengrasante
+16;94;Detergente desengrasante
+17;69;Lubricante para cadenas
+18;37;Inhibidor de corrosi髇
+19;91;Aceite para engranajes
+20;62;Aceite para cadenas
+21;38;Protector de cauchos
+22;62;Aceite de transmisi髇
+23;35;Aceite para cadenas
+24;37;Limpiador de frenos
+25;80;Detergente desengrasante
+26;62;Detergente desengrasante
+27;72;Aceite de alta viscosidad
+28;88;Detergente desengrasante
+29;32;Aditivo antifricci髇
+30;57;Fluido para frenos
+31;39;Aceite de silicona
+32;31;Refrigerante industrial
+33;61;Aditivo para transmisi髇 autom醫ica
+34;67;Solvente limpiador
+35;93;Aditivo para engranajes
+36;30;Aceite para engranajes
+37;72;Limpiador de frenos
+38;47;Lubricante para altas temperaturas
+39;38;Grasa industrial
+40;40;Protector de cauchos
+41;84;Grasa para rodamientos
+42;87;Lubricante para altas temperaturas
+43;86;Aceite de transmisi髇
+44;49;Aditivo para sistemas hidr醬licos
+45;60;Agua destilada para enfriamiento
+46;56;Refrigerante para motor
+47;76;Detergente desengrasante
+48;81;Lubricante para componentes delicados
+49;40;Grasa diel閏trica
+50;37;Lubricante multiusos
+51;70;Desinfectante de piezas
+52;96;Aditivo antifricci髇
+53;83;Inhibidor de corrosi髇
+54;73;Limpiador de frenos
+55;97;Aditivo para engranajes
+56;75;Lubricante para cadenas
+57;58;Solvente limpiador
+58;81;Aceite de alta presi髇
+59;66;Agente desoxidante
+60;42;Aditivo para frenos
