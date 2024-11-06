@@ -427,28 +427,8 @@ INSERT INTO Estado_mantto (id_estado, estado) VALUES
 (7, 'Auditado');
 
 -- Poblamiento de la tabla Mantenimiento
-INSERT INTO Mantenimiento (Id_Act_mantto, Descripcion, Tarea, Peligros, Fecha_inicio_programado, Fecha_fin_programado, Id_Orden, Id_plan, id_maquina, id_tipo_mant)
-VALUES
-(1, 'Reemplazo de motor principal en la línea de producción', 'Cambio de motor', 'Golpes y caídas durante la instalación', '2024-01-08', '2024-01-10', 1, 1, 1, 2),
-(2, 'Revisión del sistema de control eléctrico y ajuste de cables', 'Inspección y ajuste de conexiones', 'Descarga eléctrica', '2024-02-10', '2024-02-15', 2, 2, 2, 2),
-(3, 'Inspección de seguridad de maquinaria en la planta de ensamblaje', 'Revisión de sistemas de seguridad', 'Golpes y aplastamientos', '2024-03-15', '2024-03-20', 3, 3, 3, 3),
-(4, 'Mantenimiento preventivo en maquinaria del área de pintura', 'Limpieza y lubricación de componentes', 'Inhalación de productos químicos', '2024-04-20', '2024-04-25', 4, 4, 4, 1),
-(5, 'Reemplazo de filtros del sistema de ventilación', 'Cambio de filtros', 'Inhalación de polvo', '2024-05-25', '2024-05-30', 5, 5, 5, 2),
-(6, 'Actualización de software de monitoreo del sistema', 'Instalación y configuración de software', 'Caída del sistema', '2024-06-01', '2024-06-05', 6, 6, 6, 3),
-(7, 'Inspección y revisión de maquinaria pesada', 'Evaluación estructural y funcional', 'Aplastamientos y caídas', '2024-07-05', '2024-07-10', 7, 7, 7, 1),
-(8, 'Reparación del sistema hidráulico', 'Sustitución de mangueras y ajuste de válvulas', 'Fugas de fluidos y sobrepresión', '2024-08-10', '2024-08-15', 8, 8, 8, 2),
-(9, 'Evaluación del sistema de refrigeración en toda la planta', 'Pruebas de rendimiento y ajuste', 'Sobrecarga térmica', '2024-09-15', '2024-09-20', 9, 9, 9, 3),
-(10, 'Verificación y ajuste de sistemas de alarma en el área de producción', 'Revisión de sensores y conexiones', 'Falsos positivos', '2024-10-20', '2024-10-25', 10, 10, 10, 1),
-(11, 'Mantenimiento del sistema de iluminación de la planta', 'Sustitución de lámparas y ajuste de conexiones', 'Cortes eléctricos', '2024-11-01', '2024-11-05', 11, 11, 11, 2),
-(12, 'Revisión de protocolos de seguridad y sistemas asociados', 'Inspección de procedimientos de emergencia', 'Fallas en la detección de emergencias', '2024-12-05', '2024-12-10', 12, 12, 12, 3),
-(13, 'Actualización y ajuste de maquinaria en la línea de ensamblaje', 'Instalación de nuevos componentes', 'Golpes y atrapamientos', '2025-01-10', '2025-01-15', 13, 13, 13, 1),
-(14, 'Inspección del sistema de control de calidad', 'Revisión de calibración de equipos', 'Errores de medición', '2025-02-15', '2025-02-20', 14, 14, 14, 2),
-(15, 'Reemplazo de componentes electrónicos obsoletos', 'Sustitución de tarjetas y circuitos', 'Cortocircuitos y fallos eléctricos', '2025-03-20', '2025-03-25', 15, 15, 15, 3),
-(16, 'Optimización de la línea de empaquetado', 'Reconfiguración de maquinaria', 'Fallas mecánicas y paradas imprevistas', '2025-04-25', '2025-04-30', 16, 16, 16, 1),
-(17, 'Evaluación bimestral del sistema de ventilación', 'Limpieza de ductos y ajuste de ventiladores', 'Inhalación de polvo', '2025-05-01', '2025-05-05', 17, 17, 17, 2),
-(18, 'Mantenimiento preventivo de sistemas de refrigeración', 'Ajuste de compresores y verificación de fluidos', 'Sobrecarga de sistemas', '2025-06-05', '2025-06-10', 18, 18, 18, 3),
-(19, 'Revisión trimestral de sistemas de alarma', 'Verificación y ajuste de sensores', 'Falsos positivos y fallos de detección', '2025-07-10', '2025-07-15', 19, 19, 19, 1),
-(20, 'Actualización de software de control semestral', 'Instalación de nuevas versiones de software', 'Errores en el sistema', '2025-08-15', '2025-08-20', 20, 20, 20, 2);
+COPY mantenimiento FROM 'C:\DBD-2024-2\datos\Mantenimiento.csv' DELIMITER ',' CSV HEADER;
+
 
 -- Poblamiento de la tabla EquipoSXMantenimiento
 COPY equiposxmantenimiento FROM 'C:\DBD-2024-2\datos\EquipoSXMantenimiento.csv' DELIMITER ',' CSV HEADER;
