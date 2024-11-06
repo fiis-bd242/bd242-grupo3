@@ -398,16 +398,6 @@ CREATE TABLE Identificacion_del_riesgo
 (
   Descripcion_peligro CHAR(255) NOT NULL,
   Evento_no_deseado CHAR(255) NOT NULL,
-  Id_riesgo INT NOT NULL,
-  PRIMARY KEY (Id_riesgo)
-);
-
-
-DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
-CREATE TABLE Identificacion_del_riesgo
-(
-  Descripcion_peligro CHAR(255) NOT NULL,
-  Evento_no_deseado CHAR(255) NOT NULL,
   id_tarea INT NOT NULL,
   Id_riesgo INT NOT NULL,
   PRIMARY KEY (Id_riesgo),
