@@ -30,14 +30,14 @@ CREATE TABLE Proveedor
 DROP TABLE IF EXISTS Estado_reserva CASCADE;
 CREATE TABLE Estado_reserva
 (
-  Id_estado_reserva SERIAL NOT NULL,
+  Id_estado_reserva INT NOT NULL,
   Nombre_estado VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_estado_reserva)
 );
 DROP TABLE IF EXISTS Insumo CASCADE;
 CREATE TABLE Insumo
 (
-  Id_insumo SERIAL NOT NULL,
+  Id_insumo Int NOT NULL,
   Cantidad INT NOT NULL,
   Nombre VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_insumo)
@@ -98,7 +98,7 @@ CREATE TABLE Reserva
 DROP TABLE IF EXISTS Detalle_reserva CASCADE;
 CREATE TABLE Detalle_reserva
 (
-  Id_detalle SERIAL NOT NULL,
+  Id_detalle INT NOT NULL,
   Cant_reserv INT NOT NULL,
   Id_insumo INT NOT NULL,
   Id_reserva INT NOT NULL,
@@ -872,3 +872,4 @@ CREATE TABLE Notificacion_Administrador (
     FOREIGN KEY (Id_autenticacion) REFERENCES Sesion_sospechosa(Id_autenticacion),
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
 );
+
