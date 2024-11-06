@@ -587,7 +587,7 @@ DROP TABLE IF EXISTS Control CASCADE;
 CREATE TABLE Control
 (
   Id_control INT NOT NULL,
-  Descripcion_control CHAR(255) NOT NULL,
+  Descripcion_control CHAR(400) NOT NULL,
   Id_tipo_estgia_control CHAR(1) NOT NULL,
   Id_tipo_med_control CHAR(3) NOT NULL,
   Id_tipo_Qcontrol CHAR(1) NOT NULL,

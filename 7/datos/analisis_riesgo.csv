@@ -1,0 +1,1001 @@
+Afectado,Consecuencia,Id_analisis,id_riesgo,Id_tipo_contacto,Id_tipo_peligro
+persona,pérdida temporal de visión,1,242,TC06,TC06.01
+persona,shock eléctrico,2,208,TC02,TC08.07
+persona,pérdida auditiva permanente,3,365,TC08,TC03.02
+persona,fiebre de humos metálicos,4,936,TC08,TC04.01
+persona,desmayo,5,581,TC05,TC02.01
+persona,infecciones dérmicas,6,276,TC02,TC03.02
+persona,alergias respiratorias crónicas,7,967,TC03,TC02.05
+persona,desorientación,8,193,TC05,TC10.05
+persona,intoxicación,9,782,TC06,TC08.07
+persona,irritación nasal,10,220,TC10,TC07.04
+persona,irritación de piel y ojos,11,134,TC11,TC08.05
+persona,fracturas,12,102,TC02,TC03.01
+persona,pérdida de coordinación,13,695,TC04,TC07.04
+persona,pérdida temporal de visión,14,921,TC09,TC11.02
+persona,afección respiratoria,15,1,TC02,TC08.07
+persona,traumatismos internos,16,421,TC12,TC04.03
+persona,desorientación,17,739,TC06,TC02.03
+persona,quemadura,18,963,TC07,TC08.07
+persona,irritación nasal,19,568,TC01,TC02.10
+persona,entumecimiento de extremidades,20,528,TC03,TC02.08
+persona,pérdida de equilibrio,21,485,TC12,TC09.06
+persona,pérdida de equilibrio,22,860,TC02,TC02.10
+persona,quemaduras químicas,23,821,TC01,TC11.03
+persona,pérdida de coordinación,24,338,TC08,TC11.05
+persona,hematomas,25,1000,TC01,TC02.09
+persona,alergias respiratorias crónicas,26,630,TC03,TC11.05
+persona,pérdida de equilibrio,27,286,TC06,TC11.01
+persona,neumoconiosis,28,690,TC04,TC09.09
+persona,fracturas,29,571,TC07,TC06.01
+persona,disminución de la capacidad auditiva,30,576,TC06,TC10.03
+persona,Atricción,31,768,TC07,TC02.05
+persona,fracturas,32,193,TC12,TC03.02
+persona,debilidad muscular,33,295,TC05,TC09.05
+persona,parálisis,34,623,TC07,TC10.02
+persona,desmayo,35,134,TC12,TC10.05
+persona,fracturas,36,382,TC11,TC07.04
+persona,daño a la columna,37,49,TC02,TC08.02
+persona,amputaciones de extremidades,38,20,TC01,TC04.03
+persona,traumatismo encefalocraneano,39,562,TC10,TC04.04
+persona,intoxicación,40,499,TC01,TC05.02
+persona,luxaciones,41,876,TC01,TC02.09
+persona,desgarros ligamentarios,42,585,TC10,TC11.02
+persona,luxaciones,43,897,TC02,TC05.02
+persona,desmayo,44,904,TC08,TC09.09
+persona,parálisis,45,583,TC07,TC05.01
+persona,muerte,46,663,TC07,TC02.02
+persona,golpes fuertes,47,98,TC05,TC04.02
+persona,alergias,48,110,TC11,TC06.02
+persona,afección respiratoria,49,944,TC01,TC05.01
+persona,dolores de cabeza,50,465,TC02,TC04.04
+persona,infecciones dérmicas,51,267,TC01,TC12.05
+persona,dolores de cabeza,52,922,TC11,TC09.01
+persona,golpes graves,53,680,TC03,TC08.06
+persona,luxaciones,54,63,TC04,TC02.04
+persona,dificultad para respirar,55,444,TC07,TC10.02
+persona,fracturas,56,469,TC12,TC10.05
+persona,fracturas,57,658,TC11,TC04.03
+persona,desorientación,58,229,TC04,TC09.05
+persona,lesiones musculares,59,46,TC01,TC10.05
+persona,tensión muscular,60,830,TC03,TC09.04
+persona,infecciones dérmicas,61,35,TC04,TC12.05
+persona,afección respiratoria,62,624,TC04,TC09.04
+persona,muerte,63,791,TC11,TC10.01
+persona,pérdida temporal de visión,64,161,TC08,TC04.02
+persona,lesiones musculares,65,998,TC07,TC04.01
+persona,intoxicación,66,281,TC05,TC04.01
+persona,muerte,67,476,TC07,TC07.01
+persona,pérdida temporal de visión,68,76,TC09,TC03.02
+persona,traumatismo encefalocraneano,69,943,TC08,TC02.07
+persona,shock eléctrico,70,75,TC12,TC10.01
+persona,tensión muscular,71,514,TC12,TC12.06
+persona,hematomas,72,542,TC03,TC09.03
+persona,lumbalgias,73,263,TC09,TC12.02
+persona,traumatismos internos,74,528,TC07,TC06.01
+persona,debilidad muscular,75,32,TC08,TC04.01
+persona,dificultad para respirar,76,232,TC09,TC02.05
+persona,daño a la columna,77,711,TC08,TC12.02
+persona,laceraciones,78,205,TC03,TC01.02
+persona,desorientación,79,944,TC11,TC12.06
+persona,disminución de la capacidad auditiva,80,845,TC05,TC02.10
+persona,muerte,81,169,TC11,TC09.04
+persona,fatiga,82,559,TC11,TC02.03
+persona,infecciones dérmicas,83,858,TC08,TC04.03
+persona,entumecimiento de extremidades,84,168,TC12,TC02.10
+persona,lesiones temporales por caídas,85,965,TC03,TC02.02
+persona,desgarros ligamentarios,86,466,TC12,TC06.01
+persona,alergias,87,972,TC06,TC08.05
+persona,intoxicación,88,868,TC07,TC10.05
+persona,parálisis,89,593,TC09,TC09.08
+persona,fatiga,90,694,TC09,TC02.04
+persona,traumatismo encefalocraneano,91,802,TC11,TC11.03
+persona,irritación nasal,92,101,TC08,TC07.02
+persona,desgarros ligamentarios,93,804,TC06,TC09.03
+persona,desgarros ligamentarios,94,186,TC04,TC02.02
+persona,golpes fuertes,95,904,TC10,TC08.07
+persona,amputaciones de extremidades,96,317,TC03,TC05.01
+persona,pérdida de coordinación,97,9,TC03,TC04.01
+persona,heridas contusas,98,492,TC01,TC08.03
+persona,lesiones musculares,99,248,TC07,TC09.02
+persona,muerte,100,50,TC12,TC10.04
+persona,daño a la columna,101,79,TC03,TC02.06
+persona,alergias,102,128,TC04,TC03.02
+persona,pérdida auditiva permanente,103,822,TC08,TC09.01
+persona,heridas cortantes,104,809,TC11,TC11.02
+persona,pérdida temporal de visión,105,91,TC07,TC04.03
+persona,infecciones dérmicas,106,260,TC06,TC01.02
+persona,irritación de vías respiratorias,107,991,TC08,TC04.05
+persona,fracturas,108,12,TC10,TC11.04
+persona,pérdida de coordinación,109,400,TC04,TC02.04
+persona,alergias,110,410,TC02,TC09.06
+persona,traumatismo encefalocraneano,111,936,TC10,TC08.06
+persona,disminución de la capacidad auditiva,112,668,TC04,TC08.03
+persona,irritación nasal,113,653,TC07,TC11.04
+persona,lumbalgias,114,717,TC01,TC07.03
+persona,dificultad para respirar,115,627,TC07,TC07.04
+persona,heridas cortantes,116,75,TC07,TC10.04
+persona,pérdida temporal de visión,117,893,TC01,TC08.03
+persona,debilidad muscular,118,485,TC10,TC04.03
+persona,pérdida de coordinación,119,480,TC10,TC09.03
+persona,quemaduras químicas,120,903,TC06,TC02.03
+persona,pérdida temporal de visión,121,549,TC01,TC10.01
+persona,intoxicación,122,843,TC09,TC09.06
+persona,heridas contusas,123,333,TC07,TC05.01
+persona,alergias respiratorias crónicas,124,876,TC02,TC04.01
+persona,fiebre de humos metálicos,125,943,TC04,TC08.07
+persona,fiebre de humos metálicos,126,609,TC06,TC07.01
+persona,irritación nasal,127,974,TC09,TC02.10
+persona,alergias respiratorias crónicas,128,674,TC04,TC02.05
+persona,lesiones temporales por caídas,129,356,TC02,TC11.05
+persona,disminución de la capacidad auditiva,130,259,TC04,TC10.03
+persona,pérdida de equilibrio,131,468,TC07,TC09.02
+persona,lesiones musculares,132,539,TC02,TC05.02
+persona,alergias,133,535,TC04,TC08.05
+persona,traumatismos internos,134,578,TC04,TC09.01
+persona,entumecimiento de extremidades,135,916,TC05,TC07.02
+persona,dolores de cabeza,136,475,TC10,TC07.01
+persona,dolores de cabeza,137,991,TC01,TC09.09
+persona,heridas cortantes,138,537,TC12,TC12.03
+persona,tensión muscular,139,171,TC04,TC12.01
+persona,afección respiratoria,140,955,TC04,TC08.03
+persona,desorientación,141,432,TC06,TC08.04
+persona,muerte,142,399,TC02,TC02.01
+persona,intoxicación,143,453,TC09,TC08.02
+persona,parálisis,144,945,TC04,TC04.01
+persona,golpes graves,145,512,TC05,TC09.05
+persona,dificultad para respirar,146,183,TC04,TC04.03
+persona,hematomas,147,473,TC04,TC09.05
+persona,dolores de cabeza,148,306,TC03,TC12.01
+persona,alergias respiratorias crónicas,149,314,TC03,TC02.07
+persona,lesiones musculares,150,442,TC06,TC09.04
+persona,contusiones,151,401,TC05,TC04.04
+persona,fracturas,152,390,TC12,TC11.01
+persona,lesiones temporales por caídas,153,867,TC09,TC12.02
+persona,pérdida de coordinación,154,672,TC01,TC07.04
+persona,heridas cortantes,155,731,TC11,TC09.06
+persona,lesiones musculares,156,150,TC03,TC05.02
+persona,lesiones temporales por caídas,157,881,TC03,TC05.01
+persona,luxaciones,158,689,TC08,TC09.05
+persona,irritación de vías respiratorias,159,506,TC03,TC11.05
+persona,amputaciones de extremidades,160,564,TC05,TC02.06
+persona,traumatismo encefalocraneano,161,600,TC02,TC12.05
+persona,traumatismos internos,162,891,TC01,TC12.03
+persona,parálisis,163,180,TC04,TC09.03
+persona,intoxicación,164,608,TC08,TC02.08
+persona,irritación de vías respiratorias,165,660,TC05,TC02.06
+persona,hematomas,166,20,TC01,TC08.06
+persona,desmayo,167,897,TC04,TC09.05
+persona,neumoconiosis,168,623,TC04,TC10.05
+persona,laceraciones,169,85,TC08,TC11.02
+persona,alergias,170,684,TC05,TC06.01
+persona,tensión muscular,171,102,TC11,TC08.01
+persona,laceraciones,172,494,TC04,TC02.10
+persona,dificultad para respirar,173,3,TC07,TC07.03
+persona,irritación de vías respiratorias,174,645,TC12,TC04.01
+persona,heridas contusas,175,870,TC03,TC01.02
+persona,quemadura,176,494,TC10,TC01.01
+persona,disminución de la capacidad auditiva,177,22,TC07,TC01.02
+persona,intoxicación,178,90,TC11,TC06.01
+persona,heridas contusas,179,757,TC09,TC06.01
+persona,fracturas,180,19,TC12,TC07.02
+persona,intoxicación,181,780,TC01,TC07.01
+persona,heridas cortantes,182,698,TC01,TC09.03
+persona,laceraciones,183,768,TC12,TC11.05
+persona,luxaciones,184,751,TC07,TC02.04
+persona,amputaciones de extremidades,185,215,TC07,TC09.05
+persona,daño a la columna,186,582,TC10,TC06.01
+persona,irritación de vías respiratorias,187,804,TC10,TC02.08
+persona,pérdida auditiva permanente,188,866,TC03,TC11.05
+persona,neumoconiosis,189,499,TC11,TC09.03
+persona,fiebre de humos metálicos,190,41,TC11,TC02.01
+persona,golpes graves,191,44,TC06,TC06.02
+persona,fracturas,192,795,TC12,TC01.01
+persona,pérdida auditiva permanente,193,49,TC01,TC06.01
+persona,neumoconiosis,194,955,TC10,TC09.06
+persona,fracturas,195,500,TC04,TC02.05
+persona,contusiones,196,688,TC10,TC11.02
+persona,desgarros ligamentarios,197,834,TC02,TC11.01
+persona,hematomas,198,175,TC07,TC04.03
+persona,fatiga,199,354,TC04,TC12.03
+persona,pérdida temporal de visión,200,48,TC11,TC07.02
+persona,quemaduras químicas,201,599,TC03,TC12.01
+persona,contusiones,202,67,TC04,TC12.01
+persona,disminución de la capacidad auditiva,203,878,TC01,TC02.10
+persona,parálisis,204,950,TC08,TC04.03
+persona,irritación nasal,205,818,TC02,TC09.09
+persona,entumecimiento de extremidades,206,910,TC01,TC10.04
+persona,lumbalgias,207,872,TC03,TC12.03
+persona,desgarros ligamentarios,208,241,TC12,TC02.01
+persona,laceraciones,209,896,TC09,TC11.03
+persona,pérdida temporal de visión,210,533,TC07,TC07.02
+persona,debilidad muscular,211,656,TC01,TC05.02
+persona,alergias respiratorias crónicas,212,154,TC01,TC05.01
+persona,fracturas,213,121,TC11,TC04.02
+persona,infecciones dérmicas,214,367,TC07,TC12.02
+persona,fracturas,215,322,TC12,TC09.04
+persona,hematomas,216,178,TC07,TC09.08
+persona,afección respiratoria,217,436,TC07,TC09.09
+persona,entumecimiento de extremidades,218,56,TC06,TC09.08
+persona,desorientación,219,739,TC02,TC09.08
+persona,traumatismos internos,220,485,TC08,TC03.02
+persona,infecciones dérmicas,221,415,TC12,TC03.02
+persona,irritación de vías respiratorias,222,114,TC11,TC02.06
+persona,irritación nasal,223,971,TC04,TC09.01
+persona,entumecimiento de extremidades,224,501,TC09,TC12.02
+persona,heridas contusas,225,523,TC05,TC06.02
+persona,lesiones musculares,226,816,TC10,TC02.04
+persona,quemadura,227,753,TC01,TC07.02
+persona,dificultad para respirar,228,31,TC08,TC05.02
+persona,irritación de piel y ojos,229,796,TC01,TC03.02
+persona,infecciones dérmicas,230,882,TC09,TC09.01
+persona,lesiones temporales por caídas,231,597,TC07,TC12.04
+persona,hematomas,232,206,TC09,TC09.01
+persona,dolores de cabeza,233,10,TC02,TC08.04
+persona,fracturas,234,334,TC01,TC07.03
+persona,pérdida temporal de visión,235,544,TC04,TC12.05
+persona,golpes graves,236,836,TC02,TC12.04
+persona,afección respiratoria,237,462,TC04,TC07.02
+persona,alergias respiratorias crónicas,238,335,TC02,TC05.02
+persona,golpes fuertes,239,565,TC08,TC11.01
+persona,pérdida de equilibrio,240,153,TC02,TC10.03
+persona,Atricción,241,339,TC02,TC07.01
+persona,fracturas,242,49,TC06,TC02.06
+persona,fracturas,243,171,TC09,TC02.01
+persona,entumecimiento de extremidades,244,792,TC02,TC02.06
+persona,quemaduras químicas,245,618,TC11,TC05.01
+persona,fracturas,246,498,TC02,TC02.10
+persona,alergias,247,166,TC06,TC08.05
+persona,alergias,248,417,TC04,TC02.07
+persona,traumatismo encefalocraneano,249,428,TC09,TC11.02
+persona,fracturas,250,724,TC09,TC04.04
+persona,laceraciones,251,653,TC03,TC01.01
+persona,dificultad para respirar,252,428,TC09,TC08.04
+persona,lumbalgias,253,12,TC03,TC07.04
+persona,alergias respiratorias crónicas,254,877,TC03,TC01.01
+persona,fiebre de humos metálicos,255,507,TC08,TC08.02
+persona,debilidad muscular,256,283,TC12,TC06.02
+persona,desorientación,257,188,TC11,TC10.03
+persona,parálisis,258,637,TC09,TC02.10
+persona,luxaciones,259,567,TC05,TC08.02
+persona,debilidad muscular,260,284,TC12,TC11.01
+persona,fatiga,261,114,TC09,TC12.05
+persona,traumatismos internos,262,796,TC02,TC12.01
+persona,neumoconiosis,263,251,TC01,TC02.03
+persona,lesiones musculares,264,287,TC09,TC08.06
+persona,traumatismos internos,265,623,TC06,TC12.06
+persona,lumbalgias,266,262,TC11,TC03.02
+persona,dificultad para respirar,267,343,TC05,TC12.05
+persona,pérdida de coordinación,268,208,TC09,TC08.06
+persona,golpes fuertes,269,400,TC07,TC09.04
+persona,daño a la columna,270,711,TC12,TC04.02
+persona,fracturas,271,724,TC01,TC11.02
+persona,dificultad para respirar,272,427,TC06,TC11.05
+persona,entumecimiento de extremidades,273,581,TC04,TC02.01
+persona,fatiga crónica,274,339,TC11,TC10.01
+persona,debilidad muscular,275,180,TC01,TC02.06
+persona,desorientación,276,602,TC09,TC10.05
+persona,daño a la columna,277,896,TC07,TC08.05
+persona,irritación de vías respiratorias,278,66,TC11,TC10.01
+persona,lesiones temporales por caídas,279,906,TC06,TC10.05
+persona,dolores de cabeza,280,230,TC08,TC10.05
+persona,fracturas,281,561,TC04,TC09.08
+persona,disminución de la capacidad auditiva,282,314,TC06,TC07.03
+persona,muerte,283,556,TC04,TC11.02
+persona,pérdida auditiva permanente,284,30,TC03,TC12.06
+persona,afección respiratoria,285,659,TC01,TC06.02
+persona,lumbalgias,286,989,TC10,TC10.02
+persona,contusiones,287,679,TC11,TC08.04
+persona,laceraciones,288,8,TC10,TC08.01
+persona,golpes fuertes,289,997,TC08,TC02.03
+persona,lesiones musculares,290,416,TC03,TC09.07
+persona,intoxicación,291,362,TC07,TC04.03
+persona,fracturas,292,514,TC02,TC12.03
+persona,shock eléctrico,293,862,TC10,TC02.03
+persona,lesiones temporales por caídas,294,118,TC07,TC09.01
+persona,muerte,295,58,TC04,TC04.02
+persona,fatiga crónica,296,504,TC12,TC09.06
+persona,alergias,297,539,TC03,TC08.06
+persona,desgarros ligamentarios,298,292,TC08,TC12.01
+persona,amputaciones de extremidades,299,197,TC09,TC02.05
+persona,desgarros ligamentarios,300,300,TC03,TC07.02
+persona,alergias respiratorias crónicas,301,818,TC02,TC10.04
+persona,afección respiratoria,302,136,TC03,TC08.02
+persona,fiebre de humos metálicos,303,934,TC09,TC10.05
+persona,neumoconiosis,304,507,TC07,TC12.05
+persona,irritación nasal,305,297,TC03,TC12.02
+persona,golpes graves,306,186,TC12,TC10.03
+persona,afección respiratoria,307,775,TC10,TC11.04
+persona,desmayo,308,801,TC09,TC11.03
+persona,traumatismos internos,309,597,TC02,TC02.03
+persona,traumatismo encefalocraneano,310,892,TC01,TC08.05
+persona,entumecimiento de extremidades,311,139,TC03,TC02.02
+persona,desmayo,312,71,TC02,TC12.05
+persona,lesiones musculares,313,141,TC12,TC02.07
+persona,pérdida de coordinación,314,337,TC11,TC01.02
+persona,dolores de cabeza,315,893,TC06,TC04.04
+persona,hematomas,316,283,TC01,TC02.09
+persona,golpes graves,317,661,TC12,TC09.04
+persona,laceraciones,318,688,TC02,TC09.05
+persona,heridas cortantes,319,390,TC04,TC07.04
+persona,tensión muscular,320,218,TC05,TC10.05
+persona,daño a la columna,321,210,TC06,TC06.02
+persona,irritación de vías respiratorias,322,315,TC11,TC02.06
+persona,laceraciones,323,281,TC03,TC04.03
+persona,luxaciones,324,343,TC05,TC09.04
+persona,traumatismos internos,325,417,TC01,TC09.01
+persona,disminución de la capacidad auditiva,326,711,TC05,TC09.06
+persona,pérdida temporal de visión,327,979,TC02,TC11.05
+persona,fracturas,328,356,TC06,TC08.04
+persona,dolores de cabeza,329,609,TC09,TC02.04
+persona,alergias,330,198,TC01,TC10.01
+persona,heridas cortantes,331,43,TC03,TC05.01
+persona,pérdida temporal de visión,332,656,TC03,TC12.01
+persona,debilidad muscular,333,8,TC04,TC01.02
+persona,dificultad para respirar,334,479,TC12,TC09.07
+persona,irritación nasal,335,88,TC07,TC02.08
+persona,irritación nasal,336,563,TC11,TC09.07
+persona,disminución de la capacidad auditiva,337,679,TC03,TC08.03
+persona,lumbalgias,338,232,TC06,TC02.06
+persona,irritación nasal,339,176,TC10,TC02.03
+persona,fatiga crónica,340,652,TC08,TC04.02
+persona,dolores de cabeza,341,632,TC04,TC12.06
+persona,pérdida temporal de visión,342,477,TC02,TC09.06
+persona,fatiga,343,513,TC08,TC03.01
+persona,afección respiratoria,344,879,TC01,TC08.04
+persona,neumoconiosis,345,653,TC09,TC12.03
+persona,alergias,346,326,TC01,TC09.03
+persona,infecciones dérmicas,347,886,TC03,TC09.07
+persona,shock eléctrico,348,521,TC05,TC09.02
+persona,neumoconiosis,349,230,TC03,TC02.08
+persona,laceraciones,350,38,TC07,TC01.01
+persona,neumoconiosis,351,191,TC02,TC12.01
+persona,traumatismo encefalocraneano,352,661,TC08,TC07.04
+persona,shock eléctrico,353,17,TC10,TC02.07
+persona,irritación de piel y ojos,354,398,TC12,TC11.05
+persona,shock eléctrico,355,974,TC02,TC06.02
+persona,contusiones,356,393,TC03,TC04.04
+persona,laceraciones,357,821,TC04,TC09.03
+persona,irritación nasal,358,498,TC01,TC08.05
+persona,tensión muscular,359,203,TC07,TC02.05
+persona,traumatismos internos,360,20,TC07,TC05.01
+persona,lesiones musculares,361,935,TC06,TC05.02
+persona,Atricción,362,999,TC01,TC09.05
+persona,quemaduras químicas,363,124,TC03,TC03.01
+persona,lesiones musculares,364,875,TC02,TC10.04
+persona,pérdida temporal de visión,365,975,TC11,TC03.01
+persona,dificultad para respirar,366,680,TC11,TC02.08
+persona,fiebre de humos metálicos,367,14,TC04,TC09.06
+persona,irritación de piel y ojos,368,324,TC02,TC03.02
+persona,traumatismo encefalocraneano,369,248,TC08,TC02.05
+persona,dolores de cabeza,370,387,TC01,TC11.02
+persona,desorientación,371,700,TC05,TC02.02
+persona,debilidad muscular,372,752,TC10,TC12.04
+persona,traumatismos internos,373,549,TC04,TC09.09
+persona,quemadura,374,134,TC06,TC05.01
+persona,parálisis,375,684,TC04,TC04.04
+persona,fracturas,376,624,TC02,TC09.07
+persona,entumecimiento de extremidades,377,145,TC02,TC07.03
+persona,daño a la columna,378,343,TC03,TC12.01
+persona,pérdida temporal de visión,379,808,TC11,TC07.02
+persona,desgarros ligamentarios,380,954,TC12,TC09.01
+persona,contusiones,381,918,TC01,TC11.03
+persona,desorientación,382,541,TC01,TC08.02
+persona,pérdida de coordinación,383,155,TC09,TC02.06
+persona,muerte,384,713,TC11,TC09.02
+persona,laceraciones,385,253,TC01,TC02.05
+persona,heridas contusas,386,251,TC09,TC11.02
+persona,quemadura,387,554,TC08,TC09.01
+persona,irritación nasal,388,777,TC11,TC03.01
+persona,amputaciones de extremidades,389,369,TC10,TC12.03
+persona,contusiones,390,908,TC05,TC07.03
+persona,dolores de cabeza,391,559,TC08,TC09.08
+persona,heridas contusas,392,759,TC05,TC10.01
+persona,laceraciones,393,790,TC01,TC09.09
+persona,irritación nasal,394,470,TC05,TC10.04
+persona,heridas cortantes,395,922,TC01,TC12.01
+persona,neumoconiosis,396,437,TC11,TC10.04
+persona,amputaciones de extremidades,397,309,TC01,TC03.01
+persona,fatiga crónica,398,542,TC12,TC04.01
+persona,luxaciones,399,162,TC09,TC06.01
+persona,quemaduras químicas,400,553,TC08,TC02.04
+persona,dolores de cabeza,401,319,TC12,TC05.02
+persona,quemaduras químicas,402,246,TC10,TC09.01
+persona,dolores de cabeza,403,901,TC12,TC11.05
+persona,pérdida de equilibrio,404,278,TC06,TC09.03
+persona,quemadura,405,496,TC07,TC09.08
+persona,quemaduras químicas,406,662,TC07,TC01.01
+persona,alergias,407,167,TC12,TC09.05
+persona,entumecimiento de extremidades,408,627,TC07,TC07.01
+persona,pérdida temporal de visión,409,618,TC01,TC04.05
+persona,quemaduras químicas,410,471,TC10,TC11.03
+persona,pérdida auditiva permanente,411,462,TC10,TC11.03
+persona,pérdida de equilibrio,412,911,TC08,TC12.05
+persona,fiebre de humos metálicos,413,244,TC02,TC04.04
+persona,fatiga,414,483,TC07,TC02.09
+persona,amputaciones de extremidades,415,749,TC10,TC09.02
+persona,irritación nasal,416,312,TC06,TC12.04
+persona,amputaciones de extremidades,417,948,TC06,TC08.01
+persona,pérdida auditiva permanente,418,153,TC01,TC07.03
+persona,desorientación,419,399,TC01,TC02.10
+persona,Atricción,420,588,TC01,TC09.09
+persona,intoxicación,421,506,TC02,TC07.04
+persona,irritación nasal,422,517,TC12,TC12.05
+persona,lumbalgias,423,20,TC05,TC02.04
+persona,quemadura,424,272,TC01,TC02.05
+persona,desgarros ligamentarios,425,324,TC04,TC10.02
+persona,irritación de vías respiratorias,426,834,TC05,TC03.02
+persona,fracturas,427,267,TC08,TC08.03
+persona,desgarros ligamentarios,428,291,TC08,TC02.08
+persona,dificultad para respirar,429,524,TC09,TC08.02
+persona,irritación nasal,430,856,TC04,TC11.01
+persona,parálisis,431,996,TC07,TC09.06
+persona,parálisis,432,535,TC06,TC01.02
+persona,quemadura,433,512,TC02,TC02.10
+persona,fatiga crónica,434,43,TC06,TC09.02
+persona,irritación de vías respiratorias,435,132,TC12,TC08.05
+persona,lumbalgias,436,914,TC01,TC09.04
+persona,heridas contusas,437,226,TC05,TC04.05
+persona,heridas contusas,438,64,TC02,TC12.01
+persona,pérdida auditiva permanente,439,749,TC08,TC04.05
+persona,desgarros ligamentarios,440,28,TC08,TC01.02
+persona,tensión muscular,441,871,TC08,TC08.05
+persona,golpes fuertes,442,72,TC07,TC10.05
+persona,daño a la columna,443,622,TC05,TC09.09
+persona,heridas cortantes,444,317,TC07,TC09.09
+persona,quemaduras químicas,445,161,TC04,TC07.01
+persona,traumatismos internos,446,18,TC12,TC04.05
+persona,hematomas,447,81,TC09,TC09.02
+persona,laceraciones,448,159,TC07,TC11.03
+persona,quemaduras químicas,449,881,TC11,TC09.08
+persona,tensión muscular,450,446,TC09,TC12.04
+persona,desmayo,451,422,TC09,TC01.01
+persona,parálisis,452,594,TC04,TC08.07
+persona,afección respiratoria,453,152,TC08,TC10.04
+persona,neumoconiosis,454,19,TC11,TC03.02
+persona,heridas cortantes,455,390,TC05,TC02.02
+persona,irritación nasal,456,408,TC05,TC12.03
+persona,quemadura,457,192,TC04,TC09.07
+persona,pérdida auditiva permanente,458,520,TC01,TC11.01
+persona,alergias respiratorias crónicas,459,919,TC03,TC01.01
+persona,irritación de piel y ojos,460,54,TC08,TC02.02
+persona,alergias respiratorias crónicas,461,858,TC12,TC02.01
+persona,alergias respiratorias crónicas,462,502,TC03,TC09.02
+persona,pérdida auditiva permanente,463,758,TC04,TC11.03
+persona,Atricción,464,812,TC07,TC08.04
+persona,parálisis,465,276,TC11,TC08.02
+persona,irritación nasal,466,737,TC07,TC09.02
+persona,dolores de cabeza,467,640,TC02,TC10.02
+persona,pérdida de equilibrio,468,624,TC11,TC10.04
+persona,muerte,469,877,TC08,TC08.06
+persona,fiebre de humos metálicos,470,783,TC11,TC02.07
+persona,Atricción,471,499,TC11,TC02.02
+persona,laceraciones,472,730,TC10,TC11.02
+persona,Atricción,473,923,TC12,TC07.04
+persona,lesiones temporales por caídas,474,800,TC07,TC08.04
+persona,lesiones temporales por caídas,475,40,TC07,TC12.06
+persona,tensión muscular,476,775,TC05,TC01.01
+persona,daño a la columna,477,984,TC08,TC12.04
+persona,golpes fuertes,478,774,TC08,TC03.02
+persona,daño a la columna,479,788,TC12,TC10.03
+persona,heridas cortantes,480,348,TC11,TC12.05
+persona,heridas cortantes,481,939,TC02,TC07.02
+persona,tensión muscular,482,193,TC05,TC02.07
+persona,lesiones musculares,483,679,TC11,TC10.05
+persona,quemadura,484,649,TC03,TC02.01
+persona,pérdida de coordinación,485,906,TC12,TC02.09
+persona,fatiga crónica,486,826,TC03,TC12.06
+persona,alergias,487,459,TC02,TC05.02
+persona,tensión muscular,488,879,TC11,TC11.03
+persona,hematomas,489,994,TC01,TC12.01
+persona,desgarros ligamentarios,490,911,TC01,TC11.01
+persona,lumbalgias,491,996,TC06,TC09.08
+persona,infecciones dérmicas,492,697,TC06,TC10.01
+persona,dolores de cabeza,493,596,TC07,TC08.06
+persona,lesiones musculares,494,588,TC09,TC02.10
+persona,heridas cortantes,495,561,TC07,TC09.03
+persona,irritación nasal,496,5,TC11,TC12.04
+persona,alergias respiratorias crónicas,497,558,TC02,TC09.06
+persona,desmayo,498,216,TC01,TC08.05
+persona,irritación nasal,499,350,TC09,TC09.09
+persona,lesiones temporales por caídas,500,380,TC10,TC10.02
+persona,fracturas,501,696,TC12,TC05.01
+persona,quemaduras químicas,502,792,TC06,TC01.01
+persona,lesiones temporales por caídas,503,77,TC01,TC10.05
+persona,fatiga crónica,504,45,TC07,TC02.08
+persona,fatiga crónica,505,365,TC03,TC04.02
+persona,lesiones temporales por caídas,506,445,TC02,TC05.01
+persona,disminución de la capacidad auditiva,507,459,TC09,TC02.10
+persona,heridas cortantes,508,731,TC08,TC12.02
+persona,contusiones,509,865,TC05,TC05.02
+persona,pérdida temporal de visión,510,305,TC06,TC07.01
+persona,quemadura,511,503,TC09,TC04.04
+persona,heridas cortantes,512,875,TC06,TC03.02
+persona,shock eléctrico,513,416,TC05,TC11.05
+persona,debilidad muscular,514,854,TC03,TC02.08
+persona,lumbalgias,515,726,TC10,TC02.02
+persona,fatiga,516,409,TC11,TC08.06
+persona,contusiones,517,399,TC09,TC08.03
+persona,parálisis,518,180,TC11,TC02.05
+persona,dolores de cabeza,519,589,TC06,TC08.07
+persona,heridas contusas,520,63,TC08,TC05.02
+persona,dificultad para respirar,521,960,TC02,TC02.02
+persona,contusiones,522,721,TC03,TC09.02
+persona,pérdida de equilibrio,523,910,TC10,TC10.03
+persona,fatiga crónica,524,603,TC05,TC06.02
+persona,fiebre de humos metálicos,525,655,TC05,TC11.01
+persona,daño a la columna,526,142,TC02,TC08.06
+persona,entumecimiento de extremidades,527,167,TC04,TC10.03
+persona,pérdida auditiva permanente,528,61,TC01,TC10.02
+persona,tensión muscular,529,829,TC03,TC09.07
+persona,traumatismo encefalocraneano,530,231,TC10,TC09.09
+persona,traumatismo encefalocraneano,531,715,TC02,TC08.06
+persona,desgarros ligamentarios,532,431,TC11,TC10.02
+persona,alergias respiratorias crónicas,533,139,TC10,TC10.03
+persona,alergias respiratorias crónicas,534,203,TC05,TC10.04
+persona,desorientación,535,797,TC07,TC08.02
+persona,contusiones,536,946,TC11,TC12.06
+persona,dolores de cabeza,537,617,TC10,TC09.05
+persona,fracturas,538,802,TC01,TC09.08
+persona,alergias respiratorias crónicas,539,390,TC10,TC01.02
+persona,pérdida de coordinación,540,944,TC04,TC09.04
+persona,golpes graves,541,222,TC06,TC11.04
+persona,lesiones musculares,542,191,TC06,TC09.09
+persona,desgarros ligamentarios,543,115,TC08,TC02.09
+persona,golpes graves,544,681,TC09,TC02.07
+persona,hematomas,545,831,TC02,TC06.02
+persona,pérdida temporal de visión,546,371,TC11,TC08.04
+persona,amputaciones de extremidades,547,864,TC01,TC12.06
+persona,quemadura,548,533,TC08,TC05.02
+persona,fiebre de humos metálicos,549,788,TC07,TC10.01
+persona,lumbalgias,550,453,TC07,TC10.05
+persona,pérdida de equilibrio,551,60,TC06,TC02.09
+persona,irritación de vías respiratorias,552,796,TC04,TC04.01
+persona,traumatismos internos,553,509,TC09,TC08.05
+persona,quemaduras químicas,554,202,TC08,TC10.01
+persona,disminución de la capacidad auditiva,555,959,TC10,TC06.02
+persona,alergias respiratorias crónicas,556,359,TC09,TC02.02
+persona,intoxicación,557,738,TC09,TC05.02
+persona,lesiones musculares,558,365,TC01,TC11.03
+persona,fatiga,559,376,TC07,TC09.07
+persona,hematomas,560,701,TC05,TC02.05
+persona,pérdida de coordinación,561,101,TC01,TC09.09
+persona,quemaduras químicas,562,174,TC03,TC12.03
+persona,lumbalgias,563,259,TC05,TC09.02
+persona,alergias respiratorias crónicas,564,15,TC01,TC02.07
+persona,tensión muscular,565,989,TC07,TC02.09
+persona,pérdida temporal de visión,566,838,TC06,TC05.01
+persona,infecciones dérmicas,567,539,TC09,TC03.01
+persona,fracturas,568,789,TC12,TC07.02
+persona,entumecimiento de extremidades,569,529,TC04,TC11.03
+persona,amputaciones de extremidades,570,30,TC04,TC02.05
+persona,muerte,571,113,TC07,TC08.02
+persona,traumatismos internos,572,400,TC01,TC05.02
+persona,dolores de cabeza,573,871,TC02,TC11.01
+persona,fracturas,574,252,TC10,TC02.08
+persona,tensión muscular,575,290,TC05,TC04.01
+persona,desgarros ligamentarios,576,42,TC03,TC02.07
+persona,irritación nasal,577,854,TC10,TC09.02
+persona,muerte,578,507,TC11,TC06.01
+persona,fracturas,579,189,TC08,TC01.02
+persona,quemaduras químicas,580,716,TC07,TC10.02
+persona,desgarros ligamentarios,581,458,TC04,TC11.04
+persona,intoxicación,582,781,TC08,TC02.09
+persona,pérdida de equilibrio,583,433,TC09,TC04.03
+persona,amputaciones de extremidades,584,27,TC01,TC10.04
+persona,irritación de vías respiratorias,585,577,TC09,TC02.09
+persona,debilidad muscular,586,140,TC08,TC04.01
+persona,shock eléctrico,587,231,TC09,TC11.03
+persona,muerte,588,81,TC02,TC08.01
+persona,alergias respiratorias crónicas,589,453,TC09,TC07.01
+persona,irritación nasal,590,758,TC12,TC07.01
+persona,luxaciones,591,768,TC06,TC09.02
+persona,fiebre de humos metálicos,592,369,TC07,TC03.02
+persona,pérdida de equilibrio,593,952,TC10,TC08.05
+persona,tensión muscular,594,920,TC12,TC01.01
+persona,dolores de cabeza,595,335,TC09,TC02.08
+persona,dificultad para respirar,596,664,TC07,TC06.02
+persona,pérdida de coordinación,597,58,TC09,TC08.06
+persona,pérdida de equilibrio,598,575,TC09,TC09.05
+persona,dificultad para respirar,599,913,TC11,TC07.02
+persona,daño a la columna,600,321,TC03,TC07.01
+persona,pérdida auditiva permanente,601,586,TC06,TC11.05
+persona,laceraciones,602,487,TC06,TC11.02
+persona,dificultad para respirar,603,797,TC08,TC10.05
+persona,fatiga crónica,604,900,TC07,TC04.01
+persona,fracturas,605,847,TC02,TC03.02
+persona,luxaciones,606,254,TC08,TC09.05
+persona,desgarros ligamentarios,607,404,TC01,TC02.06
+persona,alergias,608,713,TC01,TC07.03
+persona,desorientación,609,319,TC10,TC04.05
+persona,daño a la columna,610,592,TC07,TC12.03
+persona,lumbalgias,611,721,TC11,TC08.06
+persona,pérdida temporal de visión,612,287,TC01,TC12.06
+persona,intoxicación,613,887,TC01,TC06.01
+persona,shock eléctrico,614,123,TC10,TC08.05
+persona,pérdida temporal de visión,615,935,TC05,TC04.04
+persona,laceraciones,616,331,TC01,TC02.06
+persona,parálisis,617,790,TC09,TC11.05
+persona,disminución de la capacidad auditiva,618,491,TC07,TC09.09
+persona,tensión muscular,619,477,TC04,TC03.02
+persona,lumbalgias,620,39,TC08,TC09.07
+persona,traumatismo encefalocraneano,621,898,TC05,TC02.10
+persona,laceraciones,622,663,TC01,TC09.09
+persona,pérdida auditiva permanente,623,818,TC08,TC02.10
+persona,pérdida de coordinación,624,375,TC05,TC08.07
+persona,Atricción,625,246,TC02,TC10.01
+persona,traumatismos internos,626,222,TC11,TC04.04
+persona,daño a la columna,627,281,TC12,TC12.03
+persona,irritación nasal,628,927,TC04,TC08.03
+persona,heridas contusas,629,997,TC10,TC10.05
+persona,neumoconiosis,630,500,TC05,TC08.06
+persona,daño a la columna,631,386,TC11,TC02.08
+persona,intoxicación,632,303,TC12,TC02.08
+persona,dolores de cabeza,633,676,TC09,TC09.07
+persona,pérdida de coordinación,634,752,TC11,TC02.03
+persona,alergias,635,752,TC12,TC10.05
+persona,pérdida temporal de visión,636,193,TC11,TC10.02
+persona,fracturas,637,179,TC09,TC05.02
+persona,irritación de piel y ojos,638,401,TC02,TC11.02
+persona,lesiones musculares,639,728,TC09,TC08.04
+persona,alergias respiratorias crónicas,640,410,TC01,TC05.01
+persona,heridas contusas,641,677,TC04,TC09.06
+persona,contusiones,642,989,TC07,TC04.04
+persona,Atricción,643,571,TC09,TC04.03
+persona,daño a la columna,644,559,TC04,TC12.03
+persona,quemaduras químicas,645,441,TC12,TC09.06
+persona,afección respiratoria,646,466,TC10,TC03.01
+persona,pérdida de equilibrio,647,456,TC12,TC01.02
+persona,fiebre de humos metálicos,648,601,TC07,TC07.04
+persona,disminución de la capacidad auditiva,649,444,TC12,TC08.03
+persona,dolores de cabeza,650,168,TC05,TC04.04
+persona,daño a la columna,651,818,TC08,TC01.01
+persona,desgarros ligamentarios,652,629,TC06,TC07.04
+persona,dolores de cabeza,653,46,TC10,TC09.01
+persona,heridas cortantes,654,984,TC03,TC08.06
+persona,dolores de cabeza,655,566,TC08,TC02.01
+persona,desgarros ligamentarios,656,657,TC08,TC07.01
+persona,quemadura,657,819,TC04,TC02.04
+persona,lesiones temporales por caídas,658,297,TC09,TC08.06
+persona,irritación de piel y ojos,659,194,TC01,TC07.01
+persona,alergias,660,546,TC03,TC08.07
+persona,infecciones dérmicas,661,861,TC08,TC10.03
+persona,irritación de piel y ojos,662,854,TC03,TC03.02
+persona,dificultad para respirar,663,563,TC11,TC02.02
+persona,irritación de piel y ojos,664,450,TC09,TC12.03
+persona,pérdida temporal de visión,665,600,TC01,TC08.04
+persona,laceraciones,666,370,TC06,TC02.10
+persona,traumatismo encefalocraneano,667,775,TC06,TC02.07
+persona,irritación nasal,668,308,TC02,TC04.01
+persona,intoxicación,669,362,TC02,TC02.04
+persona,parálisis,670,344,TC05,TC04.03
+persona,infecciones dérmicas,671,561,TC08,TC06.02
+persona,fatiga crónica,672,971,TC10,TC09.05
+persona,laceraciones,673,379,TC05,TC02.02
+persona,golpes graves,674,769,TC07,TC08.03
+persona,fracturas,675,292,TC01,TC10.02
+persona,infecciones dérmicas,676,956,TC03,TC12.01
+persona,Atricción,677,322,TC08,TC10.02
+persona,desmayo,678,403,TC01,TC04.03
+persona,fatiga crónica,679,776,TC05,TC12.03
+persona,quemaduras químicas,680,689,TC09,TC07.03
+persona,alergias respiratorias crónicas,681,581,TC03,TC09.09
+persona,irritación nasal,682,336,TC04,TC01.02
+persona,quemaduras químicas,683,906,TC12,TC09.04
+persona,pérdida de coordinación,684,580,TC04,TC04.03
+persona,alergias,685,410,TC05,TC09.04
+persona,lumbalgias,686,948,TC12,TC01.01
+persona,lesiones musculares,687,135,TC12,TC03.02
+persona,Atricción,688,54,TC05,TC10.05
+persona,pérdida temporal de visión,689,752,TC06,TC09.07
+persona,parálisis,690,570,TC04,TC02.04
+persona,pérdida de equilibrio,691,322,TC12,TC12.03
+persona,quemadura,692,801,TC11,TC06.02
+persona,dificultad para respirar,693,897,TC08,TC09.06
+persona,quemadura,694,138,TC08,TC07.04
+persona,desmayo,695,191,TC09,TC10.03
+persona,entumecimiento de extremidades,696,882,TC02,TC11.03
+persona,irritación de vías respiratorias,697,672,TC02,TC02.08
+persona,quemadura,698,588,TC10,TC10.01
+persona,traumatismos internos,699,653,TC06,TC10.03
+persona,lumbalgias,700,230,TC02,TC11.04
+persona,fiebre de humos metálicos,701,351,TC11,TC09.08
+persona,irritación de vías respiratorias,702,223,TC05,TC08.03
+persona,amputaciones de extremidades,703,531,TC01,TC08.02
+persona,daño a la columna,704,557,TC04,TC04.04
+persona,hematomas,705,790,TC10,TC02.01
+persona,daño a la columna,706,486,TC09,TC09.06
+persona,irritación de piel y ojos,707,194,TC11,TC09.07
+persona,daño a la columna,708,895,TC08,TC03.02
+persona,infecciones dérmicas,709,719,TC06,TC09.02
+persona,heridas contusas,710,16,TC10,TC05.01
+persona,lesiones temporales por caídas,711,593,TC03,TC04.01
+persona,tensión muscular,712,235,TC01,TC11.04
+persona,afección respiratoria,713,178,TC01,TC09.04
+persona,desgarros ligamentarios,714,365,TC05,TC09.03
+persona,quemaduras químicas,715,399,TC06,TC08.02
+persona,fiebre de humos metálicos,716,536,TC08,TC12.04
+persona,lesiones temporales por caídas,717,961,TC06,TC04.02
+persona,tensión muscular,718,299,TC05,TC03.02
+persona,entumecimiento de extremidades,719,740,TC07,TC09.03
+persona,golpes fuertes,720,310,TC07,TC02.09
+persona,parálisis,721,3,TC08,TC11.04
+persona,fiebre de humos metálicos,722,568,TC02,TC09.06
+persona,golpes fuertes,723,131,TC02,TC04.05
+persona,disminución de la capacidad auditiva,724,117,TC07,TC09.03
+persona,desmayo,725,530,TC07,TC10.04
+persona,debilidad muscular,726,327,TC07,TC12.04
+persona,muerte,727,651,TC03,TC04.02
+persona,infecciones dérmicas,728,447,TC07,TC02.01
+persona,lesiones temporales por caídas,729,276,TC01,TC12.04
+persona,debilidad muscular,730,92,TC05,TC07.04
+persona,fatiga crónica,731,974,TC09,TC02.09
+persona,lumbalgias,732,689,TC08,TC02.01
+persona,golpes fuertes,733,227,TC01,TC07.03
+persona,pérdida temporal de visión,734,637,TC03,TC08.06
+persona,golpes fuertes,735,767,TC01,TC12.01
+persona,desorientación,736,264,TC05,TC06.02
+persona,pérdida temporal de visión,737,768,TC07,TC08.02
+persona,infecciones dérmicas,738,985,TC11,TC04.02
+persona,alergias,739,103,TC08,TC07.02
+persona,fiebre de humos metálicos,740,215,TC03,TC10.03
+persona,fatiga,741,957,TC11,TC02.08
+persona,quemadura,742,979,TC10,TC06.02
+persona,lumbalgias,743,494,TC09,TC12.05
+persona,pérdida de coordinación,744,436,TC08,TC12.05
+persona,lumbalgias,745,730,TC02,TC08.06
+persona,lesiones temporales por caídas,746,253,TC02,TC12.05
+persona,lesiones temporales por caídas,747,159,TC05,TC01.02
+persona,fatiga crónica,748,310,TC05,TC11.03
+persona,fatiga,749,128,TC03,TC06.01
+persona,pérdida de coordinación,750,491,TC04,TC08.05
+persona,shock eléctrico,751,802,TC06,TC02.09
+persona,irritación nasal,752,10,TC03,TC07.01
+persona,debilidad muscular,753,680,TC07,TC02.10
+persona,neumoconiosis,754,733,TC08,TC02.10
+persona,fracturas,755,683,TC01,TC08.06
+persona,tensión muscular,756,364,TC07,TC09.01
+persona,hematomas,757,886,TC12,TC12.04
+persona,heridas cortantes,758,197,TC05,TC01.01
+persona,dolores de cabeza,759,804,TC04,TC10.01
+persona,debilidad muscular,760,174,TC03,TC09.07
+persona,fatiga crónica,761,65,TC07,TC10.04
+persona,lesiones musculares,762,358,TC06,TC09.06
+persona,contusiones,763,667,TC11,TC11.01
+persona,neumoconiosis,764,731,TC07,TC11.04
+persona,pérdida de coordinación,765,660,TC03,TC08.01
+persona,fatiga crónica,766,706,TC05,TC09.05
+persona,quemaduras químicas,767,909,TC08,TC03.01
+persona,muerte,768,212,TC08,TC09.08
+persona,desgarros ligamentarios,769,303,TC01,TC10.04
+persona,heridas contusas,770,196,TC04,TC11.02
+persona,desgarros ligamentarios,771,429,TC08,TC09.06
+persona,Atricción,772,521,TC04,TC04.03
+persona,pérdida temporal de visión,773,928,TC12,TC12.02
+persona,fiebre de humos metálicos,774,985,TC01,TC09.07
+persona,irritación de piel y ojos,775,350,TC08,TC11.05
+persona,Atricción,776,373,TC12,TC08.05
+persona,intoxicación,777,347,TC12,TC06.02
+persona,traumatismo encefalocraneano,778,156,TC12,TC12.06
+persona,neumoconiosis,779,632,TC10,TC11.05
+persona,heridas contusas,780,829,TC10,TC01.02
+persona,irritación de vías respiratorias,781,78,TC04,TC08.07
+persona,laceraciones,782,287,TC11,TC08.06
+persona,golpes fuertes,783,561,TC03,TC02.02
+persona,contusiones,784,224,TC06,TC12.03
+persona,contusiones,785,556,TC06,TC08.03
+persona,dificultad para respirar,786,709,TC09,TC01.02
+persona,fatiga,787,787,TC10,TC04.02
+persona,golpes fuertes,788,19,TC01,TC09.04
+persona,dolores de cabeza,789,843,TC05,TC11.04
+persona,heridas cortantes,790,957,TC11,TC02.10
+persona,hematomas,791,856,TC09,TC02.07
+persona,lumbalgias,792,644,TC06,TC06.02
+persona,infecciones dérmicas,793,378,TC03,TC02.10
+persona,quemaduras químicas,794,792,TC12,TC02.05
+persona,fracturas,795,769,TC12,TC11.02
+persona,fracturas,796,53,TC08,TC12.04
+persona,infecciones dérmicas,797,849,TC01,TC11.02
+persona,irritación de piel y ojos,798,773,TC06,TC02.08
+persona,quemadura,799,453,TC08,TC08.07
+persona,fatiga crónica,800,404,TC11,TC08.05
+persona,laceraciones,801,549,TC10,TC09.04
+persona,pérdida temporal de visión,802,577,TC05,TC08.07
+persona,entumecimiento de extremidades,803,86,TC05,TC07.02
+persona,neumoconiosis,804,31,TC11,TC12.06
+persona,laceraciones,805,272,TC02,TC07.04
+persona,golpes graves,806,792,TC11,TC05.01
+persona,fatiga crónica,807,191,TC11,TC07.04
+persona,fatiga,808,109,TC08,TC04.03
+persona,traumatismos internos,809,932,TC08,TC04.05
+persona,dolores de cabeza,810,137,TC10,TC02.09
+persona,lesiones temporales por caídas,811,969,TC03,TC12.01
+persona,alergias respiratorias crónicas,812,104,TC06,TC08.02
+persona,fracturas,813,826,TC02,TC06.01
+persona,pérdida de equilibrio,814,443,TC12,TC10.03
+persona,pérdida auditiva permanente,815,121,TC07,TC09.04
+persona,shock eléctrico,816,997,TC04,TC09.03
+persona,dolores de cabeza,817,246,TC03,TC10.04
+persona,heridas contusas,818,891,TC07,TC12.04
+persona,tensión muscular,819,266,TC03,TC02.09
+persona,desgarros ligamentarios,820,95,TC07,TC02.05
+persona,dificultad para respirar,821,629,TC05,TC12.04
+persona,golpes graves,822,50,TC05,TC03.01
+persona,fracturas,823,65,TC05,TC02.06
+persona,entumecimiento de extremidades,824,857,TC09,TC07.04
+persona,daño a la columna,825,332,TC01,TC08.06
+persona,heridas cortantes,826,437,TC10,TC04.02
+persona,shock eléctrico,827,486,TC05,TC09.02
+persona,shock eléctrico,828,653,TC01,TC06.02
+persona,irritación de piel y ojos,829,742,TC07,TC11.05
+persona,amputaciones de extremidades,830,228,TC12,TC12.01
+persona,daño a la columna,831,189,TC02,TC02.03
+persona,neumoconiosis,832,47,TC06,TC02.08
+persona,muerte,833,543,TC04,TC09.07
+persona,alergias,834,59,TC06,TC09.02
+persona,alergias respiratorias crónicas,835,139,TC01,TC12.01
+persona,desgarros ligamentarios,836,881,TC04,TC02.05
+persona,alergias,837,872,TC04,TC08.03
+persona,fracturas,838,984,TC05,TC11.04
+persona,heridas cortantes,839,624,TC08,TC10.01
+persona,traumatismo encefalocraneano,840,342,TC02,TC02.01
+persona,neumoconiosis,841,337,TC01,TC02.02
+persona,irritación nasal,842,100,TC12,TC10.05
+persona,quemadura,843,676,TC10,TC02.01
+persona,entumecimiento de extremidades,844,261,TC03,TC02.05
+persona,traumatismo encefalocraneano,845,771,TC11,TC08.03
+persona,traumatismos internos,846,946,TC09,TC04.04
+persona,alergias,847,186,TC09,TC09.09
+persona,laceraciones,848,49,TC01,TC09.02
+persona,quemaduras químicas,849,886,TC11,TC02.06
+persona,Atricción,850,450,TC03,TC02.04
+persona,fracturas,851,52,TC08,TC02.05
+persona,fiebre de humos metálicos,852,908,TC10,TC10.01
+persona,disminución de la capacidad auditiva,853,577,TC11,TC11.04
+persona,shock eléctrico,854,388,TC12,TC02.06
+persona,infecciones dérmicas,855,431,TC04,TC09.07
+persona,fiebre de humos metálicos,856,435,TC03,TC04.03
+persona,tensión muscular,857,434,TC09,TC02.03
+persona,parálisis,858,871,TC11,TC02.05
+persona,hematomas,859,817,TC10,TC02.10
+persona,disminución de la capacidad auditiva,860,448,TC01,TC09.09
+persona,lesiones temporales por caídas,861,520,TC08,TC10.02
+persona,heridas contusas,862,979,TC03,TC04.05
+persona,pérdida de equilibrio,863,653,TC06,TC08.07
+persona,fracturas,864,448,TC02,TC07.01
+persona,pérdida temporal de visión,865,374,TC06,TC10.05
+persona,lumbalgias,866,110,TC11,TC05.01
+persona,contusiones,867,68,TC04,TC12.03
+persona,fracturas,868,280,TC12,TC09.07
+persona,irritación de piel y ojos,869,574,TC07,TC03.02
+persona,laceraciones,870,40,TC07,TC02.04
+persona,fiebre de humos metálicos,871,376,TC07,TC10.02
+persona,lumbalgias,872,818,TC05,TC03.02
+persona,muerte,873,707,TC03,TC12.06
+persona,lesiones temporales por caídas,874,258,TC02,TC07.04
+persona,fatiga crónica,875,659,TC05,TC02.10
+persona,afección respiratoria,876,651,TC08,TC09.05
+persona,alergias respiratorias crónicas,877,686,TC11,TC02.06
+persona,quemadura,878,751,TC02,TC09.01
+persona,amputaciones de extremidades,879,322,TC03,TC10.04
+persona,heridas contusas,880,483,TC02,TC07.04
+persona,golpes graves,881,70,TC03,TC10.02
+persona,debilidad muscular,882,244,TC03,TC12.03
+persona,daño a la columna,883,953,TC08,TC02.02
+persona,irritación de piel y ojos,884,274,TC11,TC08.07
+persona,pérdida de coordinación,885,430,TC05,TC08.06
+persona,irritación de piel y ojos,886,604,TC11,TC04.02
+persona,contusiones,887,978,TC09,TC02.05
+persona,dolores de cabeza,888,226,TC10,TC02.10
+persona,lesiones musculares,889,829,TC11,TC12.04
+persona,lumbalgias,890,369,TC06,TC07.02
+persona,pérdida temporal de visión,891,178,TC07,TC03.01
+persona,fatiga,892,183,TC05,TC08.02
+persona,contusiones,893,358,TC04,TC02.07
+persona,desorientación,894,183,TC07,TC10.05
+persona,debilidad muscular,895,650,TC08,TC07.04
+persona,luxaciones,896,23,TC10,TC09.07
+persona,irritación de vías respiratorias,897,423,TC04,TC02.04
+persona,desgarros ligamentarios,898,22,TC10,TC02.02
+persona,neumoconiosis,899,76,TC09,TC10.05
+persona,entumecimiento de extremidades,900,227,TC06,TC11.05
+persona,pérdida de coordinación,901,523,TC04,TC08.07
+persona,pérdida de equilibrio,902,732,TC01,TC04.02
+persona,heridas contusas,903,547,TC03,TC10.03
+persona,infecciones dérmicas,904,21,TC03,TC02.04
+persona,dificultad para respirar,905,69,TC08,TC08.04
+persona,lumbalgias,906,389,TC10,TC12.04
+persona,contusiones,907,115,TC09,TC11.01
+persona,pérdida auditiva permanente,908,342,TC03,TC10.02
+persona,irritación de piel y ojos,909,534,TC07,TC12.03
+persona,alergias respiratorias crónicas,910,773,TC07,TC09.06
+persona,lumbalgias,911,405,TC10,TC02.06
+persona,laceraciones,912,771,TC06,TC02.04
+persona,pérdida de coordinación,913,180,TC12,TC05.02
+persona,contusiones,914,552,TC10,TC08.05
+persona,desmayo,915,504,TC07,TC02.01
+persona,neumoconiosis,916,485,TC10,TC09.06
+persona,pérdida de coordinación,917,207,TC11,TC07.04
+persona,desorientación,918,173,TC11,TC10.02
+persona,golpes graves,919,502,TC09,TC09.05
+persona,lesiones musculares,920,24,TC07,TC12.02
+persona,lumbalgias,921,521,TC06,TC09.05
+persona,irritación de piel y ojos,922,373,TC11,TC02.01
+persona,neumoconiosis,923,546,TC01,TC11.03
+persona,disminución de la capacidad auditiva,924,778,TC03,TC06.02
+persona,fracturas,925,939,TC12,TC02.05
+persona,irritación de vías respiratorias,926,488,TC03,TC02.09
+persona,golpes graves,927,382,TC08,TC04.01
+persona,disminución de la capacidad auditiva,928,776,TC04,TC11.04
+persona,desorientación,929,363,TC08,TC10.02
+persona,golpes graves,930,624,TC01,TC03.01
+persona,tensión muscular,931,816,TC09,TC02.02
+persona,golpes graves,932,458,TC02,TC04.01
+persona,pérdida de coordinación,933,570,TC08,TC08.07
+persona,pérdida temporal de visión,934,25,TC05,TC09.01
+persona,golpes fuertes,935,481,TC11,TC04.05
+persona,pérdida de coordinación,936,496,TC02,TC02.10
+persona,contusiones,937,26,TC09,TC12.03
+persona,golpes fuertes,938,792,TC06,TC09.08
+persona,lesiones musculares,939,501,TC12,TC03.02
+persona,lumbalgias,940,125,TC04,TC06.01
+persona,tensión muscular,941,519,TC10,TC02.09
+persona,desgarros ligamentarios,942,775,TC09,TC02.07
+persona,fatiga crónica,943,614,TC07,TC12.04
+persona,fatiga,944,658,TC05,TC05.02
+persona,intoxicación,945,482,TC11,TC11.04
+persona,pérdida de equilibrio,946,922,TC04,TC06.02
+persona,desgarros ligamentarios,947,864,TC11,TC08.01
+persona,pérdida temporal de visión,948,326,TC11,TC10.05
+persona,desgarros ligamentarios,949,402,TC04,TC02.01
+persona,muerte,950,261,TC10,TC07.03
+persona,debilidad muscular,951,413,TC06,TC03.02
+persona,dolores de cabeza,952,611,TC09,TC08.06
+persona,contusiones,953,5,TC11,TC08.06
+persona,fiebre de humos metálicos,954,638,TC10,TC07.04
+persona,fatiga crónica,955,140,TC11,TC11.03
+persona,contusiones,956,72,TC04,TC09.09
+persona,intoxicación,957,733,TC04,TC10.01
+persona,pérdida de coordinación,958,648,TC08,TC12.03
+persona,heridas cortantes,959,119,TC09,TC05.02
+persona,amputaciones de extremidades,960,676,TC08,TC04.01
+persona,desorientación,961,277,TC09,TC10.02
+persona,parálisis,962,176,TC10,TC05.02
+persona,infecciones dérmicas,963,724,TC06,TC12.02
+persona,alergias respiratorias crónicas,964,72,TC07,TC09.06
+persona,golpes fuertes,965,429,TC11,TC02.07
+persona,afección respiratoria,966,675,TC12,TC02.02
+persona,pérdida temporal de visión,967,18,TC10,TC03.02
+persona,heridas cortantes,968,843,TC10,TC05.01
+persona,heridas contusas,969,952,TC11,TC12.02
+persona,quemadura,970,857,TC11,TC10.01
+persona,golpes graves,971,331,TC07,TC12.05
+persona,fracturas,972,987,TC09,TC10.05
+persona,heridas cortantes,973,360,TC06,TC09.02
+persona,golpes fuertes,974,861,TC02,TC01.02
+persona,luxaciones,975,376,TC03,TC08.06
+persona,pérdida temporal de visión,976,589,TC02,TC04.02
+persona,intoxicación,977,466,TC01,TC02.04
+persona,shock eléctrico,978,50,TC02,TC01.02
+persona,luxaciones,979,930,TC01,TC04.02
+persona,entumecimiento de extremidades,980,822,TC12,TC08.03
+persona,traumatismos internos,981,830,TC10,TC08.01
+persona,golpes graves,982,921,TC10,TC02.05
+persona,irritación de piel y ojos,983,520,TC09,TC04.05
+persona,Atricción,984,796,TC04,TC10.03
+persona,desmayo,985,582,TC02,TC04.03
+persona,contusiones,986,712,TC08,TC02.04
+persona,traumatismo encefalocraneano,987,740,TC05,TC08.06
+persona,heridas contusas,988,996,TC06,TC11.01
+persona,luxaciones,989,332,TC12,TC10.02
+persona,fiebre de humos metálicos,990,477,TC02,TC09.06
+persona,fatiga crónica,991,440,TC09,TC11.02
+persona,lumbalgias,992,640,TC01,TC06.02
+persona,desgarros ligamentarios,993,363,TC07,TC10.01
+persona,heridas cortantes,994,768,TC10,TC10.02
+persona,golpes fuertes,995,509,TC11,TC08.05
+persona,irritación de vías respiratorias,996,689,TC08,TC10.04
+persona,contusiones,997,376,TC06,TC07.03
+persona,golpes graves,998,940,TC11,TC04.02
+persona,quemadura,999,872,TC12,TC11.02
+persona,Atricción,1000,934,TC04,TC07.01
