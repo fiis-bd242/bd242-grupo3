@@ -261,13 +261,13 @@ DROP TABLE IF EXISTS Actividad_empleado CASCADE;
 CREATE TABLE Actividad_empleado
 (
   Id_actvempleado INT NOT NULL,
-  nombre_actv VARCHAR(100) NOT NULL,
-  Descripcion_actv VARCHAR(255) NOT NULL,
-  fecha_inicio DATE NOT NULL,
-  fecha_fin DATE NOT NULL,
+  nombre_actv VARCHAR(100) ,
+  Descripcion_actv VARCHAR(255) ,
+  fecha_inicio DATE,
+  fecha_fin DATE,
   Id_equipo_soporte INT,
-  Id_empleado INT NOT NULL,
-  id_estado INT NOT NULL,
+  Id_empleado INT,
+  id_estado INT,
   Id_Orden INT NOT NULL,
   PRIMARY KEY (Id_actvempleado),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
@@ -366,7 +366,7 @@ CREATE TABLE Mantenimiento
   Id_Act_mantto INT NOT NULL,
   Fecha_inicio_programado DATE NOT NULL,
   Fecha_fin_programado DATE NOT NULL,
-  Id_Orden INT NOT NULL,
+  Id_Orden INT,
   Id_plan INT NOT NULL,
   id_tipo_mant INT NOT NULL,
   Id_maquina INT NOT NULL,
@@ -720,7 +720,7 @@ DROP TABLE IF EXISTS Tipo_notificacion CASCADE;
 CREATE TABLE Tipo_notificacion
 (
   id_tipo INT NOT NULL,
-  tipo VARCHAR(50) NOT NULL,
+  tipo VARCHAR(50),
   PRIMARY KEY (id_tipo)
 );
 
