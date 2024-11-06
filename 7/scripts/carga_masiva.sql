@@ -87,7 +87,7 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipos_de_Soporte.csv' DELIMITER ',' CSV HEADER;
+COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipo_de_Soporte.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla EquipoSXAlmacen
 COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
