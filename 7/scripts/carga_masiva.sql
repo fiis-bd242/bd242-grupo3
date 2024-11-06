@@ -576,8 +576,8 @@ COPY pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\
 -- Poblamiento de la tabla tipo_producto
 INSERT INTO Tipo_producto (Id_tipo_producto, nombre_producto)
 VALUES
-(1, 'Insumos')
-(2, 'Equipos de Soporte')
+(1, 'Insumos'),
+(2, 'Equipos de Soporte');
 
 -- Poblamiento de la tabla detalle_pedido_compra
 COPY detalle_pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Detalle_Pedido_Compra.csv' DELIMITER ',' CSV HEADER;
