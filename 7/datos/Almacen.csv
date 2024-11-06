@@ -1,4 +1,4 @@
-﻿Id_almacen,Direccion,Capacidad,Id_empleado,Id_estado,Id,categoria
+﻿id_almacen,direccion,capacidad,id_empleado,id_estado,id_categoria
 1,Almacen Central,5000,1,1,2
 2,Almacen Norte,2000,5,2,3
 3,Almacen Sur,1500,2,1,2

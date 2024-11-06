@@ -69,8 +69,8 @@ INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
 (1, 'Generador'),
 (2, 'Compresor de Aire'),
 (3, 'Torre de Iluminación'),
-(4, 'Sistema de Bombeo');
-(5, 'Equipos Pesados')
+(4, 'Sistema de Bombeo'),
+(5, 'Equipos Pesados');
 
 -- Poblamiento de la tabla Disponibilidad_equipo_soporte
 INSERT INTO Disponibilidad_Equipo_Soporte (Id_disponibilidad, Nombre_disponibilidad) 
