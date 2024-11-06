@@ -36,14 +36,6 @@ CREATE TABLE Herramienta
   PRIMARY KEY (Id_herramienta)
 );
 
-DROP TABLE IF EXISTS Estado_Compra CASCADE;
-CREATE TABLE Estado_Compra
-(
-  Id_estado_pedido INT NOT NULL,
-  nombre_estado VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Id_estado_pedido)
-);
-
 DROP TABLE IF EXISTS Criticidad CASCADE;
 CREATE TABLE Criticidad
 (
@@ -376,6 +368,18 @@ CREATE TABLE Mantenimiento
   FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento(id_tipo_mant),
   FOREIGN KEY (id_maquina) REFERENCES Maquina(Id_maquina),
   FOREIGN KEY (id_estado) REFERENCES Estado_mantto(id_estado)
+);
+
+DROP TABLE IF EXISTS EquipoSXMantenimiento CASCADE;
+CREATE TABLE EquipoSXMantenimiento
+(
+  id_equipo_mant INT NOT NULL,
+  cantidad INT NOT NULL,
+  Id_Act_mantto INT NOT NULL,
+  Id_equipo_soporte INT NOT NULL,
+  PRIMARY KEY (id_equipo_mant),
+  FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto),
+  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
 );
 
 DROP TABLE IF EXISTS HerramientaXMantenimiento CASCADE;

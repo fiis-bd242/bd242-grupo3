@@ -62,11 +62,7 @@ VALUES
 (2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
-<<<<<<< HEAD
-COPY Almacen FROM 'C:\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
-=======
 COPY almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
->>>>>>> af8897df1d11043bf5ddbf069d762cc8cb89a48a
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -91,67 +87,7 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-<<<<<<< HEAD
-INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
-VALUES 
-(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
-(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 2, 3),
-(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4),
-(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 2, 1),
-(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 2, 1),
-(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 2, 1),
-(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1),
-(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta', 500, 3, 2, 1),
-(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales', 400, 3, 2, 2),
-(10, 'EquipoA', 5, '2021-05-10', 'Descripcion A', 100, 3, 2, 1),
-(11, 'EquipoB', 5, '2021-05-11', 'Descripcion B', 100, 3, 2, 1),
-(12, 'EquipoC', 5, '2021-05-12', 'Descripcion C', 100, 3, 2, 1),
-(13, 'EquipoD', 5, '2021-05-13', 'Descripcion D', 100, 3, 2, 1),
-(14, 'EquipoE', 5, '2021-05-14', 'Descripcion E', 100, 3, 2, 1),
-(15, 'EquipoF', 5, '2021-05-15', 'Descripcion F', 100, 3, 2, 1),
-(16, 'EquipoG', 5, '2021-05-16', 'Descripcion G', 100, 3, 2, 1),
-(17, 'EquipoH', 5, '2021-05-17', 'Descripcion H', 100, 3, 2, 1),
-(18, 'EquipoI', 5, '2021-05-18', 'Descripcion I', 100, 3, 2, 1),
-(19, 'EquipoJ', 5, '2021-05-19', 'Descripcion J', 100, 3, 2, 1),
-(20, 'EquipoK', 5, '2021-12-10', 'Descripcion K', 100, 3, 2, 1),
-(21, 'EquipoL', 5, '2021-09-11', 'Descripcion L', 100, 3, 2, 1),
-(22, 'EquipoM', 5, '2021-08-12', 'Descripcion M', 100, 3, 2, 1),
-(23, 'EquipoN', 5, '2021-07-13', 'Descripcion N', 100, 3, 2, 1),
-(24, 'EquipoÑ', 5, '2021-05-10', 'Descripcion Ñ', 100, 3, 2, 1),
-(25, 'EquipoO', 5, '2021-05-11', 'Descripcion O', 100, 3, 2, 1),
-(26, 'EquipoP', 5, '2021-05-12', 'Descripcion P', 100, 3, 2, 1),
-(27, 'EquipoQ', 5, '2021-05-13', 'Descripcion Q', 100, 3, 2, 1),
-(28, 'EquipoR', 5, '2021-05-14', 'Descripcion R', 100, 3, 2, 1),
-(29, 'EquipoS', 5, '2021-05-15', 'Descripcion S', 100, 3, 2, 1),
-(30, 'EquipoT', 5, '2021-05-16', 'Descripcion T', 100, 3, 2, 1),
-(31, 'EquipoU', 5, '2021-05-17', 'Descripcion U', 100, 3, 2, 1),
-(32, 'EquipoV', 5, '2021-05-18', 'Descripcion V', 100, 3, 2, 1),
-(33, 'EquipoW', 5, '2021-05-19', 'Descripcion W', 100, 3, 2, 1),
-(34, 'EquipoX', 5, '2021-12-10', 'Descripcion X', 100, 3, 2, 1),
-(35, 'EquipoY', 5, '2021-09-11', 'Descripcion Y', 100, 3, 2, 1),
-(36, 'EquipoZ', 5, '2021-08-12', 'Descripcion Z', 100, 3, 2, 1),
-(37, 'EquipoAA', 5, '2021-07-13', 'Descripcion AA', 100, 3, 2, 1),
-(38, 'EquipoAB', 5, '2021-05-10', 'Descripcion AB', 100, 3, 2, 1),
-(39, 'EquipoAC', 5, '2021-05-11', 'Descripcion AC', 100, 3, 2, 1),
-(40, 'EquipoAD', 5, '2021-05-12', 'Descripcion AD', 100, 3, 2, 1),
-(41, 'EquipoAE', 5, '2021-05-12', 'Descripcion AE', 100, 3, 2, 1),
-(42, 'EquipoAF', 5, '2021-05-13', 'Descripcion AF', 100, 3, 2, 1),
-(43, 'EquipoAG', 5, '2021-05-14', 'Descripcion AG', 100, 3, 2, 1),
-(44, 'EquipoAH', 5, '2021-05-15', 'Descripcion AH', 100, 3, 2, 1),
-(45, 'EquipoAI', 5, '2021-05-16', 'Descripcion AI', 100, 3, 2, 1),
-(46, 'EquipoAJ', 5, '2021-05-17', 'Descripcion AJ', 100, 3, 2, 1),
-(47, 'EquipoAK', 5, '2021-05-18', 'Descripcion AK', 100, 3, 2, 1),
-(48, 'EquipoAL', 5, '2021-05-19', 'Descripcion AL', 100, 3, 2, 1),
-(49, 'EquipoAM', 5, '2021-12-10', 'Descripcion AM', 100, 3, 2, 1),
-(50, 'EquipoAN', 5, '2021-09-11', 'Descripcion AN', 100, 3, 2, 1),
-(51, 'EquipoAÑ', 5, '2021-08-12', 'Descripcion AÑ', 100, 3, 2, 1),
-(52, 'EquipoAO', 5, '2021-08-12', 'Descripcion AO', 100, 3, 1, 1),
-(53, 'EquipoAP', 5, '2021-07-13', 'Descripcion AP', 100, 3, 1, 1),
-(54, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2);
-
-=======
 COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipos_de_Soporte.csv' DELIMITER ',' CSV HEADER;
->>>>>>> af8897df1d11043bf5ddbf069d762cc8cb89a48a
 
 -- Poblamiento de la tabla EquipoSXAlmacen
 COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
@@ -508,6 +444,10 @@ VALUES
 (19, 'Revisión trimestral de sistemas de alarma', 'Verificación y ajuste de sensores', 'Falsos positivos y fallos de detección', '2025-07-10', '2025-07-15', 19, 19, 19, 1),
 (20, 'Actualización de software de control semestral', 'Instalación de nuevas versiones de software', 'Errores en el sistema', '2025-08-15', '2025-08-20', 20, 20, 20, 2);
 
+-- Poblamiento de la tabla EquipoSXMantenimiento
+COPY equiposxmantenimiento FROM 'C:\DBD-2024-2\datos\EquipoSXMantenimiento.csv' DELIMITER ',' CSV HEADER;
+
+
 -- Poblamiento de la tabla Auditoria
 INSERT INTO Auditoria (Id_Auditoria, Id_Act_mantto, Fecha_auditoria, ubi_auditoria, resp_auditoria, Descripcion, objetivo)
 VALUES
@@ -614,6 +554,33 @@ INSERT INTO Notificaciones (Fecha_notificacion, Asunto,Mensaje, Id_remitente, Id
 ('2024-09-23', 'Asunto Generico', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9),
 ( '2024-09-24','Asunto Generico',  'El registro ha sido actualizado.', 1, 2, 10, 10);
 
+-- Poblamiento de la tabla tipo_urgencia
+INSERT INTO Tipo_urgencia (Id_urgencia, Tipo_urgencia)
+VALUES
+(1, 'Muy urgente'),
+(2, 'Medianamente urgente'),
+(3, 'Poco urgente');
+
+-- Poblamiento de la tabla estado_pedido
+INSERT INTO Estado_pedido (Id_estado_pedido, nombre_estado)
+VALUES
+(1, 'Sin orden de compra'),
+(2, 'Con orden de compra'),
+(3, 'Lista para envío'),
+(4, 'En camino'),
+(5, 'Recibido');
+
+-- Poblamiento de la tabla pedido_compra
+COPY pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Pedido_Compra.csv' DELIMITER ',' CSV HEADER;
+
+-- Poblamiento de la tabla tipo_producto
+INSERT INTO Tipo_producto (Id_tipo_producto, nombre_producto)
+VALUES
+(1, 'Insumos')
+(2, 'Equipos de Soporte')
+
+-- Poblamiento de la tabla detalle_pedido_compra
+COPY detalle_pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Detalle_Pedido_Compra.csv' DELIMITER ',' CSV HEADER;
 
 INSERT INTO Herramienta (Id_herramienta, Cantidad, Nombre) VALUES
 (1, 100, 'Martillo'),
@@ -684,7 +651,10 @@ INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direc
 ('20512345697', 'Primera Ayuda SAC', 'Clara Huamán', 'clara@primerosauxilios.com', 'Salud', '321987123', 'Av. Emergencia 321');
 
 
--- Orden_de_compra
+-- Poblamiento de la tabla Orden_de_compra
+COPY orden_de_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Orden_de_Compra.csv' DELIMITER ',' CSV HEADER;
+
+/*
 INSERT INTO Orden_de_compra (Id_orden_compra, Fecha_emision, Fecha_posible_entrega, Descripcion, Cantidad, Prioridad, Precio_unitario, Descripcion_product, RUC_proveedor, Id_empleado) VALUES
 (1, '2024-01-10', '2024-01-20', 'Orden para martillos', 30, 'Alta', 15.50, 'Martillos de acero', '20512345678', 1),
 (2, '2024-02-05', '2024-02-15', 'Orden para taladros', 50, 'Media', 45.00, 'Taladros industriales', '20512345679', 2),
@@ -706,6 +676,7 @@ INSERT INTO Orden_de_compra (Id_orden_compra, Fecha_emision, Fecha_posible_entre
 (18, '2025-01-10', '2025-01-20', 'Orden para medidores eléctricos', 45, 'Alta', 50.00, 'Medidores de tensión', '20512345695', 18),
 (19, '2025-01-25', '2025-02-05', 'Orden para baterías recargables', 100, 'Media', 5.00, 'Baterías de larga duración', '20512345696', 19),
 (20, '2025-02-05', '2025-02-15', 'Orden para kits de primeros auxilios', 25, 'Alta', 30.00, 'Kits médicos', '20512345697', 20);
+*/
 
 -- Registro_compra_recursos
 INSERT INTO Registro_compra_herramienta (id_reg_herramienta, fecha_registro, Descripcion, Cantidad, id_almacen, id_orden_compra, id_herramienta) VALUES
@@ -729,36 +700,6 @@ INSERT INTO Registro_compra_herramienta (id_reg_herramienta, fecha_registro, Des
 (18, '2025-01-22', 'Compra de medidores eléctricos', 45, 2, 18, 18),
 (19, '2025-02-05', 'Compra de baterías recargables', 100, 4, 19, 19),
 (20, '2025-02-18', 'Compra de kits de primeros auxilios', 25, 2, 20, 20);
-
--- Estado
-INSERT INTO Estado_pedido (id_estado_pedido, nombre_estado) VALUES
-(1, 'Aprobado'),
-(2, 'En proceso de envío'),
-(3, 'Enviado');
-
--- Pedido
-INSERT INTO Pedido (Id_pedido, Cant_pedid, Fecha, Est_inactividad, Id_herramienta, Id_empleado, Id_estado_pedido) VALUES
-(1, 30, '2024-01-10', '1', 1, 1, 1),
-(2, 50, '2024-02-05', '1', 2, 2, 2),
-(3, 100, '2024-03-01', '0', 3, 3, 3),
-(4, 25, '2024-03-25', '1', 4, 4, 1),
-(5, 70, '2024-04-10', '1', 5, 5, 2),
-(6, 60, '2024-05-01', '0', 6, 6, 3),
-(7, 80, '2024-06-05', '1', 7, 7, 1),
-(8, 200, '2024-07-10', '1', 8, 8, 2),
-(9, 150, '2024-08-15', '0', 9, 9, 3),
-(10, 40, '2024-09-01', '1', 10, 10, 1),
-(11, 100, '2024-09-18', '1', 11, 11, 2),
-(12, 120, '2024-10-05', '0', 12, 12, 3),
-(13, 180, '2024-10-20', '1', 13, 13, 1),
-(14, 35, '2024-11-02', '1', 14, 14, 2),
-(15, 15, '2024-11-20', '0', 15, 15, 3),
-(16, 50, '2024-12-01', '1', 16, 16, 1),
-(17, 60, '2024-12-15', '0', 17, 17, 2),
-(18, 45, '2025-01-10', '1', 18, 18, 3),
-(19, 100, '2025-01-25', '0', 19, 19, 1),
-(20, 25, '2025-02-05', '1', 20, 20, 2);
-
  
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
