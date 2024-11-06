@@ -62,11 +62,7 @@ VALUES
 (2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
-<<<<<<< HEAD
 COPY Almacen FROM 'C:\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
-=======
-COPY almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
->>>>>>> fcc241c151d894d3ffdc721578b598c893cffa1b
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -91,7 +87,6 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-<<<<<<< HEAD
 INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
 VALUES 
 (1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
@@ -149,9 +144,6 @@ VALUES
 (53, 'EquipoAP', 5, '2021-07-13', 'Descripcion AP', 100, 3, 1, 1),
 (54, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2);
 
-=======
-COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipo_de_Soporte.csv' DELIMITER ',' CSV HEADER;
->>>>>>> fcc241c151d894d3ffdc721578b598c893cffa1b
 
 -- Poblamiento de la tabla EquipoSXAlmacen
 COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
@@ -768,7 +760,6 @@ INSERT INTO Registro_compra_herramienta (id_reg_herramienta, fecha_registro, Des
 (18, '2025-01-22', 'Compra de medidores eléctricos', 45, 2, 18, 18),
 (19, '2025-02-05', 'Compra de baterías recargables', 100, 4, 19, 19),
 (20, '2025-02-18', 'Compra de kits de primeros auxilios', 25, 2, 20, 20);
-<<<<<<< HEAD
 
 -- Estado
 INSERT INTO Estado_pedido (id_estado_pedido, nombre_estado) VALUES
@@ -809,9 +800,6 @@ COPY Notificaciones FROM '..\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
 
 
 
-=======
- 
->>>>>>> fcc241c151d894d3ffdc721578b598c893cffa1b
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
 VALUES 
@@ -834,6 +822,12 @@ VALUES
 ('Administrador', 120, 102),
 ('Master', 180, 103);
 
+
+-- Poblamiento de la tabla Sesion_Empleado 
+
+COPY Sesion_Empleado FROM '..\datos\sesion_empleado.csv' DELIMITER ',' CSV HEADER;
+
+/*
 INSERT INTO Sesion_Empleado (Id_Sesion, Id_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Id_estado_Sesion, Cargo, t_inactividad)
 VALUES 
 (1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario', INTERVAL '10 minutes'),
@@ -846,9 +840,13 @@ VALUES
 (8, 8, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 2, 'Usuario', INTERVAL '25 minutes'),
 (9, 9, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 2, 'Master', INTERVAL '7 minutes'),
 (10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario', INTERVAL '10 minutes');
-
+*/
 
 --Autenticacion_en_2_pasos
+
+COPY Autenticacion_en_2_pasos  FROM '..\datos\autenticacion_en_2_pasos.csv' DELIMITER ',' CSV HEADER;
+
+/*
 INSERT INTO Autenticacion_en_2_pasos (Id_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, cod_Verificacion, Id_sesion, Id_Estado_autenticador)
 VALUES 
 (1, '2024-10-01 08:05:00', 1, 123456, 1, 1),
@@ -861,8 +859,14 @@ VALUES
 (8, '2024-10-08 10:20:00', 2, 321987, 8, 2),
 (9, '2024-10-09 14:30:00', 3, 789123, 9, 2),
 (10, '2024-10-10 11:25:00', 1, 123789, 10, 1);
+*/
 
--- Poblar la tabla Sesion_sospechosa con 10 registros
+
+-- Poblar la tabla Sesion_sospechosa 
+
+COPY Sesion_sospechosas  FROM '..\datos\sesion_sospechosa.csv' DELIMITER ',' CSV HEADER;
+
+/*
 INSERT INTO Sesion_sospechosa (ID_Sesion_sospechosa, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
 VALUES 
 (1, 1, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.6', 'Lima, Peru', 'Alertar al administrador'),
@@ -875,7 +879,15 @@ VALUES
 (8, 8, 'Bloqueada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 17:45:00', '192.168.0.13', 'Iquitos, Peru', 'Investigar incidencia'),
 (9, 9, 'Finalizada', '00:1B:44:11:3A:J5', 'Laptop', '2024-10-09 18:15:00', '192.168.0.14', 'Pucallpa, Peru', 'Enviar alerta al equipo'),
 (10, 10, 'Activa', '00:1B:44:11:3A:K6', 'Servidor', '2024-10-10 19:00:00', '192.168.0.15', 'Tarapoto, Peru', 'Revisar actividad en detalle');
--- Poblar la tabla Notificacion_Administrador con 10 registros
+*/
+
+
+-- Poblar la tabla Notificacion_Administrador 
+
+COPY Notificacion_Administrador  FROM '..\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
+
+
+/*
 INSERT INTO Notificacion_Administrador (ID_Notificacion, Id_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa, Id_autenticacion)
 VALUES 
 (1, 1, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1, 1),
@@ -888,6 +900,9 @@ VALUES
 (8, 8, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8, 8),
 (9, 9, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 9),
 (10, 10, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 10);
+*/
+
+
 
 INSERT INTO Estado_codigo (Id_estado_codigo, Descripcion)
 VALUES 
@@ -903,6 +918,12 @@ VALUES
 ('Deshabilitado', 'Recuperación deshabilitada temporalmente');
 
 
+-- Poblar la tabla Recuperacion_de_contraseña
+
+COPY Recuperacion_de_contraseña  FROM '..\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
+
+
+/*
 INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, ID_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Id_estado_codigo)
 VALUES 
 (1, 2, '2024-10-01 08:20:00', 'newPass123', 'user1@example.com', 'Generado'),
@@ -915,5 +936,5 @@ VALUES
 (8, 2, '2024-10-08 15:15:00', 'quickPass234', 'user8@example.com', 'Pendiente'),
 (9, 2, '2024-10-09 16:00:00', 'fastPass567', 'user9@example.com', 'Revocado'),
 (10, 2, '2024-10-10 17:45:00', 'finalPass890', 'user10@example.com', 'Deshabilitado');
-
+*/
 
