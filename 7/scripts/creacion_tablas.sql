@@ -793,7 +793,7 @@ CREATE TABLE Sesion_Empleado (
 DROP TABLE IF EXISTS Autenticacion_en_2_pasos CASCADE;
 CREATE TABLE Autenticacion_en_2_pasos (
     Id_Autenticacion INT PRIMARY KEY,
-    Fecha_Hora_Envio DATE NOT NULL,
+    Fecha_Hora_Envio TIMESTAMP NOT NULL,
     Contador_Intentos INT DEFAULT 0,
     Cod_Verificacion INT NOT NULL,
     Id_sesion INT NOT NULL,
