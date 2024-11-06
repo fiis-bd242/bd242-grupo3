@@ -1,101 +1,151 @@
-id_pedido_compra,fecha_pedido_compra,hora_pedido_compra,descripcion,id_urgencia,id_estado_pedido,id_empleado
-1,16/04/2020,5:06 PM,Compra de compresor de aire rotativo eficiente y silencioso.,3,1,340
-2,21/06/2018,4:02 PM,Solicitud de torre de iluminaci贸n port谩til con luces LED para eventos nocturnos.,1,2,475
-3,19/04/2021,7:06 PM,Pedido de compresor de aire industrial resistente para talleres mec谩nicos.,2,4,972
-4,15/01/2021,3:14 PM,Generador port谩til de gasolina para suministro temporal de energ铆a.,2,4,567
-5,03/11/2017,9:22 PM,Adquisici贸n de generador de respaldo de 8000 vatios para emergencia.,3,4,933
-6,21/09/2016,2:38 PM,Compra de compresor de aire m贸vil para operaciones de mantenimiento.,2,3,660
-7,21/03/2023,3:30 PM,Solicitud de sistema de bombeo de agua di茅sel para drenaje de 谩reas.,2,3,806
-8,15/08/2018,10:39 AM,Pedido de generador industrial de 45 kVA para construcci贸n.,1,1,573
-9,09/11/2023,8:52 AM,Adquisici贸n de torre de iluminaci贸n ecol贸gica con luces LED.,3,3,366
-10,08/08/2019,5:47 PM,Compra de compresor de aire de velocidad variable para maquinaria.,2,3,973
-11,16/11/2016,7:04 PM,Solicitud de generador compacto para uso en sitios de dif铆cil acceso.,1,2,538
-12,13/04/2019,3:36 PM,Pedido de herramientas el茅ctricas de mantenimiento para el personal.,2,1,813
-13,24/08/2015,5:05 PM,Adquisici贸n de equipo de seguridad para trabajos en altura.,2,4,959
-14,12/02/2021,10:00 AM,Compra de kit de herramientas multifuncionales para reparaciones.,2,3,735
-15,18/04/2015,6:49 PM,Pedido de generador solar port谩til para uso en exteriores.,1,1,483
-16,26/01/2022,8:30 PM,Solicitud de mangueras industriales para compresores de aire.,1,3,89
-17,24/10/2020,8:33 PM,Adquisici贸n de equipos de limpieza industrial para mantenimiento.,2,2,973
-18,17/09/2019,4:45 PM,Compra de suministro de aceite y lubricantes para maquinaria.,3,1,637
-19,19/12/2019,12:08 PM,Pedido de estanter铆as met谩licas para almacenamiento de herramientas.,2,3,388
-20,24/04/2017,8:29 AM,Solicitud de equipo de medici贸n para control de calidad.,3,5,917
-21,23/03/2018,3:24 PM,Adquisici贸n de v谩lvulas y conectores para sistema hidr谩ulico.,2,1,891
-22,24/11/2019,8:43 PM,Compra de accesorios de seguridad personal para trabajadores.,2,3,373
-23,19/12/2019,5:19 PM,Pedido de sistemas de alarma y monitoreo para seguridad.,1,4,652
-24,22/02/2018,9:05 AM,Adquisici贸n de materiales para reparaciones el茅ctricas.,2,1,364
-25,21/01/2019,9:12 PM,Compra de repuestos para generadores de energ铆a.,3,5,789
-26,15/03/2024,7:23 PM,Solicitud de servicio de calibraci贸n para equipos de medici贸n.,1,4,698
-27,25/05/2018,10:26 AM,Adquisici贸n de cargadores y bater铆as para herramientas el茅ctricas.,2,3,580
-28,23/10/2019,7:44 PM,Pedido de sistemas de ventilaci贸n para 谩reas de trabajo.,1,4,284
-29,15/09/2022,2:45 PM,Compra de equipos de protecci贸n personal para el equipo de mantenimiento.,1,4,182
-30,18/04/2020,5:39 PM,Adquisici贸n de generador di茅sel de alta potencia para respaldo energ茅tico.,2,3,586
-31,25/01/2023,8:59 PM,Compra de compresor de aire rotativo eficiente y silencioso.,3,3,226
-32,25/06/2019,5:44 PM,Solicitud de torre de iluminaci贸n port谩til con luces LED para eventos nocturnos.,3,1,36
-33,11/01/2024,8:23 AM,Pedido de compresor de aire industrial resistente para talleres mec谩nicos.,2,3,152
-34,19/03/2016,11:44 AM,Generador port谩til de gasolina para suministro temporal de energ铆a.,1,3,835
-35,05/09/2019,7:31 PM,Adquisici贸n de generador de respaldo de 8000 vatios para emergencia.,1,4,946
-36,24/01/2023,1:20 PM,Compra de compresor de aire m贸vil para operaciones de mantenimiento.,3,5,857
-37,30/07/2016,8:46 PM,Solicitud de sistema de bombeo de agua di茅sel para drenaje de 谩reas.,3,1,403
-38,10/03/2021,2:21 PM,Pedido de generador industrial de 45 kVA para construcci贸n.,2,5,91
-39,03/12/2017,9:15 PM,Adquisici贸n de torre de iluminaci贸n ecol贸gica con luces LED.,2,1,232
-40,02/05/2019,1:12 PM,Compra de compresor de aire de velocidad variable para maquinaria.,3,4,411
-41,04/03/2024,6:46 PM,Solicitud de generador compacto para uso en sitios de dif铆cil acceso.,3,3,109
-42,28/11/2020,3:53 PM,Pedido de herramientas el茅ctricas de mantenimiento para el personal.,1,4,408
-43,17/01/2018,9:41 PM,Adquisici贸n de equipo de seguridad para trabajos en altura.,2,2,844
-44,08/09/2023,3:41 PM,Compra de kit de herramientas multifuncionales para reparaciones.,2,5,806
-45,30/07/2023,5:29 PM,Pedido de generador solar port谩til para uso en exteriores.,1,2,803
-46,23/06/2017,6:08 PM,Solicitud de mangueras industriales para compresores de aire.,2,2,653
-47,22/06/2015,2:40 PM,Adquisici贸n de equipos de limpieza industrial para mantenimiento.,2,4,199
-48,27/03/2017,8:01 AM,Compra de suministro de aceite y lubricantes para maquinaria.,3,2,789
-49,05/05/2024,7:09 PM,Pedido de estanter铆as met谩licas para almacenamiento de herramientas.,2,5,518
-50,29/01/2017,3:55 PM,Solicitud de equipo de medici贸n para control de calidad.,2,4,567
-51,24/03/2021,3:19 PM,Adquisici贸n de v谩lvulas y conectores para sistema hidr谩ulico.,3,2,31
-52,08/05/2016,1:55 PM,Compra de accesorios de seguridad personal para trabajadores.,3,1,969
-53,21/06/2021,11:38 AM,Pedido de sistemas de alarma y monitoreo para seguridad.,1,2,144
-54,29/06/2021,4:59 PM,Adquisici贸n de materiales para reparaciones el茅ctricas.,2,1,453
-55,23/01/2018,9:45 AM,Compra de repuestos para generadores de energ铆a.,1,5,792
-56,30/09/2015,9:44 AM,Solicitud de servicio de calibraci贸n para equipos de medici贸n.,3,5,387
-57,18/03/2024,9:55 PM,Adquisici贸n de cargadores y bater铆as para herramientas el茅ctricas.,3,5,794
-58,27/05/2015,8:23 AM,Pedido de sistemas de ventilaci贸n para 谩reas de trabajo.,2,1,612
-59,01/04/2021,10:45 AM,Compra de equipos de protecci贸n personal para el equipo de mantenimiento.,3,2,64
-60,11/02/2015,4:27 PM,Adquisici贸n de generador di茅sel de alta potencia para respaldo energ茅tico.,2,4,526
-61,23/08/2020,8:29 PM,Compra de compresor de aire rotativo eficiente y silencioso.,3,1,136
-62,27/01/2022,11:52 AM,Solicitud de torre de iluminaci贸n port谩til con luces LED para eventos nocturnos.,2,4,700
-63,17/01/2022,2:26 PM,Pedido de compresor de aire industrial resistente para talleres mec谩nicos.,2,1,488
-64,10/08/2023,12:56 PM,Generador port谩til de gasolina para suministro temporal de energ铆a.,3,3,94
-65,03/12/2018,8:03 PM,Adquisici贸n de generador de respaldo de 8000 vatios para emergencia.,1,5,473
-66,26/07/2023,8:27 PM,Compra de compresor de aire m贸vil para operaciones de mantenimiento.,1,5,848
-67,16/08/2016,2:04 PM,Solicitud de sistema de bombeo de agua di茅sel para drenaje de 谩reas.,3,3,685
-68,04/06/2021,9:47 AM,Pedido de generador industrial de 45 kVA para construcci贸n.,2,1,252
-69,04/01/2017,9:48 AM,Adquisici贸n de torre de iluminaci贸n ecol贸gica con luces LED.,2,5,500
-70,14/09/2020,8:21 AM,Compra de compresor de aire de velocidad variable para maquinaria.,2,5,663
-71,27/08/2023,8:03 PM,Solicitud de generador compacto para uso en sitios de dif铆cil acceso.,2,3,308
-72,22/12/2022,11:12 AM,Pedido de herramientas el茅ctricas de mantenimiento para el personal.,1,4,639
-73,29/04/2018,1:36 PM,Adquisici贸n de equipo de seguridad para trabajos en altura.,1,4,918
-74,29/09/2022,10:38 AM,Compra de kit de herramientas multifuncionales para reparaciones.,3,1,901
-75,16/03/2015,3:55 PM,Pedido de generador solar port谩til para uso en exteriores.,1,3,790
-76,02/03/2015,2:36 PM,Solicitud de mangueras industriales para compresores de aire.,1,2,248
-77,25/08/2022,6:11 PM,Adquisici贸n de equipos de limpieza industrial para mantenimiento.,1,5,481
-78,26/06/2021,8:50 PM,Compra de suministro de aceite y lubricantes para maquinaria.,2,4,673
-79,27/12/2017,1:02 PM,Pedido de estanter铆as met谩licas para almacenamiento de herramientas.,2,2,726
-80,20/06/2022,8:05 AM,Solicitud de equipo de medici贸n para control de calidad.,2,5,268
-81,02/06/2019,12:28 PM,Adquisici贸n de v谩lvulas y conectores para sistema hidr谩ulico.,1,1,292
-82,12/09/2017,2:07 PM,Compra de accesorios de seguridad personal para trabajadores.,1,4,803
-83,01/05/2020,1:46 PM,Pedido de sistemas de alarma y monitoreo para seguridad.,3,5,151
-84,26/12/2016,7:02 PM,Adquisici贸n de materiales para reparaciones el茅ctricas.,1,2,311
-85,15/01/2022,2:40 PM,Compra de repuestos para generadores de energ铆a.,1,4,810
-86,10/08/2016,6:39 PM,Solicitud de servicio de calibraci贸n para equipos de medici贸n.,2,1,428
-87,06/12/2022,1:51 PM,Adquisici贸n de cargadores y bater铆as para herramientas el茅ctricas.,1,4,297
-88,14/03/2021,8:32 AM,Pedido de sistemas de ventilaci贸n para 谩reas de trabajo.,3,2,114
-89,28/12/2015,4:50 PM,Compra de equipos de protecci贸n personal para el equipo de mantenimiento.,2,5,126
-90,07/10/2017,12:35 PM,Adquisici贸n de generador di茅sel de alta potencia para respaldo energ茅tico.,2,1,729
-91,17/07/2018,6:12 PM,Compra de compresor de aire rotativo eficiente y silencioso.,1,5,528
-92,08/05/2023,11:21 AM,Solicitud de torre de iluminaci贸n port谩til con luces LED para eventos nocturnos.,1,2,808
-93,31/08/2017,7:22 PM,Pedido de compresor de aire industrial resistente para talleres mec谩nicos.,1,2,712
-94,20/08/2022,4:16 PM,Generador port谩til de gasolina para suministro temporal de energ铆a.,3,1,70
-95,30/03/2023,7:37 PM,Adquisici贸n de generador de respaldo de 8000 vatios para emergencia.,3,1,857
-96,29/08/2015,1:02 PM,Compra de compresor de aire m贸vil para operaciones de mantenimiento.,1,3,734
-97,09/03/2020,9:20 AM,Solicitud de sistema de bombeo de agua di茅sel para drenaje de 谩reas.,1,2,448
-98,14/07/2020,11:36 AM,Pedido de generador industrial de 45 kVA para construcci贸n.,3,4,874
-99,20/04/2017,4:25 PM,Adquisici贸n de torre de iluminaci贸n ecol贸gica con luces LED.,3,4,672
-100,31/08/2015,10:42 AM,Compra de compresor de aire de velocidad variable para maquinaria.,2,1,180
+id_pedido_compra;fecha_pedido_compra;hora_pedido_compra;descripcion;id_urgencia;id_estado_pedido;id_empleado
+1;16/04/2020;17:06:00;Compra de compresor de aire rotativo eficiente y silencioso.;3;1;340
+2;21/06/2018;16:02:00;Solicitud de torre de iluminaci髇 port醫il con luces LED para eventos nocturnos.;1;2;475
+3;19/04/2021;19:06:00;Pedido de compresor de aire industrial resistente para talleres mec醤icos.;2;4;972
+4;15/01/2021;15:14:00;Generador port醫il de gasolina para suministro temporal de energ韆.;2;4;567
+5;3/11/2017;21:22:00;Adquisici髇 de generador de respaldo de 8000 vatios para emergencia.;3;4;933
+6;21/09/2016;14:38:00;Compra de compresor de aire m髒il para operaciones de mantenimiento.;2;3;660
+7;21/03/2023;15:30:00;Solicitud de sistema de bombeo de agua di閟el para drenaje de 醨eas.;2;3;806
+8;15/08/2018;10:39:00;Pedido de generador industrial de 45 kVA para construcci髇.;1;1;573
+9;9/11/2023;08:52:00;Adquisici髇 de torre de iluminaci髇 ecol骻ica con luces LED.;3;3;366
+10;8/08/2019;17:47:00;Compra de compresor de aire de velocidad variable para maquinaria.;2;3;973
+11;16/11/2016;19:04:00;Solicitud de generador compacto para uso en sitios de dif韈il acceso.;1;2;538
+12;13/04/2019;15:36:00;Pedido de herramientas el閏tricas de mantenimiento para el personal.;2;1;813
+13;24/08/2015;17:05:00;Adquisici髇 de equipo de seguridad para trabajos en altura.;2;4;959
+14;12/02/2021;10:00:00;Compra de kit de herramientas multifuncionales para reparaciones.;2;3;735
+15;18/04/2015;18:49:00;Pedido de generador solar port醫il para uso en exteriores.;1;1;483
+16;26/01/2022;20:30:00;Solicitud de mangueras industriales para compresores de aire.;1;3;89
+17;24/10/2020;20:33:00;Adquisici髇 de equipos de limpieza industrial para mantenimiento.;2;2;973
+18;17/09/2019;16:45:00;Compra de suministro de aceite y lubricantes para maquinaria.;3;1;637
+19;19/12/2019;12:08:00;Pedido de estanter韆s met醠icas para almacenamiento de herramientas.;2;3;388
+20;24/04/2017;08:29:00;Solicitud de equipo de medici髇 para control de calidad.;3;5;917
+21;23/03/2018;15:24:00;Adquisici髇 de v醠vulas y conectores para sistema hidr醬lico.;2;1;891
+22;24/11/2019;20:43:00;Compra de accesorios de seguridad personal para trabajadores.;2;3;373
+23;19/12/2019;17:19:00;Pedido de sistemas de alarma y monitoreo para seguridad.;1;4;652
+24;22/02/2018;09:05:00;Adquisici髇 de materiales para reparaciones el閏tricas.;2;1;364
+25;21/01/2019;21:12:00;Compra de repuestos para generadores de energ韆.;3;5;789
+26;15/03/2024;19:23:00;Solicitud de servicio de calibraci髇 para equipos de medici髇.;1;4;698
+27;25/05/2018;10:26:00;Adquisici髇 de cargadores y bater韆s para herramientas el閏tricas.;2;3;580
+28;23/10/2019;19:44:00;Pedido de sistemas de ventilaci髇 para 醨eas de trabajo.;1;4;284
+29;15/09/2022;14:45:00;Compra de equipos de protecci髇 personal para el equipo de mantenimiento.;1;4;182
+30;18/04/2020;17:39:00;Adquisici髇 de generador di閟el de alta potencia para respaldo energ閠ico.;2;3;586
+31;25/01/2023;20:59:00;Compra de compresor de aire rotativo eficiente y silencioso.;3;3;226
+32;25/06/2019;17:44:00;Solicitud de torre de iluminaci髇 port醫il con luces LED para eventos nocturnos.;3;1;36
+33;11/01/2024;08:23:00;Pedido de compresor de aire industrial resistente para talleres mec醤icos.;2;3;152
+34;19/03/2016;11:44:00;Generador port醫il de gasolina para suministro temporal de energ韆.;1;3;835
+35;5/09/2019;19:31:00;Adquisici髇 de generador de respaldo de 8000 vatios para emergencia.;1;4;946
+36;24/01/2023;13:20:00;Compra de compresor de aire m髒il para operaciones de mantenimiento.;3;5;857
+37;30/07/2016;20:46:00;Solicitud de sistema de bombeo de agua di閟el para drenaje de 醨eas.;3;1;403
+38;10/03/2021;14:21:00;Pedido de generador industrial de 45 kVA para construcci髇.;2;5;91
+39;3/12/2017;21:15:00;Adquisici髇 de torre de iluminaci髇 ecol骻ica con luces LED.;2;1;232
+40;2/05/2019;13:12:00;Compra de compresor de aire de velocidad variable para maquinaria.;3;4;411
+41;4/03/2024;18:46:00;Solicitud de generador compacto para uso en sitios de dif韈il acceso.;3;3;109
+42;28/11/2020;15:53:00;Pedido de herramientas el閏tricas de mantenimiento para el personal.;1;4;408
+43;17/01/2018;21:41:00;Adquisici髇 de equipo de seguridad para trabajos en altura.;2;2;844
+44;8/09/2023;15:41:00;Compra de kit de herramientas multifuncionales para reparaciones.;2;5;806
+45;30/07/2023;17:29:00;Pedido de generador solar port醫il para uso en exteriores.;1;2;803
+46;23/06/2017;18:08:00;Solicitud de mangueras industriales para compresores de aire.;2;2;653
+47;22/06/2015;14:40:00;Adquisici髇 de equipos de limpieza industrial para mantenimiento.;2;4;199
+48;27/03/2017;08:01:00;Compra de suministro de aceite y lubricantes para maquinaria.;3;2;789
+49;5/05/2024;19:09:00;Pedido de estanter韆s met醠icas para almacenamiento de herramientas.;2;5;518
+50;29/01/2017;15:55:00;Solicitud de equipo de medici髇 para control de calidad.;2;4;567
+51;24/03/2021;15:19:00;Adquisici髇 de v醠vulas y conectores para sistema hidr醬lico.;3;2;31
+52;8/05/2016;13:55:00;Compra de accesorios de seguridad personal para trabajadores.;3;1;969
+53;21/06/2021;11:38:00;Pedido de sistemas de alarma y monitoreo para seguridad.;1;2;144
+54;29/06/2021;16:59:00;Adquisici髇 de materiales para reparaciones el閏tricas.;2;1;453
+55;23/01/2018;09:45:00;Compra de repuestos para generadores de energ韆.;1;5;792
+56;30/09/2015;09:44:00;Solicitud de servicio de calibraci髇 para equipos de medici髇.;3;5;387
+57;18/03/2024;21:55:00;Adquisici髇 de cargadores y bater韆s para herramientas el閏tricas.;3;5;794
+58;27/05/2015;08:23:00;Pedido de sistemas de ventilaci髇 para 醨eas de trabajo.;2;1;612
+59;1/04/2021;10:45:00;Compra de equipos de protecci髇 personal para el equipo de mantenimiento.;3;2;64
+60;11/02/2015;16:27:00;Adquisici髇 de generador di閟el de alta potencia para respaldo energ閠ico.;2;4;526
+61;23/08/2020;20:29:00;Compra de compresor de aire rotativo eficiente y silencioso.;3;1;136
+62;27/01/2022;11:52:00;Solicitud de torre de iluminaci髇 port醫il con luces LED para eventos nocturnos.;2;4;700
+63;17/01/2022;14:26:00;Pedido de compresor de aire industrial resistente para talleres mec醤icos.;2;1;488
+64;10/08/2023;12:56:00;Generador port醫il de gasolina para suministro temporal de energ韆.;3;3;94
+65;3/12/2018;20:03:00;Adquisici髇 de generador de respaldo de 8000 vatios para emergencia.;1;5;473
+66;26/07/2023;20:27:00;Compra de compresor de aire m髒il para operaciones de mantenimiento.;1;5;848
+67;16/08/2016;14:04:00;Solicitud de sistema de bombeo de agua di閟el para drenaje de 醨eas.;3;3;685
+68;4/06/2021;09:47:00;Pedido de generador industrial de 45 kVA para construcci髇.;2;1;252
+69;4/01/2017;09:48:00;Adquisici髇 de torre de iluminaci髇 ecol骻ica con luces LED.;2;5;500
+70;14/09/2020;08:21:00;Compra de compresor de aire de velocidad variable para maquinaria.;2;5;663
+71;27/08/2023;20:03:00;Solicitud de generador compacto para uso en sitios de dif韈il acceso.;2;3;308
+72;22/12/2022;11:12:00;Pedido de herramientas el閏tricas de mantenimiento para el personal.;1;4;639
+73;29/04/2018;13:36:00;Adquisici髇 de equipo de seguridad para trabajos en altura.;1;4;918
+74;29/09/2022;10:38:00;Compra de kit de herramientas multifuncionales para reparaciones.;3;1;901
+75;16/03/2015;15:55:00;Pedido de generador solar port醫il para uso en exteriores.;1;3;790
+76;2/03/2015;14:36:00;Solicitud de mangueras industriales para compresores de aire.;1;2;248
+77;25/08/2022;18:11:00;Adquisici髇 de equipos de limpieza industrial para mantenimiento.;1;5;481
+78;26/06/2021;20:50:00;Compra de suministro de aceite y lubricantes para maquinaria.;2;4;673
+79;27/12/2017;13:02:00;Pedido de estanter韆s met醠icas para almacenamiento de herramientas.;2;2;726
+80;20/06/2022;08:05:00;Solicitud de equipo de medici髇 para control de calidad.;2;5;268
+81;2/06/2019;12:28:00;Adquisici髇 de v醠vulas y conectores para sistema hidr醬lico.;1;1;292
+82;12/09/2017;14:07:00;Compra de accesorios de seguridad personal para trabajadores.;1;4;803
+83;1/05/2020;13:46:00;Pedido de sistemas de alarma y monitoreo para seguridad.;3;5;151
+84;26/12/2016;19:02:00;Adquisici髇 de materiales para reparaciones el閏tricas.;1;2;311
+85;15/01/2022;14:40:00;Compra de repuestos para generadores de energ韆.;1;4;810
+86;10/08/2016;18:39:00;Solicitud de servicio de calibraci髇 para equipos de medici髇.;2;1;428
+87;6/12/2022;13:51:00;Adquisici髇 de cargadores y bater韆s para herramientas el閏tricas.;1;4;297
+88;14/03/2021;08:32:00;Pedido de sistemas de ventilaci髇 para 醨eas de trabajo.;3;2;114
+89;28/12/2015;16:50:00;Compra de equipos de protecci髇 personal para el equipo de mantenimiento.;2;5;126
+90;7/10/2017;12:35:00;Adquisici髇 de generador di閟el de alta potencia para respaldo energ閠ico.;2;1;729
+91;17/07/2018;18:12:00;Compra de compresor de aire rotativo eficiente y silencioso.;1;5;528
+92;8/05/2023;11:21:00;Solicitud de torre de iluminaci髇 port醫il con luces LED para eventos nocturnos.;1;2;808
+93;31/08/2017;19:22:00;Pedido de compresor de aire industrial resistente para talleres mec醤icos.;1;2;712
+94;20/08/2022;16:16:00;Generador port醫il de gasolina para suministro temporal de energ韆.;3;1;70
+95;30/03/2023;19:37:00;Adquisici髇 de generador de respaldo de 8000 vatios para emergencia.;3;1;857
+96;29/08/2015;13:02:00;Compra de compresor de aire m髒il para operaciones de mantenimiento.;1;3;734
+97;9/03/2020;09:20:00;Solicitud de sistema de bombeo de agua di閟el para drenaje de 醨eas.;1;2;448
+98;14/07/2020;11:36:00;Pedido de generador industrial de 45 kVA para construcci髇.;3;4;874
+99;20/04/2017;16:25:00;Adquisici髇 de torre de iluminaci髇 ecol骻ica con luces LED.;3;4;672
+100;31/08/2015;10:42:00;Compra de compresor de aire de velocidad variable para maquinaria.;2;1;180
+101;5/09/2024;11:54:24;Aceite multiuso para mantenimiento preventivo;2;1;501
+102;5/09/2024;15:31:59;Insumos de aceite hidr醬lico para maquinaria;2;4;498
+103;6/09/2024;13:18:07;Solicitud de lubricantes especializados;2;1;500
+104;6/09/2024;10:35:42;Solicitud de lubricantes especializados;2;2;498
+105;10/09/2024;13:46:33;Aceite multiuso para mantenimiento preventivo;2;5;495
+106;10/09/2024;15:59:30;Compra urgente de lubricantes para equipos de planta;2;4;496
+107;11/09/2024;11:30:37;Compra de lubricantes para maquinaria pesada;1;5;501
+108;12/09/2024;12:04:04;Insumos de aceite hidr醬lico para maquinaria;1;5;498
+109;13/09/2024;14:20:21;Pedido de aceites industriales para mantenimiento;2;4;496
+110;14/09/2024;13:19:42;Solicitud de lubricantes especializados;1;5;495
+111;15/09/2024;12:14:14;Aceite multiuso para mantenimiento preventivo;3;5;499
+112;15/09/2024;12:40:20;Insumos de grasa para lubricaci髇 de equipos;3;5;496
+113;16/09/2024;10:08:55;Pedido de aceite para motores industriales;2;3;498
+114;27/09/2024;11:17:54;Insumos de aceite hidr醬lico para maquinaria;1;1;494
+115;1/10/2024;11:40:16;Compra urgente de lubricantes para equipos de planta;1;4;496
+116;1/10/2024;13:49:16;Insumos de aceite hidr醬lico para maquinaria;1;4;499
+117;1/10/2024;10:17:29;Reabastecimiento de lubricantes para mantenimiento predictivo;1;4;494
+118;2/10/2024;10:14:31;Pedido de aceites industriales para mantenimiento;2;5;496
+119;2/10/2024;17:49:11;Compra de lubricantes para maquinaria pesada;2;1;494
+120;2/10/2024;14:12:36;Insumos de aceite hidr醬lico para maquinaria;3;4;496
+121;3/10/2024;09:25:36;Solicitud de lubricantes especializados;2;4;500
+122;4/10/2024;10:47:42;Compra de lubricantes para maquinaria pesada;1;3;497
+123;6/10/2024;13:11:49;Pedido de aceites industriales para mantenimiento;3;3;497
+124;12/10/2024;11:04:45;Aceite multiuso para mantenimiento preventivo;1;2;501
+125;14/10/2024;11:09:15;Pedido de aceite para motores industriales;3;2;497
+126;16/10/2024;15:46:47;Compra de aceites sint閠icos para maquinaria;1;5;498
+127;16/10/2024;08:44:56;Solicitud de lubricantes especializados;2;1;495
+128;17/10/2024;16:14:16;Compra de aceites sint閠icos para maquinaria;1;5;496
+129;17/10/2024;17:44:24;Compra de lubricantes para maquinaria pesada;1;1;500
+130;17/10/2024;15:29:48;Insumos de grasa para lubricaci髇 de equipos;3;1;496
+131;17/10/2024;17:02:22;Solicitud de lubricantes especializados;2;1;498
+132;18/10/2024;09:14:15;Insumos de aceite hidr醬lico para maquinaria;2;3;501
+133;18/10/2024;14:37:22;Compra urgente de lubricantes para equipos de planta;2;3;498
+134;19/10/2024;15:31:16;Reabastecimiento de lubricantes para mantenimiento predictivo;1;5;500
+135;19/10/2024;08:16:30;Compra de aceites sint閠icos para maquinaria;3;5;495
+136;21/10/2024;08:15:05;Pedido de aceites industriales para mantenimiento;3;1;499
+137;21/10/2024;12:41:32;Compra de aceites sint閠icos para maquinaria;1;3;498
+138;22/10/2024;10:40:42;Pedido de aceites industriales para mantenimiento;2;5;494
+139;22/10/2024;10:45:25;Compra de lubricantes para maquinaria pesada;1;2;500
+140;23/10/2024;09:57:14;Compra urgente de lubricantes para equipos de planta;2;5;499
+141;23/10/2024;14:16:23;Aceite multiuso para mantenimiento preventivo;3;4;497
+142;29/10/2024;15:55:58;Compra de lubricantes para maquinaria pesada;3;2;499
+143;29/10/2024;13:23:12;Insumos de aceite hidr醬lico para maquinaria;3;4;495
+144;30/10/2024;10:24:47;Compra de aceites sint閠icos para maquinaria;3;4;495
+145;31/10/2024;11:09:01;Aceite multiuso para mantenimiento preventivo;2;5;496
+146;31/10/2024;10:02:38;Reabastecimiento de lubricantes para mantenimiento predictivo;3;2;497
+147;3/11/2024;17:23:00;Insumos de grasa para lubricaci髇 de equipos;1;4;500
+148;3/11/2024;11:32:40;Compra urgente de lubricantes para equipos de planta;1;1;500
+149;5/11/2024;14:26:34;Reabastecimiento de lubricantes para mantenimiento predictivo;3;4;494
+150;5/11/2024;13:58:39;Insumos de grasa para lubricaci髇 de equipos;1;1;501
