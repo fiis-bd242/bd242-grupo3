@@ -1,0 +1,1001 @@
+Descripcion_peligro,Evento_no_deseado,id_tarea,Id_riesgo
+Exceso de polvo en el ambiente,Lesion por caida de material,1,1
+Ruido de equipos por encima de los 85 dB,Caida a distinto nivel,2,2
+Iluminacion deficiente de Area de trabajo,Caida a distinto nivel,3,3
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Electrocucion,4,4
+Ruido de equipos por encima de los 85 dB,Mala manipulacion,5,5
+Iluminacion deficiente de Area de trabajo,Mala manipulacion,6,6
+Herramientas no asegurados o fuera de sus guardas,Lesiones,7,7
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,8,8
+Zonas resbaladizas,Lesiones,9,9
+Maniobras con tecles.  grampas. puente grua,Silicosis,10,10
+Herramientas hechizas,Silicosis,11,11
+Maniobras con tecles.  grampas. puente grua,Mala manipulacion,12,12
+Zonas resbaladizas,Aplastamiento de extremidades,13,13
+Ruido de equipos por encima de los 85 dB,Electrocucion,14,14
+Materiales,Lesion por caida de material,15,15
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Cortes Profundos al Personal,16,16
+Exceso de polvo en el ambiente,Mala manipulacion,17,17
+Herramientas hechizas,Tropiezos y Caidas,18,18
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,19,19
+Plataforma a diferente nivel,Lesion por caida de material,20,20
+Materiales,Intoxicacion,21,21
+Materiales,Silicosis,22,22
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Intoxicacion,23,23
+Iluminacion deficiente de Area de trabajo,Tropiezos y Caidas,24,24
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesiones,25,25
+Herramientas hechizas,Lesiones,26,26
+Posturas inadecuadas y por periodos de tiempo prolongados,Intoxicacion,27,27
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,28,28
+Iluminacion deficiente de Area de trabajo,Tropiezos y Caidas,29,29
+Herramientas no asegurados o fuera de sus guardas,Atrapamiento,30,30
+Zonas resbaladizas,Mala manipulacion,31,31
+Humo (combustion. soldadura. otros),Tropiezos y Caidas,32,32
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesion por caida de material,33,33
+Posturas inadecuadas y por periodos de tiempo prolongados,Caida a distinto nivel,34,34
+Plataforma a diferente nivel,Caida a distinto nivel,35,35
+Herramientas no asegurados o fuera de sus guardas,Mala manipulacion,36,36
+Materiales,Tropiezos y Caidas,37,37
+Plataforma a diferente nivel,Cortes Profundos al Personal,38,38
+Zonas resbaladizas,Intoxicacion,39,39
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Aplastamiento de extremidades,40,40
+Exceso de polvo en el ambiente,Electrocucion,41,41
+Iluminacion deficiente de Area de trabajo,Lesion por caida de material,42,42
+Exceso de polvo en el ambiente,Tropiezos y Caidas,43,43
+Plataforma a diferente nivel,Aplastamiento de extremidades,44,44
+Iluminacion deficiente de Area de trabajo,Silicosis,45,45
+Posturas inadecuadas y por periodos de tiempo prolongados,Mala manipulacion,46,46
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesion por caida de material,47,47
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,48,48
+Herramientas no asegurados o fuera de sus guardas,Hipoacusia,49,49
+Plataforma a diferente nivel,Lesion por caida de material,50,50
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Silicosis,51,51
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,52,52
+Exceso de polvo en el ambiente,Atrapamiento,53,53
+Maniobras con tecles.  grampas. puente grua,Hipoacusia,54,54
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Intoxicacion,55,55
+Iluminacion deficiente de Area de trabajo,Silicosis,56,56
+Objetos pesados suspendidos o inestables - Izaje de cargas,Cortes Profundos al Personal,57,57
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,58,58
+Exceso de polvo en el ambiente,Intoxicacion,59,59
+Materiales,Intoxicacion,60,60
+Herramientas hechizas,Caida a distinto nivel,61,61
+Zonas resbaladizas,Hipoacusia,62,62
+Plataforma a diferente nivel,Caidas al mismo Nivel,63,63
+Posturas inadecuadas y por periodos de tiempo prolongados,Tropiezos y Caidas,64,64
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,65,65
+Iluminacion deficiente de Area de trabajo,Atrapamiento,66,66
+Herramientas hechizas,Caidas al mismo Nivel,67,67
+Maniobras con tecles.  grampas. puente grua,Mala manipulacion,68,68
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,69,69
+Zonas resbaladizas,Silicosis,70,70
+Plataforma a diferente nivel,Aplastamiento de extremidades,71,71
+Herramientas no asegurados o fuera de sus guardas,Electrocucion,72,72
+Herramientas no asegurados o fuera de sus guardas,Hipoacusia,73,73
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Silicosis,74,74
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Intoxicacion,75,75
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,76,76
+Herramientas no asegurados o fuera de sus guardas,Tropiezos y Caidas,77,77
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,78,78
+Objetos pesados suspendidos o inestables - Izaje de cargas,Atrapamiento,79,79
+Exceso de polvo en el ambiente,Aplastamiento de extremidades,80,80
+Exceso de polvo en el ambiente,Lesion por caida de material,81,81
+Humo (combustion. soldadura. otros),Lesion por caida de material,82,82
+Herramientas no asegurados o fuera de sus guardas,Tropiezos y Caidas,83,83
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Intoxicacion,84,84
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesion por caida de material,85,85
+Zonas resbaladizas,Mala manipulacion,86,86
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Cortes Profundos al Personal,87,87
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,88,88
+Herramientas hechizas,Lesion por caida de material,89,89
+Materiales,Mala manipulacion,90,90
+Ruido de equipos por encima de los 85 dB,Caidas al mismo Nivel,91,91
+Humo (combustion. soldadura. otros),Mala manipulacion,92,92
+Herramientas hechizas,Lesion por caida de material,93,93
+Zonas resbaladizas,Intoxicacion,94,94
+Materiales,Intoxicacion,95,95
+Posturas inadecuadas y por periodos de tiempo prolongados,Intoxicacion,96,96
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Atrapamiento,97,97
+Materiales,Lesion por caida de material,98,98
+Materiales,Atrapamiento,99,99
+Herramientas hechizas,Hipoacusia,100,100
+Zonas resbaladizas,Aplastamiento de extremidades,101,101
+Posturas inadecuadas y por periodos de tiempo prolongados,Caidas al mismo Nivel,102,102
+Exceso de polvo en el ambiente,Silicosis,103,103
+Iluminacion deficiente de Area de trabajo,Aplastamiento de extremidades,104,104
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,105,105
+Herramientas hechizas,Tropiezos y Caidas,106,106
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,107,107
+Humo (combustion. soldadura. otros),Silicosis,108,108
+Herramientas no asegurados o fuera de sus guardas,Caida a distinto nivel,109,109
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Caidas al mismo Nivel,110,110
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Cortes Profundos al Personal,111,111
+Humo (combustion. soldadura. otros),Aplastamiento de extremidades,112,112
+Plataforma a diferente nivel,Lesiones,113,113
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesiones,114,114
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,115,115
+Objetos pesados suspendidos o inestables - Izaje de cargas,Aplastamiento de extremidades,116,116
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,117,117
+Zonas resbaladizas,Caida a distinto nivel,118,118
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Intoxicacion,119,119
+Materiales,Silicosis,120,120
+Posturas inadecuadas y por periodos de tiempo prolongados,Mala manipulacion,121,121
+Herramientas no asegurados o fuera de sus guardas,Caidas al mismo Nivel,122,122
+Exceso de polvo en el ambiente,Cortes Profundos al Personal,123,123
+Ruido de equipos por encima de los 85 dB,Hipoacusia,124,124
+Humo (combustion. soldadura. otros),Electrocucion,125,125
+Iluminacion deficiente de Area de trabajo,Lesiones,126,126
+Iluminacion deficiente de Area de trabajo,Lesiones,127,127
+Exceso de polvo en el ambiente,Lesiones,128,128
+Posturas inadecuadas y por periodos de tiempo prolongados,Mala manipulacion,129,129
+Materiales,Caidas al mismo Nivel,130,130
+Zonas resbaladizas,Silicosis,131,131
+Herramientas no asegurados o fuera de sus guardas,Hipoacusia,132,132
+Zonas resbaladizas,Silicosis,133,133
+Humo (combustion. soldadura. otros),Electrocucion,134,134
+Plataforma a diferente nivel,Aplastamiento de extremidades,135,135
+Maniobras con tecles.  grampas. puente grua,Cortes Profundos al Personal,136,136
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Hipoacusia,137,137
+Exceso de polvo en el ambiente,Hipoacusia,138,138
+Plataforma a diferente nivel,Intoxicacion,139,139
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,140,140
+Herramientas hechizas,Lesion por caida de material,141,141
+Ruido de equipos por encima de los 85 dB,Intoxicacion,142,142
+Ruido de equipos por encima de los 85 dB,Silicosis,143,143
+Ruido de equipos por encima de los 85 dB,Electrocucion,144,144
+Herramientas no asegurados o fuera de sus guardas,Tropiezos y Caidas,145,145
+Iluminacion deficiente de Area de trabajo,Silicosis,146,146
+Objetos pesados suspendidos o inestables - Izaje de cargas,Tropiezos y Caidas,147,147
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,148,148
+Posturas inadecuadas y por periodos de tiempo prolongados,Aplastamiento de extremidades,149,149
+Posturas inadecuadas y por periodos de tiempo prolongados,Electrocucion,150,150
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Atrapamiento,151,151
+Exceso de polvo en el ambiente,Intoxicacion,152,152
+Iluminacion deficiente de Area de trabajo,Tropiezos y Caidas,153,153
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Hipoacusia,154,154
+Herramientas no asegurados o fuera de sus guardas,Mala manipulacion,155,155
+Materiales,Cortes Profundos al Personal,156,156
+Maniobras con tecles.  grampas. puente grua,Mala manipulacion,157,157
+Materiales,Tropiezos y Caidas,158,158
+Exceso de polvo en el ambiente,Aplastamiento de extremidades,159,159
+Herramientas no asegurados o fuera de sus guardas,Lesion por caida de material,160,160
+Plataforma a diferente nivel,Hipoacusia,161,161
+Exceso de polvo en el ambiente,Lesiones,162,162
+Zonas resbaladizas,Lesion por caida de material,163,163
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,164,164
+Humo (combustion. soldadura. otros),Electrocucion,165,165
+Ruido de equipos por encima de los 85 dB,Lesiones,166,166
+Zonas resbaladizas,Cortes Profundos al Personal,167,167
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,168,168
+Zonas resbaladizas,Cortes Profundos al Personal,169,169
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Electrocucion,170,170
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Hipoacusia,171,171
+Herramientas hechizas,Silicosis,172,172
+Materiales,Cortes Profundos al Personal,173,173
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Electrocucion,174,174
+Zonas resbaladizas,Lesion por caida de material,175,175
+Herramientas hechizas,Silicosis,176,176
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesion por caida de material,177,177
+Plataforma a diferente nivel,Electrocucion,178,178
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,179,179
+Posturas inadecuadas y por periodos de tiempo prolongados,Silicosis,180,180
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Electrocucion,181,181
+Herramientas hechizas,Cortes Profundos al Personal,182,182
+Herramientas hechizas,Aplastamiento de extremidades,183,183
+Materiales,Intoxicacion,184,184
+Exceso de polvo en el ambiente,Atrapamiento,185,185
+Materiales,Mala manipulacion,186,186
+Exceso de polvo en el ambiente,Intoxicacion,187,187
+Ruido de equipos por encima de los 85 dB,Aplastamiento de extremidades,188,188
+Exceso de polvo en el ambiente,Caida a distinto nivel,189,189
+Materiales,Tropiezos y Caidas,190,190
+Iluminacion deficiente de Area de trabajo,Lesiones,191,191
+Humo (combustion. soldadura. otros),Tropiezos y Caidas,192,192
+Materiales,Caida a distinto nivel,193,193
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesion por caida de material,194,194
+Zonas resbaladizas,Lesion por caida de material,195,195
+Herramientas hechizas,Caidas al mismo Nivel,196,196
+Posturas inadecuadas y por periodos de tiempo prolongados,Caidas al mismo Nivel,197,197
+Maniobras con tecles.  grampas. puente grua,Intoxicacion,198,198
+Humo (combustion. soldadura. otros),Silicosis,199,199
+Herramientas no asegurados o fuera de sus guardas,Lesion por caida de material,200,200
+Zonas resbaladizas,Intoxicacion,201,201
+Exceso de polvo en el ambiente,Lesion por caida de material,202,202
+Humo (combustion. soldadura. otros),Electrocucion,203,203
+Plataforma a diferente nivel,Cortes Profundos al Personal,204,204
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Hipoacusia,205,205
+Iluminacion deficiente de Area de trabajo,Tropiezos y Caidas,206,206
+Posturas inadecuadas y por periodos de tiempo prolongados,Intoxicacion,207,207
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesiones,208,208
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesiones,209,209
+Ruido de equipos por encima de los 85 dB,Atrapamiento,210,210
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caidas al mismo Nivel,211,211
+Herramientas hechizas,Intoxicacion,212,212
+Exceso de polvo en el ambiente,Electrocucion,213,213
+Humo (combustion. soldadura. otros),Silicosis,214,214
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Silicosis,215,215
+Iluminacion deficiente de Area de trabajo,Mala manipulacion,216,216
+Posturas inadecuadas y por periodos de tiempo prolongados,Silicosis,217,217
+Zonas resbaladizas,Atrapamiento,218,218
+Maniobras con tecles.  grampas. puente grua,Caidas al mismo Nivel,219,219
+Ruido de equipos por encima de los 85 dB,Caidas al mismo Nivel,220,220
+Exceso de polvo en el ambiente,Tropiezos y Caidas,221,221
+Exceso de polvo en el ambiente,Intoxicacion,222,222
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caidas al mismo Nivel,223,223
+Humo (combustion. soldadura. otros),Mala manipulacion,224,224
+Zonas resbaladizas,Caidas al mismo Nivel,225,225
+Materiales,Atrapamiento,226,226
+Objetos pesados suspendidos o inestables - Izaje de cargas,Mala manipulacion,227,227
+Humo (combustion. soldadura. otros),Electrocucion,228,228
+Maniobras con tecles.  grampas. puente grua,Caidas al mismo Nivel,229,229
+Objetos pesados suspendidos o inestables - Izaje de cargas,Electrocucion,230,230
+Materiales,Intoxicacion,231,231
+Exceso de polvo en el ambiente,Hipoacusia,232,232
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Tropiezos y Caidas,233,233
+Herramientas hechizas,Hipoacusia,234,234
+Ruido de equipos por encima de los 85 dB,Electrocucion,235,235
+Zonas resbaladizas,Tropiezos y Caidas,236,236
+Ruido de equipos por encima de los 85 dB,Intoxicacion,237,237
+Objetos pesados suspendidos o inestables - Izaje de cargas,Electrocucion,238,238
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Atrapamiento,239,239
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Cortes Profundos al Personal,240,240
+Zonas resbaladizas,Tropiezos y Caidas,241,241
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Intoxicacion,242,242
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Aplastamiento de extremidades,243,243
+Zonas resbaladizas,Caida a distinto nivel,244,244
+Iluminacion deficiente de Area de trabajo,Atrapamiento,245,245
+Exceso de polvo en el ambiente,Silicosis,246,246
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,247,247
+Maniobras con tecles.  grampas. puente grua,Lesion por caida de material,248,248
+Zonas resbaladizas,Cortes Profundos al Personal,249,249
+Posturas inadecuadas y por periodos de tiempo prolongados,Silicosis,250,250
+Exceso de polvo en el ambiente,Silicosis,251,251
+Plataforma a diferente nivel,Atrapamiento,252,252
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Silicosis,253,253
+Posturas inadecuadas y por periodos de tiempo prolongados,Hipoacusia,254,254
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Hipoacusia,255,255
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Mala manipulacion,256,256
+Maniobras con tecles.  grampas. puente grua,Intoxicacion,257,257
+Zonas resbaladizas,Hipoacusia,258,258
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Caidas al mismo Nivel,259,259
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Intoxicacion,260,260
+Herramientas no asegurados o fuera de sus guardas,Tropiezos y Caidas,261,261
+Herramientas hechizas,Atrapamiento,262,262
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesion por caida de material,263,263
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Intoxicacion,264,264
+Exceso de polvo en el ambiente,Caidas al mismo Nivel,265,265
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,266,266
+Herramientas no asegurados o fuera de sus guardas,Lesion por caida de material,267,267
+Herramientas hechizas,Caidas al mismo Nivel,268,268
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,269,269
+Humo (combustion. soldadura. otros),Lesiones,270,270
+Materiales,Aplastamiento de extremidades,271,271
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesiones,272,272
+Exceso de polvo en el ambiente,Lesion por caida de material,273,273
+Iluminacion deficiente de Area de trabajo,Electrocucion,274,274
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Caida a distinto nivel,275,275
+Objetos pesados suspendidos o inestables - Izaje de cargas,Silicosis,276,276
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,277,277
+Exceso de polvo en el ambiente,Caida a distinto nivel,278,278
+Iluminacion deficiente de Area de trabajo,Mala manipulacion,279,279
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Atrapamiento,280,280
+Plataforma a diferente nivel,Lesiones,281,281
+Humo (combustion. soldadura. otros),Atrapamiento,282,282
+Posturas inadecuadas y por periodos de tiempo prolongados,Atrapamiento,283,283
+Materiales,Atrapamiento,284,284
+Plataforma a diferente nivel,Intoxicacion,285,285
+Herramientas no asegurados o fuera de sus guardas,Silicosis,286,286
+Maniobras con tecles.  grampas. puente grua,Cortes Profundos al Personal,287,287
+Plataforma a diferente nivel,Electrocucion,288,288
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,289,289
+Iluminacion deficiente de Area de trabajo,Electrocucion,290,290
+Materiales,Aplastamiento de extremidades,291,291
+Plataforma a diferente nivel,Electrocucion,292,292
+Exceso de polvo en el ambiente,Caidas al mismo Nivel,293,293
+Iluminacion deficiente de Area de trabajo,Mala manipulacion,294,294
+Herramientas hechizas,Intoxicacion,295,295
+Objetos pesados suspendidos o inestables - Izaje de cargas,Mala manipulacion,296,296
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Aplastamiento de extremidades,297,297
+Objetos pesados suspendidos o inestables - Izaje de cargas,Intoxicacion,298,298
+Zonas resbaladizas,Hipoacusia,299,299
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Aplastamiento de extremidades,300,300
+Ruido de equipos por encima de los 85 dB,Atrapamiento,301,301
+Zonas resbaladizas,Lesiones,302,302
+Herramientas hechizas,Caidas al mismo Nivel,303,303
+Maniobras con tecles.  grampas. puente grua,Electrocucion,304,304
+Iluminacion deficiente de Area de trabajo,Electrocucion,305,305
+Ruido de equipos por encima de los 85 dB,Electrocucion,306,306
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Tropiezos y Caidas,307,307
+Ruido de equipos por encima de los 85 dB,Silicosis,308,308
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Atrapamiento,309,309
+Maniobras con tecles.  grampas. puente grua,Intoxicacion,310,310
+Herramientas no asegurados o fuera de sus guardas,Caidas al mismo Nivel,311,311
+Zonas resbaladizas,Aplastamiento de extremidades,312,312
+Exceso de polvo en el ambiente,Aplastamiento de extremidades,313,313
+Ruido de equipos por encima de los 85 dB,Lesion por caida de material,314,314
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caidas al mismo Nivel,315,315
+Herramientas hechizas,Intoxicacion,316,316
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Aplastamiento de extremidades,317,317
+Iluminacion deficiente de Area de trabajo,Hipoacusia,318,318
+Exceso de polvo en el ambiente,Intoxicacion,319,319
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Electrocucion,320,320
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Atrapamiento,321,321
+Plataforma a diferente nivel,Cortes Profundos al Personal,322,322
+Herramientas hechizas,Aplastamiento de extremidades,323,323
+Plataforma a diferente nivel,Atrapamiento,324,324
+Iluminacion deficiente de Area de trabajo,Aplastamiento de extremidades,325,325
+Materiales,Caida a distinto nivel,326,326
+Posturas inadecuadas y por periodos de tiempo prolongados,Atrapamiento,327,327
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Hipoacusia,328,328
+Maniobras con tecles.  grampas. puente grua,Hipoacusia,329,329
+Humo (combustion. soldadura. otros),Mala manipulacion,330,330
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesiones,331,331
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,332,332
+Objetos pesados suspendidos o inestables - Izaje de cargas,Cortes Profundos al Personal,333,333
+Herramientas hechizas,Caidas al mismo Nivel,334,334
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Electrocucion,335,335
+Materiales,Caida a distinto nivel,336,336
+Maniobras con tecles.  grampas. puente grua,Lesiones,337,337
+Posturas inadecuadas y por periodos de tiempo prolongados,Caida a distinto nivel,338,338
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,339,339
+Posturas inadecuadas y por periodos de tiempo prolongados,Caidas al mismo Nivel,340,340
+Zonas resbaladizas,Lesion por caida de material,341,341
+Ruido de equipos por encima de los 85 dB,Caidas al mismo Nivel,342,342
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Tropiezos y Caidas,343,343
+Zonas resbaladizas,Aplastamiento de extremidades,344,344
+Zonas resbaladizas,Tropiezos y Caidas,345,345
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Cortes Profundos al Personal,346,346
+Iluminacion deficiente de Area de trabajo,Atrapamiento,347,347
+Zonas resbaladizas,Lesiones,348,348
+Maniobras con tecles.  grampas. puente grua,Hipoacusia,349,349
+Objetos pesados suspendidos o inestables - Izaje de cargas,Atrapamiento,350,350
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caidas al mismo Nivel,351,351
+Herramientas hechizas,Lesion por caida de material,352,352
+Herramientas hechizas,Lesiones,353,353
+Iluminacion deficiente de Area de trabajo,Caidas al mismo Nivel,354,354
+Maniobras con tecles.  grampas. puente grua,Cortes Profundos al Personal,355,355
+Materiales,Hipoacusia,356,356
+Materiales,Lesion por caida de material,357,357
+Herramientas hechizas,Hipoacusia,358,358
+Herramientas hechizas,Lesion por caida de material,359,359
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Silicosis,360,360
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,361,361
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,362,362
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Cortes Profundos al Personal,363,363
+Ruido de equipos por encima de los 85 dB,Lesiones,364,364
+Herramientas hechizas,Lesion por caida de material,365,365
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesion por caida de material,366,366
+Ruido de equipos por encima de los 85 dB,Mala manipulacion,367,367
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesion por caida de material,368,368
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Hipoacusia,369,369
+Ruido de equipos por encima de los 85 dB,Atrapamiento,370,370
+Zonas resbaladizas,Lesiones,371,371
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesion por caida de material,372,372
+Zonas resbaladizas,Cortes Profundos al Personal,373,373
+Herramientas hechizas,Atrapamiento,374,374
+Ruido de equipos por encima de los 85 dB,Cortes Profundos al Personal,375,375
+Zonas resbaladizas,Lesion por caida de material,376,376
+Plataforma a diferente nivel,Lesion por caida de material,377,377
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Intoxicacion,378,378
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesion por caida de material,379,379
+Herramientas hechizas,Cortes Profundos al Personal,380,380
+Plataforma a diferente nivel,Cortes Profundos al Personal,381,381
+Zonas resbaladizas,Silicosis,382,382
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Mala manipulacion,383,383
+Exceso de polvo en el ambiente,Tropiezos y Caidas,384,384
+Plataforma a diferente nivel,Cortes Profundos al Personal,385,385
+Herramientas hechizas,Caidas al mismo Nivel,386,386
+Zonas resbaladizas,Lesiones,387,387
+Humo (combustion. soldadura. otros),Hipoacusia,388,388
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,389,389
+Zonas resbaladizas,Cortes Profundos al Personal,390,390
+Zonas resbaladizas,Caida a distinto nivel,391,391
+Maniobras con tecles.  grampas. puente grua,Hipoacusia,392,392
+Objetos pesados suspendidos o inestables - Izaje de cargas,Silicosis,393,393
+Herramientas no asegurados o fuera de sus guardas,Lesion por caida de material,394,394
+Herramientas hechizas,Silicosis,395,395
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caidas al mismo Nivel,396,396
+Zonas resbaladizas,Lesiones,397,397
+Iluminacion deficiente de Area de trabajo,Intoxicacion,398,398
+Ruido de equipos por encima de los 85 dB,Silicosis,399,399
+Zonas resbaladizas,Cortes Profundos al Personal,400,400
+Zonas resbaladizas,Atrapamiento,401,401
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,402,402
+Materiales,Electrocucion,403,403
+Humo (combustion. soldadura. otros),Caida a distinto nivel,404,404
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesiones,405,405
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesion por caida de material,406,406
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Atrapamiento,407,407
+Iluminacion deficiente de Area de trabajo,Caidas al mismo Nivel,408,408
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Mala manipulacion,409,409
+Zonas resbaladizas,Caidas al mismo Nivel,410,410
+Maniobras con tecles.  grampas. puente grua,Atrapamiento,411,411
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,412,412
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Cortes Profundos al Personal,413,413
+Iluminacion deficiente de Area de trabajo,Hipoacusia,414,414
+Materiales,Silicosis,415,415
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caidas al mismo Nivel,416,416
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesion por caida de material,417,417
+Objetos pesados suspendidos o inestables - Izaje de cargas,Electrocucion,418,418
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,419,419
+Objetos pesados suspendidos o inestables - Izaje de cargas,Aplastamiento de extremidades,420,420
+Herramientas hechizas,Atrapamiento,421,421
+Materiales,Intoxicacion,422,422
+Iluminacion deficiente de Area de trabajo,Caidas al mismo Nivel,423,423
+Iluminacion deficiente de Area de trabajo,Mala manipulacion,424,424
+Posturas inadecuadas y por periodos de tiempo prolongados,Intoxicacion,425,425
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caidas al mismo Nivel,426,426
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,427,427
+Ruido de equipos por encima de los 85 dB,Caidas al mismo Nivel,428,428
+Maniobras con tecles.  grampas. puente grua,Caidas al mismo Nivel,429,429
+Iluminacion deficiente de Area de trabajo,Aplastamiento de extremidades,430,430
+Ruido de equipos por encima de los 85 dB,Hipoacusia,431,431
+Zonas resbaladizas,Tropiezos y Caidas,432,432
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Intoxicacion,433,433
+Herramientas hechizas,Lesiones,434,434
+Plataforma a diferente nivel,Hipoacusia,435,435
+Herramientas hechizas,Caidas al mismo Nivel,436,436
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Atrapamiento,437,437
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Caidas al mismo Nivel,438,438
+Humo (combustion. soldadura. otros),Lesiones,439,439
+Materiales,Electrocucion,440,440
+Exceso de polvo en el ambiente,Mala manipulacion,441,441
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,442,442
+Posturas inadecuadas y por periodos de tiempo prolongados,Silicosis,443,443
+Herramientas no asegurados o fuera de sus guardas,Lesion por caida de material,444,444
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,445,445
+Humo (combustion. soldadura. otros),Lesiones,446,446
+Herramientas no asegurados o fuera de sus guardas,Hipoacusia,447,447
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,448,448
+Maniobras con tecles.  grampas. puente grua,Tropiezos y Caidas,449,449
+Objetos pesados suspendidos o inestables - Izaje de cargas,Cortes Profundos al Personal,450,450
+Herramientas no asegurados o fuera de sus guardas,Silicosis,451,451
+Zonas resbaladizas,Tropiezos y Caidas,452,452
+Zonas resbaladizas,Caida a distinto nivel,453,453
+Herramientas hechizas,Intoxicacion,454,454
+Zonas resbaladizas,Caidas al mismo Nivel,455,455
+Herramientas no asegurados o fuera de sus guardas,Caida a distinto nivel,456,456
+Herramientas no asegurados o fuera de sus guardas,Aplastamiento de extremidades,457,457
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,458,458
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesiones,459,459
+Iluminacion deficiente de Area de trabajo,Aplastamiento de extremidades,460,460
+Posturas inadecuadas y por periodos de tiempo prolongados,Aplastamiento de extremidades,461,461
+Ruido de equipos por encima de los 85 dB,Caida a distinto nivel,462,462
+Materiales,Mala manipulacion,463,463
+Materiales,Caida a distinto nivel,464,464
+Zonas resbaladizas,Hipoacusia,465,465
+Zonas resbaladizas,Tropiezos y Caidas,466,466
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Aplastamiento de extremidades,467,467
+Exceso de polvo en el ambiente,Intoxicacion,468,468
+Humo (combustion. soldadura. otros),Lesion por caida de material,469,469
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Atrapamiento,470,470
+Herramientas no asegurados o fuera de sus guardas,Silicosis,471,471
+Humo (combustion. soldadura. otros),Lesiones,472,472
+Posturas inadecuadas y por periodos de tiempo prolongados,Electrocucion,473,473
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesion por caida de material,474,474
+Zonas resbaladizas,Cortes Profundos al Personal,475,475
+Objetos pesados suspendidos o inestables - Izaje de cargas,Atrapamiento,476,476
+Herramientas hechizas,Mala manipulacion,477,477
+Objetos pesados suspendidos o inestables - Izaje de cargas,Intoxicacion,478,478
+Maniobras con tecles.  grampas. puente grua,Atrapamiento,479,479
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,480,480
+Ruido de equipos por encima de los 85 dB,Intoxicacion,481,481
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Cortes Profundos al Personal,482,482
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Silicosis,483,483
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesiones,484,484
+Exceso de polvo en el ambiente,Aplastamiento de extremidades,485,485
+Objetos pesados suspendidos o inestables - Izaje de cargas,Silicosis,486,486
+Plataforma a diferente nivel,Aplastamiento de extremidades,487,487
+Plataforma a diferente nivel,Caida a distinto nivel,488,488
+Zonas resbaladizas,Tropiezos y Caidas,489,489
+Plataforma a diferente nivel,Lesion por caida de material,490,490
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,491,491
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,492,492
+Herramientas no asegurados o fuera de sus guardas,Aplastamiento de extremidades,493,493
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caidas al mismo Nivel,494,494
+Herramientas no asegurados o fuera de sus guardas,Intoxicacion,495,495
+Herramientas hechizas,Lesiones,496,496
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,497,497
+Zonas resbaladizas,Lesion por caida de material,498,498
+Zonas resbaladizas,Lesiones,499,499
+Herramientas hechizas,Electrocucion,500,500
+Materiales,Intoxicacion,501,501
+Humo (combustion. soldadura. otros),Atrapamiento,502,502
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesiones,503,503
+Humo (combustion. soldadura. otros),Atrapamiento,504,504
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,505,505
+Maniobras con tecles.  grampas. puente grua,Caida a distinto nivel,506,506
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Electrocucion,507,507
+Objetos pesados suspendidos o inestables - Izaje de cargas,Tropiezos y Caidas,508,508
+Exceso de polvo en el ambiente,Cortes Profundos al Personal,509,509
+Zonas resbaladizas,Atrapamiento,510,510
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Electrocucion,511,511
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,512,512
+Maniobras con tecles.  grampas. puente grua,Intoxicacion,513,513
+Herramientas hechizas,Lesion por caida de material,514,514
+Humo (combustion. soldadura. otros),Hipoacusia,515,515
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Silicosis,516,516
+Plataforma a diferente nivel,Lesion por caida de material,517,517
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,518,518
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,519,519
+Posturas inadecuadas y por periodos de tiempo prolongados,Silicosis,520,520
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesiones,521,521
+Herramientas no asegurados o fuera de sus guardas,Caidas al mismo Nivel,522,522
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesiones,523,523
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,524,524
+Zonas resbaladizas,Silicosis,525,525
+Herramientas hechizas,Caida a distinto nivel,526,526
+Herramientas hechizas,Intoxicacion,527,527
+Herramientas no asegurados o fuera de sus guardas,Caida a distinto nivel,528,528
+Herramientas no asegurados o fuera de sus guardas,Silicosis,529,529
+Objetos pesados suspendidos o inestables - Izaje de cargas,Cortes Profundos al Personal,530,530
+Iluminacion deficiente de Area de trabajo,Cortes Profundos al Personal,531,531
+Humo (combustion. soldadura. otros),Caida a distinto nivel,532,532
+Posturas inadecuadas y por periodos de tiempo prolongados,Atrapamiento,533,533
+Plataforma a diferente nivel,Tropiezos y Caidas,534,534
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,535,535
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Intoxicacion,536,536
+Plataforma a diferente nivel,Intoxicacion,537,537
+Materiales,Silicosis,538,538
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Caida a distinto nivel,539,539
+Exceso de polvo en el ambiente,Caidas al mismo Nivel,540,540
+Herramientas hechizas,Tropiezos y Caidas,541,541
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Hipoacusia,542,542
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Atrapamiento,543,543
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Electrocucion,544,544
+Exceso de polvo en el ambiente,Lesiones,545,545
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Electrocucion,546,546
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Aplastamiento de extremidades,547,547
+Objetos pesados suspendidos o inestables - Izaje de cargas,Hipoacusia,548,548
+Humo (combustion. soldadura. otros),Caidas al mismo Nivel,549,549
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Tropiezos y Caidas,550,550
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Tropiezos y Caidas,551,551
+Herramientas no asegurados o fuera de sus guardas,Aplastamiento de extremidades,552,552
+Zonas resbaladizas,Caidas al mismo Nivel,553,553
+Materiales,Intoxicacion,554,554
+Plataforma a diferente nivel,Intoxicacion,555,555
+Objetos pesados suspendidos o inestables - Izaje de cargas,Aplastamiento de extremidades,556,556
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Electrocucion,557,557
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,558,558
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,559,559
+Zonas resbaladizas,Cortes Profundos al Personal,560,560
+Herramientas no asegurados o fuera de sus guardas,Hipoacusia,561,561
+Maniobras con tecles.  grampas. puente grua,Silicosis,562,562
+Zonas resbaladizas,Lesion por caida de material,563,563
+Objetos pesados suspendidos o inestables - Izaje de cargas,Silicosis,564,564
+Posturas inadecuadas y por periodos de tiempo prolongados,Mala manipulacion,565,565
+Humo (combustion. soldadura. otros),Lesiones,566,566
+Herramientas no asegurados o fuera de sus guardas,Hipoacusia,567,567
+Ruido de equipos por encima de los 85 dB,Mala manipulacion,568,568
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Tropiezos y Caidas,569,569
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Aplastamiento de extremidades,570,570
+Humo (combustion. soldadura. otros),Hipoacusia,571,571
+Plataforma a diferente nivel,Electrocucion,572,572
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caidas al mismo Nivel,573,573
+Ruido de equipos por encima de los 85 dB,Lesion por caida de material,574,574
+Plataforma a diferente nivel,Intoxicacion,575,575
+Zonas resbaladizas,Hipoacusia,576,576
+Maniobras con tecles.  grampas. puente grua,Cortes Profundos al Personal,577,577
+Ruido de equipos por encima de los 85 dB,Tropiezos y Caidas,578,578
+Plataforma a diferente nivel,Lesiones,579,579
+Exceso de polvo en el ambiente,Silicosis,580,580
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesiones,581,581
+Plataforma a diferente nivel,Aplastamiento de extremidades,582,582
+Herramientas hechizas,Atrapamiento,583,583
+Maniobras con tecles.  grampas. puente grua,Hipoacusia,584,584
+Plataforma a diferente nivel,Caidas al mismo Nivel,585,585
+Iluminacion deficiente de Area de trabajo,Aplastamiento de extremidades,586,586
+Zonas resbaladizas,Silicosis,587,587
+Humo (combustion. soldadura. otros),Intoxicacion,588,588
+Zonas resbaladizas,Tropiezos y Caidas,589,589
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesiones,590,590
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,591,591
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,592,592
+Ruido de equipos por encima de los 85 dB,Silicosis,593,593
+Ruido de equipos por encima de los 85 dB,Caidas al mismo Nivel,594,594
+Plataforma a diferente nivel,Lesiones,595,595
+Ruido de equipos por encima de los 85 dB,Silicosis,596,596
+Materiales,Electrocucion,597,597
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Silicosis,598,598
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,599,599
+Iluminacion deficiente de Area de trabajo,Caidas al mismo Nivel,600,600
+Plataforma a diferente nivel,Mala manipulacion,601,601
+Exceso de polvo en el ambiente,Caidas al mismo Nivel,602,602
+Iluminacion deficiente de Area de trabajo,Intoxicacion,603,603
+Exceso de polvo en el ambiente,Mala manipulacion,604,604
+Iluminacion deficiente de Area de trabajo,Atrapamiento,605,605
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Atrapamiento,606,606
+Iluminacion deficiente de Area de trabajo,Hipoacusia,607,607
+Exceso de polvo en el ambiente,Lesion por caida de material,608,608
+Posturas inadecuadas y por periodos de tiempo prolongados,Intoxicacion,609,609
+Ruido de equipos por encima de los 85 dB,Aplastamiento de extremidades,610,610
+Zonas resbaladizas,Lesiones,611,611
+Zonas resbaladizas,Mala manipulacion,612,612
+Posturas inadecuadas y por periodos de tiempo prolongados,Aplastamiento de extremidades,613,613
+Iluminacion deficiente de Area de trabajo,Caidas al mismo Nivel,614,614
+Herramientas no asegurados o fuera de sus guardas,Electrocucion,615,615
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,616,616
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,617,617
+Herramientas hechizas,Lesiones,618,618
+Plataforma a diferente nivel,Cortes Profundos al Personal,619,619
+Herramientas no asegurados o fuera de sus guardas,Mala manipulacion,620,620
+Materiales,Electrocucion,621,621
+Zonas resbaladizas,Electrocucion,622,622
+Iluminacion deficiente de Area de trabajo,Lesiones,623,623
+Maniobras con tecles.  grampas. puente grua,Lesion por caida de material,624,624
+Herramientas no asegurados o fuera de sus guardas,Intoxicacion,625,625
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Aplastamiento de extremidades,626,626
+Materiales,Atrapamiento,627,627
+Exceso de polvo en el ambiente,Intoxicacion,628,628
+Materiales,Mala manipulacion,629,629
+Zonas resbaladizas,Cortes Profundos al Personal,630,630
+Materiales,Caidas al mismo Nivel,631,631
+Exceso de polvo en el ambiente,Aplastamiento de extremidades,632,632
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Electrocucion,633,633
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Cortes Profundos al Personal,634,634
+Objetos pesados suspendidos o inestables - Izaje de cargas,Electrocucion,635,635
+Ruido de equipos por encima de los 85 dB,Mala manipulacion,636,636
+Zonas resbaladizas,Caidas al mismo Nivel,637,637
+Exceso de polvo en el ambiente,Electrocucion,638,638
+Exceso de polvo en el ambiente,Lesiones,639,639
+Objetos pesados suspendidos o inestables - Izaje de cargas,Atrapamiento,640,640
+Zonas resbaladizas,Caida a distinto nivel,641,641
+Humo (combustion. soldadura. otros),Atrapamiento,642,642
+Herramientas hechizas,Atrapamiento,643,643
+Exceso de polvo en el ambiente,Hipoacusia,644,644
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Lesiones,645,645
+Zonas resbaladizas,Mala manipulacion,646,646
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,647,647
+Materiales,Mala manipulacion,648,648
+Exceso de polvo en el ambiente,Caida a distinto nivel,649,649
+Ruido de equipos por encima de los 85 dB,Intoxicacion,650,650
+Exceso de polvo en el ambiente,Mala manipulacion,651,651
+Ruido de equipos por encima de los 85 dB,Caidas al mismo Nivel,652,652
+Humo (combustion. soldadura. otros),Intoxicacion,653,653
+Posturas inadecuadas y por periodos de tiempo prolongados,Cortes Profundos al Personal,654,654
+Objetos pesados suspendidos o inestables - Izaje de cargas,Aplastamiento de extremidades,655,655
+Zonas resbaladizas,Caidas al mismo Nivel,656,656
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caida a distinto nivel,657,657
+Herramientas hechizas,Silicosis,658,658
+Materiales,Caidas al mismo Nivel,659,659
+Exceso de polvo en el ambiente,Caidas al mismo Nivel,660,660
+Ruido de equipos por encima de los 85 dB,Hipoacusia,661,661
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Aplastamiento de extremidades,662,662
+Herramientas hechizas,Intoxicacion,663,663
+Materiales,Electrocucion,664,664
+Herramientas hechizas,Caida a distinto nivel,665,665
+Zonas resbaladizas,Atrapamiento,666,666
+Zonas resbaladizas,Mala manipulacion,667,667
+Humo (combustion. soldadura. otros),Hipoacusia,668,668
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,669,669
+Zonas resbaladizas,Cortes Profundos al Personal,670,670
+Herramientas no asegurados o fuera de sus guardas,Mala manipulacion,671,671
+Maniobras con tecles.  grampas. puente grua,Silicosis,672,672
+Zonas resbaladizas,Hipoacusia,673,673
+Zonas resbaladizas,Mala manipulacion,674,674
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Silicosis,675,675
+Herramientas hechizas,Atrapamiento,676,676
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,677,677
+Humo (combustion. soldadura. otros),Intoxicacion,678,678
+Plataforma a diferente nivel,Atrapamiento,679,679
+Posturas inadecuadas y por periodos de tiempo prolongados,Caidas al mismo Nivel,680,680
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,681,681
+Objetos pesados suspendidos o inestables - Izaje de cargas,Silicosis,682,682
+Iluminacion deficiente de Area de trabajo,Silicosis,683,683
+Exceso de polvo en el ambiente,Aplastamiento de extremidades,684,684
+Humo (combustion. soldadura. otros),Electrocucion,685,685
+Zonas resbaladizas,Caidas al mismo Nivel,686,686
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,687,687
+Ruido de equipos por encima de los 85 dB,Mala manipulacion,688,688
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesiones,689,689
+Plataforma a diferente nivel,Aplastamiento de extremidades,690,690
+Iluminacion deficiente de Area de trabajo,Cortes Profundos al Personal,691,691
+Posturas inadecuadas y por periodos de tiempo prolongados,Cortes Profundos al Personal,692,692
+Exceso de polvo en el ambiente,Lesiones,693,693
+Objetos pesados suspendidos o inestables - Izaje de cargas,Electrocucion,694,694
+Iluminacion deficiente de Area de trabajo,Caidas al mismo Nivel,695,695
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Atrapamiento,696,696
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Electrocucion,697,697
+Zonas resbaladizas,Aplastamiento de extremidades,698,698
+Posturas inadecuadas y por periodos de tiempo prolongados,Electrocucion,699,699
+Plataforma a diferente nivel,Intoxicacion,700,700
+Iluminacion deficiente de Area de trabajo,Electrocucion,701,701
+Iluminacion deficiente de Area de trabajo,Intoxicacion,702,702
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Silicosis,703,703
+Objetos pesados suspendidos o inestables - Izaje de cargas,Silicosis,704,704
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Atrapamiento,705,705
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Intoxicacion,706,706
+Herramientas hechizas,Electrocucion,707,707
+Posturas inadecuadas y por periodos de tiempo prolongados,Silicosis,708,708
+Humo (combustion. soldadura. otros),Caidas al mismo Nivel,709,709
+Herramientas no asegurados o fuera de sus guardas,Caidas al mismo Nivel,710,710
+Objetos pesados suspendidos o inestables - Izaje de cargas,Intoxicacion,711,711
+Iluminacion deficiente de Area de trabajo,Electrocucion,712,712
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesiones,713,713
+Zonas resbaladizas,Lesion por caida de material,714,714
+Herramientas hechizas,Aplastamiento de extremidades,715,715
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Atrapamiento,716,716
+Iluminacion deficiente de Area de trabajo,Lesion por caida de material,717,717
+Zonas resbaladizas,Electrocucion,718,718
+Plataforma a diferente nivel,Mala manipulacion,719,719
+Exceso de polvo en el ambiente,Caida a distinto nivel,720,720
+Ruido de equipos por encima de los 85 dB,Electrocucion,721,721
+Herramientas hechizas,Hipoacusia,722,722
+Maniobras con tecles.  grampas. puente grua,Atrapamiento,723,723
+Materiales,Lesiones,724,724
+Humo (combustion. soldadura. otros),Lesiones,725,725
+Exceso de polvo en el ambiente,Mala manipulacion,726,726
+Zonas resbaladizas,Aplastamiento de extremidades,727,727
+Posturas inadecuadas y por periodos de tiempo prolongados,Atrapamiento,728,728
+Materiales,Silicosis,729,729
+Ruido de equipos por encima de los 85 dB,Lesiones,730,730
+Plataforma a diferente nivel,Aplastamiento de extremidades,731,731
+Maniobras con tecles.  grampas. puente grua,Lesiones,732,732
+Zonas resbaladizas,Lesiones,733,733
+Iluminacion deficiente de Area de trabajo,Atrapamiento,734,734
+Materiales,Caidas al mismo Nivel,735,735
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesion por caida de material,736,736
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Tropiezos y Caidas,737,737
+Maniobras con tecles.  grampas. puente grua,Atrapamiento,738,738
+Objetos pesados suspendidos o inestables - Izaje de cargas,Cortes Profundos al Personal,739,739
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Cortes Profundos al Personal,740,740
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caidas al mismo Nivel,741,741
+Herramientas hechizas,Cortes Profundos al Personal,742,742
+Iluminacion deficiente de Area de trabajo,Intoxicacion,743,743
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,744,744
+Exceso de polvo en el ambiente,Caida a distinto nivel,745,745
+Exceso de polvo en el ambiente,Intoxicacion,746,746
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Atrapamiento,747,747
+Objetos pesados suspendidos o inestables - Izaje de cargas,Atrapamiento,748,748
+Objetos pesados suspendidos o inestables - Izaje de cargas,Atrapamiento,749,749
+Ruido de equipos por encima de los 85 dB,Electrocucion,750,750
+Humo (combustion. soldadura. otros),Caidas al mismo Nivel,751,751
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Tropiezos y Caidas,752,752
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caidas al mismo Nivel,753,753
+Ruido de equipos por encima de los 85 dB,Tropiezos y Caidas,754,754
+Ruido de equipos por encima de los 85 dB,Lesiones,755,755
+Exceso de polvo en el ambiente,Tropiezos y Caidas,756,756
+Ruido de equipos por encima de los 85 dB,Aplastamiento de extremidades,757,757
+Maniobras con tecles.  grampas. puente grua,Electrocucion,758,758
+Exceso de polvo en el ambiente,Lesiones,759,759
+Materiales,Silicosis,760,760
+Exceso de polvo en el ambiente,Intoxicacion,761,761
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesion por caida de material,762,762
+Humo (combustion. soldadura. otros),Silicosis,763,763
+Iluminacion deficiente de Area de trabajo,Caida a distinto nivel,764,764
+Herramientas no asegurados o fuera de sus guardas,Aplastamiento de extremidades,765,765
+Herramientas hechizas,Caidas al mismo Nivel,766,766
+Exceso de polvo en el ambiente,Caidas al mismo Nivel,767,767
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caidas al mismo Nivel,768,768
+Ruido de equipos por encima de los 85 dB,Silicosis,769,769
+Materiales,Aplastamiento de extremidades,770,770
+Materiales,Caida a distinto nivel,771,771
+Maniobras con tecles.  grampas. puente grua,Lesion por caida de material,772,772
+Ruido de equipos por encima de los 85 dB,Mala manipulacion,773,773
+Iluminacion deficiente de Area de trabajo,Tropiezos y Caidas,774,774
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caidas al mismo Nivel,775,775
+Maniobras con tecles.  grampas. puente grua,Mala manipulacion,776,776
+Materiales,Cortes Profundos al Personal,777,777
+Iluminacion deficiente de Area de trabajo,Cortes Profundos al Personal,778,778
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Hipoacusia,779,779
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,780,780
+Plataforma a diferente nivel,Caidas al mismo Nivel,781,781
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Cortes Profundos al Personal,782,782
+Zonas resbaladizas,Lesiones,783,783
+Iluminacion deficiente de Area de trabajo,Caidas al mismo Nivel,784,784
+Materiales,Electrocucion,785,785
+Ruido de equipos por encima de los 85 dB,Lesion por caida de material,786,786
+Iluminacion deficiente de Area de trabajo,Lesion por caida de material,787,787
+Iluminacion deficiente de Area de trabajo,Cortes Profundos al Personal,788,788
+Maniobras con tecles.  grampas. puente grua,Lesiones,789,789
+Objetos pesados suspendidos o inestables - Izaje de cargas,Aplastamiento de extremidades,790,790
+Exceso de polvo en el ambiente,Lesiones,791,791
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Aplastamiento de extremidades,792,792
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,793,793
+Exceso de polvo en el ambiente,Silicosis,794,794
+Maniobras con tecles.  grampas. puente grua,Caida a distinto nivel,795,795
+Materiales,Silicosis,796,796
+Ruido de equipos por encima de los 85 dB,Mala manipulacion,797,797
+Herramientas hechizas,Hipoacusia,798,798
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,799,799
+Exceso de polvo en el ambiente,Silicosis,800,800
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,801,801
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,802,802
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,803,803
+Zonas resbaladizas,Lesiones,804,804
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesiones,805,805
+Exceso de polvo en el ambiente,Caidas al mismo Nivel,806,806
+Objetos pesados suspendidos o inestables - Izaje de cargas,Intoxicacion,807,807
+Ruido de equipos por encima de los 85 dB,Cortes Profundos al Personal,808,808
+Humo (combustion. soldadura. otros),Lesiones,809,809
+Objetos pesados suspendidos o inestables - Izaje de cargas,Hipoacusia,810,810
+Herramientas hechizas,Mala manipulacion,811,811
+Exceso de polvo en el ambiente,Silicosis,812,812
+Posturas inadecuadas y por periodos de tiempo prolongados,Cortes Profundos al Personal,813,813
+Posturas inadecuadas y por periodos de tiempo prolongados,Caida a distinto nivel,814,814
+Herramientas hechizas,Caidas al mismo Nivel,815,815
+Iluminacion deficiente de Area de trabajo,Hipoacusia,816,816
+Iluminacion deficiente de Area de trabajo,Electrocucion,817,817
+Herramientas hechizas,Lesion por caida de material,818,818
+Iluminacion deficiente de Area de trabajo,Intoxicacion,819,819
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caidas al mismo Nivel,820,820
+Maniobras con tecles.  grampas. puente grua,Silicosis,821,821
+Herramientas no asegurados o fuera de sus guardas,Aplastamiento de extremidades,822,822
+Materiales,Lesiones,823,823
+Herramientas hechizas,Tropiezos y Caidas,824,824
+Exceso de polvo en el ambiente,Lesiones,825,825
+Herramientas no asegurados o fuera de sus guardas,Hipoacusia,826,826
+Objetos pesados suspendidos o inestables - Izaje de cargas,Aplastamiento de extremidades,827,827
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,828,828
+Exceso de polvo en el ambiente,Atrapamiento,829,829
+Maniobras con tecles.  grampas. puente grua,Electrocucion,830,830
+Posturas inadecuadas y por periodos de tiempo prolongados,Intoxicacion,831,831
+Zonas resbaladizas,Atrapamiento,832,832
+Materiales,Intoxicacion,833,833
+Maniobras con tecles.  grampas. puente grua,Lesion por caida de material,834,834
+Herramientas no asegurados o fuera de sus guardas,Intoxicacion,835,835
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Caidas al mismo Nivel,836,836
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Atrapamiento,837,837
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,838,838
+Herramientas hechizas,Silicosis,839,839
+Plataforma a diferente nivel,Lesiones,840,840
+Zonas resbaladizas,Aplastamiento de extremidades,841,841
+Materiales,Lesiones,842,842
+Zonas resbaladizas,Cortes Profundos al Personal,843,843
+Ruido de equipos por encima de los 85 dB,Lesiones,844,844
+Objetos pesados suspendidos o inestables - Izaje de cargas,Electrocucion,845,845
+Plataforma a diferente nivel,Silicosis,846,846
+Exceso de polvo en el ambiente,Lesion por caida de material,847,847
+Objetos pesados suspendidos o inestables - Izaje de cargas,Tropiezos y Caidas,848,848
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,849,849
+Ruido de equipos por encima de los 85 dB,Intoxicacion,850,850
+Ruido de equipos por encima de los 85 dB,Silicosis,851,851
+Ruido de equipos por encima de los 85 dB,Cortes Profundos al Personal,852,852
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,853,853
+Humo (combustion. soldadura. otros),Electrocucion,854,854
+Materiales,Lesion por caida de material,855,855
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesion por caida de material,856,856
+Materiales,Lesiones,857,857
+Herramientas hechizas,Lesion por caida de material,858,858
+Posturas inadecuadas y por periodos de tiempo prolongados,Aplastamiento de extremidades,859,859
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,860,860
+Humo (combustion. soldadura. otros),Tropiezos y Caidas,861,861
+Iluminacion deficiente de Area de trabajo,Atrapamiento,862,862
+Ruido de equipos por encima de los 85 dB,Aplastamiento de extremidades,863,863
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Tropiezos y Caidas,864,864
+Posturas inadecuadas y por periodos de tiempo prolongados,Hipoacusia,865,865
+Posturas inadecuadas y por periodos de tiempo prolongados,Cortes Profundos al Personal,866,866
+Maniobras con tecles.  grampas. puente grua,Cortes Profundos al Personal,867,867
+Exceso de polvo en el ambiente,Lesion por caida de material,868,868
+Herramientas hechizas,Electrocucion,869,869
+Iluminacion deficiente de Area de trabajo,Silicosis,870,870
+Humo (combustion. soldadura. otros),Tropiezos y Caidas,871,871
+Objetos pesados suspendidos o inestables - Izaje de cargas,Electrocucion,872,872
+Exceso de polvo en el ambiente,Lesiones,873,873
+Plataforma a diferente nivel,Silicosis,874,874
+Zonas resbaladizas,Tropiezos y Caidas,875,875
+Plataforma a diferente nivel,Lesiones,876,876
+Objetos pesados suspendidos o inestables - Izaje de cargas,Hipoacusia,877,877
+Posturas inadecuadas y por periodos de tiempo prolongados,Electrocucion,878,878
+Herramientas no asegurados o fuera de sus guardas,Aplastamiento de extremidades,879,879
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,880,880
+Maniobras con tecles.  grampas. puente grua,Hipoacusia,881,881
+Materiales,Aplastamiento de extremidades,882,882
+Ruido de equipos por encima de los 85 dB,Lesion por caida de material,883,883
+Zonas resbaladizas,Lesiones,884,884
+Posturas inadecuadas y por periodos de tiempo prolongados,Hipoacusia,885,885
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Aplastamiento de extremidades,886,886
+Posturas inadecuadas y por periodos de tiempo prolongados,Electrocucion,887,887
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,888,888
+Ruido de equipos por encima de los 85 dB,Tropiezos y Caidas,889,889
+Materiales,Atrapamiento,890,890
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,891,891
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Caidas al mismo Nivel,892,892
+Exceso de polvo en el ambiente,Hipoacusia,893,893
+Herramientas no asegurados o fuera de sus guardas,Lesiones,894,894
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,895,895
+Exceso de polvo en el ambiente,Hipoacusia,896,896
+Ruido de equipos por encima de los 85 dB,Cortes Profundos al Personal,897,897
+Objetos pesados suspendidos o inestables - Izaje de cargas,Atrapamiento,898,898
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Intoxicacion,899,899
+Ruido de equipos por encima de los 85 dB,Silicosis,900,900
+Materiales,Cortes Profundos al Personal,901,901
+Humo (combustion. soldadura. otros),Lesiones,902,902
+Materiales,Mala manipulacion,903,903
+Herramientas no asegurados o fuera de sus guardas,Electrocucion,904,904
+Herramientas no asegurados o fuera de sus guardas,Cortes Profundos al Personal,905,905
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Mala manipulacion,906,906
+Materiales,Caida a distinto nivel,907,907
+Plataforma a diferente nivel,Mala manipulacion,908,908
+Herramientas hechizas,Cortes Profundos al Personal,909,909
+Iluminacion deficiente de Area de trabajo,Lesion por caida de material,910,910
+Herramientas no asegurados o fuera de sus guardas,Intoxicacion,911,911
+Humo (combustion. soldadura. otros),Cortes Profundos al Personal,912,912
+Ruido de equipos por encima de los 85 dB,Lesion por caida de material,913,913
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,914,914
+Exceso de polvo en el ambiente,Silicosis,915,915
+Exceso de polvo en el ambiente,Lesion por caida de material,916,916
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Intoxicacion,917,917
+Zonas resbaladizas,Aplastamiento de extremidades,918,918
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Tropiezos y Caidas,919,919
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Aplastamiento de extremidades,920,920
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,921,921
+Maniobras con tecles.  grampas. puente grua,Hipoacusia,922,922
+Ruido de equipos por encima de los 85 dB,Tropiezos y Caidas,923,923
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesion por caida de material,924,924
+Plataforma a diferente nivel,Electrocucion,925,925
+Iluminacion deficiente de Area de trabajo,Electrocucion,926,926
+Plataforma a diferente nivel,Electrocucion,927,927
+Herramientas hechizas,Lesion por caida de material,928,928
+Herramientas no asegurados o fuera de sus guardas,Caidas al mismo Nivel,929,929
+Maniobras con tecles.  grampas. puente grua,Lesiones,930,930
+Iluminacion deficiente de Area de trabajo,Lesiones,931,931
+Plataforma a diferente nivel,Aplastamiento de extremidades,932,932
+Materiales,Cortes Profundos al Personal,933,933
+Ruido de equipos por encima de los 85 dB,Caidas al mismo Nivel,934,934
+Plataforma a diferente nivel,Electrocucion,935,935
+Herramientas hechizas,Mala manipulacion,936,936
+Objetos pesados suspendidos o inestables - Izaje de cargas,Caidas al mismo Nivel,937,937
+Exceso de polvo en el ambiente,Electrocucion,938,938
+Plataforma a diferente nivel,Caidas al mismo Nivel,939,939
+Zonas resbaladizas,Aplastamiento de extremidades,940,940
+Materiales,Tropiezos y Caidas,941,941
+Iluminacion deficiente de Area de trabajo,Electrocucion,942,942
+Objetos pesados suspendidos o inestables - Izaje de cargas,Cortes Profundos al Personal,943,943
+Materiales,Caida a distinto nivel,944,944
+Plataforma a diferente nivel,Silicosis,945,945
+Iluminacion deficiente de Area de trabajo,Intoxicacion,946,946
+Herramientas no asegurados o fuera de sus guardas,Tropiezos y Caidas,947,947
+Iluminacion deficiente de Area de trabajo,Lesion por caida de material,948,948
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Electrocucion,949,949
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Caida a distinto nivel,950,950
+Objetos pesados suspendidos o inestables - Izaje de cargas,Mala manipulacion,951,951
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Cortes Profundos al Personal,952,952
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Atrapamiento,953,953
+Iluminacion deficiente de Area de trabajo,Cortes Profundos al Personal,954,954
+Ruido de equipos por encima de los 85 dB,Caida a distinto nivel,955,955
+Posturas inadecuadas y por periodos de tiempo prolongados,Caidas al mismo Nivel,956,956
+Exceso de polvo en el ambiente,Mala manipulacion,957,957
+Materiales,Tropiezos y Caidas,958,958
+Iluminacion deficiente de Area de trabajo,Lesion por caida de material,959,959
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Cortes Profundos al Personal,960,960
+Objetos pesados suspendidos o inestables - Izaje de cargas,Hipoacusia,961,961
+Posturas inadecuadas y por periodos de tiempo prolongados,Caidas al mismo Nivel,962,962
+Maniobras con tecles.  grampas. puente grua,Mala manipulacion,963,963
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Lesiones,964,964
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caidas al mismo Nivel,965,965
+Maniobras con tecles.  grampas. puente grua,Atrapamiento,966,966
+Herramientas hechizas,Aplastamiento de extremidades,967,967
+Exceso de polvo en el ambiente,Lesiones,968,968
+Materiales,Caida a distinto nivel,969,969
+Plataforma a diferente nivel,Caidas al mismo Nivel,970,970
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesion por caida de material,971,971
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Caida a distinto nivel,972,972
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesion por caida de material,973,973
+Posturas inadecuadas y por periodos de tiempo prolongados,Caidas al mismo Nivel,974,974
+Exceso de polvo en el ambiente,Intoxicacion,975,975
+Ruido de equipos por encima de los 85 dB,Silicosis,976,976
+Exceso de polvo en el ambiente,Lesion por caida de material,977,977
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesiones,978,978
+Materiales,Caida a distinto nivel,979,979
+Iluminacion deficiente de Area de trabajo,Mala manipulacion,980,980
+Objetos pesados suspendidos o inestables - Izaje de cargas,Lesiones,981,981
+Zonas resbaladizas,Cortes Profundos al Personal,982,982
+Posturas inadecuadas y por periodos de tiempo prolongados,Cortes Profundos al Personal,983,983
+Energia Electrica Alta/Baja tension. Manipulacion manual de Sobre Cargas >25KG,Mala manipulacion,984,984
+Iluminacion deficiente de Area de trabajo,Mala manipulacion,985,985
+Maniobras con tecles.  grampas. puente grua,Aplastamiento de extremidades,986,986
+Posturas inadecuadas y por periodos de tiempo prolongados,Lesiones,987,987
+Ruido de equipos por encima de los 85 dB,Tropiezos y Caidas,988,988
+Objetos pesados suspendidos o inestables - Izaje de cargas,Aplastamiento de extremidades,989,989
+Zonas resbaladizas,Lesion por caida de material,990,990
+Materiales,Atrapamiento,991,991
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Hipoacusia,992,992
+Zonas resbaladizas,Tropiezos y Caidas,993,993
+Iluminacion deficiente de Area de trabajo,Electrocucion,994,994
+Exposicion a elementos punzo cortantes (cuchillos pela cables. destornilladores en punta),Mala manipulacion,995,995
+Zonas resbaladizas,Electrocucion,996,996
+Posturas inadecuadas y por periodos de tiempo prolongados,Tropiezos y Caidas,997,997
+Humo (combustion. soldadura. otros),Atrapamiento,998,998
+Obstaculos en las vias. en el suelo (Fragmentos de rocas. tuberias),Lesiones,999,999
+Humo (combustion. soldadura. otros),Tropiezos y Caidas,1000,1000
