@@ -62,7 +62,7 @@ VALUES
 (2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
-COPY Almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
+COPY almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -74,7 +74,7 @@ INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
 
 -- Poblamiento de la tabla Disponibilidad_equipo_soporte
 INSERT INTO Disponibilidad_Equipo_Soporte (Id_disponibilidad, Nombre_disponibilidad) 
-VALUES 
+VALUES
 (1, 'Disponible'),
 (2, 'Ocupado');
 
@@ -87,10 +87,10 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
-VALUES 
+COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipos_de_Soporte.csv' DELIMITER ',' CSV HEADER;
 
-
+-- Poblamiento de la tabla EquipoSXAlmacen
+COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla Actividad_empleado
 COPY actividad_empleado FROM 'C:\DBD-2024-2\datos\Actividad_empleado.csv' DELIMITER ',' CSV HEADER;
