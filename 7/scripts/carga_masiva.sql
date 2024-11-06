@@ -30,6 +30,12 @@ INSERT INTO Criticidad (Id_criticidad, Nivel) VALUES
 (2, 'Medio'),
 (3, 'Alto');
 
+-- Poblamiento de la tabla Estado_mantto
+INSERT INTO Estado_mantto (id_estado, estado) VALUES
+(1, 'Pendiente'),
+(2, 'En curso'),
+(3, 'Completa');
+
 -- Poblamiento de la tabla Empleado
 COPY empleado FROM 'C:\DBD-2024-2\datos\Empleado.csv' DELIMITER ',' CSV HEADER;
 
