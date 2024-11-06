@@ -758,17 +758,17 @@ INSERT INTO Incidencias_Tags (Incidencia,id_Registro) VALUES
 ('Complicaciones Climaticas', 2);
 
 -- Notificaciones
-INSERT INTO Notificaciones (Fecha_notificacion, Asunto,Mensaje, Id_remitente, Id_destinatario, Id_registro, Id_reporte) VALUES 
-('2024-09-15', 'Importante','Se ha creado un nuevo reporte.', 1, 2, 1, 1),
-('2024-09-16', 'Sigue con Errores','Actualización en el estado del reporte.', 1, 3, 2, 2),
-('2024-09-17', 'Escoge uno','El reporte ha sido cerrado.', 2, 1, 3, 3),
-('2024-09-18', 'Asunto Generico','Nuevo registro de mantenimiento.', 1, 2, 4, 4),
-('2024-09-19', 'Asunto Generico','Requiere revisión.', 2, 3, 5, 5),
-('2024-09-20', 'Asunto Generico', 'Se ha actualizado el registro.', 3, 1, 6, 6),
-('2024-09-21', 'Asunto Generico', 'Notificación de mantenimiento programado.', 1, 2, 7, 7),
-('2024-09-22', 'Asunto Generico', 'Se ha cerrado el registro.', 2, 3, 8, 8),
-('2024-09-23', 'Asunto Generico', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9),
-( '2024-09-24','Asunto Generico',  'El registro ha sido actualizado.', 1, 2, 10, 10);
+INSERT INTO Notificaciones (Fecha_notificacion, Asunto,Mensaje, Id_remitente, Id_destinatario, Id_registro, Id_reporte, id_tipo) VALUES 
+('2024-09-15', 'Importante','Se ha creado un nuevo reporte.', 1, 2, 1, 1,1),
+('2024-09-16', 'Sigue con Errores','Actualización en el estado del reporte.', 1, 3, 2, 2,1),
+('2024-09-17', 'Escoge uno','El reporte ha sido cerrado.', 2, 1, 3, 3,1),
+('2024-09-18', 'Asunto Generico','Nuevo registro de mantenimiento.', 1, 2, 4, 4,2),
+('2024-09-19', 'Asunto Generico','Requiere revisión.', 2, 3, 5, 5,2),
+('2024-09-20', 'Asunto Generico', 'Se ha actualizado el registro.', 3, 1, 6, 6,2),
+('2024-09-21', 'Asunto Generico', 'Notificación de mantenimiento programado.', 1, 2, 7, 7,2),
+('2024-09-22', 'Asunto Generico', 'Se ha cerrado el registro.', 2, 3, 8, 8,2),
+('2024-09-23', 'Asunto Generico', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9,2),
+( '2024-09-24','Asunto Generico',  'El registro ha sido actualizado.', 1, 2, 10, 10,2);
 
 
 INSERT INTO Herramienta (Id_herramienta, Cantidad, Nombre) VALUES

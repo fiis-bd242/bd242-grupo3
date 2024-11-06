@@ -62,7 +62,7 @@ VALUES
 (2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
-COPY almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
+COPY Almacen FROM 'C:\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -87,7 +87,63 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipo_de_Soporte.csv' DELIMITER ',' CSV HEADER;
+INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
+VALUES 
+(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
+(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 2, 3),
+(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4),
+(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 2, 1),
+(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 2, 1),
+(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 2, 1),
+(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1),
+(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta', 500, 3, 2, 1),
+(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales', 400, 3, 2, 2),
+(10, 'EquipoA', 5, '2021-05-10', 'Descripcion A', 100, 3, 2, 1),
+(11, 'EquipoB', 5, '2021-05-11', 'Descripcion B', 100, 3, 2, 1),
+(12, 'EquipoC', 5, '2021-05-12', 'Descripcion C', 100, 3, 2, 1),
+(13, 'EquipoD', 5, '2021-05-13', 'Descripcion D', 100, 3, 2, 1),
+(14, 'EquipoE', 5, '2021-05-14', 'Descripcion E', 100, 3, 2, 1),
+(15, 'EquipoF', 5, '2021-05-15', 'Descripcion F', 100, 3, 2, 1),
+(16, 'EquipoG', 5, '2021-05-16', 'Descripcion G', 100, 3, 2, 1),
+(17, 'EquipoH', 5, '2021-05-17', 'Descripcion H', 100, 3, 2, 1),
+(18, 'EquipoI', 5, '2021-05-18', 'Descripcion I', 100, 3, 2, 1),
+(19, 'EquipoJ', 5, '2021-05-19', 'Descripcion J', 100, 3, 2, 1),
+(20, 'EquipoK', 5, '2021-12-10', 'Descripcion K', 100, 3, 2, 1),
+(21, 'EquipoL', 5, '2021-09-11', 'Descripcion L', 100, 3, 2, 1),
+(22, 'EquipoM', 5, '2021-08-12', 'Descripcion M', 100, 3, 2, 1),
+(23, 'EquipoN', 5, '2021-07-13', 'Descripcion N', 100, 3, 2, 1),
+(24, 'EquipoÑ', 5, '2021-05-10', 'Descripcion Ñ', 100, 3, 2, 1),
+(25, 'EquipoO', 5, '2021-05-11', 'Descripcion O', 100, 3, 2, 1),
+(26, 'EquipoP', 5, '2021-05-12', 'Descripcion P', 100, 3, 2, 1),
+(27, 'EquipoQ', 5, '2021-05-13', 'Descripcion Q', 100, 3, 2, 1),
+(28, 'EquipoR', 5, '2021-05-14', 'Descripcion R', 100, 3, 2, 1),
+(29, 'EquipoS', 5, '2021-05-15', 'Descripcion S', 100, 3, 2, 1),
+(30, 'EquipoT', 5, '2021-05-16', 'Descripcion T', 100, 3, 2, 1),
+(31, 'EquipoU', 5, '2021-05-17', 'Descripcion U', 100, 3, 2, 1),
+(32, 'EquipoV', 5, '2021-05-18', 'Descripcion V', 100, 3, 2, 1),
+(33, 'EquipoW', 5, '2021-05-19', 'Descripcion W', 100, 3, 2, 1),
+(34, 'EquipoX', 5, '2021-12-10', 'Descripcion X', 100, 3, 2, 1),
+(35, 'EquipoY', 5, '2021-09-11', 'Descripcion Y', 100, 3, 2, 1),
+(36, 'EquipoZ', 5, '2021-08-12', 'Descripcion Z', 100, 3, 2, 1),
+(37, 'EquipoAA', 5, '2021-07-13', 'Descripcion AA', 100, 3, 2, 1),
+(38, 'EquipoAB', 5, '2021-05-10', 'Descripcion AB', 100, 3, 2, 1),
+(39, 'EquipoAC', 5, '2021-05-11', 'Descripcion AC', 100, 3, 2, 1),
+(40, 'EquipoAD', 5, '2021-05-12', 'Descripcion AD', 100, 3, 2, 1),
+(41, 'EquipoAE', 5, '2021-05-12', 'Descripcion AE', 100, 3, 2, 1),
+(42, 'EquipoAF', 5, '2021-05-13', 'Descripcion AF', 100, 3, 2, 1),
+(43, 'EquipoAG', 5, '2021-05-14', 'Descripcion AG', 100, 3, 2, 1),
+(44, 'EquipoAH', 5, '2021-05-15', 'Descripcion AH', 100, 3, 2, 1),
+(45, 'EquipoAI', 5, '2021-05-16', 'Descripcion AI', 100, 3, 2, 1),
+(46, 'EquipoAJ', 5, '2021-05-17', 'Descripcion AJ', 100, 3, 2, 1),
+(47, 'EquipoAK', 5, '2021-05-18', 'Descripcion AK', 100, 3, 2, 1),
+(48, 'EquipoAL', 5, '2021-05-19', 'Descripcion AL', 100, 3, 2, 1),
+(49, 'EquipoAM', 5, '2021-12-10', 'Descripcion AM', 100, 3, 2, 1),
+(50, 'EquipoAN', 5, '2021-09-11', 'Descripcion AN', 100, 3, 2, 1),
+(51, 'EquipoAÑ', 5, '2021-08-12', 'Descripcion AÑ', 100, 3, 2, 1),
+(52, 'EquipoAO', 5, '2021-08-12', 'Descripcion AO', 100, 3, 1, 1),
+(53, 'EquipoAP', 5, '2021-07-13', 'Descripcion AP', 100, 3, 1, 1),
+(54, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2);
+
 
 -- Poblamiento de la tabla EquipoSXAlmacen
 COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
@@ -704,7 +760,46 @@ INSERT INTO Registro_compra_herramienta (id_reg_herramienta, fecha_registro, Des
 (18, '2025-01-22', 'Compra de medidores eléctricos', 45, 2, 18, 18),
 (19, '2025-02-05', 'Compra de baterías recargables', 100, 4, 19, 19),
 (20, '2025-02-18', 'Compra de kits de primeros auxilios', 25, 2, 20, 20);
- 
+
+-- Estado
+INSERT INTO Estado_pedido (id_estado_pedido, nombre_estado) VALUES
+(1, 'Aprobado'),
+(2, 'En proceso de envío'),
+(3, 'Enviado');
+
+-- Pedido
+INSERT INTO Pedido (Id_pedido, Cant_pedid, Fecha, Est_inactividad, Id_herramienta, Id_empleado, Id_estado_pedido) VALUES
+(1, 30, '2024-01-10', '1', 1, 1, 1),
+(2, 50, '2024-02-05', '1', 2, 2, 2),
+(3, 100, '2024-03-01', '0', 3, 3, 3),
+(4, 25, '2024-03-25', '1', 4, 4, 1),
+(5, 70, '2024-04-10', '1', 5, 5, 2),
+(6, 60, '2024-05-01', '0', 6, 6, 3),
+(7, 80, '2024-06-05', '1', 7, 7, 1),
+(8, 200, '2024-07-10', '1', 8, 8, 2),
+(9, 150, '2024-08-15', '0', 9, 9, 3),
+(10, 40, '2024-09-01', '1', 10, 10, 1),
+(11, 100, '2024-09-18', '1', 11, 11, 2),
+(12, 120, '2024-10-05', '0', 12, 12, 3),
+(13, 180, '2024-10-20', '1', 13, 13, 1),
+(14, 35, '2024-11-02', '1', 14, 14, 2),
+(15, 15, '2024-11-20', '0', 15, 15, 3),
+(16, 50, '2024-12-01', '1', 16, 16, 1),
+(17, 60, '2024-12-15', '0', 17, 17, 2),
+(18, 45, '2025-01-10', '1', 18, 18, 3),
+(19, 100, '2025-01-25', '0', 19, 19, 1),
+(20, 25, '2025-02-05', '1', 20, 20, 2);
+
+
+
+COPY Registro FROM '..\datos\Orden_trabajo.csv' DELIMITER ',' CSV HEADER;
+COPY Incidencias_Tags FROM '..\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
+COPY Reportes FROM '..\datos\Reportes.csv' DELIMITER ',' CSV HEADER;
+COPY Notificaciones FROM '..\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
+
+
+
+
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
 VALUES 
@@ -727,6 +822,12 @@ VALUES
 ('Administrador', 120, 102),
 ('Master', 180, 103);
 
+
+-- Poblamiento de la tabla Sesion_Empleado 
+
+COPY Sesion_Empleado FROM '..\datos\sesion_empleado.csv' DELIMITER ',' CSV HEADER;
+
+/*
 INSERT INTO Sesion_Empleado (Id_Sesion, Id_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Id_estado_Sesion, Cargo, t_inactividad)
 VALUES 
 (1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario', INTERVAL '10 minutes'),
@@ -739,9 +840,13 @@ VALUES
 (8, 8, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 2, 'Usuario', INTERVAL '25 minutes'),
 (9, 9, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 2, 'Master', INTERVAL '7 minutes'),
 (10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario', INTERVAL '10 minutes');
-
+*/
 
 --Autenticacion_en_2_pasos
+
+COPY Autenticacion_en_2_pasos  FROM '..\datos\autenticacion_en_2_pasos.csv' DELIMITER ',' CSV HEADER;
+
+/*
 INSERT INTO Autenticacion_en_2_pasos (Id_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, cod_Verificacion, Id_sesion, Id_Estado_autenticador)
 VALUES 
 (1, '2024-10-01 08:05:00', 1, 123456, 1, 1),
@@ -754,8 +859,14 @@ VALUES
 (8, '2024-10-08 10:20:00', 2, 321987, 8, 2),
 (9, '2024-10-09 14:30:00', 3, 789123, 9, 2),
 (10, '2024-10-10 11:25:00', 1, 123789, 10, 1);
+*/
 
--- Poblar la tabla Sesion_sospechosa con 10 registros
+
+-- Poblar la tabla Sesion_sospechosa 
+
+COPY Sesion_sospechosas  FROM '..\datos\sesion_sospechosa.csv' DELIMITER ',' CSV HEADER;
+
+/*
 INSERT INTO Sesion_sospechosa (ID_Sesion_sospechosa, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
 VALUES 
 (1, 1, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.6', 'Lima, Peru', 'Alertar al administrador'),
@@ -768,7 +879,15 @@ VALUES
 (8, 8, 'Bloqueada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 17:45:00', '192.168.0.13', 'Iquitos, Peru', 'Investigar incidencia'),
 (9, 9, 'Finalizada', '00:1B:44:11:3A:J5', 'Laptop', '2024-10-09 18:15:00', '192.168.0.14', 'Pucallpa, Peru', 'Enviar alerta al equipo'),
 (10, 10, 'Activa', '00:1B:44:11:3A:K6', 'Servidor', '2024-10-10 19:00:00', '192.168.0.15', 'Tarapoto, Peru', 'Revisar actividad en detalle');
--- Poblar la tabla Notificacion_Administrador con 10 registros
+*/
+
+
+-- Poblar la tabla Notificacion_Administrador 
+
+COPY Notificacion_Administrador  FROM '..\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
+
+
+/*
 INSERT INTO Notificacion_Administrador (ID_Notificacion, Id_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa, Id_autenticacion)
 VALUES 
 (1, 1, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1, 1),
@@ -781,6 +900,9 @@ VALUES
 (8, 8, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8, 8),
 (9, 9, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 9),
 (10, 10, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 10);
+*/
+
+
 
 INSERT INTO Estado_codigo (Id_estado_codigo, Descripcion)
 VALUES 
@@ -796,6 +918,12 @@ VALUES
 ('Deshabilitado', 'Recuperación deshabilitada temporalmente');
 
 
+-- Poblar la tabla Recuperacion_de_contraseña
+
+COPY Recuperacion_de_contraseña  FROM '..\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
+
+
+/*
 INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, ID_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Id_estado_codigo)
 VALUES 
 (1, 2, '2024-10-01 08:20:00', 'newPass123', 'user1@example.com', 'Generado'),
@@ -808,5 +936,5 @@ VALUES
 (8, 2, '2024-10-08 15:15:00', 'quickPass234', 'user8@example.com', 'Pendiente'),
 (9, 2, '2024-10-09 16:00:00', 'fastPass567', 'user9@example.com', 'Revocado'),
 (10, 2, '2024-10-10 17:45:00', 'finalPass890', 'user10@example.com', 'Deshabilitado');
-
+*/
 

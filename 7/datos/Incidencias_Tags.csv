@@ -1,0 +1,1001 @@
+Id_incidencias,Incidencia,id_Registro
+1,Revisión de temperatura,860
+2,Cambio de fusor,917
+3,Configuración de digitalización a carpeta de red,390
+4,Sustitución de fuente de alimentación,854
+5,Mantenimiento correctivo,985
+6,Revisión de copias de seguridad,234
+7,Revisión de filtros,845
+8,Sustitución de rodillos de alimentación,175
+9,Calibración de sensores,498
+10,Mantenimiento de periféricos,256
+11,Problema de USB,227
+12,Problema de impresión,989
+13,Revisión de memoria,866
+14,Revisión de configuración de copiadora,926
+15,Reparación de lector de tarjetas,849
+16,Reparación de sensor de papel,0
+17,Reemplazo de memoria RAM,685
+18,Error de software,486
+19,Reparación de lector de tarjetas,117
+20,Problema de digitalización,85
+21,Actualización de software,586
+22,Cambio de tarjeta gráfica,10
+23,Revisión de licencias,41
+24,Reparación de altavoces,345
+25,Revisión de configuración de servidor,407
+26,Cambio de monitor,858
+27,Problema de digitalización,108
+28,Problema de conexión de red,637
+29,Reemplazo de memoria RAM,189
+30,Limpieza de ventilación,422
+31,Problema de USB,98
+32,Error de software,579
+33,Mantenimiento de escáner,822
+34,Fallo en sistema,71
+35,Reparación de puerto HDMI,646
+36,Problema de alimentación,81
+37,Cambio de teclado,504
+38,Configuración de red,315
+39,Problema de conexión de red,988
+40,Revisión de temperatura,79
+41,Revisión de configuración de fax,500
+42,Sustitución de rodillos de alimentación,725
+43,Reparación de alimentador automático de documentos,355
+44,Configuración de firewall,350
+45,Sustitución de rodillos de alimentación,231
+46,Sustitución de batería,676
+47,Reparación de teclado,98
+48,Problema de escáner,830
+49,Problema de calidad de impresión,838
+50,Calibración de sensores,638
+51,Cambio de monitor,653
+52,Cambio de teclado,767
+53,Sustitución de batería,591
+54,Limpieza de cabezales de impresión,746
+55,Ajuste de configuración,152
+56,Sustitución de fuente de alimentación,712
+57,Mantenimiento de escáner,594
+58,Revisión de configuración de red,583
+59,Configuración de impresora,774
+60,Configuración de red,126
+61,Reparación de altavoces,632
+62,Configuración de BIOS,527
+63,Revisión de copias de seguridad,539
+64,Revisión de periféricos,737
+65,Reparación de altavoces,581
+66,Revisión de configuración de red,504
+67,Revisión de configuración de fax,596
+68,Cambio de teclado,566
+69,Reparación de alimentador automático de documentos,869
+70,Cambio de disco duro,716
+71,Limpieza de carcasa,455
+72,Sustitución de rodillos de alimentación,807
+73,Inspección de componentes,338
+74,Configuración de firewall,386
+75,Cambio de piezas,770
+76,Reemplazo de unidad de imagen,107
+77,Revisión de filtros,469
+78,Sustitución de rodillo de arrastre,546
+79,Reparación de lector de tarjetas,496
+80,Actualización de software de escáner,314
+81,Cambio de teclado,259
+82,Sustitución de cableado,327
+83,Problema de impresión,372
+84,Configuración de impresora,709
+85,Limpieza de ventilación,273
+86,Limpieza de equipo,893
+87,Configuración de fax,919
+88,Problema de impresión,830
+89,Cambio de teclado,811
+90,Reemplazo de memoria RAM,756
+91,Revisión de software,265
+92,Reemplazo de ventilador,819
+93,Inspección de bandeja de entrada,62
+94,Sustitución de rodillos de alimentación,997
+95,Configuración de BIOS,395
+96,Mantenimiento de impresora,273
+97,Limpieza de ventilación,470
+98,Limpieza de carcasa,184
+99,Revisión de configuración de escáner,892
+100,Cambio de teclado,377
+101,Reparación de micrófono,108
+102,Reparación de bandeja de papel,94
+103,Limpieza de ventilación,415
+104,Mantenimiento de escáner,592
+105,Revisión de copias de seguridad,713
+106,Cambio de fuente,428
+107,Sustitución de rodillo de arrastre,976
+108,Actualización de firmware de impresora,537
+109,Reemplazo de ventilador,921
+110,Revisión de configuración de red,688
+111,Inspección de cartuchos de tinta,413
+112,Cambio de teclado,946
+113,Mantenimiento preventivo,813
+114,Revisión de antivirus,377
+115,Limpieza de equipo,92
+116,Limpieza de cristal de escáner,332
+117,Mantenimiento preventivo,285
+118,Revisión de filtros,25
+119,Configuración de firewall,686
+120,Inspección de cables,885
+121,Cambio de monitor,380
+122,Cambio de disco duro,930
+123,Error de software,152
+124,Cambio de tarjeta gráfica,991
+125,Reparación de touchpad,825
+126,Inspección de componentes,391
+127,Problema de conexión Wi-Fi,276
+128,Problema de USB,276
+129,Sustitución de cableado,519
+130,Problema de calidad de escaneo,726
+131,Problema de sonido,444
+132,Inspección de cables,15
+133,Actualización de firmware de impresora,959
+134,Sustitución de batería,607
+135,Problema de sonido,102
+136,Actualización de firmware de impresora,694
+137,Reparación de altavoces,778
+138,Actualización de firmware,454
+139,Reparación de pantalla,109
+140,Problema de conexión,74
+141,Problema de conexión,333
+142,Reparación de bandeja de papel,53
+143,Revisión de configuración de escáner,749
+144,Problema de sonido,121
+145,Revisión de configuración de impresora de red,67
+146,Mantenimiento de periféricos,853
+147,Inspección de bandeja de entrada,882
+148,Sustitución de batería,606
+149,Configuración de BIOS,822
+150,Revisión de configuración de servidor,553
+151,Reemplazo de ventilador,214
+152,Reemplazo de ventilador,782
+153,Sustitución de fuente de alimentación,895
+154,Configuración de BIOS,196
+155,Reparación de lector de tarjetas,680
+156,Reemplazo de tóner,211
+157,Inspección de cartuchos de tinta,477
+158,Inspección de cartuchos de tinta,371
+159,Inspección de componentes,477
+160,Configuración de fax,805
+161,Sustitución de fuente de alimentación,17
+162,Revisión de configuración de impresora de red,345
+163,Actualización de firmware de impresora,263
+164,Reparación de teclado,937
+165,Mantenimiento de escáner,165
+166,Sustitución de rodillos de alimentación,406
+167,Reparación de altavoces,463
+168,Cambio de teclado,646
+169,Revisión de configuración de correo,92
+170,Inspección de bandeja de entrada,892
+171,Configuración de red,827
+172,Reparación de pantalla,503
+173,Revisión de configuración de escáner,122
+174,Reparación de puerto HDMI,374
+175,Reparación de micrófono,99
+176,Revisión de software,353
+177,Ajuste de configuración,921
+178,Mantenimiento de impresora,798
+179,Cambio de fusor,185
+180,Configuración de firewall,577
+181,Limpieza de ventilación,153
+182,Reparación de teclado,92
+183,Configuración de red,53
+184,Reparación de altavoces,305
+185,Calibración de sensores,721
+186,Ajuste de configuración,348
+187,Calibración de sensores,497
+188,Cambio de tarjeta gráfica,394
+189,Cambio de tarjeta gráfica,208
+190,Actualización de software,177
+191,Cambio de fuente,886
+192,Reemplazo de unidad de imagen,41
+193,Reemplazo de memoria RAM,380
+194,Configuración de red,556
+195,Ajuste de configuración,141
+196,Reemplazo de memoria RAM,459
+197,Inspección de bandeja de entrada,217
+198,Reparación de altavoces,324
+199,Sustitución de rodillos de alimentación,2
+200,Problema de sonido,529
+201,Reparación de lector de tarjetas,943
+202,Cambio de piezas,585
+203,Mantenimiento correctivo,937
+204,Cambio de tambor de imagen,283
+205,Inspección de bandeja de entrada,857
+206,Limpieza de carcasa,324
+207,Problema de conexión Wi-Fi,348
+208,Reparación de bandeja de papel,138
+209,Ajuste de configuración,437
+210,Problema de arranque,533
+211,Reemplazo de placa base,67
+212,Problema de calidad de impresión,25
+213,Revisión de licencias,701
+214,Revisión de periféricos,4
+215,Sustitución de fuente de alimentación,976
+216,Reparación de lector de tarjetas,746
+217,Revisión de filtros,18
+218,Reparación de puerto HDMI,522
+219,Cambio de tarjeta gráfica,195
+220,Actualización de firmware de impresora,22
+221,Reemplazo de memoria RAM,271
+222,Cambio de monitor,494
+223,Problema de alimentación,456
+224,Sustitución de rodillos de alimentación,146
+225,Problema de conexión Wi-Fi,816
+226,Inspección de bandeja de entrada,228
+227,Cambio de disco duro,961
+228,Reemplazo de unidad de imagen,143
+229,Limpieza de cristal de escáner,574
+230,Cambio de disco duro,49
+231,Reparación de sensor de papel,572
+232,Fallo en sistema,83
+233,Reparación de puerto HDMI,939
+234,Mantenimiento preventivo,712
+235,Inspección de cartuchos de tinta,383
+236,Problema de escaneo a correo electrónico,473
+237,Calibración de sensores,838
+238,Actualización de firmware de impresora,439
+239,Reparación de alimentador automático de documentos,366
+240,Inspección de cables,254
+241,Problema de rendimiento,121
+242,Reparación de sensor de papel,921
+243,Problema de conexión Wi-Fi,258
+244,Calibración de sensores,974
+245,Revisión de configuración de fax,440
+246,Actualización de drivers,232
+247,Reparación de puerto HDMI,87
+248,Actualización de firmware,471
+249,Mantenimiento de periféricos,303
+250,Problema de rendimiento,58
+251,Problema de calidad de escaneo,745
+252,Problema de rendimiento,21
+253,Revisión de periféricos,721
+254,Revisión de licencias,581
+255,Reemplazo de memoria RAM,549
+256,Cambio de piezas,771
+257,Reemplazo de unidad de imagen,602
+258,Cambio de unidad óptica,339
+259,Sustitución de rodillos de alimentación,438
+260,Problema de conexión Wi-Fi,986
+261,Inspección de cartuchos de tinta,743
+262,Configuración de BIOS,396
+263,Revisión de configuración de servidor,416
+264,Revisión de antivirus,532
+265,Problema de calidad de escaneo,56
+266,Problema de escaneo a correo electrónico,163
+267,Configuración de firewall,60
+268,Problema de conexión Wi-Fi,759
+269,Reparación de touchpad,953
+270,Mantenimiento de escáner,283
+271,Revisión de configuración de impresora de red,324
+272,Revisión de configuración de impresora de red,991
+273,Limpieza de carcasa,980
+274,Revisión de configuración de red,454
+275,Reparación de puerto HDMI,706
+276,Actualización de firmware de impresora,175
+277,Problema de calidad de impresión,553
+278,Inspección de cartuchos de tinta,719
+279,Inspección de cables,191
+280,Reparación de alimentador automático de documentos,549
+281,Revisión de temperatura,203
+282,Reparación de lector de tarjetas,104
+283,Reparación de teclado,812
+284,Cambio de tarjeta gráfica,789
+285,Problema de alimentación,674
+286,Cambio de tarjeta gráfica,540
+287,Problema de calidad de impresión,172
+288,Revisión de software,415
+289,Reparación de micrófono,264
+290,Revisión de configuración de fax,546
+291,Limpieza de equipo,449
+292,Problema de escáner,635
+293,Reparación de alimentador automático de documentos,462
+294,Reparación de teclado,588
+295,Limpieza de mouse,66
+296,Reparación de altavoces,949
+297,Actualización de sistema operativo,15
+298,Cambio de monitor,227
+299,Revisión de configuración de VPN,351
+300,Problema de conexión Wi-Fi,158
+301,Sustitución de batería,966
+302,Problema de USB,110
+303,Problema de arranque,122
+304,Revisión de software,421
+305,Limpieza de mouse,852
+306,Revisión de software,746
+307,Configuración de BIOS,405
+308,Reparación de pantalla,967
+309,Reparación de touchpad,499
+310,Mantenimiento de impresora,852
+311,Revisión de configuración de correo,80
+312,Problema de escáner,410
+313,Problema de atasco de papel,870
+314,Actualización de drivers,660
+315,Revisión de cables,646
+316,Mantenimiento de periféricos,625
+317,Actualización de firmware,794
+318,Problema de atasco de papel,42
+319,Revisión de software,904
+320,Revisión de filtros,309
+321,Actualización de firmware,245
+322,Limpieza de ventilación,957
+323,Problema de calidad de impresión,104
+324,Limpieza de ventilación,446
+325,Cambio de disco duro,545
+326,Problema de arranque,513
+327,Reparación de sensor de papel,470
+328,Calibración de sensores,175
+329,Reparación de teclado,956
+330,Actualización de drivers,203
+331,Problema de conexión de red,503
+332,Fallo en sistema,267
+333,Revisión de puertos,595
+334,Revisión de cables,421
+335,Actualización de firmware,805
+336,Mantenimiento de periféricos,922
+337,Sustitución de cableado,512
+338,Reemplazo de tóner,864
+339,Reparación de touchpad,838
+340,Problema de rendimiento,333
+341,Reemplazo de unidad de imagen,722
+342,Revisión de software,582
+343,Revisión de puertos,268
+344,Sustitución de rodillos de alimentación,511
+345,Revisión de memoria,47
+346,Revisión de antivirus,239
+347,Mantenimiento de impresora,168
+348,Revisión de licencias,587
+349,Problema de conexión,372
+350,Cambio de disco duro,57
+351,Revisión de memoria,251
+352,Problema de digitalización,643
+353,Cambio de tambor de imagen,186
+354,Limpieza de ventilación,773
+355,Reparación de micrófono,422
+356,Revisión de antivirus,798
+357,Cambio de unidad óptica,43
+358,Revisión de configuración de impresora de red,976
+359,Cambio de monitor,371
+360,Limpieza de mouse,278
+361,Actualización de firmware,237
+362,Problema de conexión,237
+363,Cambio de unidad óptica,117
+364,Sustitución de fuente de alimentación,549
+365,Reparación de alimentador automático de documentos,738
+366,Actualización de software,818
+367,Problema de webcam,523
+368,Revisión de software,789
+369,Reparación de alimentador automático de documentos,867
+370,Revisión de periféricos,581
+371,Reemplazo de ventilador,328
+372,Reparación de sensor de papel,840
+373,Revisión de copias de seguridad,251
+374,Problema de conexión,888
+375,Problema de conexión de red,536
+376,Revisión de configuración de fax,86
+377,Sustitución de batería,209
+378,Problema de escaneo a correo electrónico,62
+379,Reparación de sensor de papel,859
+380,Reemplazo de ventilador,254
+381,Configuración de impresora,594
+382,Problema de conexión,124
+383,Configuración de firewall,179
+384,Revisión de cables,665
+385,Error de software,154
+386,Revisión de configuración de red,48
+387,Revisión de filtros,315
+388,Reparación de micrófono,932
+389,Revisión de antivirus,278
+390,Inspección de bandeja de entrada,254
+391,Sustitución de cableado,166
+392,Configuración de red,190
+393,Inspección de circuitos,22
+394,Inspección de circuitos,598
+395,Configuración de BIOS,203
+396,Limpieza de carcasa,583
+397,Inspección de bandeja de entrada,685
+398,Reemplazo de tóner,848
+399,Actualización de firmware de impresora,403
+400,Revisión de cables,92
+401,Reemplazo de placa base,832
+402,Reparación de bandeja de papel,957
+403,Revisión de licencias,615
+404,Cambio de unidad óptica,788
+405,Revisión de filtros,941
+406,Reparación de teclado,65
+407,Error de software,540
+408,Cambio de teclado,436
+409,Mantenimiento preventivo,214
+410,Problema de conexión Wi-Fi,656
+411,Limpieza de cristal de escáner,637
+412,Cambio de tambor de imagen,683
+413,Problema de sonido,878
+414,Problema de alimentación,955
+415,Revisión de configuración de VPN,943
+416,Configuración de impresora,463
+417,Revisión de configuración de correo,626
+418,Revisión de puertos,309
+419,Problema de conexión,829
+420,Sustitución de batería,190
+421,Mantenimiento correctivo,170
+422,Problema de arranque,461
+423,Sustitución de cableado,289
+424,Reemplazo de unidad de imagen,832
+425,Revisión de configuración de copiadora,492
+426,Mantenimiento preventivo,530
+427,Cambio de tarjeta gráfica,954
+428,Reemplazo de ventilador,980
+429,Inspección de cartuchos de tinta,431
+430,Fallo en sistema,288
+431,Reemplazo de tóner,600
+432,Inspección de bandeja de entrada,542
+433,Inspección de componentes,376
+434,Cambio de fuente,899
+435,Error de software,310
+436,Cambio de fusor,574
+437,Revisión de configuración de red,880
+438,Revisión de periféricos,743
+439,Mantenimiento de impresora,25
+440,Revisión de configuración de correo,922
+441,Revisión de configuración de fax,751
+442,Reparación de teclado,971
+443,Reparación de pantalla,314
+444,Calibración de sensores,390
+445,Reemplazo de memoria RAM,450
+446,Problema de calidad de escaneo,545
+447,Problema de conexión de red,917
+448,Limpieza de mouse,896
+449,Sustitución de cableado,145
+450,Cambio de fusor,246
+451,Revisión de copias de seguridad,799
+452,Error de software,136
+453,Reparación de sensor de papel,154
+454,Cambio de monitor,483
+455,Reparación de altavoces,191
+456,Reemplazo de placa base,931
+457,Reparación de bandeja de papel,286
+458,Revisión de antivirus,763
+459,Cambio de disco duro,936
+460,Configuración de impresora,426
+461,Cambio de tambor de imagen,578
+462,Revisión de copias de seguridad,202
+463,Configuración de digitalización a carpeta de red,295
+464,Problema de USB,964
+465,Reparación de lector de tarjetas,471
+466,Cambio de monitor,929
+467,Inspección de bandeja de entrada,708
+468,Cambio de monitor,957
+469,Reemplazo de ventilador,437
+470,Problema de impresión,237
+471,Reparación de altavoces,802
+472,Revisión de configuración de red,226
+473,Reparación de alimentador automático de documentos,983
+474,Configuración de firewall,825
+475,Reemplazo de unidad de imagen,793
+476,Problema de impresión,820
+477,Reemplazo de memoria RAM,210
+478,Problema de calidad de impresión,382
+479,Mantenimiento de impresora,148
+480,Cambio de fusor,498
+481,Reemplazo de placa base,825
+482,Reemplazo de unidad de imagen,224
+483,Revisión de licencias,338
+484,Mantenimiento correctivo,245
+485,Limpieza de cabezales de impresión,680
+486,Cambio de teclado,569
+487,Revisión de configuración de fax,889
+488,Configuración de firewall,506
+489,Limpieza de equipo,939
+490,Inspección de circuitos,995
+491,Error de software,213
+492,Cambio de fusor,192
+493,Sustitución de cableado,985
+494,Problema de digitalización,893
+495,Problema de escáner,188
+496,Actualización de software de escáner,280
+497,Reemplazo de memoria RAM,867
+498,Problema de arranque,215
+499,Revisión de configuración de fax,685
+500,Mantenimiento de periféricos,746
+501,Limpieza de cristal de escáner,796
+502,Cambio de unidad óptica,416
+503,Limpieza de mouse,713
+504,Reparación de touchpad,893
+505,Problema de rendimiento,383
+506,Revisión de configuración de servidor,663
+507,Reparación de alimentador automático de documentos,267
+508,Mantenimiento de periféricos,485
+509,Problema de digitalización,400
+510,Revisión de configuración de escáner,516
+511,Reparación de sensor de papel,422
+512,Revisión de configuración de correo,78
+513,Limpieza de carcasa,690
+514,Revisión de configuración de impresora de red,680
+515,Reparación de sensor de papel,468
+516,Problema de escaneo a correo electrónico,318
+517,Revisión de antivirus,540
+518,Inspección de componentes,88
+519,Inspección de circuitos,958
+520,Revisión de licencias,87
+521,Limpieza de cabezales de impresión,510
+522,Error de software,117
+523,Problema de escaneo a correo electrónico,838
+524,Reparación de alimentador automático de documentos,234
+525,Reemplazo de memoria RAM,248
+526,Problema de digitalización,806
+527,Revisión de configuración de servidor,386
+528,Revisión de periféricos,549
+529,Mantenimiento correctivo,674
+530,Reparación de sensor de papel,844
+531,Reemplazo de placa base,45
+532,Cambio de fuente,250
+533,Configuración de impresora,20
+534,Limpieza de carcasa,525
+535,Cambio de monitor,426
+536,Inspección de cables,321
+537,Sustitución de rodillo de arrastre,664
+538,Problema de impresión,889
+539,Problema de conexión de red,783
+540,Revisión de puertos,859
+541,Actualización de software de escáner,70
+542,Inspección de circuitos,181
+543,Problema de escáner,392
+544,Reparación de altavoces,747
+545,Revisión de temperatura,429
+546,Limpieza de mouse,534
+547,Reemplazo de unidad de imagen,895
+548,Revisión de configuración de fax,308
+549,Limpieza de mouse,87
+550,Cambio de fuente,996
+551,Revisión de configuración de fax,707
+552,Cambio de teclado,547
+553,Problema de alimentación,937
+554,Revisión de puertos,277
+555,Reemplazo de memoria RAM,1000
+556,Actualización de software de escáner,488
+557,Limpieza de carcasa,119
+558,Revisión de configuración de servidor,345
+559,Cambio de piezas,95
+560,Problema de conexión de red,939
+561,Inspección de componentes,28
+562,Cambio de piezas,265
+563,Revisión de configuración de servidor,297
+564,Reemplazo de memoria RAM,751
+565,Cambio de unidad óptica,304
+566,Fallo en sistema,747
+567,Cambio de unidad óptica,611
+568,Mantenimiento preventivo,533
+569,Reemplazo de tóner,546
+570,Sustitución de rodillo de arrastre,370
+571,Reemplazo de ventilador,406
+572,Revisión de configuración de copiadora,840
+573,Inspección de cables,339
+574,Problema de escaneo a correo electrónico,804
+575,Reparación de touchpad,901
+576,Problema de webcam,433
+577,Fallo en sistema,402
+578,Configuración de digitalización a carpeta de red,133
+579,Mantenimiento preventivo,134
+580,Actualización de software de escáner,101
+581,Inspección de cartuchos de tinta,718
+582,Reparación de pantalla,301
+583,Limpieza de cristal de escáner,872
+584,Reparación de micrófono,757
+585,Cambio de disco duro,20
+586,Revisión de software,253
+587,Actualización de drivers,496
+588,Inspección de cartuchos de tinta,438
+589,Reparación de pantalla,754
+590,Problema de conexión Wi-Fi,829
+591,Cambio de unidad óptica,659
+592,Revisión de configuración de VPN,635
+593,Mantenimiento de impresora,628
+594,Reparación de bandeja de papel,478
+595,Configuración de firewall,143
+596,Cambio de piezas,7
+597,Problema de webcam,491
+598,Reparación de pantalla,113
+599,Revisión de periféricos,663
+600,Problema de digitalización,575
+601,Inspección de bandeja de entrada,418
+602,Cambio de tambor de imagen,424
+603,Actualización de firmware,281
+604,Limpieza de mouse,401
+605,Problema de conexión,87
+606,Problema de calidad de impresión,187
+607,Cambio de disco duro,729
+608,Actualización de software de escáner,352
+609,Cambio de unidad óptica,268
+610,Actualización de firmware de impresora,411
+611,Revisión de configuración de correo,301
+612,Reparación de teclado,443
+613,Revisión de configuración de escáner,518
+614,Problema de conexión,176
+615,Actualización de firmware,260
+616,Reemplazo de tóner,205
+617,Cambio de unidad óptica,657
+618,Revisión de memoria,895
+619,Problema de atasco de papel,953
+620,Reparación de alimentador automático de documentos,883
+621,Cambio de disco duro,837
+622,Revisión de antivirus,462
+623,Problema de impresión,157
+624,Configuración de digitalización a carpeta de red,853
+625,Revisión de antivirus,175
+626,Mantenimiento de escáner,639
+627,Revisión de puertos,36
+628,Problema de arranque,934
+629,Configuración de digitalización a carpeta de red,375
+630,Reparación de pantalla,226
+631,Cambio de tambor de imagen,938
+632,Error de software,228
+633,Revisión de configuración de impresora de red,145
+634,Calibración de sensores,249
+635,Cambio de fuente,951
+636,Error de software,451
+637,Reemplazo de memoria RAM,653
+638,Reparación de altavoces,883
+639,Inspección de cables,467
+640,Problema de conexión Wi-Fi,986
+641,Reparación de sensor de papel,610
+642,Limpieza de equipo,688
+643,Cambio de monitor,798
+644,Problema de alimentación,819
+645,Cambio de teclado,967
+646,Revisión de licencias,676
+647,Limpieza de equipo,216
+648,Problema de calidad de impresión,570
+649,Cambio de piezas,154
+650,Mantenimiento preventivo,607
+651,Problema de arranque,612
+652,Limpieza de cristal de escáner,830
+653,Sustitución de fuente de alimentación,755
+654,Inspección de bandeja de entrada,305
+655,Configuración de firewall,50
+656,Cambio de disco duro,544
+657,Mantenimiento de escáner,423
+658,Cambio de monitor,6
+659,Limpieza de cristal de escáner,432
+660,Problema de arranque,622
+661,Configuración de red,477
+662,Mantenimiento de periféricos,149
+663,Ajuste de configuración,481
+664,Revisión de antivirus,898
+665,Inspección de circuitos,415
+666,Revisión de cables,322
+667,Revisión de cables,950
+668,Configuración de red,97
+669,Configuración de firewall,565
+670,Cambio de tambor de imagen,743
+671,Actualización de software,608
+672,Cambio de unidad óptica,781
+673,Revisión de configuración de fax,463
+674,Reparación de teclado,862
+675,Limpieza de mouse,562
+676,Revisión de copias de seguridad,333
+677,Problema de USB,884
+678,Limpieza de mouse,589
+679,Revisión de puertos,734
+680,Problema de digitalización,733
+681,Reparación de puerto HDMI,206
+682,Fallo en sistema,660
+683,Mantenimiento de escáner,845
+684,Revisión de configuración de impresora de red,3
+685,Problema de rendimiento,216
+686,Problema de USB,689
+687,Cambio de tarjeta gráfica,339
+688,Actualización de software de escáner,69
+689,Mantenimiento correctivo,347
+690,Reparación de bandeja de papel,103
+691,Problema de sonido,72
+692,Limpieza de ventilación,538
+693,Inspección de componentes,226
+694,Problema de USB,502
+695,Cambio de monitor,156
+696,Limpieza de equipo,228
+697,Revisión de software,595
+698,Problema de webcam,458
+699,Revisión de configuración de correo,430
+700,Reparación de touchpad,282
+701,Reparación de puerto HDMI,282
+702,Actualización de drivers,294
+703,Fallo en sistema,845
+704,Problema de alimentación,368
+705,Reemplazo de unidad de imagen,966
+706,Problema de rendimiento,680
+707,Revisión de configuración de impresora de red,191
+708,Sustitución de fuente de alimentación,624
+709,Problema de webcam,654
+710,Reparación de alimentador automático de documentos,496
+711,Error de software,47
+712,Reparación de pantalla,224
+713,Revisión de periféricos,841
+714,Calibración de sensores,223
+715,Limpieza de carcasa,851
+716,Problema de USB,339
+717,Sustitución de rodillos de alimentación,253
+718,Cambio de unidad óptica,992
+719,Reparación de alimentador automático de documentos,490
+720,Calibración de sensores,956
+721,Revisión de configuración de escáner,565
+722,Error de software,41
+723,Revisión de configuración de servidor,696
+724,Problema de webcam,13
+725,Revisión de antivirus,268
+726,Cambio de disco duro,881
+727,Problema de calidad de escaneo,775
+728,Sustitución de rodillos de alimentación,259
+729,Problema de digitalización,833
+730,Sustitución de cableado,730
+731,Reemplazo de unidad de imagen,716
+732,Revisión de configuración de copiadora,261
+733,Inspección de circuitos,948
+734,Sustitución de rodillo de arrastre,721
+735,Reparación de micrófono,767
+736,Reparación de bandeja de papel,220
+737,Problema de arranque,365
+738,Cambio de tambor de imagen,200
+739,Inspección de cables,289
+740,Revisión de puertos,402
+741,Problema de impresión,811
+742,Cambio de disco duro,739
+743,Problema de escaneo a correo electrónico,813
+744,Reparación de touchpad,680
+745,Problema de impresión,636
+746,Reemplazo de unidad de imagen,404
+747,Problema de conexión Wi-Fi,260
+748,Configuración de impresora,172
+749,Reparación de lector de tarjetas,540
+750,Revisión de filtros,409
+751,Reparación de teclado,58
+752,Limpieza de cabezales de impresión,93
+753,Configuración de red,157
+754,Problema de rendimiento,767
+755,Sustitución de cableado,908
+756,Configuración de impresora,748
+757,Error de software,221
+758,Reemplazo de memoria RAM,939
+759,Problema de impresión,99
+760,Revisión de configuración de escáner,203
+761,Sustitución de rodillos de alimentación,350
+762,Sustitución de cableado,212
+763,Cambio de fuente,30
+764,Problema de digitalización,222
+765,Sustitución de batería,374
+766,Limpieza de ventilación,319
+767,Revisión de copias de seguridad,848
+768,Calibración de sensores,598
+769,Actualización de sistema operativo,301
+770,Limpieza de equipo,467
+771,Ajuste de configuración,272
+772,Reemplazo de memoria RAM,542
+773,Inspección de cartuchos de tinta,65
+774,Fallo en sistema,995
+775,Mantenimiento correctivo,114
+776,Mantenimiento de periféricos,172
+777,Reparación de lector de tarjetas,428
+778,Problema de conexión,218
+779,Reparación de touchpad,296
+780,Configuración de BIOS,389
+781,Cambio de fusor,121
+782,Configuración de fax,186
+783,Revisión de puertos,889
+784,Problema de rendimiento,174
+785,Revisión de puertos,616
+786,Limpieza de cabezales de impresión,331
+787,Revisión de configuración de copiadora,875
+788,Revisión de configuración de fax,37
+789,Inspección de cartuchos de tinta,405
+790,Configuración de fax,841
+791,Problema de conexión,63
+792,Reemplazo de ventilador,383
+793,Problema de digitalización,418
+794,Configuración de impresora,989
+795,Calibración de sensores,983
+796,Sustitución de batería,652
+797,Actualización de drivers,534
+798,Reparación de micrófono,777
+799,Inspección de circuitos,388
+800,Problema de conexión Wi-Fi,669
+801,Problema de sonido,161
+802,Actualización de drivers,217
+803,Problema de rendimiento,402
+804,Actualización de firmware de impresora,384
+805,Problema de arranque,49
+806,Inspección de cables,962
+807,Problema de sonido,675
+808,Configuración de BIOS,947
+809,Problema de rendimiento,843
+810,Problema de conexión de red,383
+811,Reparación de teclado,849
+812,Reparación de pantalla,756
+813,Mantenimiento de escáner,321
+814,Reparación de bandeja de papel,448
+815,Problema de calidad de escaneo,130
+816,Limpieza de carcasa,772
+817,Revisión de configuración de servidor,427
+818,Reemplazo de placa base,697
+819,Ajuste de configuración,911
+820,Reparación de bandeja de papel,931
+821,Problema de rendimiento,766
+822,Limpieza de equipo,311
+823,Limpieza de equipo,387
+824,Configuración de digitalización a carpeta de red,287
+825,Problema de arranque,83
+826,Revisión de configuración de servidor,692
+827,Limpieza de cabezales de impresión,590
+828,Limpieza de cabezales de impresión,948
+829,Reemplazo de ventilador,105
+830,Actualización de firmware de impresora,691
+831,Revisión de configuración de VPN,463
+832,Limpieza de carcasa,134
+833,Problema de USB,232
+834,Configuración de BIOS,607
+835,Mantenimiento correctivo,153
+836,Problema de conexión,204
+837,Revisión de configuración de correo,834
+838,Mantenimiento de impresora,87
+839,Configuración de firewall,148
+840,Cambio de disco duro,668
+841,Actualización de drivers,309
+842,Revisión de configuración de escáner,618
+843,Revisión de copias de seguridad,158
+844,Reparación de micrófono,358
+845,Revisión de configuración de red,746
+846,Revisión de antivirus,354
+847,Cambio de teclado,838
+848,Revisión de configuración de copiadora,369
+849,Revisión de memoria,681
+850,Limpieza de cristal de escáner,939
+851,Revisión de periféricos,67
+852,Reparación de micrófono,661
+853,Inspección de cartuchos de tinta,954
+854,Revisión de periféricos,352
+855,Reparación de alimentador automático de documentos,704
+856,Reparación de sensor de papel,8
+857,Revisión de memoria,751
+858,Cambio de tarjeta gráfica,729
+859,Mantenimiento de impresora,382
+860,Cambio de disco duro,502
+861,Actualización de software,578
+862,Inspección de cables,346
+863,Problema de rendimiento,293
+864,Reemplazo de memoria RAM,553
+865,Revisión de configuración de fax,262
+866,Fallo en sistema,950
+867,Sustitución de rodillos de alimentación,732
+868,Reemplazo de placa base,895
+869,Problema de escaneo a correo electrónico,950
+870,Cambio de unidad óptica,523
+871,Reparación de touchpad,212
+872,Actualización de drivers,673
+873,Limpieza de cabezales de impresión,929
+874,Revisión de licencias,614
+875,Mantenimiento preventivo,772
+876,Revisión de configuración de servidor,802
+877,Cambio de piezas,236
+878,Problema de escaneo a correo electrónico,617
+879,Cambio de tarjeta gráfica,81
+880,Mantenimiento correctivo,252
+881,Error de software,67
+882,Revisión de configuración de correo,815
+883,Revisión de configuración de servidor,904
+884,Problema de USB,672
+885,Problema de arranque,508
+886,Cambio de unidad óptica,882
+887,Actualización de firmware,641
+888,Inspección de cables,269
+889,Error de software,291
+890,Reemplazo de ventilador,384
+891,Reparación de teclado,62
+892,Revisión de configuración de servidor,844
+893,Revisión de configuración de impresora de red,732
+894,Limpieza de mouse,55
+895,Cambio de tarjeta gráfica,805
+896,Revisión de configuración de impresora de red,791
+897,Problema de sonido,761
+898,Mantenimiento de impresora,554
+899,Revisión de copias de seguridad,802
+900,Actualización de sistema operativo,516
+901,Sustitución de rodillo de arrastre,26
+902,Actualización de firmware,295
+903,Sustitución de rodillo de arrastre,545
+904,Problema de impresión,390
+905,Cambio de fuente,837
+906,Mantenimiento de escáner,583
+907,Revisión de filtros,322
+908,Revisión de configuración de escáner,364
+909,Limpieza de carcasa,220
+910,Configuración de fax,297
+911,Problema de alimentación,140
+912,Cambio de fusor,303
+913,Reparación de pantalla,365
+914,Problema de impresión,506
+915,Configuración de digitalización a carpeta de red,325
+916,Sustitución de rodillo de arrastre,106
+917,Inspección de bandeja de entrada,46
+918,Problema de atasco de papel,760
+919,Configuración de fax,355
+920,Revisión de configuración de fax,586
+921,Error de software,426
+922,Revisión de configuración de copiadora,150
+923,Configuración de fax,759
+924,Cambio de tarjeta gráfica,182
+925,Revisión de configuración de red,673
+926,Problema de digitalización,694
+927,Problema de calidad de escaneo,150
+928,Problema de escaneo a correo electrónico,470
+929,Limpieza de mouse,409
+930,Problema de USB,658
+931,Cambio de unidad óptica,904
+932,Actualización de software de escáner,711
+933,Inspección de bandeja de entrada,244
+934,Mantenimiento preventivo,814
+935,Limpieza de carcasa,811
+936,Reparación de bandeja de papel,615
+937,Revisión de configuración de escáner,965
+938,Cambio de tambor de imagen,802
+939,Configuración de BIOS,155
+940,Revisión de configuración de red,885
+941,Cambio de fusor,60
+942,Cambio de fusor,749
+943,Reparación de micrófono,901
+944,Revisión de configuración de red,797
+945,Configuración de red,664
+946,Revisión de configuración de red,520
+947,Sustitución de batería,339
+948,Revisión de configuración de VPN,304
+949,Sustitución de rodillo de arrastre,4
+950,Reparación de teclado,196
+951,Problema de atasco de papel,121
+952,Mantenimiento correctivo,194
+953,Problema de rendimiento,987
+954,Revisión de configuración de VPN,605
+955,Problema de webcam,44
+956,Revisión de cables,310
+957,Problema de impresión,214
+958,Inspección de circuitos,396
+959,Sustitución de batería,82
+960,Limpieza de ventilación,847
+961,Limpieza de mouse,896
+962,Configuración de impresora,758
+963,Reemplazo de placa base,765
+964,Reemplazo de memoria RAM,577
+965,Problema de arranque,346
+966,Reemplazo de tóner,349
+967,Configuración de BIOS,740
+968,Revisión de software,173
+969,Reparación de bandeja de papel,970
+970,Cambio de unidad óptica,305
+971,Revisión de configuración de VPN,253
+972,Configuración de red,243
+973,Problema de conexión,692
+974,Problema de sonido,750
+975,Problema de USB,231
+976,Sustitución de rodillos de alimentación,639
+977,Revisión de memoria,906
+978,Revisión de temperatura,669
+979,Cambio de tarjeta gráfica,400
+980,Limpieza de cabezales de impresión,102
+981,Reparación de altavoces,349
+982,Revisión de software,237
+983,Revisión de puertos,246
+984,Problema de atasco de papel,152
+985,Problema de conexión,400
+986,Problema de rendimiento,344
+987,Reemplazo de unidad de imagen,109
+988,Problema de calidad de escaneo,643
+989,Reparación de touchpad,276
+990,Revisión de configuración de impresora de red,852
+991,Revisión de configuración de VPN,550
+992,Inspección de cables,721
+993,Actualización de sistema operativo,220
+994,Fallo en sistema,284
+995,Inspección de circuitos,469
+996,Mantenimiento preventivo,712
+997,Problema de sonido,943
+998,Revisión de configuración de servidor,230
+999,Actualización de firmware de impresora,401
+1000,Revisión de configuración de correo,177
