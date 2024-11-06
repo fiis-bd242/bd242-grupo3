@@ -270,7 +270,8 @@ COPY EquipoEvaluadorXEmpleado FROM 'C:\DBD-2024-2\datos\EquipoEvaluadorXEmpleado
 -- Poblamiento de tabla PlanaccionxEmpleado
 COPY PlanaccionxEmpleado FROM 'C:\DBD-2024-2\datos\PlanaccionxEmpleado.csv' DELIMITER ',' CSV HEADER;
 
-
+-- Poblamiento de tabla informe_iperc
+COPY informe_iperc FROM 'C:\DBD-2024-2\datos\informe_iperc.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla Tipo_maquina
 INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
