@@ -1,0 +1,1001 @@
+Descripcion_tarea,Puesto_trabajo,Cond_operacional,Id_actividad,id_tarea
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento,recados semanales,358,1
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento Preventivo,recados semanales,88,2
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,responsabilidades habituales,404,3
+Probar los sistemas de deteccion de gases para verificar su precision,Coordinador de Mantenimiento,asignaciones regulares,350,4
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,asignaciones regulares,289,5
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,40,6
+Inspeccionar las bandas transportadoras en busca de desgaste,Especialista en Mantenimiento Preventivo,asignaciones regulares,18,7
+Inspeccionar las bandas transportadoras en busca de desgaste,Supervisor de Mantenimiento,recados semanales,160,8
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,obligaciones frecuentes,49,9
+Inspeccionar las bandas transportadoras en busca de desgaste,Supervisor de Mantenimiento,responsabilidades habituales,362,10
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,asignaciones regulares,287,11
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,247,12
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,metas anuales,376,13
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,368,14
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,metas anuales,415,15
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,asignaciones regulares,342,16
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,deberes ocasionales,224,17
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,deberes ocasionales,181,18
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,493,19
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,deberes ocasionales,31,20
+Probar los botones de parada de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,101,21
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento,metas anuales,167,22
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,obligaciones frecuentes,370,23
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,metas anuales,313,24
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,asignaciones regulares,488,25
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,recados semanales,156,26
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,recados semanales,164,27
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,deberes ocasionales,269,28
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,deberes ocasionales,176,29
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,metas anuales,463,30
+Probar la iluminacion de emergencia para verificar su funcionalidad,Gerente de Instalaciones,Tareas diarias,246,31
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,obligaciones frecuentes,55,32
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,asignaciones regulares,91,33
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,recados semanales,278,34
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento,metas anuales,357,35
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,Tareas diarias,285,36
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,Tareas diarias,137,37
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,Tareas diarias,88,38
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,Tareas diarias,477,39
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,deberes ocasionales,129,40
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,deberes ocasionales,118,41
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,responsabilidades habituales,478,42
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,Tareas diarias,62,43
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,metas anuales,449,44
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,asignaciones regulares,12,45
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,399,46
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,deberes ocasionales,447,47
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,deberes ocasionales,26,48
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,metas anuales,473,49
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,asignaciones regulares,115,50
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,asignaciones regulares,105,51
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,metas anuales,61,52
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,asignaciones regulares,174,53
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento,responsabilidades habituales,26,54
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,obligaciones frecuentes,49,55
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,obligaciones frecuentes,415,56
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,180,57
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,recados semanales,446,58
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,asignaciones regulares,128,59
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,metas anuales,235,60
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,obligaciones frecuentes,350,61
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,metas anuales,459,62
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,recados semanales,121,63
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,metas anuales,199,64
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,Tareas diarias,8,65
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,asignaciones regulares,161,66
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,asignaciones regulares,174,67
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,metas anuales,229,68
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,deberes ocasionales,69,69
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,metas anuales,315,70
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,metas anuales,81,71
+Revisar las salidas de emergencia para detectar obstrucciones,Planificador de Mantenimiento,deberes ocasionales,58,72
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,53,73
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,asignaciones regulares,205,74
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,deberes ocasionales,160,75
+Inspeccionar las bandas transportadoras en busca de desgaste,Gerente de Instalaciones,obligaciones frecuentes,41,76
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,305,77
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,recados semanales,272,78
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,recados semanales,30,79
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,responsabilidades habituales,68,80
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,asignaciones regulares,41,81
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,12,82
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,422,83
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,obligaciones frecuentes,169,84
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,responsabilidades habituales,189,85
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,recados semanales,371,86
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,asignaciones regulares,156,87
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,89,88
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,deberes ocasionales,333,89
+Revisar las salidas de emergencia para detectar obstrucciones,Coordinador de Mantenimiento,asignaciones regulares,403,90
+Probar los sistemas de alarma para verificar su respuesta,Planificador de Mantenimiento,deberes ocasionales,153,91
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,15,92
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,recados semanales,302,93
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,recados semanales,123,94
+Inspeccionar las bandas transportadoras en busca de desgaste,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,492,95
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,Tareas diarias,449,96
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,recados semanales,188,97
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,metas anuales,395,98
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,199,99
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,metas anuales,414,100
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,Tareas diarias,352,101
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,asignaciones regulares,10,102
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,405,103
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,metas anuales,28,104
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,124,105
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,metas anuales,405,106
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,deberes ocasionales,130,107
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,metas anuales,474,108
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,obligaciones frecuentes,231,109
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,metas anuales,349,110
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,deberes ocasionales,344,111
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,Tareas diarias,162,112
+Probar la iluminacion de emergencia para verificar su funcionalidad,Gerente de Instalaciones,responsabilidades habituales,376,113
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,responsabilidades habituales,275,114
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,asignaciones regulares,21,115
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,312,116
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,responsabilidades habituales,378,117
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,Tareas diarias,356,118
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,recados semanales,312,119
+Probar los sistemas de deteccion de gases para verificar su precision,Coordinador de Mantenimiento,asignaciones regulares,265,120
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,asignaciones regulares,427,121
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,58,122
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Lider de Equipo de Mantenimiento,recados semanales,249,123
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,metas anuales,143,124
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,obligaciones frecuentes,187,125
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,asignaciones regulares,478,126
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,Tareas diarias,263,127
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,158,128
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,responsabilidades habituales,159,129
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,metas anuales,467,130
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,recados semanales,167,131
+Probar los sistemas de alarma para verificar su respuesta,Planificador de Mantenimiento,deberes ocasionales,245,132
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,160,133
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,recados semanales,154,134
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,89,135
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,asignaciones regulares,402,136
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,asignaciones regulares,93,137
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,311,138
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,metas anuales,250,139
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,recados semanales,286,140
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,metas anuales,315,141
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,obligaciones frecuentes,407,142
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,asignaciones regulares,446,143
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,asignaciones regulares,348,144
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,asignaciones regulares,418,145
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,recados semanales,288,146
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,obligaciones frecuentes,10,147
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,Tareas diarias,282,148
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,deberes ocasionales,214,149
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,asignaciones regulares,70,150
+Inspeccionar las bandas transportadoras en busca de desgaste,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,257,151
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,deberes ocasionales,81,152
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,obligaciones frecuentes,133,153
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,obligaciones frecuentes,264,154
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Lider de Equipo de Mantenimiento,responsabilidades habituales,222,155
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,Tareas diarias,177,156
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,metas anuales,423,157
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,recados semanales,308,158
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,recados semanales,443,159
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,responsabilidades habituales,447,160
+Inspeccionar el andamiaje para asegurar su estabilidad,Especialista en Mantenimiento Preventivo,deberes ocasionales,141,161
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,recados semanales,298,162
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,Tareas diarias,366,163
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,obligaciones frecuentes,29,164
+Probar los botones de parada de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,metas anuales,420,165
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,deberes ocasionales,346,166
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,deberes ocasionales,122,167
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,deberes ocasionales,261,168
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,recados semanales,287,169
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,asignaciones regulares,166,170
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,metas anuales,407,171
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,Tareas diarias,484,172
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,Tareas diarias,159,173
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,Tareas diarias,389,174
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,deberes ocasionales,282,175
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,recados semanales,469,176
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,metas anuales,439,177
+Probar los sistemas de deteccion de gases para verificar su precision,Coordinador de Mantenimiento,metas anuales,66,178
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,470,179
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,asignaciones regulares,137,180
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,metas anuales,34,181
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,Tareas diarias,318,182
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,Tareas diarias,445,183
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,asignaciones regulares,56,184
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,deberes ocasionales,298,185
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,metas anuales,210,186
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,recados semanales,67,187
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,metas anuales,409,188
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,Tareas diarias,119,189
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,asignaciones regulares,66,190
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,deberes ocasionales,485,191
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,asignaciones regulares,99,192
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,recados semanales,158,193
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,asignaciones regulares,83,194
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,obligaciones frecuentes,285,195
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,responsabilidades habituales,342,196
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,deberes ocasionales,104,197
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,responsabilidades habituales,66,198
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,341,199
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,obligaciones frecuentes,270,200
+Probar los sistemas de deteccion de gases para verificar su precision,Coordinador de Mantenimiento,obligaciones frecuentes,231,201
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,deberes ocasionales,326,202
+Revisar las salidas de emergencia para detectar obstrucciones,Planificador de Mantenimiento,asignaciones regulares,400,203
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,recados semanales,60,204
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,asignaciones regulares,255,205
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,deberes ocasionales,498,206
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,Tareas diarias,304,207
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,Tareas diarias,108,208
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,deberes ocasionales,379,209
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,metas anuales,491,210
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,asignaciones regulares,42,211
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,recados semanales,362,212
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,asignaciones regulares,137,213
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,Tareas diarias,391,214
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,deberes ocasionales,492,215
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,asignaciones regulares,493,216
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,Tareas diarias,340,217
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,deberes ocasionales,333,218
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,451,219
+Inspeccionar las bandas transportadoras en busca de desgaste,Ingeniero de Mantenimiento Preventivo,metas anuales,253,220
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,recados semanales,365,221
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,obligaciones frecuentes,338,222
+Inspeccionar las bandas transportadoras en busca de desgaste,Especialista en Mantenimiento Preventivo,deberes ocasionales,157,223
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,asignaciones regulares,43,224
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,Tareas diarias,262,225
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,117,226
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,obligaciones frecuentes,121,227
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,deberes ocasionales,15,228
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,asignaciones regulares,389,229
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,recados semanales,134,230
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,metas anuales,332,231
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,metas anuales,58,232
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,metas anuales,318,233
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,asignaciones regulares,80,234
+Inspeccionar las bandas transportadoras en busca de desgaste,Supervisor de Mantenimiento,deberes ocasionales,396,235
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,Tareas diarias,213,236
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,responsabilidades habituales,420,237
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,metas anuales,355,238
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,481,239
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,Tareas diarias,113,240
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,responsabilidades habituales,171,241
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,recados semanales,486,242
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,deberes ocasionales,375,243
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,deberes ocasionales,249,244
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,deberes ocasionales,398,245
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,recados semanales,395,246
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,recados semanales,153,247
+Inspeccionar las bandas transportadoras en busca de desgaste,Gerente de Instalaciones,metas anuales,458,248
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,responsabilidades habituales,340,249
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,Tareas diarias,78,250
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,metas anuales,454,251
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,obligaciones frecuentes,426,252
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,deberes ocasionales,274,253
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,Tareas diarias,107,254
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,responsabilidades habituales,481,255
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,deberes ocasionales,331,256
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,obligaciones frecuentes,456,257
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,obligaciones frecuentes,246,258
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,metas anuales,394,259
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,404,260
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,responsabilidades habituales,275,261
+Inspeccionar las bandas transportadoras en busca de desgaste,Especialista en Mantenimiento Preventivo,deberes ocasionales,155,262
+Probar la iluminacion de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,392,263
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,asignaciones regulares,154,264
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,metas anuales,142,265
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,Tareas diarias,102,266
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,responsabilidades habituales,432,267
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,Tareas diarias,183,268
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,metas anuales,176,269
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,deberes ocasionales,371,270
+Inspeccionar las bandas transportadoras en busca de desgaste,Inspector de Mantenimiento,obligaciones frecuentes,428,271
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,deberes ocasionales,338,272
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,318,273
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,Tareas diarias,169,274
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,Tareas diarias,16,275
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,metas anuales,27,276
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,obligaciones frecuentes,240,277
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,asignaciones regulares,37,278
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,responsabilidades habituales,481,279
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,146,280
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,obligaciones frecuentes,342,281
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,437,282
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,recados semanales,242,283
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,responsabilidades habituales,95,284
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,Tareas diarias,54,285
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,deberes ocasionales,53,286
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,responsabilidades habituales,494,287
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,metas anuales,480,288
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,metas anuales,218,289
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,deberes ocasionales,43,290
+Inspeccionar las bandas transportadoras en busca de desgaste,Supervisor de Mantenimiento,asignaciones regulares,173,291
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,asignaciones regulares,478,292
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,asignaciones regulares,276,293
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,258,294
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,obligaciones frecuentes,313,295
+Inspeccionar las bandas transportadoras en busca de desgaste,Inspector de Mantenimiento,obligaciones frecuentes,180,296
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,Tareas diarias,336,297
+Probar los sistemas de alarma para verificar su respuesta,Planificador de Mantenimiento,asignaciones regulares,90,298
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,metas anuales,87,299
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,Tareas diarias,9,300
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,Tareas diarias,149,301
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,deberes ocasionales,433,302
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,recados semanales,64,303
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,metas anuales,68,304
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,Tareas diarias,88,305
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,metas anuales,178,306
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,metas anuales,372,307
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,Tareas diarias,340,308
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,395,309
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,metas anuales,38,310
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,deberes ocasionales,157,311
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,202,312
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,Tareas diarias,86,313
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,responsabilidades habituales,115,314
+Inspeccionar las bandas transportadoras en busca de desgaste,Inspector de Mantenimiento,deberes ocasionales,445,315
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,Tareas diarias,320,316
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,Tareas diarias,283,317
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,asignaciones regulares,444,318
+Probar la iluminacion de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,obligaciones frecuentes,345,319
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,metas anuales,240,320
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,asignaciones regulares,120,321
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,155,322
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,deberes ocasionales,193,323
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,metas anuales,390,324
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,deberes ocasionales,273,325
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,recados semanales,361,326
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,deberes ocasionales,350,327
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,deberes ocasionales,36,328
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,responsabilidades habituales,93,329
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,Tareas diarias,291,330
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,recados semanales,102,331
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,metas anuales,161,332
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,metas anuales,189,333
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,metas anuales,327,334
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,Tareas diarias,389,335
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,metas anuales,166,336
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,metas anuales,410,337
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,obligaciones frecuentes,34,338
+Probar los botones de parada de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,86,339
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Inspector de Mantenimiento,asignaciones regulares,181,340
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,384,341
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,asignaciones regulares,402,342
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,Tareas diarias,91,343
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,225,344
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,Tareas diarias,499,345
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,105,346
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,obligaciones frecuentes,426,347
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,responsabilidades habituales,298,348
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,deberes ocasionales,241,349
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,recados semanales,203,350
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,asignaciones regulares,31,351
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,13,352
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento Preventivo,Tareas diarias,432,353
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,asignaciones regulares,415,354
+Probar la iluminacion de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,asignaciones regulares,461,355
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,metas anuales,309,356
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,Tareas diarias,152,357
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,deberes ocasionales,67,358
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,asignaciones regulares,493,359
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,obligaciones frecuentes,298,360
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Lider de Equipo de Mantenimiento,metas anuales,363,361
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,Tareas diarias,449,362
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,metas anuales,391,363
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,recados semanales,308,364
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,obligaciones frecuentes,81,365
+Inspeccionar los arneses de seguridad en busca de danos,Gerente de Instalaciones,responsabilidades habituales,342,366
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,recados semanales,144,367
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,recados semanales,94,368
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,asignaciones regulares,425,369
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,asignaciones regulares,246,370
+Probar la iluminacion de emergencia para verificar su funcionalidad,Gerente de Instalaciones,Tareas diarias,132,371
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,obligaciones frecuentes,262,372
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,asignaciones regulares,234,373
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,asignaciones regulares,368,374
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,asignaciones regulares,267,375
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,responsabilidades habituales,145,376
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,responsabilidades habituales,496,377
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,asignaciones regulares,439,378
+Revisar las salidas de emergencia para detectar obstrucciones,Planificador de Mantenimiento,obligaciones frecuentes,71,379
+Probar los sistemas de alarma para verificar su respuesta,Planificador de Mantenimiento,responsabilidades habituales,183,380
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,metas anuales,221,381
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,responsabilidades habituales,476,382
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,recados semanales,112,383
+Inspeccionar los arneses de seguridad en busca de danos,Gerente de Instalaciones,asignaciones regulares,37,384
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,obligaciones frecuentes,54,385
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,responsabilidades habituales,479,386
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,deberes ocasionales,340,387
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,deberes ocasionales,33,388
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,deberes ocasionales,85,389
+Inspeccionar los arneses de seguridad en busca de danos,Gerente de Instalaciones,Tareas diarias,56,390
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,asignaciones regulares,486,391
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,asignaciones regulares,497,392
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,191,393
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,403,394
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,responsabilidades habituales,98,395
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,metas anuales,89,396
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento,deberes ocasionales,278,397
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,asignaciones regulares,295,398
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,asignaciones regulares,185,399
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,responsabilidades habituales,420,400
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,Tareas diarias,162,401
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento Preventivo,recados semanales,175,402
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,obligaciones frecuentes,449,403
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,recados semanales,463,404
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,Tareas diarias,205,405
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,249,406
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,138,407
+Inspeccionar las bandas transportadoras en busca de desgaste,Inspector de Mantenimiento,asignaciones regulares,77,408
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,recados semanales,47,409
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,responsabilidades habituales,217,410
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,recados semanales,333,411
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,responsabilidades habituales,321,412
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,metas anuales,405,413
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento,deberes ocasionales,462,414
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,asignaciones regulares,466,415
+Inspeccionar el andamiaje para asegurar su estabilidad,Planificador de Mantenimiento,recados semanales,446,416
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,recados semanales,118,417
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,asignaciones regulares,480,418
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento,obligaciones frecuentes,139,419
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,obligaciones frecuentes,258,420
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,asignaciones regulares,209,421
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,asignaciones regulares,424,422
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,responsabilidades habituales,138,423
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,asignaciones regulares,425,424
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,responsabilidades habituales,197,425
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,95,426
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,deberes ocasionales,211,427
+Inspeccionar las bandas transportadoras en busca de desgaste,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,461,428
+Inspeccionar el andamiaje para asegurar su estabilidad,Especialista en Mantenimiento Preventivo,recados semanales,138,429
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,125,430
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,deberes ocasionales,332,431
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,348,432
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,responsabilidades habituales,271,433
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,asignaciones regulares,78,434
+Probar la iluminacion de emergencia para verificar su funcionalidad,Gerente de Instalaciones,asignaciones regulares,195,435
+Inspeccionar las bandas transportadoras en busca de desgaste,Inspector de Mantenimiento,asignaciones regulares,221,436
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,368,437
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,Tareas diarias,388,438
+Probar la iluminacion de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,asignaciones regulares,72,439
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,obligaciones frecuentes,439,440
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Inspector de Mantenimiento,deberes ocasionales,228,441
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,metas anuales,349,442
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,asignaciones regulares,411,443
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,recados semanales,480,444
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,recados semanales,86,445
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,metas anuales,279,446
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,recados semanales,247,447
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,deberes ocasionales,236,448
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,deberes ocasionales,402,449
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,responsabilidades habituales,132,450
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,Tareas diarias,212,451
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,metas anuales,470,452
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,Tareas diarias,245,453
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,recados semanales,411,454
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,Tareas diarias,169,455
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,recados semanales,207,456
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,metas anuales,291,457
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,asignaciones regulares,191,458
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,recados semanales,403,459
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,metas anuales,408,460
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,obligaciones frecuentes,110,461
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,responsabilidades habituales,127,462
+Inspeccionar los arneses de seguridad en busca de danos,Gerente de Instalaciones,deberes ocasionales,137,463
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,recados semanales,194,464
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,Tareas diarias,462,465
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento Preventivo,metas anuales,173,466
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,metas anuales,123,467
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,deberes ocasionales,236,468
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,163,469
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,obligaciones frecuentes,436,470
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,responsabilidades habituales,232,471
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,deberes ocasionales,4,472
+Probar los sistemas de alarma para verificar su respuesta,Planificador de Mantenimiento,responsabilidades habituales,242,473
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,Tareas diarias,230,474
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,recados semanales,368,475
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,deberes ocasionales,318,476
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,Tareas diarias,279,477
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,asignaciones regulares,248,478
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,responsabilidades habituales,429,479
+Inspeccionar las bandas transportadoras en busca de desgaste,Inspector de Mantenimiento,obligaciones frecuentes,75,480
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,metas anuales,183,481
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,Tareas diarias,370,482
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,obligaciones frecuentes,356,483
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,deberes ocasionales,219,484
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,responsabilidades habituales,102,485
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,Tareas diarias,339,486
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,Tareas diarias,451,487
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,asignaciones regulares,104,488
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,responsabilidades habituales,332,489
+Inspeccionar las bandas transportadoras en busca de desgaste,Especialista en Mantenimiento Preventivo,deberes ocasionales,492,490
+Probar la iluminacion de emergencia para verificar su funcionalidad,Gerente de Instalaciones,obligaciones frecuentes,326,491
+Inspeccionar las bandas transportadoras en busca de desgaste,Gerente de Instalaciones,recados semanales,147,492
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,metas anuales,94,493
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,recados semanales,125,494
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,Tareas diarias,84,495
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,Tareas diarias,214,496
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,recados semanales,4,497
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,metas anuales,430,498
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,asignaciones regulares,17,499
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,285,500
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,deberes ocasionales,457,501
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,metas anuales,45,502
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,obligaciones frecuentes,265,503
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,185,504
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,responsabilidades habituales,351,505
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,Tareas diarias,400,506
+Inspeccionar los arneses de seguridad en busca de danos,Gerente de Instalaciones,responsabilidades habituales,291,507
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,asignaciones regulares,224,508
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,Tareas diarias,441,509
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,asignaciones regulares,115,510
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,288,511
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,Tareas diarias,147,512
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,recados semanales,266,513
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,Tareas diarias,438,514
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,Tareas diarias,298,515
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,67,516
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,asignaciones regulares,77,517
+Probar la iluminacion de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,recados semanales,150,518
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,responsabilidades habituales,34,519
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,responsabilidades habituales,397,520
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,Tareas diarias,398,521
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,responsabilidades habituales,469,522
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Inspector de Mantenimiento,recados semanales,29,523
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,obligaciones frecuentes,376,524
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,recados semanales,358,525
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,deberes ocasionales,104,526
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,deberes ocasionales,140,527
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,metas anuales,450,528
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,deberes ocasionales,97,529
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,deberes ocasionales,241,530
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,deberes ocasionales,132,531
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,496,532
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,recados semanales,463,533
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,responsabilidades habituales,162,534
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,metas anuales,5,535
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,221,536
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,responsabilidades habituales,76,537
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,72,538
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,deberes ocasionales,83,539
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,metas anuales,312,540
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,recados semanales,468,541
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,Tareas diarias,468,542
+Probar los sistemas de alarma para verificar su respuesta,Planificador de Mantenimiento,asignaciones regulares,406,543
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,responsabilidades habituales,113,544
+Probar los sistemas de deteccion de gases para verificar su precision,Coordinador de Mantenimiento,recados semanales,90,545
+Revisar las salidas de emergencia para detectar obstrucciones,Coordinador de Mantenimiento,obligaciones frecuentes,339,546
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,Tareas diarias,463,547
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,asignaciones regulares,223,548
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,recados semanales,51,549
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,metas anuales,89,550
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,responsabilidades habituales,108,551
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,recados semanales,74,552
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,Tareas diarias,361,553
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,deberes ocasionales,164,554
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,asignaciones regulares,69,555
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,responsabilidades habituales,476,556
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,deberes ocasionales,284,557
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Lider de Equipo de Mantenimiento,metas anuales,412,558
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,deberes ocasionales,65,559
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,deberes ocasionales,25,560
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,recados semanales,220,561
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,asignaciones regulares,337,562
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,responsabilidades habituales,189,563
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,Tareas diarias,20,564
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,recados semanales,265,565
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,recados semanales,154,566
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,obligaciones frecuentes,380,567
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,metas anuales,451,568
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,recados semanales,227,569
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,recados semanales,196,570
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,asignaciones regulares,324,571
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,recados semanales,72,572
+Inspeccionar el andamiaje para asegurar su estabilidad,Especialista en Mantenimiento Preventivo,deberes ocasionales,325,573
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,Tareas diarias,459,574
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,responsabilidades habituales,125,575
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,metas anuales,425,576
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,obligaciones frecuentes,460,577
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento Preventivo,metas anuales,95,578
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,metas anuales,55,579
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,obligaciones frecuentes,346,580
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,recados semanales,489,581
+Revisar las salidas de emergencia para detectar obstrucciones,Planificador de Mantenimiento,obligaciones frecuentes,144,582
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,obligaciones frecuentes,448,583
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,11,584
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,obligaciones frecuentes,81,585
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,responsabilidades habituales,212,586
+Inspeccionar las bandas transportadoras en busca de desgaste,Supervisor de Mantenimiento,deberes ocasionales,400,587
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,deberes ocasionales,280,588
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,recados semanales,17,589
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,479,590
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,asignaciones regulares,187,591
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,metas anuales,231,592
+Inspeccionar el andamiaje para asegurar su estabilidad,Planificador de Mantenimiento,metas anuales,406,593
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,obligaciones frecuentes,377,594
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,metas anuales,1,595
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,deberes ocasionales,113,596
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,metas anuales,202,597
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,Tareas diarias,430,598
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,recados semanales,15,599
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,recados semanales,364,600
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,metas anuales,39,601
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,asignaciones regulares,202,602
+Inspeccionar el andamiaje para asegurar su estabilidad,Planificador de Mantenimiento,recados semanales,379,603
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,Tareas diarias,345,604
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,asignaciones regulares,245,605
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,Tareas diarias,106,606
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,Tareas diarias,32,607
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,Tareas diarias,499,608
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,asignaciones regulares,118,609
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,responsabilidades habituales,43,610
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,asignaciones regulares,117,611
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,metas anuales,369,612
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,asignaciones regulares,388,613
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,Tareas diarias,287,614
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,Tareas diarias,402,615
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,Tareas diarias,53,616
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,Tareas diarias,389,617
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,deberes ocasionales,405,618
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento Preventivo,deberes ocasionales,278,619
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,deberes ocasionales,190,620
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,obligaciones frecuentes,309,621
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,metas anuales,180,622
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,Tareas diarias,35,623
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,deberes ocasionales,327,624
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,asignaciones regulares,416,625
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,500,626
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,Tareas diarias,137,627
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,deberes ocasionales,39,628
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,deberes ocasionales,233,629
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,metas anuales,58,630
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,responsabilidades habituales,167,631
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,responsabilidades habituales,242,632
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,deberes ocasionales,280,633
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,metas anuales,192,634
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,deberes ocasionales,198,635
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,Tareas diarias,160,636
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,recados semanales,111,637
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,recados semanales,118,638
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,deberes ocasionales,472,639
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,recados semanales,98,640
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,deberes ocasionales,306,641
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,metas anuales,80,642
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,Tareas diarias,29,643
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,deberes ocasionales,131,644
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,379,645
+Probar la iluminacion de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,112,646
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,453,647
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,metas anuales,215,648
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,recados semanales,84,649
+Inspeccionar el andamiaje para asegurar su estabilidad,Especialista en Mantenimiento Preventivo,Tareas diarias,274,650
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,obligaciones frecuentes,207,651
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,443,652
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,responsabilidades habituales,157,653
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,responsabilidades habituales,239,654
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,Tareas diarias,140,655
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,responsabilidades habituales,399,656
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,79,657
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,Tareas diarias,370,658
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,responsabilidades habituales,146,659
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,asignaciones regulares,78,660
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,183,661
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,obligaciones frecuentes,331,662
+Revisar las salidas de emergencia para detectar obstrucciones,Coordinador de Mantenimiento,deberes ocasionales,247,663
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,metas anuales,29,664
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,responsabilidades habituales,276,665
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,467,666
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,asignaciones regulares,172,667
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,responsabilidades habituales,228,668
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,160,669
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,responsabilidades habituales,175,670
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,responsabilidades habituales,288,671
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,Tareas diarias,100,672
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,436,673
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,responsabilidades habituales,110,674
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,obligaciones frecuentes,41,675
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,432,676
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,recados semanales,26,677
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,Tareas diarias,40,678
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,metas anuales,150,679
+Inspeccionar el andamiaje para asegurar su estabilidad,Planificador de Mantenimiento,recados semanales,173,680
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,recados semanales,82,681
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,metas anuales,241,682
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,metas anuales,450,683
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,144,684
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,Tareas diarias,439,685
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Coordinador de Mantenimiento,asignaciones regulares,64,686
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,responsabilidades habituales,9,687
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,recados semanales,53,688
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,responsabilidades habituales,286,689
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,Tareas diarias,499,690
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,Tareas diarias,392,691
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,responsabilidades habituales,245,692
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,Tareas diarias,493,693
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,metas anuales,26,694
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,deberes ocasionales,137,695
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,asignaciones regulares,424,696
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,metas anuales,471,697
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,289,698
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,Tareas diarias,54,699
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,asignaciones regulares,133,700
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,responsabilidades habituales,349,701
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,metas anuales,347,702
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,responsabilidades habituales,122,703
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,Tareas diarias,116,704
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,Tareas diarias,285,705
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,Tareas diarias,219,706
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,299,707
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,obligaciones frecuentes,344,708
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,obligaciones frecuentes,172,709
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,metas anuales,174,710
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,Tareas diarias,45,711
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,Tareas diarias,362,712
+Inspeccionar el andamiaje para asegurar su estabilidad,Especialista en Mantenimiento Preventivo,deberes ocasionales,46,713
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,responsabilidades habituales,241,714
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,deberes ocasionales,435,715
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,104,716
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,recados semanales,82,717
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,responsabilidades habituales,111,718
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,recados semanales,124,719
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,metas anuales,295,720
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,recados semanales,86,721
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,responsabilidades habituales,97,722
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,responsabilidades habituales,444,723
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,asignaciones regulares,273,724
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,metas anuales,464,725
+Probar la iluminacion de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,metas anuales,485,726
+Revisar las salidas de emergencia para detectar obstrucciones,Coordinador de Mantenimiento,obligaciones frecuentes,262,727
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,metas anuales,163,728
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,asignaciones regulares,309,729
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,metas anuales,204,730
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,59,731
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,metas anuales,421,732
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,105,733
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,deberes ocasionales,266,734
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,asignaciones regulares,104,735
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,recados semanales,263,736
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Inspector de Mantenimiento,obligaciones frecuentes,475,737
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,responsabilidades habituales,346,738
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,obligaciones frecuentes,134,739
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,recados semanales,143,740
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,asignaciones regulares,474,741
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,asignaciones regulares,204,742
+Revisar las salidas de emergencia para detectar obstrucciones,Planificador de Mantenimiento,asignaciones regulares,420,743
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,metas anuales,150,744
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,responsabilidades habituales,124,745
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,responsabilidades habituales,74,746
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,obligaciones frecuentes,107,747
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,recados semanales,314,748
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,Tareas diarias,394,749
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,metas anuales,236,750
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,responsabilidades habituales,266,751
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,metas anuales,50,752
+Probar la iluminacion de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,metas anuales,381,753
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento,obligaciones frecuentes,441,754
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,obligaciones frecuentes,33,755
+Inspeccionar las bandas transportadoras en busca de desgaste,Inspector de Mantenimiento,recados semanales,17,756
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,metas anuales,73,757
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,responsabilidades habituales,458,758
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,recados semanales,496,759
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,obligaciones frecuentes,470,760
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,responsabilidades habituales,493,761
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,metas anuales,166,762
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,asignaciones regulares,245,763
+Inspeccionar el andamiaje para asegurar su estabilidad,Especialista en Mantenimiento Preventivo,asignaciones regulares,110,764
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,Tareas diarias,78,765
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,metas anuales,447,766
+Inspeccionar las bandas transportadoras en busca de desgaste,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,149,767
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,obligaciones frecuentes,241,768
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,466,769
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,Tareas diarias,293,770
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,asignaciones regulares,34,771
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,499,772
+Inspeccionar el andamiaje para asegurar su estabilidad,Planificador de Mantenimiento,responsabilidades habituales,129,773
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,recados semanales,218,774
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,deberes ocasionales,253,775
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,responsabilidades habituales,45,776
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,metas anuales,403,777
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,recados semanales,234,778
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,responsabilidades habituales,214,779
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,responsabilidades habituales,449,780
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,deberes ocasionales,193,781
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,Tareas diarias,333,782
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,465,783
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,deberes ocasionales,191,784
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,recados semanales,209,785
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,asignaciones regulares,445,786
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,metas anuales,103,787
+Probar la iluminacion de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,deberes ocasionales,3,788
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,343,789
+Probar la iluminacion de emergencia para verificar su funcionalidad,Gerente de Instalaciones,metas anuales,9,790
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,obligaciones frecuentes,391,791
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Inspector de Mantenimiento,asignaciones regulares,328,792
+Inspeccionar el andamiaje para asegurar su estabilidad,Planificador de Mantenimiento,Tareas diarias,129,793
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,obligaciones frecuentes,194,794
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,Tareas diarias,290,795
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,obligaciones frecuentes,227,796
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,metas anuales,307,797
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,obligaciones frecuentes,438,798
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,asignaciones regulares,170,799
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,responsabilidades habituales,65,800
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,responsabilidades habituales,213,801
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,203,802
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,metas anuales,159,803
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,recados semanales,463,804
+Probar los sistemas de deteccion de gases para verificar su precision,Coordinador de Mantenimiento,obligaciones frecuentes,388,805
+Probar los botones de parada de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,asignaciones regulares,288,806
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,37,807
+Probar la iluminacion de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,metas anuales,328,808
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,responsabilidades habituales,490,809
+Probar la iluminacion de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,Tareas diarias,3,810
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,28,811
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,recados semanales,468,812
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,responsabilidades habituales,410,813
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,recados semanales,468,814
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,asignaciones regulares,457,815
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Lider de Equipo de Mantenimiento,deberes ocasionales,433,816
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,metas anuales,406,817
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,obligaciones frecuentes,381,818
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,metas anuales,15,819
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,458,820
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,obligaciones frecuentes,228,821
+Probar la iluminacion de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,deberes ocasionales,460,822
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,Tareas diarias,458,823
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,metas anuales,438,824
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,recados semanales,342,825
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,metas anuales,359,826
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,deberes ocasionales,74,827
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,obligaciones frecuentes,415,828
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,asignaciones regulares,494,829
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,recados semanales,464,830
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,Tareas diarias,479,831
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,metas anuales,233,832
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,Tareas diarias,121,833
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,responsabilidades habituales,214,834
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,recados semanales,192,835
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,asignaciones regulares,214,836
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,Tareas diarias,405,837
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,responsabilidades habituales,136,838
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,deberes ocasionales,161,839
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,asignaciones regulares,16,840
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,Tareas diarias,250,841
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,metas anuales,246,842
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,recados semanales,151,843
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,182,844
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,recados semanales,458,845
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,asignaciones regulares,202,846
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,deberes ocasionales,295,847
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,asignaciones regulares,338,848
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,recados semanales,8,849
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,responsabilidades habituales,208,850
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,deberes ocasionales,55,851
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Ingeniero de Mantenimiento Preventivo,Tareas diarias,329,852
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,responsabilidades habituales,403,853
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento,asignaciones regulares,298,854
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,responsabilidades habituales,216,855
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,226,856
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,recados semanales,123,857
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,obligaciones frecuentes,481,858
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento,deberes ocasionales,355,859
+Inspeccionar el andamiaje para asegurar su estabilidad,Coordinador de Mantenimiento,responsabilidades habituales,471,860
+Revisar las salidas de emergencia para detectar obstrucciones,Especialista en Mantenimiento Preventivo,responsabilidades habituales,170,861
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,Tareas diarias,357,862
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,metas anuales,2,863
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,metas anuales,414,864
+Probar los sistemas de deteccion de gases para verificar su precision,Especialista en Mantenimiento Preventivo,Tareas diarias,37,865
+Probar los sistemas de alarma para verificar su respuesta,Tecnico de Mantenimiento Preventivo,Tareas diarias,371,866
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,Tareas diarias,8,867
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,Tareas diarias,207,868
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,obligaciones frecuentes,439,869
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,asignaciones regulares,391,870
+Inspeccionar las bandas transportadoras en busca de desgaste,Ingeniero de Mantenimiento Preventivo,metas anuales,135,871
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,Tareas diarias,436,872
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,responsabilidades habituales,249,873
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Lider de Equipo de Mantenimiento,asignaciones regulares,136,874
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,metas anuales,401,875
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,93,876
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Supervisor de Mantenimiento,deberes ocasionales,156,877
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,Tareas diarias,431,878
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,deberes ocasionales,289,879
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,obligaciones frecuentes,319,880
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,recados semanales,396,881
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,Tareas diarias,437,882
+Revisar las salidas de emergencia para detectar obstrucciones,Planificador de Mantenimiento,responsabilidades habituales,350,883
+Probar los sistemas de alarma para verificar su respuesta,Supervisor de Mantenimiento,metas anuales,412,884
+Inspeccionar el andamiaje para asegurar su estabilidad,Gerente de Instalaciones,recados semanales,148,885
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,metas anuales,36,886
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,Tareas diarias,178,887
+Probar la iluminacion de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,309,888
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,Tareas diarias,275,889
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,metas anuales,132,890
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,asignaciones regulares,84,891
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,responsabilidades habituales,482,892
+Probar los botones de parada de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,metas anuales,233,893
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,deberes ocasionales,481,894
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,asignaciones regulares,245,895
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,deberes ocasionales,276,896
+Inspeccionar las bandas transportadoras en busca de desgaste,Gerente de Instalaciones,recados semanales,26,897
+Inspeccionar los arneses de seguridad en busca de danos,Especialista en Mantenimiento Preventivo,metas anuales,22,898
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Lider de Equipo de Mantenimiento,deberes ocasionales,414,899
+Probar los botones de parada de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,responsabilidades habituales,437,900
+Inspeccionar el andamiaje para asegurar su estabilidad,Lider de Equipo de Mantenimiento,Tareas diarias,334,901
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,obligaciones frecuentes,420,902
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,responsabilidades habituales,36,903
+Inspeccionar las bandas transportadoras en busca de desgaste,Gerente de Instalaciones,obligaciones frecuentes,240,904
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,asignaciones regulares,408,905
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,deberes ocasionales,373,906
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,responsabilidades habituales,71,907
+Inspeccionar las bandas transportadoras en busca de desgaste,Lider de Equipo de Mantenimiento,metas anuales,184,908
+Probar la iluminacion de emergencia para verificar su funcionalidad,Lider de Equipo de Mantenimiento,deberes ocasionales,76,909
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Coordinador de Mantenimiento,responsabilidades habituales,418,910
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,deberes ocasionales,296,911
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,asignaciones regulares,120,912
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,metas anuales,454,913
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Gerente de Instalaciones,Tareas diarias,408,914
+Probar los sistemas de deteccion de gases para verificar su precision,Gerente de Instalaciones,Tareas diarias,229,915
+Inspeccionar los arneses de seguridad en busca de danos,Tecnico de Mantenimiento Preventivo,recados semanales,86,916
+Revisar las salidas de emergencia para detectar obstrucciones,Planificador de Mantenimiento,responsabilidades habituales,445,917
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,Tareas diarias,473,918
+Probar la iluminacion de emergencia para verificar su funcionalidad,Ingeniero de Mantenimiento Preventivo,metas anuales,61,919
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,Tareas diarias,482,920
+Probar la iluminacion de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,obligaciones frecuentes,52,921
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,358,922
+Inspeccionar los arneses de seguridad en busca de danos,Gerente de Instalaciones,responsabilidades habituales,326,923
+Inspeccionar los arneses de seguridad en busca de danos,Lider de Equipo de Mantenimiento,recados semanales,457,924
+Revisar las salidas de emergencia para detectar obstrucciones,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,311,925
+Probar la iluminacion de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,323,926
+Inspeccionar el andamiaje para asegurar su estabilidad,Inspector de Mantenimiento,metas anuales,308,927
+Probar los botones de parada de emergencia para verificar su funcionalidad,Gerente de Instalaciones,asignaciones regulares,145,928
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento,obligaciones frecuentes,275,929
+Probar los botones de parada de emergencia para verificar su funcionalidad,Inspector de Mantenimiento,obligaciones frecuentes,307,930
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,metas anuales,140,931
+Probar los botones de parada de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,deberes ocasionales,415,932
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,recados semanales,161,933
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento,obligaciones frecuentes,464,934
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,deberes ocasionales,45,935
+Probar los botones de parada de emergencia para verificar su funcionalidad,Especialista en Mantenimiento Preventivo,obligaciones frecuentes,37,936
+Inspeccionar el andamiaje para asegurar su estabilidad,Ingeniero de Mantenimiento Preventivo,Tareas diarias,294,937
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Gerente de Instalaciones,deberes ocasionales,18,938
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,recados semanales,72,939
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,293,940
+Probar los sistemas de deteccion de gases para verificar su precision,Lider de Equipo de Mantenimiento,asignaciones regulares,45,941
+Probar los sistemas de alarma para verificar su respuesta,Especialista en Mantenimiento Preventivo,deberes ocasionales,99,942
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,recados semanales,199,943
+Inspeccionar las bandas transportadoras en busca de desgaste,Especialista en Mantenimiento Preventivo,asignaciones regulares,202,944
+Probar los sistemas de alarma para verificar su respuesta,Ingeniero de Mantenimiento Preventivo,deberes ocasionales,459,945
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,responsabilidades habituales,303,946
+Inspeccionar el andamiaje para asegurar su estabilidad,Supervisor de Mantenimiento,recados semanales,114,947
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,asignaciones regulares,335,948
+Inspeccionar los arneses de seguridad en busca de danos,Gerente de Instalaciones,deberes ocasionales,208,949
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,asignaciones regulares,12,950
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Tecnico de Mantenimiento Preventivo,obligaciones frecuentes,185,951
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,responsabilidades habituales,27,952
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,obligaciones frecuentes,75,953
+Inspeccionar las bandas transportadoras en busca de desgaste,Coordinador de Mantenimiento,asignaciones regulares,193,954
+Probar los botones de parada de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,obligaciones frecuentes,109,955
+Inspeccionar el andamiaje para asegurar su estabilidad,Tecnico de Mantenimiento Preventivo,metas anuales,177,956
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento,asignaciones regulares,411,957
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Especialista en Mantenimiento Preventivo,recados semanales,228,958
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,recados semanales,222,959
+Inspeccionar las bandas transportadoras en busca de desgaste,Ingeniero de Mantenimiento Preventivo,Tareas diarias,74,960
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Supervisor de Mantenimiento,recados semanales,495,961
+Probar los sistemas de deteccion de gases para verificar su precision,Inspector de Mantenimiento,deberes ocasionales,413,962
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,Tareas diarias,114,963
+Revisar las salidas de emergencia para detectar obstrucciones,Gerente de Instalaciones,responsabilidades habituales,108,964
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,asignaciones regulares,106,965
+Probar la iluminacion de emergencia para verificar su funcionalidad,Planificador de Mantenimiento,Tareas diarias,159,966
+Inspeccionar las bandas transportadoras en busca de desgaste,Tecnico de Mantenimiento Preventivo,deberes ocasionales,284,967
+Inspeccionar las bandas transportadoras en busca de desgaste,Especialista en Mantenimiento Preventivo,deberes ocasionales,67,968
+Probar los sistemas de deteccion de gases para verificar su precision,Ingeniero de Mantenimiento Preventivo,asignaciones regulares,478,969
+Probar la iluminacion de emergencia para verificar su funcionalidad,Supervisor de Mantenimiento,metas anuales,174,970
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Tecnico de Mantenimiento Preventivo,Tareas diarias,322,971
+Inspeccionar las bandas transportadoras en busca de desgaste,Planificador de Mantenimiento,Tareas diarias,453,972
+Probar los sistemas de deteccion de gases para verificar su precision,Supervisor de Mantenimiento,responsabilidades habituales,120,973
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,responsabilidades habituales,296,974
+Probar los botones de parada de emergencia para verificar su funcionalidad,Coordinador de Mantenimiento,asignaciones regulares,79,975
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,responsabilidades habituales,59,976
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Lider de Equipo de Mantenimiento,asignaciones regulares,71,977
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,325,978
+Probar los sistemas de deteccion de gases para verificar su precision,Planificador de Mantenimiento,metas anuales,30,979
+Inspeccionar los arneses de seguridad en busca de danos,Coordinador de Mantenimiento,asignaciones regulares,437,980
+Revisar las salidas de emergencia para detectar obstrucciones,Lider de Equipo de Mantenimiento,Tareas diarias,396,981
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Especialista en Mantenimiento Preventivo,recados semanales,365,982
+Inspeccionar los extintores de incendios para verificar las fechas de vencimiento,Planificador de Mantenimiento,recados semanales,474,983
+Inspeccionar los arneses de seguridad en busca de danos,Planificador de Mantenimiento,metas anuales,270,984
+Probar los sistemas de alarma para verificar su respuesta,Inspector de Mantenimiento,asignaciones regulares,173,985
+Inspeccionar los arneses de seguridad en busca de danos,Inspector de Mantenimiento,asignaciones regulares,145,986
+Inspeccionar los arneses de seguridad en busca de danos,Ingeniero de Mantenimiento Preventivo,obligaciones frecuentes,281,987
+Probar los sistemas de alarma para verificar su respuesta,Coordinador de Mantenimiento,obligaciones frecuentes,82,988
+Probar los sistemas de deteccion de gases para verificar su precision,Tecnico de Mantenimiento,recados semanales,416,989
+Probar los botones de parada de emergencia para verificar su funcionalidad,Tecnico de Mantenimiento,deberes ocasionales,399,990
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,metas anuales,490,991
+Probar los sistemas de alarma para verificar su respuesta,Gerente de Instalaciones,asignaciones regulares,51,992
+Revisar las salidas de emergencia para detectar obstrucciones,Inspector de Mantenimiento,obligaciones frecuentes,243,993
+Revisar los sistemas de ventilacion para asegurar un flujo de aire adecuado,Planificador de Mantenimiento,responsabilidades habituales,309,994
+Probar los sistemas de deteccion de gases para verificar su precision,Coordinador de Mantenimiento,metas anuales,232,995
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,metas anuales,171,996
+Revisar las salidas de emergencia para detectar obstrucciones,Supervisor de Mantenimiento,responsabilidades habituales,288,997
+Inspeccionar los arneses de seguridad en busca de danos,Supervisor de Mantenimiento,Tareas diarias,149,998
+Revisar las salidas de emergencia para detectar obstrucciones,Tecnico de Mantenimiento Preventivo,recados semanales,155,999
+Probar los sistemas de alarma para verificar su respuesta,Lider de Equipo de Mantenimiento,metas anuales,161,1000
