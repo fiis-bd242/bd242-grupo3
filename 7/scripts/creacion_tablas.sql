@@ -727,12 +727,13 @@ DROP TABLE IF EXISTS Notificaciones CASCADE;
 CREATE TABLE Notificaciones
 (
   id_notificacion INT NOT NULL,
+  Asunto VARCHAR(255) NOT NULL,
   mensaje VARCHAR(255) NOT NULL,
   fecha_notificacion DATE NOT NULL,
   id_remitente INT NOT NULL,
   id_destinatario INT NOT NULL,
-  Id_registro INT NOT NULL,
-  Id_reporte INT NOT NULL,
+  Id_registro INT,
+  Id_reporte INT,
   id_tipo INT NOT NULL,
   PRIMARY KEY (id_notificacion),
   FOREIGN KEY (id_remitente) REFERENCES Empleado(Id_empleado),

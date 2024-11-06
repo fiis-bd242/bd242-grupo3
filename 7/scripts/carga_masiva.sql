@@ -62,11 +62,7 @@ VALUES
 (2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
-<<<<<<< HEAD
 COPY Almacen FROM 'C:\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
-=======
-COPY almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
->>>>>>> af8897df1d11043bf5ddbf069d762cc8cb89a48a
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -91,7 +87,6 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-<<<<<<< HEAD
 INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
 VALUES 
 (1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
@@ -149,9 +144,6 @@ VALUES
 (53, 'EquipoAP', 5, '2021-07-13', 'Descripcion AP', 100, 3, 1, 1),
 (54, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2);
 
-=======
-COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipos_de_Soporte.csv' DELIMITER ',' CSV HEADER;
->>>>>>> af8897df1d11043bf5ddbf069d762cc8cb89a48a
 
 -- Poblamiento de la tabla EquipoSXAlmacen
 COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
@@ -759,7 +751,16 @@ INSERT INTO Pedido (Id_pedido, Cant_pedid, Fecha, Est_inactividad, Id_herramient
 (19, 100, '2025-01-25', '0', 19, 19, 1),
 (20, 25, '2025-02-05', '1', 20, 20, 2);
 
- 
+
+
+COPY Registro FROM '..\datos\Orden_trabajo.csv' DELIMITER ',' CSV HEADER;
+COPY Incidencias_Tags FROM '..\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
+COPY Reportes FROM '..\datos\Reportes.csv' DELIMITER ',' CSV HEADER;
+COPY Notificaciones FROM '..\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
+
+
+
+
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
 VALUES 
