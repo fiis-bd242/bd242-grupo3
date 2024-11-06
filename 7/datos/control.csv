@@ -1,0 +1,1001 @@
+id_control,Descripcion_control,Id_tipo_estgia_control,Id_tipo_med_control,Id_tipo_Qcontrol,id_valoracion_residual
+1,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,INH,D,1
+2,delimitacion de areas 2. Mantener orden y limpieza,P,ADM,A,1
+3,Desenergizar y bloquear  fuente de energia,M,ADM,D,2
+4,Uso de equipos personal de proteccion anticaidas.,M,SUS,E,3
+5,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ADM,E,3
+6,1. Uso de herramientas adecuadas.,P,ADM,D,3
+7,1. Uso de herramientas adecuadas.,P,SUS,D,3
+8,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ELI,C,4
+9,Colocacion de Barreras  Solidas,M,SUS,A,4
+10,Orejeras Tapones auditivos,P,ADM,C,4
+11,Uso del drenaje ecologico tipo check.,P,SUS,B,5
+12,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,EPP,D,5
+13,Timbre de operatividad Circulina de operatividad,P,ELI,A,5
+14,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ADM,D,5
+15,1. Uso de herramientas adecuadas.,M,EPP,D,5
+16,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,SUS,E,6
+17,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,ADM,C,6
+18,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,SUS,E,7
+19,Respirador y filtros de polvo,P,EPP,D,7
+20,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,EPP,B,7
+21,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,ELI,C,8
+22,Zapatos de seguridad con planta de caucho o material antideslizante.,P,INH,B,8
+23,lineas de vida,M,ADM,A,8
+24,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,INH,D,8
+25,1. Uso de herramientas adecuadas.,P,INH,C,9
+26,Desenergizar y bloquear  fuente de energia,P,SUS,D,9
+27,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,B,9
+28,Instalacion de silenciadores en ventiladores,P,ADM,B,9
+29,Descripcion,P,SUS,D,10
+30,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,INH,C,10
+31,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,EPP,C,11
+32,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,EPP,E,11
+33,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,EPP,C,11
+34,delimitacion de areas 2. Mantener orden y limpieza,M,ELI,E,12
+35,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,EPP,D,13
+36,cilindros de aserrin.,M,SUS,A,13
+37,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,ADM,D,13
+38,1. Uso de herramientas adecuadas.,P,ELI,C,14
+39,Orejeras Tapones auditivos,P,EPP,E,15
+40,1. Uso de herramientas adecuadas.,M,SUS,A,15
+41,Colocacion de Barreras  Solidas,P,INH,C,15
+42,Uso del drenaje ecologico tipo check.,P,INH,A,15
+43,Respirador y filtros de polvo,P,SUS,D,16
+44,Respirador con filtro de gases,M,EPP,A,17
+45,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,M,INH,B,17
+46,Respirador y filtros de polvo,P,INH,D,17
+47,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ADM,C,17
+48,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,ELI,E,17
+49,Puntos de anclaje,M,EPP,E,18
+50,1. Uso de herramientas adecuadas.,P,EPP,B,18
+51,1. Uso de herramientas adecuadas.,P,ELI,D,18
+52,Uso del drenaje ecologico tipo check.,M,ADM,C,19
+53,Uso de equipos personal de proteccion anticaidas.,M,ELI,E,19
+54,Timbre de operatividad Circulina de operatividad,P,ELI,A,19
+55,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ADM,E,19
+56,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,EPP,E,19
+57,Extintores en Zona de trabajo,P,INH,E,20
+58,Timbre de operatividad Circulina de operatividad,M,EPP,E,20
+59,guantes de cuero o anticorte.,P,ADM,C,20
+60,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,E,20
+61,Instalacion de silenciadores en ventiladores,P,ELI,C,21
+62,Casco de Seguridad,M,SUS,D,21
+63,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ADM,D,21
+64,Uso de equipos personal de proteccion anticaidas.,P,ELI,E,21
+65,Respirador con filtro de gases,M,SUS,C,21
+66,1. Uso de herramientas adecuadas.,M,ADM,D,22
+67,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,SUS,C,22
+68,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,ELI,D,22
+69,Colocacion de Barreras  Solidas,M,ELI,E,22
+70,1. Uso de herramientas adecuadas.,M,SUS,B,23
+71,Instalacion de silenciadores en ventiladores,M,ELI,D,23
+72,1. Bandejas,P,EPP,A,24
+73,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,EPP,C,24
+74,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,EPP,B,24
+75,Zapatos de seguridad con planta de caucho o material antideslizante.,P,ADM,A,25
+76,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,INH,D,26
+77,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ELI,B,26
+78,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,ADM,E,26
+79,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,INH,B,26
+80,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,INH,D,27
+81,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,EPP,A,28
+82,Puntos de anclaje,M,SUS,B,28
+83,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,EPP,A,29
+84,1. Uso de herramientas adecuadas.,P,SUS,C,29
+85,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,ADM,A,30
+86,1. Uso de herramientas adecuadas.,M,SUS,D,30
+87,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,ELI,C,30
+88,Descripcion,P,SUS,D,31
+89,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,D,31
+90,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,SUS,A,31
+91,Orejeras Tapones auditivos,P,INH,B,31
+92,Orejeras Tapones auditivos,M,ADM,A,31
+93,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,ADM,E,32
+94,Orejeras Tapones auditivos,P,EPP,B,32
+95,Probadores de energia Multitester Revelador de tension,M,SUS,D,32
+96,Uso del drenaje ecologico tipo check.,M,SUS,D,32
+97,Barbiquejo,M,SUS,B,33
+98,Respirador y filtros de polvo,M,EPP,B,33
+99,Zapatos de seguridad con planta de caucho o material antideslizante.,M,SUS,B,33
+100,Respirador con filtro de gases,P,ELI,A,34
+101,Probadores de energia Multitester Revelador de tension,P,EPP,B,35
+102,1. Uso de herramientas adecuadas.,M,ADM,C,35
+103,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,EPP,A,36
+104,Instalacion de silenciadores en ventiladores,M,ADM,B,36
+105,Probadores de energia Multitester Revelador de tension,P,ADM,D,37
+106,Orejeras Tapones auditivos,P,INH,E,37
+107,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,ADM,C,37
+108,1. Senalizacion,M,ADM,D,37
+109,Respirador con filtro de gases,P,SUS,C,38
+110,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,INH,D,38
+111,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ELI,D,38
+112,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ELI,A,39
+113,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,EPP,C,39
+114,1. Senalizacion,M,SUS,D,39
+115,Orejeras Tapones auditivos,M,ELI,E,40
+116,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,SUS,D,41
+117,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,ADM,C,41
+118,Zapatos de seguridad con planta de caucho o material antideslizante.,P,INH,D,41
+119,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ADM,B,41
+120,Puntos de anclaje,P,SUS,E,41
+121,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,ELI,D,42
+122,Zapatos de seguridad con planta de caucho o material antideslizante.,M,SUS,E,42
+123,Colocacion de Barreras  Solidas,M,ADM,B,42
+124,Puntos de anclaje,M,EPP,A,42
+125,Puntos de anclaje,M,EPP,E,43
+126,Instalacion de silenciadores en ventiladores,M,INH,E,44
+127,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,SUS,E,44
+128,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,M,EPP,A,44
+129,Orejeras Tapones auditivos,P,SUS,C,45
+130,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,M,ELI,C,45
+131,Zapatos de seguridad con planta de caucho o material antideslizante.,M,INH,A,45
+132,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,ADM,E,45
+133,guantes de cuero o anticorte.,M,SUS,A,45
+134,Desenergizar y bloquear  fuente de energia,P,ADM,E,46
+135,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,INH,D,46
+136,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ELI,E,46
+137,Extintores en Zona de trabajo,M,EPP,C,47
+138,1. Senalizacion,P,SUS,E,47
+139,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,ELI,C,48
+140,Respirador con filtro de gases,P,ADM,A,48
+141,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,P,ADM,B,48
+142,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,C,48
+143,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,M,ELI,A,49
+144,Uso del drenaje ecologico tipo check.,M,INH,E,50
+145,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,INH,E,50
+146,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,EPP,B,50
+147,delimitacion de areas 2. Mantener orden y limpieza,M,ADM,E,50
+148,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,SUS,C,51
+149,kits de contingencia,M,EPP,C,52
+150,Instalacion de silenciadores en ventiladores,P,ELI,B,52
+151,guantes de cuero o anticorte.,M,INH,E,53
+152,1. Uso de herramientas adecuadas.,M,INH,B,53
+153,Orejeras Tapones auditivos,P,INH,B,53
+154,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,ADM,B,53
+155,1. Senalizacion,M,INH,E,54
+156,Respirador y filtros de polvo,P,ELI,C,54
+157,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,EPP,E,54
+158,lineas de vida,P,ADM,A,55
+159,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,ELI,B,55
+160,Descripcion,P,ELI,B,56
+161,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,INH,B,56
+162,1. Uso de herramientas adecuadas.,M,ADM,D,56
+163,Timbre de operatividad Circulina de operatividad,P,ELI,C,57
+164,Respirador y filtros de polvo,P,INH,D,57
+165,Orejeras Tapones auditivos,P,EPP,B,58
+166,Orejeras Tapones auditivos,P,ELI,A,58
+167,Uso del drenaje ecologico tipo check.,P,EPP,E,59
+168,1. Uso de herramientas adecuadas.,P,EPP,C,59
+169,Colocacion de Barreras  Solidas,M,ADM,C,59
+170,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,EPP,E,59
+171,1. PETS-UCH-MG-81.07 Inspeccion electromagnetica de cable de winche de izaje.,M,EPP,D,60
+172,1. Uso de herramientas adecuadas.,M,INH,E,60
+173,Puntos de anclaje,M,ELI,C,60
+174,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ADM,E,60
+175,Uso del drenaje ecologico tipo check.,M,INH,D,60
+176,Probadores de energia Multitester Revelador de tension,M,ELI,E,61
+177,Colocacion de Barreras  Solidas,M,ADM,E,61
+178,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,EPP,D,61
+179,1. Senalizacion,P,INH,A,61
+180,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ELI,D,61
+181,Respirador y filtros de polvo,P,EPP,E,62
+182,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,ADM,A,62
+183,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,SUS,C,62
+184,1. Senalizacion,P,EPP,E,62
+185,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,INH,C,63
+186,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,EPP,B,64
+187,Zapatos de seguridad con planta de caucho o material antideslizante.,M,SUS,D,64
+188,Colocacion de Barreras  Solidas,M,EPP,A,65
+189,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,ADM,C,65
+190,lineas de vida,M,EPP,B,66
+191,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,ADM,B,66
+192,Descripcion,P,INH,D,66
+193,Timbre de operatividad Circulina de operatividad,M,ADM,C,66
+194,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,ELI,D,67
+195,1. Uso de herramientas adecuadas.,M,INH,E,67
+196,Descripcion,P,ELI,D,67
+197,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,ADM,C,68
+198,Desenergizar y bloquear  fuente de energia,M,ELI,D,69
+199,Zapatos de seguridad con planta de caucho o material antideslizante.,M,SUS,B,69
+200,delimitacion de areas 2. Mantener orden y limpieza,M,INH,D,69
+201,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,ADM,E,69
+202,lineas de vida,P,SUS,E,69
+203,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,INH,E,70
+204,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,ADM,A,70
+205,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,EPP,E,71
+206,Casco de Seguridad,M,INH,C,71
+207,Colocacion de Barreras  Solidas,M,ADM,E,72
+208,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,INH,E,72
+209,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ADM,D,72
+210,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,INH,A,72
+211,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,B,73
+212,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,INH,D,74
+213,Probadores de energia Multitester Revelador de tension,P,EPP,A,75
+214,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,E,75
+215,Descripcion,P,EPP,B,75
+216,Instalacion de silenciadores en ventiladores,P,EPP,B,75
+217,1. Uso de herramientas adecuadas.,P,SUS,B,75
+218,Respirador y filtros de polvo,M,INH,D,76
+219,Probadores de energia Multitester Revelador de tension,M,ELI,E,76
+220,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ELI,D,77
+221,Desenergizar y bloquear  fuente de energia,M,ADM,B,78
+222,kits de contingencia,P,SUS,C,78
+223,Uso del drenaje ecologico tipo check.,M,SUS,D,78
+224,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,ELI,B,79
+225,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,B,79
+226,Probadores de energia Multitester Revelador de tension,P,SUS,E,79
+227,Extintores en Zona de trabajo,P,ELI,D,79
+228,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,EPP,E,80
+229,1. Uso de herramientas adecuadas.,P,INH,C,80
+230,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ADM,C,80
+231,Timbre de operatividad Circulina de operatividad,P,ADM,B,81
+232,Respirador y filtros de polvo,P,ADM,B,81
+233,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,INH,C,81
+234,Probadores de energia Multitester Revelador de tension,P,ELI,B,82
+235,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,EPP,D,82
+236,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ADM,E,83
+237,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,EPP,A,83
+238,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,ELI,E,84
+239,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ADM,B,84
+240,Desenergizar y bloquear  fuente de energia,P,ADM,E,84
+241,Descripcion,P,ADM,D,84
+242,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,INH,E,84
+243,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,EPP,C,85
+244,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ADM,A,85
+245,Zapatos de seguridad con planta de caucho o material antideslizante.,P,INH,A,85
+246,Uso de equipos personal de proteccion anticaidas.,M,ELI,B,86
+247,cilindros de aserrin.,M,INH,D,86
+248,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,EPP,E,86
+249,Descripcion,P,SUS,C,86
+250,Probadores de energia Multitester Revelador de tension,M,SUS,C,87
+251,guantes de cuero o anticorte.,M,ELI,D,87
+252,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,SUS,A,87
+253,Probadores de energia Multitester Revelador de tension,M,INH,E,87
+254,Respirador con filtro de gases,M,INH,C,87
+255,Puntos de anclaje,P,ADM,E,88
+256,Respirador con filtro de gases,P,SUS,D,89
+257,Instalacion de silenciadores en ventiladores,P,EPP,B,89
+258,Respirador y filtros de polvo,M,INH,A,89
+259,Zapatos de seguridad con planta de caucho o material antideslizante.,M,INH,C,90
+260,Respirador y filtros de polvo,P,ADM,A,90
+261,Extintores en Zona de trabajo,P,ELI,E,90
+262,1. Bandejas,P,ELI,B,91
+263,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,EPP,C,91
+264,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,ELI,B,91
+265,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,EPP,C,92
+266,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,INH,B,92
+267,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,EPP,B,92
+268,Orejeras Tapones auditivos,M,SUS,D,92
+269,Descripcion,P,ELI,B,92
+270,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,EPP,C,93
+271,1. Uso de herramientas adecuadas.,P,INH,B,94
+272,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,INH,B,94
+273,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ADM,A,94
+274,1. Uso de herramientas adecuadas.,M,INH,C,94
+275,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,INH,E,95
+276,Respirador y filtros de polvo,M,EPP,C,95
+277,Uso del drenaje ecologico tipo check.,M,INH,C,96
+278,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,EPP,A,96
+279,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,SUS,A,96
+280,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,INH,A,96
+281,delimitacion de areas 2. Mantener orden y limpieza,M,ELI,E,97
+282,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,EPP,D,97
+283,Uso del drenaje ecologico tipo check.,P,SUS,D,97
+284,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,EPP,D,98
+285,Timbre de operatividad Circulina de operatividad,P,INH,C,98
+286,1. Senalizacion,P,ADM,D,98
+287,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ELI,B,99
+288,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,P,SUS,C,99
+289,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,INH,A,99
+290,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,A,100
+291,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,EPP,A,100
+292,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,SUS,D,100
+293,Respirador y filtros de polvo,P,ADM,A,101
+294,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ADM,C,101
+295,Respirador y filtros de polvo,P,EPP,D,101
+296,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,SUS,A,101
+297,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,EPP,D,101
+298,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,EPP,E,102
+299,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ELI,D,103
+300,Orejeras Tapones auditivos,P,SUS,C,103
+301,Barbiquejo,P,ELI,C,103
+302,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,SUS,A,104
+303,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,ADM,B,104
+304,1. Uso de herramientas adecuadas.,M,ADM,C,104
+305,Orejeras Tapones auditivos,M,EPP,A,104
+306,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,ADM,E,104
+307,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,A,105
+308,Probadores de energia Multitester Revelador de tension,M,SUS,B,106
+309,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,EPP,D,106
+310,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,INH,A,106
+311,Instalacion de silenciadores en ventiladores,P,SUS,B,106
+312,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,SUS,C,106
+313,Barbiquejo,M,ADM,C,107
+314,1. Senalizacion,M,ADM,D,107
+315,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,SUS,E,108
+316,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,INH,E,108
+317,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,INH,E,109
+318,Uso del drenaje ecologico tipo check.,P,EPP,C,109
+319,Respirador y filtros de polvo,M,ADM,D,109
+320,Instalacion de silenciadores en ventiladores,P,ELI,B,110
+321,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,P,ADM,A,110
+322,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ELI,B,111
+323,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,ADM,E,111
+324,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ELI,C,111
+325,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ADM,D,111
+326,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,D,112
+327,Respirador y filtros de polvo,M,SUS,B,112
+328,Respirador y filtros de polvo,P,ADM,D,113
+329,Instalacion de silenciadores en ventiladores,M,ADM,B,113
+330,delimitacion de areas 2. Mantener orden y limpieza,M,EPP,C,114
+331,Orejeras Tapones auditivos,M,ELI,A,114
+332,Casco de Seguridad,P,SUS,A,114
+333,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,ELI,B,114
+334,Barbiquejo,M,ELI,A,115
+335,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,INH,A,115
+336,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,EPP,C,116
+337,Instalacion de silenciadores en ventiladores,P,ELI,E,116
+338,Desenergizar y bloquear  fuente de energia,P,ADM,D,117
+339,kits de contingencia,P,INH,B,117
+340,kits de contingencia,P,EPP,B,117
+341,Timbre de operatividad Circulina de operatividad,M,EPP,B,117
+342,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ADM,A,117
+343,Zapatos de seguridad con planta de caucho o material antideslizante.,P,ADM,B,118
+344,Descripcion,P,ADM,C,118
+345,1. Bandejas,M,EPP,D,119
+346,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,ADM,A,119
+347,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,SUS,E,119
+348,Instalacion de silenciadores en ventiladores,P,SUS,E,120
+349,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,SUS,A,121
+350,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ELI,A,121
+351,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,INH,D,121
+352,Desenergizar y bloquear  fuente de energia,M,SUS,B,122
+353,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,INH,A,122
+354,guantes de cuero o anticorte.,M,ELI,D,122
+355,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,M,ADM,A,122
+356,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,EPP,A,123
+357,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,C,123
+358,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,INH,C,123
+359,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,ELI,B,123
+360,Zapatos de seguridad con planta de caucho o material antideslizante.,P,EPP,C,123
+361,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,INH,C,124
+362,Colocacion de Barreras  Solidas,P,ADM,C,125
+363,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,EPP,E,125
+364,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,EPP,C,125
+365,delimitacion de areas 2. Mantener orden y limpieza,M,EPP,A,126
+366,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,EPP,C,126
+367,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,B,127
+368,Puntos de anclaje,P,EPP,E,127
+369,1. Bandejas,P,SUS,E,127
+370,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ADM,C,127
+371,Respirador con filtro de gases,P,INH,D,128
+372,Casco de Seguridad,P,EPP,D,128
+373,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ADM,D,129
+374,Casco de Seguridad,P,ELI,B,130
+375,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,INH,A,130
+376,1. Uso de herramientas adecuadas.,P,SUS,A,130
+377,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,EPP,E,131
+378,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,A,132
+379,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,ELI,A,132
+380,cilindros de aserrin.,M,SUS,C,133
+381,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,ELI,D,133
+382,Descripcion,M,ADM,C,133
+383,Orejeras Tapones auditivos,P,INH,A,133
+384,Descripcion,P,ELI,E,133
+385,1. Uso de herramientas adecuadas.,P,EPP,E,134
+386,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ELI,A,134
+387,1. Uso de herramientas adecuadas.,P,EPP,B,135
+388,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,INH,D,135
+389,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,D,135
+390,Instalacion de silenciadores en ventiladores,P,ELI,A,135
+391,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,INH,D,135
+392,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,INH,E,136
+393,guantes de cuero o anticorte.,P,SUS,E,136
+394,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,INH,D,137
+395,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,ELI,C,137
+396,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ADM,E,137
+397,Orejeras Tapones auditivos,P,INH,B,137
+398,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,D,137
+399,1. Senalizacion,P,ADM,E,138
+400,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,B,139
+401,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ADM,C,139
+402,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,INH,E,139
+403,Puntos de anclaje,M,INH,E,139
+404,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,SUS,E,140
+405,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,SUS,E,140
+406,kits de contingencia,M,EPP,E,140
+407,Respirador con filtro de gases,M,ADM,E,140
+408,Extintores en Zona de trabajo,P,EPP,B,140
+409,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ADM,E,141
+410,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,ADM,D,142
+411,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,EPP,B,142
+412,Extintores en Zona de trabajo,M,EPP,A,143
+413,1. Senalizacion,M,ELI,D,144
+414,Casco de Seguridad,P,INH,C,144
+415,Casco de Seguridad,P,EPP,D,144
+416,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,EPP,B,145
+417,Casco de Seguridad,M,ELI,D,145
+418,Descripcion,P,EPP,A,145
+419,Respirador y filtros de polvo,M,ADM,A,146
+420,1. Senalizacion,P,ADM,B,146
+421,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,INH,D,146
+422,Uso del drenaje ecologico tipo check.,P,ADM,B,146
+423,cilindros de aserrin.,P,SUS,B,147
+424,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,ADM,A,148
+425,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ELI,B,148
+426,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,D,149
+427,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,SUS,D,149
+428,Barbiquejo,M,SUS,B,150
+429,Descripcion,M,INH,E,151
+430,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,SUS,C,151
+431,guantes de cuero o anticorte.,P,EPP,B,152
+432,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ELI,C,152
+433,Respirador y filtros de polvo,P,EPP,A,152
+434,Colocacion de Barreras  Solidas,M,ELI,B,152
+435,Uso de equipos personal de proteccion anticaidas.,P,SUS,C,152
+436,Uso del drenaje ecologico tipo check.,P,SUS,C,153
+437,Extintores en Zona de trabajo,P,EPP,A,153
+438,Respirador con filtro de gases,M,SUS,E,153
+439,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,C,154
+440,Casco de Seguridad,P,ADM,B,154
+441,Orejeras Tapones auditivos,M,ELI,B,154
+442,Colocacion de Barreras  Solidas,P,EPP,C,155
+443,Orejeras Tapones auditivos,M,EPP,E,156
+444,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ADM,A,156
+445,Extintores en Zona de trabajo,P,ELI,E,156
+446,Probadores de energia Multitester Revelador de tension,P,ADM,D,156
+447,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,B,157
+448,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,INH,C,157
+449,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,EPP,D,158
+450,1. PETS-UCH-MG-81.07 Inspeccion electromagnetica de cable de winche de izaje.,M,ELI,B,159
+451,Uso de equipos personal de proteccion anticaidas.,P,ELI,B,159
+452,1. PETS-UCH-MG-81.07 Inspeccion electromagnetica de cable de winche de izaje.,M,SUS,B,159
+453,Uso del drenaje ecologico tipo check.,M,ADM,C,159
+454,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,SUS,C,160
+455,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,EPP,B,160
+456,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,C,160
+457,Colocacion de Barreras  Solidas,P,INH,B,160
+458,Casco de Seguridad,P,EPP,B,160
+459,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,E,161
+460,Respirador con filtro de gases,P,ELI,E,161
+461,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,ELI,D,161
+462,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,ADM,B,162
+463,Probadores de energia Multitester Revelador de tension,M,ADM,A,162
+464,Uso del drenaje ecologico tipo check.,P,ELI,A,162
+465,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,ELI,E,162
+466,Casco de Seguridad,M,ADM,D,162
+467,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ELI,C,163
+468,1. Uso de herramientas adecuadas.,M,SUS,E,163
+469,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,ELI,A,163
+470,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ELI,A,164
+471,Barbiquejo,P,EPP,B,164
+472,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,EPP,B,164
+473,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,ADM,A,165
+474,guantes de cuero o anticorte.,M,SUS,B,165
+475,Uso del drenaje ecologico tipo check.,M,SUS,B,165
+476,1. Uso de herramientas adecuadas.,M,INH,C,165
+477,Zapatos de seguridad con planta de caucho o material antideslizante.,M,EPP,A,165
+478,Colocacion de Barreras  Solidas,P,ELI,B,166
+479,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,ELI,D,167
+480,Descripcion,M,SUS,A,167
+481,guantes de cuero o anticorte.,P,ADM,E,167
+482,1. Uso de herramientas adecuadas.,P,EPP,D,168
+483,delimitacion de areas 2. Mantener orden y limpieza,M,ADM,E,168
+484,Probadores de energia Multitester Revelador de tension,M,ADM,A,168
+485,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,EPP,D,168
+486,guantes de cuero o anticorte.,P,EPP,E,168
+487,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,INH,A,169
+488,guantes de cuero o anticorte.,M,SUS,C,169
+489,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,SUS,C,169
+490,guantes de cuero o anticorte.,M,ELI,B,169
+491,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,EPP,D,169
+492,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,SUS,A,170
+493,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,A,171
+494,kits de contingencia,P,EPP,C,172
+495,1. Senalizacion,M,INH,A,172
+496,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,ELI,D,172
+497,Desenergizar y bloquear  fuente de energia,M,EPP,E,173
+498,Extintores en Zona de trabajo,P,EPP,B,174
+499,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,EPP,B,175
+500,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,INH,D,176
+501,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,C,176
+502,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ELI,B,176
+503,Casco de Seguridad,M,ADM,E,176
+504,guantes de cuero o anticorte.,M,ADM,B,176
+505,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,ADM,E,177
+506,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ELI,C,178
+507,1. Bandejas,P,INH,A,178
+508,Casco de Seguridad,P,EPP,C,178
+509,Zapatos de seguridad con planta de caucho o material antideslizante.,P,ELI,B,179
+510,Zapatos de seguridad con planta de caucho o material antideslizante.,P,ADM,A,179
+511,Uso de equipos personal de proteccion anticaidas.,P,ADM,C,180
+512,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,INH,D,181
+513,1. Bandejas,M,SUS,B,181
+514,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,C,181
+515,Zapatos de seguridad con planta de caucho o material antideslizante.,P,ADM,D,181
+516,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,EPP,B,182
+517,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,ELI,E,182
+518,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ELI,A,182
+519,Zapatos de seguridad con planta de caucho o material antideslizante.,P,INH,D,183
+520,Barbiquejo,P,SUS,C,183
+521,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,INH,A,183
+522,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ELI,A,184
+523,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ELI,D,185
+524,1. Uso de herramientas adecuadas.,M,EPP,E,186
+525,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,EPP,D,186
+526,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,EPP,E,186
+527,Barbiquejo,M,EPP,A,186
+528,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,INH,B,186
+529,Respirador con filtro de gases,P,EPP,A,187
+530,delimitacion de areas 2. Mantener orden y limpieza,M,EPP,B,187
+531,Extintores en Zona de trabajo,M,ADM,D,188
+532,1. Senalizacion,P,ADM,B,188
+533,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,INH,A,189
+534,Orejeras Tapones auditivos,P,ELI,A,189
+535,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,SUS,C,189
+536,1. Uso de herramientas adecuadas.,M,ELI,A,189
+537,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ELI,C,189
+538,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,SUS,E,190
+539,Uso del drenaje ecologico tipo check.,M,ADM,A,191
+540,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,P,SUS,A,191
+541,1. Senalizacion,P,EPP,E,191
+542,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,M,INH,C,191
+543,Instalacion de silenciadores en ventiladores,P,ADM,A,192
+544,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ADM,B,193
+545,Zapatos de seguridad con planta de caucho o material antideslizante.,P,INH,B,193
+546,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,INH,C,194
+547,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,ADM,D,194
+548,Respirador con filtro de gases,M,ADM,E,194
+549,Probadores de energia Multitester Revelador de tension,P,INH,D,195
+550,Colocacion de Barreras  Solidas,P,ELI,C,195
+551,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,B,196
+552,Orejeras Tapones auditivos,P,SUS,D,196
+553,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,SUS,D,196
+554,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,ELI,D,196
+555,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,INH,B,196
+556,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,INH,D,197
+557,kits de contingencia,M,ELI,D,197
+558,Respirador y filtros de polvo,M,SUS,C,197
+559,1. Uso de herramientas adecuadas.,P,EPP,E,197
+560,Respirador y filtros de polvo,P,ADM,D,198
+561,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,SUS,E,198
+562,1. Uso de herramientas adecuadas.,M,ELI,A,198
+563,Uso del drenaje ecologico tipo check.,M,SUS,E,198
+564,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ADM,D,198
+565,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,SUS,C,199
+566,1. Senalizacion,P,INH,B,199
+567,Uso del drenaje ecologico tipo check.,M,ELI,C,199
+568,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,SUS,B,200
+569,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,SUS,A,200
+570,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,SUS,D,200
+571,Orejeras Tapones auditivos,M,ADM,B,200
+572,Puntos de anclaje,P,EPP,C,201
+573,Descripcion,M,ADM,A,201
+574,Uso del drenaje ecologico tipo check.,M,ELI,C,201
+575,Instalacion de silenciadores en ventiladores,P,INH,B,202
+576,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ADM,C,202
+577,Descripcion,P,ADM,B,203
+578,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,SUS,D,203
+579,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,INH,C,203
+580,Zapatos de seguridad con planta de caucho o material antideslizante.,P,ADM,C,204
+581,Puntos de anclaje,P,SUS,B,205
+582,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,ADM,B,206
+583,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ELI,D,207
+584,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ADM,D,207
+585,Uso del drenaje ecologico tipo check.,M,ADM,A,207
+586,Probadores de energia Multitester Revelador de tension,P,ELI,C,208
+587,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ADM,A,208
+588,guantes de cuero o anticorte.,M,INH,B,208
+589,Instalacion de silenciadores en ventiladores,P,ELI,B,208
+590,delimitacion de areas 2. Mantener orden y limpieza,M,EPP,D,209
+591,Respirador con filtro de gases,P,INH,B,209
+592,Casco de Seguridad,M,SUS,A,210
+593,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,EPP,C,210
+594,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ELI,D,210
+595,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ELI,A,211
+596,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ADM,D,212
+597,Timbre de operatividad Circulina de operatividad,M,SUS,D,212
+598,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,C,212
+599,Uso del drenaje ecologico tipo check.,P,INH,B,212
+600,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,EPP,C,213
+601,Respirador y filtros de polvo,M,INH,E,214
+602,Instalacion de silenciadores en ventiladores,M,EPP,C,214
+603,lineas de vida,M,EPP,A,215
+604,Desenergizar y bloquear  fuente de energia,M,SUS,C,215
+605,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,SUS,D,215
+606,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,C,216
+607,Uso de equipos personal de proteccion anticaidas.,M,EPP,B,216
+608,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ADM,A,216
+609,Uso de equipos personal de proteccion anticaidas.,M,EPP,A,216
+610,Orejeras Tapones auditivos,P,ELI,B,216
+611,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,INH,B,217
+612,Instalacion de silenciadores en ventiladores,M,EPP,E,217
+613,1. Uso de herramientas adecuadas.,P,EPP,C,218
+614,Desenergizar y bloquear  fuente de energia,M,EPP,C,218
+615,Desenergizar y bloquear  fuente de energia,P,SUS,A,219
+616,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,ADM,D,220
+617,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,A,220
+618,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,A,220
+619,Casco de Seguridad,P,ELI,B,220
+620,Timbre de operatividad Circulina de operatividad,P,INH,D,221
+621,Uso del drenaje ecologico tipo check.,P,INH,E,221
+622,1. Uso de herramientas adecuadas.,M,EPP,D,221
+623,Instalacion de silenciadores en ventiladores,M,EPP,D,222
+624,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,SUS,C,222
+625,Instalacion de silenciadores en ventiladores,M,INH,E,222
+626,Descripcion,M,SUS,C,223
+627,Extintores en Zona de trabajo,P,ELI,D,223
+628,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,INH,D,223
+629,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,EPP,D,224
+630,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,SUS,A,224
+631,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,INH,E,224
+632,delimitacion de areas 2. Mantener orden y limpieza,P,EPP,D,224
+633,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ELI,E,225
+634,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ELI,A,225
+635,Puntos de anclaje,P,EPP,D,225
+636,Instalacion de silenciadores en ventiladores,M,INH,E,226
+637,Descripcion,M,INH,C,226
+638,Barbiquejo,M,INH,B,226
+639,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ELI,B,226
+640,Puntos de anclaje,M,EPP,C,226
+641,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,ADM,A,227
+642,Descripcion,P,ADM,E,227
+643,Timbre de operatividad Circulina de operatividad,M,SUS,A,227
+644,Descripcion,M,ELI,C,227
+645,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,SUS,E,228
+646,1. Senalizacion,M,ELI,B,228
+647,Desenergizar y bloquear  fuente de energia,M,SUS,E,229
+648,lineas de vida,M,ADM,D,229
+649,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ELI,D,229
+650,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,INH,B,229
+651,Instalacion de silenciadores en ventiladores,P,EPP,C,229
+652,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,INH,C,230
+653,lineas de vida,M,ADM,A,230
+654,Respirador y filtros de polvo,P,SUS,B,230
+655,Timbre de operatividad Circulina de operatividad,P,EPP,D,230
+656,Zapatos de seguridad con planta de caucho o material antideslizante.,M,SUS,A,231
+657,Casco de Seguridad,M,SUS,B,231
+658,Uso del drenaje ecologico tipo check.,M,ELI,B,232
+659,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,SUS,D,232
+660,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,INH,B,232
+661,Casco de Seguridad,M,ELI,B,232
+662,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,B,233
+663,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ELI,D,234
+664,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,EPP,C,235
+665,Uso del drenaje ecologico tipo check.,M,SUS,E,235
+666,Descripcion,M,ADM,E,235
+667,guantes de cuero o anticorte.,M,INH,C,235
+668,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,SUS,E,236
+669,Zapatos de seguridad con planta de caucho o material antideslizante.,P,INH,B,236
+670,Respirador y filtros de polvo,M,INH,E,236
+671,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,INH,B,236
+672,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,SUS,D,237
+673,Desenergizar y bloquear  fuente de energia,P,INH,A,237
+674,Casco de Seguridad,P,SUS,A,238
+675,Respirador con filtro de gases,P,SUS,B,239
+676,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ADM,A,239
+677,Instalacion de silenciadores en ventiladores,M,ADM,B,240
+678,Descripcion,M,ELI,B,240
+679,Casco de Seguridad,P,INH,A,240
+680,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,ADM,E,241
+681,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,ELI,E,241
+682,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ELI,E,241
+683,Orejeras Tapones auditivos,M,SUS,B,242
+684,1. Uso de herramientas adecuadas.,M,ADM,D,242
+685,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,P,SUS,A,242
+686,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,EPP,A,242
+687,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,EPP,D,243
+688,delimitacion de areas 2. Mantener orden y limpieza,M,INH,A,244
+689,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,SUS,E,244
+690,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,ADM,B,245
+691,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,INH,A,245
+692,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,SUS,B,246
+693,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,ELI,B,247
+694,1. Uso de herramientas adecuadas.,M,SUS,D,247
+695,Timbre de operatividad Circulina de operatividad,M,EPP,E,248
+696,Respirador y filtros de polvo,M,ADM,D,248
+697,Timbre de operatividad Circulina de operatividad,P,ELI,D,248
+698,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,SUS,C,248
+699,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,EPP,C,248
+700,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,ADM,E,249
+701,Uso del drenaje ecologico tipo check.,P,SUS,B,249
+702,1. PETS-UCH-MG-81.07 Inspeccion electromagnetica de cable de winche de izaje.,M,SUS,A,249
+703,Descripcion,M,ELI,B,249
+704,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,ADM,E,250
+705,Respirador y filtros de polvo,M,INH,D,250
+706,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,EPP,E,250
+707,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,EPP,B,250
+708,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,SUS,D,250
+709,Barbiquejo,P,ADM,C,251
+710,lineas de vida,P,INH,C,251
+711,1. Senalizacion,M,EPP,B,252
+712,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,D,252
+713,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,INH,C,252
+714,Colocacion de Barreras  Solidas,M,EPP,B,253
+715,Respirador y filtros de polvo,P,SUS,E,253
+716,Zapatos de seguridad con planta de caucho o material antideslizante.,P,ADM,C,253
+717,kits de contingencia,P,SUS,B,254
+718,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,ADM,C,254
+719,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ELI,E,255
+720,Uso del drenaje ecologico tipo check.,P,EPP,C,255
+721,Zapatos de seguridad con planta de caucho o material antideslizante.,M,INH,B,255
+722,Extintores en Zona de trabajo,M,ELI,C,255
+723,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,E,255
+724,Desenergizar y bloquear  fuente de energia,M,ADM,A,256
+725,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,M,SUS,D,256
+726,Orejeras Tapones auditivos,P,SUS,C,257
+727,1. Uso de herramientas adecuadas.,P,EPP,B,257
+728,Desenergizar y bloquear  fuente de energia,M,ELI,A,258
+729,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,EPP,C,258
+730,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ELI,C,258
+731,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,ELI,D,258
+732,Uso de equipos personal de proteccion anticaidas.,P,INH,A,259
+733,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ADM,E,259
+734,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,P,ELI,B,259
+735,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,INH,D,259
+736,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,SUS,C,259
+737,Probadores de energia Multitester Revelador de tension,P,ADM,B,260
+738,Extintores en Zona de trabajo,M,SUS,A,260
+739,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,ADM,D,260
+740,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,EPP,A,260
+741,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,EPP,C,260
+742,kits de contingencia,P,SUS,A,261
+743,Uso del drenaje ecologico tipo check.,M,EPP,C,261
+744,Respirador con filtro de gases,M,EPP,C,261
+745,Descripcion,P,SUS,B,261
+746,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,SUS,C,262
+747,1. Senalizacion,P,EPP,B,262
+748,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,ADM,D,263
+749,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ADM,B,264
+750,1. Senalizacion,M,SUS,D,265
+751,Uso del drenaje ecologico tipo check.,P,ELI,D,265
+752,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,INH,C,266
+753,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,P,ELI,E,266
+754,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ELI,A,266
+755,1. Senalizacion,P,ELI,C,266
+756,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,EPP,D,267
+757,1. Uso de herramientas adecuadas.,M,ADM,C,267
+758,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,INH,B,267
+759,Zapatos de seguridad con planta de caucho o material antideslizante.,M,SUS,D,267
+760,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,ELI,C,267
+761,Barbiquejo,M,EPP,C,268
+762,Extintores en Zona de trabajo,P,ELI,A,268
+763,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,ELI,A,269
+764,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ELI,B,269
+765,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,A,269
+766,1. Uso de herramientas adecuadas.,P,ELI,D,269
+767,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ELI,E,270
+768,Barbiquejo,M,ADM,A,270
+769,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ADM,D,270
+770,Descripcion,M,SUS,C,270
+771,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,SUS,E,271
+772,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,P,ADM,D,271
+773,Respirador y filtros de polvo,M,ELI,C,271
+774,Extintores en Zona de trabajo,M,INH,C,271
+775,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,M,INH,A,272
+776,Desenergizar y bloquear  fuente de energia,M,SUS,D,272
+777,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,EPP,B,272
+778,Uso del drenaje ecologico tipo check.,M,ADM,C,273
+779,Orejeras Tapones auditivos,M,EPP,E,274
+780,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,ELI,B,275
+781,Uso del drenaje ecologico tipo check.,P,ELI,B,275
+782,Probadores de energia Multitester Revelador de tension,P,INH,A,275
+783,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ELI,E,275
+784,lineas de vida,M,ADM,D,276
+785,Instalacion de silenciadores en ventiladores,P,EPP,E,276
+786,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,EPP,A,276
+787,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ELI,B,276
+788,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,SUS,C,277
+789,1. Senalizacion,M,SUS,A,278
+790,Descripcion,M,ADM,D,279
+791,delimitacion de areas 2. Mantener orden y limpieza,M,EPP,B,279
+792,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,ELI,E,279
+793,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,ELI,D,279
+794,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ADM,C,279
+795,Desenergizar y bloquear  fuente de energia,P,INH,C,280
+796,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,EPP,D,281
+797,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,EPP,D,281
+798,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,EPP,B,282
+799,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,EPP,B,282
+800,1. Uso de herramientas adecuadas.,M,ADM,A,282
+801,Puntos de anclaje,M,ELI,A,283
+802,Probadores de energia Multitester Revelador de tension,P,INH,C,283
+803,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,EPP,A,283
+804,Instalacion de silenciadores en ventiladores,M,SUS,E,283
+805,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,SUS,E,283
+806,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,ADM,B,284
+807,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ADM,D,284
+808,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,INH,B,284
+809,lineas de vida,M,EPP,A,284
+810,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,M,ELI,D,285
+811,Uso de equipos personal de proteccion anticaidas.,M,SUS,B,285
+812,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,C,285
+813,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,ADM,D,286
+814,Uso de equipos personal de proteccion anticaidas.,P,ADM,B,286
+815,Uso del drenaje ecologico tipo check.,M,SUS,B,286
+816,Uso de equipos personal de proteccion anticaidas.,M,INH,C,287
+817,1. Bandejas,P,INH,A,287
+818,Descripcion,P,INH,B,287
+819,1. Senalizacion,P,INH,E,288
+820,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,SUS,A,288
+821,1. Uso de herramientas adecuadas.,P,SUS,C,289
+822,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,ELI,C,289
+823,Uso del drenaje ecologico tipo check.,P,ADM,E,289
+824,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,P,SUS,A,290
+825,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,ELI,C,290
+826,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,ADM,E,290
+827,1. Uso de herramientas adecuadas.,P,SUS,A,291
+828,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,ADM,B,291
+829,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ADM,B,291
+830,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,SUS,E,291
+831,Instalacion de silenciadores en ventiladores,P,INH,A,291
+832,Descripcion,M,EPP,C,292
+833,Barbiquejo,P,SUS,D,292
+834,Instalacion de silenciadores en ventiladores,P,INH,D,293
+835,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ADM,E,293
+836,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,SUS,B,293
+837,Desenergizar y bloquear  fuente de energia,P,ADM,C,294
+838,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,ADM,A,294
+839,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,M,SUS,A,294
+840,1. Uso de herramientas adecuadas.,M,INH,B,294
+841,Descripcion,P,EPP,A,294
+842,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ADM,B,295
+843,Respirador y filtros de polvo,P,SUS,C,295
+844,Instalacion de silenciadores en ventiladores,P,ADM,E,296
+845,1. Uso de herramientas adecuadas.,P,SUS,B,297
+846,Orejeras Tapones auditivos,P,INH,D,297
+847,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,ELI,D,297
+848,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,M,ADM,A,297
+849,Colocacion de Barreras  Solidas,M,ELI,C,297
+850,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,SUS,A,298
+851,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,ELI,A,298
+852,1. Senalizacion,P,ADM,E,298
+853,1. Bandejas,M,EPP,B,298
+854,Casco de Seguridad,P,EPP,E,298
+855,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,SUS,D,299
+856,Extintores en Zona de trabajo,P,EPP,B,299
+857,lineas de vida,M,SUS,D,299
+858,Probadores de energia Multitester Revelador de tension,M,ELI,C,299
+859,Instalacion de silenciadores en ventiladores,M,EPP,D,300
+860,Respirador y filtros de polvo,P,EPP,A,300
+861,Timbre de operatividad Circulina de operatividad,P,SUS,D,300
+862,guantes de cuero o anticorte.,P,INH,B,301
+863,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,M,ELI,E,301
+864,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,ADM,C,301
+865,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,ELI,C,302
+866,Orejeras Tapones auditivos,M,INH,C,302
+867,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,ADM,A,302
+868,Probadores de energia Multitester Revelador de tension,M,ADM,A,302
+869,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,EPP,E,302
+870,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,P,ADM,E,303
+871,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ELI,E,303
+872,guantes de cuero o anticorte.,P,ELI,D,303
+873,Orejeras Tapones auditivos,M,ADM,C,303
+874,Uso de equipos personal de proteccion anticaidas.,M,INH,C,304
+875,Uso de equipos personal de proteccion anticaidas.,M,INH,A,304
+876,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,EPP,C,305
+877,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,INH,C,305
+878,Probadores de energia Multitester Revelador de tension,P,INH,D,305
+879,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,ADM,C,305
+880,Capacitacion en uso de herramientas adecuadas. Capacitacion en ergonomia Publicacion en la oficina sobre pausas activas.,M,ELI,D,305
+881,Casco de Seguridad,M,ADM,D,306
+882,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ADM,A,306
+883,Orejeras Tapones auditivos,M,ADM,A,306
+884,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,ADM,B,306
+885,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,EPP,D,307
+886,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,EPP,E,307
+887,Desenergizar y bloquear  fuente de energia,P,INH,C,308
+888,Instalacion de silenciadores en ventiladores,M,INH,C,308
+889,Orejeras Tapones auditivos,M,EPP,B,309
+890,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,SUS,B,309
+891,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,ELI,D,309
+892,1. Senalizacion,P,EPP,E,310
+893,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,SUS,B,310
+894,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ADM,D,310
+895,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,ELI,E,310
+896,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,P,INH,B,311
+897,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ELI,B,312
+898,Casco de Seguridad,P,ELI,C,312
+899,guantes de cuero o anticorte.,P,EPP,E,312
+900,Orejeras Tapones auditivos,M,INH,B,312
+901,Instalacion de silenciadores en ventiladores,M,SUS,D,312
+902,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ELI,E,313
+903,Orejeras Tapones auditivos,P,EPP,E,313
+904,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,SUS,C,313
+905,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ELI,C,313
+906,kits de contingencia,M,INH,E,313
+907,Barbiquejo,M,INH,A,314
+908,Barbiquejo,M,INH,C,314
+909,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,INH,C,314
+910,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,EPP,E,315
+911,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,ELI,E,316
+912,Probadores de energia Multitester Revelador de tension,P,ELI,A,316
+913,1. Bandejas,M,EPP,C,316
+914,Zapatos de seguridad con planta de caucho o material antideslizante.,P,INH,E,317
+915,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,P,EPP,D,317
+916,Colocacion de Barreras  Solidas,M,SUS,B,318
+917,Uso de equipos personal de proteccion anticaidas.,M,ELI,B,318
+918,Descripcion,M,EPP,E,318
+919,delimitacion de areas 2. Mantener orden y limpieza,P,SUS,B,318
+920,Descripcion,M,ADM,B,318
+921,Uso del drenaje ecologico tipo check.,M,INH,A,319
+922,Difusion  de PETS-UCH-MG-02.16 1. E-COR-SIB-01.01 Equipo de Proteccion Personal,M,INH,E,319
+923,Colocacion de Barreras  Solidas,M,SUS,B,319
+924,Uso del drenaje ecologico tipo check.,P,SUS,D,320
+925,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,M,ELI,E,320
+926,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,P,INH,C,320
+927,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,M,SUS,A,320
+928,guantes de cuero o anticorte.,M,EPP,B,321
+929,Orejeras Tapones auditivos,M,INH,A,321
+930,Casco de Seguridad,P,SUS,E,322
+931,1. Senalizacion,P,ELI,C,322
+932,Orden de Trabajo Senalizacion de la zona de abastecimiento o almacenaje de Solventes,P,SUS,E,322
+933,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,INH,D,322
+934,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,M,ADM,A,322
+935,Orejeras Tapones auditivos,P,SUS,A,323
+936,1. Uso de herramientas adecuadas.,M,ADM,D,323
+937,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,ADM,B,323
+938,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,INH,B,323
+939,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,M,ADM,B,324
+940,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ADM,D,325
+941,1. Capacitacion en uso trabajos en pisos desnivelados 2. Realizar trabajos en equipo coordinadamente.,P,ADM,B,325
+942,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,INH,B,325
+943,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,D,326
+944,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,SUS,A,326
+945,Zapatos de seguridad con planta de caucho o material antideslizante.,P,SUS,B,326
+946,Orejeras Tapones auditivos,P,ELI,B,327
+947,Instalacion de silenciadores en ventiladores,M,INH,E,327
+948,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,INH,E,327
+949,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ADM,E,327
+950,1. Uso de herramientas adecuadas.,M,ELI,E,327
+951,Orejeras Tapones auditivos,M,ADM,E,328
+952,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,ADM,A,329
+953,Orejeras Tapones auditivos,M,EPP,A,329
+954,delimitacion de areas 2. Mantener orden y limpieza,M,SUS,A,329
+955,Uso de equipos personal de proteccion anticaidas.,P,ADM,C,329
+956,Uso de equipos personal de proteccion anticaidas.,P,ELI,E,330
+957,Orejeras Tapones auditivos,M,SUS,C,330
+958,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,INH,D,330
+959,Barbiquejo,P,EPP,C,330
+960,Monitoreo periodico de agentes quimicos en labores subterraneas Capacitacion en agentes quimicos Cumplimiento del E-COR-SIB-11.02 Proteccion Respiratoria Programa de riego de vias principales,P,EPP,C,331
+961,Orden de Trabajo IPERC continuo realizado por operador y ayudante. Capacitacion en riesgos electricos Difusion y seguimiento al estandar E-COR-SIB-03.01 Aislamiento de Energia Difusion y seguimiento al estandar E-COR-SIB-03.03 Energia Electrica de Baja Tension,P,ELI,E,331
+962,Capacitacion del uso de las hojas MSDS de las sustancias que se utilizaran. Uso correcto de las cartillas de mantenimiento preventivo de los equipos.,M,ELI,E,331
+963,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,E,331
+964,Aceites o grasas para equipos Senalizacion de los extintores dentro del taller de mantenimiento. IPERC continuo llenado por el tecnico mecanico indicando este peligro  Inspeccion de extintores,M,ADM,E,331
+965,Instalacion de silenciadores en ventiladores,P,EPP,D,332
+966,Desenergizar y bloquear  fuente de energia,P,EPP,D,333
+967,1. P-COR-SIB-04.15 Manejo de derrames 2. Capacitacion en E-COR-SIB-11.01 Control de Materiales Quimicos Peligrosos. 3. Capacitacion en uso de MSDS. 4. Cumplir con el Plan de Contingencias. 4. Capacitacion en reporte de incidentes por derrames.,M,ADM,B,333
+968,Descripcion,M,ADM,B,334
+969,Extintores en Zona de trabajo,M,SUS,C,334
+970,Descripcion,P,EPP,E,335
+971,guantes de cuero o anticorte.,P,SUS,D,335
+972,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,P,ADM,B,336
+973,Desate mecanizado (Scaler). Desate manual (barretillas). Sostenimiento secuenciado segun recomendaciones geomecanicas,M,ELI,A,336
+974,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,SUS,D,336
+975,Extintores en Zona de trabajo,P,ADM,C,337
+976,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,M,ADM,C,338
+977,Zapatos de seguridad con planta de caucho o material antideslizante.,M,ADM,E,338
+978,Respirador y filtros de polvo,P,SUS,B,338
+979,1. Senalizacion,P,ELI,A,338
+980,Uso de equipos personal de proteccion anticaidas.,M,ADM,E,338
+981,Desenergizar y bloquear  fuente de energia,M,ELI,B,339
+982,Uso de equipos personal de proteccion anticaidas.,P,ADM,D,339
+983,Extintores en Zona de trabajo,P,INH,A,339
+984,Uso de equipos personal de proteccion anticaidas.,P,ADM,B,339
+985,Extintores en Zona de trabajo,P,SUS,E,339
+986,Orden de Trabajo IPERC Continuo Senalizacion del nivel de Ruido Difusion y seguimiento al estandar E-COR-SIB-11.03 Proteccion Auditiva Capacitacion en uso de proteccion auditiva,P,SUS,B,340
+987,Extintores en Zona de trabajo,M,ADM,E,341
+988,1. E-COR-SIB-05.01 Trabajos en Altura 2. FE-COR-SIB-05.01-02 Formato inspeccion equipo anti caidas.,P,EPP,C,342
+989,Timbre de operatividad Circulina de operatividad,P,ELI,D,342
+990,Puntos de anclaje,P,ADM,E,343
+991,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,EPP,C,343
+992,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,M,ELI,A,343
+993,Respirador y filtros de polvo,M,ADM,E,343
+994,1. Uso de pisos grating dentados / pisos de concreto sin pulir.,P,INH,E,343
+995,Orden de Trabajo IPERC continuo realizado por el operador del equipo identificando este peligro Difusion y seguimiento al estandar E-COR-SIB-07.03 Control de Rocas y Suelos Control geomecanico de labores Capacitacion en desate de rocas,M,EPP,E,344
+996,Probadores de energia Multitester Revelador de tension,P,ELI,A,344
+997,Zapatos de seguridad con planta de caucho o material antideslizante.,M,SUS,D,344
+998,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico  PETAR para trabajos en caliente Verificar la ventilacion constante del ambiente de trabajo E-COR-SIB-11.02 Proteccion Respiratoria,P,INH,A,345
+999,delimitacion de areas 2. Mantener orden y limpieza,P,SUS,B,345
+1000,Orden de Trabajo IPERC continuo realizado por el tecnico mecanico Verificacion de la autorizacion de operatividad del equipo de izaje y del personal que lo va a maniobrar. Difusion del estandar E-COR-SIB-05.05 Equipos de Izaje y Gruas,P,ELI,E,345

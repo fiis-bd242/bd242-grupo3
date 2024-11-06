@@ -69,7 +69,27 @@ VALUES
 
 -- Poblamiento de la tabla Almacen
 COPY Almacen FROM 'C:\DBD-2024-2\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
-
+--Poblamiento insumo
+COPY Insumo (Cantidad, Nombre)
+FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Insumo.csv'
+DELIMITER ','
+CSV HEADER;
+---Poblamiento Estado_reserva
+INSERT INTO Estado_reserva (Id_estado_reserva, Nombre_estado) VALUES
+(0, 'Inactivo'),
+(1, 'Aprobado'),
+(2, 'En proceso de envío'),
+(3, 'Enviado');
+--Poblamiento Reserva
+COPY Reserva (Id_reserva, Fecha,Hora,Id_estado_reserva,Id_empleado)
+FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Reserva.csv'
+DELIMITER ','
+CSV HEADER;
+--Poblamiento Detalle_reserva
+COPY Detalle_reserva (Cant_reserv, Id_insumo,Id_reserva)
+FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\detalle_reserva.csv'
+DELIMITER ','
+CSV HEADER;
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
 (1, 'Generador'),
@@ -213,173 +233,43 @@ INSERT INTO Tipo_Probabilidad (Id_tipo_probabilidad, Nombre_tipo_probabilidad) V
 ('P-RAR', 'Raro que suceda'),
 ('P-IMP', 'Prácticamente imposible que suceda');
 
-INSERT INTO equipo_evaluador (Id_equipo_evaluador, Cant_empleados) VALUES
-(1, 5),
-(2, 6),
-(3, 4),
-(4, 7),
-(5, 5),
-(6, 6),
-(7, 4),
-(8, 7);
 
--- Poblar la tabla Proceso
-INSERT INTO proceso (Id_proceso, Descripcion_proceso, Id_equipo_evaluador) VALUES
-(1, 'MANTTO PLANTA', 1),
-(2, 'MTTO.ELECTRICO', 2),
-(3, 'MTTO. EQUIPOS', 3),
-(4, 'MTTO. SERVICIOS', 4),
-(5, 'INSPECCIÓN DE SEGURIDAD', 2),
-(6, 'MANTENIMIENTO PREDICTIVO', 3),
-(7, 'REVISION DE SISTEMAS ELÉCTRICOS', 4),
-(8, 'PRUEBAS DE CARGA', 1);
+-- Poblamiento de tabla Equipo_evaluador
+COPY Equipo_evaluador FROM 'C:\DBD-2024-2\datos\Equipo_evaluador.csv' DELIMITER ',' CSV HEADER;
 
--- Poblar la tabla Actividades
-INSERT INTO Actividades (Id_actividad, Descripcion_actividad, Id_proceso) VALUES
-(1, 'Revisión de equipos mecánicos', 1),
-(2, 'Mantenimiento preventivo eléctrico', 2),
-(3, 'Inspección de sistemas de seguridad', 3),
-(4, 'Pruebas de funcionamiento', 4),
-(5, 'Supervisión del personal', 5),
-(6, 'Evaluación de procedimientos operativos', 6),
-(7, 'Control de calidad en planta', 7),
-(8, 'Verificación de condiciones de trabajo', 8);
+-- Poblamiento de tabla proceso
+COPY proceso FROM 'C:\DBD-2024-2\datos\proceso.csv' DELIMITER ',' CSV HEADER;
 
-INSERT INTO Tareas (Id_tarea, Descripcion_tarea, Puesto_trabajo, Cond_operacional, Id_actividad) 
-VALUES
-(1, 'Lubricar los equipos mecánicos', 'Técnico de Mantenimiento', 'El equipo debe estar apagado y bloqueado antes de la lubricación', 1),
-(2, 'Revisar el estado de los cables eléctricos', 'Electricista', 'Uso de guantes dieléctricos y herramientas aisladas', 2),
-(3, 'Inspeccionar las alarmas de seguridad', 'Supervisor de Seguridad', 'Realizar pruebas sin interferir con la operación', 3),
-(4, 'Verificar el correcto funcionamiento de las válvulas', 'Técnico de Procesos', 'El sistema debe estar presurizado', 4),
-(5, 'Supervisar el uso de los equipos de protección personal (EPP)', 'Jefe de Seguridad', 'Asegurar que todo el personal cuente con el EPP adecuado', 5),
-(6, 'Evaluar los procedimientos de operación', 'Supervisor de Planta', 'Todos los trabajadores deben conocer los procedimientos', 6),
-(7, 'Controlar la calidad del producto terminado', 'Inspector de Calidad', 'Inspeccionar visualmente y realizar pruebas de laboratorio', 7),
-(8, 'Asegurar que los equipos están en condiciones adecuadas para trabajar', 'Técnico de Seguridad', 'Verificar antes del inicio de cada turno', 8),
-(9, 'Verificar el estado de los extintores en el área de producción', 'Supervisor de Seguridad', 'Revisar fechas de vencimiento y estado de los equipos', 4),
-(10, 'Supervisar el correcto uso de las herramientas de trabajo', 'Jefe de Producción', 'Inspeccionar herramientas antes y después de cada turno', 7);
+-- Poblamiento de tabla actividades
+COPY actividades FROM 'C:\DBD-2024-2\datos\actividades.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla tareas
+COPY tareas FROM 'C:\DBD-2024-2\datos\tareas.csv' DELIMITER ',' CSV HEADER;
 
--- Poblar la tabla Identificacion_del_riesgo
-INSERT INTO Identificacion_del_riesgo (Id_riesgo, Descripcion_peligro, Evento_no_deseado) VALUES
-(1, 'Caída de objetos', 'Golpeado por objeto caído'),
-(2, 'Fallo eléctrico', 'Electrocución'),
-(3, 'Exposición a productos químicos', 'Inhalación de químicos'),
-(4, 'Deslizamiento de materiales', 'Resbalones en la superficie'),
-(5, 'Mal uso de maquinaria', 'Atrapado en maquinaria'),
-(6, 'Explosión de gas', 'Quemaduras'),
-(7, 'Derrame de líquidos peligrosos', 'Contacto con sustancias tóxicas'),
-(8, 'Sobrecalentamiento de equipos', 'Incendio en planta');
+-- Poblamiento de tabla Identificacion_del_riesgo
+COPY Identificacion_del_riesgo FROM 'C:\DBD-2024-2\datos\Identificacion_del_riesgo.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla analisis_riesgo
+COPY analisis_riesgo FROM 'C:\DBD-2024-2\datos\analisis_riesgo.csv' DELIMITER ',' CSV HEADER;
 
--- Poblar la tabla Valoracion_del_riesgo_inicial
-INSERT INTO Valoracion_del_riesgo_inicial (Id_valoracion_inicial, Id_tipo_severidad, Id_tipo_probabilidad, Id_tipo_riesgo) VALUES
-(1, 'CA', 'P-ALT', 'AL'),  -- Riesgo alto con severidad catastrófica y alta probabilidad
-(2, 'MO', 'P-MED', 'ME'),  -- Riesgo medio con severidad mortalidad y probabilidad media
-(3, 'PE', 'P-BAJ', 'BA'),  -- Riesgo bajo con severidad permanente y baja probabilidad
-(4, 'TE', 'P-RAR', 'ME'),  -- Riesgo medio con severidad temporal y rara probabilidad
-(5, 'ME', 'P-IMP', 'BA'),  -- Riesgo bajo con severidad menor e imposible probabilidad
-(6, 'CA', 'P-ALT', 'AL'),  -- Riesgo alto con severidad catastrófica y alta probabilidad
-(7, 'MO', 'P-MED', 'ME'),  -- Riesgo medio con severidad mortalidad y probabilidad media
-(8, 'TE', 'P-IMP', 'BA');  -- Riesgo bajo con severidad temporal e imposible probabilidad
+-- Poblamiento de tabla Valoracion_del_riesgo_inicial
+COPY Valoracion_del_riesgo_inicial FROM 'C:\DBD-2024-2\datos\Valoracion_del_riesgo_inicial.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla valoracion_del_riesgo
+COPY valoracion_del_riesgo FROM 'C:\DBD-2024-2\datos\Valoracion_del_riesgo.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla control
+COPY control FROM 'C:\DBD-2024-2\datos\control.csv' DELIMITER ',' CSV HEADER;
 
--- Poblar la tabla Valoracion_del_riesgo
-INSERT INTO Valoracion_del_riesgo (Id_valoracion_residual, Cantidad_controles, Id_valoracion_inicial, Id_tipo_riesgo) VALUES
-(1, 3, 1, 'AL'), -- Riesgo alto
-(2, 2, 2, 'ME'), -- Riesgo medio
-(3, 3, 3, 'BA'), -- Riesgo bajo
-(4, 4, 4, 'ME'), -- Riesgo medio
-(5, 3, 5, 'BA'), -- Riesgo bajo
-(6, 2, 6, 'AL'), -- Riesgo alto
-(7, 1, 7, 'ME'), -- Riesgo medio
-(8, 4, 8, 'BA'); -- Riesgo bajo
+-- Poblamiento de tabla Plan_de_accion_de_mejora
+COPY Plan_de_accion_de_mejora FROM 'C:\DBD-2024-2\datos\Plan_de_accion_de_mejora.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla EquipoEvaluadorXEmpleado
+COPY EquipoEvaluadorXEmpleado FROM 'C:\DBD-2024-2\datos\EquipoEvaluadorXEmpleado.csv' DELIMITER ',' CSV HEADER;
 
--- Poblar la tabla Control
-INSERT INTO Control (Id_control, Descripcion_control, Id_tipo_estgia_control, Id_tipo_med_control, Id_tipo_Qcontrol, Id_valoracion_residual) VALUES
-(1, 'Instalación de barandillas en plataformas elevadas', 'P', 'INH', 'A', 1),
-(2, 'Mantenimiento preventivo de equipos eléctricos', 'P', 'ADM', 'B', 2),
-(3, 'Uso obligatorio de equipo de protección personal (EPP)', 'M', 'EPP', 'C', 3),
-(4, 'Sustitución de sustancias químicas peligrosas', 'P', 'SUS', 'B', 4),
-(5, 'Implementación de procedimientos de seguridad', 'M', 'ADM', 'A', 5),
-(6, 'Eliminación de riesgos en zonas de trabajo', 'P', 'ELI', 'A', 6),
-(7, 'Monitoreo constante de niveles de gases peligrosos', 'P', 'INH', 'B', 7),
-(8, 'Capacitación regular del personal en seguridad', 'M', 'ADM', 'C', 8);
+-- Poblamiento de tabla PlanaccionxEmpleado
+COPY PlanaccionxEmpleado FROM 'C:\DBD-2024-2\datos\PlanaccionxEmpleado.csv' DELIMITER ',' CSV HEADER;
 
--- Poblar la tabla Plan_de_accion_de_mejora
-INSERT INTO Plan_de_accion_de_mejora (Id_plan_mejora, Id_valoracion_residual, Accion_que, Cantidad_empleados, Fecha_cuando) VALUES
-(1, 1, 'Implementar señalización de seguridad en áreas críticas', 5, '2024-01-10'),
-(2, 2, 'Realizar mantenimiento preventivo en los equipos eléctricos', 3, '2024-02-15'),
-(3, 3, 'Capacitar al personal sobre manejo de químicos peligrosos', 10, '2024-03-20'),
-(4, 4, 'Instalar barreras físicas para evitar caídas de materiales', 4, '2024-04-25'),
-(5, 5, 'Revisar y ajustar los procedimientos de trabajo con maquinaria', 7, '2024-05-05'),
-(6, 6, 'Actualizar los sistemas de detección de gases en planta', 6, '2024-06-10'),
-(7, 7, 'Implementar sistemas de ventilación en áreas confinadas', 8, '2024-07-18'),
-(8, 8, 'Realizar simulacros de emergencia ante incendios', 12, '2024-08-30');
-
--- Poblar la tabla Analisis_riesgo
-INSERT INTO Analisis_riesgo (Id_analisis, Afectado, Consecuencia, Id_riesgo, Id_tipo_contacto, Id_tipo_peligro) VALUES
-(1, 'Trabajador de Mantenimiento', 'Lesiones por caída al mismo nivel', 1, 'TC03', 'TC03.01'), -- Caída al mismo nivel
-(2, 'Operador de Máquina', 'Golpes por objetos en movimiento', 2, 'TC02', 'TC02.07'), -- Golpes por objetos
-(3, 'Personal de Limpieza', 'Exposición a materiales peligrosos', 3, 'TC09', 'TC09.01'), -- Contacto con sustancias químicas
-(4, 'Supervisor de Área', 'Caída desde altura', 4, 'TC04', 'TC04.01'), -- Caída a distinto nivel
-(5, 'Trabajador de Almacén', 'Aplastamiento por cargas pesadas', 5, 'TC07', 'TC07.01'), -- Atrapado o aplastado por objetos
-(6, 'Personal de Oficina', 'Estrés por acoso laboral', 6, 'TC12', 'TC12.03'), -- Psicosocial
-(7, 'Trabajador Externo', 'Quemaduras por contacto con objetos calientes', 7, 'TC08', 'TC08.05'), -- Energía térmica
-(8, 'Operador de Grúa', 'Golpes por caída de materiales suspendidos', 8, 'TC07', 'TC07.04'); -- Aplastamiento
-
--- Poblar la tabla TareasXIdentRiesgo
-INSERT INTO TareasXIdentRiesgo (Id_tarea, Id_riesgo) VALUES
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5),
-(6, 6),
-(7, 7),
-(8, 8);
-
--- Poblar la tabla PlanaccionxEmpleado
-INSERT INTO PlanaccionxEmpleado (Id_plan_mejora, Id_empleado) VALUES
-(1, 1),  -- Juan Pérez participa en el plan de mejora 1
-(2, 2),  -- Ana Gómez participa en el plan de mejora 2
-(3, 3),  -- Carlos Sánchez participa en el plan de mejora 3
-(4, 4),  -- Lucía Fernández participa en el plan de mejora 4
-(5, 5),  -- Pedro Ramírez participa en el plan de mejora 5
-(6, 6),  -- María Torres participa en el plan de mejora 6
-(7, 7),  -- Diego Morales participa en el plan de mejora 7
-(8, 8);  -- Laura Espinoza participa en el plan de mejora 8
-
-INSERT INTO EquipoEvaluadorXEmpleado (id_equipo_evaluador, Id_empleado) VALUES 
-(1, 4), 
-(2, 3), 
-(3, 2), 
-(4, 2), 
-(5, 5), 
-(6, 1);
-
--- Poblar la tabla Informe_IPERC con datos de ejemplo
-INSERT INTO Informe_IPERC (Id_informe_iperc, Fecha_registro, Cant_riesgos_analizados, Unidad_minera, Area, Id_proceso) VALUES
-(1, '2022-01-02', 5, 'UCHUCCHACUA', 'MANTENIMIENTO', 1),
-(2, '2023-12-12', 3, 'CERRO VERDE', 'MANTENIMIENTO', 2),
-(3, '2024-02-01', 4, 'TRAPICHE', 'MANTENIMIENTO', 3),
-(4, '2024-03-05', 2, 'EL FAIQUE', 'OPERACIONES', 4),
-(5, '2024-04-10', 6, 'COIMOLACHE SULFUROS', 'MINERIA', 5),
-(6, '2024-05-15', 3, 'COLQUIJIRCA', 'ADMINISTRACION', 6),
-(7, '2024-06-20', 5, 'SAN GREGORIO', 'LOGISTICA', 7),
-(8, '2024-07-25', 4, 'CONENHUA', 'MANTENIMIENTO', 8);
-
--- Poblar la tabla Reg_riesgo_analizado 
-INSERT INTO Reg_riesgo_analizado (Id_reg_riesgo_analizado, Id_valoracion_inicial, Id_plan_mejora, Id_analisis, Id_valoracion_residual, Id_informe_iperc) VALUES
-(1, 1, 1, 1, 1, 1),
-(2, 2, 2, 2, 2, 1),
-(3, 3, 3, 3, 3, 2),
-(4, 4, 4, 4, 4, 3),
-(5, 5, 5, 5, 5, 4),
-(6, 6, 6, 6, 6, 5),
-(7, 7, 7, 7, 7, 6),
-(8, 8, 8, 8, 8, 7);
 
 
 -- Poblamiento de la tabla Tipo_maquina
