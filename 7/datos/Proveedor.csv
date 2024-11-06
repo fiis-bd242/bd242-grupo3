@@ -1,11 +1,31 @@
-﻿id_proveedor,ruc,empresa,contacto,email,categoria,telefono,direccion
-41,20456789001, SoporteTech S.A.C.,Juan Pérez,juan.perez@soportetech.com, Equipos de Soporte, 987654321, Av. Las Flores 123 Lima
-42,20654321002, 'Mantenimiento & Cía.', 'María López', 'maria.lopez@mantenimiento.com', 'Equipos de Soporte', '987123456', 'Calle Los Olivos 456 Arequipa'
-43,20567890103, 'Servicios Técnicos S.R.L.', 'Carlos Gómez', 'carlos.gomez@serviciostecnicos.com', 'Equipos de Soporte', '964587321', 'Jr. Libertad 789 Trujillo'
-44,20789012304, 'Proveedores de Tecnología', 'Laura Salazar', 'laura.salazar@protech.com', 'Equipos de Soporte', '963852741', 'Av. La Paz 234 Cusco'
-45,20432109805, 'Equipos y Suministros', 'Fernando Torres', 'fernando.torres@equipossuministros.com', 'Equipos de Soporte', '951753852', 'Calle San Martín 321 Piura'
-46,20876543206, 'Soluciones Técnicas S.A.', 'Lucía Fernández', 'lucia.fernandez@soltec.com', 'Equipos de Soporte', '958963214', 'Av. Universitaria 654 Ica'
-47,20678901207, 'Mantenimiento Integral', 'Diego Castillo', 'diego.castillo@mantenimiento.com', 'Equipos de Soporte', '972654123', 'Calle Los Reyes 987 Huancayo'
-48,20543210908, 'Técnica y Progreso', 'Sara Morales', 'sara.morales@tecnicayprogreso.com', 'Equipos de Soporte', '967854321', 'Av. El Sol 135 Tarapoto'
-49,20987654309, 'Servicios y Equipos', 'Ricardo Jiménez', 'ricardo.jimenez@servicyequipos.com', 'Equipos de Soporte', '989745236', 'Jr. Moquegua 147 Cajamarca'
-50,20456789010, 'Proyectos Tecnológicos', 'Ana Ruiz', 'ana.ruiz@proyectostec.com', 'Equipos de Soporte', '955632147', 'Calle La Libertad 258 Puno'
+Id_proveedor;RUC;Empresa;Contacto;Email;Categoria;Telefono;Direccion;Ciudad
+1;77792807821;LubriPer� S.A.;Carlos P�rez;carlos.p�rez@gmail.com;Insumos';961828713;Av. Los Olivos 123;Lima
+2;47636983284;Aceites Andes;Luc�a G�mez;luc�a.g�mez@gmail.com;Insumos';994794432;Calle Lima 456;Cusco
+3;47163664305;InsumosLub EIRL;Juan Torres;juan.torres@gmail.com;Insumos';931318210;Jr. Amazonas 789;Arequipa
+4;14065609318;Lubricantes del Pac�fico;Mar�a L�pez;mar�a.l�pez@gmail.com;Insumos';999562260;Av. La Paz 101;Trujillo
+5;14958512341;Aceites Per� SAC;Andr�s V�squez;andr�s.v�squez@gmail.com;Insumos';967180554;Calle Bel�n 202;Chiclayo
+6;46691709377;LubriAndes;Jorge Ram�rez;jorge.ram�rez@gmail.com;Insumos';950071907;Jr. San Mart�n 303;Iquitos
+7;65906786489;Lubrificantes del Sur;Ana Flores;ana.flores@gmail.com;Insumos';920434176;Av. Arequipa 404;Piura
+8;30870958349;AceiteMax;Rodrigo Santos;rodrigo.santos@gmail.com;Insumos';949185851;Calle Piura 505;Tacna
+9;36700995147;Aceites y Grasas Andinas;Carmen Huerta;carmen.huerta@gmail.com;Insumos';983295674;Jr. Ancash 606;Huancayo
+10;11838422702;LubriExpress;Luis Delgado;luis.delgado@gmail.com;Insumos';960947094;Av. Grau 707;Puno
+11;60266875050;Aceite Andino S.A.;Paola Castillo;paola.castillo@gmail.com;Insumos';964752223;Calle Tacna 808;Chimbote
+12;26588526980;Insumos Per�;Hugo Moreno;hugo.moreno@gmail.com;Insumos';946296322;Jr. Miraflores 909;Juliaca
+13;96829746195;Aceite & C�a;Sandra Guzm�n;sandra.guzm�n@gmail.com;Insumos';976216032;Av. Rep�blica 110;Huaraz
+14;55941835765;LubriSol;Javier Rodr�guez;javier.rodr�guez@gmail.com;Insumos';978268609;Calle Cuzco 211;Tarapoto
+15;38370581694;Aceites del Norte;Elena S�nchez;elena.s�nchez@gmail.com;Insumos';930591686;Jr. Callao 312;Moquegua
+16;49988355754;LubriPower;Miguel Ruiz;miguel.ruiz@gmail.com;Insumos';975555483;Av. Amazonas 413;Ayacucho
+17;25198692163;AceiteTotal;Patricia Ramos;patricia.ramos@gmail.com;Insumos';973161335;Calle Ica 514;Cajamarca
+18;43251798186;Lubricantes Oro;Fernando Salas;fernando.salas@gmail.com;Insumos';927077354;Jr. Puno 615;Tumbes
+19;80660915011;LubriT�cnica;Adriana Mendoza;adriana.mendoza@gmail.com;Insumos';944781893;Av. Moquegua 716;Ica
+20;43046152006;LubriPer� Pro;Roberto Romero;roberto.romero@gmail.com;Insumos';976075151;Calle Ayacucho 817;Puerto Maldonado
+21;20456789001; 'SoporteTech S.A.C.'; 'Juan P�rez'; 'juan.perez@soportetech.com'; 'Equipos de Soporte'; '987654321'; 'Av. Las Flores 123; Lima'
+22;20654321002; 'Mantenimiento & C�a.'; 'Mar�a L�pez'; 'maria.lopez@mantenimiento.com'; 'Equipos de Soporte'; '987123456'; 'Calle Los Olivos 456; Arequipa'
+23;20567890103; 'Servicios T�cnicos S.R.L.'; 'Carlos G�mez'; 'carlos.gomez@serviciostecnicos.com'; 'Equipos de Soporte'; '964587321'; 'Jr. Libertad 789; Trujillo'
+24;20789012304; 'Proveedores de Tecnolog�a'; 'Laura Salazar'; 'laura.salazar@protech.com'; 'Equipos de Soporte'; '963852741'; 'Av. La Paz 234; Cusco'
+25;20432109805; 'Equipos y Suministros'; 'Fernando Torres'; 'fernando.torres@equipossuministros.com'; 'Equipos de Soporte'; '951753852'; 'Calle San Mart�n 321; Piura'
+26;20876543206; 'Soluciones T�cnicas S.A.'; 'Luc�a Fern�ndez'; 'lucia.fernandez@soltec.com'; 'Equipos de Soporte'; '958963214'; 'Av. Universitaria 654; Ica'
+27;20678901207; 'Mantenimiento Integral'; 'Diego Castillo'; 'diego.castillo@mantenimiento.com'; 'Equipos de Soporte'; '972654123'; 'Calle Los Reyes 987; Huancayo'
+28;20543210908; 'T�cnica y Progreso'; 'Sara Morales'; 'sara.morales@tecnicayprogreso.com'; 'Equipos de Soporte'; '967854321'; 'Av. El Sol 135; Tarapoto'
+29;20987654309; 'Servicios y Equipos'; 'Ricardo Jim�nez'; 'ricardo.jimenez@servicyequipos.com'; 'Equipos de Soporte'; '989745236'; 'Jr. Moquegua 147; Cajamarca'
+30;20456789010; 'Proyectos Tecnol�gicos'; 'Ana Ruiz'; 'ana.ruiz@proyectostec.com'; 'Equipos de Soporte'; '955632147'; 'Calle La Libertad 258; Puno'

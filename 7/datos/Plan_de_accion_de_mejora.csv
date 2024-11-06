@@ -1,0 +1,1001 @@
+Accion_que,Fecha_cuando,Cantidad_empleados,Id_plan_mejora,Id_valoracion_residual
+Revisar sistema de ventilacion,2024-05-22,9,1,1
+Capacitar en primeros auxilios,2023-09-01,10,2,2
+Capacitar al personal en seguridad,2024-08-22,8,3,3
+Instalacion de barreras de seguridad,2024-08-24,7,4,4
+Actualizacion de manuales de procedimientos,2024-02-12,5,5,5
+Revisar sistemas de ventilacion de tuneles,2024-08-01,7,6,6
+Desinfectar zonas comunes,2022-12-05,3,7,7
+Revision de equipos de monitoreo,2024-09-08,1,8,8
+Realizar pruebas de resistencia de materiales,2023-10-24,9,9,9
+Implementar sistema de senalizacion,2023-08-09,7,10,10
+Reemplazar luminarias danadas,2024-09-20,6,11,11
+Inspeccion de sistemas de ventilacion secundarios,2023-11-11,10,12,12
+Revisar sistemas de ventilacion de tuneles,2022-11-21,1,13,13
+Revisar sistemas de ventilacion de tuneles,2023-09-11,1,14,14
+Cambiar aceite de motores,2024-01-21,6,15,15
+Supervision de limpieza de herramientas,2023-12-16,7,16,16
+Verificar niveles de ruido,2024-02-04,2,17,17
+Capacitacion en manipulacion de sustancias peligrosas,2024-01-19,4,18,18
+Calibrar sensores de presion,2024-03-15,2,19,19
+Monitoreo de estabilidad en zonas de voladura,2024-09-26,8,20,20
+Realizar mantenimiento preventivo de generadores,2024-02-10,3,21,21
+Implementacion de medidas para reducir riesgos de caida,2022-12-09,5,22,22
+Calibrar sensores de presion,2024-08-21,10,23,23
+Verificar estado de extintores,2024-06-19,4,24,24
+Implementar sistema de senalizacion,2022-12-16,10,25,25
+Instalacion de barreras de seguridad,2023-11-10,4,26,26
+Monitoreo de estabilidad en zonas de voladura,2022-12-18,10,27,27
+Instalar nuevas salidas de emergencia,2024-03-24,5,28,28
+Evaluar estado de infraestructura,2024-03-28,2,29,29
+Inspeccionar sistemas de frenos de vehiculos,2024-07-06,9,30,30
+Evaluacion de riesgos de incendio,2024-04-14,7,31,31
+Implementar sistema de senalizacion,2023-01-07,3,32,32
+Cambiar aceite de motores,2022-11-13,9,33,33
+Implementacion de controles de calidad,2023-12-22,10,34,34
+Monitoreo de estabilidad en zonas de voladura,2024-10-16,1,35,35
+Implementacion de controles de calidad,2024-03-07,10,36,36
+Revisar sistema de ventilacion,2024-07-21,6,37,37
+Evaluacion de riesgos de incendio,2023-05-09,4,38,38
+Revisar sistemas de ventilacion de tuneles,2024-05-08,9,39,39
+Limpiar residuos de productos quimicos,2023-02-10,9,40,40
+Realizar pruebas de resistencia de materiales,2024-02-16,9,41,41
+Reemplazar luminarias danadas,2024-02-02,3,42,42
+Inspeccionar maquinaria pesada,2023-01-05,7,43,43
+Evaluacion de riesgos de incendio,2023-02-07,5,44,44
+Revision de equipos de rescate,2024-02-07,3,45,45
+Control de polvo en areas de trabajo,2024-07-08,5,46,46
+Inspeccionar sistemas de frenos de vehiculos,2023-12-23,8,47,47
+Control de residuos solidos,2024-02-04,8,48,48
+Implementacion de medidas para reducir riesgos de caida,2024-01-30,5,49,49
+Instalar nuevas salidas de emergencia,2022-12-17,9,50,50
+Controlar estado de filtros de aire,2022-11-08,4,51,51
+Comprobar estabilidad de paredes en areas de excavacion,2024-06-02,10,52,52
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-06-11,7,53,53
+Capacitar en primeros auxilios,2024-05-22,4,54,54
+Capacitar en primeros auxilios,2023-06-11,5,55,55
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-02-12,4,56,56
+Instalar nuevas salidas de emergencia,2024-04-25,2,57,57
+Evaluacion de riesgos de incendio,2024-05-10,3,58,58
+Inspeccionar soportes de estructuras,2024-08-04,4,59,59
+Inspeccionar lineas electricas,2024-02-12,8,60,60
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-10-08,8,61,61
+Control de polvo en areas de trabajo,2024-10-26,10,62,62
+Verificar estado de extintores,2023-06-27,5,63,63
+Inspeccionar soportes de estructuras,2023-04-07,8,64,64
+Planificacion de simulacros de evacuacion,2024-09-13,7,65,65
+Actualizacion de manuales de procedimientos,2023-02-27,6,66,66
+Actualizar procedimientos de emergencia,2023-06-20,6,67,67
+Control de humedad en almacenes,2022-11-23,2,68,68
+Supervision de limpieza de herramientas,2023-12-03,8,69,69
+Desinfectar zonas comunes,2024-03-29,7,70,70
+Instalar nuevas salidas de emergencia,2024-05-13,3,71,71
+Inspeccionar lineas electricas,2023-04-12,10,72,72
+Inspeccion de sistemas de ventilacion secundarios,2022-11-20,1,73,73
+Revision de equipos de rescate,2023-02-06,2,74,74
+Capacitar al personal en seguridad,2022-11-06,1,75,75
+Inspeccionar sistemas de frenos de vehiculos,2023-08-27,7,76,76
+Control de residuos solidos,2023-11-05,10,77,77
+Implementacion de medidas para reducir riesgos de caida,2023-02-27,4,78,78
+Supervisar trabajos en altura,2024-08-07,1,79,79
+Monitorear uso de sustancias quimicas,2024-09-22,4,80,80
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-09-10,5,81,81
+Inspeccionar sistemas de frenos de vehiculos,2023-09-18,5,82,82
+Planificacion de simulacros de evacuacion,2023-04-26,5,83,83
+Capacitar al personal en seguridad,2024-03-27,5,84,84
+Comprobar estabilidad de paredes en areas de excavacion,2023-07-09,9,85,85
+Evaluacion de riesgos ergonomicos,2023-05-18,4,86,86
+Verificar estado de extintores,2023-12-21,9,87,87
+Verificar estado de extintores,2023-01-27,6,88,88
+Actualizar senalizacion de salida,2023-02-02,7,89,89
+Inspeccion de andamios y plataformas,2023-05-12,6,90,90
+Capacitacion en manipulacion de sustancias peligrosas,2023-04-14,5,91,91
+Control de residuos solidos,2024-10-09,3,92,92
+Actualizacion de manuales de procedimientos,2024-08-31,3,93,93
+Instalacion de barreras de seguridad,2022-12-25,8,94,94
+Desinfectar zonas comunes,2023-12-28,7,95,95
+Inspeccionar maquinaria pesada,2023-12-23,2,96,96
+Monitorear uso de sustancias quimicas,2024-04-02,8,97,97
+Capacitacion en manipulacion de sustancias peligrosas,2023-02-13,3,98,98
+Verificar estado de extintores,2023-10-03,1,99,99
+Implementar sistema de senalizacion,2024-04-25,2,100,100
+Inspeccionar lineas electricas,2023-02-24,3,101,101
+Inspeccionar sistemas de frenos de vehiculos,2024-05-24,9,102,102
+Monitorear niveles de gases en minas subterraneas,2023-07-27,2,103,103
+Revisar sistema de ventilacion,2024-09-12,4,104,104
+Evaluacion de riesgos de incendio,2024-10-01,7,105,105
+Inspeccionar sistemas de frenos de vehiculos,2023-05-10,7,106,106
+Control de humedad en almacenes,2023-06-21,8,107,107
+Planificacion de simulacros de evacuacion,2022-11-29,7,108,108
+Revisar alarmas de incendios,2023-06-03,10,109,109
+Inspeccionar maquinaria pesada,2022-11-15,1,110,110
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2022-11-24,1,111,111
+Inspeccionar sistemas de frenos de vehiculos,2024-10-11,1,112,112
+Instalar nuevas salidas de emergencia,2023-10-31,1,113,113
+Actualizar procedimientos de emergencia,2023-06-13,10,114,114
+Capacitacion en manipulacion de sustancias peligrosas,2023-01-04,2,115,115
+Verificar niveles de ruido,2023-02-26,9,116,116
+Verificacion de equipos de comunicacion en emergencias,2024-05-28,10,117,117
+Monitorear uso de sustancias quimicas,2024-05-15,2,118,118
+Inspeccionar lineas electricas,2023-01-05,1,119,119
+Verificar estado de extintores,2023-05-13,3,120,120
+Limpiar residuos de productos quimicos,2024-06-12,8,121,121
+Implementacion de medidas para reducir riesgos de caida,2023-05-25,4,122,122
+Inspeccion de sistemas de ventilacion secundarios,2023-05-22,10,123,123
+Revision de zonas de carga y descarga,2023-05-23,7,124,124
+Capacitar al personal en seguridad,2024-06-30,5,125,125
+Capacitar al personal en seguridad,2023-08-21,9,126,126
+Verificacion de equipos de comunicacion en emergencias,2024-07-06,6,127,127
+Verificar niveles de ruido,2023-09-19,2,128,128
+Revisar sistema de ventilacion,2022-11-12,7,129,129
+Limpiar areas de trabajo peligrosas,2023-10-11,5,130,130
+Reemplazar luminarias danadas,2024-07-24,2,131,131
+Capacitar en primeros auxilios,2024-09-18,2,132,132
+Revisar condiciones de almacenamiento de materiales,2023-04-08,8,133,133
+Inspeccionar soportes de estructuras,2023-11-13,2,134,134
+Revision de zonas de carga y descarga,2023-11-30,6,135,135
+Evaluar estado de infraestructura,2024-07-29,5,136,136
+Inspeccion de andamios y plataformas,2024-01-05,3,137,137
+Evaluacion de riesgos de incendio,2023-02-19,5,138,138
+Monitorear niveles de gases en minas subterraneas,2023-09-26,1,139,139
+Supervisar trabajos en altura,2023-05-20,9,140,140
+Controlar estado de filtros de aire,2024-07-03,4,141,141
+Monitorear niveles de gases en minas subterraneas,2023-11-15,1,142,142
+Controlar estado de filtros de aire,2023-04-14,1,143,143
+Planificacion de simulacros de evacuacion,2024-08-20,10,144,144
+Control de residuos solidos,2024-08-16,9,145,145
+Inspeccionar sistemas de frenos de vehiculos,2023-04-17,10,146,146
+Actualizar procedimientos de emergencia,2024-02-17,4,147,147
+Verificar niveles de ruido,2023-02-28,10,148,148
+Verificar niveles de ruido,2023-02-02,10,149,149
+Monitorear uso de sustancias quimicas,2023-08-30,9,150,150
+Inspeccion de sistemas de ventilacion secundarios,2023-03-02,9,151,151
+Inspeccionar maquinaria pesada,2024-09-19,3,152,152
+Instalacion de barreras de seguridad,2024-04-28,5,153,153
+Revisar alarmas de incendios,2023-08-08,7,154,154
+Evaluar estado de infraestructura,2023-03-07,8,155,155
+Calibrar sensores de presion,2023-07-13,1,156,156
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-05-23,4,157,157
+Control de residuos solidos,2024-10-10,6,158,158
+Monitoreo de estabilidad en zonas de voladura,2023-08-26,4,159,159
+Revisar alarmas de incendios,2024-01-31,2,160,160
+Actualizar procedimientos de emergencia,2024-05-29,7,161,161
+Actualizar senalizacion de salida,2023-10-07,1,162,162
+Capacitar en primeros auxilios,2024-10-01,6,163,163
+Revision de equipos de rescate,2023-08-08,10,164,164
+Monitorear uso de sustancias quimicas,2024-07-07,4,165,165
+Revisar alarmas de incendios,2024-07-26,3,166,166
+Instalacion de barreras de seguridad,2023-08-03,3,167,167
+Calibrar sensores de presion,2023-04-03,7,168,168
+Revisar sistema de ventilacion,2023-03-11,1,169,169
+Limpiar residuos de productos quimicos,2024-06-14,4,170,170
+Realizar pruebas de resistencia de materiales,2023-07-25,10,171,171
+Desinfectar zonas comunes,2023-02-07,8,172,172
+Actualizar procedimientos de emergencia,2023-04-16,1,173,173
+Verificar estado de extintores,2024-05-05,7,174,174
+Inspeccionar lineas electricas,2024-08-02,2,175,175
+Instalacion de barreras de seguridad,2024-10-10,2,176,176
+Controlar estado de filtros de aire,2024-04-13,8,177,177
+Revision de zonas de carga y descarga,2024-05-22,4,178,178
+Monitorear niveles de gases en minas subterraneas,2024-10-06,1,179,179
+Revision de equipos de monitoreo,2023-01-02,8,180,180
+Desinfectar zonas comunes,2023-06-26,2,181,181
+Controlar estado de filtros de aire,2024-09-20,6,182,182
+Control de residuos solidos,2023-09-20,3,183,183
+Revision de zonas de carga y descarga,2024-10-25,6,184,184
+Inspeccionar maquinaria pesada,2023-05-25,8,185,185
+Monitorear uso de sustancias quimicas,2023-10-30,1,186,186
+Revisar sistema de ventilacion,2024-07-20,6,187,187
+Verificar niveles de ruido,2024-08-27,7,188,188
+Planificacion de simulacros de evacuacion,2024-02-25,2,189,189
+Realizar pruebas de resistencia de materiales,2022-11-19,10,190,190
+Inspeccion de sistemas de ventilacion secundarios,2023-10-22,6,191,191
+Desinfectar zonas comunes,2022-11-18,4,192,192
+Supervisar trabajos en altura,2024-08-05,10,193,193
+Cambiar aceite de motores,2023-10-08,1,194,194
+Calibrar sensores de presion,2024-07-11,2,195,195
+Verificacion de equipos de comunicacion en emergencias,2024-02-01,5,196,196
+Calibrar sensores de presion,2023-08-13,8,197,197
+Cambiar valvulas defectuosas,2024-02-09,8,198,198
+Revisar condiciones de almacenamiento de materiales,2023-12-07,6,199,199
+Cambiar valvulas defectuosas,2023-04-15,1,200,200
+Actualizar procedimientos de emergencia,2022-12-02,10,201,201
+Actualizar senalizacion de salida,2024-04-27,3,202,202
+Supervision de limpieza de herramientas,2024-02-03,7,203,203
+Verificacion de equipos de comunicacion en emergencias,2023-10-28,2,204,204
+Implementar sistema de senalizacion,2023-01-30,6,205,205
+Realizar mantenimiento preventivo de generadores,2024-01-14,7,206,206
+Capacitar en primeros auxilios,2023-04-28,6,207,207
+Realizar mantenimiento preventivo de generadores,2024-08-13,2,208,208
+Capacitacion en manipulacion de sustancias peligrosas,2024-04-26,3,209,209
+Instalar nuevas salidas de emergencia,2024-08-19,6,210,210
+Reemplazar luminarias danadas,2024-01-05,5,211,211
+Capacitacion en manipulacion de sustancias peligrosas,2022-12-04,4,212,212
+Monitorear uso de sustancias quimicas,2024-03-19,2,213,213
+Revision de zonas de carga y descarga,2024-01-16,3,214,214
+Reemplazar luminarias danadas,2023-03-05,8,215,215
+Inspeccionar sistemas de frenos de vehiculos,2022-11-20,3,216,216
+Implementacion de medidas para reducir riesgos de caida,2023-11-12,2,217,217
+Inspeccionar sistemas de frenos de vehiculos,2023-03-07,10,218,218
+Inspeccionar sistemas de frenos de vehiculos,2023-08-24,1,219,219
+Inspeccionar sistemas de frenos de vehiculos,2023-08-28,5,220,220
+Capacitar al personal en seguridad,2023-12-15,10,221,221
+Control de humedad en almacenes,2024-06-06,4,222,222
+Control de polvo en areas de trabajo,2023-08-28,8,223,223
+Capacitar en primeros auxilios,2023-03-12,8,224,224
+Control de humedad en almacenes,2023-12-31,9,225,225
+Capacitar al personal en seguridad,2023-09-30,2,226,226
+Calibrar sensores de presion,2024-01-11,8,227,227
+Implementar sistema de senalizacion,2023-08-27,5,228,228
+Capacitacion en manipulacion de sustancias peligrosas,2024-02-29,3,229,229
+Revisar sistema de ventilacion,2023-11-04,5,230,230
+Revisar sistema de ventilacion,2024-06-24,9,231,231
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-06-20,6,232,232
+Inspeccionar lineas electricas,2023-12-22,4,233,233
+Inspeccion de sistemas de ventilacion secundarios,2024-09-16,10,234,234
+Revisar alarmas de incendios,2023-03-30,1,235,235
+Inspeccionar sistemas de frenos de vehiculos,2024-08-15,6,236,236
+Verificacion de equipos de comunicacion en emergencias,2023-06-25,4,237,237
+Instalacion de barreras de seguridad,2024-04-30,6,238,238
+Inspeccionar maquinaria pesada,2024-11-04,10,239,239
+Actualizar senalizacion de salida,2023-08-22,1,240,240
+Control de humedad en almacenes,2023-08-31,7,241,241
+Inspeccion de andamios y plataformas,2023-12-18,3,242,242
+Realizar mantenimiento preventivo de generadores,2023-12-18,5,243,243
+Evaluar estado de infraestructura,2023-07-28,6,244,244
+Verificacion de equipos de comunicacion en emergencias,2023-05-10,7,245,245
+Control de polvo en areas de trabajo,2024-02-12,7,246,246
+Evaluacion de riesgos ergonomicos,2023-10-04,2,247,247
+Inspeccionar lineas electricas,2024-08-04,4,248,248
+Revision de equipos de rescate,2023-12-04,8,249,249
+Revisar condiciones de almacenamiento de materiales,2023-09-03,1,250,250
+Capacitar en primeros auxilios,2024-01-23,4,251,251
+Revision de equipos de rescate,2024-03-05,5,252,252
+Inspeccionar lineas electricas,2023-02-26,10,253,253
+Inspeccion de sistemas de ventilacion secundarios,2024-03-06,7,254,254
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-07-14,6,255,255
+Verificacion de equipos de comunicacion en emergencias,2023-03-10,5,256,256
+Controlar estado de filtros de aire,2023-05-27,9,257,257
+Instalar nuevas salidas de emergencia,2024-08-14,7,258,258
+Desinfectar zonas comunes,2024-07-18,5,259,259
+Evaluar estado de infraestructura,2024-04-08,6,260,260
+Limpiar areas de trabajo peligrosas,2024-07-25,9,261,261
+Monitorear niveles de gases en minas subterraneas,2023-04-12,1,262,262
+Cambiar valvulas defectuosas,2024-09-03,10,263,263
+Inspeccionar maquinaria pesada,2024-09-30,5,264,264
+Actualizar senalizacion de salida,2023-10-12,7,265,265
+Inspeccionar soportes de estructuras,2024-05-30,8,266,266
+Monitoreo de estabilidad en zonas de voladura,2023-02-01,5,267,267
+Revisar alarmas de incendios,2023-01-09,5,268,268
+Revision de equipos de monitoreo,2023-01-21,4,269,269
+Cambiar aceite de motores,2023-04-10,3,270,270
+Capacitar al personal en seguridad,2024-06-28,5,271,271
+Realizar pruebas de resistencia de materiales,2023-04-14,6,272,272
+Supervisar trabajos en altura,2024-08-01,5,273,273
+Monitoreo de estabilidad en zonas de voladura,2023-02-10,5,274,274
+Realizar pruebas de resistencia de materiales,2023-06-16,6,275,275
+Inspeccionar sistemas de frenos de vehiculos,2024-10-04,6,276,276
+Inspeccionar lineas electricas,2024-08-15,2,277,277
+Calibrar sensores de presion,2022-11-07,7,278,278
+Planificacion de simulacros de evacuacion,2023-10-11,6,279,279
+Limpiar areas de trabajo peligrosas,2023-10-05,6,280,280
+Supervisar trabajos en altura,2023-09-22,4,281,281
+Actualizar procedimientos de emergencia,2023-07-12,6,282,282
+Evaluar estado de infraestructura,2023-05-11,9,283,283
+Inspeccion de sistemas de ventilacion secundarios,2023-05-02,4,284,284
+Revision de equipos de monitoreo,2023-09-12,1,285,285
+Revision de equipos de rescate,2023-02-10,7,286,286
+Cambiar valvulas defectuosas,2023-04-27,1,287,287
+Supervisar trabajos en altura,2023-02-24,7,288,288
+Revisar condiciones de almacenamiento de materiales,2023-11-06,7,289,289
+Monitorear uso de sustancias quimicas,2024-04-14,9,290,290
+Control de humedad en almacenes,2024-03-19,6,291,291
+Limpiar residuos de productos quimicos,2024-07-17,6,292,292
+Inspeccion de sistemas de ventilacion secundarios,2024-05-30,9,293,293
+Implementacion de medidas para reducir riesgos de caida,2023-05-14,7,294,294
+Inspeccionar lineas electricas,2022-12-25,7,295,295
+Reemplazar luminarias danadas,2024-03-14,1,296,296
+Supervisar trabajos en altura,2023-12-01,7,297,297
+Supervisar trabajos en altura,2024-09-12,5,298,298
+Revisar sistema de ventilacion,2024-05-15,4,299,299
+Verificacion de equipos de comunicacion en emergencias,2023-04-10,6,300,300
+Evaluar estado de infraestructura,2023-02-13,3,301,301
+Inspeccionar maquinaria pesada,2024-01-01,4,302,302
+Actualizar procedimientos de emergencia,2024-01-25,10,303,303
+Evaluacion de riesgos de incendio,2024-07-05,10,304,304
+Capacitar en primeros auxilios,2023-05-19,4,305,305
+Revisar alarmas de incendios,2023-10-09,9,306,306
+Verificar niveles de ruido,2024-01-20,8,307,307
+Implementacion de controles de calidad,2023-12-29,8,308,308
+Inspeccion de andamios y plataformas,2024-06-13,4,309,309
+Monitorear niveles de gases en minas subterraneas,2023-12-19,1,310,310
+Instalacion de barreras de seguridad,2023-07-15,6,311,311
+Revisar sistemas de ventilacion de tuneles,2024-04-22,2,312,312
+Supervisar trabajos en altura,2023-08-01,10,313,313
+Reemplazar luminarias danadas,2023-01-01,1,314,314
+Control de polvo en areas de trabajo,2023-04-26,7,315,315
+Calibrar sensores de presion,2023-03-17,3,316,316
+Instalar nuevas salidas de emergencia,2024-07-15,1,317,317
+Controlar estado de filtros de aire,2023-10-18,9,318,318
+Inspeccionar sistemas de frenos de vehiculos,2024-09-25,5,319,319
+Capacitar al personal en seguridad,2023-05-25,8,320,320
+Realizar mantenimiento preventivo de generadores,2023-01-19,9,321,321
+Inspeccion de sistemas de ventilacion secundarios,2024-02-05,5,322,322
+Actualizar senalizacion de salida,2023-08-25,10,323,323
+Realizar mantenimiento preventivo de generadores,2024-10-17,9,324,324
+Revisar sistema de ventilacion,2024-05-04,1,325,325
+Control de humedad en almacenes,2023-09-25,5,326,326
+Verificacion de equipos de comunicacion en emergencias,2024-01-31,8,327,327
+Revision de equipos de rescate,2023-03-23,4,328,328
+Reemplazar luminarias danadas,2022-11-27,7,329,329
+Revisar alarmas de incendios,2023-05-31,4,330,330
+Monitoreo de estabilidad en zonas de voladura,2024-08-17,2,331,331
+Actualizacion de manuales de procedimientos,2024-03-08,4,332,332
+Revision de equipos de rescate,2023-05-03,1,333,333
+Capacitar al personal en seguridad,2023-10-10,8,334,334
+Verificar niveles de ruido,2023-02-09,4,335,335
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-01-23,7,336,336
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-10-11,1,337,337
+Capacitacion en manipulacion de sustancias peligrosas,2024-08-26,1,338,338
+Revisar sistema de ventilacion,2024-01-23,4,339,339
+Control de polvo en areas de trabajo,2024-09-12,5,340,340
+Revisar alarmas de incendios,2023-04-12,3,341,341
+Realizar pruebas de resistencia de materiales,2023-05-31,2,342,342
+Controlar estado de filtros de aire,2023-07-09,1,343,343
+Evaluar estado de infraestructura,2023-04-14,9,344,344
+Instalacion de barreras de seguridad,2023-03-04,5,345,345
+Capacitar en primeros auxilios,2024-04-07,1,346,346
+Inspeccionar lineas electricas,2023-08-13,2,347,347
+Inspeccionar maquinaria pesada,2024-03-21,3,348,348
+Control de residuos solidos,2023-02-17,7,349,349
+Controlar estado de filtros de aire,2023-10-22,9,350,350
+Revisar sistema de ventilacion,2024-03-04,10,351,351
+Actualizar senalizacion de salida,2024-10-28,9,352,352
+Monitorear niveles de gases en minas subterraneas,2022-11-22,6,353,353
+Actualizacion de manuales de procedimientos,2024-07-02,8,354,354
+Instalacion de barreras de seguridad,2023-06-03,1,355,355
+Verificar estado de extintores,2024-05-31,6,356,356
+Monitorear uso de sustancias quimicas,2024-03-13,3,357,357
+Monitorear uso de sustancias quimicas,2024-04-19,8,358,358
+Inspeccion de sistemas de ventilacion secundarios,2023-04-21,5,359,359
+Inspeccion de andamios y plataformas,2024-09-13,10,360,360
+Capacitar en primeros auxilios,2023-02-10,5,361,361
+Monitorear uso de sustancias quimicas,2024-02-01,5,362,362
+Capacitar al personal en seguridad,2022-11-15,3,363,363
+Capacitacion en manipulacion de sustancias peligrosas,2024-05-15,7,364,364
+Comprobar estabilidad de paredes en areas de excavacion,2024-10-10,3,365,365
+Controlar estado de filtros de aire,2023-12-26,5,366,366
+Inspeccionar soportes de estructuras,2022-12-07,5,367,367
+Implementacion de controles de calidad,2024-10-13,3,368,368
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-08-26,5,369,369
+Revision de equipos de rescate,2024-08-05,8,370,370
+Monitorear niveles de gases en minas subterraneas,2023-11-14,9,371,371
+Revisar condiciones de almacenamiento de materiales,2023-01-07,9,372,372
+Inspeccion de sistemas de ventilacion secundarios,2024-03-19,6,373,373
+Inspeccionar soportes de estructuras,2023-08-16,3,374,374
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-04-22,4,375,375
+Instalar nuevas salidas de emergencia,2024-08-19,3,376,376
+Capacitar en primeros auxilios,2023-04-27,6,377,377
+Capacitar en primeros auxilios,2022-11-23,10,378,378
+Implementacion de medidas para reducir riesgos de caida,2024-04-30,6,379,379
+Supervisar trabajos en altura,2023-04-15,8,380,380
+Inspeccion de andamios y plataformas,2024-08-17,8,381,381
+Calibrar sensores de presion,2023-12-08,7,382,382
+Inspeccionar sistemas de frenos de vehiculos,2024-03-23,5,383,383
+Inspeccionar soportes de estructuras,2024-07-30,6,384,384
+Realizar pruebas de resistencia de materiales,2023-08-07,4,385,385
+Capacitacion en manipulacion de sustancias peligrosas,2023-11-02,5,386,386
+Revision de zonas de carga y descarga,2023-07-09,9,387,387
+Evaluar estado de infraestructura,2024-10-27,8,388,388
+Revisar sistema de ventilacion,2023-05-11,1,389,389
+Cambiar valvulas defectuosas,2024-01-05,10,390,390
+Monitorear niveles de gases en minas subterraneas,2023-10-30,6,391,391
+Control de polvo en areas de trabajo,2023-05-18,5,392,392
+Revisar sistemas de ventilacion de tuneles,2022-12-08,1,393,393
+Inspeccionar maquinaria pesada,2024-05-25,6,394,394
+Implementacion de medidas para reducir riesgos de caida,2024-01-01,10,395,395
+Realizar mantenimiento preventivo de generadores,2022-11-21,2,396,396
+Supervisar trabajos en altura,2023-07-09,7,397,397
+Verificar niveles de ruido,2022-12-30,6,398,398
+Evaluacion de riesgos ergonomicos,2024-02-01,9,399,399
+Evaluacion de riesgos ergonomicos,2023-11-24,4,400,400
+Evaluar estado de infraestructura,2023-04-19,7,401,401
+Instalar nuevas salidas de emergencia,2023-05-10,4,402,402
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-06-20,5,403,403
+Evaluar estado de infraestructura,2024-06-17,10,404,404
+Capacitacion en manipulacion de sustancias peligrosas,2024-01-08,1,405,405
+Calibrar sensores de presion,2023-07-22,6,406,406
+Verificar estado de extintores,2023-08-31,10,407,407
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-05-05,8,408,408
+Calibrar sensores de presion,2024-05-30,1,409,409
+Limpiar areas de trabajo peligrosas,2024-06-03,1,410,410
+Implementacion de medidas para reducir riesgos de caida,2023-03-18,2,411,411
+Desinfectar zonas comunes,2024-02-06,1,412,412
+Calibrar sensores de presion,2024-10-07,3,413,413
+Cambiar valvulas defectuosas,2023-10-31,10,414,414
+Verificar estado de extintores,2023-08-22,8,415,415
+Limpiar residuos de productos quimicos,2022-12-29,7,416,416
+Limpiar areas de trabajo peligrosas,2024-06-28,9,417,417
+Control de residuos solidos,2024-05-30,6,418,418
+Supervision de limpieza de herramientas,2024-09-11,3,419,419
+Revisar sistemas de ventilacion de tuneles,2024-08-05,4,420,420
+Inspeccionar maquinaria pesada,2023-12-26,3,421,421
+Evaluacion de riesgos ergonomicos,2023-04-16,7,422,422
+Evaluacion de riesgos ergonomicos,2024-11-02,2,423,423
+Actualizacion de manuales de procedimientos,2024-09-24,8,424,424
+Calibrar sensores de presion,2024-08-24,10,425,425
+Control de residuos solidos,2023-08-25,9,426,426
+Capacitar en primeros auxilios,2024-04-16,4,427,427
+Revisar condiciones de almacenamiento de materiales,2023-11-24,8,428,428
+Implementacion de medidas para reducir riesgos de caida,2023-05-29,9,429,429
+Monitorear niveles de gases en minas subterraneas,2024-06-08,2,430,430
+Inspeccion de andamios y plataformas,2023-07-21,2,431,431
+Revisar condiciones de almacenamiento de materiales,2024-03-22,7,432,432
+Implementacion de medidas para reducir riesgos de caida,2023-06-14,10,433,433
+Inspeccion de andamios y plataformas,2023-06-28,8,434,434
+Inspeccionar soportes de estructuras,2024-05-09,7,435,435
+Control de humedad en almacenes,2023-10-03,9,436,436
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-07-27,3,437,437
+Comprobar estabilidad de paredes en areas de excavacion,2023-07-15,5,438,438
+Control de residuos solidos,2024-07-22,7,439,439
+Implementar sistema de senalizacion,2024-09-17,3,440,440
+Instalacion de barreras de seguridad,2023-07-11,9,441,441
+Realizar pruebas de resistencia de materiales,2023-06-28,3,442,442
+Cambiar valvulas defectuosas,2024-08-28,3,443,443
+Actualizar procedimientos de emergencia,2024-02-01,10,444,444
+Control de polvo en areas de trabajo,2024-05-17,6,445,445
+Limpiar areas de trabajo peligrosas,2024-07-10,4,446,446
+Monitorear niveles de gases en minas subterraneas,2023-08-26,8,447,447
+Realizar mantenimiento preventivo de generadores,2024-09-30,5,448,448
+Revision de equipos de monitoreo,2024-02-16,1,449,449
+Cambiar valvulas defectuosas,2023-03-02,5,450,450
+Supervision de limpieza de herramientas,2022-11-08,4,451,451
+Verificacion de equipos de comunicacion en emergencias,2024-09-25,10,452,452
+Inspeccion de sistemas de ventilacion secundarios,2024-08-08,6,453,453
+Supervision de limpieza de herramientas,2024-10-11,7,454,454
+Actualizar procedimientos de emergencia,2023-03-28,6,455,455
+Monitorear uso de sustancias quimicas,2024-01-12,5,456,456
+Inspeccionar soportes de estructuras,2024-02-20,3,457,457
+Inspeccionar lineas electricas,2023-04-23,6,458,458
+Evaluar estado de infraestructura,2023-09-28,8,459,459
+Controlar estado de filtros de aire,2023-02-16,8,460,460
+Monitorear uso de sustancias quimicas,2023-09-02,6,461,461
+Revisar condiciones de almacenamiento de materiales,2023-05-14,4,462,462
+Verificar niveles de ruido,2023-07-20,8,463,463
+Capacitar al personal en seguridad,2023-07-08,3,464,464
+Implementacion de controles de calidad,2024-07-28,3,465,465
+Implementacion de controles de calidad,2022-12-03,10,466,466
+Capacitar en primeros auxilios,2023-12-02,3,467,467
+Inspeccion de sistemas de ventilacion secundarios,2024-10-09,9,468,468
+Revision de equipos de rescate,2023-01-25,1,469,469
+Revisar sistema de ventilacion,2024-02-09,4,470,470
+Inspeccion de sistemas de ventilacion secundarios,2023-03-15,7,471,471
+Inspeccionar lineas electricas,2023-07-29,2,472,472
+Revisar alarmas de incendios,2024-03-20,7,473,473
+Reemplazar luminarias danadas,2023-08-06,6,474,474
+Realizar pruebas de resistencia de materiales,2024-07-25,9,475,475
+Control de polvo en areas de trabajo,2023-10-02,3,476,476
+Planificacion de simulacros de evacuacion,2024-02-25,1,477,477
+Implementacion de medidas para reducir riesgos de caida,2023-12-05,5,478,478
+Inspeccionar sistemas de frenos de vehiculos,2024-01-03,9,479,479
+Actualizacion de manuales de procedimientos,2024-09-24,10,480,480
+Evaluacion de riesgos ergonomicos,2024-04-30,5,481,481
+Implementacion de medidas para reducir riesgos de caida,2024-07-31,4,482,482
+Cambiar valvulas defectuosas,2023-06-22,3,483,483
+Inspeccionar maquinaria pesada,2023-07-19,9,484,484
+Control de humedad en almacenes,2024-03-21,9,485,485
+Supervisar trabajos en altura,2022-11-24,8,486,486
+Monitorear niveles de gases en minas subterraneas,2023-07-07,9,487,487
+Limpiar residuos de productos quimicos,2024-10-11,1,488,488
+Evaluacion de riesgos ergonomicos,2022-12-04,8,489,489
+Monitoreo de estabilidad en zonas de voladura,2023-01-27,7,490,490
+Monitorear uso de sustancias quimicas,2023-08-01,9,491,491
+Supervisar trabajos en altura,2023-04-23,2,492,492
+Reemplazar luminarias danadas,2023-01-20,5,493,493
+Comprobar estabilidad de paredes en areas de excavacion,2023-11-19,6,494,494
+Inspeccion de sistemas de ventilacion secundarios,2023-06-17,1,495,495
+Implementar sistema de senalizacion,2024-10-16,8,496,496
+Revisar condiciones de almacenamiento de materiales,2023-03-01,1,497,497
+Implementacion de medidas para reducir riesgos de caida,2023-10-25,6,498,498
+Implementacion de controles de calidad,2024-08-09,1,499,499
+Capacitar al personal en seguridad,2023-04-14,2,500,500
+Verificar estado de extintores,2023-10-03,7,501,501
+Control de residuos solidos,2024-02-27,1,502,502
+Actualizacion de manuales de procedimientos,2023-01-13,8,503,503
+Controlar estado de filtros de aire,2022-11-28,6,504,504
+Revisar sistema de ventilacion,2023-12-04,9,505,505
+Inspeccionar soportes de estructuras,2023-03-06,9,506,506
+Evaluar estado de infraestructura,2024-01-05,8,507,507
+Inspeccion de sistemas de ventilacion secundarios,2023-06-11,5,508,508
+Inspeccionar maquinaria pesada,2024-03-10,5,509,509
+Monitorear niveles de gases en minas subterraneas,2023-04-15,3,510,510
+Realizar pruebas de resistencia de materiales,2023-12-11,10,511,511
+Revisar sistema de ventilacion,2023-01-12,10,512,512
+Supervision de limpieza de herramientas,2024-09-24,6,513,513
+Instalar nuevas salidas de emergencia,2024-10-16,9,514,514
+Implementacion de medidas para reducir riesgos de caida,2023-03-08,8,515,515
+Verificar estado de extintores,2024-09-05,7,516,516
+Verificar niveles de ruido,2023-11-08,3,517,517
+Inspeccionar sistemas de frenos de vehiculos,2023-09-09,3,518,518
+Implementacion de controles de calidad,2023-05-23,1,519,519
+Instalacion de barreras de seguridad,2024-11-05,6,520,520
+Evaluar estado de infraestructura,2023-09-16,6,521,521
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-02-19,3,522,522
+Verificar niveles de ruido,2024-07-31,3,523,523
+Limpiar areas de trabajo peligrosas,2024-08-07,5,524,524
+Inspeccion de andamios y plataformas,2023-04-02,9,525,525
+Control de humedad en almacenes,2023-06-25,6,526,526
+Capacitar al personal en seguridad,2024-02-28,5,527,527
+Revision de equipos de monitoreo,2024-05-12,1,528,528
+Capacitar al personal en seguridad,2024-01-10,4,529,529
+Calibrar sensores de presion,2023-02-13,6,530,530
+Inspeccion de sistemas de ventilacion secundarios,2023-07-09,4,531,531
+Limpiar residuos de productos quimicos,2023-11-12,6,532,532
+Implementacion de medidas para reducir riesgos de caida,2024-03-03,2,533,533
+Inspeccionar lineas electricas,2022-11-24,7,534,534
+Implementar sistema de senalizacion,2024-06-04,7,535,535
+Verificar niveles de ruido,2024-05-25,3,536,536
+Revision de equipos de rescate,2024-03-07,9,537,537
+Inspeccionar lineas electricas,2024-08-05,6,538,538
+Reemplazar luminarias danadas,2022-12-11,6,539,539
+Actualizar senalizacion de salida,2023-12-21,5,540,540
+Limpiar residuos de productos quimicos,2024-10-24,2,541,541
+Revision de zonas de carga y descarga,2023-04-26,9,542,542
+Revision de equipos de monitoreo,2023-06-05,1,543,543
+Verificacion de equipos de comunicacion en emergencias,2023-07-05,2,544,544
+Control de polvo en areas de trabajo,2024-08-01,1,545,545
+Verificacion de equipos de comunicacion en emergencias,2023-09-01,4,546,546
+Revision de zonas de carga y descarga,2024-07-05,3,547,547
+Revision de equipos de monitoreo,2023-09-06,10,548,548
+Revisar sistema de ventilacion,2023-10-25,1,549,549
+Inspeccionar soportes de estructuras,2024-07-06,2,550,550
+Verificacion de equipos de comunicacion en emergencias,2024-06-18,7,551,551
+Monitoreo de estabilidad en zonas de voladura,2024-09-01,9,552,552
+Implementacion de controles de calidad,2023-04-10,3,553,553
+Cambiar aceite de motores,2024-03-01,5,554,554
+Supervision de limpieza de herramientas,2023-03-12,9,555,555
+Limpiar residuos de productos quimicos,2023-07-07,10,556,556
+Comprobar estabilidad de paredes en areas de excavacion,2024-09-09,7,557,557
+Implementar sistema de senalizacion,2023-06-09,3,558,558
+Inspeccionar lineas electricas,2024-04-15,2,559,559
+Cambiar valvulas defectuosas,2024-06-16,2,560,560
+Implementar sistema de senalizacion,2023-05-17,2,561,561
+Revisar alarmas de incendios,2022-11-22,6,562,562
+Calibrar sensores de presion,2024-06-13,5,563,563
+Instalacion de barreras de seguridad,2022-12-29,2,564,564
+Controlar estado de filtros de aire,2024-05-15,4,565,565
+Revision de equipos de monitoreo,2023-03-04,3,566,566
+Supervision de limpieza de herramientas,2023-05-03,10,567,567
+Implementar sistema de senalizacion,2023-03-19,6,568,568
+Inspeccionar maquinaria pesada,2024-07-28,2,569,569
+Capacitacion en manipulacion de sustancias peligrosas,2023-03-11,7,570,570
+Realizar mantenimiento preventivo de generadores,2024-08-06,8,571,571
+Revisar condiciones de almacenamiento de materiales,2023-08-03,5,572,572
+Revisar sistemas de ventilacion de tuneles,2023-06-30,3,573,573
+Evaluacion de riesgos ergonomicos,2023-08-06,8,574,574
+Inspeccionar soportes de estructuras,2024-08-23,3,575,575
+Monitorear uso de sustancias quimicas,2024-04-01,10,576,576
+Verificacion de equipos de comunicacion en emergencias,2023-05-24,7,577,577
+Control de polvo en areas de trabajo,2024-09-10,3,578,578
+Control de humedad en almacenes,2023-03-09,5,579,579
+Reemplazar luminarias danadas,2023-08-31,3,580,580
+Evaluacion de riesgos ergonomicos,2024-04-14,10,581,581
+Comprobar estabilidad de paredes en areas de excavacion,2022-11-14,6,582,582
+Control de polvo en areas de trabajo,2024-09-03,7,583,583
+Inspeccionar sistemas de frenos de vehiculos,2023-04-19,1,584,584
+Limpiar areas de trabajo peligrosas,2023-03-29,8,585,585
+Inspeccion de andamios y plataformas,2023-05-06,1,586,586
+Instalacion de barreras de seguridad,2024-05-30,3,587,587
+Evaluacion de riesgos de incendio,2023-02-10,7,588,588
+Revisar condiciones de almacenamiento de materiales,2023-04-22,3,589,589
+Realizar mantenimiento preventivo de generadores,2024-06-15,5,590,590
+Controlar estado de filtros de aire,2023-11-23,7,591,591
+Capacitar al personal en seguridad,2023-05-27,8,592,592
+Inspeccion de sistemas de ventilacion secundarios,2024-06-13,1,593,593
+Cambiar valvulas defectuosas,2023-08-15,1,594,594
+Verificacion de equipos de comunicacion en emergencias,2023-07-14,5,595,595
+Limpiar residuos de productos quimicos,2023-05-07,8,596,596
+Actualizar senalizacion de salida,2024-02-12,3,597,597
+Revision de equipos de monitoreo,2024-01-06,3,598,598
+Realizar pruebas de resistencia de materiales,2024-06-26,7,599,599
+Monitorear niveles de gases en minas subterraneas,2024-10-08,5,600,600
+Monitorear niveles de gases en minas subterraneas,2024-05-26,10,601,601
+Calibrar sensores de presion,2024-07-29,1,602,602
+Reemplazar luminarias danadas,2024-09-15,2,603,603
+Controlar estado de filtros de aire,2024-04-05,3,604,604
+Implementar sistema de senalizacion,2023-07-14,7,605,605
+Evaluacion de riesgos ergonomicos,2022-12-03,9,606,606
+Revisar alarmas de incendios,2024-03-10,4,607,607
+Limpiar residuos de productos quimicos,2023-03-08,8,608,608
+Implementar sistema de senalizacion,2023-05-15,7,609,609
+Limpiar areas de trabajo peligrosas,2024-05-05,10,610,610
+Monitorear niveles de gases en minas subterraneas,2023-07-16,2,611,611
+Revision de equipos de monitoreo,2023-10-20,9,612,612
+Implementacion de medidas para reducir riesgos de caida,2023-01-05,1,613,613
+Verificacion de equipos de comunicacion en emergencias,2023-09-02,9,614,614
+Control de humedad en almacenes,2024-01-18,10,615,615
+Controlar estado de filtros de aire,2024-09-01,5,616,616
+Revisar alarmas de incendios,2023-09-20,3,617,617
+Actualizacion de manuales de procedimientos,2023-11-18,8,618,618
+Calibrar sensores de presion,2024-08-12,2,619,619
+Reemplazar luminarias danadas,2024-09-30,3,620,620
+Capacitar en primeros auxilios,2023-03-05,3,621,621
+Revisar alarmas de incendios,2024-07-28,1,622,622
+Verificacion de equipos de comunicacion en emergencias,2023-03-16,5,623,623
+Control de residuos solidos,2023-06-07,6,624,624
+Limpiar areas de trabajo peligrosas,2023-06-25,4,625,625
+Realizar mantenimiento preventivo de generadores,2023-11-24,3,626,626
+Implementacion de controles de calidad,2024-03-06,8,627,627
+Evaluacion de riesgos ergonomicos,2023-12-26,1,628,628
+Monitorear niveles de gases en minas subterraneas,2023-02-25,2,629,629
+Verificar estado de extintores,2023-10-10,6,630,630
+Limpiar areas de trabajo peligrosas,2024-10-09,10,631,631
+Cambiar valvulas defectuosas,2022-12-14,4,632,632
+Inspeccion de andamios y plataformas,2023-01-21,3,633,633
+Supervision de limpieza de herramientas,2024-10-09,4,634,634
+Revisar condiciones de almacenamiento de materiales,2024-08-13,8,635,635
+Inspeccionar maquinaria pesada,2024-01-13,3,636,636
+Revisar condiciones de almacenamiento de materiales,2024-03-31,10,637,637
+Inspeccionar soportes de estructuras,2022-12-27,10,638,638
+Supervision de limpieza de herramientas,2023-04-25,4,639,639
+Realizar mantenimiento preventivo de generadores,2023-11-08,8,640,640
+Calibrar sensores de presion,2024-02-20,5,641,641
+Capacitacion en manipulacion de sustancias peligrosas,2024-10-05,2,642,642
+Planificacion de simulacros de evacuacion,2022-11-23,1,643,643
+Verificar estado de extintores,2024-01-21,4,644,644
+Actualizar senalizacion de salida,2023-05-11,7,645,645
+Control de residuos solidos,2023-01-14,7,646,646
+Realizar pruebas de resistencia de materiales,2024-01-29,2,647,647
+Actualizacion de manuales de procedimientos,2024-04-17,7,648,648
+Inspeccion de sistemas de ventilacion secundarios,2024-06-12,1,649,649
+Cambiar aceite de motores,2024-01-19,2,650,650
+Inspeccionar soportes de estructuras,2023-09-27,10,651,651
+Evaluacion de riesgos de incendio,2023-01-04,10,652,652
+Capacitacion en manipulacion de sustancias peligrosas,2024-05-07,8,653,653
+Instalacion de barreras de seguridad,2024-07-22,3,654,654
+Actualizacion de manuales de procedimientos,2024-07-20,6,655,655
+Control de humedad en almacenes,2023-05-29,1,656,656
+Instalar nuevas salidas de emergencia,2023-06-22,4,657,657
+Realizar mantenimiento preventivo de generadores,2024-06-04,1,658,658
+Implementacion de controles de calidad,2024-06-13,2,659,659
+Revisar alarmas de incendios,2024-04-25,4,660,660
+Control de polvo en areas de trabajo,2024-05-08,3,661,661
+Instalar nuevas salidas de emergencia,2024-06-07,9,662,662
+Monitoreo de estabilidad en zonas de voladura,2024-09-20,6,663,663
+Instalacion de barreras de seguridad,2023-04-05,5,664,664
+Control de polvo en areas de trabajo,2024-05-01,6,665,665
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-02-19,6,666,666
+Evaluacion de riesgos ergonomicos,2024-06-29,8,667,667
+Limpiar residuos de productos quimicos,2022-11-09,1,668,668
+Reemplazar luminarias danadas,2023-02-10,7,669,669
+Calibrar sensores de presion,2024-07-18,10,670,670
+Control de humedad en almacenes,2024-02-21,3,671,671
+Control de polvo en areas de trabajo,2024-09-06,2,672,672
+Reemplazar luminarias danadas,2023-09-28,5,673,673
+Comprobar estabilidad de paredes en areas de excavacion,2023-12-29,2,674,674
+Revisar alarmas de incendios,2024-01-22,6,675,675
+Actualizar senalizacion de salida,2023-04-27,8,676,676
+Supervisar trabajos en altura,2024-03-08,2,677,677
+Capacitar en primeros auxilios,2024-10-31,4,678,678
+Implementar sistema de senalizacion,2023-12-07,5,679,679
+Cambiar valvulas defectuosas,2022-11-20,6,680,680
+Cambiar aceite de motores,2023-04-03,3,681,681
+Implementar sistema de senalizacion,2024-06-15,2,682,682
+Cambiar valvulas defectuosas,2024-09-19,8,683,683
+Implementacion de controles de calidad,2023-03-27,2,684,684
+Realizar mantenimiento preventivo de generadores,2023-02-28,9,685,685
+Capacitar en primeros auxilios,2024-03-26,6,686,686
+Implementacion de medidas para reducir riesgos de caida,2023-10-18,8,687,687
+Revision de equipos de monitoreo,2024-06-27,5,688,688
+Inspeccion de andamios y plataformas,2024-02-23,9,689,689
+Actualizar procedimientos de emergencia,2024-09-23,5,690,690
+Capacitar al personal en seguridad,2023-07-07,2,691,691
+Revisar alarmas de incendios,2024-04-11,5,692,692
+Monitorear niveles de gases en minas subterraneas,2023-09-03,5,693,693
+Realizar pruebas de resistencia de materiales,2023-01-09,10,694,694
+Verificar estado de extintores,2022-11-16,6,695,695
+Revision de zonas de carga y descarga,2024-01-05,6,696,696
+Monitorear niveles de gases en minas subterraneas,2023-12-08,5,697,697
+Actualizar procedimientos de emergencia,2024-10-04,3,698,698
+Calibrar sensores de presion,2023-07-27,8,699,699
+Evaluacion de riesgos de incendio,2023-11-18,6,700,700
+Capacitar en primeros auxilios,2023-06-15,5,701,701
+Evaluacion de riesgos ergonomicos,2023-10-04,7,702,702
+Verificacion de equipos de comunicacion en emergencias,2022-11-11,4,703,703
+Inspeccion de sistemas de ventilacion secundarios,2023-03-07,5,704,704
+Revisar alarmas de incendios,2024-01-15,3,705,705
+Monitoreo de estabilidad en zonas de voladura,2024-09-01,3,706,706
+Actualizar senalizacion de salida,2024-02-02,4,707,707
+Verificar estado de extintores,2023-01-18,6,708,708
+Supervisar trabajos en altura,2023-01-29,3,709,709
+Inspeccionar maquinaria pesada,2022-11-24,9,710,710
+Cambiar valvulas defectuosas,2023-09-02,4,711,711
+Evaluacion de riesgos ergonomicos,2023-12-22,10,712,712
+Inspeccion de sistemas de ventilacion secundarios,2022-12-11,7,713,713
+Inspeccion de sistemas de ventilacion secundarios,2023-09-19,2,714,714
+Reemplazar luminarias danadas,2024-10-13,8,715,715
+Comprobar estabilidad de paredes en areas de excavacion,2024-02-21,2,716,716
+Capacitacion en manipulacion de sustancias peligrosas,2024-01-03,5,717,717
+Evaluar estado de infraestructura,2024-05-07,8,718,718
+Capacitar al personal en seguridad,2024-01-17,1,719,719
+Actualizar senalizacion de salida,2023-07-08,2,720,720
+Reemplazar luminarias danadas,2023-07-30,5,721,721
+Verificar niveles de ruido,2023-09-03,9,722,722
+Revisar sistemas de ventilacion de tuneles,2024-05-17,8,723,723
+Comprobar estabilidad de paredes en areas de excavacion,2023-03-21,4,724,724
+Instalacion de barreras de seguridad,2023-06-21,5,725,725
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-10-28,5,726,726
+Actualizar senalizacion de salida,2022-12-28,10,727,727
+Implementacion de medidas para reducir riesgos de caida,2024-01-13,9,728,728
+Comprobar estabilidad de paredes en areas de excavacion,2023-03-15,7,729,729
+Revisar sistemas de ventilacion de tuneles,2024-06-11,4,730,730
+Cambiar aceite de motores,2023-01-14,10,731,731
+Evaluacion de riesgos de incendio,2023-02-28,10,732,732
+Controlar estado de filtros de aire,2023-01-27,4,733,733
+Supervisar trabajos en altura,2024-09-01,3,734,734
+Control de residuos solidos,2023-05-28,7,735,735
+Revision de equipos de rescate,2022-12-19,9,736,736
+Desinfectar zonas comunes,2024-02-12,5,737,737
+Cambiar aceite de motores,2023-08-03,7,738,738
+Control de polvo en areas de trabajo,2024-09-15,8,739,739
+Inspeccionar soportes de estructuras,2024-07-30,9,740,740
+Reemplazar luminarias danadas,2023-01-22,3,741,741
+Monitoreo de estabilidad en zonas de voladura,2022-12-18,1,742,742
+Desinfectar zonas comunes,2023-03-28,10,743,743
+Control de residuos solidos,2024-03-21,6,744,744
+Evaluacion de riesgos ergonomicos,2023-10-23,6,745,745
+Instalacion de barreras de seguridad,2023-01-07,10,746,746
+Revisar sistema de ventilacion,2024-02-29,5,747,747
+Revision de zonas de carga y descarga,2024-06-18,5,748,748
+Revisar sistemas de ventilacion de tuneles,2023-07-19,8,749,749
+Evaluar estado de infraestructura,2023-02-03,2,750,750
+Capacitacion en manipulacion de sustancias peligrosas,2023-09-06,3,751,751
+Implementacion de controles de calidad,2023-07-24,5,752,752
+Revision de zonas de carga y descarga,2023-03-28,5,753,753
+Implementacion de controles de calidad,2024-07-11,4,754,754
+Monitorear niveles de gases en minas subterraneas,2024-04-09,2,755,755
+Monitoreo de estabilidad en zonas de voladura,2024-10-06,8,756,756
+Reemplazar luminarias danadas,2024-06-13,8,757,757
+Inspeccionar maquinaria pesada,2023-09-30,8,758,758
+Inspeccionar sistemas de frenos de vehiculos,2024-08-11,5,759,759
+Control de residuos solidos,2024-10-04,9,760,760
+Implementar sistema de senalizacion,2024-02-04,10,761,761
+Monitoreo de estabilidad en zonas de voladura,2023-03-29,5,762,762
+Verificacion de equipos de comunicacion en emergencias,2024-09-22,1,763,763
+Instalacion de barreras de seguridad,2022-12-31,10,764,764
+Monitorear niveles de gases en minas subterraneas,2024-03-31,1,765,765
+Actualizar senalizacion de salida,2024-09-03,6,766,766
+Realizar pruebas de resistencia de materiales,2023-11-13,6,767,767
+Revision de equipos de rescate,2023-10-23,7,768,768
+Verificacion de equipos de comunicacion en emergencias,2022-12-01,1,769,769
+Supervisar trabajos en altura,2023-04-21,10,770,770
+Monitoreo de estabilidad en zonas de voladura,2024-03-22,1,771,771
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-03-12,1,772,772
+Monitoreo de estabilidad en zonas de voladura,2024-06-12,8,773,773
+Instalar nuevas salidas de emergencia,2024-04-12,1,774,774
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-05-14,9,775,775
+Inspeccionar soportes de estructuras,2024-06-28,6,776,776
+Revisar condiciones de almacenamiento de materiales,2023-10-30,9,777,777
+Realizar mantenimiento preventivo de generadores,2024-08-17,8,778,778
+Planificacion de simulacros de evacuacion,2024-05-05,6,779,779
+Supervision de limpieza de herramientas,2024-03-28,7,780,780
+Planificacion de simulacros de evacuacion,2023-08-05,8,781,781
+Inspeccionar maquinaria pesada,2023-03-28,9,782,782
+Limpiar residuos de productos quimicos,2023-11-25,8,783,783
+Inspeccionar soportes de estructuras,2024-07-04,5,784,784
+Comprobar estabilidad de paredes en areas de excavacion,2022-12-09,5,785,785
+Limpiar areas de trabajo peligrosas,2023-01-18,3,786,786
+Implementacion de medidas para reducir riesgos de caida,2023-02-10,2,787,787
+Actualizacion de manuales de procedimientos,2024-04-26,3,788,788
+Control de polvo en areas de trabajo,2024-10-26,8,789,789
+Comprobar estabilidad de paredes en areas de excavacion,2023-03-18,8,790,790
+Calibrar sensores de presion,2023-08-10,2,791,791
+Evaluar estado de infraestructura,2023-06-26,9,792,792
+Revisar condiciones de almacenamiento de materiales,2023-01-13,4,793,793
+Monitorear uso de sustancias quimicas,2023-12-21,10,794,794
+Revisar sistemas de ventilacion de tuneles,2023-08-28,5,795,795
+Implementar sistema de senalizacion,2024-08-29,7,796,796
+Limpiar areas de trabajo peligrosas,2023-01-05,6,797,797
+Implementacion de controles de calidad,2022-12-11,4,798,798
+Revisar sistema de ventilacion,2024-04-12,9,799,799
+Revision de zonas de carga y descarga,2024-06-04,6,800,800
+Supervisar trabajos en altura,2023-11-28,9,801,801
+Implementacion de controles de calidad,2023-02-12,10,802,802
+Capacitacion en manipulacion de sustancias peligrosas,2023-07-13,4,803,803
+Inspeccionar lineas electricas,2023-04-16,10,804,804
+Inspeccion de andamios y plataformas,2023-08-01,8,805,805
+Planificacion de simulacros de evacuacion,2023-07-17,7,806,806
+Cambiar aceite de motores,2023-10-04,1,807,807
+Revisar sistemas de ventilacion de tuneles,2023-05-28,5,808,808
+Evaluacion de riesgos ergonomicos,2024-04-14,6,809,809
+Inspeccion de sistemas de ventilacion secundarios,2024-07-16,5,810,810
+Revision de zonas de carga y descarga,2023-05-18,3,811,811
+Actualizar procedimientos de emergencia,2024-09-10,6,812,812
+Capacitacion en manipulacion de sustancias peligrosas,2024-08-25,10,813,813
+Capacitar en primeros auxilios,2023-12-09,4,814,814
+Capacitacion en manipulacion de sustancias peligrosas,2022-11-13,10,815,815
+Instalacion de barreras de seguridad,2022-12-05,4,816,816
+Revisar sistemas de ventilacion de tuneles,2024-06-07,5,817,817
+Actualizacion de manuales de procedimientos,2023-11-05,1,818,818
+Actualizar senalizacion de salida,2023-02-22,3,819,819
+Control de humedad en almacenes,2024-03-06,9,820,820
+Control de polvo en areas de trabajo,2023-10-04,8,821,821
+Verificar estado de extintores,2023-11-14,8,822,822
+Instalar nuevas salidas de emergencia,2023-02-16,10,823,823
+Revisar condiciones de almacenamiento de materiales,2024-10-15,7,824,824
+Limpiar residuos de productos quimicos,2023-03-21,6,825,825
+Verificar estado de extintores,2024-04-30,4,826,826
+Implementar sistema de senalizacion,2023-03-01,1,827,827
+Instalar nuevas salidas de emergencia,2023-07-15,3,828,828
+Cambiar valvulas defectuosas,2023-05-09,1,829,829
+Revision de zonas de carga y descarga,2024-09-29,2,830,830
+Revisar sistema de ventilacion,2023-05-23,2,831,831
+Actualizar senalizacion de salida,2024-10-08,3,832,832
+Instalacion de barreras de seguridad,2023-08-16,6,833,833
+Supervisar trabajos en altura,2024-07-19,7,834,834
+Revisar sistemas de ventilacion de tuneles,2024-09-10,3,835,835
+Supervision de limpieza de herramientas,2023-09-12,3,836,836
+Reemplazar luminarias danadas,2024-05-18,4,837,837
+Limpiar areas de trabajo peligrosas,2023-04-08,4,838,838
+Revisar sistemas de ventilacion de tuneles,2023-02-27,2,839,839
+Actualizar senalizacion de salida,2024-04-26,6,840,840
+Inspeccion de andamios y plataformas,2023-07-23,1,841,841
+Revision de equipos de rescate,2024-04-07,8,842,842
+Calibrar sensores de presion,2023-05-14,2,843,843
+Verificar estado de extintores,2023-05-06,7,844,844
+Verificar estado de extintores,2024-01-02,1,845,845
+Implementacion de medidas para reducir riesgos de caida,2023-04-21,3,846,846
+Capacitar en primeros auxilios,2023-11-19,10,847,847
+Calibrar sensores de presion,2023-03-29,6,848,848
+Inspeccion de sistemas de ventilacion secundarios,2022-11-26,7,849,849
+Revision de equipos de rescate,2023-09-19,7,850,850
+Revision de equipos de rescate,2024-02-01,3,851,851
+Implementacion de controles de calidad,2023-05-09,9,852,852
+Limpiar areas de trabajo peligrosas,2024-09-12,10,853,853
+Monitoreo de estabilidad en zonas de voladura,2024-01-30,8,854,854
+Revisar sistema de ventilacion,2024-03-21,10,855,855
+Revision de zonas de carga y descarga,2023-06-20,7,856,856
+Instalar nuevas salidas de emergencia,2024-03-21,2,857,857
+Planificacion de simulacros de evacuacion,2023-10-14,2,858,858
+Verificar niveles de ruido,2023-08-30,6,859,859
+Capacitar al personal en seguridad,2023-11-27,10,860,860
+Cambiar valvulas defectuosas,2024-05-30,9,861,861
+Inspeccionar lineas electricas,2023-01-20,6,862,862
+Revisar sistema de ventilacion,2024-05-05,3,863,863
+Revision de equipos de monitoreo,2022-12-31,8,864,864
+Capacitar al personal en seguridad,2024-05-09,4,865,865
+Realizar pruebas de resistencia de materiales,2023-08-30,2,866,866
+Verificar estado de extintores,2023-06-07,7,867,867
+Comprobar estabilidad de paredes en areas de excavacion,2024-02-04,6,868,868
+Inspeccionar sistemas de frenos de vehiculos,2023-01-04,1,869,869
+Capacitacion en manipulacion de sustancias peligrosas,2023-11-24,6,870,870
+Monitoreo de estabilidad en zonas de voladura,2024-10-09,6,871,871
+Revision de zonas de carga y descarga,2023-07-06,5,872,872
+Verificar niveles de ruido,2023-02-07,2,873,873
+Verificacion de equipos de comunicacion en emergencias,2024-05-14,1,874,874
+Evaluacion de riesgos de incendio,2024-10-12,5,875,875
+Cambiar valvulas defectuosas,2024-03-29,10,876,876
+Revisar sistema de ventilacion,2023-06-05,3,877,877
+Monitorear uso de sustancias quimicas,2023-05-04,8,878,878
+Monitoreo de estabilidad en zonas de voladura,2024-09-18,9,879,879
+Monitorear niveles de gases en minas subterraneas,2024-07-01,9,880,880
+Control de residuos solidos,2022-12-01,5,881,881
+Revisar condiciones de almacenamiento de materiales,2024-06-26,1,882,882
+Control de polvo en areas de trabajo,2024-09-08,3,883,883
+Revisar condiciones de almacenamiento de materiales,2023-03-13,3,884,884
+Inspeccion de andamios y plataformas,2023-07-06,5,885,885
+Revision de zonas de carga y descarga,2024-02-12,2,886,886
+Capacitar al personal en seguridad,2024-10-30,6,887,887
+Actualizacion de manuales de procedimientos,2023-05-09,4,888,888
+Revision de zonas de carga y descarga,2023-10-26,2,889,889
+Revisar condiciones de almacenamiento de materiales,2024-10-29,5,890,890
+Control de residuos solidos,2023-10-31,4,891,891
+Actualizar senalizacion de salida,2023-03-15,9,892,892
+Inspeccionar sistemas de frenos de vehiculos,2023-08-10,7,893,893
+Limpiar residuos de productos quimicos,2023-11-16,10,894,894
+Revision de equipos de monitoreo,2023-02-05,1,895,895
+Monitoreo de estabilidad en zonas de voladura,2023-03-09,9,896,896
+Monitorear uso de sustancias quimicas,2024-07-23,6,897,897
+Actualizar procedimientos de emergencia,2022-11-14,9,898,898
+Comprobar estabilidad de paredes en areas de excavacion,2024-03-08,2,899,899
+Revision de equipos de rescate,2022-11-10,6,900,900
+Revision de equipos de monitoreo,2023-08-24,6,901,901
+Revisar sistemas de ventilacion de tuneles,2022-12-26,8,902,902
+Verificacion de equipos de comunicacion en emergencias,2024-10-20,6,903,903
+Revisar sistemas de ventilacion de tuneles,2024-02-23,5,904,904
+Actualizar procedimientos de emergencia,2024-09-23,8,905,905
+Calibrar sensores de presion,2024-04-24,8,906,906
+Supervision de limpieza de herramientas,2024-07-16,6,907,907
+Capacitacion en manipulacion de sustancias peligrosas,2024-04-08,5,908,908
+Inspeccionar sistemas de frenos de vehiculos,2023-01-27,1,909,909
+Inspeccionar sistemas de frenos de vehiculos,2024-08-26,7,910,910
+Actualizacion de manuales de procedimientos,2024-01-09,8,911,911
+Verificar niveles de ruido,2023-03-08,4,912,912
+Revisar sistemas de ventilacion de tuneles,2024-05-01,6,913,913
+Evaluacion de riesgos ergonomicos,2024-08-03,10,914,914
+Verificar niveles de ruido,2024-10-01,8,915,915
+Inspeccionar soportes de estructuras,2022-12-25,10,916,916
+Monitorear niveles de gases en minas subterraneas,2023-06-01,1,917,917
+Inspeccionar soportes de estructuras,2023-03-17,5,918,918
+Revision de equipos de monitoreo,2023-06-14,8,919,919
+Planificacion de simulacros de evacuacion,2024-09-23,2,920,920
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-02-18,5,921,921
+Actualizar senalizacion de salida,2023-09-18,4,922,922
+Capacitacion en manipulacion de sustancias peligrosas,2023-02-24,10,923,923
+Actualizar senalizacion de salida,2024-08-06,6,924,924
+Verificacion de equipos de comunicacion en emergencias,2023-12-21,3,925,925
+Implementar sistema de senalizacion,2023-09-06,5,926,926
+Actualizar senalizacion de salida,2024-07-01,5,927,927
+Control de residuos solidos,2024-05-17,3,928,928
+Inspeccionar sistemas de frenos de vehiculos,2024-09-17,5,929,929
+Supervisar trabajos en altura,2023-06-17,4,930,930
+Desinfectar zonas comunes,2023-02-05,4,931,931
+Capacitar en primeros auxilios,2023-12-31,7,932,932
+Verificar estado de extintores,2024-06-27,9,933,933
+Verificar estado de extintores,2024-07-10,8,934,934
+Inspeccionar sistemas de frenos de vehiculos,2023-04-24,4,935,935
+Actualizar procedimientos de emergencia,2024-01-14,7,936,936
+Monitoreo de estabilidad en zonas de voladura,2024-04-11,6,937,937
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2023-05-22,6,938,938
+Implementar sistema de senalizacion,2023-10-03,4,939,939
+Monitorear niveles de gases en minas subterraneas,2024-08-01,9,940,940
+Supervisar trabajos en altura,2023-07-14,6,941,941
+Realizar pruebas de resistencia de materiales,2023-01-22,4,942,942
+Capacitar en primeros auxilios,2023-12-04,7,943,943
+Revisar sistemas de ventilacion de tuneles,2024-05-26,8,944,944
+Capacitacion en manipulacion de sustancias peligrosas,2023-09-28,3,945,945
+Implementar sistema de senalizacion,2023-05-04,7,946,946
+Actualizacion de manuales de procedimientos,2024-10-08,7,947,947
+Realizar pruebas de resistencia de materiales,2024-01-05,6,948,948
+Inspeccionar sistemas de frenos de vehiculos,2024-04-13,3,949,949
+Revision de zonas de carga y descarga,2022-11-23,9,950,950
+Capacitacion en manipulacion de sustancias peligrosas,2024-09-18,4,951,951
+Evaluacion de riesgos ergonomicos,2023-02-17,2,952,952
+Verificar estado de extintores,2024-04-14,6,953,953
+Capacitar en primeros auxilios,2022-11-14,9,954,954
+Actualizacion de manuales de procedimientos,2023-11-05,4,955,955
+Revisar sistemas de ventilacion de tuneles,2024-08-24,9,956,956
+Instalar nuevas salidas de emergencia,2024-02-11,3,957,957
+Control de polvo en areas de trabajo,2023-07-12,7,958,958
+Inspeccionar lineas electricas,2022-11-10,3,959,959
+Control de residuos solidos,2024-07-22,3,960,960
+Calibrar sensores de presion,2023-02-17,5,961,961
+Inspeccion de andamios y plataformas,2024-10-01,6,962,962
+Instalacion de barreras de seguridad,2024-11-02,2,963,963
+Actualizar senalizacion de salida,2024-08-25,3,964,964
+Implementar sistema de senalizacion,2023-11-05,8,965,965
+Revision de equipos de monitoreo,2024-04-19,3,966,966
+Control de polvo en areas de trabajo,2023-12-19,9,967,967
+Supervision de limpieza de herramientas,2024-02-25,4,968,968
+Capacitar al personal en seguridad,2022-12-29,1,969,969
+Inspeccion de andamios y plataformas,2024-08-22,4,970,970
+Limpiar areas de trabajo peligrosas,2024-06-13,5,971,971
+Comprobar estabilidad de paredes en areas de excavacion,2024-01-28,9,972,972
+Inspeccionar soportes de estructuras,2023-08-18,1,973,973
+Realizar mantenimiento preventivo de generadores,2023-10-10,9,974,974
+Revisar condiciones de almacenamiento de materiales,2024-01-01,6,975,975
+Cambiar aceite de motores,2023-10-04,3,976,976
+Evaluar estado de infraestructura,2023-10-04,2,977,977
+Revisar condiciones de almacenamiento de materiales,2024-05-20,5,978,978
+Inspeccion de andamios y plataformas,2024-02-18,8,979,979
+Verificacion de equipos de comunicacion en emergencias,2023-09-17,9,980,980
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-07-31,10,981,981
+Verificacion de equipos de comunicacion en emergencias,2023-09-18,5,982,982
+Revisar alarmas de incendios,2022-12-06,8,983,983
+Monitorear uso de sustancias quimicas,2024-09-28,10,984,984
+Limpiar areas de trabajo peligrosas,2022-11-08,4,985,985
+Capacitacion en manipulacion de sustancias peligrosas,2022-11-24,2,986,986
+Revision de equipos de monitoreo,2023-10-16,6,987,987
+Revisar condiciones de almacenamiento de materiales,2024-02-12,4,988,988
+Capacitar en uso de EPP (Equipo de Proteccion Personal),2024-05-03,7,989,989
+Actualizar senalizacion de salida,2023-02-09,5,990,990
+Revisar condiciones de almacenamiento de materiales,2024-11-05,2,991,991
+Limpiar areas de trabajo peligrosas,2023-07-05,6,992,992
+Instalacion de barreras de seguridad,2024-01-26,8,993,993
+Verificacion de equipos de comunicacion en emergencias,2024-01-21,7,994,994
+Capacitacion en manipulacion de sustancias peligrosas,2024-01-27,10,995,995
+Inspeccionar lineas electricas,2023-09-21,8,996,996
+Controlar estado de filtros de aire,2024-09-05,3,997,997
+Limpiar areas de trabajo peligrosas,2024-08-02,4,998,998
+Supervisar trabajos en altura,2023-11-29,9,999,999
+Evaluar estado de infraestructura,2024-10-25,5,1000,1000
