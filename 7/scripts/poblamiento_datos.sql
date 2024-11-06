@@ -16,6 +16,12 @@ INSERT INTO Criticidad (Id_criticidad, Nivel) VALUES
 (2, 'Medio'),
 (3, 'Alto');
 
+-- Poblamiento de la tabla Estado_mantto
+INSERT INTO Estado_mantto (id_estado, estado) VALUES
+(1, 'Pendiente'),
+(2, 'En curso'),
+(3, 'Completa');
+
 -- Poblamiento de la tabla Empleado
 INSERT INTO Empleado (Id_empleado, Nombre, DNI, Direccion, Estado_civil, Sexo, Fecha_Nacimiento, Fecha_ingreso, Numero_contacto, Email_contacto, Contraseña, Id_Cargo, Id_acceso) VALUES
 (1, 'Juan Pérez', '12345678', 'Av. Principal 123', 'Soltero', 'Masculino', '1985-03-12', '2010-01-15', '987654321', 'juan.perez@empresa.com', 'password123', 1, 2),
