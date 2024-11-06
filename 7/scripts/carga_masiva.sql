@@ -214,29 +214,42 @@ INSERT INTO Tipo_Probabilidad (Id_tipo_probabilidad, Nombre_tipo_probabilidad) V
 ('P-IMP', 'Prácticamente imposible que suceda');
 
 
+-- Poblamiento de tabla Equipo_evaluador
 COPY Equipo_evaluador FROM 'C:\DBD-2024-2\datos\Equipo_evaluador.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla proceso
 COPY proceso FROM 'C:\DBD-2024-2\datos\proceso.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla actividades
 COPY actividades FROM 'C:\DBD-2024-2\datos\actividades.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla tareas
 COPY tareas FROM 'C:\DBD-2024-2\datos\tareas.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla Identificacion_del_riesgo
 COPY Identificacion_del_riesgo FROM 'C:\DBD-2024-2\datos\Identificacion_del_riesgo.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla analisis_riesgo
 COPY analisis_riesgo FROM 'C:\DBD-2024-2\datos\analisis_riesgo.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla Valoracion_del_riesgo_inicial
 COPY Valoracion_del_riesgo_inicial FROM 'C:\DBD-2024-2\datos\Valoracion_del_riesgo_inicial.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla valoracion_del_riesgo
 COPY valoracion_del_riesgo FROM 'C:\DBD-2024-2\datos\Valoracion_del_riesgo.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla control
 COPY control FROM 'C:\DBD-2024-2\datos\control.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla Plan_de_accion_de_mejora
 COPY Plan_de_accion_de_mejora FROM 'C:\DBD-2024-2\datos\Plan_de_accion_de_mejora.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla EquipoEvaluadorXEmpleado
 COPY EquipoEvaluadorXEmpleado FROM 'C:\DBD-2024-2\datos\EquipoEvaluadorXEmpleado.csv' DELIMITER ',' CSV HEADER;
 
+-- Poblamiento de tabla PlanaccionxEmpleado
 COPY PlanaccionxEmpleado FROM 'C:\DBD-2024-2\datos\PlanaccionxEmpleado.csv' DELIMITER ',' CSV HEADER;
+
 
 
 -- Poblamiento de la tabla Tipo_maquina
