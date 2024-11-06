@@ -332,12 +332,11 @@ DROP TABLE IF EXISTS Maquina CASCADE;
 CREATE TABLE Maquina
 (
     id_maquina INT NOT NULL,
-    nombre_maquina VARCHAR(50) NOT NULL,
     Fecha_ultima_inspeccion DATE NOT NULL,
     Fecha_adquisicion DATE NOT NULL,
-    id_marca_maquina INT NOT NULL,
     id_tipo_maquina INT NOT NULL, 
     id_estado_maquina INT NOT NULL,
+    id_marca_maquina INT NOT NULL,
     PRIMARY KEY (Id_maquina),
     FOREIGN KEY (id_marca_maquina) REFERENCES Marca_maquina(id_marca_maquina),
     FOREIGN KEY (id_tipo_maquina) REFERENCES Tipo_maquina(id_tipo_maquina),
