@@ -62,7 +62,11 @@ VALUES
 (2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
+<<<<<<< HEAD
 COPY Almacen FROM 'C:\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
+=======
+COPY almacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
+>>>>>>> fcc241c151d894d3ffdc721578b598c893cffa1b
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -87,6 +91,7 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
+<<<<<<< HEAD
 INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
 VALUES 
 (1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
@@ -144,6 +149,9 @@ VALUES
 (53, 'EquipoAP', 5, '2021-07-13', 'Descripcion AP', 100, 3, 1, 1),
 (54, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2);
 
+=======
+COPY equipo_de_soporte FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Equipo_de_Soporte.csv' DELIMITER ',' CSV HEADER;
+>>>>>>> fcc241c151d894d3ffdc721578b598c893cffa1b
 
 -- Poblamiento de la tabla EquipoSXAlmacen
 COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
@@ -500,6 +508,10 @@ VALUES
 (19, 'Revisión trimestral de sistemas de alarma', 'Verificación y ajuste de sensores', 'Falsos positivos y fallos de detección', '2025-07-10', '2025-07-15', 19, 19, 19, 1),
 (20, 'Actualización de software de control semestral', 'Instalación de nuevas versiones de software', 'Errores en el sistema', '2025-08-15', '2025-08-20', 20, 20, 20, 2);
 
+-- Poblamiento de la tabla EquipoSXMantenimiento
+COPY equiposxmantenimiento FROM 'C:\DBD-2024-2\datos\EquipoSXMantenimiento.csv' DELIMITER ',' CSV HEADER;
+
+
 -- Poblamiento de la tabla Auditoria
 INSERT INTO Auditoria (Id_Auditoria, Id_Act_mantto, Fecha_auditoria, ubi_auditoria, resp_auditoria, Descripcion, objetivo)
 VALUES
@@ -606,6 +618,33 @@ INSERT INTO Notificaciones (Fecha_notificacion, Asunto,Mensaje, Id_remitente, Id
 ('2024-09-23', 'Asunto Generico', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9),
 ( '2024-09-24','Asunto Generico',  'El registro ha sido actualizado.', 1, 2, 10, 10);
 
+-- Poblamiento de la tabla tipo_urgencia
+INSERT INTO Tipo_urgencia (Id_urgencia, Tipo_urgencia)
+VALUES
+(1, 'Muy urgente'),
+(2, 'Medianamente urgente'),
+(3, 'Poco urgente');
+
+-- Poblamiento de la tabla estado_pedido
+INSERT INTO Estado_pedido (Id_estado_pedido, nombre_estado)
+VALUES
+(1, 'Sin orden de compra'),
+(2, 'Con orden de compra'),
+(3, 'Lista para envío'),
+(4, 'En camino'),
+(5, 'Recibido');
+
+-- Poblamiento de la tabla pedido_compra
+COPY pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Pedido_Compra.csv' DELIMITER ',' CSV HEADER;
+
+-- Poblamiento de la tabla tipo_producto
+INSERT INTO Tipo_producto (Id_tipo_producto, nombre_producto)
+VALUES
+(1, 'Insumos'),
+(2, 'Equipos de Soporte');
+
+-- Poblamiento de la tabla detalle_pedido_compra
+COPY detalle_pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Detalle_Pedido_Compra.csv' DELIMITER ',' CSV HEADER;
 
 INSERT INTO Herramienta (Id_herramienta, Cantidad, Nombre) VALUES
 (1, 100, 'Martillo'),
@@ -652,8 +691,12 @@ INSERT INTO HerramientaXMantenimiento (Id_HerrXMantto, Id_Act_mantto, Id_Herrami
 (19, 19, 19),
 (20, 20, 20);
 
--- Proveedor
-INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direccion) VALUES
+-- Poblamiento de la tabla Proveedor
+COPY proveedor FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Proveedor.csv' DELIMITER ',' CSV HEADER;
+
+/*
+INSERT INTO Proveedor (id_proveedor, ruc, Empresa, Contacto, Email, Categoria, Telefono, Direccion) 
+VALUES
 ('20512345678', 'Herramientas S.A.', 'Juan Pérez', 'juan@herramientas.com', 'Herramientas', '123456789', 'Calle Los Alamos 123'),
 ('20512345679', 'Industria Taladro SAC', 'María Gómez', 'maria@taladro.com', 'Maquinaria', '987654321', 'Av. La Industria 456'),
 ('20512345680', 'Clavos del Norte SRL', 'Pedro Ruiz', 'pedro@clavos.com', 'Ferretería', '456789123', 'Calle Norte 789'),
@@ -674,9 +717,12 @@ INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direc
 ('20512345695', 'Medidores del Este S.A.', 'Fernanda López', 'fernanda@medidores.com', 'Electricidad', '789123654', 'Av. Este 654'),
 ('20512345696', 'Baterías Recargables SAC', 'Javier Delgado', 'javier@baterias.com', 'Electricidad', '654789123', 'Calle Recarga 987'),
 ('20512345697', 'Primera Ayuda SAC', 'Clara Huamán', 'clara@primerosauxilios.com', 'Salud', '321987123', 'Av. Emergencia 321');
+*/
 
+-- Poblamiento de la tabla Orden_de_compra
+COPY orden_de_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Orden_de_Compra.csv' DELIMITER ',' CSV HEADER;
 
--- Orden_de_compra
+/*
 INSERT INTO Orden_de_compra (Id_orden_compra, Fecha_emision, Fecha_posible_entrega, Descripcion, Cantidad, Prioridad, Precio_unitario, Descripcion_product, RUC_proveedor, Id_empleado) VALUES
 (1, '2024-01-10', '2024-01-20', 'Orden para martillos', 30, 'Alta', 15.50, 'Martillos de acero', '20512345678', 1),
 (2, '2024-02-05', '2024-02-15', 'Orden para taladros', 50, 'Media', 45.00, 'Taladros industriales', '20512345679', 2),
@@ -698,6 +744,7 @@ INSERT INTO Orden_de_compra (Id_orden_compra, Fecha_emision, Fecha_posible_entre
 (18, '2025-01-10', '2025-01-20', 'Orden para medidores eléctricos', 45, 'Alta', 50.00, 'Medidores de tensión', '20512345695', 18),
 (19, '2025-01-25', '2025-02-05', 'Orden para baterías recargables', 100, 'Media', 5.00, 'Baterías de larga duración', '20512345696', 19),
 (20, '2025-02-05', '2025-02-15', 'Orden para kits de primeros auxilios', 25, 'Alta', 30.00, 'Kits médicos', '20512345697', 20);
+*/
 
 -- Registro_compra_recursos
 INSERT INTO Registro_compra_herramienta (id_reg_herramienta, fecha_registro, Descripcion, Cantidad, id_almacen, id_orden_compra, id_herramienta) VALUES
@@ -721,6 +768,7 @@ INSERT INTO Registro_compra_herramienta (id_reg_herramienta, fecha_registro, Des
 (18, '2025-01-22', 'Compra de medidores eléctricos', 45, 2, 18, 18),
 (19, '2025-02-05', 'Compra de baterías recargables', 100, 4, 19, 19),
 (20, '2025-02-18', 'Compra de kits de primeros auxilios', 25, 2, 20, 20);
+<<<<<<< HEAD
 
 -- Estado
 INSERT INTO Estado_pedido (id_estado_pedido, nombre_estado) VALUES
@@ -761,6 +809,9 @@ COPY Notificaciones FROM '..\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
 
 
 
+=======
+ 
+>>>>>>> fcc241c151d894d3ffdc721578b598c893cffa1b
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
 VALUES 

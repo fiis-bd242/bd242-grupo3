@@ -1,0 +1,11 @@
+﻿id_proveedor,ruc,empresa,contacto,email,categoria,telefono,direccion
+41,20456789001, SoporteTech S.A.C.,Juan Pérez,juan.perez@soportetech.com, Equipos de Soporte, 987654321, Av. Las Flores 123 Lima
+42,20654321002, 'Mantenimiento & Cía.', 'María López', 'maria.lopez@mantenimiento.com', 'Equipos de Soporte', '987123456', 'Calle Los Olivos 456 Arequipa'
+43,20567890103, 'Servicios Técnicos S.R.L.', 'Carlos Gómez', 'carlos.gomez@serviciostecnicos.com', 'Equipos de Soporte', '964587321', 'Jr. Libertad 789 Trujillo'
+44,20789012304, 'Proveedores de Tecnología', 'Laura Salazar', 'laura.salazar@protech.com', 'Equipos de Soporte', '963852741', 'Av. La Paz 234 Cusco'
+45,20432109805, 'Equipos y Suministros', 'Fernando Torres', 'fernando.torres@equipossuministros.com', 'Equipos de Soporte', '951753852', 'Calle San Martín 321 Piura'
+46,20876543206, 'Soluciones Técnicas S.A.', 'Lucía Fernández', 'lucia.fernandez@soltec.com', 'Equipos de Soporte', '958963214', 'Av. Universitaria 654 Ica'
+47,20678901207, 'Mantenimiento Integral', 'Diego Castillo', 'diego.castillo@mantenimiento.com', 'Equipos de Soporte', '972654123', 'Calle Los Reyes 987 Huancayo'
+48,20543210908, 'Técnica y Progreso', 'Sara Morales', 'sara.morales@tecnicayprogreso.com', 'Equipos de Soporte', '967854321', 'Av. El Sol 135 Tarapoto'
+49,20987654309, 'Servicios y Equipos', 'Ricardo Jiménez', 'ricardo.jimenez@servicyequipos.com', 'Equipos de Soporte', '989745236', 'Jr. Moquegua 147 Cajamarca'
+50,20456789010, 'Proyectos Tecnológicos', 'Ana Ruiz', 'ana.ruiz@proyectostec.com', 'Equipos de Soporte', '955632147', 'Calle La Libertad 258 Puno'

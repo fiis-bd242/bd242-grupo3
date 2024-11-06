@@ -17,14 +17,15 @@ CREATE TABLE Acceso_empleado
 DROP TABLE IF EXISTS Proveedor CASCADE;
 CREATE TABLE Proveedor
 (
-  RUC INT NOT NULL,
+  id_proveedor INT NOT NULL,
+  RUC CHAR(11) NOT NULL,
   Empresa VARCHAR(255) NOT NULL,
   Contacto VARCHAR(255) NOT NULL,
   Email VARCHAR(255) NOT NULL,
   Categoria VARCHAR(255) NOT NULL,
   Telefono CHAR(20) NOT NULL,
   Direccion VARCHAR(255) NOT NULL,
-  PRIMARY KEY (RUC)
+  PRIMARY KEY (id_proveedor)
 );
 
 DROP TABLE IF EXISTS Herramienta CASCADE;
@@ -34,14 +35,6 @@ CREATE TABLE Herramienta
   Cantidad INT NOT NULL,
   Nombre VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_herramienta)
-);
-
-DROP TABLE IF EXISTS Estado_Compra CASCADE;
-CREATE TABLE Estado_Compra
-(
-  Id_estado_pedido INT NOT NULL,
-  nombre_estado VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Id_estado_pedido)
 );
 
 DROP TABLE IF EXISTS Criticidad CASCADE;
@@ -124,12 +117,11 @@ CREATE TABLE Orden_de_compra
   Id_orden_compra INT NOT NULL,
   Fecha_emision DATE NOT NULL,
   Fecha_posible_entrega DATE NOT NULL,
-  Descripcion VARCHAR(255) NOT NULL,
-  RUC_proveedor INT NOT NULL,
+  id_proveedor INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
   Id_empleado INT NOT NULL,
   PRIMARY KEY (Id_orden_compra),
-  FOREIGN KEY (RUC_proveedor) REFERENCES Proveedor(RUC),
+  FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor),
   FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
@@ -376,6 +368,18 @@ CREATE TABLE Mantenimiento
   FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento(id_tipo_mant),
   FOREIGN KEY (id_maquina) REFERENCES Maquina(Id_maquina),
   FOREIGN KEY (id_estado) REFERENCES Estado_mantto(id_estado)
+);
+
+DROP TABLE IF EXISTS EquipoSXMantenimiento CASCADE;
+CREATE TABLE EquipoSXMantenimiento
+(
+  id_equipo_mant INT NOT NULL,
+  cantidad INT NOT NULL,
+  Id_Act_mantto INT NOT NULL,
+  Id_equipo_soporte INT NOT NULL,
+  PRIMARY KEY (id_equipo_mant),
+  FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto),
+  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
 );
 
 DROP TABLE IF EXISTS HerramientaXMantenimiento CASCADE;
