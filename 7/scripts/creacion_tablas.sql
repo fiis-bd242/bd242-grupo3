@@ -13,30 +13,35 @@ CREATE TABLE Acceso_empleado
     Nombre_acceso VARCHAR(50) NOT NULL,
     PRIMARY KEY (Id_acceso)
 );
-
 DROP TABLE IF EXISTS Proveedor CASCADE;
 CREATE TABLE Proveedor
 (
-  id_proveedor INT NOT NULL,
-  RUC CHAR(11) NOT NULL,
+  Id_proveedor INT NOT NULL,
+  RUC INT NOT NULL,
   Empresa VARCHAR(255) NOT NULL,
   Contacto VARCHAR(255) NOT NULL,
   Email VARCHAR(255) NOT NULL,
   Categoria VARCHAR(255) NOT NULL,
-  Telefono CHAR(20) NOT NULL,
+  Telefono CHAR NOT NULL,
   Direccion VARCHAR(255) NOT NULL,
-  PRIMARY KEY (id_proveedor)
+  Ciudad VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_proveedor)
 );
-
-DROP TABLE IF EXISTS Herramienta CASCADE;
-CREATE TABLE Herramienta
+DROP TABLE IF EXISTS Estado_reserva CASCADE;
+CREATE TABLE Estado_reserva
 (
-  Id_herramienta INT NOT NULL,
+  Id_estado_reserva SERIAL NOT NULL,
+  Nombre_estado VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_estado_reserva)
+);
+DROP TABLE IF EXISTS Insumo CASCADE;
+CREATE TABLE Insumo
+(
+  Id_insumo SERIAL NOT NULL,
   Cantidad INT NOT NULL,
   Nombre VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Id_herramienta)
+  PRIMARY KEY (Id_insumo)
 );
-
 DROP TABLE IF EXISTS Criticidad CASCADE;
 CREATE TABLE Criticidad
 (
@@ -77,6 +82,36 @@ CREATE TABLE Plan_de_mantenimiento
   PRIMARY KEY (Id_plan),
   FOREIGN KEY (Empleado_asigna) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (Id_criticidad) REFERENCES Criticidad(Id_criticidad)
+);
+DROP TABLE IF EXISTS Reserva CASCADE;
+CREATE TABLE Reserva
+(
+  Id_reserva INT NOT NULL,
+  Fecha DATE NOT NULL,
+  Hora TIME NOT NULL,
+  Id_estado_reserva INT NOT NULL,
+  Id_empleado INT NOT NULL,
+  PRIMARY KEY (Id_reserva),
+  FOREIGN KEY (Id_estado_reserva) REFERENCES Estado_reserva(Id_estado_reserva),
+  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
+);
+DROP TABLE IF EXISTS Detalle_reserva CASCADE;
+CREATE TABLE Detalle_reserva
+(
+  Id_detalle SERIAL NOT NULL,
+  Cant_reserv INT NOT NULL,
+  Id_insumo INT NOT NULL,
+  Id_reserva INT NOT NULL,
+  PRIMARY KEY (Id_detalle),
+  FOREIGN KEY (Id_insumo) REFERENCES Insumo(Id_insumo),
+  FOREIGN KEY (Id_reserva) REFERENCES Reserva(Id_reserva)
+);
+DROP TABLE IF EXISTS Detalle_reserva_temporal CASCADE;
+CREATE TABLE Detalle_reserva_temporal (
+    id_temporal SERIAL PRIMARY KEY,
+    Cant_reserv INT,
+    Id_insumo INT,
+    Id_reserva INT
 );
 
 DROP TABLE IF EXISTS Tipo_Urgencia CASCADE;
@@ -164,7 +199,17 @@ CREATE TABLE Almacen
   FOREIGN KEY (Id_estado) REFERENCES Estado_Almacen(Id_estado),
   FOREIGN KEY (Id_categoria) REFERENCES Categoria_Almacen(Id_categoria)
 );
-
+DROP TABLE IF EXISTS Insumoxalmacen CASCADE;
+CREATE TABLE Insumoxalmacen
+(
+  Id_insum_alm SERIAL NOT NULL,
+  Cantidad INT NOT NULL,
+  Id_insumo INT NOT NULL,
+  Id_almacen INT NOT NULL,
+  PRIMARY KEY (Id_insum_alm),
+  FOREIGN KEY (Id_insumo) REFERENCES Insumo(Id_insumo),
+  FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen)
+);
 DROP TABLE IF EXISTS Tipo_Equipo_Soporte CASCADE;
 CREATE TABLE Tipo_Equipo_Soporte
 (
@@ -280,22 +325,6 @@ CREATE TABLE ActvempleadoXOrdenTrabajo
   FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
 );
 
-DROP TABLE IF EXISTS Registro_compra_herramienta CASCADE;
-CREATE TABLE Registro_compra_herramienta
-(
-  Id_reg_herramienta INT NOT NULL,
-  Fecha_registro DATE NOT NULL,
-  Descripcion VARCHAR(255) NOT NULL,
-  Cantidad INT NOT NULL,
-  Id_almacen INT NOT NULL,
-  Id_orden_compra INT NOT NULL,
-  Id_herramienta INT NOT NULL,
-  PRIMARY KEY (Id_reg_herramienta),
-  FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen),
-  FOREIGN KEY (Id_orden_compra) REFERENCES Orden_de_compra(Id_orden_compra),
-  FOREIGN KEY (Id_herramienta) REFERENCES Herramienta (Id_herramienta)
-);
-
 DROP TABLE IF EXISTS Tipo_maquina CASCADE;
 CREATE TABLE Tipo_maquina
 (
@@ -369,6 +398,17 @@ CREATE TABLE Mantenimiento
   FOREIGN KEY (id_maquina) REFERENCES Maquina(Id_maquina),
   FOREIGN KEY (id_estado) REFERENCES Estado_mantto(id_estado)
 );
+DROP TABLE IF EXISTS InsumoXMantenimiento CASCADE;
+CREATE TABLE InsumoXMantenimiento
+(
+  Id_insum_mant SERIAL NOT NULL,
+  Cantidad INT NOT NULL,
+  Id_Act_mantto INT NOT NULL,
+  Id_insumo INT NOT NULL,
+  PRIMARY KEY (Id_insum_mant),
+  FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto),
+  FOREIGN KEY (Id_insumo) REFERENCES Insumo(Id_insumo)
+);
 
 DROP TABLE IF EXISTS EquipoSXMantenimiento CASCADE;
 CREATE TABLE EquipoSXMantenimiento
@@ -382,16 +422,6 @@ CREATE TABLE EquipoSXMantenimiento
   FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
 );
 
-DROP TABLE IF EXISTS HerramientaXMantenimiento CASCADE;
-CREATE TABLE HerramientaXMantenimiento
-(
-  Id_HerrXMantto INT NOT NULL,
-  Id_Act_mantto INT NOT NULL,
-  Id_herramienta INT NOT NULL,
-  PRIMARY KEY (Id_HerrXMantto),
-  FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto),
-  FOREIGN KEY (Id_herramienta) REFERENCES Herramienta (Id_herramienta)
-);
 
 DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
 CREATE TABLE Identificacion_del_riesgo
