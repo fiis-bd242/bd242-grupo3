@@ -70,7 +70,7 @@ VALUES
 -- Poblamiento de la tabla Almacen
 COPY Almacen FROM 'C:\DBD-2024-2\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
 --Poblamiento insumo
-COPY Insumo (Cantidad, Nombre)
+COPY Insumo (Id_insumo,Cantidad, Nombre)
 FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Insumo.csv'
 DELIMITER ','
 CSV HEADER;
@@ -86,7 +86,7 @@ FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Reserva.csv'
 DELIMITER ','
 CSV HEADER;
 --Poblamiento Detalle_reserva
-COPY Detalle_reserva (Cant_reserv, Id_insumo,Id_reserva)
+COPY Detalle_reserva (Id_detalle,Cant_reserv, Id_insumo,Id_reserva)
 FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\detalle_reserva.csv'
 DELIMITER ','
 CSV HEADER;
@@ -614,4 +614,3 @@ VALUES
 (9, 2, '2024-10-09 16:00:00', 'fastPass567', 'user9@example.com', 'Revocado'),
 (10, 2, '2024-10-10 17:45:00', 'finalPass890', 'user10@example.com', 'Deshabilitado');
 */
-
