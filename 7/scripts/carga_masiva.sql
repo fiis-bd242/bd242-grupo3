@@ -627,8 +627,12 @@ INSERT INTO HerramientaXMantenimiento (Id_HerrXMantto, Id_Act_mantto, Id_Herrami
 (19, 19, 19),
 (20, 20, 20);
 
--- Proveedor
-INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direccion) VALUES
+-- Poblamiento de la tabla Proveedor
+COPY proveedor FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Proveedor.csv' DELIMITER ',' CSV HEADER;
+
+/*
+INSERT INTO Proveedor (id_proveedor, ruc, Empresa, Contacto, Email, Categoria, Telefono, Direccion) 
+VALUES
 ('20512345678', 'Herramientas S.A.', 'Juan Pérez', 'juan@herramientas.com', 'Herramientas', '123456789', 'Calle Los Alamos 123'),
 ('20512345679', 'Industria Taladro SAC', 'María Gómez', 'maria@taladro.com', 'Maquinaria', '987654321', 'Av. La Industria 456'),
 ('20512345680', 'Clavos del Norte SRL', 'Pedro Ruiz', 'pedro@clavos.com', 'Ferretería', '456789123', 'Calle Norte 789'),
@@ -649,7 +653,7 @@ INSERT INTO Proveedor (RUC, Empresa, Contacto, Email, Categoria, Telefono, Direc
 ('20512345695', 'Medidores del Este S.A.', 'Fernanda López', 'fernanda@medidores.com', 'Electricidad', '789123654', 'Av. Este 654'),
 ('20512345696', 'Baterías Recargables SAC', 'Javier Delgado', 'javier@baterias.com', 'Electricidad', '654789123', 'Calle Recarga 987'),
 ('20512345697', 'Primera Ayuda SAC', 'Clara Huamán', 'clara@primerosauxilios.com', 'Salud', '321987123', 'Av. Emergencia 321');
-
+*/
 
 -- Poblamiento de la tabla Orden_de_compra
 COPY orden_de_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Orden_de_Compra.csv' DELIMITER ',' CSV HEADER;

@@ -117,7 +117,6 @@ CREATE TABLE Orden_de_compra
   Id_orden_compra INT NOT NULL,
   Fecha_emision DATE NOT NULL,
   Fecha_posible_entrega DATE NOT NULL,
-  Descripcion VARCHAR(255) NOT NULL,
   id_proveedor INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
   Id_empleado INT NOT NULL,
