@@ -915,7 +915,6 @@ INSERT INTO Pedido (Id_pedido, Cant_pedid, Fecha, Est_inactividad, Id_herramient
 (19, 100, '2025-01-25', '0', 19, 19, 1),
 (20, 25, '2025-02-05', '1', 20, 20, 2);
 
- 
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
 VALUES 
