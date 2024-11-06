@@ -68,7 +68,7 @@ VALUES
 (2, 'Inactivo');
 
 -- Poblamiento de la tabla Almacen
-COPY Almacen FROM 'C:\DBD-2024-2\Almacen.csv' DELIMITER ',' CSV HEADER;
+COPY Almacen FROM 'C:\DBD-2024-2\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -93,66 +93,10 @@ VALUES
 (4, 'Deficiente');
 
 -- Poblamiento de la tabla Equipo_de_Soporte
-INSERT INTO Equipo_de_Soporte (Id_equipo_soporte, Nombre_equipo_soporte, Fecha_adquisicion, Descripcion, Horas_uso, Id_estado, Id_disponibilidad, Id_tipo) 
-VALUES 
-(1, 'Generador electrico', 5, '2020-05-10', 'Generador electrico de emergencia', 1000, 3, 2, 1),
-(2, 'Radio portatil', 2, '2018-07-15', 'Radios para comunicación en zonas remotas', 1200, 3, 2, 3),
-(3, 'Torre de iluminación', 4, '2021-03-05', 'Torre movil de iluminación', 300, 3, 2, 4),
-(4, 'Cámara de Seguridad', 1 , '2023-01-15', 'Cámara de alta resolución para monitoreo de áreas críticas', 500, 3, 2, 1),
-(5, 'Detector de Gas', 3, '2023-02-10', 'Detector de gases tóxicos para asegurar la calidad del aire', 300, 3, 2, 1),
-(6, 'Botiquín de Primeros Auxilios', 4, '2023-05-20', 'Contiene suministros básicos para atención médica de emergencia', 100, 3, 2, 1),
-(7, 'Dispositivo de Monitoreo de Fatiga', 4, '2023-06-15', 'Monitorea el estado de alerta de los trabajadores', 250, 3, 2, 1),
-(8, 'Carretillas elevadoras (montacargas)', 5, '2022-04-12', 'Vehículos diseñados para levantar, transportar y organizar materiales pesados dentro del almacén o la planta', 500, 3, 2, 1),
-(9, 'Comprensor de aire', 5, '2021-05-10', 'Equipos que generan aire comprimido para alimentar herramientas neumáticas o para tareas de limpieza en entornos industriales', 400, 3, 2, 2),
-(10, 'EquipoA', 5, '2021-05-10', 'Descripcion A', 100, 3, 2, 1),
-(11, 'EquipoB', 5, '2021-05-11', 'Descripcion B', 100, 3, 2, 1),
-(12, 'EquipoC', 5, '2021-05-12', 'Descripcion C', 100, 3, 2, 1),
-(13, 'EquipoD', 5, '2021-05-13', 'Descripcion D', 100, 3, 2, 1),
-(14, 'EquipoE', 5, '2021-05-14', 'Descripcion E', 100, 3, 2, 1),
-(15, 'EquipoF', 5, '2021-05-15', 'Descripcion F', 100, 3, 2, 1),
-(16, 'EquipoG', 5, '2021-05-16', 'Descripcion G', 100, 3, 2, 1),
-(17, 'EquipoH', 5, '2021-05-17', 'Descripcion H', 100, 3, 2, 1),
-(18, 'EquipoI', 5, '2021-05-18', 'Descripcion I', 100, 3, 2, 1),
-(19, 'EquipoJ', 5, '2021-05-19', 'Descripcion J', 100, 3, 2, 1),
-(20, 'EquipoK', 5, '2021-12-10', 'Descripcion K', 100, 3, 2, 1),
-(21, 'EquipoL', 5, '2021-09-11', 'Descripcion L', 100, 3, 2, 1),
-(22, 'EquipoM', 5, '2021-08-12', 'Descripcion M', 100, 3, 2, 1),
-(23, 'EquipoN', 5, '2021-07-13', 'Descripcion N', 100, 3, 2, 1),
-(24, 'EquipoÑ', 5, '2021-05-10', 'Descripcion Ñ', 100, 3, 2, 1),
-(25, 'EquipoO', 5, '2021-05-11', 'Descripcion O', 100, 3, 2, 1),
-(26, 'EquipoP', 5, '2021-05-12', 'Descripcion P', 100, 3, 2, 1),
-(27, 'EquipoQ', 5, '2021-05-13', 'Descripcion Q', 100, 3, 2, 1),
-(28, 'EquipoR', 5, '2021-05-14', 'Descripcion R', 100, 3, 2, 1),
-(29, 'EquipoS', 5, '2021-05-15', 'Descripcion S', 100, 3, 2, 1),
-(30, 'EquipoT', 5, '2021-05-16', 'Descripcion T', 100, 3, 2, 1),
-(31, 'EquipoU', 5, '2021-05-17', 'Descripcion U', 100, 3, 2, 1),
-(32, 'EquipoV', 5, '2021-05-18', 'Descripcion V', 100, 3, 2, 1),
-(33, 'EquipoW', 5, '2021-05-19', 'Descripcion W', 100, 3, 2, 1),
-(34, 'EquipoX', 5, '2021-12-10', 'Descripcion X', 100, 3, 2, 1),
-(35, 'EquipoY', 5, '2021-09-11', 'Descripcion Y', 100, 3, 2, 1),
-(36, 'EquipoZ', 5, '2021-08-12', 'Descripcion Z', 100, 3, 2, 1),
-(37, 'EquipoAA', 5, '2021-07-13', 'Descripcion AA', 100, 3, 2, 1),
-(38, 'EquipoAB', 5, '2021-05-10', 'Descripcion AB', 100, 3, 2, 1),
-(39, 'EquipoAC', 5, '2021-05-11', 'Descripcion AC', 100, 3, 2, 1),
-(40, 'EquipoAD', 5, '2021-05-12', 'Descripcion AD', 100, 3, 2, 1),
-(41, 'EquipoAE', 5, '2021-05-12', 'Descripcion AE', 100, 3, 2, 1),
-(42, 'EquipoAF', 5, '2021-05-13', 'Descripcion AF', 100, 3, 2, 1),
-(43, 'EquipoAG', 5, '2021-05-14', 'Descripcion AG', 100, 3, 2, 1),
-(44, 'EquipoAH', 5, '2021-05-15', 'Descripcion AH', 100, 3, 2, 1),
-(45, 'EquipoAI', 5, '2021-05-16', 'Descripcion AI', 100, 3, 2, 1),
-(46, 'EquipoAJ', 5, '2021-05-17', 'Descripcion AJ', 100, 3, 2, 1),
-(47, 'EquipoAK', 5, '2021-05-18', 'Descripcion AK', 100, 3, 2, 1),
-(48, 'EquipoAL', 5, '2021-05-19', 'Descripcion AL', 100, 3, 2, 1),
-(49, 'EquipoAM', 5, '2021-12-10', 'Descripcion AM', 100, 3, 2, 1),
-(50, 'EquipoAN', 5, '2021-09-11', 'Descripcion AN', 100, 3, 2, 1),
-(51, 'EquipoAÑ', 5, '2021-08-12', 'Descripcion AÑ', 100, 3, 2, 1),
-(52, 'EquipoAO', 5, '2021-08-12', 'Descripcion AO', 100, 3, 1, 1),
-(53, 'EquipoAP', 5, '2021-07-13', 'Descripcion AP', 100, 3, 1, 1),
-(54, 'Bomba de agua portatil', 5, '2023-12-10', 'Equipos utilizados para desaguar áreas de trabajo o para transportar agua en situaciones de emergencia o mantenimiento', 1000, 3, 1, 2);
-
+COPY Equipo_de_Soporte FROM 'C:\DBD-2024-2\datos\Equipo_de_Soporte.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla EquipoSXAlmacen
-COPY equiposxalmacen FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
+COPY equiposxalmacen FROM 'C:\DBD-2024-2\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla Actividad_empleado
 COPY actividad_empleado FROM 'C:\DBD-2024-2\datos\Actividad_empleado.csv' DELIMITER ',' CSV HEADER;
@@ -483,28 +427,8 @@ INSERT INTO Estado_mantto (id_estado, estado) VALUES
 (7, 'Auditado');
 
 -- Poblamiento de la tabla Mantenimiento
-INSERT INTO Mantenimiento (Id_Act_mantto, Descripcion, Tarea, Peligros, Fecha_inicio_programado, Fecha_fin_programado, Id_Orden, Id_plan, id_maquina, id_tipo_mant)
-VALUES
-(1, 'Reemplazo de motor principal en la línea de producción', 'Cambio de motor', 'Golpes y caídas durante la instalación', '2024-01-08', '2024-01-10', 1, 1, 1, 2),
-(2, 'Revisión del sistema de control eléctrico y ajuste de cables', 'Inspección y ajuste de conexiones', 'Descarga eléctrica', '2024-02-10', '2024-02-15', 2, 2, 2, 2),
-(3, 'Inspección de seguridad de maquinaria en la planta de ensamblaje', 'Revisión de sistemas de seguridad', 'Golpes y aplastamientos', '2024-03-15', '2024-03-20', 3, 3, 3, 3),
-(4, 'Mantenimiento preventivo en maquinaria del área de pintura', 'Limpieza y lubricación de componentes', 'Inhalación de productos químicos', '2024-04-20', '2024-04-25', 4, 4, 4, 1),
-(5, 'Reemplazo de filtros del sistema de ventilación', 'Cambio de filtros', 'Inhalación de polvo', '2024-05-25', '2024-05-30', 5, 5, 5, 2),
-(6, 'Actualización de software de monitoreo del sistema', 'Instalación y configuración de software', 'Caída del sistema', '2024-06-01', '2024-06-05', 6, 6, 6, 3),
-(7, 'Inspección y revisión de maquinaria pesada', 'Evaluación estructural y funcional', 'Aplastamientos y caídas', '2024-07-05', '2024-07-10', 7, 7, 7, 1),
-(8, 'Reparación del sistema hidráulico', 'Sustitución de mangueras y ajuste de válvulas', 'Fugas de fluidos y sobrepresión', '2024-08-10', '2024-08-15', 8, 8, 8, 2),
-(9, 'Evaluación del sistema de refrigeración en toda la planta', 'Pruebas de rendimiento y ajuste', 'Sobrecarga térmica', '2024-09-15', '2024-09-20', 9, 9, 9, 3),
-(10, 'Verificación y ajuste de sistemas de alarma en el área de producción', 'Revisión de sensores y conexiones', 'Falsos positivos', '2024-10-20', '2024-10-25', 10, 10, 10, 1),
-(11, 'Mantenimiento del sistema de iluminación de la planta', 'Sustitución de lámparas y ajuste de conexiones', 'Cortes eléctricos', '2024-11-01', '2024-11-05', 11, 11, 11, 2),
-(12, 'Revisión de protocolos de seguridad y sistemas asociados', 'Inspección de procedimientos de emergencia', 'Fallas en la detección de emergencias', '2024-12-05', '2024-12-10', 12, 12, 12, 3),
-(13, 'Actualización y ajuste de maquinaria en la línea de ensamblaje', 'Instalación de nuevos componentes', 'Golpes y atrapamientos', '2025-01-10', '2025-01-15', 13, 13, 13, 1),
-(14, 'Inspección del sistema de control de calidad', 'Revisión de calibración de equipos', 'Errores de medición', '2025-02-15', '2025-02-20', 14, 14, 14, 2),
-(15, 'Reemplazo de componentes electrónicos obsoletos', 'Sustitución de tarjetas y circuitos', 'Cortocircuitos y fallos eléctricos', '2025-03-20', '2025-03-25', 15, 15, 15, 3),
-(16, 'Optimización de la línea de empaquetado', 'Reconfiguración de maquinaria', 'Fallas mecánicas y paradas imprevistas', '2025-04-25', '2025-04-30', 16, 16, 16, 1),
-(17, 'Evaluación bimestral del sistema de ventilación', 'Limpieza de ductos y ajuste de ventiladores', 'Inhalación de polvo', '2025-05-01', '2025-05-05', 17, 17, 17, 2),
-(18, 'Mantenimiento preventivo de sistemas de refrigeración', 'Ajuste de compresores y verificación de fluidos', 'Sobrecarga de sistemas', '2025-06-05', '2025-06-10', 18, 18, 18, 3),
-(19, 'Revisión trimestral de sistemas de alarma', 'Verificación y ajuste de sensores', 'Falsos positivos y fallos de detección', '2025-07-10', '2025-07-15', 19, 19, 19, 1),
-(20, 'Actualización de software de control semestral', 'Instalación de nuevas versiones de software', 'Errores en el sistema', '2025-08-15', '2025-08-20', 20, 20, 20, 2);
+COPY mantenimiento FROM 'C:\DBD-2024-2\datos\Mantenimiento.csv' DELIMITER ',' CSV HEADER;
+
 
 -- Poblamiento de la tabla EquipoSXMantenimiento
 COPY equiposxmantenimiento FROM 'C:\DBD-2024-2\datos\EquipoSXMantenimiento.csv' DELIMITER ',' CSV HEADER;
