@@ -69,7 +69,27 @@ VALUES
 
 -- Poblamiento de la tabla Almacen
 COPY Almacen FROM 'C:\DBD-2024-2\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
-
+--Poblamiento insumo
+COPY Insumo (Cantidad, Nombre)
+FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Insumo.csv'
+DELIMITER ','
+CSV HEADER;
+---Poblamiento Estado_reserva
+INSERT INTO Estado_reserva (Id_estado_reserva, Nombre_estado) VALUES
+(0, 'Inactivo'),
+(1, 'Aprobado'),
+(2, 'En proceso de envío'),
+(3, 'Enviado');
+--Poblamiento Reserva
+COPY Reserva (Id_reserva, Fecha,Hora,Id_estado_reserva,Id_empleado)
+FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Reserva.csv'
+DELIMITER ','
+CSV HEADER;
+--Poblamiento Detalle_reserva
+COPY Detalle_reserva (Cant_reserv, Id_insumo,Id_reserva)
+FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\detalle_reserva.csv'
+DELIMITER ','
+CSV HEADER;
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
 (1, 'Generador'),
