@@ -402,6 +402,18 @@ CREATE TABLE Identificacion_del_riesgo
   PRIMARY KEY (Id_riesgo)
 );
 
+
+DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
+CREATE TABLE Identificacion_del_riesgo
+(
+  Descripcion_peligro CHAR(255) NOT NULL,
+  Evento_no_deseado CHAR(255) NOT NULL,
+  id_tarea INT NOT NULL,
+  Id_riesgo INT NOT NULL,
+  PRIMARY KEY (Id_riesgo),
+  FOREIGN KEY (id_tarea) REFERENCES tareas(id_tarea)
+);
+
 DROP TABLE IF EXISTS Tipos_Contacto CASCADE;
 CREATE TABLE Tipos_Contacto
 (
@@ -505,10 +517,12 @@ CREATE TABLE Valoracion_del_riesgo_inicial
   Id_tipo_severidad CHAR(2) NOT NULL,
   Id_tipo_probabilidad CHAR(5) NOT NULL,
   Id_tipo_riesgo CHAR(2) NOT NULL,
+  Id_analisis INT NOT NULL,  -- Relación con Analisis_riesgo
   PRIMARY KEY (id_valoracion_inicial),
   FOREIGN KEY (Id_tipo_severidad) REFERENCES Tipo_Severidad(Id_tipo_severidad),
   FOREIGN KEY (Id_tipo_probabilidad) REFERENCES Tipo_Probabilidad(Id_tipo_probabilidad),
-  FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo)
+  FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo),
+  FOREIGN KEY (Id_analisis) REFERENCES Analisis_riesgo(Id_analisis)
 );
 
 DROP TABLE IF EXISTS Actividades CASCADE;
@@ -535,15 +549,6 @@ CREATE TABLE Tareas
 
 
 
-DROP TABLE IF EXISTS TareasXIdentRiesgo CASCADE;
-CREATE TABLE TareasXIdentRiesgo
-(
-  Id_tarea INT NOT NULL,
-  Id_riesgo INT NOT NULL,
-  PRIMARY KEY (Id_tarea, Id_riesgo),
-  FOREIGN KEY (Id_tarea) REFERENCES Tareas(Id_tarea),
-  FOREIGN KEY (Id_riesgo) REFERENCES Identificacion_del_riesgo(Id_riesgo)
-);
 
 DROP TABLE IF EXISTS Valoracion_del_riesgo CASCADE;
 CREATE TABLE Valoracion_del_riesgo
@@ -556,6 +561,7 @@ CREATE TABLE Valoracion_del_riesgo
   FOREIGN KEY (Id_valoracion_inicial) REFERENCES Valoracion_del_riesgo_inicial(id_valoracion_inicial),
   FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo)
 );
+
 
 DROP TABLE IF EXISTS Control CASCADE;
 CREATE TABLE Control
@@ -604,18 +610,16 @@ CREATE TABLE EquipoEvaluadorXEmpleado (
     FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado)
 );
 
--- Eliminar y crear la tabla Informe_IPERC
 DROP TABLE IF EXISTS Informe_IPERC CASCADE;
-CREATE TABLE Informe_IPERC
-(
-  Id_informe_iperc INT NOT NULL,
-  Fecha_registro DATE NOT NULL,
-  Cant_riesgos_analizados INT NOT NULL,
-  Unidad_minera CHAR(50) NOT NULL,
-  Area CHAR(50) NOT NULL,
-  Id_proceso INT NOT NULL,
-  PRIMARY KEY (Id_informe_iperc),
-  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
+CREATE TABLE Informe_IPERC (
+  id_informe_iperc SERIAL PRIMARY KEY,
+  id_proceso INT NOT NULL,
+  fecha_registro DATE NOT NULL,
+  fecha_act_sup DATE NOT NULL,
+  fecha_act_seg DATE NOT NULL,
+  unidad_minera CHAR(50) NOT NULL,
+  area CHAR(50) NOT NULL,
+  FOREIGN KEY (id_proceso) REFERENCES proceso(id_proceso)
 );
 
 
