@@ -30,12 +30,6 @@ INSERT INTO Criticidad (Id_criticidad, Nivel) VALUES
 (2, 'Medio'),
 (3, 'Alto');
 
--- Poblamiento de la tabla Estado_mantto
-INSERT INTO Estado_mantto (id_estado, estado) VALUES
-(1, 'Pendiente'),
-(2, 'En curso'),
-(3, 'Completa');
-
 -- Poblamiento de la tabla Empleado
 COPY empleado FROM 'C:\DBD-2024-2\datos\Empleado.csv' DELIMITER ',' CSV HEADER;
 
@@ -69,11 +63,18 @@ VALUES
 
 -- Poblamiento de la tabla Almacen
 COPY Almacen FROM 'C:\DBD-2024-2\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
+
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xf3 0x6e 0x0d 0x0a
+CONTEXT:  COPY insumo, line 4
+AYUDA: Revisa la codificación del csv, posiblemente no sea UTF8 (por esto las tildes generan problemas)
 --Poblamiento insumo
 COPY Insumo (Id_insumo,Cantidad, Nombre)
-FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Insumo.csv'
-DELIMITER ','
+FROM 'C:\DBD-2024-2\datos\Insumo.csv'
+DELIMITER ';'
 CSV HEADER;
+*/
+
 ---Poblamiento Estado_reserva
 INSERT INTO Estado_reserva (Id_estado_reserva, Nombre_estado) VALUES
 (0, 'Inactivo'),
@@ -82,14 +83,19 @@ INSERT INTO Estado_reserva (Id_estado_reserva, Nombre_estado) VALUES
 (3, 'Enviado');
 --Poblamiento Reserva
 COPY Reserva (Id_reserva, Fecha,Hora,Id_estado_reserva,Id_empleado)
-FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Reserva.csv'
+FROM 'C:\DBD-2024-2\datos\Reserva.csv'
 DELIMITER ','
 CSV HEADER;
+
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+AYUDA: Es necesario corregir la tabla insumo primero
 --Poblamiento Detalle_reserva
 COPY Detalle_reserva (Id_detalle,Cant_reserv, Id_insumo,Id_reserva)
-FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\detalle_reserva.csv'
-DELIMITER ','
+FROM 'C:\DBD-2024-2\datos\detalle_reserva.csv'
+DELIMITER ';'
 CSV HEADER;
+*/
+
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
 (1, 'Generador'),
@@ -243,8 +249,12 @@ COPY proceso FROM 'C:\DBD-2024-2\datos\proceso.csv' DELIMITER ',' CSV HEADER;
 -- Poblamiento de tabla actividades
 COPY actividades FROM 'C:\DBD-2024-2\datos\actividades.csv' DELIMITER ',' CSV HEADER;
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+ERROR:  Ya existe la llave (id_tarea)=(88).llave duplicada viola restricción de unicidad «tareas_pkey»
+AYUDA: Hazlo con Mockaroo para evitar que se repita el id
 -- Poblamiento de tabla tareas
 COPY tareas FROM 'C:\DBD-2024-2\datos\tareas.csv' DELIMITER ',' CSV HEADER;
+*/
 
 -- Poblamiento de tabla Identificacion_del_riesgo
 COPY Identificacion_del_riesgo FROM 'C:\DBD-2024-2\datos\Identificacion_del_riesgo.csv' DELIMITER ',' CSV HEADER;
@@ -377,59 +387,14 @@ VALUES
 (5, 9), (6, 9), (7, 9),
 (8, 10), (9, 10), (10, 10);
 
-
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+AYUDA: USA INT, NO SERIAL PARA EL ID
 -- EstadoReporte
 INSERT INTO Estado_Reporte (nombre_estado) VALUES 
 ('No Verificado'),
 ('Verificado'),
 ('Notificado');
-
--- Reportes
-INSERT INTO Reportes (Fecha_reporte, Id_estado_reporte, Id_supervisor, id_jefe) VALUES 
-('2024-09-15', 1, 1, 2),
-('2024-09-16', 2, 1, 2),
-('2024-09-17', 3, 1, 3),
-('2024-09-18', 1, 2, 3),
-('2024-09-19', 2, 2, 2),
-('2024-09-20', 3, 2, 2),
-('2024-09-21', 1, 3, 3),
-('2024-09-22', 2, 3, 2),
-('2024-09-23', 3, 3, 2),
-( '2024-09-24',1, 1, 2);
-
--- Registro
-INSERT INTO Registro ( Fecha_registro, Fecha_inicial, Id_empleado, Id_act_mantto, Calificacion, Observaciones) VALUES 
-('2024-09-15', '2024-09-14', 1, 1, 2, 'Reparación de caldera'),
-('2024-09-16', '2024-09-15', 1, 2, 3, 'Mantenimiento preventivo'),
-('2024-09-17', '2024-09-16', 2, 3, 5, 'Cambio de filtros'),
-('2024-09-18', '2024-09-17', 2, 1, 4, 'Reparación de válvulas'),
-('2024-09-19', '2024-09-18', 3, 2, 1, 'Mantenimiento general'),
-('2024-09-20', '2024-09-19', 3, 3, 5, 'Inspección de equipos'),
-('2024-09-21', '2024-09-20', 1, 1, 1, 'Instalación de nuevos sistemas'),
-('2024-09-22', '2024-09-21', 2, 2, 2, 'Mantenimiento correctivo'),
-('2024-09-23', '2024-09-22', 3, 3, 2, 'Actualización de software'),
-( '2024-09-24', '2024-09-23', 1, 1, 3, 'Reparación de fugas');
-
--- Incidencias Tags
-INSERT INTO Incidencias_Tags (Incidencia,id_Registro) VALUES
-('Lentitud Personal', 1),
-('Falta de Material', 2),
-('Maquinaria Insuficiente',1),
-('Falta de Personal', 1),
-('Complicaciones Climaticas', 2);
-
--- Notificaciones
-INSERT INTO Notificaciones (Fecha_notificacion, Asunto,Mensaje, Id_remitente, Id_destinatario, Id_registro, Id_reporte) VALUES 
-('2024-09-15', 'Importante','Se ha creado un nuevo reporte.', 1, 2, 1, 1),
-('2024-09-16', 'Sigue con Errores','Actualización en el estado del reporte.', 1, 3, 2, 2),
-('2024-09-17', 'Escoge uno','El reporte ha sido cerrado.', 2, 1, 3, 3),
-('2024-09-18', 'Asunto Generico','Nuevo registro de mantenimiento.', 1, 2, 4, 4),
-('2024-09-19', 'Asunto Generico','Requiere revisión.', 2, 3, 5, 5),
-('2024-09-20', 'Asunto Generico', 'Se ha actualizado el registro.', 3, 1, 6, 6),
-('2024-09-21', 'Asunto Generico', 'Notificación de mantenimiento programado.', 1, 2, 7, 7),
-('2024-09-22', 'Asunto Generico', 'Se ha cerrado el registro.', 2, 3, 8, 8),
-('2024-09-23', 'Asunto Generico', 'Se ha generado un nuevo análisis.', 3, 1, 9, 9),
-( '2024-09-24','Asunto Generico',  'El registro ha sido actualizado.', 1, 2, 10, 10);
+*/
 
 -- Poblamiento de la tabla tipo_urgencia
 INSERT INTO Tipo_urgencia (Id_urgencia, Tipo_urgencia)
@@ -447,8 +412,13 @@ VALUES
 (4, 'En camino'),
 (5, 'Recibido');
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xf3 0x6e 0x0d 0x0a
+CONTEXT:  COPY pedido_compra, line 3 
+AYUDA: Revisa la codificación del csv, posiblemente no sea UTF8 (por esto las tildes generan problemas)
 -- Poblamiento de la tabla pedido_compra
-COPY pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Pedido_Compra.csv' DELIMITER ',' CSV HEADER;
+COPY pedido_compra FROM 'C:\DBD-2024-2\datos\Pedido_Compra.csv' DELIMITER ';' CSV HEADER;
+*/
 
 -- Poblamiento de la tabla tipo_producto
 INSERT INTO Tipo_producto (Id_tipo_producto, nombre_producto)
@@ -456,27 +426,51 @@ VALUES
 (1, 'Insumos'),
 (2, 'Equipos de Soporte');
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+AYUDA: Es necesario corregir pedido_compra primero
 -- Poblamiento de la tabla detalle_pedido_compra
-COPY detalle_pedido_compra FROM 'C:\Users\fabia\Desktop\DBD-2024-2\bd242-grupo3\7\datos\Detalle_Pedido_Compra.csv' DELIMITER ',' CSV HEADER;
+COPY detalle_pedido_compra FROM 'C:\DBD-2024-2\datos\Detalle_Pedido_Compra.csv' DELIMITER ';' CSV HEADER;
+*/
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA (USA MOCKAROO)
+ERROR:  el valor «77792807821» está fuera de rango para el tipo integer
+CONTEXT:  COPY proveedor, line 2, column ruc: "77792807821" 
 
 -- Poblamiento de la tabla Proveedor
-COPY proveedor FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Proveedor.csv' DELIMITER ',' CSV HEADER;
+COPY proveedor FROM 'C:\DBD-2024-2\datos\Proveedor.csv' DELIMITER ';' CSV HEADER;
+*/
 
-
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA (USA MOCKAROO)
+AYUDA: Es necesario corregir proveedor primero
 -- Poblamiento de la tabla Orden_de_compra
-COPY orden_de_compra FROM 'C:\Users\Joseph\documents\bd4\bd242-grupo3\7\datos\Orden_de_Compra.csv' DELIMITER ',' CSV HEADER;
+COPY orden_de_compra FROM 'C:\DBD-2024-2\datos\Orden_de_Compra.csv' DELIMITER ';' CSV HEADER;
+*/
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA (USA MOCKAROO)
+ERROR:  la sintaxis de entrada no es válida para tipo timestamp: «Inspeccion y ajuste de los componentes electricos de la linea de produccion para evitar problemas de conexion.»
+CONTEXT:  COPY registro, line 2, column fecha_registro: "Inspeccion y ajuste de los componentes electricos de la linea de produccion para evitar problemas de..." 
+AYUDA:  Revisa el tipo de dato y el formato que postgre acepta
+COPY Registro FROM 'C:\DBD-2024-2\datos\Orden_trabajo.csv' DELIMITER ',' CSV HEADER;
+*/
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+AYUDA: es necesario corregir registro primero
+COPY Incidencias_Tags FROM 'C:\DBD-2024-2\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
+*/
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+ERROR:  valor de hora/fecha fuera de rango: «9/28/2024»
+HINT:  Quizás necesite una configuración diferente de «datestyle».
+CONTEXT:  COPY reportes, line 2, column fecha_reporte: "9/28/2024" 
+COPY Reportes FROM 'C:\DBD-2024-2\datos\Reportes.csv' DELIMITER ',' CSV HEADER;
+*/
 
-COPY Registro FROM '..\datos\Orden_trabajo.csv' DELIMITER ',' CSV HEADER;
-COPY Incidencias_Tags FROM '..\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
-COPY Reportes FROM '..\datos\Reportes.csv' DELIMITER ',' CSV HEADER;
-COPY Notificaciones FROM '..\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
-
-
-
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xe1 0x71 0x75
+CONTEXT:  COPY notificaciones, line 2 
+AYUDA: Es culpa de las tildes, pero esto debería arreglarse si usas la codificación correcta del CSV, es decir UTF8 (USA MOCKAROO)
+COPY Notificaciones FROM 'C:\DBD-2024-2\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
+*/
 
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
@@ -500,87 +494,37 @@ VALUES
 ('Administrador', 120, 102),
 ('Master', 180, 103);
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
 
 -- Poblamiento de la tabla Sesion_Empleado 
-
-COPY Sesion_Empleado FROM '..\datos\sesion_empleado.csv' DELIMITER ',' CSV HEADER;
-
-/*
-INSERT INTO Sesion_Empleado (Id_Sesion, Id_Empleado, Fecha_Hora_Inicio, Fecha_Hora_Final, Direccion_IP, Id_estado_Sesion, Cargo, t_inactividad)
-VALUES 
-(1, 1, '2024-10-01 08:00:00', '2024-10-01 10:00:00', '192.168.0.1', 2, 'Usuario', INTERVAL '10 minutes'),
-(2, 2, '2024-10-02 09:30:00', '2024-10-02 11:30:00', '192.168.0.2', 2, 'Administrador', INTERVAL '15 minutes'),
-(3, 3, '2024-10-03 11:00:00', '2024-10-03 12:30:00', '192.168.0.3', 2, 'Master', INTERVAL '5 minutes'),
-(4, 4, '2024-10-04 13:00:00', '2024-10-04 14:45:00', '192.168.0.4', 2, 'Usuario', INTERVAL '20 minutes'),
-(5, 5, '2024-10-05 14:15:00', '2024-10-05 15:30:00', '192.168.0.5', 2, 'Administrador', INTERVAL '12 minutes'),
-(6, 6, '2024-10-06 09:00:00', '2024-10-06 11:00:00', '192.168.0.6', 2, 'Administrador', INTERVAL '18 minutes'),
-(7, 7, '2024-10-07 12:00:00', '2024-10-07 13:30:00', '192.168.0.7', 2, 'Usuario', INTERVAL '8 minutes'),
-(8, 8, '2024-10-08 10:00:00', '2024-10-08 12:00:00', '192.168.0.8', 2, 'Usuario', INTERVAL '25 minutes'),
-(9, 9, '2024-10-09 14:00:00', '2024-10-09 15:00:00', '192.168.0.9', 2, 'Master', INTERVAL '7 minutes'),
-(10, 10, '2024-10-10 11:00:00', '2024-10-10 12:30:00', '192.168.0.10', 2, 'Usuario', INTERVAL '10 minutes');
+ERROR:  la sintaxis de entrada no es válida para tipo interval: «INTERVAL '15.0 minutes'»
+CONTEXT:  COPY sesion_empleado, line 2, column t_inactividad: "INTERVAL '15.0 minutes'" 
+AYUDA: No deberías usar interval sin conocer el formato adecuado
+COPY Sesion_Empleado FROM 'C:\DBD-2024-2\datos\sesion_empleado.csv' DELIMITER ',' CSV HEADER;
 */
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+AYUDA: Es necesario corregir la tabla sesion_empleado primero
 --Autenticacion_en_2_pasos
 
-COPY Autenticacion_en_2_pasos  FROM '..\datos\autenticacion_en_2_pasos.csv' DELIMITER ',' CSV HEADER;
-
-/*
-INSERT INTO Autenticacion_en_2_pasos (Id_Autenticacion, Fecha_Hora_Envio, Contador_Intentos, cod_Verificacion, Id_sesion, Id_Estado_autenticador)
-VALUES 
-(1, '2024-10-01 08:05:00', 1, 123456, 1, 1),
-(2, '2024-10-02 09:35:00', 2, 654321, 2, 2),
-(3, '2024-10-03 11:05:00', 3, 987654, 3, 3),
-(4, '2024-10-04 13:10:00', 1, 321654, 4, 1),
-(5, '2024-10-05 14:20:00', 2, 456789, 5, 2),
-(6, '2024-10-06 09:10:00', 1, 987321, 6, 3),
-(7, '2024-10-07 12:10:00', 3, 654789, 7, 1),
-(8, '2024-10-08 10:20:00', 2, 321987, 8, 2),
-(9, '2024-10-09 14:30:00', 3, 789123, 9, 2),
-(10, '2024-10-10 11:25:00', 1, 123789, 10, 1);
+COPY Autenticacion_en_2_pasos  FROM 'C:\DBD-2024-2\datos\autenticacion_en_2_pasos.csv' DELIMITER ',' CSV HEADER;
 */
 
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
 
 -- Poblar la tabla Sesion_sospechosa 
-
-COPY Sesion_sospechosas  FROM '..\datos\sesion_sospechosa.csv' DELIMITER ',' CSV HEADER;
-
-/*
-INSERT INTO Sesion_sospechosa (ID_Sesion_sospechosa, Id_autenticacion, Estado_sesion, Direccion_mac, Tipo_Dispositivo, Fecha_Hora_sospecha, Direccion_ip, Ubicacion, Acciones_tomadas)
-VALUES 
-(1, 1, 'Activa', '00:1B:44:11:3A:B7', 'PC', '2024-10-01 08:15:00', '192.168.0.6', 'Lima, Peru', 'Alertar al administrador'),
-(2, 2, 'Inactiva', '00:1B:44:11:3A:C8', 'Móvil', '2024-10-02 09:45:00', '192.168.0.7', 'Cusco, Peru', 'Bloquear el acceso'),
-(3, 3, 'Expirada', '00:1B:44:11:3A:D9', 'Tablet', '2024-10-03 11:15:00', '192.168.0.8', 'Arequipa, Peru', 'Revisar actividad'),
-(4, 4, 'Bloqueada', '00:1B:44:11:3A:E0', 'Laptop', '2024-10-04 13:25:00', '192.168.0.9', 'Piura, Peru', 'Notificar a seguridad'),
-(5, 5, 'Finalizada', '00:1B:44:11:3A:F1', 'Servidor', '2024-10-05 14:35:00', '192.168.0.10', 'Trujillo, Peru', 'Cerrar sesión automáticamente'),
-(6, 6, 'Activa', '00:1B:44:11:3A:G2', 'PC', '2024-10-06 15:00:00', '192.168.0.11', 'Tacna, Peru', 'Solicitar autenticación'),
-(7, 7, 'Expirada', '00:1B:44:11:3A:H3', 'Móvil', '2024-10-07 16:20:00', '192.168.0.12', 'Chiclayo, Peru', 'Monitorear actividad'),
-(8, 8, 'Bloqueada', '00:1B:44:11:3A:I4', 'Tablet', '2024-10-08 17:45:00', '192.168.0.13', 'Iquitos, Peru', 'Investigar incidencia'),
-(9, 9, 'Finalizada', '00:1B:44:11:3A:J5', 'Laptop', '2024-10-09 18:15:00', '192.168.0.14', 'Pucallpa, Peru', 'Enviar alerta al equipo'),
-(10, 10, 'Activa', '00:1B:44:11:3A:K6', 'Servidor', '2024-10-10 19:00:00', '192.168.0.15', 'Tarapoto, Peru', 'Revisar actividad en detalle');
+ERROR:  Ya existe la llave (id_autenticacion)=(506).llave duplicada viola restricción de unicidad «sesion_sospechosa_pkey» 
+ERROR:  llave duplicada viola restricción de unicidad «sesion_sospechosa_pkey»
+AYUDA: USA MOCKAROO para evitar que se repitan los ids
+COPY Sesion_sospechosa  FROM 'C:\DBD-2024-2\datos\sesion_sospechosa.csv' DELIMITER ',' CSV HEADER;
 */
 
-
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+AYUDA: Es necesario corregir Sesion sospechosa primero
 -- Poblar la tabla Notificacion_Administrador 
 
-COPY Notificacion_Administrador  FROM '..\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
-
-
-/*
-INSERT INTO Notificacion_Administrador (ID_Notificacion, Id_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, ID_Sesion_sospechosa, Id_autenticacion)
-VALUES 
-(1, 1, 'Sesión Sospechosa', '2024-10-01 08:20:00', 'Enviada', 'Se detectó una sesión sospechosa desde Lima', 'Alta', 1, 1),
-(2, 2, 'Fallo de Autenticación', '2024-10-02 09:50:00', 'Enviada', 'Varios intentos fallidos de autenticación desde Cusco', 'Media', 2, 2),
-(3, 3, 'Recuperación de Contraseña', '2024-10-03 11:20:00', 'Leída', 'Solicitud de recuperación de contraseña desde Arequipa', 'Baja', 3, 3),
-(4, 4, 'Acceso Bloqueado', '2024-10-04 12:00:00', 'Resuelta', 'Acceso bloqueado debido a actividad sospechosa en Piura', 'Alta', 4, 4),
-(5, 5, 'Cambio de Contraseña', '2024-10-05 14:10:00', 'En Proceso', 'Cambio de contraseña solicitado desde Trujillo', 'Media', 5, 5),
-(6, 6, 'Reintento de Autenticación', '2024-10-06 10:30:00', 'Enviada', 'Reintento de autenticación fallido detectado en Tacna', 'Baja', 6, 6),
-(7, 7, 'Inicio de Sesión No Reconocido', '2024-10-07 15:20:00', 'Pendiente', 'Inicio de sesión no reconocido desde Chiclayo', 'Alta', 7, 7),
-(8, 8, 'Intento de Hackeo', '2024-10-08 16:40:00', 'Investigando', 'Posible intento de hackeo desde Iquitos', 'Alta', 8, 8),
-(9, 9, 'Sesión Expirada', '2024-10-09 13:00:00', 'Enviada', 'Sesión expirada debido a inactividad en Pucallpa', 'Media', 9, 9),
-(10, 10, 'Acceso Permitido', '2024-10-10 17:30:00', 'Resuelta', 'Acceso permitido tras verificación en Tarapoto', 'Baja', 10, 10);
+COPY Notificacion_Administrador  FROM 'C:\DBD-2024-2\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
 */
-
-
 
 INSERT INTO Estado_codigo (Id_estado_codigo, Descripcion)
 VALUES 
@@ -595,23 +539,11 @@ VALUES
 ('Revocado', 'Código revocado por seguridad'),
 ('Deshabilitado', 'Recuperación deshabilitada temporalmente');
 
-
+/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
+ERROR:  datos extra después de la última columna esperada
+CONTEXT:  COPY recuperacion_de_contraseña, line 2: ""1","3","Acceso Bloqueado","2023-12-13 07:12:59","Leída","Acceso Bloqueado detectado desde Tumbes, ..." 
+AYUDA: Revisa los atributos que tiene la tabla y por favor, hazlo con MOCKAROO
 -- Poblar la tabla Recuperacion_de_contraseña
 
-COPY Recuperacion_de_contraseña  FROM '..\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
-
-
-/*
-INSERT INTO Recuperacion_de_contraseña (ID_recupcontra, ID_sesion, Fecha_Hora_Envio, Nueva_contraseña, Email_envio, Id_estado_codigo)
-VALUES 
-(1, 2, '2024-10-01 08:20:00', 'newPass123', 'user1@example.com', 'Generado'),
-(2, 2, '2024-10-02 09:45:00', 'securePass456', 'user2@example.com', 'Utilizado'),
-(3, 2, '2024-10-03 10:30:00', 'resetPass789', 'user3@example.com', 'Expirado'),
-(4, 2, '2024-10-04 11:15:00', 'safePass012', 'user4@example.com', 'Fallido'),
-(5, 2, '2024-10-05 12:00:00', 'changePass345', 'user5@example.com', 'Validado'),
-(6, 2, '2024-10-06 13:45:00', 'retryPass678', 'user6@example.com', 'Reintento'),
-(7, 2, '2024-10-07 14:30:00', 'tempPass901', 'user7@example.com', 'Cancelado'),
-(8, 2, '2024-10-08 15:15:00', 'quickPass234', 'user8@example.com', 'Pendiente'),
-(9, 2, '2024-10-09 16:00:00', 'fastPass567', 'user9@example.com', 'Revocado'),
-(10, 2, '2024-10-10 17:45:00', 'finalPass890', 'user10@example.com', 'Deshabilitado');
+COPY Recuperacion_de_contraseña  FROM 'C:\DBD-2024-2\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
 */
