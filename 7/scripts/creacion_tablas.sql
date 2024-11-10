@@ -704,6 +704,8 @@ CREATE TABLE Estado_Reporte
   PRIMARY KEY (Id_estado_reporte)
 );
 
+ALTER SEQUENCE Estado_Reporte_id_estado_reporte_seq RESTART WITH 1;
+
 DROP TABLE IF EXISTS Reportes CASCADE;
 CREATE TABLE Reportes
 (
