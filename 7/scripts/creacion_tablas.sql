@@ -240,7 +240,7 @@ CREATE TABLE Equipo_de_Soporte
   Id_disponibilidad INT NOT NULL,
   Id_tipo INT NOT NULL,
   Horas_Uso INT NOT NULL,
-  precio_unitario FLOAT NOT NULL,
+  Precio_unitario FLOAT NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_equipo_soporte),
   FOREIGN KEY (Id_estado) REFERENCES Estado_Equipo_Soporte(Id_estado),
