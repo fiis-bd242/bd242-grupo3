@@ -104,6 +104,10 @@ INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
 (4, 'Sistema de Bombeo'),
 (5, 'Equipos Pesados');
 
+INSERT INTO Tipo_notificacion(id_tipo, tipo) VALUES 
+(1, 'Error'),
+(2, 'Comunicación');
+
 -- Poblamiento de la tabla Disponibilidad_equipo_soporte
 INSERT INTO Disponibilidad_Equipo_Soporte (Id_disponibilidad, Nombre_disponibilidad) 
 VALUES
@@ -387,14 +391,10 @@ VALUES
 (5, 9), (6, 9), (7, 9),
 (8, 10), (9, 10), (10, 10);
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-AYUDA: USA INT, NO SERIAL PARA EL ID
--- EstadoReporte
-INSERT INTO Estado_Reporte (nombre_estado) VALUES 
-('No Verificado'),
-('Verificado'),
-('Notificado');
-*/
+INSERT INTO Estado_Reporte (id_estado_reporte,nombre_estado) VALUES 
+(1,'No Verificado'),
+(2,'Verificado'),
+(3,'Notificado');
 
 -- Poblamiento de la tabla tipo_urgencia
 INSERT INTO Tipo_urgencia (Id_urgencia, Tipo_urgencia)
@@ -447,31 +447,15 @@ AYUDA: Es necesario corregir proveedor primero
 COPY orden_de_compra FROM 'C:\DBD-2024-2\datos\Orden_de_Compra.csv' DELIMITER ';' CSV HEADER;
 */
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA (USA MOCKAROO)
-ERROR:  la sintaxis de entrada no es válida para tipo timestamp: «Inspeccion y ajuste de los componentes electricos de la linea de produccion para evitar problemas de conexion.»
-CONTEXT:  COPY registro, line 2, column fecha_registro: "Inspeccion y ajuste de los componentes electricos de la linea de produccion para evitar problemas de..." 
-AYUDA:  Revisa el tipo de dato y el formato que postgre acepta
-COPY Registro FROM 'C:\DBD-2024-2\datos\Orden_trabajo.csv' DELIMITER ',' CSV HEADER;
-*/
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-AYUDA: es necesario corregir registro primero
+COPY Registro FROM 'C:\DBD-2024-2\datos\Registros.csv' DELIMITER ',' CSV HEADER;
+
 COPY Incidencias_Tags FROM 'C:\DBD-2024-2\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
-*/
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-ERROR:  valor de hora/fecha fuera de rango: «9/28/2024»
-HINT:  Quizás necesite una configuración diferente de «datestyle».
-CONTEXT:  COPY reportes, line 2, column fecha_reporte: "9/28/2024" 
 COPY Reportes FROM 'C:\DBD-2024-2\datos\Reportes.csv' DELIMITER ',' CSV HEADER;
-*/
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xe1 0x71 0x75
-CONTEXT:  COPY notificaciones, line 2 
-AYUDA: Es culpa de las tildes, pero esto debería arreglarse si usas la codificación correcta del CSV, es decir UTF8 (USA MOCKAROO)
 COPY Notificaciones FROM 'C:\DBD-2024-2\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
-*/
+
 
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
