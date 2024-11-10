@@ -125,7 +125,7 @@ DROP TABLE IF EXISTS Estado_Pedido CASCADE;
 CREATE TABLE Estado_Pedido
 (
   Id_estado_pedido INT NOT NULL,
-  nombre_estado VARCHAR(255) NOT NULL,
+  nombre_estado_pedido VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_estado_pedido)
 );
 
@@ -133,8 +133,6 @@ DROP TABLE IF EXISTS Pedido_Compra CASCADE;
 CREATE TABLE Pedido_Compra
 (
   Id_pedido_compra INT NOT NULL,
-  Fecha_pedido_compra DATE NOT NULL,
-  Hora_pedido_compra TIME NOT NULL,
   Descripción VARCHAR(255) NOT NULL,
   Id_urgencia INT NOT NULL,
   Id_estado_pedido INT NOT NULL,
@@ -238,12 +236,12 @@ CREATE TABLE Equipo_de_Soporte
 (
   Id_equipo_soporte INT NOT NULL,
   Nombre_equipo_soporte VARCHAR(100) NOT NULL,
-  Fecha_adquisicion DATE NOT NULL,
-  Descripcion VARCHAR(255) NOT NULL,
-  Horas_Uso INT NOT NULL,
   Id_estado INT NOT NULL,
   Id_disponibilidad INT NOT NULL,
   Id_tipo INT NOT NULL,
+  Horas_Uso INT NOT NULL,
+  precio_unitario FLOAT NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_equipo_soporte),
   FOREIGN KEY (Id_estado) REFERENCES Estado_Equipo_Soporte(Id_estado),
   FOREIGN KEY (Id_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte(Id_disponibilidad),
@@ -266,7 +264,7 @@ DROP TABLE IF EXISTS Tipo_producto CASCADE;
 CREATE TABLE Tipo_producto
 (
   Id_tipo_producto INT NOT NULL,
-  nombre_producto VARCHAR(255) NOT NULL,
+  nombre_tipo_producto VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_tipo_producto)
 );
 
@@ -276,12 +274,23 @@ CREATE TABLE Detalle_Pedido_Compra
   Id_detalle_pedido INT NOT NULL,
   Cantidad INT NOT NULL,
   Id_producto INT NOT NULL,
-  Precio_unitario FLOAT NOT NULL,
   Id_pedido_compra INT NOT NULL,
   Id_tipo_producto INT NOT NULL,
   PRIMARY KEY (Id_detalle_pedido),
   FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
   FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
+);
+
+CREATE TABLE Historial_Estados_Pedido
+(
+  id_historial INT NOT NULL,
+  fecha_cambio DATE NOT NULL,
+  hora_cambio TIME NOT NULL,
+  estado_anterior INT NOT NULL,
+  estado_nuevo INT NOT NULL,
+  Id_pedido_compra INT NOT NULL,
+  PRIMARY KEY (id_historial),
+  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra)
 );
 
 DROP TABLE IF EXISTS Orden_de_trabajo CASCADE;
