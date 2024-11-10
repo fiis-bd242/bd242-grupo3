@@ -699,12 +699,10 @@ CREATE TABLE EmpleadoxCapacitacion
 DROP TABLE IF EXISTS Estado_Reporte CASCADE;
 CREATE TABLE Estado_Reporte
 (
-  id_estado_reporte SERIAL,
+  id_estado_reporte INT NOT NULL,
   nombre_estado VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_estado_reporte)
 );
-
-ALTER SEQUENCE Estado_Reporte_id_estado_reporte_seq RESTART WITH 1;
 
 DROP TABLE IF EXISTS Reportes CASCADE;
 CREATE TABLE Reportes

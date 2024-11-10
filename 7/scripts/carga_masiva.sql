@@ -391,10 +391,10 @@ VALUES
 (5, 9), (6, 9), (7, 9),
 (8, 10), (9, 10), (10, 10);
 
-INSERT INTO Estado_Reporte (nombre_estado) VALUES 
-('No Verificado'),
-('Verificado'),
-('Notificado');
+INSERT INTO Estado_Reporte (id_estado_reporte,nombre_estado) VALUES 
+(1,'No Verificado'),
+(2,'Verificado'),
+(3,'Notificado');
 
 -- Poblamiento de la tabla tipo_urgencia
 INSERT INTO Tipo_urgencia (Id_urgencia, Tipo_urgencia)
