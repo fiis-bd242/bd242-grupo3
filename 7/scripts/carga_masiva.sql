@@ -399,18 +399,19 @@ INSERT INTO Estado_Reporte (nombre_estado) VALUES
 -- Poblamiento de la tabla tipo_urgencia
 INSERT INTO Tipo_urgencia (Id_urgencia, Tipo_urgencia)
 VALUES
-(1, 'Muy urgente'),
-(2, 'Medianamente urgente'),
-(3, 'Poco urgente');
+(1, 'Baja'),
+(2, 'Medio'),
+(3, 'Alta'),
+(4, 'Crítica');
 
 -- Poblamiento de la tabla estado_pedido
 INSERT INTO Estado_pedido (Id_estado_pedido, nombre_estado)
 VALUES
-(1, 'Sin orden de compra'),
-(2, 'Con orden de compra'),
-(3, 'Lista para envío'),
-(4, 'En camino'),
-(5, 'Recibido');
+(1, 'Pendiente'),
+(2, 'Confirmado'),
+(3, 'En transito'),
+(4, 'Completado'),
+(5, 'Cancelado');
 
 /* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
 ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xf3 0x6e 0x0d 0x0a

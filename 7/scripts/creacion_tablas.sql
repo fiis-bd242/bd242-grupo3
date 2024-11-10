@@ -19,12 +19,11 @@ CREATE TABLE Proveedor
   Id_proveedor INT NOT NULL,
   RUC INT NOT NULL,
   Empresa VARCHAR(255) NOT NULL,
-  Contacto VARCHAR(255) NOT NULL,
+  Nombre VARCHAR(255) NOT NULL,
   Email VARCHAR(255) NOT NULL,
-  Categoria VARCHAR(255) NOT NULL,
   Telefono CHAR NOT NULL,
   Direccion VARCHAR(255) NOT NULL,
-  Ciudad VARCHAR(255) NOT NULL,
+  Categoria VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_proveedor)
 );
 DROP TABLE IF EXISTS Estado_reserva CASCADE;
