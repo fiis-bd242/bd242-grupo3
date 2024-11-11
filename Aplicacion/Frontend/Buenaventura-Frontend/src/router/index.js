@@ -18,6 +18,11 @@ const router = createRouter({
       name: 'histoailad',
       component: () => import("../views/modules/7/historial_mantenimiento.vue")
     },
+    {
+      path: '/modulogestionreportes/dash/personal',
+      name: 'dash_perso',
+      component: () => import("../views/modules/7/dashboard_personal.vue")
+    },
 
   ]
 })
