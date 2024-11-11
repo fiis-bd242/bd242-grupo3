@@ -9,7 +9,7 @@ import axios from 'axios'
 
 
 const app = createApp(App)
-axios.defaults.baseURL = 'https://pokeapi.co/api/v2'
+axios.defaults.baseURL = 'localhost:8080'
 app.use(router,axios)
 
 app.use(createPinia())

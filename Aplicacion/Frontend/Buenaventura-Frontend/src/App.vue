@@ -8,9 +8,9 @@ import LateralBar from '@/components/LateralBar.vue';
   <header>
     <Navbar />
   </header>
-  <div class="flex h-screen ">
+  <div class="flex">
     <LateralBar/>
-    <RouterView />
+    <RouterView class="overflow-y-scroll"/>
   </div>
 
 </template>

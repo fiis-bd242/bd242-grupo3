@@ -1,23 +1,18 @@
 <template>
-    <div class="flex h-screen">
+    <div class="flex h-[85vh]">
       <aside class="w-64 text-gray-100 flex flex-col p-4" style="background-color: #5C46D8;">
         <h2 class="text-xl font-bold mb-6">Otros Modulos</h2>
   
         <nav class="flex-1">
           <ul>
             <li class="mb-4" v-for="item in menuItems" :key="item">
-              <a href="#" class="block p-2 rounded-md hover:bg-purple-700">
+              <a href="#" class="block p-2 font-bold text-lg rounded-md hover:bg-purple-700">
                 {{ item }}
               </a>
             </li>
           </ul>
         </nav>
       </aside>
-  
-      <!-- Main content -->
-      <main class="flex-1 p-4 bg-gray-100">
-        <slot></slot>
-      </main>
     </div>
   </template>
   
