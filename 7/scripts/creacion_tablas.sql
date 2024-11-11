@@ -243,22 +243,13 @@ CREATE TABLE Equipo_de_Soporte
   Id_disponibilidad INT NOT NULL,
   Id_tipo INT NOT NULL,
   Horas_Uso INT NOT NULL,
+  Id_almacen INT NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_equipo_soporte),
   FOREIGN KEY (Id_estado) REFERENCES Estado_Equipo_Soporte(Id_estado),
   FOREIGN KEY (Id_disponibilidad) REFERENCES Disponibilidad_Equipo_Soporte(Id_disponibilidad),
-  FOREIGN KEY (Id_tipo) REFERENCES Tipo_Equipo_Soporte(Id_tipo)
-);
-
-DROP TABLE IF EXISTS EquipoSXAlmacen CASCADE;
-CREATE TABLE EquipoSXAlmacen
-(
-  Id_equipo_soporte_alm INT NOT NULL,
-  Id_almacen INT NOT NULL,
-  Id_equipo_soporte INT NOT NULL,
-  PRIMARY KEY (Id_equipo_soporte_alm),
-  FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen),
-  FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
+  FOREIGN KEY (Id_tipo) REFERENCES Tipo_Equipo_Soporte(Id_tipo),
+  FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen)
 );
 
 DROP TABLE IF EXISTS Tipo_producto CASCADE;
