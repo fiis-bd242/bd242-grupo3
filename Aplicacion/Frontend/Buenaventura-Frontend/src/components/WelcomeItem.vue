@@ -1,14 +1,23 @@
-<template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
-    </div>
-  </div>
-</template>
 
+
+<!-- <script setup>
+  defineProps({
+    msg: {
+      type: String,
+      naive: Int32Array,
+      required: true
+    }
+  })
+  </script>  -->
+
+<!-- 
+<template>
+  <div class="greetings">
+    <h1 class="green">{{ msg }}</h1>
+    <h3>
+      You’ve successfully created a project with
+      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
+      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+    </h3>
+  </div>
+</template> -->

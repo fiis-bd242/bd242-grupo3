@@ -1,1001 +1,1001 @@
 Id_registro,Fecha_registro,Fecha_inicial,Id_empleado,Id_Act_mantto,Calificacion,Observaciones
-1,8/20/2024,5/6/2024,758,676,4,Se recomienda actualizar el software del equipo
-2,9/13/2024,7/15/2024,38,891,1,Se detectó desgaste en las piezas del equipo
-3,3/24/2024,10/25/2024,253,55,2,Se realizó calibración precisa del equipo
-4,9/23/2024,4/28/2024,969,595,5,Se realizó ajuste en la presión del sistema
-5,4/22/2024,8/18/2024,62,231,2,Se realizó limpieza exhaustiva del sistema de refrigeración
-6,7/9/2024,2/13/2024,860,198,3,Equipo verificado y certificado después del mantenimiento
-7,2/27/2024,1/2/2024,526,513,1,Equipo en perfecto funcionamiento después del mantenimiento
-8,12/2/2023,4/28/2024,691,177,3,Reemplazo de pieza defectuosa
-9,11/7/2023,7/14/2024,72,370,1,Se recomienda actualizar el sistema
-10,11/25/2023,8/31/2024,292,919,2,Se recomienda revisión periódica del sistema
-11,8/25/2024,8/1/2024,7,665,4,Se detectó sobrecalentamiento en el sistema
-12,4/17/2024,6/25/2024,602,766,5,Reparación urgente realizada con éxito
-13,2/22/2024,2/26/2024,536,163,1,Personal técnico altamente capacitado
-14,8/1/2024,12/17/2023,137,514,2,Reparación urgente realizada con éxito
-15,10/28/2024,7/18/2024,942,837,5,Se entregó informe detallado al cliente
-16,1/22/2024,1/2/2024,710,311,2,Cliente satisfecho con la atención recibida
-17,3/15/2024,4/6/2024,797,654,3,Se realizó ajuste en la configuración del equipo
-18,8/1/2024,3/29/2024,439,379,3,Se recomienda cambio de filtro en próxima visita
-19,5/28/2024,7/1/2024,787,23,3,Se detectó obstrucción en el sistema de ventilación
-20,4/4/2024,8/24/2024,883,49,3,Se detectó corrosión en las tuberías
-21,7/19/2024,1/2/2024,730,790,4,Se recomienda programar mantenimiento preventivo
-22,10/17/2024,10/25/2024,986,873,1,Se realizó ajuste en la presión del sistema
-23,4/22/2024,10/23/2024,986,308,5,Se realizó ajuste en la configuración del equipo
-24,9/21/2024,3/14/2024,371,219,4,Se requiere seguimiento en próxima visita
-25,3/12/2024,1/19/2024,67,325,4,Cliente informado sobre el estado actual del equipo
-26,12/23/2023,12/17/2023,86,479,5,Mantenimiento realizado dentro del plazo establecido
-27,10/22/2024,10/5/2024,555,649,2,Se realizó ajuste en la presión del sistema
-28,6/8/2024,11/13/2023,138,495,4,Se realizó ajuste en la temperatura del sistema
-29,5/18/2024,6/3/2024,718,686,1,Necesario realizar mantenimiento preventivo
-30,11/11/2023,7/9/2024,575,786,1,Se recomienda actualizar el software del equipo
-31,11/2/2024,12/5/2023,201,884,4,Personal amable y profesional durante el servicio
-32,3/2/2024,4/7/2024,812,497,4,Equipo en condiciones óptimas después del servicio
-33,1/10/2024,8/5/2024,383,323,2,Equipo en perfecto funcionamiento después del mantenimiento
-34,1/1/2024,5/3/2024,12,391,4,Se detectó sobrecalentamiento en el sistema
-35,8/29/2024,12/5/2023,655,756,3,Se realizó limpieza exhaustiva del sistema de refrigeración
-36,7/16/2024,11/28/2023,217,552,1,Reemplazo de batería agotada
-37,9/26/2024,11/30/2023,593,83,5,Limpieza profunda del equipo
-38,3/1/2024,12/25/2023,379,133,5,Se detectó obstrucción en el sistema de ventilación
-39,3/22/2024,2/4/2024,789,674,2,Personal capacitado y experimentado en el mantenimiento
-40,9/23/2024,1/24/2024,496,614,3,Se realizó cambio de aceite en el motor
-41,7/21/2024,9/10/2024,545,695,3,Cliente satisfecho con la atención recibida
-42,11/5/2023,8/27/2024,446,585,4,Reparación urgente realizada con éxito
-43,5/31/2024,2/20/2024,487,708,3,Se detectó fuga de gas en el sistema de aire acondicionado
-44,1/8/2024,4/24/2024,701,857,2,Se detectó sobrecalentamiento en el sistema
-45,6/15/2024,11/2/2024,795,88,1,Se realizó ajuste en la temperatura del sistema
-46,9/2/2024,12/31/2023,271,345,3,Se realizó ajuste en la temperatura del sistema
-47,5/22/2024,2/15/2024,277,295,3,Limpieza profunda del equipo
-48,11/11/2023,4/1/2024,713,932,4,Mantenimiento realizado dentro del tiempo estimado
-49,11/24/2023,12/3/2023,28,12,1,Se detectó filtración en el sistema de agua
-50,7/2/2024,3/9/2024,62,128,5,Se realizó ajuste en la configuración del equipo
-51,12/10/2023,7/1/2024,379,753,3,Se detectó desgaste en las piezas del equipo
-52,3/5/2024,7/27/2024,662,118,3,Reemplazo de pieza defectuosa
-53,9/15/2024,6/14/2024,487,848,1,Se requiere revisión detallada en la próxima visita
-54,4/28/2024,12/31/2023,658,163,3,Se realizó ajuste en la configuración del equipo
-55,5/27/2024,7/11/2024,662,685,2,Se detectó una fuga en el sistema de tuberías
-56,8/24/2024,3/10/2024,744,882,1,Cliente satisfecho con la calidad del servicio
-57,2/15/2024,9/11/2024,265,377,2,Cliente satisfecho con la calidad del servicio
-58,1/12/2024,10/8/2024,982,274,3,Se realizó ajuste en la temperatura del sistema
-59,5/17/2024,2/29/2024,366,905,2,Se recomienda revisión periódica
-60,4/30/2024,11/13/2023,369,846,2,Equipo verificado y certificado después del mantenimiento
-61,9/24/2024,12/27/2023,966,517,1,Personal técnico altamente capacitado
-62,4/15/2024,3/8/2024,785,554,1,Equipo probado y verificado después del servicio
-63,12/9/2023,7/14/2024,427,2,3,Se detectó un cortocircuito en el sistema eléctrico
-64,11/7/2023,7/24/2024,432,876,3,Se recomienda actualizar el sistema
-65,10/19/2024,11/27/2023,511,943,3,Equipo en buen estado después del servicio
-66,5/14/2024,10/3/2024,494,747,3,Se realizó ajuste en la temperatura del sistema
-67,7/9/2024,5/16/2024,740,418,3,Personal capacitado y experimentado en el mantenimiento
-68,5/31/2024,10/1/2024,391,757,3,Personal amable y profesional durante el servicio
-69,5/2/2024,5/20/2024,519,24,3,Se requiere revisión adicional en la próxima visita
-70,8/28/2024,8/18/2024,452,683,3,Cliente informado sobre posibles mejoras en el equipo
-71,1/22/2024,8/1/2024,801,69,4,Cliente informado sobre posibles mejoras en el equipo
-72,5/23/2024,3/9/2024,984,297,2,Equipo en óptimas condiciones después del servicio
-73,8/5/2024,8/10/2024,666,105,3,Se detectó sobrecalentamiento en el sistema
-74,12/24/2023,8/29/2024,266,605,5,Equipo en óptimas condiciones después del servicio
-75,7/30/2024,5/17/2024,288,725,5,Se realizó ajuste en la temperatura del sistema
-76,12/6/2023,2/2/2024,661,378,3,Personal amable y profesional durante el servicio
-77,3/26/2024,5/13/2024,299,609,3,Se encontraron problemas adicionales durante el mantenimiento
-78,1/27/2024,4/23/2024,274,785,5,Personal puntual y comprometido con el servicio
-79,12/21/2023,9/28/2024,109,319,1,Equipo en perfectas condiciones después del servicio
-80,4/17/2024,12/19/2023,535,320,4,Se detectó desgaste en las piezas del equipo
-81,11/15/2023,6/14/2024,953,980,4,Equipo probado y verificado después del mantenimiento
-82,11/5/2023,4/13/2024,21,715,4,Se detectó una fuga en el sistema de tuberías
-83,9/10/2024,5/18/2024,226,178,4,Se realizó ajuste en la temperatura del sistema
-84,7/24/2024,11/16/2023,55,885,3,Equipo en buen estado después del servicio
-85,7/23/2024,5/6/2024,801,828,4,Se detectó una fuga en el sistema de tuberías
-86,8/15/2024,8/5/2024,805,549,4,Se encontraron problemas adicionales durante el mantenimiento
-87,4/27/2024,7/28/2024,799,545,5,Personal puntual y comprometido con el servicio
-88,4/5/2024,5/27/2024,135,970,5,Se recomienda actualizar el software del equipo
-89,10/6/2024,2/15/2024,922,761,5,Cliente satisfecho con la calidad del servicio
-90,12/28/2023,3/28/2024,429,743,4,Se encontraron problemas adicionales durante el mantenimiento
-91,3/5/2024,8/8/2024,511,871,2,Limpieza profunda del equipo
-92,9/15/2024,5/3/2024,963,418,3,Equipo en perfectas condiciones después del servicio
-93,12/31/2023,9/18/2024,343,569,1,Se realizó calibración del equipo
-94,4/27/2024,10/5/2024,356,485,5,Se realizó ajuste en la temperatura del sistema
-95,6/24/2024,5/22/2024,576,952,2,Se detectó desgaste en las piezas del equipo
-96,11/10/2023,2/3/2024,932,141,4,Se detectó desgaste en las piezas del equipo
-97,1/29/2024,5/6/2024,307,579,2,Se detectó fuga de gas en el sistema de aire acondicionado
-98,10/26/2024,4/17/2024,512,144,2,Equipo probado y verificado después del mantenimiento
-99,3/18/2024,8/4/2024,290,269,4,Equipo probado y verificado después del mantenimiento
-100,10/7/2024,5/16/2024,573,869,4,Equipo en condiciones óptimas después del mantenimiento
-101,6/14/2024,7/2/2024,767,931,1,Se detectó sobrecalentamiento en el sistema
-102,9/27/2024,6/6/2024,595,242,4,Se recomienda programar mantenimiento preventivo
-103,9/28/2024,3/14/2024,578,325,4,Necesario realizar mantenimiento preventivo
-104,6/8/2024,10/2/2024,684,871,1,Se recomienda revisión periódica del sistema
-105,1/10/2024,3/1/2024,72,422,1,Se recomienda revisión periódica del sistema
-106,4/29/2024,11/15/2023,117,44,2,Se detectó filtración en el sistema de agua
-107,3/21/2024,2/25/2024,77,140,3,Equipo probado y verificado después del mantenimiento
-108,9/10/2024,11/21/2023,250,75,2,Se realizó limpieza profunda del sistema de filtración
-109,12/14/2023,2/7/2024,372,706,4,Cliente informado sobre el estado actual del equipo
-110,8/18/2024,4/6/2024,663,690,3,Se detectó desgaste en las piezas del sistema
-111,12/30/2023,9/21/2024,129,896,2,Se realizó calibración del equipo
-112,4/5/2024,5/26/2024,663,476,4,Cliente satisfecho con la atención recibida
-113,3/1/2024,8/31/2024,256,270,5,Equipo en perfecto funcionamiento después del mantenimiento
-114,7/10/2024,5/19/2024,943,970,5,Se detectó desgaste en las piezas del sistema
-115,10/26/2024,8/18/2024,576,100,1,Se recomienda revisión periódica
-116,12/23/2023,9/4/2024,306,599,2,Se recomienda revisión periódica
-117,8/29/2024,10/28/2024,152,790,2,Se recomienda revisión periódica del sistema
-118,1/27/2024,8/5/2024,812,333,5,Cliente informado sobre el estado actual del equipo
-119,4/11/2024,12/5/2023,461,504,1,Se recomienda actualizar el sistema
-120,10/2/2024,4/25/2024,958,817,3,Equipo en condiciones óptimas después del mantenimiento
-121,11/27/2023,5/6/2024,560,130,1,Servicio completado con éxito
-122,9/13/2024,10/25/2024,343,350,5,Se requiere revisión adicional en la próxima visita
-123,12/24/2023,6/24/2024,780,554,2,Limpieza profunda del equipo
-124,9/29/2024,11/25/2023,766,360,5,Se recomienda actualizar el software del equipo
-125,10/19/2024,6/21/2024,483,673,1,Reemplazo de batería agotada
-126,2/18/2024,1/2/2024,528,815,2,Reparación urgente realizada con éxito
-127,9/15/2024,11/11/2023,977,797,1,Se detectó desgaste en las piezas del equipo
-128,4/19/2024,1/17/2024,420,912,2,Reemplazo de batería agotada
-129,9/19/2024,6/15/2024,796,543,1,Se detectó corrosión en las tuberías
-130,11/8/2023,10/18/2024,203,294,2,Se recomienda revisión periódica del sistema
-131,3/3/2024,2/5/2024,801,147,1,Reemplazo de componentes dañados
-132,4/9/2024,5/15/2024,108,572,2,Se requiere revisión detallada en la próxima visita
-133,3/15/2024,10/16/2024,842,588,3,Se detectó un cortocircuito en el sistema eléctrico
-134,6/6/2024,11/8/2023,413,282,2,Se realizó limpieza profunda del sistema de filtración
-135,1/16/2024,12/6/2023,319,886,5,Se entregó informe detallado al cliente
-136,6/27/2024,3/9/2024,70,259,5,Equipo verificado y certificado después del mantenimiento
-137,6/10/2024,9/29/2024,579,435,2,Se detectó desgaste en las piezas del equipo
-138,3/19/2024,4/11/2024,818,130,5,Cliente satisfecho con la calidad del servicio
-139,6/11/2024,9/20/2024,166,523,1,Cliente informado sobre el estado actual del equipo
-140,12/3/2023,3/3/2024,620,198,2,Personal capacitado y experimentado en el mantenimiento
-141,4/16/2024,3/14/2024,586,477,2,Cliente satisfecho con la atención recibida
-142,4/21/2024,11/7/2023,89,472,3,Cliente satisfecho con la calidad del servicio
-143,7/2/2024,1/31/2024,433,963,1,Equipo verificado y certificado después del mantenimiento
-144,12/27/2023,2/9/2024,946,706,5,Equipo en óptimas condiciones después del servicio
-145,6/30/2024,3/21/2024,387,376,4,Reemplazo de componentes dañados
-146,11/3/2024,2/27/2024,99,454,4,Servicio rápido y eficiente
-147,6/27/2024,8/3/2024,716,643,5,Reemplazo de componentes dañados
-148,5/19/2024,7/14/2024,534,416,2,Se detectó corrosión en las tuberías
-149,8/24/2024,11/2/2024,732,404,1,Se detectó sobrecalentamiento en el sistema
-150,12/6/2023,4/7/2024,881,714,4,Se requiere revisión detallada en la próxima visita
-151,11/7/2023,1/25/2024,379,852,5,Cliente informado sobre el estado actual del equipo
-152,12/8/2023,6/26/2024,51,91,4,Se realizó limpieza exhaustiva del sistema de refrigeración
-153,11/19/2023,4/19/2024,906,945,4,Se recomienda actualizar el software del equipo
-154,4/19/2024,9/13/2024,527,727,2,Se realizó cambio de aceite en el motor
-155,9/15/2024,5/1/2024,679,732,1,Cliente satisfecho con la calidad del servicio
-156,9/8/2024,5/7/2024,258,241,3,Equipo probado y verificado después del servicio
-157,10/26/2024,4/22/2024,597,861,5,Servicio completado con éxito
-158,10/22/2024,9/28/2024,215,480,1,Reparación urgente realizada con éxito
-159,7/13/2024,3/27/2024,760,542,5,Reparación urgente realizada con éxito
-160,2/11/2024,10/25/2024,318,625,1,Se recomienda programar mantenimiento preventivo
-161,6/18/2024,8/2/2024,872,337,2,Equipo en condiciones óptimas después del servicio
-162,3/21/2024,8/20/2024,174,190,5,Se detectó filtración en el sistema de agua
-163,12/24/2023,9/15/2024,490,552,5,Se realizó limpieza profunda del sistema de filtración
-164,2/9/2024,7/17/2024,615,79,3,Se requiere revisión detallada en próxima visita
-165,7/18/2024,5/9/2024,195,212,3,Se entregó informe detallado al cliente
-166,7/31/2024,10/6/2024,221,122,5,Cliente informado sobre el estado actual del equipo
-167,7/9/2024,2/19/2024,853,79,4,Equipo verificado y certificado después del mantenimiento
-168,3/23/2024,5/13/2024,485,202,2,Se realizó ajuste en la configuración del equipo
-169,10/6/2024,7/7/2024,494,20,1,Se realizó ajuste en la temperatura del sistema
-170,2/28/2024,3/22/2024,196,7,3,Equipo verificado y certificado después del mantenimiento
-171,9/29/2024,5/25/2024,599,788,1,Se detectó fuga de gas en el sistema de aire acondicionado
-172,10/30/2024,10/30/2024,7,959,2,Equipo probado y verificado después del mantenimiento
-173,1/3/2024,6/10/2024,282,240,5,Se detectó corrosión en las tuberías
-174,4/18/2024,6/27/2024,577,577,2,Necesario realizar mantenimiento preventivo
-175,12/15/2023,6/10/2024,467,789,2,Equipo en óptimas condiciones después del servicio
-176,12/8/2023,10/1/2024,548,102,5,Cliente informado sobre posibles mejoras en el equipo
-177,3/19/2024,10/28/2024,765,102,1,Personal amable y profesional durante el servicio
-178,3/16/2024,12/6/2023,572,390,1,Servicio rápido y eficiente
-179,10/7/2024,2/17/2024,194,400,1,Reemplazo de batería agotada
-180,7/10/2024,12/17/2023,96,601,4,Se realizó cambio de aceite en el motor
-181,1/28/2024,1/31/2024,464,714,1,Se realizó ajuste en la presión del sistema
-182,3/15/2024,10/18/2024,271,290,1,Personal técnico altamente capacitado
-183,7/28/2024,7/15/2024,107,527,3,Cliente satisfecho con el servicio
-184,1/25/2024,8/29/2024,331,152,3,Personal capacitado y experimentado en el mantenimiento
-185,12/26/2023,8/18/2024,776,943,3,Se detectó filtración en el sistema de agua
-186,7/28/2024,2/25/2024,895,866,2,Cliente informado sobre los trabajos realizados
-187,1/14/2024,12/15/2023,550,203,4,Se realizó cambio de aceite en el motor
-188,6/27/2024,2/24/2024,757,734,5,Personal capacitado y experimentado en el mantenimiento
-189,3/12/2024,2/19/2024,208,357,5,Reemplazo de batería agotada
-190,2/26/2024,7/29/2024,15,928,4,Reemplazo de pieza defectuosa
-191,8/17/2024,9/18/2024,666,833,2,Equipo en óptimas condiciones después del servicio
-192,9/18/2024,9/4/2024,360,238,5,Equipo probado y verificado después del servicio
-193,10/13/2024,9/12/2024,665,860,5,Equipo probado y verificado después del mantenimiento
-194,5/12/2024,4/17/2024,516,483,2,Se recomienda programar mantenimiento preventivo
-195,5/19/2024,5/24/2024,295,181,5,Equipo en condiciones óptimas después del mantenimiento
-196,3/1/2024,5/22/2024,688,293,4,Equipo verificado y certificado después del mantenimiento
-197,6/4/2024,4/18/2024,90,285,3,Servicio completado con éxito
-198,3/7/2024,8/23/2024,131,291,2,Cliente satisfecho con la calidad del servicio
-199,12/4/2023,4/26/2024,598,162,1,Se recomienda cambio de filtro en próxima visita
-200,3/17/2024,7/6/2024,637,846,5,Cliente informado sobre el estado actual del equipo
-201,3/12/2024,5/19/2024,203,44,1,Se detectó desgaste en las piezas del equipo
-202,6/26/2024,1/15/2024,584,206,5,Se realizó limpieza profunda del sistema de filtración
-203,9/27/2024,4/2/2024,858,13,3,Cliente satisfecho con la atención recibida
-204,1/30/2024,3/2/2024,229,544,4,Personal puntual y comprometido con el servicio
-205,8/31/2024,6/3/2024,348,212,4,Personal amable y profesional durante el servicio
-206,5/19/2024,8/6/2024,446,295,4,Equipo probado y verificado después del servicio
-207,5/3/2024,9/29/2024,249,456,2,Se detectó desgaste en las piezas del sistema
-208,5/23/2024,8/2/2024,773,611,2,Se recomienda actualizar el software del equipo
-209,7/13/2024,9/13/2024,289,447,3,Personal técnico altamente capacitado
-210,3/2/2024,3/2/2024,321,149,3,Se detectó una fuga en el sistema de tuberías
-211,12/31/2023,2/19/2024,368,106,4,Equipo en perfecto funcionamiento después del mantenimiento
-212,12/18/2023,4/12/2024,754,646,1,Se requiere revisión detallada en próxima visita
-213,4/9/2024,2/29/2024,274,969,4,Se recomienda actualizar el software del equipo
-214,2/1/2024,6/26/2024,699,238,3,Cliente informado sobre el estado actual del equipo
-215,11/10/2023,4/6/2024,793,867,2,Cliente satisfecho con la calidad del servicio
-216,11/9/2023,2/25/2024,959,873,2,Se detectó desgaste en las piezas del equipo
-217,10/7/2024,10/20/2024,318,645,5,Se entregó reporte detallado al cliente
-218,1/1/2024,1/29/2024,927,271,3,Equipo en condiciones óptimas después del mantenimiento
-219,9/11/2024,8/30/2024,482,827,3,Se detectó obstrucción en el sistema de ventilación
-220,9/18/2024,4/30/2024,396,120,1,Cliente satisfecho con el servicio
-221,9/20/2024,8/30/2024,317,816,3,Personal puntual y comprometido con el servicio
-222,6/3/2024,4/11/2024,214,204,1,Cliente informado de los trabajos realizados
-223,8/3/2024,1/11/2024,110,147,1,Equipo probado y verificado después del mantenimiento
-224,9/1/2024,12/20/2023,698,740,2,Se recomienda actualizar el software del equipo
-225,4/19/2024,3/22/2024,70,561,5,Se requiere revisión adicional en próxima visita
-226,5/20/2024,4/25/2024,40,512,2,Reemplazo de batería agotada
-227,8/23/2024,7/28/2024,691,63,3,Se detectó una fuga en el sistema de tuberías
-228,5/8/2024,8/10/2024,885,120,5,Se requiere seguimiento en próxima visita
-229,4/4/2024,7/27/2024,105,949,4,Equipo probado y verificado después del mantenimiento
-230,10/23/2024,5/12/2024,731,23,3,Equipo probado y verificado después del mantenimiento
-231,10/22/2024,6/3/2024,148,604,2,Se requiere revisión detallada en próxima visita
-232,5/29/2024,12/7/2023,650,949,5,Personal capacitado y experimentado en el mantenimiento
-233,9/22/2024,10/2/2024,121,131,3,Equipo en óptimas condiciones después del servicio
-234,9/21/2024,4/1/2024,591,45,3,Se recomienda cambio de filtro en próxima visita
-235,1/17/2024,7/23/2024,305,148,5,Reparación urgente realizada con éxito
-236,3/26/2024,2/15/2024,734,395,1,Se recomienda programar mantenimiento preventivo
-237,3/11/2024,4/15/2024,860,139,2,Se recomienda actualizar el software del equipo
-238,8/5/2024,8/10/2024,265,825,4,Cliente satisfecho con la calidad del servicio
-239,1/20/2024,6/18/2024,361,393,4,Equipo en condiciones óptimas después del mantenimiento
-240,3/5/2024,11/6/2023,327,965,5,Se detectó fuga de gas en el sistema de aire acondicionado
-241,2/25/2024,9/12/2024,317,299,2,Mantenimiento realizado dentro del plazo establecido
-242,6/21/2024,1/30/2024,792,695,4,Se detectó corrosión en las tuberías
-243,11/25/2023,7/2/2024,604,333,3,Reemplazo de pieza defectuosa
-244,4/14/2024,2/15/2024,175,101,4,Se entregó reporte detallado al cliente
-245,3/22/2024,11/25/2023,469,252,3,Se detectó una fuga en el sistema de tuberías
-246,10/29/2024,8/1/2024,973,127,1,Se recomienda revisión periódica del sistema
-247,8/31/2024,1/22/2024,125,435,5,Se recomienda revisión periódica del sistema
-248,9/2/2024,2/17/2024,399,866,5,Limpieza profunda del equipo
-249,9/3/2024,2/4/2024,137,379,1,Personal amable y profesional durante el servicio
-250,7/16/2024,7/24/2024,546,101,3,Se recomienda cambio de filtro en próxima visita
-251,7/1/2024,3/19/2024,939,936,3,Se detectó obstrucción en el sistema de ventilación
-252,12/2/2023,6/14/2024,518,529,5,Se realizó calibración del equipo
-253,3/18/2024,3/14/2024,656,161,3,Reemplazo de pieza defectuosa
-254,11/11/2023,2/10/2024,530,919,5,Personal puntual y comprometido con el servicio
-255,4/17/2024,9/20/2024,9,198,5,Personal técnico altamente capacitado
-256,8/27/2024,3/8/2024,813,162,2,Se realizó ajuste en la temperatura del sistema
-257,7/4/2024,8/30/2024,814,996,3,Se detectó obstrucción en el sistema de ventilación
-258,1/4/2024,1/30/2024,756,941,1,Equipo probado y verificado después del mantenimiento
-259,12/2/2023,10/19/2024,934,346,2,Se recomienda programar mantenimiento preventivo
-260,9/5/2024,11/9/2023,128,266,3,Se recomienda cambio de filtro en próxima visita
-261,2/12/2024,2/9/2024,918,4,2,Se recomienda actualizar el software del equipo
-262,1/27/2024,12/10/2023,171,231,3,Se recomienda revisión periódica
-263,9/1/2024,7/8/2024,176,79,5,Equipo probado y verificado después del mantenimiento
-264,6/26/2024,11/25/2023,616,891,5,Se recomienda actualizar el software del equipo
-265,9/24/2024,1/29/2024,751,395,2,Cliente informado sobre el estado actual del equipo
-266,12/16/2023,7/6/2024,248,903,5,Se requiere revisión detallada en la próxima visita
-267,8/14/2024,5/1/2024,522,478,1,Personal puntual y comprometido con el servicio
-268,6/24/2024,2/25/2024,159,48,3,Se recomienda cambio de filtro en próxima visita
-269,10/8/2024,7/23/2024,584,33,4,Equipo en perfectas condiciones después del servicio
-270,2/28/2024,4/26/2024,31,430,3,Equipo en perfecto funcionamiento después del mantenimiento
-271,2/14/2024,11/30/2023,857,753,4,Se realizó ajuste en la presión del sistema
-272,2/28/2024,4/30/2024,813,35,3,Se encontraron problemas adicionales durante el mantenimiento
-273,11/20/2023,7/15/2024,435,854,2,Limpieza profunda del equipo
-274,11/16/2023,6/7/2024,963,445,4,Se recomienda actualizar el software del equipo
-275,3/3/2024,11/12/2023,269,317,4,Se recomienda actualizar el software del equipo
-276,4/9/2024,12/5/2023,661,560,1,Reemplazo de componentes dañados
-277,2/23/2024,4/7/2024,369,492,2,Se recomienda actualizar el sistema
-278,9/23/2024,3/18/2024,224,987,3,Equipo probado y verificado después del servicio
-279,1/6/2024,11/8/2023,951,430,2,Se detectó fuga de gas en el sistema de aire acondicionado
-280,11/14/2023,9/1/2024,782,428,1,Se realizó ajuste en la temperatura del sistema
-281,11/25/2023,3/5/2024,492,741,4,Cliente informado sobre recomendaciones de uso adecuado
-282,5/24/2024,1/25/2024,213,213,1,Se realizó cambio de aceite en el motor
-283,3/6/2024,9/5/2024,711,334,2,Cliente satisfecho con la calidad del servicio
-284,2/15/2024,12/11/2023,843,265,2,Equipo en buen estado después del servicio
-285,7/25/2024,1/31/2024,273,88,1,Se detectó una fuga en el sistema de tuberías
-286,6/9/2024,6/30/2024,124,335,5,Cliente satisfecho con la calidad del servicio
-287,6/6/2024,11/14/2023,658,507,4,Se requiere seguimiento en próxima visita
-288,4/19/2024,8/5/2024,716,658,3,Personal puntual y comprometido con el servicio
-289,11/23/2023,10/30/2024,319,846,4,Equipo probado y verificado después del mantenimiento
-290,7/26/2024,10/14/2024,270,510,1,Se detectó corrosión en las tuberías
-291,10/28/2024,3/9/2024,511,893,1,Reemplazo de componentes dañados
-292,5/4/2024,9/20/2024,551,421,1,Equipo probado y verificado después del mantenimiento
-293,9/14/2024,5/29/2024,908,162,3,Se realizó calibración del equipo
-294,12/7/2023,10/26/2024,776,907,1,Reemplazo de batería agotada
-295,6/18/2024,3/24/2024,302,548,5,Equipo en condiciones óptimas después del mantenimiento
-296,6/2/2024,3/3/2024,157,866,1,Cliente informado de los trabajos realizados
-297,3/8/2024,5/24/2024,608,238,1,Se recomienda revisión periódica
-298,12/14/2023,5/15/2024,672,661,2,Se detectó un cortocircuito en el sistema eléctrico
-299,6/13/2024,3/1/2024,439,740,2,Se recomienda actualizar el sistema
-300,11/7/2023,2/11/2024,710,31,3,Se detectó filtración en el sistema de agua
-301,12/22/2023,6/5/2024,975,38,2,Reparación urgente realizada con éxito
-302,4/8/2024,5/21/2024,548,89,1,Reparación urgente realizada con éxito
-303,8/9/2024,8/25/2024,788,811,1,Servicio rápido y eficiente
-304,9/25/2024,7/13/2024,314,583,2,Cliente satisfecho con la calidad del servicio
-305,9/18/2024,5/3/2024,826,61,1,Se recomienda programar mantenimiento preventivo
-306,5/21/2024,11/17/2023,907,946,3,Reparación urgente realizada con éxito
-307,12/6/2023,4/24/2024,475,939,2,Se realizó calibración precisa del equipo
-308,12/26/2023,10/30/2024,370,568,2,Se recomienda cambio de filtro en próxima visita
-309,3/6/2024,10/4/2024,510,41,2,Se detectó fuga de gas en el sistema de aire acondicionado
-310,2/19/2024,6/17/2024,342,578,4,Se realizó ajuste en la presión del sistema
-311,12/2/2023,12/3/2023,306,841,5,Se recomienda revisión periódica del sistema
-312,8/27/2024,9/16/2024,420,154,4,Cliente satisfecho con la calidad del servicio
-313,3/30/2024,1/27/2024,161,129,2,Se recomienda actualizar el sistema
-314,9/3/2024,10/27/2024,366,169,5,Cliente satisfecho con la calidad del servicio
-315,9/9/2024,4/2/2024,387,987,5,Necesario realizar mantenimiento preventivo
-316,1/13/2024,5/27/2024,482,15,2,Mantenimiento realizado dentro del tiempo estimado
-317,7/14/2024,10/6/2024,161,236,4,Se recomienda programar mantenimiento preventivo
-318,7/26/2024,2/13/2024,239,633,5,Equipo probado y verificado después del mantenimiento
-319,3/7/2024,7/7/2024,507,582,4,Se recomienda cambio de filtro en próxima visita
-320,11/26/2023,1/14/2024,104,880,2,Personal capacitado y experimentado en el mantenimiento
-321,3/26/2024,9/13/2024,505,240,5,Equipo en perfectas condiciones después del servicio
-322,11/25/2023,10/21/2024,341,974,3,Se realizó ajuste en la temperatura del sistema
-323,8/20/2024,4/22/2024,574,926,4,Se detectó fuga de gas en el sistema de aire acondicionado
-324,6/14/2024,5/26/2024,395,376,5,Se detectó obstrucción en el sistema de ventilación
-325,3/29/2024,12/15/2023,825,708,4,Cliente informado sobre posibles mejoras en el equipo
-326,1/22/2024,6/6/2024,448,879,4,Cliente informado sobre posibles mejoras en el equipo
-327,2/6/2024,7/25/2024,932,954,4,Reparación urgente realizada con éxito
-328,11/2/2024,3/20/2024,139,735,2,Se detectó un cortocircuito en el sistema eléctrico
-329,10/28/2024,12/14/2023,414,417,3,Equipo en óptimas condiciones después del servicio
-330,6/14/2024,8/20/2024,627,464,5,Se realizó limpieza exhaustiva del sistema de refrigeración
-331,5/7/2024,7/5/2024,799,77,1,Se detectó desgaste en las piezas del sistema
-332,10/9/2024,4/3/2024,52,439,5,Se realizó ajuste en la configuración del equipo
-333,7/9/2024,1/9/2024,643,154,1,Se realizó calibración precisa del equipo
-334,9/17/2024,1/28/2024,413,390,2,Cliente satisfecho con el servicio
-335,1/24/2024,12/21/2023,644,361,4,Cliente satisfecho con el servicio
-336,2/16/2024,4/25/2024,754,883,3,Equipo probado y verificado después del mantenimiento
-337,9/26/2024,1/2/2024,426,897,5,Se realizó calibración precisa del equipo
-338,2/7/2024,9/30/2024,691,960,2,Reparación urgente realizada con éxito
-339,1/7/2024,10/21/2024,275,298,3,Cliente informado sobre recomendaciones de uso
-340,6/26/2024,11/17/2023,418,701,2,Cliente informado sobre posibles mejoras en el equipo
-341,8/3/2024,3/8/2024,953,136,2,Equipo en perfecto funcionamiento después del mantenimiento
-342,6/16/2024,6/22/2024,70,489,2,Cliente informado sobre recomendaciones de uso
-343,9/5/2024,2/17/2024,848,657,2,Equipo verificado y certificado después del mantenimiento
-344,3/8/2024,11/21/2023,527,829,5,Cliente informado de los trabajos realizados
-345,6/15/2024,11/12/2023,571,782,1,Se realizó cambio de aceite en el motor
-346,9/6/2024,8/10/2024,787,8,4,Equipo en óptimas condiciones después del servicio
-347,3/3/2024,5/20/2024,595,725,4,Se entregó informe detallado al cliente
-348,6/10/2024,10/27/2024,448,310,3,Personal puntual y comprometido con el servicio
-349,12/26/2023,11/26/2023,499,285,2,Se realizó calibración precisa del equipo
-350,12/5/2023,12/7/2023,767,337,4,Equipo en buen estado después del servicio
-351,7/17/2024,4/4/2024,37,960,4,Se recomienda programar mantenimiento preventivo
-352,6/10/2024,3/19/2024,159,370,1,Equipo en perfectas condiciones después del servicio
-353,10/13/2024,11/24/2023,576,206,5,Se entregó reporte detallado al cliente
-354,5/7/2024,11/3/2024,41,326,1,Se realizó limpieza exhaustiva del sistema de refrigeración
-355,5/10/2024,8/11/2024,754,932,3,Se requiere revisión adicional en próxima visita
-356,6/4/2024,1/4/2024,156,799,5,Se detectó fuga de gas en el sistema de aire acondicionado
-357,1/17/2024,6/25/2024,125,965,2,Personal puntual y comprometido con el servicio
-358,1/16/2024,6/11/2024,542,455,4,Personal técnico altamente capacitado
-359,8/8/2024,6/18/2024,884,456,3,Equipo verificado y certificado después del mantenimiento
-360,6/14/2024,3/12/2024,753,163,1,Reparación urgente realizada
-361,6/2/2024,10/8/2024,416,191,2,Se realizó ajuste en la configuración del equipo
-362,7/14/2024,8/1/2024,997,931,4,Se realizó ajuste en la presión del sistema
-363,7/28/2024,4/23/2024,446,868,5,Se requiere revisión detallada en la próxima visita
-364,1/21/2024,3/6/2024,54,736,1,Limpieza profunda del equipo
-365,12/11/2023,7/19/2024,630,473,4,Se requiere seguimiento en próxima visita
-366,5/29/2024,12/12/2023,299,771,4,Se realizó limpieza exhaustiva del sistema de refrigeración
-367,5/7/2024,3/16/2024,536,845,3,Cliente informado sobre recomendaciones de uso adecuado
-368,11/3/2024,5/2/2024,284,395,1,Se requiere revisión detallada en próxima visita
-369,5/10/2024,10/30/2024,746,810,4,Cliente informado sobre recomendaciones de uso adecuado
-370,2/17/2024,10/13/2024,11,793,3,Se recomienda revisión periódica del sistema
-371,1/29/2024,8/5/2024,397,279,5,Equipo verificado y certificado después del mantenimiento
-372,5/1/2024,5/29/2024,222,698,5,Equipo en condiciones óptimas después del servicio
-373,11/9/2023,4/26/2024,838,75,4,Se detectó corrosión en las tuberías
-374,6/13/2024,9/7/2024,557,916,3,Reparación urgente realizada con éxito
-375,11/20/2023,2/3/2024,451,649,2,Se realizó ajuste en la presión del sistema
-376,10/17/2024,7/6/2024,697,818,2,Se entregó informe detallado al cliente
-377,8/9/2024,5/1/2024,869,538,4,Reemplazo de pieza defectuosa
-378,9/1/2024,6/21/2024,797,115,2,Equipo en condiciones óptimas después del servicio
-379,2/13/2024,10/30/2024,953,324,3,Se realizó cambio de aceite en el motor
-380,5/29/2024,4/17/2024,622,261,5,Se entregó informe detallado al cliente
-381,8/11/2024,6/10/2024,403,502,4,Se realizó ajuste en la presión del sistema
-382,2/7/2024,9/14/2024,707,907,3,Se detectó obstrucción en el sistema de ventilación
-383,8/26/2024,3/5/2024,716,883,1,Cliente informado sobre posibles mejoras en el equipo
-384,12/18/2023,4/30/2024,433,142,3,Se recomienda actualizar el sistema
-385,10/30/2024,2/22/2024,400,635,3,Se realizó ajuste en la temperatura del sistema
-386,3/28/2024,12/30/2023,306,672,1,Personal puntual y comprometido con el servicio
-387,8/12/2024,5/16/2024,277,89,2,Personal capacitado y experimentado en el mantenimiento
-388,12/23/2023,4/4/2024,185,23,1,Personal capacitado y experimentado en el mantenimiento
-389,9/15/2024,1/24/2024,915,877,4,Reemplazo de batería agotada
-390,12/8/2023,2/8/2024,930,531,2,Equipo en condiciones óptimas después del servicio
-391,6/13/2024,4/17/2024,600,282,1,Se detectó fuga de gas en el sistema de aire acondicionado
-392,8/7/2024,7/3/2024,547,82,3,Se detectó fuga de gas en el sistema de aire acondicionado
-393,6/12/2024,5/1/2024,255,844,1,Cliente satisfecho con el servicio
-394,9/21/2024,5/25/2024,112,909,5,Cliente informado sobre recomendaciones de uso
-395,9/10/2024,10/23/2024,539,123,1,Se requiere seguimiento en próxima visita
-396,3/17/2024,2/17/2024,631,580,2,Se encontraron problemas adicionales durante el mantenimiento
-397,3/13/2024,2/13/2024,342,867,2,Se detectó fuga de gas en el sistema de aire acondicionado
-398,10/9/2024,8/13/2024,959,124,5,Equipo en buen estado después del servicio
-399,6/14/2024,10/14/2024,761,709,3,Cliente informado sobre recomendaciones de uso
-400,2/13/2024,9/25/2024,444,169,4,Equipo probado y verificado después del mantenimiento
-401,10/20/2024,10/5/2024,46,658,3,Se detectó obstrucción en el sistema de ventilación
-402,11/5/2023,1/10/2024,402,183,5,Se recomienda actualizar el sistema
-403,4/16/2024,11/2/2024,572,328,1,Se recomienda revisión periódica
-404,5/6/2024,3/13/2024,209,477,1,Cliente informado sobre posibles mejoras en el equipo
-405,1/4/2024,1/17/2024,83,320,1,Cliente informado sobre el estado actual del equipo
-406,5/17/2024,9/5/2024,123,17,3,Equipo en perfectas condiciones después del servicio
-407,11/7/2023,2/9/2024,939,294,1,Se recomienda cambio de filtro en próxima visita
-408,1/6/2024,9/8/2024,870,949,4,Equipo verificado y certificado después del mantenimiento
-409,7/7/2024,12/23/2023,222,764,1,Se recomienda actualizar el software del equipo
-410,2/26/2024,7/29/2024,859,787,3,Se detectó obstrucción en el sistema de ventilación
-411,8/23/2024,9/4/2024,439,41,3,Se detectó fuga de gas en el sistema de aire acondicionado
-412,11/7/2023,6/18/2024,921,304,4,Se requiere revisión adicional en próxima visita
-413,8/22/2024,3/17/2024,42,79,4,Se requiere revisión detallada en próxima visita
-414,5/21/2024,1/18/2024,159,455,5,Equipo en perfectas condiciones después del servicio
-415,3/13/2024,9/21/2024,781,328,5,Equipo probado y verificado después del mantenimiento
-416,5/28/2024,7/4/2024,811,418,5,Se detectó obstrucción en el sistema de ventilación
-417,1/11/2024,7/29/2024,319,319,2,Servicio rápido y eficiente
-418,10/4/2024,8/16/2024,678,432,4,Equipo probado y verificado después del servicio
-419,10/15/2024,4/14/2024,610,136,1,Se detectó desgaste en las piezas del equipo
-420,12/14/2023,1/22/2024,762,49,2,Se realizó cambio de aceite en el motor
-421,3/6/2024,11/9/2023,23,804,2,Se realizó limpieza exhaustiva del sistema de refrigeración
-422,12/7/2023,3/4/2024,2,569,4,Cliente satisfecho con el servicio
-423,2/28/2024,6/11/2024,716,283,4,Equipo probado y verificado después del mantenimiento
-424,4/28/2024,3/3/2024,667,747,4,Se detectó corrosión en las tuberías
-425,5/25/2024,11/21/2023,246,665,2,Se realizó ajuste en la temperatura del sistema
-426,8/13/2024,8/1/2024,340,420,3,Se requiere revisión detallada en próxima visita
-427,3/27/2024,5/28/2024,91,756,4,Cliente satisfecho con la calidad del servicio
-428,10/14/2024,7/8/2024,305,69,4,Se entregó reporte detallado al cliente
-429,9/28/2024,5/15/2024,196,305,3,Se recomienda revisión periódica
-430,3/8/2024,9/28/2024,416,252,2,Equipo probado y verificado después del mantenimiento
-431,3/17/2024,12/17/2023,822,349,3,Cliente satisfecho con la atención recibida
-432,4/13/2024,2/16/2024,55,535,1,Servicio completado con éxito
-433,9/1/2024,9/28/2024,729,171,1,Reparación urgente realizada con éxito
-434,1/17/2024,10/27/2024,343,717,4,Personal capacitado y experimentado en el mantenimiento
-435,6/11/2024,7/29/2024,294,195,2,Se requiere revisión detallada en la próxima visita
-436,5/4/2024,6/18/2024,392,433,3,Reemplazo de componentes dañados
-437,8/12/2024,3/14/2024,964,23,4,Equipo en perfecto funcionamiento después del mantenimiento
-438,12/23/2023,4/24/2024,358,846,4,Se detectó desgaste en las piezas del equipo
-439,6/4/2024,7/21/2024,57,778,3,Personal amable y profesional durante el servicio
-440,10/23/2024,6/14/2024,579,856,4,Se realizó limpieza exhaustiva del sistema de refrigeración
-441,12/24/2023,12/10/2023,924,873,3,Se recomienda cambio de filtro en próxima visita
-442,10/15/2024,8/9/2024,872,561,3,Equipo verificado y certificado después del mantenimiento
-443,12/23/2023,5/8/2024,13,678,5,Equipo en perfecto funcionamiento después del mantenimiento
-444,7/27/2024,5/4/2024,922,166,1,Reparación urgente realizada con éxito
-445,12/26/2023,10/30/2024,35,416,5,Cliente informado sobre el estado actual del equipo
-446,6/13/2024,10/12/2024,789,202,3,Se detectó obstrucción en el sistema de ventilación
-447,2/1/2024,11/2/2024,313,576,4,Personal puntual y comprometido con el servicio
-448,2/8/2024,2/4/2024,651,372,3,Reemplazo de pieza defectuosa
-449,1/22/2024,3/4/2024,740,153,5,Equipo probado y verificado después del mantenimiento
-450,7/31/2024,9/15/2024,557,601,3,Cliente satisfecho con la atención recibida
-451,2/13/2024,12/27/2023,160,246,5,Se detectó una fuga en el sistema de tuberías
-452,12/21/2023,1/9/2024,644,863,5,Se detectó corrosión en las tuberías
-453,9/16/2024,11/1/2024,908,738,1,Cliente informado sobre recomendaciones de uso adecuado
-454,3/26/2024,1/3/2024,657,278,4,Limpieza profunda del equipo
-455,5/7/2024,2/14/2024,260,685,5,Reemplazo de componentes dañados
-456,12/6/2023,11/4/2024,332,12,3,Se entregó reporte detallado al cliente
-457,3/10/2024,6/25/2024,723,566,5,Se detectó sobrecalentamiento en el sistema
-458,2/3/2024,6/3/2024,182,486,5,Se detectó corrosión en las tuberías
-459,10/19/2024,11/22/2023,631,163,2,Se detectó obstrucción en el sistema de ventilación
-460,6/26/2024,4/17/2024,31,407,3,Se encontraron problemas adicionales durante el mantenimiento
-461,7/24/2024,4/2/2024,796,249,1,Equipo probado y verificado después del servicio
-462,7/29/2024,8/31/2024,13,161,2,Se requiere seguimiento en próxima visita
-463,8/15/2024,1/23/2024,378,67,1,Personal capacitado y experimentado en el mantenimiento
-464,7/11/2024,11/2/2024,581,87,2,Equipo en perfecto funcionamiento después del mantenimiento
-465,12/4/2023,10/25/2024,753,973,5,Equipo probado y verificado después del mantenimiento
-466,1/26/2024,10/11/2024,327,488,5,Cliente satisfecho con el servicio
-467,11/5/2023,5/16/2024,546,89,1,Se detectó sobrecalentamiento en el sistema
-468,5/1/2024,3/12/2024,151,867,2,Reemplazo de pieza defectuosa
-469,7/26/2024,11/22/2023,999,775,5,Reemplazo de componentes dañados
-470,11/28/2023,1/11/2024,70,964,3,Se detectó una fuga en el sistema de tuberías
-471,3/3/2024,6/19/2024,748,74,2,Se recomienda actualizar el software del equipo
-472,8/30/2024,12/1/2023,753,229,3,Equipo en buen estado después del servicio
-473,2/16/2024,12/1/2023,963,713,4,Se requiere revisión detallada en próxima visita
-474,7/9/2024,12/9/2023,34,302,3,Se recomienda revisión periódica del sistema
-475,10/26/2024,3/2/2024,655,134,3,Se recomienda actualizar el software del equipo
-476,8/9/2024,11/12/2023,695,362,3,Se realizó calibración del equipo
-477,5/30/2024,3/9/2024,293,873,2,Equipo en condiciones óptimas después del mantenimiento
-478,4/17/2024,10/30/2024,225,895,2,Cliente informado sobre el estado actual del equipo
-479,6/10/2024,10/23/2024,501,430,5,Se detectó corrosión en las tuberías
-480,6/30/2024,9/17/2024,901,453,4,Se detectó sobrecalentamiento en el sistema
-481,7/27/2024,5/27/2024,823,884,5,Se realizó ajuste en la temperatura del sistema
-482,4/20/2024,5/31/2024,511,527,1,Reemplazo de batería agotada
-483,7/5/2024,12/18/2023,67,746,1,Equipo en perfectas condiciones después del servicio
-484,8/26/2024,6/30/2024,144,79,4,Reemplazo de componentes dañados
-485,8/20/2024,4/6/2024,466,17,5,Cliente satisfecho con la atención recibida
-486,1/8/2024,1/30/2024,531,43,2,Cliente informado sobre posibles mejoras en el equipo
-487,4/4/2024,2/21/2024,798,577,4,Se realizó ajuste en la presión del sistema
-488,4/15/2024,7/8/2024,722,210,3,Se realizó limpieza exhaustiva del sistema de refrigeración
-489,6/8/2024,11/29/2023,637,225,1,Se recomienda actualizar el sistema
-490,6/30/2024,8/1/2024,108,261,2,Se detectó sobrecalentamiento en el sistema
-491,9/3/2024,4/26/2024,160,572,3,Se entregó reporte detallado al cliente
-492,8/15/2024,10/21/2024,148,962,2,Equipo en condiciones óptimas después del mantenimiento
-493,9/2/2024,9/1/2024,877,961,1,Reemplazo de componentes dañados
-494,12/29/2023,2/23/2024,810,25,4,Mantenimiento realizado dentro del plazo establecido
-495,2/20/2024,10/13/2024,738,953,4,Personal puntual y comprometido con el servicio
-496,12/16/2023,5/30/2024,489,561,4,Se realizó cambio de aceite en el motor
-497,1/5/2024,11/20/2023,151,971,5,Se detectó filtración en el sistema de agua
-498,4/27/2024,10/31/2024,78,50,5,Se recomienda programar mantenimiento preventivo
-499,9/4/2024,4/25/2024,758,313,4,Reemplazo de pieza defectuosa
-500,8/27/2024,4/13/2024,349,912,3,Se recomienda revisión periódica
-501,2/28/2024,8/6/2024,793,822,5,Se realizó ajuste en la temperatura del sistema
-502,7/5/2024,6/19/2024,998,856,1,Se recomienda revisión periódica
-503,5/28/2024,3/16/2024,359,810,3,Se requiere revisión detallada en próxima visita
-504,12/29/2023,8/13/2024,824,839,2,Cliente satisfecho con la calidad del servicio
-505,6/10/2024,11/2/2024,188,443,2,Se realizó calibración precisa del equipo
-506,2/20/2024,9/9/2024,878,888,5,Se detectó obstrucción en el sistema de ventilación
-507,10/8/2024,2/25/2024,17,662,3,Se detectó corrosión en las tuberías
-508,8/25/2024,12/25/2023,273,606,2,Se requiere revisión detallada en próxima visita
-509,5/10/2024,11/21/2023,574,624,2,Personal amable y profesional durante el servicio
-510,12/9/2023,10/6/2024,951,786,3,Se realizó ajuste en la temperatura del sistema
-511,6/22/2024,7/15/2024,979,676,5,Cliente informado sobre los trabajos realizados
-512,12/5/2023,3/22/2024,439,76,4,Se detectó un cortocircuito en el sistema eléctrico
-513,5/30/2024,2/20/2024,414,413,4,Se realizó calibración precisa del equipo
-514,1/3/2024,5/19/2024,598,708,4,Reemplazo de batería agotada
-515,9/26/2024,4/3/2024,392,632,3,Cliente satisfecho con la atención recibida
-516,3/17/2024,2/24/2024,418,411,3,Necesario realizar mantenimiento preventivo
-517,3/24/2024,1/30/2024,424,273,1,Se detectó desgaste en las piezas del equipo
-518,8/20/2024,5/26/2024,5,988,1,Se requiere revisión adicional en la próxima visita
-519,7/1/2024,2/18/2024,562,15,3,Reemplazo de batería agotada
-520,4/28/2024,10/25/2024,480,900,1,Cliente informado sobre los trabajos realizados
-521,7/28/2024,4/14/2024,375,99,5,Cliente informado sobre recomendaciones de uso
-522,3/31/2024,8/2/2024,616,266,4,Se realizó calibración del equipo
-523,9/20/2024,1/30/2024,789,205,3,Equipo en buen estado después del servicio
-524,8/6/2024,6/19/2024,865,890,5,Se realizó limpieza exhaustiva del sistema de refrigeración
-525,1/29/2024,3/24/2024,534,666,4,Cliente informado sobre el estado actual del equipo
-526,1/7/2024,6/22/2024,795,146,3,Se detectó desgaste en las piezas del sistema
-527,3/26/2024,3/18/2024,423,881,2,Se detectó una fuga en el sistema de tuberías
-528,5/13/2024,1/19/2024,307,557,3,Cliente informado sobre posibles mejoras en el equipo
-529,10/4/2024,10/26/2024,958,978,4,Se detectó una fuga en el sistema de tuberías
-530,9/30/2024,10/28/2024,905,124,5,Se detectó obstrucción en el sistema de ventilación
-531,11/24/2023,9/30/2024,850,464,2,Se realizó ajuste en la presión del sistema
-532,8/4/2024,3/27/2024,593,969,2,Cliente informado sobre el estado actual del equipo
-533,1/9/2024,10/26/2024,742,791,1,Personal amable y profesional durante el servicio
-534,1/7/2024,11/19/2023,652,76,3,Se detectó corrosión en las tuberías
-535,4/6/2024,4/15/2024,826,631,4,Personal capacitado y experimentado en el mantenimiento
-536,3/7/2024,2/3/2024,29,636,5,Se detectó desgaste en las piezas del sistema
-537,10/23/2024,10/6/2024,195,73,3,Se realizó limpieza exhaustiva del sistema de refrigeración
-538,10/12/2024,9/28/2024,463,836,3,Personal amable y profesional durante el servicio
-539,7/27/2024,3/10/2024,420,191,1,Se recomienda programar mantenimiento preventivo
-540,6/23/2024,1/19/2024,77,612,2,Se realizó ajuste en la temperatura del sistema
-541,12/15/2023,8/9/2024,496,922,3,Se entregó informe detallado al cliente
-542,5/20/2024,1/2/2024,879,306,1,Equipo probado y verificado después del mantenimiento
-543,11/18/2023,11/19/2023,366,48,1,Se encontraron problemas adicionales durante el mantenimiento
-544,11/2/2024,4/4/2024,767,119,4,Cliente informado sobre el estado actual del equipo
-545,1/22/2024,6/11/2024,498,961,2,Se detectó obstrucción en el sistema de ventilación
-546,12/26/2023,1/23/2024,894,859,2,Cliente satisfecho con la atención recibida
-547,4/28/2024,5/28/2024,157,879,4,Se realizó limpieza exhaustiva del sistema de refrigeración
-548,3/22/2024,4/1/2024,397,7,4,Se detectó desgaste en las piezas del sistema
-549,5/5/2024,11/7/2023,979,8,5,Se recomienda programar mantenimiento preventivo
-550,7/26/2024,6/23/2024,929,715,3,Se requiere revisión adicional en próxima visita
-551,2/8/2024,9/2/2024,197,505,3,Equipo en perfectas condiciones después del servicio
-552,3/27/2024,8/26/2024,723,741,4,Se realizó cambio de aceite en el motor
-553,12/17/2023,10/28/2024,95,900,1,Se recomienda actualizar el software del equipo
-554,6/16/2024,4/14/2024,584,812,5,Se recomienda actualizar el software del equipo
-555,10/12/2024,11/15/2023,381,675,1,Se detectó obstrucción en el sistema de ventilación
-556,3/9/2024,9/20/2024,542,734,1,Se realizó cambio de aceite en el motor
-557,11/27/2023,2/10/2024,526,906,5,Se realizó cambio de aceite en el motor
-558,11/2/2024,3/20/2024,197,81,5,Se detectó desgaste en las piezas del equipo
-559,8/30/2024,10/18/2024,797,23,1,Cliente satisfecho con la calidad del servicio
-560,12/12/2023,9/15/2024,572,299,3,Cliente informado sobre el estado actual del equipo
-561,8/20/2024,3/3/2024,204,246,2,Cliente satisfecho con la calidad del servicio
-562,5/14/2024,6/4/2024,334,595,5,Reemplazo de pieza defectuosa
-563,10/26/2024,9/12/2024,95,319,1,Se realizó ajuste en la configuración del equipo
-564,5/8/2024,1/2/2024,264,262,3,Se realizó cambio de aceite en el motor
-565,7/11/2024,1/2/2024,442,727,4,Equipo verificado y certificado después del mantenimiento
-566,9/28/2024,1/17/2024,186,718,2,Cliente informado sobre posibles mejoras en el equipo
-567,12/25/2023,11/9/2023,500,206,4,Se requiere revisión adicional en próxima visita
-568,4/8/2024,4/17/2024,868,144,1,Se recomienda revisión periódica del sistema
-569,11/8/2023,5/2/2024,732,621,1,Cliente informado sobre el estado actual del equipo
-570,1/20/2024,2/13/2024,864,301,3,Cliente satisfecho con la calidad del servicio
-571,7/16/2024,2/28/2024,814,609,4,Personal amable y profesional durante el servicio
-572,1/27/2024,11/6/2023,205,403,3,Se entregó reporte detallado al cliente
-573,7/2/2024,4/30/2024,411,771,2,Equipo en óptimas condiciones después del servicio
-574,5/8/2024,11/26/2023,260,741,4,Se requiere seguimiento en próxima visita
-575,8/22/2024,1/9/2024,7,591,1,Reemplazo de componentes dañados
-576,8/5/2024,11/7/2023,926,376,4,Se recomienda revisión periódica del sistema
-577,6/10/2024,9/13/2024,803,554,1,Equipo verificado y certificado después del mantenimiento
-578,11/25/2023,9/2/2024,472,367,2,Cliente satisfecho con la atención recibida
-579,10/8/2024,1/22/2024,726,142,4,Se realizó calibración del equipo
-580,6/3/2024,8/1/2024,664,688,3,Personal técnico altamente capacitado
-581,8/25/2024,8/5/2024,227,236,3,Cliente satisfecho con el servicio
-582,6/29/2024,2/11/2024,149,383,3,Se detectó obstrucción en el sistema de ventilación
-583,7/5/2024,6/12/2024,224,763,1,Personal capacitado y experimentado en el mantenimiento
-584,3/18/2024,9/5/2024,724,705,1,Se recomienda programar mantenimiento preventivo
-585,4/14/2024,3/24/2024,949,691,3,Se detectó desgaste en las piezas del sistema
-586,8/25/2024,12/5/2023,621,946,2,Se entregó reporte detallado al cliente
-587,5/1/2024,10/5/2024,435,692,2,Se recomienda revisión periódica
-588,5/26/2024,4/20/2024,946,745,5,Se detectó una fuga en el sistema de tuberías
-589,8/5/2024,12/24/2023,685,158,2,Cliente satisfecho con el servicio
-590,11/26/2023,11/7/2023,897,38,4,Equipo en buen estado después del servicio
-591,2/22/2024,7/22/2024,319,628,2,Se detectó sobrecalentamiento en el sistema
-592,3/2/2024,8/27/2024,935,568,4,Personal capacitado y experimentado en el mantenimiento
-593,3/6/2024,3/2/2024,280,18,2,Se requiere revisión detallada en próxima visita
-594,5/31/2024,10/2/2024,402,688,5,Se detectó obstrucción en el sistema de ventilación
-595,6/8/2024,8/19/2024,734,65,2,Se recomienda cambio de filtro en próxima visita
-596,4/30/2024,11/4/2024,30,976,3,Equipo en perfectas condiciones después del servicio
-597,8/18/2024,10/22/2024,557,131,1,Se realizó ajuste en la configuración del equipo
-598,6/26/2024,11/2/2024,59,250,2,Mantenimiento realizado dentro del tiempo estimado
-599,9/7/2024,1/7/2024,490,942,1,Se recomienda revisión periódica
-600,5/31/2024,11/24/2023,616,36,2,Se detectó un cortocircuito en el sistema eléctrico
-601,1/9/2024,10/30/2024,927,968,3,Se encontraron problemas adicionales durante el mantenimiento
-602,2/4/2024,8/7/2024,871,93,2,Se detectó filtración en el sistema de agua
-603,11/12/2023,9/20/2024,529,76,4,Equipo probado y verificado después del mantenimiento
-604,11/23/2023,4/18/2024,492,193,2,Se realizó limpieza exhaustiva del sistema de refrigeración
-605,10/15/2024,4/29/2024,80,665,1,Reparación urgente realizada con éxito
-606,2/16/2024,5/10/2024,135,143,4,Personal técnico altamente capacitado
-607,11/30/2023,11/16/2023,64,650,3,Equipo en condiciones óptimas después del servicio
-608,8/17/2024,10/28/2024,134,917,4,Cliente satisfecho con la calidad del servicio
-609,5/16/2024,1/5/2024,778,567,4,Se realizó cambio de aceite en el motor
-610,3/16/2024,9/24/2024,776,837,5,Equipo en condiciones óptimas después del servicio
-611,5/20/2024,7/7/2024,527,983,5,Equipo en perfectas condiciones después del servicio
-612,8/2/2024,12/10/2023,366,807,2,Se detectó filtración en el sistema de agua
-613,10/20/2024,12/22/2023,440,807,4,Equipo en perfectas condiciones después del servicio
-614,3/8/2024,11/29/2023,951,757,5,Cliente informado sobre posibles mejoras en el equipo
-615,11/14/2023,1/6/2024,459,917,4,Equipo en óptimas condiciones después del servicio
-616,3/7/2024,4/14/2024,759,567,2,Servicio rápido y eficiente
-617,3/13/2024,1/9/2024,209,535,3,Limpieza profunda del equipo
-618,11/29/2023,7/18/2024,481,151,5,Reparación urgente realizada con éxito
-619,5/14/2024,5/20/2024,303,752,3,Reparación urgente realizada con éxito
-620,8/15/2024,10/25/2024,236,746,4,Personal capacitado y experimentado en el mantenimiento
-621,4/20/2024,10/25/2024,560,758,4,Se detectó un cortocircuito en el sistema eléctrico
-622,10/22/2024,9/4/2024,127,247,1,Se detectó sobrecalentamiento en el sistema
-623,4/21/2024,12/6/2023,344,230,1,Reparación urgente realizada con éxito
-624,2/12/2024,8/24/2024,805,66,1,Se detectó corrosión en las tuberías
-625,7/7/2024,8/10/2024,799,934,5,Se recomienda revisión periódica
-626,1/1/2024,4/20/2024,210,324,4,Reparación urgente realizada con éxito
-627,6/29/2024,3/8/2024,708,160,3,Limpieza profunda del equipo
-628,1/1/2024,9/14/2024,568,967,4,Personal amable y profesional durante el servicio
-629,2/12/2024,12/12/2023,515,463,1,Equipo en condiciones óptimas después del servicio
-630,1/27/2024,12/4/2023,153,12,3,Equipo probado y verificado después del servicio
-631,3/4/2024,3/28/2024,99,747,4,Servicio rápido y eficiente
-632,9/19/2024,2/29/2024,823,442,4,Cliente informado de los trabajos realizados
-633,1/12/2024,7/9/2024,896,195,2,Cliente informado sobre posibles mejoras en el equipo
-634,7/17/2024,11/4/2024,545,378,3,Se detectó obstrucción en el sistema de ventilación
-635,4/9/2024,9/21/2024,796,653,1,Equipo en óptimas condiciones después del servicio
-636,3/12/2024,8/21/2024,370,337,3,Cliente informado de los trabajos realizados
-637,8/16/2024,7/29/2024,391,169,5,Cliente informado sobre los trabajos realizados
-638,11/2/2024,6/10/2024,213,609,1,Equipo en óptimas condiciones después del servicio
-639,1/18/2024,7/27/2024,173,462,2,Limpieza profunda del equipo
-640,3/20/2024,10/24/2024,571,819,1,Se detectó filtración en el sistema de agua
-641,10/13/2024,4/25/2024,122,362,2,Se recomienda revisión periódica del sistema
-642,6/23/2024,11/28/2023,153,73,4,Reparación urgente realizada con éxito
-643,8/23/2024,1/25/2024,409,16,1,Equipo en perfectas condiciones después del servicio
-644,2/26/2024,7/7/2024,727,343,5,Se detectó corrosión en las tuberías
-645,1/5/2024,4/13/2024,619,898,4,Equipo probado y verificado después del servicio
-646,1/14/2024,10/29/2024,549,122,3,Cliente satisfecho con la atención recibida
-647,1/12/2024,11/24/2023,977,559,5,Se realizó ajuste en la configuración del equipo
-648,11/4/2024,7/19/2024,628,475,2,Reparación urgente realizada
-649,4/11/2024,5/1/2024,877,686,4,Cliente informado sobre el estado actual del equipo
-650,1/1/2024,12/16/2023,771,844,4,Se realizó ajuste en la temperatura del sistema
-651,5/25/2024,8/14/2024,993,619,5,Se requiere revisión adicional en la próxima visita
-652,8/23/2024,2/12/2024,849,91,3,Se realizó ajuste en la temperatura del sistema
-653,8/4/2024,10/17/2024,328,736,1,Se recomienda programar mantenimiento preventivo
-654,1/13/2024,8/27/2024,894,935,1,Se realizó ajuste en la temperatura del sistema
-655,8/29/2024,11/5/2023,37,441,1,Reemplazo de pieza defectuosa
-656,10/2/2024,4/23/2024,649,966,1,Cliente informado sobre recomendaciones de uso adecuado
-657,7/2/2024,11/23/2023,373,824,4,Se realizó ajuste en la presión del sistema
-658,11/7/2023,11/4/2024,990,15,1,Cliente satisfecho con la atención recibida
-659,9/28/2024,3/1/2024,595,410,2,Servicio rápido y eficiente
-660,5/22/2024,10/14/2024,359,292,3,Cliente satisfecho con la atención recibida
-661,7/31/2024,12/3/2023,877,468,1,Se realizó limpieza exhaustiva del sistema de refrigeración
-662,8/27/2024,11/29/2023,410,807,4,Cliente satisfecho con la calidad del servicio
-663,3/2/2024,1/26/2024,683,866,5,Equipo en condiciones óptimas después del mantenimiento
-664,9/8/2024,2/22/2024,169,847,4,Equipo en condiciones óptimas después del mantenimiento
-665,11/16/2023,11/23/2023,500,370,3,Cliente satisfecho con la atención recibida
-666,2/23/2024,1/24/2024,748,353,4,Limpieza profunda del equipo
-667,1/12/2024,5/12/2024,191,77,1,Se detectó filtración en el sistema de agua
-668,2/21/2024,5/29/2024,584,948,2,Reemplazo de componentes dañados
-669,6/13/2024,12/18/2023,637,738,3,Reemplazo de pieza defectuosa
-670,6/4/2024,11/15/2023,736,644,2,Se requiere revisión detallada en próxima visita
-671,1/25/2024,12/31/2023,15,223,4,Cliente informado de los trabajos realizados
-672,1/20/2024,1/14/2024,444,773,1,Se realizó ajuste en la temperatura del sistema
-673,5/8/2024,8/17/2024,887,763,5,Reemplazo de pieza defectuosa
-674,6/15/2024,5/27/2024,525,856,4,Se realizó cambio de aceite en el motor
-675,12/13/2023,6/25/2024,372,810,3,Se recomienda actualizar el sistema
-676,10/7/2024,7/18/2024,431,504,1,Se entregó reporte detallado al cliente
-677,6/13/2024,12/22/2023,293,602,1,Se encontraron problemas adicionales durante el mantenimiento
-678,10/29/2024,1/30/2024,214,157,4,Servicio completado con éxito
-679,1/19/2024,6/5/2024,50,140,3,Se requiere revisión detallada en próxima visita
-680,10/1/2024,5/30/2024,494,25,3,Cliente satisfecho con la calidad del servicio
-681,8/10/2024,2/7/2024,481,370,4,Equipo verificado y certificado después del mantenimiento
-682,11/14/2023,10/1/2024,842,769,3,Se detectó fuga de gas en el sistema de aire acondicionado
-683,4/14/2024,6/4/2024,365,245,3,Mantenimiento realizado dentro del tiempo estimado
-684,8/23/2024,6/6/2024,170,855,3,Equipo en perfectas condiciones después del servicio
-685,2/10/2024,10/24/2024,264,585,1,Cliente satisfecho con la atención recibida
-686,9/2/2024,9/26/2024,900,776,2,Servicio completado con éxito
-687,10/3/2024,9/3/2024,952,314,3,Se recomienda revisión periódica
-688,9/3/2024,9/5/2024,424,842,3,Servicio rápido y eficiente
-689,1/18/2024,1/4/2024,14,979,1,Se recomienda revisión periódica del sistema
-690,12/3/2023,11/18/2023,619,875,4,Se detectó obstrucción en el sistema de ventilación
-691,8/15/2024,4/19/2024,697,498,4,Reparación urgente realizada con éxito
-692,4/21/2024,5/17/2024,272,194,2,Equipo en condiciones óptimas después del mantenimiento
-693,1/7/2024,4/4/2024,669,909,5,Cliente satisfecho con la calidad del servicio
-694,12/6/2023,8/19/2024,951,434,2,Personal puntual y comprometido con el servicio
-695,1/19/2024,8/26/2024,736,606,3,Equipo en buen estado después del servicio
-696,1/19/2024,6/14/2024,924,225,5,Cliente informado sobre el estado actual del equipo
-697,2/26/2024,6/2/2024,318,907,5,Necesario realizar mantenimiento preventivo
-698,10/28/2024,4/2/2024,198,909,3,Cliente satisfecho con la atención recibida
-699,2/14/2024,7/10/2024,80,214,5,Se detectó desgaste en las piezas del equipo
-700,11/16/2023,12/15/2023,89,500,5,Se detectó obstrucción en el sistema de ventilación
-701,5/19/2024,10/5/2024,66,664,3,Equipo en condiciones óptimas después del mantenimiento
-702,4/20/2024,4/30/2024,396,735,3,Se detectó filtración en el sistema de agua
-703,12/24/2023,7/24/2024,762,767,1,Se recomienda actualizar el sistema
-704,6/12/2024,8/15/2024,40,417,5,Se detectó obstrucción en el sistema de ventilación
-705,7/9/2024,2/9/2024,588,654,2,Personal amable y profesional durante el servicio
-706,3/5/2024,8/18/2024,245,444,2,Se realizó limpieza exhaustiva del sistema de refrigeración
-707,2/21/2024,5/20/2024,85,139,3,Equipo probado y verificado después del servicio
-708,10/8/2024,1/11/2024,289,724,3,Servicio rápido y eficiente
-709,12/16/2023,10/19/2024,858,789,1,Cliente satisfecho con la atención recibida
-710,9/17/2024,2/6/2024,201,208,4,Se realizó ajuste en la configuración del equipo
-711,11/27/2023,5/8/2024,247,328,2,Personal amable y profesional durante el servicio
-712,4/4/2024,8/25/2024,540,646,5,Equipo probado y verificado después del mantenimiento
-713,8/17/2024,12/25/2023,822,355,1,Servicio completado con éxito
-714,7/18/2024,3/13/2024,902,457,3,Personal amable y profesional durante el servicio
-715,7/26/2024,12/22/2023,303,798,5,Mantenimiento realizado dentro del plazo establecido
-716,7/11/2024,11/16/2023,853,185,5,Se requiere revisión adicional en próxima visita
-717,1/17/2024,5/13/2024,271,762,1,Se realizó limpieza exhaustiva del sistema de refrigeración
-718,5/10/2024,10/26/2024,427,78,5,Se detectó sobrecalentamiento en el sistema
-719,6/22/2024,10/22/2024,267,404,3,Se realizó calibración del equipo
-720,1/10/2024,5/21/2024,678,954,1,Se realizó ajuste en la presión del sistema
-721,10/3/2024,9/9/2024,952,648,4,Personal capacitado y experimentado en el mantenimiento
-722,2/16/2024,7/10/2024,881,65,1,Se recomienda actualizar el sistema
-723,9/29/2024,5/21/2024,464,123,5,Se recomienda programar mantenimiento preventivo
-724,8/10/2024,10/27/2024,183,168,4,Personal capacitado y experimentado en el mantenimiento
-725,3/28/2024,1/20/2024,370,751,2,Se detectó obstrucción en el sistema de ventilación
-726,2/25/2024,3/24/2024,809,511,1,Cliente informado sobre el estado actual del equipo
-727,6/18/2024,11/13/2023,264,747,1,Se realizó limpieza profunda del sistema de filtración
-728,4/7/2024,4/12/2024,162,210,1,Se realizó ajuste en la temperatura del sistema
-729,10/7/2024,9/29/2024,415,583,3,Se requiere revisión adicional en próxima visita
-730,5/24/2024,4/5/2024,106,292,3,Se recomienda actualizar el software del equipo
-731,3/6/2024,11/24/2023,481,239,5,Servicio rápido y eficiente
-732,6/17/2024,4/14/2024,473,953,3,Se entregó reporte detallado al cliente
-733,2/2/2024,3/5/2024,245,122,5,Personal técnico altamente capacitado
-734,1/16/2024,4/25/2024,594,391,1,Cliente satisfecho con la calidad del servicio
-735,5/28/2024,9/14/2024,759,261,3,Se detectó un cortocircuito en el sistema eléctrico
-736,1/18/2024,6/26/2024,458,923,2,Se realizó calibración del equipo
-737,2/18/2024,6/24/2024,263,914,4,Mantenimiento realizado dentro del tiempo estimado
-738,4/22/2024,3/12/2024,774,882,3,Cliente informado sobre el estado actual del equipo
-739,1/11/2024,4/22/2024,249,443,4,Personal capacitado y experimentado en el mantenimiento
-740,5/3/2024,6/29/2024,796,642,3,Cliente informado sobre los trabajos realizados
-741,2/1/2024,3/5/2024,757,342,5,Se detectó filtración en el sistema de agua
-742,11/26/2023,6/27/2024,949,721,2,Equipo en óptimas condiciones después del servicio
-743,10/8/2024,6/30/2024,407,521,3,Equipo verificado y certificado después del mantenimiento
-744,12/14/2023,6/12/2024,401,257,5,Se realizó ajuste en la temperatura del sistema
-745,3/9/2024,11/24/2023,195,307,1,Se recomienda revisión periódica del sistema
-746,12/21/2023,3/5/2024,769,77,5,Personal puntual y comprometido con el servicio
-747,3/17/2024,6/24/2024,967,849,2,Equipo en óptimas condiciones después del servicio
-748,12/26/2023,9/22/2024,617,137,3,Se realizó ajuste en la temperatura del sistema
-749,5/15/2024,11/15/2023,887,716,1,Personal capacitado y experimentado en el mantenimiento
-750,9/28/2024,7/18/2024,988,681,5,Cliente satisfecho con el servicio
-751,11/30/2023,12/3/2023,591,122,2,Reemplazo de batería agotada
-752,8/20/2024,6/15/2024,751,337,2,Se recomienda programar mantenimiento preventivo
-753,4/2/2024,9/8/2024,193,116,1,Se requiere revisión detallada en próxima visita
-754,3/5/2024,12/27/2023,202,349,2,Se realizó cambio de aceite en el motor
-755,12/24/2023,6/18/2024,600,832,1,Equipo verificado y certificado después del mantenimiento
-756,10/2/2024,5/24/2024,580,141,1,Mantenimiento realizado dentro del plazo establecido
-757,12/19/2023,4/26/2024,472,496,2,Equipo probado y verificado después del servicio
-758,1/31/2024,7/14/2024,248,566,5,Personal amable y profesional durante el servicio
-759,10/26/2024,5/9/2024,63,392,5,Cliente satisfecho con la atención recibida
-760,12/18/2023,2/9/2024,872,1000,3,Se entregó reporte detallado al cliente
-761,1/15/2024,6/15/2024,968,867,5,Se recomienda actualizar el sistema
-762,5/24/2024,5/22/2024,633,608,3,Equipo verificado y certificado después del mantenimiento
-763,12/29/2023,6/1/2024,88,912,4,Se realizó ajuste en la configuración del equipo
-764,8/1/2024,5/23/2024,273,162,4,Reparación urgente realizada con éxito
-765,12/26/2023,2/21/2024,793,183,2,Se detectó corrosión en las tuberías
-766,10/30/2024,5/19/2024,63,773,1,Equipo probado y verificado después del mantenimiento
-767,9/7/2024,12/6/2023,235,676,5,Se recomienda revisión periódica del sistema
-768,6/26/2024,9/14/2024,781,68,3,Se detectó corrosión en las tuberías
-769,3/22/2024,6/1/2024,734,665,5,Se recomienda actualizar el software del equipo
-770,6/4/2024,6/11/2024,361,108,3,Se realizó cambio de aceite en el motor
-771,2/2/2024,11/4/2024,521,891,1,Equipo verificado y certificado después del mantenimiento
-772,11/28/2023,9/23/2024,502,632,1,Se detectó corrosión en las tuberías
-773,3/26/2024,6/4/2024,984,240,2,Personal puntual y comprometido con el servicio
-774,10/12/2024,4/13/2024,655,411,2,Cliente informado sobre posibles mejoras en el equipo
-775,4/22/2024,4/3/2024,896,331,5,Se realizó calibración precisa del equipo
-776,2/10/2024,1/9/2024,355,662,2,Reparación urgente realizada
-777,4/22/2024,7/22/2024,693,693,1,Se requiere seguimiento en próxima visita
-778,2/5/2024,12/9/2023,880,960,3,Personal amable y profesional durante el servicio
-779,4/22/2024,10/30/2024,728,382,1,Mantenimiento realizado dentro del plazo establecido
-780,10/2/2024,7/26/2024,99,17,5,Equipo verificado y certificado después del mantenimiento
-781,6/4/2024,10/2/2024,550,395,1,Se requiere revisión detallada en próxima visita
-782,8/24/2024,12/24/2023,999,286,1,Se requiere revisión adicional en próxima visita
-783,10/4/2024,6/17/2024,630,707,5,Se detectó desgaste en las piezas del sistema
-784,1/2/2024,5/5/2024,186,473,4,Personal amable y profesional durante el servicio
-785,5/13/2024,2/15/2024,502,68,1,Se entregó reporte detallado al cliente
-786,3/28/2024,4/26/2024,402,341,1,Se requiere revisión detallada en próxima visita
-787,9/17/2024,1/25/2024,336,430,2,Servicio rápido y eficiente
-788,3/13/2024,5/1/2024,419,922,5,Equipo en óptimas condiciones después del servicio
-789,11/18/2023,12/23/2023,961,152,5,Equipo en perfecto funcionamiento después del mantenimiento
-790,2/17/2024,10/17/2024,714,106,3,Reemplazo de pieza defectuosa
-791,9/24/2024,7/18/2024,299,131,4,Cliente satisfecho con la calidad del servicio
-792,2/29/2024,12/13/2023,398,744,4,Personal amable y profesional durante el servicio
-793,11/21/2023,5/8/2024,396,783,5,Cliente informado sobre recomendaciones de uso
-794,3/22/2024,12/25/2023,409,304,3,Se realizó ajuste en la presión del sistema
-795,8/3/2024,1/28/2024,348,435,1,Cliente satisfecho con la atención recibida
-796,1/14/2024,9/15/2024,871,308,5,Cliente informado sobre recomendaciones de uso
-797,12/12/2023,2/24/2024,86,457,1,Se recomienda programar mantenimiento preventivo
-798,9/13/2024,1/5/2024,131,639,3,Se detectó fuga de gas en el sistema de aire acondicionado
-799,8/17/2024,4/16/2024,432,141,1,Se realizó cambio de aceite en el motor
-800,9/18/2024,9/22/2024,439,887,5,Se detectó sobrecalentamiento en el sistema
-801,5/19/2024,6/27/2024,836,695,4,Se realizó cambio de aceite en el motor
-802,8/11/2024,3/29/2024,659,622,4,Se entregó informe detallado al cliente
-803,12/20/2023,6/27/2024,707,932,4,Personal amable y profesional durante el servicio
-804,3/27/2024,1/26/2024,730,682,3,Necesario realizar mantenimiento preventivo
-805,3/3/2024,11/1/2024,90,305,4,Reparación urgente realizada con éxito
-806,12/4/2023,6/12/2024,97,306,1,Se recomienda revisión periódica del sistema
-807,5/11/2024,11/18/2023,147,566,5,Cliente satisfecho con la atención recibida
-808,12/22/2023,12/27/2023,589,816,1,Cliente satisfecho con el servicio
-809,5/1/2024,5/29/2024,453,72,1,Personal puntual y comprometido con el servicio
-810,5/8/2024,10/30/2024,602,779,1,Se detectó fuga de gas en el sistema de aire acondicionado
-811,6/6/2024,11/3/2024,937,98,5,Cliente informado sobre posibles mejoras en el equipo
-812,7/15/2024,3/10/2024,83,702,3,Equipo verificado y certificado después del mantenimiento
-813,7/4/2024,6/28/2024,626,209,3,Se realizó cambio de aceite en el motor
-814,8/31/2024,2/1/2024,817,455,5,Se recomienda programar mantenimiento preventivo
-815,10/24/2024,3/18/2024,384,527,2,Se recomienda actualizar el sistema
-816,1/13/2024,11/24/2023,289,726,5,Mantenimiento realizado dentro del plazo establecido
-817,6/26/2024,2/23/2024,846,902,2,Se realizó cambio de aceite en el motor
-818,9/20/2024,4/4/2024,684,590,5,Necesario realizar mantenimiento preventivo
-819,9/22/2024,4/2/2024,141,769,4,Personal capacitado y experimentado en el mantenimiento
-820,1/26/2024,5/30/2024,782,729,3,Reparación urgente realizada
-821,8/11/2024,9/10/2024,137,485,2,Se realizó ajuste en la temperatura del sistema
-822,12/26/2023,6/14/2024,146,966,1,Equipo verificado y certificado después del mantenimiento
-823,6/17/2024,5/30/2024,837,895,4,Reemplazo de batería agotada
-824,4/2/2024,10/22/2024,680,642,5,Se detectó sobrecalentamiento en el sistema
-825,2/4/2024,3/15/2024,567,943,4,Cliente informado sobre los trabajos realizados
-826,12/3/2023,2/4/2024,167,415,3,Se recomienda cambio de filtro en próxima visita
-827,12/20/2023,11/23/2023,892,462,2,Se detectó filtración en el sistema de agua
-828,6/14/2024,11/5/2023,355,8,1,Se realizó limpieza exhaustiva del sistema de refrigeración
-829,8/10/2024,7/27/2024,905,165,1,Se realizó cambio de aceite en el motor
-830,5/20/2024,7/6/2024,611,875,2,Reemplazo de batería agotada
-831,5/29/2024,12/13/2023,79,163,4,Se realizó ajuste en la temperatura del sistema
-832,12/12/2023,1/14/2024,130,393,2,Cliente informado sobre recomendaciones de uso adecuado
-833,5/1/2024,7/12/2024,555,797,1,Se detectó filtración en el sistema de agua
-834,8/6/2024,6/24/2024,277,647,5,Se requiere revisión adicional en próxima visita
-835,10/20/2024,5/21/2024,232,894,3,Se realizó ajuste en la presión del sistema
-836,11/5/2023,5/21/2024,365,344,4,Equipo en óptimas condiciones después del servicio
-837,9/15/2024,10/21/2024,465,332,5,Equipo en condiciones óptimas después del servicio
-838,11/18/2023,7/12/2024,465,281,1,Se realizó calibración precisa del equipo
-839,8/20/2024,9/27/2024,149,545,1,Se recomienda programar mantenimiento preventivo
-840,11/16/2023,1/7/2024,313,666,5,Reemplazo de batería agotada
-841,5/23/2024,2/29/2024,298,493,2,Cliente satisfecho con la atención recibida
-842,11/2/2024,10/21/2024,453,770,3,Se realizó cambio de aceite en el motor
-843,1/26/2024,1/11/2024,654,376,1,Cliente informado sobre los trabajos realizados
-844,4/23/2024,2/10/2024,574,923,1,Reemplazo de batería agotada
-845,4/29/2024,9/17/2024,986,786,2,Personal técnico altamente capacitado
-846,11/22/2023,5/3/2024,6,26,1,Se realizó ajuste en la presión del sistema
-847,6/27/2024,9/14/2024,67,708,4,Equipo probado y verificado después del mantenimiento
-848,7/24/2024,5/7/2024,290,955,5,Se entregó reporte detallado al cliente
-849,4/12/2024,6/14/2024,233,644,5,Se realizó limpieza profunda del sistema de filtración
-850,12/20/2023,9/14/2024,13,245,3,Servicio completado con éxito
-851,12/26/2023,10/8/2024,972,252,5,Se realizó cambio de aceite en el motor
-852,12/22/2023,9/13/2024,86,431,5,Se detectó obstrucción en el sistema de ventilación
-853,8/4/2024,2/19/2024,0,518,3,Equipo verificado y certificado después del mantenimiento
-854,2/1/2024,4/7/2024,542,390,4,Personal amable y profesional durante el servicio
-855,11/10/2023,6/22/2024,886,456,5,Equipo verificado y certificado después del mantenimiento
-856,12/30/2023,8/7/2024,708,994,5,Servicio rápido y eficiente
-857,10/3/2024,1/27/2024,315,708,1,Equipo verificado y certificado después del mantenimiento
-858,2/26/2024,5/23/2024,703,190,2,Se recomienda actualizar el software del equipo
-859,3/9/2024,4/23/2024,481,720,4,Se recomienda actualizar el software del equipo
-860,1/3/2024,7/26/2024,106,801,3,Reparación urgente realizada con éxito
-861,3/18/2024,9/22/2024,893,833,2,Equipo en condiciones óptimas después del servicio
-862,9/13/2024,3/1/2024,675,731,5,Se detectó corrosión en las tuberías
-863,10/15/2024,7/2/2024,373,761,1,Personal técnico altamente capacitado
-864,1/10/2024,2/7/2024,294,62,3,Equipo en buen estado después del servicio
-865,7/14/2024,4/14/2024,839,147,5,Reemplazo de pieza defectuosa
-866,7/27/2024,6/13/2024,951,14,3,Se recomienda cambio de filtro en próxima visita
-867,4/22/2024,10/17/2024,746,540,1,Cliente satisfecho con el servicio
-868,10/2/2024,7/11/2024,152,188,1,Equipo verificado y certificado después del mantenimiento
-869,9/29/2024,3/18/2024,402,90,5,Personal puntual y comprometido con el servicio
-870,12/20/2023,1/8/2024,803,330,2,Se realizó ajuste en la presión del sistema
-871,4/23/2024,1/24/2024,415,924,3,Se detectó sobrecalentamiento en el sistema
-872,2/24/2024,4/27/2024,267,125,3,Se recomienda actualizar el sistema
-873,1/7/2024,11/8/2023,253,696,1,Se recomienda programar mantenimiento preventivo
-874,10/30/2024,11/26/2023,382,47,3,Se recomienda revisión periódica del sistema
-875,4/3/2024,1/21/2024,659,421,4,Se recomienda programar mantenimiento preventivo
-876,9/27/2024,4/17/2024,442,631,3,Se requiere revisión detallada en próxima visita
-877,9/19/2024,4/10/2024,411,774,4,Personal amable y profesional durante el servicio
-878,11/25/2023,10/18/2024,376,292,1,Se detectó desgaste en las piezas del sistema
-879,5/16/2024,3/19/2024,250,140,5,Se realizó ajuste en la presión del sistema
-880,10/12/2024,12/25/2023,125,59,3,Mantenimiento realizado dentro del plazo establecido
-881,5/16/2024,8/16/2024,476,884,5,Cliente informado sobre posibles mejoras en el equipo
-882,7/7/2024,5/6/2024,297,473,1,Equipo en óptimas condiciones después del servicio
-883,7/3/2024,2/10/2024,458,690,2,Equipo en buen estado después del servicio
-884,4/19/2024,9/7/2024,399,273,4,Equipo probado y verificado después del servicio
-885,10/4/2024,6/2/2024,572,581,5,Personal técnico altamente capacitado
-886,6/27/2024,6/14/2024,467,63,1,Equipo en óptimas condiciones después del servicio
-887,12/14/2023,12/2/2023,61,75,4,Se detectó sobrecalentamiento en el sistema
-888,12/15/2023,10/9/2024,108,413,1,Se detectó obstrucción en el sistema de ventilación
-889,9/20/2024,8/29/2024,398,523,2,Cliente informado de los trabajos realizados
-890,5/10/2024,5/7/2024,847,54,1,Equipo probado y verificado después del mantenimiento
-891,3/27/2024,9/27/2024,837,694,3,Equipo probado y verificado después del mantenimiento
-892,6/30/2024,10/15/2024,567,468,4,Se entregó reporte detallado al cliente
-893,4/3/2024,11/4/2024,371,283,4,Reparación urgente realizada
-894,5/12/2024,4/24/2024,141,53,2,Equipo en perfectas condiciones después del servicio
-895,5/6/2024,5/12/2024,659,798,4,Equipo verificado y certificado después del mantenimiento
-896,12/29/2023,10/31/2024,354,709,4,Cliente informado sobre recomendaciones de uso adecuado
-897,12/1/2023,5/23/2024,521,994,4,Se realizó calibración precisa del equipo
-898,2/16/2024,10/21/2024,524,684,4,Cliente satisfecho con el servicio
-899,8/15/2024,1/22/2024,384,116,1,Se detectó desgaste en las piezas del sistema
-900,5/30/2024,1/27/2024,502,350,4,Equipo en condiciones óptimas después del servicio
-901,2/21/2024,10/10/2024,72,557,4,Se detectó desgaste en las piezas del equipo
-902,9/23/2024,9/26/2024,331,868,2,Personal amable y profesional durante el servicio
-903,1/8/2024,9/4/2024,864,155,5,Se encontraron problemas adicionales durante el mantenimiento
-904,10/24/2024,6/27/2024,94,854,1,Cliente informado sobre recomendaciones de uso
-905,8/3/2024,4/10/2024,854,439,3,Se detectó fuga de gas en el sistema de aire acondicionado
-906,2/11/2024,4/9/2024,572,926,5,Personal puntual y comprometido con el servicio
-907,4/11/2024,3/2/2024,983,970,3,Se requiere revisión detallada en próxima visita
-908,7/23/2024,6/30/2024,325,556,4,Se realizó calibración del equipo
-909,11/10/2023,1/3/2024,397,16,4,Se realizó limpieza profunda del sistema de filtración
-910,1/29/2024,11/1/2024,630,923,5,Se encontraron problemas adicionales durante el mantenimiento
-911,8/14/2024,4/8/2024,104,215,4,Se requiere revisión adicional en próxima visita
-912,2/16/2024,9/10/2024,526,685,1,Cliente informado sobre posibles mejoras en el equipo
-913,6/12/2024,5/8/2024,453,412,3,Cliente informado sobre el estado actual del equipo
-914,9/14/2024,11/30/2023,392,409,4,Se requiere revisión detallada en la próxima visita
-915,6/28/2024,12/15/2023,89,707,2,Limpieza profunda del equipo
-916,6/29/2024,7/25/2024,870,226,2,Cliente satisfecho con el servicio
-917,3/13/2024,1/11/2024,70,999,2,Equipo verificado y certificado después del mantenimiento
-918,9/16/2024,6/16/2024,6,702,5,Se detectó corrosión en las tuberías
-919,12/31/2023,6/10/2024,112,668,4,Se requiere revisión adicional en próxima visita
-920,6/22/2024,8/10/2024,32,87,2,Mantenimiento realizado dentro del tiempo estimado
-921,4/16/2024,7/31/2024,201,571,2,Reparación urgente realizada
-922,8/19/2024,2/15/2024,824,55,4,Reparación urgente realizada con éxito
-923,5/30/2024,6/18/2024,970,632,1,Se realizó ajuste en la presión del sistema
-924,11/2/2024,11/6/2023,416,200,3,Equipo en óptimas condiciones después del servicio
-925,1/14/2024,12/3/2023,85,574,4,Se recomienda actualizar el sistema
-926,5/21/2024,6/2/2024,907,305,3,Se realizó cambio de aceite en el motor
-927,1/5/2024,5/24/2024,779,499,3,Equipo en perfecto funcionamiento después del mantenimiento
-928,6/26/2024,10/17/2024,950,1000,4,Reemplazo de pieza defectuosa
-929,8/19/2024,11/12/2023,116,50,4,Se detectó corrosión en las tuberías
-930,4/13/2024,12/5/2023,40,642,5,Mantenimiento realizado dentro del tiempo estimado
-931,3/2/2024,12/25/2023,78,592,4,Se detectó sobrecalentamiento en el sistema
-932,5/1/2024,11/12/2023,664,135,1,Cliente informado sobre los trabajos realizados
-933,2/24/2024,9/4/2024,923,533,5,Reparación urgente realizada
-934,1/30/2024,2/20/2024,503,871,3,Se detectó fuga de gas en el sistema de aire acondicionado
-935,10/2/2024,4/6/2024,263,247,5,Equipo en perfecto funcionamiento después del mantenimiento
-936,7/4/2024,1/26/2024,56,53,5,Mantenimiento realizado dentro del tiempo estimado
-937,3/2/2024,7/19/2024,269,67,1,Equipo en óptimas condiciones después del servicio
-938,4/3/2024,1/9/2024,521,138,1,Equipo probado y verificado después del servicio
-939,2/25/2024,7/2/2024,780,325,1,Reparación urgente realizada con éxito
-940,5/20/2024,11/23/2023,84,772,2,Cliente informado sobre recomendaciones de uso adecuado
-941,2/5/2024,8/11/2024,548,989,4,Equipo probado y verificado después del mantenimiento
-942,8/21/2024,5/3/2024,416,99,4,Se realizó cambio de aceite en el motor
-943,7/14/2024,2/6/2024,750,908,2,Cliente informado sobre posibles mejoras en el equipo
-944,7/24/2024,7/16/2024,87,136,4,Se recomienda programar mantenimiento preventivo
-945,5/1/2024,8/12/2024,919,242,5,Se realizó ajuste en la presión del sistema
-946,10/11/2024,7/16/2024,794,34,3,Mantenimiento realizado dentro del plazo establecido
-947,3/1/2024,1/3/2024,490,151,2,Se detectó una fuga en el sistema de tuberías
-948,1/20/2024,8/24/2024,171,826,4,Equipo verificado y certificado después del mantenimiento
-949,8/28/2024,5/9/2024,563,142,1,Servicio rápido y eficiente
-950,4/20/2024,10/21/2024,677,834,1,Se detectó una fuga en el sistema de tuberías
-951,11/4/2024,11/26/2023,524,6,4,Cliente informado de los trabajos realizados
-952,8/30/2024,4/21/2024,469,918,3,Personal amable y profesional durante el servicio
-953,7/19/2024,1/17/2024,724,821,3,Se realizó limpieza exhaustiva del sistema de refrigeración
-954,12/14/2023,5/22/2024,273,819,2,Se recomienda cambio de filtro en próxima visita
-955,11/16/2023,6/28/2024,618,700,3,Cliente informado sobre posibles mejoras en el equipo
-956,6/11/2024,8/27/2024,780,580,1,Se recomienda programar mantenimiento preventivo
-957,2/14/2024,9/11/2024,970,501,2,Equipo en condiciones óptimas después del servicio
-958,8/22/2024,10/7/2024,687,945,5,Reparación urgente realizada
-959,9/1/2024,10/1/2024,172,681,2,Equipo en perfectas condiciones después del servicio
-960,3/19/2024,8/13/2024,675,906,5,Cliente informado sobre recomendaciones de uso adecuado
-961,9/21/2024,4/3/2024,113,799,3,Se recomienda programar mantenimiento preventivo
-962,4/11/2024,9/26/2024,629,287,2,Servicio rápido y eficiente
-963,6/14/2024,5/21/2024,659,241,5,Se requiere revisión detallada en próxima visita
-964,4/11/2024,10/17/2024,483,645,5,Equipo en condiciones óptimas después del mantenimiento
-965,5/6/2024,7/18/2024,653,189,2,Se recomienda programar mantenimiento preventivo
-966,12/17/2023,7/24/2024,35,612,5,Se detectó corrosión en las tuberías
-967,9/27/2024,12/11/2023,865,96,3,Cliente informado sobre recomendaciones de uso adecuado
-968,10/17/2024,10/12/2024,678,944,1,Cliente satisfecho con la calidad del servicio
-969,8/11/2024,4/14/2024,835,319,5,Se recomienda cambio de filtro en próxima visita
-970,10/19/2024,10/4/2024,414,934,5,Equipo en buen estado después del servicio
-971,6/20/2024,1/10/2024,962,907,3,Se detectó corrosión en las tuberías
-972,5/13/2024,5/7/2024,828,670,5,Equipo en condiciones óptimas después del servicio
-973,3/14/2024,10/8/2024,994,305,2,Se requiere seguimiento en próxima visita
-974,7/23/2024,4/17/2024,965,649,4,Se recomienda revisión periódica
-975,11/20/2023,4/7/2024,367,974,1,Reparación urgente realizada
-976,11/13/2023,10/24/2024,593,209,1,Se detectó obstrucción en el sistema de ventilación
-977,4/27/2024,4/30/2024,418,242,1,Se realizó limpieza exhaustiva del sistema de refrigeración
-978,7/15/2024,7/7/2024,430,708,5,Equipo verificado y certificado después del mantenimiento
-979,5/14/2024,9/24/2024,412,109,2,Se realizó limpieza profunda del sistema de filtración
-980,2/11/2024,1/4/2024,152,80,4,Cliente satisfecho con la calidad del servicio
-981,5/18/2024,7/1/2024,751,149,1,Se detectó filtración en el sistema de agua
-982,3/8/2024,1/27/2024,905,44,1,Se recomienda cambio de filtro en próxima visita
-983,7/1/2024,11/2/2024,639,612,4,Se entregó informe detallado al cliente
-984,6/16/2024,11/13/2023,178,224,4,Se detectó sobrecalentamiento en el sistema
-985,12/30/2023,9/16/2024,680,388,1,Se detectó corrosión en las tuberías
-986,8/29/2024,11/8/2023,398,58,3,Personal capacitado y experimentado en el mantenimiento
-987,11/21/2023,8/7/2024,548,7,3,Se requiere revisión detallada en la próxima visita
-988,5/13/2024,6/23/2024,600,85,5,Se requiere revisión detallada en próxima visita
-989,7/25/2024,4/16/2024,993,649,3,Reemplazo de componentes dañados
-990,9/18/2024,3/16/2024,700,716,2,Se recomienda programar mantenimiento preventivo
-991,7/1/2024,4/1/2024,308,546,2,Equipo probado y verificado después del servicio
-992,6/9/2024,8/28/2024,685,578,3,Se detectó una fuga en el sistema de tuberías
-993,1/23/2024,5/20/2024,94,313,1,Se entregó reporte detallado al cliente
-994,11/4/2024,11/15/2023,321,279,4,Reemplazo de batería agotada
-995,8/10/2024,5/3/2024,912,927,2,Equipo verificado y certificado después del mantenimiento
-996,6/25/2024,11/16/2023,110,409,3,Se realizó limpieza profunda del sistema de filtración
-997,5/26/2024,4/8/2024,607,37,2,Se recomienda cambio de filtro en próxima visita
-998,6/26/2024,4/24/2024,509,780,1,Se detectó sobrecalentamiento en el sistema
-999,6/2/2024,3/6/2024,910,288,3,Se requiere revisión detallada en la próxima visita
-1000,11/2/2024,11/24/2023,748,678,4,Equipo en óptimas condiciones después del servicio
+1,15/05/2024,22/08/2024,758,676,4,Se recomienda actualizar el software del equipo
+2,12/07/2023,14/08/2023,38,891,1,Se detectó desgaste en las piezas del equipo
+3,11/12/2023,31/03/2023,253,55,2,Se realizó calibración precisa del equipo
+4,20/04/2023,18/10/2023,969,595,5,Se realizó ajuste en la presión del sistema
+5,09/02/2024,28/11/2023,62,231,2,Se realizó limpieza exhaustiva del sistema de refrigeración
+6,15/02/2024,10/09/2023,860,198,3,Equipo verificado y certificado después del mantenimiento
+7,29/04/2023,13/05/2024,526,513,1,Equipo en perfecto funcionamiento después del mantenimiento
+8,31/07/2023,13/05/2023,691,177,3,Reemplazo de pieza defectuosa
+9,26/09/2024,10/03/2024,72,370,1,Se recomienda actualizar el sistema
+10,20/06/2024,14/06/2024,292,919,2,Se recomienda revisión periódica del sistema
+11,03/03/2023,02/10/2024,7,665,4,Se detectó sobrecalentamiento en el sistema
+12,08/05/2024,20/09/2023,602,766,5,Reparación urgente realizada con éxito
+13,13/07/2023,12/03/2024,536,163,1,Personal técnico altamente capacitado
+14,04/04/2023,04/08/2023,137,514,2,Reparación urgente realizada con éxito
+15,09/04/2024,17/09/2023,942,837,5,Se entregó informe detallado al cliente
+16,10/03/2024,14/08/2024,710,311,2,Cliente satisfecho con la atención recibida
+17,12/07/2024,26/04/2024,797,654,3,Se realizó ajuste en la configuración del equipo
+18,16/09/2023,27/01/2024,439,379,3,Se recomienda cambio de filtro en próxima visita
+19,04/04/2023,05/07/2024,787,23,3,Se detectó obstrucción en el sistema de ventilación
+20,09/03/2024,11/11/2023,883,49,3,Se detectó corrosión en las tuberías
+21,12/07/2024,13/04/2023,730,790,4,Se recomienda programar mantenimiento preventivo
+22,18/11/2023,26/10/2024,986,873,1,Se realizó ajuste en la presión del sistema
+23,01/09/2024,22/03/2024,986,308,5,Se realizó ajuste en la configuración del equipo
+24,18/07/2023,17/01/2024,371,219,4,Se requiere seguimiento en próxima visita
+25,25/08/2023,30/10/2024,67,325,4,Cliente informado sobre el estado actual del equipo
+26,18/12/2023,11/02/2024,86,479,5,Mantenimiento realizado dentro del plazo establecido
+27,20/08/2023,10/07/2024,555,649,2,Se realizó ajuste en la presión del sistema
+28,11/12/2023,17/09/2023,138,495,4,Se realizó ajuste en la temperatura del sistema
+29,13/03/2023,18/04/2023,718,686,1,Necesario realizar mantenimiento preventivo
+30,08/02/2024,17/08/2024,575,786,1,Se recomienda actualizar el software del equipo
+31,04/10/2024,11/11/2023,201,884,4,Personal amable y profesional durante el servicio
+32,08/01/2024,29/05/2023,812,497,4,Equipo en condiciones óptimas después del servicio
+33,06/07/2023,25/07/2024,383,323,2,Equipo en perfecto funcionamiento después del mantenimiento
+34,30/05/2023,19/12/2023,12,391,4,Se detectó sobrecalentamiento en el sistema
+35,29/07/2023,20/02/2024,655,756,3,Se realizó limpieza exhaustiva del sistema de refrigeración
+36,29/05/2023,21/12/2023,217,552,1,Reemplazo de batería agotada
+37,11/03/2023,07/06/2023,593,83,5,Limpieza profunda del equipo
+38,06/05/2023,15/12/2023,379,133,5,Se detectó obstrucción en el sistema de ventilación
+39,11/08/2024,20/01/2024,789,674,2,Personal capacitado y experimentado en el mantenimiento
+40,31/07/2024,29/03/2024,496,614,3,Se realizó cambio de aceite en el motor
+41,18/09/2024,02/08/2024,545,695,3,Cliente satisfecho con la atención recibida
+42,22/05/2023,04/06/2024,446,585,4,Reparación urgente realizada con éxito
+43,23/05/2024,25/05/2023,487,708,3,Se detectó fuga de gas en el sistema de aire acondicionado
+44,11/09/2024,28/04/2024,701,857,2,Se detectó sobrecalentamiento en el sistema
+45,10/05/2023,10/03/2023,795,88,1,Se realizó ajuste en la temperatura del sistema
+46,13/06/2023,21/01/2024,271,345,3,Se realizó ajuste en la temperatura del sistema
+47,27/10/2024,24/08/2024,277,295,3,Limpieza profunda del equipo
+48,30/11/2023,20/08/2023,713,932,4,Mantenimiento realizado dentro del tiempo estimado
+49,04/08/2023,01/05/2024,28,12,1,Se detectó filtración en el sistema de agua
+50,04/07/2024,02/07/2024,62,128,5,Se realizó ajuste en la configuración del equipo
+51,05/07/2024,22/04/2024,379,753,3,Se detectó desgaste en las piezas del equipo
+52,19/03/2024,08/06/2023,662,118,3,Reemplazo de pieza defectuosa
+53,03/02/2024,04/11/2023,487,848,1,Se requiere revisión detallada en la próxima visita
+54,18/11/2023,23/04/2024,658,163,3,Se realizó ajuste en la configuración del equipo
+55,06/05/2023,29/09/2023,662,685,2,Se detectó una fuga en el sistema de tuberías
+56,16/03/2023,28/10/2024,744,882,1,Cliente satisfecho con la calidad del servicio
+57,02/10/2024,04/05/2024,265,377,2,Cliente satisfecho con la calidad del servicio
+58,21/03/2023,19/08/2023,982,274,3,Se realizó ajuste en la temperatura del sistema
+59,17/04/2023,31/08/2023,366,905,2,Se recomienda revisión periódica
+60,05/04/2023,04/11/2023,369,846,2,Equipo verificado y certificado después del mantenimiento
+61,10/08/2024,14/05/2024,966,517,1,Personal técnico altamente capacitado
+62,25/02/2024,15/05/2023,785,554,1,Equipo probado y verificado después del servicio
+63,19/09/2024,27/02/2024,427,2,3,Se detectó un cortocircuito en el sistema eléctrico
+64,10/04/2024,07/06/2024,432,876,3,Se recomienda actualizar el sistema
+65,22/06/2023,29/08/2023,511,943,3,Equipo en buen estado después del servicio
+66,17/06/2024,30/01/2024,494,747,3,Se realizó ajuste en la temperatura del sistema
+67,01/06/2023,20/12/2023,740,418,3,Personal capacitado y experimentado en el mantenimiento
+68,31/03/2024,02/04/2024,391,757,3,Personal amable y profesional durante el servicio
+69,19/05/2023,08/07/2024,519,24,3,Se requiere revisión adicional en la próxima visita
+70,09/09/2024,24/04/2024,452,683,3,Cliente informado sobre posibles mejoras en el equipo
+71,01/05/2023,10/03/2024,801,69,4,Cliente informado sobre posibles mejoras en el equipo
+72,24/09/2024,06/06/2024,984,297,2,Equipo en óptimas condiciones después del servicio
+73,02/10/2024,25/06/2024,666,105,3,Se detectó sobrecalentamiento en el sistema
+74,31/03/2023,06/08/2024,266,605,5,Equipo en óptimas condiciones después del servicio
+75,20/03/2023,07/06/2023,288,725,5,Se realizó ajuste en la temperatura del sistema
+76,17/09/2023,31/03/2023,661,378,3,Personal amable y profesional durante el servicio
+77,16/12/2023,13/03/2023,299,609,3,Se encontraron problemas adicionales durante el mantenimiento
+78,22/08/2023,14/05/2023,274,785,5,Personal puntual y comprometido con el servicio
+79,04/04/2023,25/12/2023,109,319,1,Equipo en perfectas condiciones después del servicio
+80,18/08/2024,25/08/2023,535,320,4,Se detectó desgaste en las piezas del equipo
+81,09/09/2024,26/01/2024,953,980,4,Equipo probado y verificado después del mantenimiento
+82,11/09/2023,29/03/2023,21,715,4,Se detectó una fuga en el sistema de tuberías
+83,03/06/2023,11/07/2024,226,178,4,Se realizó ajuste en la temperatura del sistema
+84,19/10/2023,08/11/2024,55,885,3,Equipo en buen estado después del servicio
+85,14/08/2024,18/09/2023,801,828,4,Se detectó una fuga en el sistema de tuberías
+86,03/01/2024,17/02/2024,805,549,4,Se encontraron problemas adicionales durante el mantenimiento
+87,28/05/2024,13/09/2023,799,545,5,Personal puntual y comprometido con el servicio
+88,01/03/2024,21/04/2023,135,970,5,Se recomienda actualizar el software del equipo
+89,17/01/2024,29/05/2024,922,761,5,Cliente satisfecho con la calidad del servicio
+90,11/04/2024,03/12/2023,429,743,4,Se encontraron problemas adicionales durante el mantenimiento
+91,05/06/2023,18/07/2024,511,871,2,Limpieza profunda del equipo
+92,07/05/2024,23/03/2023,963,418,3,Equipo en perfectas condiciones después del servicio
+93,03/10/2023,24/11/2023,343,569,1,Se realizó calibración del equipo
+94,08/05/2023,20/01/2024,356,485,5,Se realizó ajuste en la temperatura del sistema
+95,31/01/2024,04/07/2024,576,952,2,Se detectó desgaste en las piezas del equipo
+96,13/04/2023,27/02/2024,932,141,4,Se detectó desgaste en las piezas del equipo
+97,21/04/2023,27/08/2023,307,579,2,Se detectó fuga de gas en el sistema de aire acondicionado
+98,19/06/2023,19/05/2024,512,144,2,Equipo probado y verificado después del mantenimiento
+99,12/05/2023,24/01/2024,290,269,4,Equipo probado y verificado después del mantenimiento
+100,26/07/2024,13/12/2023,573,869,4,Equipo en condiciones óptimas después del mantenimiento
+101,22/04/2023,18/04/2023,767,931,1,Se detectó sobrecalentamiento en el sistema
+102,25/07/2024,17/03/2023,595,242,4,Se recomienda programar mantenimiento preventivo
+103,28/05/2023,21/10/2023,578,325,4,Necesario realizar mantenimiento preventivo
+104,11/07/2024,17/01/2024,684,871,1,Se recomienda revisión periódica del sistema
+105,21/05/2023,01/04/2024,72,422,1,Se recomienda revisión periódica del sistema
+106,06/03/2023,17/03/2023,117,44,2,Se detectó filtración en el sistema de agua
+107,17/07/2023,20/10/2023,77,140,3,Equipo probado y verificado después del mantenimiento
+108,02/04/2023,16/09/2023,250,75,2,Se realizó limpieza profunda del sistema de filtración
+109,06/04/2023,21/04/2023,372,706,4,Cliente informado sobre el estado actual del equipo
+110,17/11/2023,23/01/2024,663,690,3,Se detectó desgaste en las piezas del sistema
+111,25/07/2024,08/04/2023,129,896,2,Se realizó calibración del equipo
+112,15/12/2023,08/03/2024,663,476,4,Cliente satisfecho con la atención recibida
+113,18/05/2023,18/08/2024,256,270,5,Equipo en perfecto funcionamiento después del mantenimiento
+114,22/06/2024,03/05/2023,943,970,5,Se detectó desgaste en las piezas del sistema
+115,13/09/2023,17/04/2024,576,100,1,Se recomienda revisión periódica
+116,23/05/2023,13/09/2023,306,599,2,Se recomienda revisión periódica
+117,31/01/2024,22/08/2023,152,790,2,Se recomienda revisión periódica del sistema
+118,12/04/2024,15/06/2024,812,333,5,Cliente informado sobre el estado actual del equipo
+119,01/06/2023,23/11/2023,461,504,1,Se recomienda actualizar el sistema
+120,24/05/2024,12/05/2024,958,817,3,Equipo en condiciones óptimas después del mantenimiento
+121,22/04/2023,15/09/2023,560,130,1,Servicio completado con éxito
+122,12/04/2024,21/05/2023,343,350,5,Se requiere revisión adicional en la próxima visita
+123,22/11/2023,15/07/2024,780,554,2,Limpieza profunda del equipo
+124,09/12/2023,12/09/2024,766,360,5,Se recomienda actualizar el software del equipo
+125,10/11/2023,05/06/2023,483,673,1,Reemplazo de batería agotada
+126,15/12/2023,23/04/2024,528,815,2,Reparación urgente realizada con éxito
+127,28/08/2023,14/03/2023,977,797,1,Se detectó desgaste en las piezas del equipo
+128,02/08/2023,19/06/2023,420,912,2,Reemplazo de batería agotada
+129,21/04/2023,05/07/2024,796,543,1,Se detectó corrosión en las tuberías
+130,06/11/2023,27/05/2024,203,294,2,Se recomienda revisión periódica del sistema
+131,13/04/2023,09/03/2024,801,147,1,Reemplazo de componentes dañados
+132,11/03/2024,25/05/2024,108,572,2,Se requiere revisión detallada en la próxima visita
+133,08/09/2024,27/08/2024,842,588,3,Se detectó un cortocircuito en el sistema eléctrico
+134,20/06/2023,19/04/2024,413,282,2,Se realizó limpieza profunda del sistema de filtración
+135,06/11/2024,12/12/2023,319,886,5,Se entregó informe detallado al cliente
+136,12/05/2024,03/07/2024,70,259,5,Equipo verificado y certificado después del mantenimiento
+137,10/08/2023,20/09/2023,579,435,2,Se detectó desgaste en las piezas del equipo
+138,18/11/2023,02/05/2024,818,130,5,Cliente satisfecho con la calidad del servicio
+139,15/10/2023,23/04/2024,166,523,1,Cliente informado sobre el estado actual del equipo
+140,23/06/2023,10/02/2024,620,198,2,Personal capacitado y experimentado en el mantenimiento
+141,07/07/2023,19/05/2023,586,477,2,Cliente satisfecho con la atención recibida
+142,06/11/2024,28/10/2024,89,472,3,Cliente satisfecho con la calidad del servicio
+143,27/07/2024,24/02/2024,433,963,1,Equipo verificado y certificado después del mantenimiento
+144,17/10/2024,14/11/2023,946,706,5,Equipo en óptimas condiciones después del servicio
+145,22/08/2023,22/04/2024,387,376,4,Reemplazo de componentes dañados
+146,04/02/2024,20/02/2024,99,454,4,Servicio rápido y eficiente
+147,19/03/2023,27/11/2023,716,643,5,Reemplazo de componentes dañados
+148,24/07/2024,16/06/2024,534,416,2,Se detectó corrosión en las tuberías
+149,29/04/2024,28/04/2023,732,404,1,Se detectó sobrecalentamiento en el sistema
+150,20/04/2024,24/08/2023,881,714,4,Se requiere revisión detallada en la próxima visita
+151,28/10/2024,02/03/2024,379,852,5,Cliente informado sobre el estado actual del equipo
+152,07/02/2024,02/01/2024,51,91,4,Se realizó limpieza exhaustiva del sistema de refrigeración
+153,27/12/2023,08/11/2023,906,945,4,Se recomienda actualizar el software del equipo
+154,06/11/2023,09/04/2023,527,727,2,Se realizó cambio de aceite en el motor
+155,11/07/2023,04/12/2023,679,732,1,Cliente satisfecho con la calidad del servicio
+156,24/08/2024,15/08/2024,258,241,3,Equipo probado y verificado después del servicio
+157,28/04/2024,04/10/2023,597,861,5,Servicio completado con éxito
+158,07/02/2024,30/09/2024,215,480,1,Reparación urgente realizada con éxito
+159,17/01/2024,30/01/2024,760,542,5,Reparación urgente realizada con éxito
+160,24/09/2023,18/06/2023,318,625,1,Se recomienda programar mantenimiento preventivo
+161,04/09/2024,03/12/2023,872,337,2,Equipo en condiciones óptimas después del servicio
+162,08/07/2023,09/07/2023,174,190,5,Se detectó filtración en el sistema de agua
+163,13/03/2023,06/07/2024,490,552,5,Se realizó limpieza profunda del sistema de filtración
+164,27/03/2023,29/05/2024,615,79,3,Se requiere revisión detallada en próxima visita
+165,11/03/2023,15/11/2023,195,212,3,Se entregó informe detallado al cliente
+166,08/09/2023,09/01/2024,221,122,5,Cliente informado sobre el estado actual del equipo
+167,06/06/2024,28/06/2024,853,79,4,Equipo verificado y certificado después del mantenimiento
+168,12/09/2024,22/12/2023,485,202,2,Se realizó ajuste en la configuración del equipo
+169,07/05/2024,18/04/2024,494,20,1,Se realizó ajuste en la temperatura del sistema
+170,24/09/2024,27/09/2023,196,7,3,Equipo verificado y certificado después del mantenimiento
+171,21/05/2023,06/09/2023,599,788,1,Se detectó fuga de gas en el sistema de aire acondicionado
+172,24/06/2024,06/04/2024,7,959,2,Equipo probado y verificado después del mantenimiento
+173,13/02/2024,03/02/2024,282,240,5,Se detectó corrosión en las tuberías
+174,14/10/2024,11/03/2024,577,577,2,Necesario realizar mantenimiento preventivo
+175,21/06/2024,08/03/2024,467,789,2,Equipo en óptimas condiciones después del servicio
+176,16/05/2024,24/09/2024,548,102,5,Cliente informado sobre posibles mejoras en el equipo
+177,08/05/2024,29/04/2024,765,102,1,Personal amable y profesional durante el servicio
+178,25/05/2024,22/07/2023,572,390,1,Servicio rápido y eficiente
+179,11/04/2024,19/07/2023,194,400,1,Reemplazo de batería agotada
+180,08/10/2024,19/03/2024,96,601,4,Se realizó cambio de aceite en el motor
+181,31/01/2024,21/06/2024,464,714,1,Se realizó ajuste en la presión del sistema
+182,08/09/2023,04/08/2023,271,290,1,Personal técnico altamente capacitado
+183,07/07/2023,12/10/2024,107,527,3,Cliente satisfecho con el servicio
+184,14/01/2024,16/11/2023,331,152,3,Personal capacitado y experimentado en el mantenimiento
+185,06/05/2023,16/07/2023,776,943,3,Se detectó filtración en el sistema de agua
+186,07/08/2023,18/04/2023,895,866,2,Cliente informado sobre los trabajos realizados
+187,31/07/2023,20/03/2024,550,203,4,Se realizó cambio de aceite en el motor
+188,07/06/2023,13/03/2023,757,734,5,Personal capacitado y experimentado en el mantenimiento
+189,22/01/2024,02/07/2024,208,357,5,Reemplazo de batería agotada
+190,15/03/2024,14/01/2024,15,928,4,Reemplazo de pieza defectuosa
+191,22/10/2024,31/12/2023,666,833,2,Equipo en óptimas condiciones después del servicio
+192,13/09/2023,01/06/2023,360,238,5,Equipo probado y verificado después del servicio
+193,18/06/2024,30/05/2023,665,860,5,Equipo probado y verificado después del mantenimiento
+194,12/09/2023,29/08/2024,516,483,2,Se recomienda programar mantenimiento preventivo
+195,31/08/2024,06/08/2023,295,181,5,Equipo en condiciones óptimas después del mantenimiento
+196,15/03/2024,12/07/2023,688,293,4,Equipo verificado y certificado después del mantenimiento
+197,29/03/2023,10/09/2023,90,285,3,Servicio completado con éxito
+198,12/03/2023,31/10/2023,131,291,2,Cliente satisfecho con la calidad del servicio
+199,15/06/2024,20/10/2023,598,162,1,Se recomienda cambio de filtro en próxima visita
+200,19/07/2023,28/01/2024,637,846,5,Cliente informado sobre el estado actual del equipo
+201,02/04/2023,20/09/2023,203,44,1,Se detectó desgaste en las piezas del equipo
+202,22/09/2023,01/07/2024,584,206,5,Se realizó limpieza profunda del sistema de filtración
+203,19/07/2023,05/07/2024,858,13,3,Cliente satisfecho con la atención recibida
+204,22/01/2024,27/08/2024,229,544,4,Personal puntual y comprometido con el servicio
+205,03/02/2024,25/08/2024,348,212,4,Personal amable y profesional durante el servicio
+206,27/06/2023,27/08/2023,446,295,4,Equipo probado y verificado después del servicio
+207,10/07/2024,04/11/2024,249,456,2,Se detectó desgaste en las piezas del sistema
+208,03/10/2023,25/12/2023,773,611,2,Se recomienda actualizar el software del equipo
+209,03/04/2024,12/10/2024,289,447,3,Personal técnico altamente capacitado
+210,26/06/2023,14/05/2023,321,149,3,Se detectó una fuga en el sistema de tuberías
+211,26/02/2024,04/04/2023,368,106,4,Equipo en perfecto funcionamiento después del mantenimiento
+212,03/03/2024,04/05/2023,754,646,1,Se requiere revisión detallada en próxima visita
+213,06/04/2023,26/03/2024,274,969,4,Se recomienda actualizar el software del equipo
+214,10/03/2024,23/07/2023,699,238,3,Cliente informado sobre el estado actual del equipo
+215,29/04/2023,26/02/2024,793,867,2,Cliente satisfecho con la calidad del servicio
+216,29/08/2023,09/06/2023,959,873,2,Se detectó desgaste en las piezas del equipo
+217,18/04/2024,01/04/2023,318,645,5,Se entregó reporte detallado al cliente
+218,11/07/2023,27/03/2023,927,271,3,Equipo en condiciones óptimas después del mantenimiento
+219,24/05/2024,28/02/2024,482,827,3,Se detectó obstrucción en el sistema de ventilación
+220,28/03/2024,09/05/2023,396,120,1,Cliente satisfecho con el servicio
+221,04/11/2024,21/05/2023,317,816,3,Personal puntual y comprometido con el servicio
+222,26/01/2024,09/06/2023,214,204,1,Cliente informado de los trabajos realizados
+223,20/08/2024,11/04/2024,110,147,1,Equipo probado y verificado después del mantenimiento
+224,20/09/2024,06/09/2024,698,740,2,Se recomienda actualizar el software del equipo
+225,09/12/2023,28/04/2023,70,561,5,Se requiere revisión adicional en próxima visita
+226,03/11/2024,28/05/2023,40,512,2,Reemplazo de batería agotada
+227,01/03/2023,01/07/2023,691,63,3,Se detectó una fuga en el sistema de tuberías
+228,15/06/2023,06/02/2024,885,120,5,Se requiere seguimiento en próxima visita
+229,12/05/2023,01/11/2023,105,949,4,Equipo probado y verificado después del mantenimiento
+230,03/09/2023,31/08/2023,731,23,3,Equipo probado y verificado después del mantenimiento
+231,31/05/2023,26/02/2024,148,604,2,Se requiere revisión detallada en próxima visita
+232,13/07/2024,31/07/2023,650,949,5,Personal capacitado y experimentado en el mantenimiento
+233,24/11/2023,28/05/2024,121,131,3,Equipo en óptimas condiciones después del servicio
+234,22/10/2023,10/04/2024,591,45,3,Se recomienda cambio de filtro en próxima visita
+235,01/12/2023,08/03/2024,305,148,5,Reparación urgente realizada con éxito
+236,28/08/2024,27/04/2024,734,395,1,Se recomienda programar mantenimiento preventivo
+237,15/11/2023,14/01/2024,860,139,2,Se recomienda actualizar el software del equipo
+238,18/03/2023,15/10/2024,265,825,4,Cliente satisfecho con la calidad del servicio
+239,14/03/2024,19/07/2023,361,393,4,Equipo en condiciones óptimas después del mantenimiento
+240,06/11/2023,28/01/2024,327,965,5,Se detectó fuga de gas en el sistema de aire acondicionado
+241,12/01/2024,27/10/2024,317,299,2,Mantenimiento realizado dentro del plazo establecido
+242,04/08/2023,18/03/2023,792,695,4,Se detectó corrosión en las tuberías
+243,05/11/2023,26/09/2023,604,333,3,Reemplazo de pieza defectuosa
+244,04/07/2023,11/03/2024,175,101,4,Se entregó reporte detallado al cliente
+245,31/10/2023,23/09/2024,469,252,3,Se detectó una fuga en el sistema de tuberías
+246,18/10/2023,30/09/2023,973,127,1,Se recomienda revisión periódica del sistema
+247,25/08/2024,06/11/2024,125,435,5,Se recomienda revisión periódica del sistema
+248,12/06/2023,03/09/2024,399,866,5,Limpieza profunda del equipo
+249,21/03/2024,31/07/2024,137,379,1,Personal amable y profesional durante el servicio
+250,03/09/2023,18/06/2023,546,101,3,Se recomienda cambio de filtro en próxima visita
+251,06/04/2023,13/09/2024,939,936,3,Se detectó obstrucción en el sistema de ventilación
+252,18/09/2024,16/02/2024,518,529,5,Se realizó calibración del equipo
+253,23/07/2023,18/03/2023,656,161,3,Reemplazo de pieza defectuosa
+254,04/06/2023,06/11/2024,530,919,5,Personal puntual y comprometido con el servicio
+255,04/11/2023,19/07/2023,9,198,5,Personal técnico altamente capacitado
+256,12/06/2023,21/09/2023,813,162,2,Se realizó ajuste en la temperatura del sistema
+257,16/06/2024,16/10/2023,814,996,3,Se detectó obstrucción en el sistema de ventilación
+258,11/03/2024,06/06/2023,756,941,1,Equipo probado y verificado después del mantenimiento
+259,29/04/2024,22/04/2024,934,346,2,Se recomienda programar mantenimiento preventivo
+260,23/11/2023,13/06/2023,128,266,3,Se recomienda cambio de filtro en próxima visita
+261,02/05/2024,08/03/2023,918,4,2,Se recomienda actualizar el software del equipo
+262,11/06/2024,27/08/2024,171,231,3,Se recomienda revisión periódica
+263,29/01/2024,12/08/2023,176,79,5,Equipo probado y verificado después del mantenimiento
+264,16/12/2023,18/08/2024,616,891,5,Se recomienda actualizar el software del equipo
+265,09/04/2024,04/09/2024,751,395,2,Cliente informado sobre el estado actual del equipo
+266,09/04/2023,16/03/2023,248,903,5,Se requiere revisión detallada en la próxima visita
+267,29/12/2023,18/09/2023,522,478,1,Personal puntual y comprometido con el servicio
+268,29/03/2024,01/03/2023,159,48,3,Se recomienda cambio de filtro en próxima visita
+269,25/08/2024,29/07/2024,584,33,4,Equipo en perfectas condiciones después del servicio
+270,24/12/2023,23/07/2023,31,430,3,Equipo en perfecto funcionamiento después del mantenimiento
+271,01/03/2023,04/03/2024,857,753,4,Se realizó ajuste en la presión del sistema
+272,25/06/2024,24/06/2023,813,35,3,Se encontraron problemas adicionales durante el mantenimiento
+273,30/06/2024,21/07/2023,435,854,2,Limpieza profunda del equipo
+274,04/03/2023,11/10/2023,963,445,4,Se recomienda actualizar el software del equipo
+275,03/07/2023,22/03/2023,269,317,4,Se recomienda actualizar el software del equipo
+276,19/09/2024,26/01/2024,661,560,1,Reemplazo de componentes dañados
+277,31/07/2023,28/10/2023,369,492,2,Se recomienda actualizar el sistema
+278,08/12/2023,08/06/2024,224,987,3,Equipo probado y verificado después del servicio
+279,29/01/2024,22/07/2023,951,430,2,Se detectó fuga de gas en el sistema de aire acondicionado
+280,02/03/2023,29/10/2024,782,428,1,Se realizó ajuste en la temperatura del sistema
+281,24/06/2024,15/04/2023,492,741,4,Cliente informado sobre recomendaciones de uso adecuado
+282,30/07/2024,03/03/2023,213,213,1,Se realizó cambio de aceite en el motor
+283,22/01/2024,18/02/2024,711,334,2,Cliente satisfecho con la calidad del servicio
+284,17/08/2024,27/08/2023,843,265,2,Equipo en buen estado después del servicio
+285,02/10/2023,24/05/2024,273,88,1,Se detectó una fuga en el sistema de tuberías
+286,07/08/2024,20/07/2024,124,335,5,Cliente satisfecho con la calidad del servicio
+287,03/05/2023,21/04/2023,658,507,4,Se requiere seguimiento en próxima visita
+288,21/03/2024,23/11/2023,716,658,3,Personal puntual y comprometido con el servicio
+289,18/01/2024,04/11/2023,319,846,4,Equipo probado y verificado después del mantenimiento
+290,09/03/2023,16/05/2024,270,510,1,Se detectó corrosión en las tuberías
+291,06/09/2024,12/01/2024,511,893,1,Reemplazo de componentes dañados
+292,29/11/2023,12/07/2024,551,421,1,Equipo probado y verificado después del mantenimiento
+293,16/10/2024,23/10/2023,908,162,3,Se realizó calibración del equipo
+294,12/09/2024,30/09/2023,776,907,1,Reemplazo de batería agotada
+295,23/08/2023,28/07/2024,302,548,5,Equipo en condiciones óptimas después del mantenimiento
+296,21/07/2023,11/12/2023,157,866,1,Cliente informado de los trabajos realizados
+297,15/06/2024,19/05/2024,608,238,1,Se recomienda revisión periódica
+298,04/06/2024,20/08/2023,672,661,2,Se detectó un cortocircuito en el sistema eléctrico
+299,22/03/2024,13/08/2024,439,740,2,Se recomienda actualizar el sistema
+300,08/06/2024,15/04/2024,710,31,3,Se detectó filtración en el sistema de agua
+301,02/04/2024,14/08/2024,975,38,2,Reparación urgente realizada con éxito
+302,24/03/2023,29/10/2023,548,89,1,Reparación urgente realizada con éxito
+303,15/01/2024,12/06/2024,788,811,1,Servicio rápido y eficiente
+304,10/04/2023,04/07/2024,314,583,2,Cliente satisfecho con la calidad del servicio
+305,09/09/2023,04/08/2024,826,61,1,Se recomienda programar mantenimiento preventivo
+306,29/01/2024,19/07/2023,907,946,3,Reparación urgente realizada con éxito
+307,14/03/2024,17/09/2024,475,939,2,Se realizó calibración precisa del equipo
+308,16/10/2024,14/12/2023,370,568,2,Se recomienda cambio de filtro en próxima visita
+309,08/05/2024,11/05/2024,510,41,2,Se detectó fuga de gas en el sistema de aire acondicionado
+310,05/04/2023,18/10/2024,342,578,4,Se realizó ajuste en la presión del sistema
+311,22/04/2023,25/09/2023,306,841,5,Se recomienda revisión periódica del sistema
+312,03/03/2024,05/07/2023,420,154,4,Cliente satisfecho con la calidad del servicio
+313,14/09/2024,08/06/2024,161,129,2,Se recomienda actualizar el sistema
+314,28/10/2024,19/12/2023,366,169,5,Cliente satisfecho con la calidad del servicio
+315,14/07/2024,21/04/2023,387,987,5,Necesario realizar mantenimiento preventivo
+316,10/09/2023,11/03/2024,482,15,2,Mantenimiento realizado dentro del tiempo estimado
+317,10/04/2023,22/09/2024,161,236,4,Se recomienda programar mantenimiento preventivo
+318,18/11/2023,29/05/2023,239,633,5,Equipo probado y verificado después del mantenimiento
+319,23/02/2024,05/07/2023,507,582,4,Se recomienda cambio de filtro en próxima visita
+320,08/08/2023,28/06/2024,104,880,2,Personal capacitado y experimentado en el mantenimiento
+321,24/02/2024,04/08/2023,505,240,5,Equipo en perfectas condiciones después del servicio
+322,12/06/2024,15/12/2023,341,974,3,Se realizó ajuste en la temperatura del sistema
+323,24/02/2024,18/06/2024,574,926,4,Se detectó fuga de gas en el sistema de aire acondicionado
+324,25/05/2024,22/10/2023,395,376,5,Se detectó obstrucción en el sistema de ventilación
+325,26/04/2023,15/11/2023,825,708,4,Cliente informado sobre posibles mejoras en el equipo
+326,16/12/2023,04/09/2024,448,879,4,Cliente informado sobre posibles mejoras en el equipo
+327,26/09/2023,09/05/2024,932,954,4,Reparación urgente realizada con éxito
+328,09/06/2023,05/10/2024,139,735,2,Se detectó un cortocircuito en el sistema eléctrico
+329,14/10/2024,06/02/2024,414,417,3,Equipo en óptimas condiciones después del servicio
+330,05/03/2024,24/04/2023,627,464,5,Se realizó limpieza exhaustiva del sistema de refrigeración
+331,23/04/2024,11/10/2023,799,77,1,Se detectó desgaste en las piezas del sistema
+332,19/07/2024,18/10/2023,52,439,5,Se realizó ajuste en la configuración del equipo
+333,19/07/2024,28/02/2024,643,154,1,Se realizó calibración precisa del equipo
+334,18/08/2024,15/04/2023,413,390,2,Cliente satisfecho con el servicio
+335,11/07/2024,29/08/2024,644,361,4,Cliente satisfecho con el servicio
+336,14/03/2023,14/11/2023,754,883,3,Equipo probado y verificado después del mantenimiento
+337,02/03/2023,15/09/2024,426,897,5,Se realizó calibración precisa del equipo
+338,18/05/2024,01/08/2024,691,960,2,Reparación urgente realizada con éxito
+339,12/10/2024,28/06/2023,275,298,3,Cliente informado sobre recomendaciones de uso
+340,31/05/2023,13/08/2024,418,701,2,Cliente informado sobre posibles mejoras en el equipo
+341,21/01/2024,13/06/2023,953,136,2,Equipo en perfecto funcionamiento después del mantenimiento
+342,15/10/2023,24/06/2023,70,489,2,Cliente informado sobre recomendaciones de uso
+343,05/09/2023,02/02/2024,848,657,2,Equipo verificado y certificado después del mantenimiento
+344,21/07/2023,12/08/2024,527,829,5,Cliente informado de los trabajos realizados
+345,26/07/2023,24/04/2024,571,782,1,Se realizó cambio de aceite en el motor
+346,09/02/2024,22/12/2023,787,8,4,Equipo en óptimas condiciones después del servicio
+347,08/06/2023,27/04/2023,595,725,4,Se entregó informe detallado al cliente
+348,07/09/2023,28/09/2024,448,310,3,Personal puntual y comprometido con el servicio
+349,18/04/2023,17/11/2023,499,285,2,Se realizó calibración precisa del equipo
+350,17/10/2024,20/08/2023,767,337,4,Equipo en buen estado después del servicio
+351,02/09/2024,01/12/2023,37,960,4,Se recomienda programar mantenimiento preventivo
+352,14/04/2024,19/07/2023,159,370,1,Equipo en perfectas condiciones después del servicio
+353,06/09/2023,28/05/2023,576,206,5,Se entregó reporte detallado al cliente
+354,29/06/2024,04/04/2023,41,326,1,Se realizó limpieza exhaustiva del sistema de refrigeración
+355,02/08/2023,22/11/2023,754,932,3,Se requiere revisión adicional en próxima visita
+356,08/12/2023,23/04/2023,156,799,5,Se detectó fuga de gas en el sistema de aire acondicionado
+357,30/03/2023,29/11/2023,125,965,2,Personal puntual y comprometido con el servicio
+358,03/01/2024,23/06/2024,542,455,4,Personal técnico altamente capacitado
+359,15/12/2023,06/10/2023,884,456,3,Equipo verificado y certificado después del mantenimiento
+360,24/10/2024,14/12/2023,753,163,1,Reparación urgente realizada
+361,22/10/2023,04/08/2024,416,191,2,Se realizó ajuste en la configuración del equipo
+362,13/04/2024,04/09/2023,997,931,4,Se realizó ajuste en la presión del sistema
+363,07/01/2024,13/10/2023,446,868,5,Se requiere revisión detallada en la próxima visita
+364,12/01/2024,30/04/2023,54,736,1,Limpieza profunda del equipo
+365,16/07/2024,26/07/2023,630,473,4,Se requiere seguimiento en próxima visita
+366,27/06/2023,23/05/2023,299,771,4,Se realizó limpieza exhaustiva del sistema de refrigeración
+367,27/09/2024,25/04/2023,536,845,3,Cliente informado sobre recomendaciones de uso adecuado
+368,31/07/2024,09/11/2023,284,395,1,Se requiere revisión detallada en próxima visita
+369,02/09/2023,23/03/2023,746,810,4,Cliente informado sobre recomendaciones de uso adecuado
+370,30/07/2024,21/06/2024,11,793,3,Se recomienda revisión periódica del sistema
+371,17/01/2024,28/03/2023,397,279,5,Equipo verificado y certificado después del mantenimiento
+372,14/01/2024,17/10/2023,222,698,5,Equipo en condiciones óptimas después del servicio
+373,02/04/2024,06/08/2024,838,75,4,Se detectó corrosión en las tuberías
+374,21/07/2024,12/03/2023,557,916,3,Reparación urgente realizada con éxito
+375,16/12/2023,02/07/2023,451,649,2,Se realizó ajuste en la presión del sistema
+376,10/02/2024,22/08/2024,697,818,2,Se entregó informe detallado al cliente
+377,22/07/2024,02/07/2024,869,538,4,Reemplazo de pieza defectuosa
+378,26/10/2024,12/01/2024,797,115,2,Equipo en condiciones óptimas después del servicio
+379,22/07/2023,03/09/2023,953,324,3,Se realizó cambio de aceite en el motor
+380,07/03/2023,30/08/2024,622,261,5,Se entregó informe detallado al cliente
+381,21/03/2024,15/03/2024,403,502,4,Se realizó ajuste en la presión del sistema
+382,01/07/2023,03/07/2023,707,907,3,Se detectó obstrucción en el sistema de ventilación
+383,30/04/2023,13/06/2024,716,883,1,Cliente informado sobre posibles mejoras en el equipo
+384,05/06/2023,02/05/2024,433,142,3,Se recomienda actualizar el sistema
+385,12/04/2023,17/01/2024,400,635,3,Se realizó ajuste en la temperatura del sistema
+386,25/10/2024,11/07/2024,306,672,1,Personal puntual y comprometido con el servicio
+387,15/04/2023,12/12/2023,277,89,2,Personal capacitado y experimentado en el mantenimiento
+388,23/05/2024,16/07/2024,185,23,1,Personal capacitado y experimentado en el mantenimiento
+389,17/07/2023,05/11/2023,915,877,4,Reemplazo de batería agotada
+390,12/05/2024,27/01/2024,930,531,2,Equipo en condiciones óptimas después del servicio
+391,30/03/2023,07/06/2023,600,282,1,Se detectó fuga de gas en el sistema de aire acondicionado
+392,12/03/2023,23/08/2023,547,82,3,Se detectó fuga de gas en el sistema de aire acondicionado
+393,03/07/2024,05/08/2023,255,844,1,Cliente satisfecho con el servicio
+394,25/01/2024,29/11/2023,112,909,5,Cliente informado sobre recomendaciones de uso
+395,24/03/2024,03/05/2024,539,123,1,Se requiere seguimiento en próxima visita
+396,28/04/2024,10/03/2023,631,580,2,Se encontraron problemas adicionales durante el mantenimiento
+397,19/04/2023,20/01/2024,342,867,2,Se detectó fuga de gas en el sistema de aire acondicionado
+398,16/06/2024,05/08/2024,959,124,5,Equipo en buen estado después del servicio
+399,26/06/2023,29/06/2023,761,709,3,Cliente informado sobre recomendaciones de uso
+400,22/08/2024,30/11/2023,444,169,4,Equipo probado y verificado después del mantenimiento
+401,17/12/2023,19/03/2023,46,658,3,Se detectó obstrucción en el sistema de ventilación
+402,24/09/2024,27/09/2023,402,183,5,Se recomienda actualizar el sistema
+403,09/07/2024,28/05/2024,572,328,1,Se recomienda revisión periódica
+404,29/01/2024,19/07/2024,209,477,1,Cliente informado sobre posibles mejoras en el equipo
+405,26/03/2024,05/11/2023,83,320,1,Cliente informado sobre el estado actual del equipo
+406,12/08/2023,22/10/2023,123,17,3,Equipo en perfectas condiciones después del servicio
+407,28/10/2023,31/08/2024,939,294,1,Se recomienda cambio de filtro en próxima visita
+408,18/09/2023,13/05/2024,870,949,4,Equipo verificado y certificado después del mantenimiento
+409,23/08/2024,21/10/2023,222,764,1,Se recomienda actualizar el software del equipo
+410,14/09/2023,05/11/2024,859,787,3,Se detectó obstrucción en el sistema de ventilación
+411,17/06/2023,20/09/2024,439,41,3,Se detectó fuga de gas en el sistema de aire acondicionado
+412,04/08/2024,19/06/2024,921,304,4,Se requiere revisión adicional en próxima visita
+413,03/06/2023,08/07/2023,42,79,4,Se requiere revisión detallada en próxima visita
+414,07/01/2024,07/04/2024,159,455,5,Equipo en perfectas condiciones después del servicio
+415,06/10/2024,18/08/2023,781,328,5,Equipo probado y verificado después del mantenimiento
+416,26/11/2023,06/09/2023,811,418,5,Se detectó obstrucción en el sistema de ventilación
+417,14/04/2023,13/08/2024,319,319,2,Servicio rápido y eficiente
+418,07/08/2024,14/05/2023,678,432,4,Equipo probado y verificado después del servicio
+419,14/08/2024,01/08/2023,610,136,1,Se detectó desgaste en las piezas del equipo
+420,17/09/2023,30/09/2023,762,49,2,Se realizó cambio de aceite en el motor
+421,20/01/2024,24/11/2023,23,804,2,Se realizó limpieza exhaustiva del sistema de refrigeración
+422,06/09/2024,26/10/2024,2,569,4,Cliente satisfecho con el servicio
+423,06/09/2023,05/09/2023,716,283,4,Equipo probado y verificado después del mantenimiento
+424,06/12/2023,31/10/2024,667,747,4,Se detectó corrosión en las tuberías
+425,25/04/2023,27/06/2023,246,665,2,Se realizó ajuste en la temperatura del sistema
+426,03/09/2024,11/06/2023,340,420,3,Se requiere revisión detallada en próxima visita
+427,12/08/2023,27/06/2024,91,756,4,Cliente satisfecho con la calidad del servicio
+428,25/01/2024,19/06/2024,305,69,4,Se entregó reporte detallado al cliente
+429,12/04/2024,16/07/2024,196,305,3,Se recomienda revisión periódica
+430,05/03/2023,07/09/2024,416,252,2,Equipo probado y verificado después del mantenimiento
+431,25/08/2024,29/08/2024,822,349,3,Cliente satisfecho con la atención recibida
+432,30/06/2023,07/06/2023,55,535,1,Servicio completado con éxito
+433,12/06/2024,17/09/2023,729,171,1,Reparación urgente realizada con éxito
+434,04/07/2024,03/03/2024,343,717,4,Personal capacitado y experimentado en el mantenimiento
+435,16/11/2023,10/04/2023,294,195,2,Se requiere revisión detallada en la próxima visita
+436,22/10/2023,01/10/2024,392,433,3,Reemplazo de componentes dañados
+437,29/02/2024,30/10/2024,964,23,4,Equipo en perfecto funcionamiento después del mantenimiento
+438,07/07/2024,23/12/2023,358,846,4,Se detectó desgaste en las piezas del equipo
+439,15/08/2023,17/07/2023,57,778,3,Personal amable y profesional durante el servicio
+440,14/03/2024,20/01/2024,579,856,4,Se realizó limpieza exhaustiva del sistema de refrigeración
+441,01/03/2023,13/09/2023,924,873,3,Se recomienda cambio de filtro en próxima visita
+442,17/11/2023,26/05/2023,872,561,3,Equipo verificado y certificado después del mantenimiento
+443,17/05/2024,18/09/2023,13,678,5,Equipo en perfecto funcionamiento después del mantenimiento
+444,09/06/2023,30/03/2023,922,166,1,Reparación urgente realizada con éxito
+445,01/05/2024,09/01/2024,35,416,5,Cliente informado sobre el estado actual del equipo
+446,31/03/2024,12/09/2023,789,202,3,Se detectó obstrucción en el sistema de ventilación
+447,26/08/2023,27/08/2024,313,576,4,Personal puntual y comprometido con el servicio
+448,10/10/2024,19/12/2023,651,372,3,Reemplazo de pieza defectuosa
+449,06/04/2023,08/02/2024,740,153,5,Equipo probado y verificado después del mantenimiento
+450,12/01/2024,07/03/2024,557,601,3,Cliente satisfecho con la atención recibida
+451,27/08/2024,30/05/2024,160,246,5,Se detectó una fuga en el sistema de tuberías
+452,10/11/2023,10/08/2024,644,863,5,Se detectó corrosión en las tuberías
+453,04/05/2024,06/04/2024,908,738,1,Cliente informado sobre recomendaciones de uso adecuado
+454,09/12/2023,22/01/2024,657,278,4,Limpieza profunda del equipo
+455,28/05/2023,24/11/2023,260,685,5,Reemplazo de componentes dañados
+456,20/10/2023,08/11/2024,332,12,3,Se entregó reporte detallado al cliente
+457,25/08/2024,14/08/2023,723,566,5,Se detectó sobrecalentamiento en el sistema
+458,22/12/2023,20/04/2023,182,486,5,Se detectó corrosión en las tuberías
+459,13/05/2023,02/09/2023,631,163,2,Se detectó obstrucción en el sistema de ventilación
+460,15/04/2024,07/09/2024,31,407,3,Se encontraron problemas adicionales durante el mantenimiento
+461,06/09/2024,13/06/2023,796,249,1,Equipo probado y verificado después del servicio
+462,09/03/2024,13/03/2024,13,161,2,Se requiere seguimiento en próxima visita
+463,29/05/2023,19/07/2023,378,67,1,Personal capacitado y experimentado en el mantenimiento
+464,29/12/2023,30/05/2024,581,87,2,Equipo en perfecto funcionamiento después del mantenimiento
+465,23/06/2024,09/10/2023,753,973,5,Equipo probado y verificado después del mantenimiento
+466,26/05/2023,24/10/2024,327,488,5,Cliente satisfecho con el servicio
+467,31/10/2023,16/03/2024,546,89,1,Se detectó sobrecalentamiento en el sistema
+468,26/04/2024,30/08/2023,151,867,2,Reemplazo de pieza defectuosa
+469,17/09/2023,04/06/2024,999,775,5,Reemplazo de componentes dañados
+470,27/03/2024,14/05/2023,70,964,3,Se detectó una fuga en el sistema de tuberías
+471,18/05/2023,23/01/2024,748,74,2,Se recomienda actualizar el software del equipo
+472,05/07/2023,20/11/2023,753,229,3,Equipo en buen estado después del servicio
+473,13/05/2024,30/05/2024,963,713,4,Se requiere revisión detallada en próxima visita
+474,04/06/2024,06/11/2024,34,302,3,Se recomienda revisión periódica del sistema
+475,17/12/2023,29/06/2023,655,134,3,Se recomienda actualizar el software del equipo
+476,15/07/2023,18/08/2023,695,362,3,Se realizó calibración del equipo
+477,09/05/2023,14/08/2023,293,873,2,Equipo en condiciones óptimas después del mantenimiento
+478,12/03/2023,27/08/2024,225,895,2,Cliente informado sobre el estado actual del equipo
+479,08/08/2024,16/07/2023,501,430,5,Se detectó corrosión en las tuberías
+480,27/05/2023,25/10/2024,901,453,4,Se detectó sobrecalentamiento en el sistema
+481,16/06/2023,09/06/2023,823,884,5,Se realizó ajuste en la temperatura del sistema
+482,20/02/2024,09/04/2024,511,527,1,Reemplazo de batería agotada
+483,14/10/2024,31/01/2024,67,746,1,Equipo en perfectas condiciones después del servicio
+484,15/04/2024,10/07/2023,144,79,4,Reemplazo de componentes dañados
+485,03/04/2023,28/03/2024,466,17,5,Cliente satisfecho con la atención recibida
+486,19/03/2024,24/07/2024,531,43,2,Cliente informado sobre posibles mejoras en el equipo
+487,30/11/2023,07/12/2023,798,577,4,Se realizó ajuste en la presión del sistema
+488,21/07/2024,02/11/2023,722,210,3,Se realizó limpieza exhaustiva del sistema de refrigeración
+489,21/10/2023,21/08/2023,637,225,1,Se recomienda actualizar el sistema
+490,08/04/2023,25/05/2024,108,261,2,Se detectó sobrecalentamiento en el sistema
+491,06/11/2023,07/10/2024,160,572,3,Se entregó reporte detallado al cliente
+492,21/05/2024,10/03/2023,148,962,2,Equipo en condiciones óptimas después del mantenimiento
+493,30/03/2024,15/06/2024,877,961,1,Reemplazo de componentes dañados
+494,02/06/2024,17/12/2023,810,25,4,Mantenimiento realizado dentro del plazo establecido
+495,08/07/2024,05/01/2024,738,953,4,Personal puntual y comprometido con el servicio
+496,27/10/2024,24/05/2024,489,561,4,Se realizó cambio de aceite en el motor
+497,10/03/2023,28/07/2023,151,971,5,Se detectó filtración en el sistema de agua
+498,21/08/2023,22/06/2024,78,50,5,Se recomienda programar mantenimiento preventivo
+499,21/06/2023,28/05/2024,758,313,4,Reemplazo de pieza defectuosa
+500,30/07/2023,14/05/2023,349,912,3,Se recomienda revisión periódica
+501,31/12/2023,14/06/2024,793,822,5,Se realizó ajuste en la temperatura del sistema
+502,25/12/2023,06/03/2024,998,856,1,Se recomienda revisión periódica
+503,04/10/2023,26/11/2023,359,810,3,Se requiere revisión detallada en próxima visita
+504,26/08/2024,22/08/2023,824,839,2,Cliente satisfecho con la calidad del servicio
+505,10/12/2023,21/06/2023,188,443,2,Se realizó calibración precisa del equipo
+506,17/09/2023,10/08/2023,878,888,5,Se detectó obstrucción en el sistema de ventilación
+507,26/08/2024,05/04/2024,17,662,3,Se detectó corrosión en las tuberías
+508,30/08/2024,29/01/2024,273,606,2,Se requiere revisión detallada en próxima visita
+509,05/08/2024,12/09/2024,574,624,2,Personal amable y profesional durante el servicio
+510,07/10/2024,06/03/2023,951,786,3,Se realizó ajuste en la temperatura del sistema
+511,03/07/2023,13/04/2023,979,676,5,Cliente informado sobre los trabajos realizados
+512,02/01/2024,13/04/2023,439,76,4,Se detectó un cortocircuito en el sistema eléctrico
+513,27/08/2023,19/03/2023,414,413,4,Se realizó calibración precisa del equipo
+514,29/10/2023,01/04/2023,598,708,4,Reemplazo de batería agotada
+515,05/07/2023,21/12/2023,392,632,3,Cliente satisfecho con la atención recibida
+516,07/04/2023,01/04/2023,418,411,3,Necesario realizar mantenimiento preventivo
+517,27/10/2024,24/11/2023,424,273,1,Se detectó desgaste en las piezas del equipo
+518,17/03/2024,03/04/2024,5,988,1,Se requiere revisión adicional en la próxima visita
+519,06/04/2023,23/12/2023,562,15,3,Reemplazo de batería agotada
+520,26/06/2023,16/04/2023,480,900,1,Cliente informado sobre los trabajos realizados
+521,05/03/2023,24/03/2023,375,99,5,Cliente informado sobre recomendaciones de uso
+522,18/01/2024,19/02/2024,616,266,4,Se realizó calibración del equipo
+523,11/01/2024,10/01/2024,789,205,3,Equipo en buen estado después del servicio
+524,14/05/2023,02/05/2024,865,890,5,Se realizó limpieza exhaustiva del sistema de refrigeración
+525,15/05/2023,28/11/2023,534,666,4,Cliente informado sobre el estado actual del equipo
+526,14/07/2023,30/06/2024,795,146,3,Se detectó desgaste en las piezas del sistema
+527,01/05/2023,18/06/2023,423,881,2,Se detectó una fuga en el sistema de tuberías
+528,14/01/2024,16/03/2023,307,557,3,Cliente informado sobre posibles mejoras en el equipo
+529,21/07/2023,13/05/2024,958,978,4,Se detectó una fuga en el sistema de tuberías
+530,27/03/2023,20/02/2024,905,124,5,Se detectó obstrucción en el sistema de ventilación
+531,23/06/2024,14/04/2024,850,464,2,Se realizó ajuste en la presión del sistema
+532,21/10/2023,07/07/2024,593,969,2,Cliente informado sobre el estado actual del equipo
+533,23/11/2023,05/08/2024,742,791,1,Personal amable y profesional durante el servicio
+534,03/11/2023,07/07/2023,652,76,3,Se detectó corrosión en las tuberías
+535,26/11/2023,20/09/2023,826,631,4,Personal capacitado y experimentado en el mantenimiento
+536,25/01/2024,16/12/2023,29,636,5,Se detectó desgaste en las piezas del sistema
+537,17/09/2024,21/06/2024,195,73,3,Se realizó limpieza exhaustiva del sistema de refrigeración
+538,30/01/2024,26/02/2024,463,836,3,Personal amable y profesional durante el servicio
+539,09/08/2023,20/09/2023,420,191,1,Se recomienda programar mantenimiento preventivo
+540,26/01/2024,02/10/2023,77,612,2,Se realizó ajuste en la temperatura del sistema
+541,08/10/2023,22/07/2023,496,922,3,Se entregó informe detallado al cliente
+542,19/06/2023,17/08/2024,879,306,1,Equipo probado y verificado después del mantenimiento
+543,14/07/2023,01/04/2023,366,48,1,Se encontraron problemas adicionales durante el mantenimiento
+544,22/09/2023,21/12/2023,767,119,4,Cliente informado sobre el estado actual del equipo
+545,12/08/2023,05/12/2023,498,961,2,Se detectó obstrucción en el sistema de ventilación
+546,18/10/2024,28/03/2023,894,859,2,Cliente satisfecho con la atención recibida
+547,07/07/2024,03/07/2024,157,879,4,Se realizó limpieza exhaustiva del sistema de refrigeración
+548,21/08/2023,01/03/2024,397,7,4,Se detectó desgaste en las piezas del sistema
+549,10/12/2023,19/03/2024,979,8,5,Se recomienda programar mantenimiento preventivo
+550,03/05/2023,30/04/2024,929,715,3,Se requiere revisión adicional en próxima visita
+551,13/03/2023,31/10/2024,197,505,3,Equipo en perfectas condiciones después del servicio
+552,05/09/2024,22/05/2024,723,741,4,Se realizó cambio de aceite en el motor
+553,01/05/2023,22/01/2024,95,900,1,Se recomienda actualizar el software del equipo
+554,14/11/2023,16/09/2023,584,812,5,Se recomienda actualizar el software del equipo
+555,05/07/2023,24/04/2023,381,675,1,Se detectó obstrucción en el sistema de ventilación
+556,09/05/2024,04/08/2024,542,734,1,Se realizó cambio de aceite en el motor
+557,18/08/2024,11/09/2023,526,906,5,Se realizó cambio de aceite en el motor
+558,22/12/2023,24/02/2024,197,81,5,Se detectó desgaste en las piezas del equipo
+559,21/08/2024,03/01/2024,797,23,1,Cliente satisfecho con la calidad del servicio
+560,05/08/2023,17/07/2024,572,299,3,Cliente informado sobre el estado actual del equipo
+561,14/09/2024,25/10/2024,204,246,2,Cliente satisfecho con la calidad del servicio
+562,23/07/2023,10/07/2024,334,595,5,Reemplazo de pieza defectuosa
+563,12/10/2023,09/01/2024,95,319,1,Se realizó ajuste en la configuración del equipo
+564,01/09/2024,06/06/2023,264,262,3,Se realizó cambio de aceite en el motor
+565,03/05/2023,04/06/2023,442,727,4,Equipo verificado y certificado después del mantenimiento
+566,29/07/2023,06/04/2024,186,718,2,Cliente informado sobre posibles mejoras en el equipo
+567,10/12/2023,24/03/2023,500,206,4,Se requiere revisión adicional en próxima visita
+568,13/04/2024,02/03/2024,868,144,1,Se recomienda revisión periódica del sistema
+569,22/08/2023,03/10/2023,732,621,1,Cliente informado sobre el estado actual del equipo
+570,05/05/2023,07/05/2023,864,301,3,Cliente satisfecho con la calidad del servicio
+571,02/11/2023,27/04/2023,814,609,4,Personal amable y profesional durante el servicio
+572,31/05/2024,30/09/2023,205,403,3,Se entregó reporte detallado al cliente
+573,16/09/2023,13/08/2023,411,771,2,Equipo en óptimas condiciones después del servicio
+574,17/06/2023,21/07/2023,260,741,4,Se requiere seguimiento en próxima visita
+575,06/08/2023,03/06/2023,7,591,1,Reemplazo de componentes dañados
+576,09/12/2023,09/10/2023,926,376,4,Se recomienda revisión periódica del sistema
+577,09/03/2024,12/09/2024,803,554,1,Equipo verificado y certificado después del mantenimiento
+578,02/04/2023,14/12/2023,472,367,2,Cliente satisfecho con la atención recibida
+579,29/05/2024,19/04/2024,726,142,4,Se realizó calibración del equipo
+580,08/03/2024,29/03/2023,664,688,3,Personal técnico altamente capacitado
+581,07/01/2024,04/09/2024,227,236,3,Cliente satisfecho con el servicio
+582,14/10/2024,08/08/2024,149,383,3,Se detectó obstrucción en el sistema de ventilación
+583,21/04/2024,02/02/2024,224,763,1,Personal capacitado y experimentado en el mantenimiento
+584,16/08/2024,10/05/2024,724,705,1,Se recomienda programar mantenimiento preventivo
+585,05/06/2024,30/12/2023,949,691,3,Se detectó desgaste en las piezas del sistema
+586,05/11/2023,22/03/2024,621,946,2,Se entregó reporte detallado al cliente
+587,17/05/2024,08/11/2024,435,692,2,Se recomienda revisión periódica
+588,27/12/2023,09/06/2023,946,745,5,Se detectó una fuga en el sistema de tuberías
+589,09/03/2023,28/11/2023,685,158,2,Cliente satisfecho con el servicio
+590,23/03/2024,31/07/2023,897,38,4,Equipo en buen estado después del servicio
+591,31/07/2024,15/08/2023,319,628,2,Se detectó sobrecalentamiento en el sistema
+592,07/10/2023,02/06/2024,935,568,4,Personal capacitado y experimentado en el mantenimiento
+593,01/05/2023,04/09/2024,280,18,2,Se requiere revisión detallada en próxima visita
+594,09/09/2024,31/07/2024,402,688,5,Se detectó obstrucción en el sistema de ventilación
+595,06/01/2024,27/05/2023,734,65,2,Se recomienda cambio de filtro en próxima visita
+596,11/07/2024,24/11/2023,30,976,3,Equipo en perfectas condiciones después del servicio
+597,07/07/2024,02/11/2024,557,131,1,Se realizó ajuste en la configuración del equipo
+598,30/04/2023,10/06/2024,59,250,2,Mantenimiento realizado dentro del tiempo estimado
+599,15/05/2023,18/05/2024,490,942,1,Se recomienda revisión periódica
+600,19/10/2024,24/06/2024,616,36,2,Se detectó un cortocircuito en el sistema eléctrico
+601,28/04/2023,05/10/2023,927,968,3,Se encontraron problemas adicionales durante el mantenimiento
+602,22/03/2023,06/01/2024,871,93,2,Se detectó filtración en el sistema de agua
+603,11/03/2023,12/03/2024,529,76,4,Equipo probado y verificado después del mantenimiento
+604,17/09/2024,07/12/2023,492,193,2,Se realizó limpieza exhaustiva del sistema de refrigeración
+605,02/04/2024,25/12/2023,80,665,1,Reparación urgente realizada con éxito
+606,02/02/2024,08/02/2024,135,143,4,Personal técnico altamente capacitado
+607,08/04/2023,29/09/2023,64,650,3,Equipo en condiciones óptimas después del servicio
+608,16/12/2023,01/02/2024,134,917,4,Cliente satisfecho con la calidad del servicio
+609,21/09/2024,11/04/2024,778,567,4,Se realizó cambio de aceite en el motor
+610,19/09/2023,26/04/2023,776,837,5,Equipo en condiciones óptimas después del servicio
+611,09/02/2024,18/03/2023,527,983,5,Equipo en perfectas condiciones después del servicio
+612,03/07/2024,04/10/2024,366,807,2,Se detectó filtración en el sistema de agua
+613,21/04/2023,23/04/2024,440,807,4,Equipo en perfectas condiciones después del servicio
+614,07/03/2023,02/06/2024,951,757,5,Cliente informado sobre posibles mejoras en el equipo
+615,08/03/2023,18/09/2023,459,917,4,Equipo en óptimas condiciones después del servicio
+616,22/07/2023,28/03/2024,759,567,2,Servicio rápido y eficiente
+617,08/01/2024,11/04/2023,209,535,3,Limpieza profunda del equipo
+618,05/11/2024,28/03/2024,481,151,5,Reparación urgente realizada con éxito
+619,09/02/2024,22/03/2024,303,752,3,Reparación urgente realizada con éxito
+620,12/06/2023,16/04/2023,236,746,4,Personal capacitado y experimentado en el mantenimiento
+621,12/05/2024,08/05/2023,560,758,4,Se detectó un cortocircuito en el sistema eléctrico
+622,24/03/2024,27/03/2024,127,247,1,Se detectó sobrecalentamiento en el sistema
+623,28/09/2023,21/05/2024,344,230,1,Reparación urgente realizada con éxito
+624,22/03/2024,06/01/2024,805,66,1,Se detectó corrosión en las tuberías
+625,15/09/2024,19/06/2024,799,934,5,Se recomienda revisión periódica
+626,13/10/2024,27/03/2024,210,324,4,Reparación urgente realizada con éxito
+627,07/03/2024,06/07/2024,708,160,3,Limpieza profunda del equipo
+628,20/05/2024,10/04/2024,568,967,4,Personal amable y profesional durante el servicio
+629,07/07/2024,24/06/2023,515,463,1,Equipo en condiciones óptimas después del servicio
+630,02/04/2024,10/07/2023,153,12,3,Equipo probado y verificado después del servicio
+631,04/02/2024,17/04/2023,99,747,4,Servicio rápido y eficiente
+632,22/10/2023,03/05/2024,823,442,4,Cliente informado de los trabajos realizados
+633,24/06/2024,09/09/2023,896,195,2,Cliente informado sobre posibles mejoras en el equipo
+634,08/09/2023,16/05/2024,545,378,3,Se detectó obstrucción en el sistema de ventilación
+635,24/12/2023,09/01/2024,796,653,1,Equipo en óptimas condiciones después del servicio
+636,28/07/2023,29/10/2023,370,337,3,Cliente informado de los trabajos realizados
+637,15/06/2023,07/05/2023,391,169,5,Cliente informado sobre los trabajos realizados
+638,19/05/2023,30/11/2023,213,609,1,Equipo en óptimas condiciones después del servicio
+639,07/05/2023,03/10/2023,173,462,2,Limpieza profunda del equipo
+640,04/07/2024,09/03/2023,571,819,1,Se detectó filtración en el sistema de agua
+641,05/09/2024,21/03/2023,122,362,2,Se recomienda revisión periódica del sistema
+642,24/09/2023,30/06/2024,153,73,4,Reparación urgente realizada con éxito
+643,10/06/2024,09/06/2023,409,16,1,Equipo en perfectas condiciones después del servicio
+644,01/06/2024,28/03/2024,727,343,5,Se detectó corrosión en las tuberías
+645,17/02/2024,13/06/2023,619,898,4,Equipo probado y verificado después del servicio
+646,10/07/2023,22/04/2023,549,122,3,Cliente satisfecho con la atención recibida
+647,13/06/2023,19/07/2023,977,559,5,Se realizó ajuste en la configuración del equipo
+648,10/03/2024,25/08/2024,628,475,2,Reparación urgente realizada
+649,28/07/2024,17/09/2024,877,686,4,Cliente informado sobre el estado actual del equipo
+650,23/07/2024,05/10/2024,771,844,4,Se realizó ajuste en la temperatura del sistema
+651,04/05/2023,06/02/2024,993,619,5,Se requiere revisión adicional en la próxima visita
+652,04/06/2023,12/06/2024,849,91,3,Se realizó ajuste en la temperatura del sistema
+653,22/12/2023,15/08/2023,328,736,1,Se recomienda programar mantenimiento preventivo
+654,03/09/2024,29/09/2024,894,935,1,Se realizó ajuste en la temperatura del sistema
+655,04/06/2023,10/09/2024,37,441,1,Reemplazo de pieza defectuosa
+656,12/07/2023,21/10/2024,649,966,1,Cliente informado sobre recomendaciones de uso adecuado
+657,13/10/2024,04/09/2023,373,824,4,Se realizó ajuste en la presión del sistema
+658,09/10/2024,11/12/2023,990,15,1,Cliente satisfecho con la atención recibida
+659,16/09/2023,18/03/2023,595,410,2,Servicio rápido y eficiente
+660,18/03/2024,26/04/2023,359,292,3,Cliente satisfecho con la atención recibida
+661,05/03/2023,25/06/2023,877,468,1,Se realizó limpieza exhaustiva del sistema de refrigeración
+662,07/04/2024,17/10/2024,410,807,4,Cliente satisfecho con la calidad del servicio
+663,26/02/2024,15/03/2024,683,866,5,Equipo en condiciones óptimas después del mantenimiento
+664,31/08/2023,24/02/2024,169,847,4,Equipo en condiciones óptimas después del mantenimiento
+665,28/04/2023,16/04/2023,500,370,3,Cliente satisfecho con la atención recibida
+666,04/08/2024,31/03/2024,748,353,4,Limpieza profunda del equipo
+667,10/07/2023,22/03/2024,191,77,1,Se detectó filtración en el sistema de agua
+668,28/06/2023,02/05/2023,584,948,2,Reemplazo de componentes dañados
+669,02/05/2023,08/12/2023,637,738,3,Reemplazo de pieza defectuosa
+670,29/04/2023,11/11/2023,736,644,2,Se requiere revisión detallada en próxima visita
+671,27/11/2023,19/06/2023,15,223,4,Cliente informado de los trabajos realizados
+672,22/12/2023,15/09/2024,444,773,1,Se realizó ajuste en la temperatura del sistema
+673,08/08/2023,02/09/2023,887,763,5,Reemplazo de pieza defectuosa
+674,16/06/2023,30/06/2023,525,856,4,Se realizó cambio de aceite en el motor
+675,19/07/2023,29/06/2023,372,810,3,Se recomienda actualizar el sistema
+676,16/12/2023,17/12/2023,431,504,1,Se entregó reporte detallado al cliente
+677,21/03/2024,08/06/2024,293,602,1,Se encontraron problemas adicionales durante el mantenimiento
+678,24/11/2023,04/08/2024,214,157,4,Servicio completado con éxito
+679,14/11/2023,02/02/2024,50,140,3,Se requiere revisión detallada en próxima visita
+680,06/11/2023,15/05/2023,494,25,3,Cliente satisfecho con la calidad del servicio
+681,20/09/2023,19/03/2023,481,370,4,Equipo verificado y certificado después del mantenimiento
+682,12/06/2023,24/01/2024,842,769,3,Se detectó fuga de gas en el sistema de aire acondicionado
+683,07/01/2024,12/05/2023,365,245,3,Mantenimiento realizado dentro del tiempo estimado
+684,10/08/2024,09/11/2023,170,855,3,Equipo en perfectas condiciones después del servicio
+685,07/02/2024,06/05/2023,264,585,1,Cliente satisfecho con la atención recibida
+686,09/08/2023,14/06/2023,900,776,2,Servicio completado con éxito
+687,30/06/2023,22/09/2024,952,314,3,Se recomienda revisión periódica
+688,15/10/2024,19/07/2024,424,842,3,Servicio rápido y eficiente
+689,25/09/2024,11/05/2024,14,979,1,Se recomienda revisión periódica del sistema
+690,02/10/2023,28/08/2024,619,875,4,Se detectó obstrucción en el sistema de ventilación
+691,31/08/2023,17/09/2023,697,498,4,Reparación urgente realizada con éxito
+692,17/01/2024,05/10/2024,272,194,2,Equipo en condiciones óptimas después del mantenimiento
+693,08/09/2023,02/10/2024,669,909,5,Cliente satisfecho con la calidad del servicio
+694,13/02/2024,03/01/2024,951,434,2,Personal puntual y comprometido con el servicio
+695,02/06/2024,11/10/2024,736,606,3,Equipo en buen estado después del servicio
+696,25/06/2023,30/07/2023,924,225,5,Cliente informado sobre el estado actual del equipo
+697,18/09/2023,05/04/2023,318,907,5,Necesario realizar mantenimiento preventivo
+698,29/11/2023,22/01/2024,198,909,3,Cliente satisfecho con la atención recibida
+699,26/08/2024,07/05/2023,80,214,5,Se detectó desgaste en las piezas del equipo
+700,01/08/2024,22/03/2023,89,500,5,Se detectó obstrucción en el sistema de ventilación
+701,22/08/2023,14/09/2023,66,664,3,Equipo en condiciones óptimas después del mantenimiento
+702,26/05/2024,26/07/2023,396,735,3,Se detectó filtración en el sistema de agua
+703,18/02/2024,05/11/2024,762,767,1,Se recomienda actualizar el sistema
+704,11/06/2024,21/07/2023,40,417,5,Se detectó obstrucción en el sistema de ventilación
+705,28/06/2023,12/07/2023,588,654,2,Personal amable y profesional durante el servicio
+706,01/06/2023,02/08/2023,245,444,2,Se realizó limpieza exhaustiva del sistema de refrigeración
+707,12/04/2024,14/10/2023,85,139,3,Equipo probado y verificado después del servicio
+708,20/10/2024,27/12/2023,289,724,3,Servicio rápido y eficiente
+709,04/05/2023,16/06/2023,858,789,1,Cliente satisfecho con la atención recibida
+710,05/06/2024,11/10/2023,201,208,4,Se realizó ajuste en la configuración del equipo
+711,10/10/2024,20/04/2023,247,328,2,Personal amable y profesional durante el servicio
+712,18/05/2024,21/06/2023,540,646,5,Equipo probado y verificado después del mantenimiento
+713,07/09/2024,12/01/2024,822,355,1,Servicio completado con éxito
+714,01/04/2023,06/11/2024,902,457,3,Personal amable y profesional durante el servicio
+715,12/04/2023,04/06/2024,303,798,5,Mantenimiento realizado dentro del plazo establecido
+716,01/03/2023,04/09/2024,853,185,5,Se requiere revisión adicional en próxima visita
+717,05/11/2023,21/05/2024,271,762,1,Se realizó limpieza exhaustiva del sistema de refrigeración
+718,24/10/2023,09/10/2024,427,78,5,Se detectó sobrecalentamiento en el sistema
+719,12/09/2023,23/05/2023,267,404,3,Se realizó calibración del equipo
+720,05/04/2023,24/05/2024,678,954,1,Se realizó ajuste en la presión del sistema
+721,30/07/2024,08/06/2024,952,648,4,Personal capacitado y experimentado en el mantenimiento
+722,17/02/2024,15/06/2023,881,65,1,Se recomienda actualizar el sistema
+723,23/05/2024,01/08/2023,464,123,5,Se recomienda programar mantenimiento preventivo
+724,10/05/2023,28/04/2023,183,168,4,Personal capacitado y experimentado en el mantenimiento
+725,08/08/2023,24/04/2023,370,751,2,Se detectó obstrucción en el sistema de ventilación
+726,26/09/2023,29/04/2023,809,511,1,Cliente informado sobre el estado actual del equipo
+727,24/02/2024,12/09/2023,264,747,1,Se realizó limpieza profunda del sistema de filtración
+728,03/10/2024,04/06/2024,162,210,1,Se realizó ajuste en la temperatura del sistema
+729,17/10/2023,27/10/2023,415,583,3,Se requiere revisión adicional en próxima visita
+730,29/08/2024,24/02/2024,106,292,3,Se recomienda actualizar el software del equipo
+731,08/04/2023,24/04/2024,481,239,5,Servicio rápido y eficiente
+732,06/08/2024,31/03/2023,473,953,3,Se entregó reporte detallado al cliente
+733,22/04/2023,08/09/2023,245,122,5,Personal técnico altamente capacitado
+734,27/07/2023,04/09/2024,594,391,1,Cliente satisfecho con la calidad del servicio
+735,28/10/2024,02/10/2024,759,261,3,Se detectó un cortocircuito en el sistema eléctrico
+736,03/04/2023,26/09/2023,458,923,2,Se realizó calibración del equipo
+737,01/04/2024,22/08/2023,263,914,4,Mantenimiento realizado dentro del tiempo estimado
+738,08/07/2024,11/09/2024,774,882,3,Cliente informado sobre el estado actual del equipo
+739,20/09/2023,18/04/2024,249,443,4,Personal capacitado y experimentado en el mantenimiento
+740,19/05/2023,24/09/2024,796,642,3,Cliente informado sobre los trabajos realizados
+741,12/04/2023,27/06/2023,757,342,5,Se detectó filtración en el sistema de agua
+742,19/11/2023,27/04/2023,949,721,2,Equipo en óptimas condiciones después del servicio
+743,05/03/2024,02/05/2023,407,521,3,Equipo verificado y certificado después del mantenimiento
+744,04/04/2024,25/07/2023,401,257,5,Se realizó ajuste en la temperatura del sistema
+745,14/04/2024,12/03/2024,195,307,1,Se recomienda revisión periódica del sistema
+746,20/04/2023,18/04/2024,769,77,5,Personal puntual y comprometido con el servicio
+747,08/07/2023,08/03/2024,967,849,2,Equipo en óptimas condiciones después del servicio
+748,17/09/2024,18/11/2023,617,137,3,Se realizó ajuste en la temperatura del sistema
+749,04/12/2023,13/05/2024,887,716,1,Personal capacitado y experimentado en el mantenimiento
+750,09/03/2023,09/07/2024,988,681,5,Cliente satisfecho con el servicio
+751,29/11/2023,04/10/2024,591,122,2,Reemplazo de batería agotada
+752,08/09/2024,20/05/2024,751,337,2,Se recomienda programar mantenimiento preventivo
+753,30/04/2023,10/06/2024,193,116,1,Se requiere revisión detallada en próxima visita
+754,07/06/2024,04/01/2024,202,349,2,Se realizó cambio de aceite en el motor
+755,08/09/2024,17/10/2023,600,832,1,Equipo verificado y certificado después del mantenimiento
+756,03/07/2024,19/02/2024,580,141,1,Mantenimiento realizado dentro del plazo establecido
+757,05/03/2023,17/12/2023,472,496,2,Equipo probado y verificado después del servicio
+758,04/05/2024,04/08/2024,248,566,5,Personal amable y profesional durante el servicio
+759,10/11/2023,01/03/2024,63,392,5,Cliente satisfecho con la atención recibida
+760,29/08/2024,29/09/2023,872,1000,3,Se entregó reporte detallado al cliente
+761,11/10/2023,10/05/2023,968,867,5,Se recomienda actualizar el sistema
+762,18/07/2024,10/09/2023,633,608,3,Equipo verificado y certificado después del mantenimiento
+763,30/12/2023,04/04/2024,88,912,4,Se realizó ajuste en la configuración del equipo
+764,03/05/2023,13/11/2023,273,162,4,Reparación urgente realizada con éxito
+765,25/03/2024,07/02/2024,793,183,2,Se detectó corrosión en las tuberías
+766,27/05/2024,13/06/2024,63,773,1,Equipo probado y verificado después del mantenimiento
+767,02/06/2023,04/04/2024,235,676,5,Se recomienda revisión periódica del sistema
+768,02/11/2024,22/06/2024,781,68,3,Se detectó corrosión en las tuberías
+769,21/10/2024,22/02/2024,734,665,5,Se recomienda actualizar el software del equipo
+770,02/04/2024,28/05/2024,361,108,3,Se realizó cambio de aceite en el motor
+771,27/07/2023,01/07/2024,521,891,1,Equipo verificado y certificado después del mantenimiento
+772,17/03/2023,16/02/2024,502,632,1,Se detectó corrosión en las tuberías
+773,28/02/2024,02/11/2024,984,240,2,Personal puntual y comprometido con el servicio
+774,12/12/2023,17/08/2024,655,411,2,Cliente informado sobre posibles mejoras en el equipo
+775,20/03/2023,02/11/2023,896,331,5,Se realizó calibración precisa del equipo
+776,24/03/2024,11/05/2023,355,662,2,Reparación urgente realizada
+777,30/05/2024,06/05/2023,693,693,1,Se requiere seguimiento en próxima visita
+778,23/10/2023,09/08/2024,880,960,3,Personal amable y profesional durante el servicio
+779,02/04/2023,06/12/2023,728,382,1,Mantenimiento realizado dentro del plazo establecido
+780,18/08/2023,29/09/2024,99,17,5,Equipo verificado y certificado después del mantenimiento
+781,12/04/2023,03/01/2024,550,395,1,Se requiere revisión detallada en próxima visita
+782,01/09/2023,02/04/2024,999,286,1,Se requiere revisión adicional en próxima visita
+783,13/06/2023,19/06/2023,630,707,5,Se detectó desgaste en las piezas del sistema
+784,24/09/2023,29/09/2024,186,473,4,Personal amable y profesional durante el servicio
+785,25/11/2023,11/07/2024,502,68,1,Se entregó reporte detallado al cliente
+786,19/11/2023,19/05/2023,402,341,1,Se requiere revisión detallada en próxima visita
+787,20/04/2023,13/05/2024,336,430,2,Servicio rápido y eficiente
+788,11/03/2023,24/05/2024,419,922,5,Equipo en óptimas condiciones después del servicio
+789,29/06/2024,22/10/2024,961,152,5,Equipo en perfecto funcionamiento después del mantenimiento
+790,29/07/2023,18/12/2023,714,106,3,Reemplazo de pieza defectuosa
+791,20/01/2024,12/09/2024,299,131,4,Cliente satisfecho con la calidad del servicio
+792,26/09/2024,17/09/2024,398,744,4,Personal amable y profesional durante el servicio
+793,30/08/2023,19/06/2024,396,783,5,Cliente informado sobre recomendaciones de uso
+794,18/07/2024,12/11/2023,409,304,3,Se realizó ajuste en la presión del sistema
+795,02/02/2024,27/08/2023,348,435,1,Cliente satisfecho con la atención recibida
+796,16/06/2023,19/10/2024,871,308,5,Cliente informado sobre recomendaciones de uso
+797,18/04/2024,05/01/2024,86,457,1,Se recomienda programar mantenimiento preventivo
+798,17/04/2023,28/06/2023,131,639,3,Se detectó fuga de gas en el sistema de aire acondicionado
+799,30/07/2024,05/11/2024,432,141,1,Se realizó cambio de aceite en el motor
+800,24/07/2023,09/11/2024,439,887,5,Se detectó sobrecalentamiento en el sistema
+801,10/09/2024,14/10/2024,836,695,4,Se realizó cambio de aceite en el motor
+802,19/04/2023,02/09/2024,659,622,4,Se entregó informe detallado al cliente
+803,19/06/2024,10/07/2024,707,932,4,Personal amable y profesional durante el servicio
+804,12/05/2023,13/09/2023,730,682,3,Necesario realizar mantenimiento preventivo
+805,06/06/2024,29/05/2024,90,305,4,Reparación urgente realizada con éxito
+806,23/03/2024,25/10/2023,97,306,1,Se recomienda revisión periódica del sistema
+807,19/07/2023,01/06/2023,147,566,5,Cliente satisfecho con la atención recibida
+808,18/01/2024,25/07/2023,589,816,1,Cliente satisfecho con el servicio
+809,13/03/2024,22/07/2023,453,72,1,Personal puntual y comprometido con el servicio
+810,26/03/2024,17/05/2024,602,779,1,Se detectó fuga de gas en el sistema de aire acondicionado
+811,20/06/2023,24/07/2023,937,98,5,Cliente informado sobre posibles mejoras en el equipo
+812,29/04/2024,24/07/2023,83,702,3,Equipo verificado y certificado después del mantenimiento
+813,04/07/2023,11/05/2024,626,209,3,Se realizó cambio de aceite en el motor
+814,16/08/2024,06/04/2024,817,455,5,Se recomienda programar mantenimiento preventivo
+815,17/07/2023,06/07/2024,384,527,2,Se recomienda actualizar el sistema
+816,29/04/2023,07/12/2023,289,726,5,Mantenimiento realizado dentro del plazo establecido
+817,27/08/2024,11/11/2023,846,902,2,Se realizó cambio de aceite en el motor
+818,20/07/2023,06/03/2024,684,590,5,Necesario realizar mantenimiento preventivo
+819,30/07/2023,06/01/2024,141,769,4,Personal capacitado y experimentado en el mantenimiento
+820,01/05/2024,23/05/2024,782,729,3,Reparación urgente realizada
+821,24/05/2023,21/06/2024,137,485,2,Se realizó ajuste en la temperatura del sistema
+822,04/04/2024,08/05/2024,146,966,1,Equipo verificado y certificado después del mantenimiento
+823,20/08/2023,25/09/2024,837,895,4,Reemplazo de batería agotada
+824,20/12/2023,20/06/2023,680,642,5,Se detectó sobrecalentamiento en el sistema
+825,09/06/2024,16/09/2023,567,943,4,Cliente informado sobre los trabajos realizados
+826,15/09/2024,29/03/2023,167,415,3,Se recomienda cambio de filtro en próxima visita
+827,26/09/2023,06/05/2024,892,462,2,Se detectó filtración en el sistema de agua
+828,13/11/2023,09/07/2024,355,8,1,Se realizó limpieza exhaustiva del sistema de refrigeración
+829,03/12/2023,05/06/2024,905,165,1,Se realizó cambio de aceite en el motor
+830,31/05/2024,20/07/2024,611,875,2,Reemplazo de batería agotada
+831,30/08/2024,26/06/2024,79,163,4,Se realizó ajuste en la temperatura del sistema
+832,30/07/2024,30/05/2024,130,393,2,Cliente informado sobre recomendaciones de uso adecuado
+833,23/06/2024,11/10/2024,555,797,1,Se detectó filtración en el sistema de agua
+834,14/02/2024,04/03/2023,277,647,5,Se requiere revisión adicional en próxima visita
+835,14/10/2023,15/08/2023,232,894,3,Se realizó ajuste en la presión del sistema
+836,28/06/2024,25/04/2024,365,344,4,Equipo en óptimas condiciones después del servicio
+837,07/10/2023,02/04/2024,465,332,5,Equipo en condiciones óptimas después del servicio
+838,16/10/2024,24/03/2024,465,281,1,Se realizó calibración precisa del equipo
+839,17/10/2024,11/03/2023,149,545,1,Se recomienda programar mantenimiento preventivo
+840,26/06/2024,13/07/2023,313,666,5,Reemplazo de batería agotada
+841,19/10/2024,09/05/2023,298,493,2,Cliente satisfecho con la atención recibida
+842,29/03/2023,24/03/2023,453,770,3,Se realizó cambio de aceite en el motor
+843,06/07/2024,29/06/2024,654,376,1,Cliente informado sobre los trabajos realizados
+844,25/07/2023,09/11/2023,574,923,1,Reemplazo de batería agotada
+845,03/06/2024,12/07/2024,986,786,2,Personal técnico altamente capacitado
+846,09/01/2024,18/03/2023,6,26,1,Se realizó ajuste en la presión del sistema
+847,25/04/2024,02/08/2023,67,708,4,Equipo probado y verificado después del mantenimiento
+848,21/06/2024,15/02/2024,290,955,5,Se entregó reporte detallado al cliente
+849,06/09/2024,15/02/2024,233,644,5,Se realizó limpieza profunda del sistema de filtración
+850,02/11/2023,20/05/2024,13,245,3,Servicio completado con éxito
+851,10/01/2024,07/06/2023,972,252,5,Se realizó cambio de aceite en el motor
+852,02/08/2023,16/04/2024,86,431,5,Se detectó obstrucción en el sistema de ventilación
+853,04/08/2023,29/06/2023,2,518,3,Equipo verificado y certificado después del mantenimiento
+854,02/08/2024,02/06/2023,542,390,4,Personal amable y profesional durante el servicio
+855,19/08/2024,19/01/2024,886,456,5,Equipo verificado y certificado después del mantenimiento
+856,20/11/2023,15/08/2023,708,994,5,Servicio rápido y eficiente
+857,18/05/2024,02/04/2024,315,708,1,Equipo verificado y certificado después del mantenimiento
+858,25/01/2024,22/03/2023,703,190,2,Se recomienda actualizar el software del equipo
+859,07/10/2024,29/09/2024,481,720,4,Se recomienda actualizar el software del equipo
+860,05/07/2023,26/08/2024,106,801,3,Reparación urgente realizada con éxito
+861,14/08/2024,05/09/2024,893,833,2,Equipo en condiciones óptimas después del servicio
+862,05/03/2023,11/07/2023,675,731,5,Se detectó corrosión en las tuberías
+863,02/10/2023,12/04/2023,373,761,1,Personal técnico altamente capacitado
+864,05/11/2024,19/08/2023,294,62,3,Equipo en buen estado después del servicio
+865,08/10/2023,14/07/2023,839,147,5,Reemplazo de pieza defectuosa
+866,14/10/2024,07/07/2023,951,14,3,Se recomienda cambio de filtro en próxima visita
+867,02/09/2023,01/12/2023,746,540,1,Cliente satisfecho con el servicio
+868,02/08/2024,18/09/2023,152,188,1,Equipo verificado y certificado después del mantenimiento
+869,09/11/2023,20/05/2023,402,90,5,Personal puntual y comprometido con el servicio
+870,20/11/2023,17/04/2023,803,330,2,Se realizó ajuste en la presión del sistema
+871,31/07/2023,29/06/2024,415,924,3,Se detectó sobrecalentamiento en el sistema
+872,22/01/2024,14/07/2024,267,125,3,Se recomienda actualizar el sistema
+873,08/05/2024,10/06/2024,253,696,1,Se recomienda programar mantenimiento preventivo
+874,10/10/2024,30/09/2023,382,47,3,Se recomienda revisión periódica del sistema
+875,27/05/2024,09/04/2024,659,421,4,Se recomienda programar mantenimiento preventivo
+876,19/07/2023,01/06/2024,442,631,3,Se requiere revisión detallada en próxima visita
+877,20/05/2023,18/04/2024,411,774,4,Personal amable y profesional durante el servicio
+878,04/04/2024,17/06/2023,376,292,1,Se detectó desgaste en las piezas del sistema
+879,30/09/2023,14/09/2024,250,140,5,Se realizó ajuste en la presión del sistema
+880,16/10/2023,23/09/2023,125,59,3,Mantenimiento realizado dentro del plazo establecido
+881,26/12/2023,06/07/2024,476,884,5,Cliente informado sobre posibles mejoras en el equipo
+882,15/12/2023,28/10/2023,297,473,1,Equipo en óptimas condiciones después del servicio
+883,12/04/2024,03/06/2024,458,690,2,Equipo en buen estado después del servicio
+884,22/09/2024,30/03/2023,399,273,4,Equipo probado y verificado después del servicio
+885,22/07/2023,15/09/2024,572,581,5,Personal técnico altamente capacitado
+886,26/08/2024,07/05/2023,467,63,1,Equipo en óptimas condiciones después del servicio
+887,27/02/2024,30/10/2023,61,75,4,Se detectó sobrecalentamiento en el sistema
+888,16/08/2023,01/09/2023,108,413,1,Se detectó obstrucción en el sistema de ventilación
+889,26/10/2023,03/12/2023,398,523,2,Cliente informado de los trabajos realizados
+890,31/08/2023,27/06/2024,847,54,1,Equipo probado y verificado después del mantenimiento
+891,04/03/2023,06/07/2024,837,694,3,Equipo probado y verificado después del mantenimiento
+892,01/06/2024,31/01/2024,567,468,4,Se entregó reporte detallado al cliente
+893,30/06/2023,28/04/2023,371,283,4,Reparación urgente realizada
+894,12/07/2023,03/04/2023,141,53,2,Equipo en perfectas condiciones después del servicio
+895,03/10/2024,31/07/2023,659,798,4,Equipo verificado y certificado después del mantenimiento
+896,02/10/2023,02/06/2023,354,709,4,Cliente informado sobre recomendaciones de uso adecuado
+897,09/06/2024,16/12/2023,521,994,4,Se realizó calibración precisa del equipo
+898,24/01/2024,23/08/2024,524,684,4,Cliente satisfecho con el servicio
+899,03/11/2024,19/12/2023,384,116,1,Se detectó desgaste en las piezas del sistema
+900,16/07/2023,14/02/2024,502,350,4,Equipo en condiciones óptimas después del servicio
+901,22/09/2024,01/01/2024,72,557,4,Se detectó desgaste en las piezas del equipo
+902,21/06/2023,03/10/2023,331,868,2,Personal amable y profesional durante el servicio
+903,27/05/2023,20/04/2024,864,155,5,Se encontraron problemas adicionales durante el mantenimiento
+904,16/03/2023,24/11/2023,94,854,1,Cliente informado sobre recomendaciones de uso
+905,09/07/2024,15/08/2024,854,439,3,Se detectó fuga de gas en el sistema de aire acondicionado
+906,20/12/2023,13/12/2023,572,926,5,Personal puntual y comprometido con el servicio
+907,02/05/2024,22/04/2023,983,970,3,Se requiere revisión detallada en próxima visita
+908,06/07/2024,23/04/2024,325,556,4,Se realizó calibración del equipo
+909,16/06/2023,17/11/2023,397,16,4,Se realizó limpieza profunda del sistema de filtración
+910,16/03/2024,27/11/2023,630,923,5,Se encontraron problemas adicionales durante el mantenimiento
+911,17/06/2023,20/05/2023,104,215,4,Se requiere revisión adicional en próxima visita
+912,21/03/2024,22/10/2024,526,685,1,Cliente informado sobre posibles mejoras en el equipo
+913,26/03/2024,27/08/2024,453,412,3,Cliente informado sobre el estado actual del equipo
+914,12/06/2023,20/07/2024,392,409,4,Se requiere revisión detallada en la próxima visita
+915,12/10/2023,28/01/2024,89,707,2,Limpieza profunda del equipo
+916,10/07/2023,04/05/2023,870,226,2,Cliente satisfecho con el servicio
+917,31/08/2023,29/01/2024,70,999,2,Equipo verificado y certificado después del mantenimiento
+918,08/06/2024,10/04/2023,6,702,5,Se detectó corrosión en las tuberías
+919,08/07/2023,05/09/2023,112,668,4,Se requiere revisión adicional en próxima visita
+920,22/07/2023,11/07/2024,32,87,2,Mantenimiento realizado dentro del tiempo estimado
+921,17/08/2024,31/10/2023,201,571,2,Reparación urgente realizada
+922,09/10/2023,19/03/2023,824,55,4,Reparación urgente realizada con éxito
+923,27/03/2023,18/05/2024,970,632,1,Se realizó ajuste en la presión del sistema
+924,23/10/2024,25/05/2024,416,200,3,Equipo en óptimas condiciones después del servicio
+925,07/07/2023,18/02/2024,85,574,4,Se recomienda actualizar el sistema
+926,15/03/2024,04/08/2024,907,305,3,Se realizó cambio de aceite en el motor
+927,26/11/2023,19/09/2023,779,499,3,Equipo en perfecto funcionamiento después del mantenimiento
+928,16/07/2024,21/03/2023,950,1000,4,Reemplazo de pieza defectuosa
+929,29/06/2024,12/09/2024,116,50,4,Se detectó corrosión en las tuberías
+930,08/11/2024,27/08/2024,40,642,5,Mantenimiento realizado dentro del tiempo estimado
+931,15/08/2023,17/09/2023,78,592,4,Se detectó sobrecalentamiento en el sistema
+932,30/07/2024,10/05/2024,664,135,1,Cliente informado sobre los trabajos realizados
+933,12/04/2024,28/03/2024,923,533,5,Reparación urgente realizada
+934,07/11/2024,20/09/2024,503,871,3,Se detectó fuga de gas en el sistema de aire acondicionado
+935,23/10/2023,20/04/2024,263,247,5,Equipo en perfecto funcionamiento después del mantenimiento
+936,08/03/2023,12/03/2023,56,53,5,Mantenimiento realizado dentro del tiempo estimado
+937,01/11/2023,06/03/2024,269,67,1,Equipo en óptimas condiciones después del servicio
+938,13/09/2023,25/04/2023,521,138,1,Equipo probado y verificado después del servicio
+939,02/08/2023,02/10/2024,780,325,1,Reparación urgente realizada con éxito
+940,02/05/2024,02/12/2023,84,772,2,Cliente informado sobre recomendaciones de uso adecuado
+941,21/03/2023,05/04/2023,548,989,4,Equipo probado y verificado después del mantenimiento
+942,12/10/2023,07/05/2023,416,99,4,Se realizó cambio de aceite en el motor
+943,21/03/2023,03/02/2024,750,908,2,Cliente informado sobre posibles mejoras en el equipo
+944,31/03/2024,02/11/2024,87,136,4,Se recomienda programar mantenimiento preventivo
+945,01/11/2024,02/09/2023,919,242,5,Se realizó ajuste en la presión del sistema
+946,04/02/2024,10/02/2024,794,34,3,Mantenimiento realizado dentro del plazo establecido
+947,20/08/2024,21/11/2023,490,151,2,Se detectó una fuga en el sistema de tuberías
+948,20/05/2023,03/06/2023,171,826,4,Equipo verificado y certificado después del mantenimiento
+949,24/10/2024,07/03/2023,563,142,1,Servicio rápido y eficiente
+950,22/05/2023,25/05/2023,677,834,1,Se detectó una fuga en el sistema de tuberías
+951,14/07/2024,12/03/2024,524,6,4,Cliente informado de los trabajos realizados
+952,23/08/2023,22/06/2023,469,918,3,Personal amable y profesional durante el servicio
+953,11/09/2023,21/12/2023,724,821,3,Se realizó limpieza exhaustiva del sistema de refrigeración
+954,18/09/2024,25/08/2023,273,819,2,Se recomienda cambio de filtro en próxima visita
+955,22/03/2023,21/03/2024,618,700,3,Cliente informado sobre posibles mejoras en el equipo
+956,16/08/2024,25/12/2023,780,580,1,Se recomienda programar mantenimiento preventivo
+957,30/09/2024,15/10/2024,970,501,2,Equipo en condiciones óptimas después del servicio
+958,11/08/2024,21/09/2024,687,945,5,Reparación urgente realizada
+959,05/06/2023,27/03/2024,172,681,2,Equipo en perfectas condiciones después del servicio
+960,03/08/2023,03/11/2023,675,906,5,Cliente informado sobre recomendaciones de uso adecuado
+961,08/02/2024,15/09/2024,113,799,3,Se recomienda programar mantenimiento preventivo
+962,05/09/2024,28/12/2023,629,287,2,Servicio rápido y eficiente
+963,02/03/2024,07/02/2024,659,241,5,Se requiere revisión detallada en próxima visita
+964,29/12/2023,27/04/2023,483,645,5,Equipo en condiciones óptimas después del mantenimiento
+965,26/08/2024,22/06/2023,653,189,2,Se recomienda programar mantenimiento preventivo
+966,29/10/2024,22/05/2023,35,612,5,Se detectó corrosión en las tuberías
+967,22/11/2023,21/06/2023,865,96,3,Cliente informado sobre recomendaciones de uso adecuado
+968,26/09/2024,24/02/2024,678,944,1,Cliente satisfecho con la calidad del servicio
+969,29/01/2024,29/05/2023,835,319,5,Se recomienda cambio de filtro en próxima visita
+970,03/03/2024,05/03/2023,414,934,5,Equipo en buen estado después del servicio
+971,20/02/2024,03/01/2024,962,907,3,Se detectó corrosión en las tuberías
+972,27/03/2024,23/05/2023,828,670,5,Equipo en condiciones óptimas después del servicio
+973,04/09/2023,23/07/2024,994,305,2,Se requiere seguimiento en próxima visita
+974,08/11/2024,02/11/2024,965,649,4,Se recomienda revisión periódica
+975,14/07/2023,04/03/2023,367,974,1,Reparación urgente realizada
+976,26/05/2023,22/12/2023,593,209,1,Se detectó obstrucción en el sistema de ventilación
+977,03/11/2024,01/07/2024,418,242,1,Se realizó limpieza exhaustiva del sistema de refrigeración
+978,30/09/2024,08/05/2024,430,708,5,Equipo verificado y certificado después del mantenimiento
+979,11/05/2023,11/06/2024,412,109,2,Se realizó limpieza profunda del sistema de filtración
+980,17/03/2023,24/09/2024,152,80,4,Cliente satisfecho con la calidad del servicio
+981,01/03/2023,20/04/2023,751,149,1,Se detectó filtración en el sistema de agua
+982,31/08/2023,02/11/2024,905,44,1,Se recomienda cambio de filtro en próxima visita
+983,21/04/2023,07/06/2023,639,612,4,Se entregó informe detallado al cliente
+984,22/07/2023,23/08/2023,178,224,4,Se detectó sobrecalentamiento en el sistema
+985,13/08/2024,10/05/2023,680,388,1,Se detectó corrosión en las tuberías
+986,18/03/2023,28/01/2024,398,58,3,Personal capacitado y experimentado en el mantenimiento
+987,15/10/2023,23/10/2024,548,7,3,Se requiere revisión detallada en la próxima visita
+988,24/03/2024,14/10/2024,600,85,5,Se requiere revisión detallada en próxima visita
+989,19/12/2023,20/05/2023,993,649,3,Reemplazo de componentes dañados
+990,18/07/2023,07/05/2023,700,716,2,Se recomienda programar mantenimiento preventivo
+991,07/02/2024,08/03/2024,308,546,2,Equipo probado y verificado después del servicio
+992,02/10/2023,04/03/2024,685,578,3,Se detectó una fuga en el sistema de tuberías
+993,19/09/2023,23/12/2023,94,313,1,Se entregó reporte detallado al cliente
+994,16/02/2024,12/04/2024,321,279,4,Reemplazo de batería agotada
+995,29/02/2024,05/08/2024,912,927,2,Equipo verificado y certificado después del mantenimiento
+996,30/05/2024,07/10/2024,110,409,3,Se realizó limpieza profunda del sistema de filtración
+997,12/09/2024,05/12/2023,607,37,2,Se recomienda cambio de filtro en próxima visita
+998,30/03/2023,30/05/2024,509,780,1,Se detectó sobrecalentamiento en el sistema
+999,12/07/2023,01/03/2023,910,288,3,Se requiere revisión detallada en la próxima visita
+1000,06/07/2023,19/08/2023,748,678,4,Equipo en óptimas condiciones después del servicio
