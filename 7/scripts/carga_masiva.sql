@@ -405,7 +405,7 @@ VALUES
 (4, 'Crítica');
 
 -- Poblamiento de la tabla estado_pedido
-INSERT INTO Estado_pedido (Id_estado_pedido, nombre_estado)
+INSERT INTO Estado_pedido (Id_estado_pedido, nombre_estado_pedido)
 VALUES
 (1, 'Pendiente'),
 (2, 'Confirmado'),
@@ -413,40 +413,29 @@ VALUES
 (4, 'Completado'),
 (5, 'Cancelado');
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xf3 0x6e 0x0d 0x0a
-CONTEXT:  COPY pedido_compra, line 3 
-AYUDA: Revisa la codificación del csv, posiblemente no sea UTF8 (por esto las tildes generan problemas)
--- Poblamiento de la tabla pedido_compra
-COPY pedido_compra FROM 'C:\DBD-2024-2\datos\Pedido_Compra.csv' DELIMITER ';' CSV HEADER;
-*/
-
 -- Poblamiento de la tabla tipo_producto
-INSERT INTO Tipo_producto (Id_tipo_producto, nombre_producto)
+INSERT INTO Tipo_producto (Id_tipo_producto, nombre_tipo_producto)
 VALUES
 (1, 'Insumos'),
 (2, 'Equipos de Soporte');
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-AYUDA: Es necesario corregir pedido_compra primero
--- Poblamiento de la tabla detalle_pedido_compra
+-- Poblamiento de la tabla pedido de compra
+COPY pedido_compra FROM 'C:\DBD-2024-2\datos\Pedido_Compra.csv' DELIMITER ';' CSV HEADER;
+
+-- Poblamiento de la tabla detalle del pedido de compra
 COPY detalle_pedido_compra FROM 'C:\DBD-2024-2\datos\Detalle_Pedido_Compra.csv' DELIMITER ';' CSV HEADER;
-*/
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA (USA MOCKAROO)
-ERROR:  el valor «77792807821» está fuera de rango para el tipo integer
-CONTEXT:  COPY proveedor, line 2, column ruc: "77792807821" 
+-- Poblamiento de la tabla proveedor
+COPY proveedor FROM 'C:\DBD-2024-2\datos\Proveedor.csv' DELIMITER ',' CSV HEADER;
 
--- Poblamiento de la tabla Proveedor
-COPY proveedor FROM 'C:\DBD-2024-2\datos\Proveedor.csv' DELIMITER ';' CSV HEADER;
-*/
-
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA (USA MOCKAROO)
-AYUDA: Es necesario corregir proveedor primero
--- Poblamiento de la tabla Orden_de_compra
+-- Poblamiento de la tabla orden de compra
 COPY orden_de_compra FROM 'C:\DBD-2024-2\datos\Orden_de_Compra.csv' DELIMITER ';' CSV HEADER;
-*/
 
+/*
+FALTA HACER EL CSV
+-- Poblamiento de la tabla historial estados pedido
+COPY historial_estados_pedido FROM 'C:\DBD-2024-2\datos\Historial_estados_pedido' DELIMITER ',' CSV HEADER;
+*/
 
 COPY Registro FROM 'C:\DBD-2024-2\datos\Registros.csv' DELIMITER ',' CSV HEADER;
 

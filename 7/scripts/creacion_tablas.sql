@@ -13,6 +13,7 @@ CREATE TABLE Acceso_empleado
     Nombre_acceso VARCHAR(50) NOT NULL,
     PRIMARY KEY (Id_acceso)
 );
+
 DROP TABLE IF EXISTS Proveedor CASCADE;
 CREATE TABLE Proveedor
 (
@@ -27,6 +28,7 @@ CREATE TABLE Proveedor
   Categoria VARCHAR(30) NOT NULL,
   PRIMARY KEY (Id_proveedor)
 );
+
 DROP TABLE IF EXISTS Estado_reserva CASCADE;
 CREATE TABLE Estado_reserva
 (
@@ -134,7 +136,7 @@ DROP TABLE IF EXISTS Pedido_Compra CASCADE;
 CREATE TABLE Pedido_Compra
 (
   Id_pedido_compra INT NOT NULL,
-  Descripción VARCHAR(255) NOT NULL,
+  Descripcion VARCHAR(255) NOT NULL,
   Id_urgencia INT NOT NULL,
   Id_estado_pedido INT NOT NULL,
   Id_empleado INT NOT NULL,
