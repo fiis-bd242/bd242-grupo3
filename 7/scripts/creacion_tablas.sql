@@ -147,9 +147,9 @@ DROP TABLE IF EXISTS Orden_de_compra CASCADE;
 CREATE TABLE Orden_de_compra
 (
   Id_orden_compra INT NOT NULL,
-  Fecha_emision DATE NOT NULL,
+  Fecha_emision_orden DATE NOT NULL,
   Fecha_posible_entrega DATE NOT NULL,
-  id_proveedor INT NOT NULL,
+  Id_proveedor INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
   Id_empleado INT NOT NULL,
   PRIMARY KEY (Id_orden_compra),
@@ -186,11 +186,11 @@ DROP TABLE IF EXISTS Almacen CASCADE;
 CREATE TABLE Almacen
 (
   Id_almacen INT NOT NULL,
-  Direccion VARCHAR(255) NOT NULL,
   Capacidad INT NOT NULL,
   Id_empleado INT NOT NULL,
   Id_estado INT NOT NULL,
   Id_categoria INT NOT NULL,
+  Direccion VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_almacen),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (Id_estado) REFERENCES Estado_Almacen(Id_estado),
@@ -240,7 +240,6 @@ CREATE TABLE Equipo_de_Soporte
   Id_disponibilidad INT NOT NULL,
   Id_tipo INT NOT NULL,
   Horas_Uso INT NOT NULL,
-  Precio_unitario FLOAT NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_equipo_soporte),
   FOREIGN KEY (Id_estado) REFERENCES Estado_Equipo_Soporte(Id_estado),
@@ -252,7 +251,6 @@ DROP TABLE IF EXISTS EquipoSXAlmacen CASCADE;
 CREATE TABLE EquipoSXAlmacen
 (
   Id_equipo_soporte_alm INT NOT NULL,
-  Cantidad INT NOT NULL,
   Id_almacen INT NOT NULL,
   Id_equipo_soporte INT NOT NULL,
   PRIMARY KEY (Id_equipo_soporte_alm),
@@ -272,8 +270,9 @@ DROP TABLE IF EXISTS Detalle_Pedido_Compra CASCADE;
 CREATE TABLE Detalle_Pedido_Compra
 (
   Id_detalle_pedido INT NOT NULL,
-  Cantidad INT NOT NULL,
   Id_producto INT NOT NULL,
+  Precio_unitario FLOAT NULL,
+  Cantidad INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
   Id_tipo_producto INT NOT NULL,
   PRIMARY KEY (Id_detalle_pedido),
@@ -281,13 +280,14 @@ CREATE TABLE Detalle_Pedido_Compra
   FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
 );
 
+DROP TABLE IF EXISTS Historial_Estados_Pedido CASCADE;
 CREATE TABLE Historial_Estados_Pedido
 (
-  id_historial INT NOT NULL,
-  fecha_cambio DATE NOT NULL,
-  hora_cambio TIME NOT NULL,
-  estado_anterior INT NOT NULL,
-  estado_nuevo INT NOT NULL,
+  Id_historial INT NOT NULL,
+  Fecha_cambio DATE NOT NULL,
+  Hora_cambio TIME NOT NULL,
+  Estado_anterior INT NOT NULL,
+  Estado_nuevo INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
   PRIMARY KEY (id_historial),
   FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra)
@@ -422,7 +422,6 @@ DROP TABLE IF EXISTS EquipoSXMantenimiento CASCADE;
 CREATE TABLE EquipoSXMantenimiento
 (
   id_equipo_mant INT NOT NULL,
-  cantidad INT NOT NULL,
   Id_Act_mantto INT NOT NULL,
   Id_equipo_soporte INT NOT NULL,
   PRIMARY KEY (id_equipo_mant),
