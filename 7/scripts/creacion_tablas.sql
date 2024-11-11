@@ -17,12 +17,13 @@ DROP TABLE IF EXISTS Proveedor CASCADE;
 CREATE TABLE Proveedor
 (
   Id_proveedor INT NOT NULL,
-  RUC INT NOT NULL,
+  RUC CHAR(11) NOT NULL,
   Empresa VARCHAR(255) NOT NULL,
   Nombre VARCHAR(255) NOT NULL,
   Email VARCHAR(255) NOT NULL,
-  Telefono CHAR(11) NOT NULL,
+  Telefono CHAR(9) NOT NULL,
   Direccion VARCHAR(255) NOT NULL,
+  Ciudad VARCHAR(255) NOT NULL,
   Categoria VARCHAR(30) NOT NULL,
   PRIMARY KEY (Id_proveedor)
 );
