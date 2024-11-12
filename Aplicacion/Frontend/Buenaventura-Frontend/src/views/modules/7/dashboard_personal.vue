@@ -8,6 +8,7 @@ import RouterBox from '@/components/RouterBox.vue';
   <RouterBox v-for="(route, index) in list_of_routes" 
              :key="index" 
              :msg="route.msg" 
+             :route_name="route.name"
              :button_name="route.button_text" 
              :index="index" 
              :description="route.description" />
@@ -22,21 +23,21 @@ export default {
             list_of_routes:[
                 {
                     msg: "Registrar Reporte Diario",
-                    name: "reporte_diario",
+                    name: "registros",
                     description : "Registrar los datos del mantenimiento diario",
                     button_text : "Digitalizar Datos"
                 },
                 {
                     msg: "Historial de Mantenimiento",
-                    name: "historial_mantenimiento",
+                    name: "historial",
                     description : "Visualiza el historial de Mantenimiento",
                     button_text : "Historial de Mantenimiento"
                 },
                 {
-                    msg: "Historial de Mantenimiento",
-                    name: "historial_mantenimiento",
-                    description : "Visualiza el historial de Mantenimiento",
-                    button_text : "Historial de Mantenimiento"
+                    msg: "Verificar Reporte Diario",
+                    name: "reporte",
+                    description : "Verificacion de reporte del dia ",
+                    button_text : "Verificación del Reporte"
                 },
             ]
         }
