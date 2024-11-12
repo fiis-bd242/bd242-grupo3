@@ -3,15 +3,12 @@ package pe.uni.buenaventurabackend.modules.planificacion.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IPlanService;
-import pe.uni.buenaventurabackend.modules.planificacion.service.PlanService;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/planificacion")
@@ -23,6 +20,12 @@ public class PlanController {
     @GetMapping("/allplans")
     public ResponseEntity<List<Plan_de_mantenimiento>> list(){
         var result = iPlanService.findAll();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @GetMapping("/listaplanes/{offset}")
+    public ResponseEntity<List<Map<String,Object>>> list(@PathVariable int offset){
+        var result = iPlanService.find10(offset);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }
