@@ -1,201 +1,101 @@
-id_equipo_soporte,nombre_equipo_soporte,fecha_adquisicion,descripcion,horas_uso,id_estado,id_disponibilidad,id_tipo
-1,Cummins ZL878,2022-04-19,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,542,2,1,3
-2,Mitsubishi CM299,2019-09-09,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,177,3,2,3
-3,DeWalt HX989,2016-02-27,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,417,1,1,1
-4,Perkins HV562,2017-01-28,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,157,1,1,3
-5,Makita NX520,2019-04-08,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,294,1,2,5
-6,Milwaukee RT715,2019-08-12,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,554,1,1,2
-7,Volvo XT272,2015-12-30,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,378,2,2,3
-8,Perkins XL558,2019-12-26,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,563,2,2,1
-9,Volvo RX531,2023-06-23,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,500,2,2,5
-10,Generac GT469,2018-07-14,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,324,1,1,3
-11,Bosch SL979,2022-09-03,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,222,3,1,1
-12,DeWalt NL133,2022-10-06,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,370,1,1,5
-13,Siemens CX968,2024-06-20,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,10,4,2,5
-14,Caterpillar FX987,2023-08-06,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,204,4,2,1
-15,Doosan RT669,2018-12-27,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,327,3,2,4
-16,Kohler FX451,2021-01-20,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,107,3,2,4
-17,Ingersoll Rand DL734,2016-12-29,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,193,2,2,4
-18,Kubota HX635,2017-02-24,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,224,1,2,5
-19,Caterpillar VP147,2017-11-13,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,312,1,1,3
-20,JCB QL252,2017-07-03,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,21,4,1,5
-21,Sullair GL260,2023-06-23,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,581,1,1,2
-22,Honda GT990,2017-12-17,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,243,1,1,3
-23,Caterpillar XB777,2017-04-15,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,537,3,1,5
-24,JCB SL853,2020-03-31,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,575,2,2,3
-25,Milwaukee XB943,2021-12-09,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,8,1,2,3
-26,Caterpillar HV148,2021-07-23,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,517,3,2,4
-27,Siemens DL180,2015-06-18,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,84,1,1,2
-28,Generac NX839,2018-03-25,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,264,3,1,2
-29,Generac YP301,2019-05-29,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,598,1,1,2
-30,Volvo GT279,2015-04-02,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,508,1,2,1
-31,Cummins ZR704,2024-03-13,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,412,2,2,3
-32,Hitachi XL127,2020-05-26,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,537,3,1,3
-33,JCB HX881,2016-02-06,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,99,2,2,4
-34,Volvo GT126,2020-02-19,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,10,2,1,2
-35,Liebherr ZT625,2023-02-10,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,257,3,2,3
-36,Mitsubishi HL960,2016-06-16,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,304,4,1,2
-37,Kubota NL680,2019-04-29,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,165,4,1,5
-38,Hitachi YP307,2022-04-29,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,70,2,2,2
-39,Caterpillar QX497,2016-01-13,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,484,1,1,1
-40,Perkins ML923,2024-11-05,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,569,4,1,2
-41,Generac RT201,2019-08-05,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,491,4,1,2
-42,Atlas Copco MX152,2024-07-04,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,386,1,1,5
-43,Bosch QX339,2024-06-01,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,243,1,2,2
-44,Makita CP914,2022-01-07,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,279,4,1,1
-45,Volvo RX977,2016-12-24,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,156,4,1,3
-46,Atlas Copco HL631,2024-10-14,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,34,1,2,2
-47,Mitsubishi XA469,2015-05-24,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,590,2,1,4
-48,Volvo FL379,2020-07-16,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,448,1,2,2
-49,Volvo DL594,2022-04-02,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,360,3,1,1
-50,Kohler XT384,2021-11-26,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,240,2,1,2
-51,Hyundai HV154,2022-09-10,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,337,1,1,3
-52,Generac SL775,2022-12-31,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,508,2,1,5
-53,Cummins LJ906,2018-04-12,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,49,4,2,5
-54,Caterpillar PN378,2021-01-26,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,446,3,2,2
-55,Makita CX928,2023-06-12,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,213,3,1,3
-56,JCB ZL389,2016-01-11,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,305,3,1,1
-57,Doosan SP567,2022-03-30,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,142,1,1,2
-58,Volvo YT930,2023-05-13,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,254,3,1,2
-59,Doosan PN232,2024-09-29,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,239,1,2,2
-60,JCB HL939,2015-04-15,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,157,1,2,2
-61,Liebherr ZT589,2020-12-17,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,125,3,1,5
-62,JCB NL519,2018-01-05,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,322,4,2,3
-63,Kohler SP714,2023-10-24,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,30,1,2,3
-64,Doosan HL717,2019-12-10,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,146,3,2,1
-65,Hitachi FL376,2016-09-15,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,179,2,2,2
-66,Bosch ZL800,2017-05-30,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,407,1,1,1
-67,DeWalt LJ778,2015-02-02,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,587,4,2,4
-68,DeWalt ZL792,2016-05-06,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,160,1,2,5
-69,JCB DP446,2017-07-05,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,129,2,1,5
-70,JCB GT312,2019-11-17,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,224,4,1,1
-71,Honda YT917,2022-03-13,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,99,4,1,3
-72,Komatsu KD934,2021-09-16,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,337,2,1,4
-73,Hitachi XT103,2016-07-03,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,3,3,2,1
-74,Atlas Copco CP643,2017-10-20,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,354,2,1,3
-75,Ingersoll Rand XL485,2022-06-05,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,156,3,2,1
-76,Volvo XB381,2022-02-05,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,125,1,2,2
-77,Cummins MX287,2023-02-20,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,25,4,1,4
-78,Kohler ZR199,2016-08-30,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,259,2,2,5
-79,Ingersoll Rand PN994,2023-04-02,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,66,3,1,2
-80,Kohler XB757,2023-06-13,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,145,3,2,1
-81,Perkins XR968,2021-08-15,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,370,4,1,4
-82,Honda RT348,2016-01-15,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,220,3,2,4
-83,Perkins VP384,2017-02-05,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,358,2,2,2
-84,Milwaukee NX264,2015-02-23,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,209,4,2,5
-85,Makita XB316,2023-02-06,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,199,1,2,3
-86,JCB SL964,2017-09-14,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,391,2,2,4
-87,Honda SL791,2016-01-14,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,165,3,2,2
-88,Generac HX859,2020-09-08,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,417,3,1,5
-89,Siemens MX159,2019-02-11,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,129,3,2,5
-90,Hitachi MX352,2018-06-14,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,452,2,1,3
-91,Caterpillar XA469,2016-03-29,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,423,2,2,3
-92,Doosan RX639,2015-10-20,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,109,1,1,5
-93,Cummins QL273,2021-08-01,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,28,1,2,1
-94,Mitsubishi MX323,2017-04-21,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,171,3,1,3
-95,Atlas Copco LJ807,2018-02-03,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,252,1,1,1
-96,Honda ZR787,2017-08-08,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,397,2,2,3
-97,Cummins DL364,2023-09-18,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,140,3,1,4
-98,Sullair GX259,2016-12-22,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,360,3,1,1
-99,Komatsu GL613,2017-11-17,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,127,2,2,2
-100,Hyundai QL157,2024-10-01,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,43,3,1,5
-101,JCB SL663,2020-01-17,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,396,1,1,1
-102,Makita GL235,2019-07-02,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,244,2,2,5
-103,Cummins XT807,2015-12-25,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,259,2,1,2
-104,Siemens GX141,2017-05-24,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,396,2,1,5
-105,Generac ML172,2021-05-14,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,165,4,2,4
-106,Cummins XL281,2021-01-22,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,477,2,1,1
-107,Bosch NL738,2019-01-27,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,313,1,1,3
-108,Volvo XR389,2017-09-17,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,286,2,2,3
-109,Kohler NL896,2024-02-17,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,568,1,2,5
-110,Siemens SL665,2022-10-05,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,237,2,2,4
-111,Kohler CL252,2015-03-08,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,427,4,1,1
-112,Cummins GL454,2021-03-26,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,504,4,2,1
-113,Sullair YP696,2015-04-12,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,307,4,2,3
-114,Bosch HX609,2015-09-21,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,420,1,1,4
-115,Honda CM897,2016-09-14,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,472,4,1,5
-116,Makita XL360,2018-06-17,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,600,2,2,5
-117,Makita XL945,2015-12-26,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,538,3,1,5
-118,John Deere XR102,2016-07-17,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,526,2,2,5
-119,DeWalt CL717,2020-01-20,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,304,4,1,2
-120,Hitachi ML871,2018-05-31,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,315,3,2,5
-121,Komatsu CP930,2016-11-25,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,569,3,1,2
-122,Kohler QL770,2016-05-21,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,544,1,1,1
-123,Generac GT826,2015-01-05,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,236,1,1,4
-124,Siemens KD575,2020-05-31,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,17,4,1,2
-125,Liebherr VL354,2018-02-06,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,115,1,1,5
-126,Kohler FL470,2015-09-04,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,256,1,1,2
-127,Caterpillar HL676,2018-01-24,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,61,3,1,3
-128,Ingersoll Rand KD129,2017-06-02,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,575,3,2,4
-129,Makita VL466,2023-08-12,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,87,2,2,4
-130,Liebherr YT797,2017-03-18,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,487,4,1,4
-131,Doosan LJ978,2023-10-29,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,576,2,2,2
-132,John Deere DL475,2016-11-25,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,360,2,2,4
-133,Atlas Copco CL112,2020-03-31,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,107,2,1,3
-134,Honda FL371,2020-03-18,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,158,1,2,2
-135,Sullair CM463,2019-06-22,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,559,2,1,4
-136,Perkins CM820,2022-07-04,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,119,1,1,1
-137,Liebherr XA601,2024-07-06,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,292,3,2,1
-138,Liebherr GX296,2022-11-10,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,480,2,1,4
-139,Sullair YP473,2016-05-10,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,217,3,2,3
-140,Honda CP797,2022-07-23,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,36,2,1,5
-141,Perkins FL367,2015-05-13,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,193,1,1,5
-142,Doosan DL250,2020-04-30,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,357,2,1,4
-143,Caterpillar NX751,2015-08-19,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,502,1,2,3
-144,Siemens NX511,2019-08-22,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,78,1,2,4
-145,Cummins TS723,2022-01-05,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,543,2,2,4
-146,Siemens ZT966,2017-03-22,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,77,1,1,5
-147,Cummins HV993,2015-08-30,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,141,3,1,4
-148,Generac CX220,2021-02-27,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,471,3,2,1
-149,Mitsubishi FL410,2016-02-03,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,183,2,2,4
-150,DeWalt MX570,2024-04-22,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,470,2,1,5
-151,Hitachi ZR772,2018-02-25,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,563,3,2,3
-152,Atlas Copco CM691,2019-04-04,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,150,4,2,4
-153,Caterpillar DP266,2016-10-11,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,553,3,1,4
-154,Honda DP647,2022-10-06,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,566,1,2,5
-155,Yanmar ZT386,2015-12-02,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,15,2,1,1
-156,Siemens FL342,2019-12-08,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,241,2,2,5
-157,Caterpillar VP642,2020-09-22,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,225,4,2,5
-158,Milwaukee XL402,2024-09-05,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,79,2,1,3
-159,Doosan XA269,2017-08-06,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,48,4,1,4
-160,Makita QL471,2018-07-26,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,187,3,1,3
-161,Milwaukee NX289,2019-02-22,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,386,1,1,4
-162,Doosan NL169,2018-04-01,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,51,3,2,2
-163,Generac CP725,2023-10-18,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,208,1,1,2
-164,JCB CM371,2021-05-07,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,186,1,1,5
-165,Milwaukee LJ954,2021-07-17,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,233,2,1,2
-166,Ingersoll Rand XR336,2020-01-20,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,122,4,2,4
-167,Generac SL159,2016-11-06,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,404,4,1,5
-168,Sullair DP129,2022-07-06,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,171,2,1,1
-169,Honda HL197,2015-06-21,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,329,3,2,4
-170,Mitsubishi DL149,2022-04-04,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,169,1,2,3
-171,Mitsubishi NX467,2020-10-05,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,416,3,1,2
-172,Generac GL154,2018-06-13,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,386,3,1,5
-173,Honda HL215,2020-05-11,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,148,4,2,3
-174,Komatsu CL286,2017-01-05,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,364,3,2,5
-175,Sullair YP536,2018-03-23,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,536,3,2,1
-176,Volvo GL526,2019-03-07,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,355,1,1,4
-177,Volvo PN145,2019-08-11,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,599,3,1,5
-178,DeWalt CP442,2021-04-23,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,190,4,1,5
-179,Doosan CX860,2022-12-25,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,255,3,2,2
-180,Generac CM600,2016-11-08,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,72,2,2,1
-181,Kubota QL467,2015-03-30,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.,110,4,1,2
-182,Kubota QL930,2021-08-30,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.,131,4,2,3
-183,Liebherr TS295,2018-12-08,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.,488,2,2,3
-184,Doosan XB288,2018-10-05,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.,361,4,2,2
-185,Ingersoll Rand XR862,2021-10-24,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.,22,2,1,3
-186,Hyundai PN239,2016-10-02,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.,410,2,1,2
-187,Perkins NL742,2019-04-21,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.,328,4,2,5
-188,Ingersoll Rand DL829,2019-06-21,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.,491,1,1,1
-189,John Deere ZL957,2020-05-24,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.,344,4,1,2
-190,Liebherr PN583,2017-02-17,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.,598,4,1,3
-191,Doosan XL699,2017-09-20,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.,543,4,2,2
-192,DeWalt TS199,2018-08-09,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.,497,2,2,5
-193,Bosch GL257,2018-10-03,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.,261,3,2,5
-194,Makita NX120,2024-07-04,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.,68,4,1,2
-195,John Deere DL638,2016-02-05,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.,430,4,2,3
-196,Hyundai XR828,2021-02-04,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.,406,3,1,3
-197,Yanmar NX807,2022-09-20,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.,387,3,2,1
-198,Atlas Copco SL498,2018-04-23,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.,307,4,1,1
-199,Hitachi XB190,2019-02-17,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.,77,2,2,1
-200,Makita MX219,2023-01-05,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.,271,2,2,1
+id_equipo_soporte,nombre_equipo_soporte,id_estado,id_disponibilidad,id_tipo,horas_uso,id_almacen,descripcion
+1,Volvo TS441,1,2,4,212,1,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.
+2,Sullair NX530,2,2,4,421,2,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.
+3,Kubota RT496,3,1,4,22,1,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.
+4,DeWalt XR640,3,1,3,332,3,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.
+5,Sullair DL409,3,2,3,1,1,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.
+6,Komatsu VP322,4,2,1,479,2,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.
+7,Ingersoll Rand GL129,4,2,2,454,3,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.
+8,Bosch FX633,1,2,3,158,3,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.
+9,Caterpillar PN781,3,2,4,335,1,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.
+10,Bosch CM431,3,1,3,308,3,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.
+11,Kubota XL421,2,2,2,229,2,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.
+12,Hitachi GX644,3,2,3,79,2,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.
+13,Cummins CX956,2,2,3,439,2,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.
+14,Sullair CL834,4,1,1,276,1,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.
+15,Honda FL248,2,1,1,7,3,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.
+16,Makita GT688,1,1,3,271,4,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.
+17,Yanmar HL987,1,2,3,321,4,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.
+18,Makita RT353,2,1,5,228,3,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.
+19,Komatsu CX508,1,1,3,446,1,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.
+20,Perkins CL196,3,2,4,402,4,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.
+21,Kubota KD462,1,1,5,479,1,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.
+22,Volvo XT627,1,1,2,62,4,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.
+23,Cummins LJ627,1,2,4,425,4,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.
+24,Bosch CX825,1,2,5,248,2,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.
+25,Atlas Copco TS533,4,1,1,317,4,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.
+26,Makita XR491,4,1,3,294,1,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.
+27,Generac NL513,3,2,3,152,4,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.
+28,Atlas Copco XL738,2,1,3,24,1,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.
+29,Hitachi ML488,4,2,5,318,3,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.
+30,Makita GL942,4,1,1,179,4,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.
+31,Doosan QL319,3,1,1,204,3,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.
+32,Honda HV769,3,2,2,368,2,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.
+33,Honda VL547,2,2,2,418,1,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.
+34,DeWalt RX795,1,2,1,216,2,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.
+35,Milwaukee ZL528,2,1,3,136,4,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.
+36,Makita HL890,4,2,5,496,2,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.
+37,Hitachi FL915,1,2,5,362,1,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.
+38,Kubota PN760,2,1,5,197,1,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.
+39,Ingersoll Rand GX902,2,2,4,271,4,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.
+40,Honda XR605,1,1,1,328,3,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.
+41,Yanmar NX391,4,1,5,230,1,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.
+42,Siemens GX516,4,1,2,102,4,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.
+43,Bosch CP728,1,1,2,242,1,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.
+44,Yanmar CL187,2,2,5,311,4,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.
+45,Atlas Copco CX646,2,2,3,379,2,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.
+46,Doosan TS325,4,1,1,336,1,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.
+47,JCB HL454,1,2,2,448,4,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.
+48,Liebherr GX698,3,1,2,161,3,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.
+49,Volvo CM213,4,1,4,498,1,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.
+50,DeWalt PN195,3,1,3,36,1,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.
+51,Bosch ML326,3,2,1,428,3,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.
+52,Volvo VP527,3,2,2,305,4,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.
+53,Perkins LJ211,1,1,5,167,3,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.
+54,Makita XA823,4,1,5,398,1,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.
+55,Generac KD556,4,1,2,46,1,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.
+56,Makita NL142,1,1,4,143,2,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.
+57,Perkins QL126,3,2,4,91,3,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.
+58,Yanmar XR939,3,1,1,10,4,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.
+59,Yanmar XB347,4,1,1,139,4,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.
+60,Caterpillar KD601,3,2,5,132,1,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.
+61,Liebherr YP163,4,1,2,361,4,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.
+62,Yanmar CM153,2,1,3,396,2,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.
+63,Liebherr ML525,3,2,4,475,4,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.
+64,Caterpillar YP773,1,1,1,429,3,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.
+65,Yanmar VL713,1,1,1,1,2,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.
+66,DeWalt ZT534,4,2,1,370,3,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.
+67,Doosan VP217,4,2,2,54,2,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.
+68,Perkins SL873,1,2,1,100,3,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.
+69,Liebherr GX707,1,1,4,276,4,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.
+70,Atlas Copco ZT341,1,2,2,208,4,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.
+71,Liebherr DP552,3,2,4,441,1,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.
+72,Kubota DL191,3,2,5,159,4,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.
+73,Bosch FX139,4,1,2,343,4,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.
+74,Kubota SL844,2,2,2,295,1,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.
+75,Siemens ZL314,4,2,5,127,2,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.
+76,Caterpillar DP889,4,1,2,300,4,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.
+77,Bosch CX241,3,1,5,356,2,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.
+78,Liebherr HV981,3,1,4,122,4,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.
+79,Hitachi QL662,3,1,4,383,4,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.
+80,Perkins HX331,2,1,4,392,2,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.
+81,Mitsubishi HV243,3,1,5,437,4,Compresor de aire de tornillo rotativo eficiente y silencioso Ideal para aplicaciones industriales que requieren un flujo constante de aire comprimido.
+82,Mitsubishi LJ900,4,1,3,199,3,Torre de iluminación portátil con luces LED de alta intensidad Ideal para sitios de construcción o eventos al aire libre durante la noche.
+83,Honda RX227,3,1,3,124,1,Compresor de aire industrial resistente y confiable Adecuado para talleres mecánicos y plantas de manufactura.
+84,Kohler HL767,1,1,1,94,1,Generador portátil y silencioso de gasolina Perfecto para proporcionar energía temporal en sitios pequeños y medianos.
+85,Hitachi ZL449,3,1,2,245,1,Generador de respaldo de 8000 vatios Ideal para hogares y pequeñas empresas en caso de cortes de energía prolongados.
+86,Sullair ZL659,1,1,3,415,1,Compresor de aire móvil Diseñado para operaciones de construcción y minería Fácil de transportar y de alto rendimiento.
+87,Makita CM869,4,2,1,95,3,Sistema de bombeo de agua diésel Robusto y eficiente Ideal para drenaje en áreas inundadas o riego en terrenos agrícolas.
+88,Mitsubishi CX246,2,1,4,340,2,Generador industrial de 45 kVA Diseñado para aplicaciones de gran demanda energética en la construcción y minería.
+89,Makita XB893,2,2,2,103,3,Torre de iluminación ecológica con bajo consumo de combustible y luces LED Perfecta para trabajos nocturnos y eventos al aire libre.
+90,Generac VP842,4,1,1,246,4,Generador robusto y eficiente Utilizado en aplicaciones agrícolas y de construcción para suministro de energía estable.
+91,Hyundai DP677,3,2,4,96,1,Compresor de aire de velocidad variable Diseñado para maximizar la eficiencia energética en aplicaciones industriales.
+92,Generac XA246,3,2,3,204,1,Generador portátil y compacto Ideal para proporcionar energía en emergencias o en lugares con acceso limitado a electricidad.
+93,Cummins XT861,2,1,4,47,4,Torre de iluminación LED recargable Diseñada para trabajos en interiores y exteriores con iluminación ajustable y alta durabilidad.
+94,Honda ZT183,1,1,3,81,3,Generador portátil alimentado por batería de litio Ideal para herramientas eléctricas y dispositivos en lugares sin acceso a electricidad.
+95,Hyundai GT172,3,1,3,1,4,Sistema de bombeo de alta presión eficiente y confiable Diseñado para aplicaciones de desagüe y control de inundaciones.
+96,Honda HV536,2,1,5,150,2,Compresor compacto y portátil Ideal para trabajos de construcción y mantenimiento de maquinaria en el sitio.
+97,Volvo XR835,4,1,5,79,2,Torre de iluminación móvil con iluminación de alta intensidad Adecuada para proyectos de infraestructura y construcción nocturnos.
+98,Volvo YP860,3,2,4,274,2,Generador industrial de larga duración Ideal para alimentar maquinaria pesada en lugares sin conexión a la red eléctrica.
+99,Doosan KD964,1,1,2,15,2,Sistema de bombeo portátil ligero y de alto rendimiento Adecuado para aplicaciones de agricultura y construcción en zonas rurales.
+100,Cummins XT988,2,1,2,444,2,Generador diésel de alta potencia diseñado para suministrar energía de respaldo en áreas remotas o en situaciones de emergencia.

@@ -132,20 +132,6 @@ CREATE TABLE Estado_Pedido
   PRIMARY KEY (Id_estado_pedido)
 );
 
-DROP TABLE IF EXISTS Pedido_Compra CASCADE;
-CREATE TABLE Pedido_Compra
-(
-  Id_pedido_compra INT NOT NULL,
-  Descripcion VARCHAR(255) NOT NULL,
-  Id_urgencia INT NOT NULL,
-  Id_estado_pedido INT NOT NULL,
-  Id_empleado INT NOT NULL,
-  PRIMARY KEY (Id_pedido_compra),
-  FOREIGN KEY (Id_urgencia) REFERENCES Tipo_Urgencia(Id_urgencia),
-  FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_Pedido(Id_estado_pedido),
-  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
-);
-
 DROP TABLE IF EXISTS Orden_de_compra CASCADE;
 CREATE TABLE Orden_de_compra
 (
@@ -153,12 +139,26 @@ CREATE TABLE Orden_de_compra
   Fecha_emision_orden DATE NOT NULL,
   Fecha_posible_entrega DATE NOT NULL,
   Id_proveedor INT NOT NULL,
-  Id_pedido_compra INT NOT NULL,
   Id_empleado INT NOT NULL,
   PRIMARY KEY (Id_orden_compra),
   FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor),
-  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
+);
+
+DROP TABLE IF EXISTS Pedido_Compra CASCADE;
+CREATE TABLE Pedido_Compra
+(
+  Id_pedido_compra INT NOT NULL,
+  Descripción VARCHAR(255) NOT NULL,
+  Id_urgencia INT NOT NULL,
+  Id_estado_pedido INT NOT NULL,
+  Id_empleado INT NOT NULL,
+  Id_orden_compra INT NULL,
+  PRIMARY KEY (Id_pedido_compra),
+  FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
+  FOREIGN KEY (Id_urgencia) REFERENCES Tipo_Urgencia(Id_urgencia),
+  FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_Pedido(Id_estado_pedido),
+  FOREIGN KEY (Id_orden_compra) REFERENCES Orden_de_compra(Id_orden_compra)
 );
 
 DROP TABLE IF EXISTS Estado_actv CASCADE;
@@ -189,11 +189,11 @@ DROP TABLE IF EXISTS Almacen CASCADE;
 CREATE TABLE Almacen
 (
   Id_almacen INT NOT NULL,
+  Direccion VARCHAR(255) NOT NULL,
   Capacidad INT NOT NULL,
   Id_empleado INT NOT NULL,
   Id_estado INT NOT NULL,
   Id_categoria INT NOT NULL,
-  Direccion VARCHAR(255) NOT NULL,
   PRIMARY KEY (Id_almacen),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (Id_estado) REFERENCES Estado_Almacen(Id_estado),
@@ -423,18 +423,6 @@ CREATE TABLE EquipoSXMantenimiento
   FOREIGN KEY (Id_equipo_soporte) REFERENCES Equipo_de_Soporte(Id_equipo_soporte)
 );
 
-
-DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
-CREATE TABLE Identificacion_del_riesgo
-(
-  Descripcion_peligro CHAR(255) NOT NULL,
-  Evento_no_deseado CHAR(255) NOT NULL,
-  id_tarea INT NOT NULL,
-  Id_riesgo INT NOT NULL,
-  PRIMARY KEY (Id_riesgo),
-  FOREIGN KEY (id_tarea) REFERENCES tareas(id_tarea)
-);
-
 DROP TABLE IF EXISTS Tipos_Contacto CASCADE;
 CREATE TABLE Tipos_Contacto
 (
@@ -516,6 +504,39 @@ CREATE TABLE proceso
   FOREIGN KEY (Id_equipo_evaluador) REFERENCES Equipo_evaluador(Id_equipo_evaluador)
 );
 
+DROP TABLE IF EXISTS Actividades CASCADE;
+CREATE TABLE Actividades
+(
+  Id_actividad INT NOT NULL,
+  Descripcion_actividad CHAR(255) NOT NULL,
+  Id_proceso INT NOT NULL,
+  PRIMARY KEY (Id_actividad),
+  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
+);
+
+DROP TABLE IF EXISTS Tareas CASCADE;
+CREATE TABLE Tareas
+(
+  Descripcion_tarea CHAR(255) NOT NULL,
+  Puesto_trabajo CHAR(255) NOT NULL,
+  Cond_operacional CHAR(255) NOT NULL,
+  Id_tarea INT NOT NULL,
+  Id_actividad INT NOT NULL,
+  PRIMARY KEY (Id_tarea),
+  FOREIGN KEY (Id_actividad) REFERENCES Actividades(Id_actividad)
+);
+
+DROP TABLE IF EXISTS Identificacion_del_riesgo CASCADE;
+CREATE TABLE Identificacion_del_riesgo
+(
+  Descripcion_peligro CHAR(255) NOT NULL,
+  Evento_no_deseado CHAR(255) NOT NULL,
+  id_tarea INT NOT NULL,
+  Id_riesgo INT NOT NULL,
+  PRIMARY KEY (Id_riesgo),
+  FOREIGN KEY (id_tarea) REFERENCES tareas(id_tarea)
+);
+
 DROP TABLE IF EXISTS Analisis_riesgo CASCADE;
 CREATE TABLE Analisis_riesgo
 (
@@ -544,28 +565,6 @@ CREATE TABLE Valoracion_del_riesgo_inicial
   FOREIGN KEY (Id_tipo_probabilidad) REFERENCES Tipo_Probabilidad(Id_tipo_probabilidad),
   FOREIGN KEY (Id_tipo_riesgo) REFERENCES Tipo_Riesgo(Id_tipo_riesgo),
   FOREIGN KEY (Id_analisis) REFERENCES Analisis_riesgo(Id_analisis)
-);
-
-DROP TABLE IF EXISTS Actividades CASCADE;
-CREATE TABLE Actividades
-(
-  Id_actividad INT NOT NULL,
-  Descripcion_actividad CHAR(255) NOT NULL,
-  Id_proceso INT NOT NULL,
-  PRIMARY KEY (Id_actividad),
-  FOREIGN KEY (Id_proceso) REFERENCES proceso(Id_proceso)
-);
-
-DROP TABLE IF EXISTS Tareas CASCADE;
-CREATE TABLE Tareas
-(
-  Descripcion_tarea CHAR(255) NOT NULL,
-  Puesto_trabajo CHAR(255) NOT NULL,
-  Cond_operacional CHAR(255) NOT NULL,
-  Id_tarea INT NOT NULL,
-  Id_actividad INT NOT NULL,
-  PRIMARY KEY (Id_tarea),
-  FOREIGN KEY (Id_actividad) REFERENCES Actividades(Id_actividad)
 );
 
 

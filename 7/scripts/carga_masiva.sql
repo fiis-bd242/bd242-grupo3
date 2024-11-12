@@ -125,9 +125,6 @@ VALUES
 -- Poblamiento de la tabla Equipo_de_Soporte
 COPY Equipo_de_Soporte FROM 'C:\DBD-2024-2\datos\Equipo_de_Soporte.csv' DELIMITER ',' CSV HEADER;
 
--- Poblamiento de la tabla EquipoSXAlmacen
-COPY equiposxalmacen FROM 'C:\DBD-2024-2\datos\EquiposXAlmacen.csv' DELIMITER ',' CSV HEADER;
-
 -- Poblamiento de la tabla Actividad_empleado
 COPY actividad_empleado FROM 'C:\DBD-2024-2\datos\Actividad_empleado.csv' DELIMITER ',' CSV HEADER;
 
@@ -334,7 +331,6 @@ INSERT INTO Estado_mantto (id_estado, estado) VALUES
 -- Poblamiento de la tabla Mantenimiento
 COPY mantenimiento FROM 'C:\DBD-2024-2\datos\Mantenimiento.csv' DELIMITER ',' CSV HEADER;
 
-
 -- Poblamiento de la tabla EquipoSXMantenimiento
 COPY equiposxmantenimiento FROM 'C:\DBD-2024-2\datos\EquipoSXMantenimiento.csv' DELIMITER ',' CSV HEADER;
 
@@ -419,23 +415,22 @@ VALUES
 (1, 'Insumos'),
 (2, 'Equipos de Soporte');
 
--- Poblamiento de la tabla pedido de compra
-COPY pedido_compra FROM 'C:\DBD-2024-2\datos\Pedido_Compra.csv' DELIMITER ';' CSV HEADER;
-
--- Poblamiento de la tabla detalle del pedido de compra
-COPY detalle_pedido_compra FROM 'C:\DBD-2024-2\datos\Detalle_Pedido_Compra.csv' DELIMITER ';' CSV HEADER;
-
 -- Poblamiento de la tabla proveedor
 COPY proveedor FROM 'C:\DBD-2024-2\datos\Proveedor.csv' DELIMITER ',' CSV HEADER;
 
 -- Poblamiento de la tabla orden de compra
-COPY orden_de_compra FROM 'C:\DBD-2024-2\datos\Orden_de_Compra.csv' DELIMITER ';' CSV HEADER;
+COPY orden_de_compra FROM 'C:\DBD-2024-2\datos\Orden_de_Compra.csv' DELIMITER ',' CSV HEADER;
 
-/*
-FALTA HACER EL CSV
+-- Poblamiento de la tabla pedido de compra
+COPY pedido_compra FROM 'C:\DBD-2024-2\datos\Pedido_Compra.csv' DELIMITER ',' CSV HEADER NULL AS 'NULL';
+
+-- Poblamiento de la tabla detalle del pedido de compra
+COPY detalle_pedido_compra FROM 'C:\DBD-2024-2\datos\Detalle_Pedido_Compra.csv' DELIMITER ',' CSV HEADER NULL AS 'NULL';
+
 -- Poblamiento de la tabla historial estados pedido
-COPY historial_estados_pedido FROM 'C:\DBD-2024-2\datos\Historial_estados_pedido' DELIMITER ',' CSV HEADER;
-*/
+COPY historial_estados_pedido FROM 'C:\DBD-2024-2\datos\Historial_estados_pedido.csv' DELIMITER ',' CSV HEADER;
+
+
 
 COPY Registro FROM 'C:\DBD-2024-2\datos\Registros.csv' DELIMITER ',' CSV HEADER;
 
