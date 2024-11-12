@@ -19,12 +19,26 @@ const router = createRouter({
       component: () => import("../views/modules/7/historial_mantenimiento.vue")
     },
     {
-      path: '/modulogestionreportes/dash/personal',
+      path: '/modulogestionreportes/dash',
       name: 'dash_perso',
       component: () => import("../views/modules/7/dashboard_personal.vue")
     },
-
+    {
+      path: '/modulogestionreportes/registros',
+      name: 'registros',
+      component: () => import("../views/modules/7/realizar_registros.vue")
+    },
+    {
+      path: '/modulogestionreportes/verificacionreporte',
+      name: 'registros',
+      component: () => import("../views/modules/7/verificacion_reporte.vue")
+    },
   ]
 })
+
+// Cambia el título de la página al navegar
+router.afterEach((to) => {
+  document.title = to.name || 'Mi Aplicación'; // Coloca un título por defecto si no hay uno definido
+});
 
 export default router
