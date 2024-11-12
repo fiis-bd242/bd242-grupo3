@@ -1,8 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    
     {
       path: '/',
       name: 'home',
@@ -15,7 +16,7 @@ const router = createRouter({
     },
     {
       path: '/modulogestionreportes/historial',
-      name: 'histoailad',
+      name: 'historial',
       component: () => import("../views/modules/7/historial_mantenimiento.vue")
     },
     {
@@ -30,15 +31,20 @@ const router = createRouter({
     },
     {
       path: '/modulogestionreportes/verificacionreporte',
-      name: 'registros',
+      name: 'reporte',
       component: () => import("../views/modules/7/verificacion_reporte.vue")
+    },
+    {
+      path: '/modulogestionreportes/verificaciondatos',
+      name: 'sup_datos',
+      component: () => import("../views/modules/7/verificacion_datos.vue")
+    },
+    {
+      path: '/modulogestionreportes/exportaciondatos',
+      name: 'exportaciondatos',
+      component: () => import("../views/modules/7/exportacion_datos.vue")
     },
   ]
 })
 
-// Cambia el título de la página al navegar
-router.afterEach((to) => {
-  document.title = to.name || 'Mi Aplicación'; // Coloca un título por defecto si no hay uno definido
-});
-
-export default router
+export default router;
