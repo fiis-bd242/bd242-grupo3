@@ -33,6 +33,11 @@ const router = createRouter({
       name: 'registros',
       component: () => import("../views/modules/7/verificacion_reporte.vue")
     },
+    {
+      path: '/moduloplanificacion/listaplanes',
+      name: 'listaplanes',
+      component: () => import("../views/modules/1/lista_planes.vue")
+    }
   ]
 })
 
