@@ -1,49 +1,89 @@
 <template>
-    <div class="mx-4 my-2 space-y-3 w-full">
-        <h3 class="font-extrabold text-3xl">Realizar Registros</h3>
-        <form @submit.prevent="console.log(1);" class="space-y-2">
-            <h4 class="text-3xl font-semibold">Fecha</h4>
-            <div class="flex space-x-2">
-                <input type="datetime-local" class="border rounded p-1 border-black">
-                <input type="datetime-local" class="border rounded p-1 border-black">
-            </div>
-            <h4 class="text-3xl font-semibold">Descripcion de la Actividad</h4>
-            <textarea class="border p-1 w-full border-black" placeholder="Describa el mantenimiento" name="desc" rows="4"></textarea>
-            <h4 class="text-3xl font-semibold">Incidencias</h4>
-            <div class="flex space-x-2 w-full items-center">
-                <input v-model="messageError" type="text" class="border border-black p-2 w-96" placeholder="Escriba la incidencia presentada">
-                <button @click="addErrors" class="rounded-full p-2 text-white font-bold border-black hover:bg-white duration-150 hover:text-black text-xl border-2 block size-12 bg-green-400">+</button>
-            </div>
-            <div class="flex space-x-2 ">
-      <ErrorTags
-        v-for="(message, index) in messages"
-        :key="index"
-        :msg="message"
-        @remove="removeMessage(message)"
-      />
-    </div>
+  <div class="mx-4 my-2 space-y-3 w-full">
+    <h3 class="font-extrabold text-3xl">Realizar Registros</h3>
+    <form @submit.prevent="showConfirmation" class="space-y-2">
+      <h4 class="text-3xl font-semibold">Fecha</h4>
+      <div class="flex space-x-2">
+        <input type="datetime-local" class="border rounded p-1 border-black">
+        <input type="datetime-local" class="border rounded p-1 border-black">
+      </div>
+      <h4 class="text-3xl font-semibold">Descripcion de la Actividad</h4>
+      <textarea class="border p-1 w-full border-black" placeholder="Describa el mantenimiento" name="desc" rows="4"></textarea>
+      <h4 class="text-3xl font-semibold">Incidencias</h4>
+      <div class="flex space-x-2 w-full items-center">
+        <input v-model="messageError" type="text" class="border border-black p-2 w-96" placeholder="Escriba la incidencia presentada">
+        <button @click="addErrors" type="button" class="rounded-full p-2 text-white font-bold border-black hover:bg-white duration-150 hover:text-black text-xl border-2 block size-12 bg-green-400">+</button>
+      </div>
+      <div class="flex space-x-2 ">
+        <ErrorTags
+          v-for="(message, index) in messages"
+          :key="index"
+          :msg="message"
+          @remove="removeMessage(message)"
+        />
+      </div>
 
-    <h4 class="text-3xl font-semibold">Calificación</h4>
+      <h4 class="text-3xl font-semibold">Calificación</h4>
+      <div class="flex space-x-2">
+        <Estrella
+          v-for="(item, index) in 5"
+          :key="index"
+          @mouseenter="setStar(index)"
+          class="text-gray-500 size-8 duration-75"
+          :class="{'text-purple-500': index < ranked}"
+        />
+      </div>
 
-    <div class="flex space-x-2">
-      <Estrella
-        v-for="(item, index) in 5"
-        :key="index"
-        @mouseenter="setStar(index)"
-        class="text-gray-500 size-8 duration-75"
-        :class="{'text-purple-500': index < ranked}"
-      />
-    </div>
-
-    <div class="flex justify-end items-center w-full space-x-3">
-      <button class="bg-purple-500 hover:bg-purple-600 duration-150 rounded-lg px-2 py-1 text-white border border-black">
-        Seleccionar Actividad
-      </button>
-      <button class="bg-green-500 hover:bg-green-600 duration-150 rounded-lg px-2 py-1 text-white border border-black">
-        Registrar
-      </button>
-    </div>
+      <div class="flex justify-end items-center w-full space-x-3">
+        <button @click="openDialog" type="button" class="bg-purple-500 hover:bg-purple-600 duration-150 rounded-lg px-2 py-1 text-white border border-black">
+          Seleccionar Actividad
+        </button>
+        <button type="submit" class="bg-green-500 hover:bg-green-600 duration-150 rounded-lg px-2 py-1 text-white border border-black">
+          Registrar
+        </button>
+      </div>
     </form>
+
+    <!-- Dialogo de pantalla completa -->
+    <div v-if="isDialogOpen" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
+      <div class="bg-white w-full h-full md:max-w-3xl md:h-auto p-6 rounded-lg shadow-lg">
+        <h2 class="text-center text-gray-600 text-2xl font-bold mb-6">Seleccionar Actividad</h2>
+        <div class="space-y-4">
+          <p class="text-lg font-semibold text-black">Actividad de mantenimiento</p>
+
+          <!-- Filtros -->
+          <div class="flex flex-col md:flex-row md:space-x-4">
+            <input type="text" placeholder="Maquina del mantenimiento" class="border p-2 rounded-md w-full md:w-1/2">
+            <input type="date" placeholder="Fecha del mantenimiento" class="border p-2 rounded-md w-full md:w-1/2">
+          </div>
+
+          <!-- Select -->
+          <select class="border p-2 rounded-md w-full mt-4">
+            <option>Opción 1</option>
+            <option>Opción 2</option>
+            <option>Opción 3</option>
+          </select>
+
+          <!-- Botones Asignar y Cerrar -->
+          <div class="flex justify-end space-x-4 mt-6">
+            <button @click="closeDialog" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Cerrar</button>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Asignar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dialogo de Confirmación de Registro -->
+    <div v-if="isConfirmationDialogOpen" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
+      <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
+        <h3 class="text-lg font-bold mb-4">¿Confirmar Registro?</h3>
+        <p class="text-gray-700 mb-6">¿Estás seguro de que deseas registrar esta actividad?</p>
+        <div class="flex justify-center space-x-4">
+          <button @click="closeConfirmation" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Cancelar</button>
+          <button @click="confirmRegistration" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Confirmar</button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -61,6 +101,8 @@ export default {
       ranked: 0,
       messages: [],
       messageError: '',
+      isDialogOpen: false,           // Estado para controlar el dialogo de Seleccionar Actividad
+      isConfirmationDialogOpen: false // Estado para controlar el dialogo de confirmación
     };
   },
   methods: {
@@ -77,6 +119,27 @@ export default {
       // Eliminar el mensaje de la lista
       this.messages = this.messages.filter((msg) => msg !== message);
     },
+    openDialog() {
+      this.isDialogOpen = true;
+    },
+    closeDialog() {
+      this.isDialogOpen = false;
+    },
+    showConfirmation() {
+      this.isConfirmationDialogOpen = true;
+    },
+    closeConfirmation() {
+      this.isConfirmationDialogOpen = false;
+    },
+    confirmRegistration() {
+      // Lógica para confirmar el registro
+      console.log("Registro confirmado");
+      this.isConfirmationDialogOpen = false; // Cerrar el dialogo de confirmación
+    }
   },
 };
 </script>
+
+<style scoped>
+/* Opcional: Estilo adicional para mejorar la apariencia del dialogo */
+</style>
