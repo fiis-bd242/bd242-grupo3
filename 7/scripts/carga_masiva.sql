@@ -63,17 +63,11 @@ VALUES
 
 -- Poblamiento de la tabla Almacen
 COPY Almacen FROM 'C:\DBD-2024-2\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
-
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xf3 0x6e 0x0d 0x0a
-CONTEXT:  COPY insumo, line 4
-AYUDA: Revisa la codificación del csv, posiblemente no sea UTF8 (por esto las tildes generan problemas)
 --Poblamiento insumo
 COPY Insumo (Id_insumo,Cantidad, Nombre)
 FROM 'C:\DBD-2024-2\datos\Insumo.csv'
 DELIMITER ';'
 CSV HEADER;
-*/
 
 ---Poblamiento Estado_reserva
 INSERT INTO Estado_reserva (Id_estado_reserva, Nombre_estado) VALUES
@@ -87,14 +81,12 @@ FROM 'C:\DBD-2024-2\datos\Reserva.csv'
 DELIMITER ','
 CSV HEADER;
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-AYUDA: Es necesario corregir la tabla insumo primero
 --Poblamiento Detalle_reserva
 COPY Detalle_reserva (Id_detalle,Cant_reserv, Id_insumo,Id_reserva)
 FROM 'C:\DBD-2024-2\datos\detalle_reserva.csv'
 DELIMITER ';'
 CSV HEADER;
-*/
+
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
