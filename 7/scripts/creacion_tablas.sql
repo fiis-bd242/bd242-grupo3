@@ -734,14 +734,14 @@ CREATE TABLE Registro
   FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto)
 );
 
-DROP TABLE IF EXISTS Incidencias_Tags CASCADE;
+DROP TABLE IF EXISTS Incidencias_Tag CASCADE;
 CREATE TABLE Incidencias_Tags
 (
   Id_incidencias SERIAL,
   Incidencia VARCHAR(50) NOT NULL,
   id_Registro INT NOT NULL, 
   PRIMARY KEY (Id_incidencias),
-  FOREIGN KEY (id_Registro) REFERENCES Registro(Id_registro)
+  FOREIGN KEY (id_Registro) REFERENCES Registro(Id_registro) ON DELETE CASCADE
 );
 
 DROP TABLE IF EXISTS Tipo_notificacion CASCADE;
@@ -758,7 +758,7 @@ CREATE TABLE Notificaciones
   id_notificacion INT NOT NULL,
   Asunto VARCHAR(255) NOT NULL,
   mensaje VARCHAR(255) NOT NULL,
-  fecha_notificacion DATE NOT NULL,
+  fecha_notificacion TIMESTAMP NOT NULL,
   id_remitente INT NOT NULL,
   id_destinatario INT NOT NULL,
   Id_registro INT,

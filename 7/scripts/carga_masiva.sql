@@ -426,13 +426,12 @@ COPY historial_estados_pedido FROM 'C:\DBD-2024-2\datos\Historial_estados_pedido
 
 
 COPY Registro FROM 'C:\DBD-2024-2\datos\Registros.csv' DELIMITER ',' CSV HEADER;
-
-COPY Incidencias_Tags FROM 'C:\DBD-2024-2\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
-
+SELECT setval('registro_id_registro_seq', (SELECT MAX(id_registro) FROM Registro) + 1);
+COPY Incidencias_Tag FROM 'C:\DBD-2024-2\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
+SELECT setval('incidencias_tag_id_incidencias_seq', (SELECT MAX(id_incidencias) FROM Incidencias_Tag) + 1);
 COPY Reportes FROM 'C:\DBD-2024-2\datos\Reportes.csv' DELIMITER ',' CSV HEADER;
-
+SELECT setval('reportes_id_reporte_seq', (SELECT MAX(id_reporte) FROM Reportes) + 1);
 COPY Notificaciones FROM 'C:\DBD-2024-2\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
-
 
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
