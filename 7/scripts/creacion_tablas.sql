@@ -293,7 +293,7 @@ CREATE TABLE Orden_de_trabajo
   Id_Orden INT NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
   Fecha_Orden DATE NOT NULL,
-  estado INT NOT NULL,
+  visible VARCHAR(1) NOT NULL,
   PRIMARY KEY (Id_Orden)
 );
 
@@ -309,7 +309,6 @@ CREATE TABLE Actividad_empleado
   Id_empleado INT,
   id_estado INT,
   Id_Orden INT NOT NULL,
-  visible 
   PRIMARY KEY (Id_actvempleado),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (id_estado) REFERENCES Estado_actv(id_estado),
