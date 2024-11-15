@@ -277,7 +277,7 @@ CREATE TABLE Detalle_Pedido_Compra
 DROP TABLE IF EXISTS Historial_Estados_Pedido CASCADE;
 CREATE TABLE Historial_Estados_Pedido
 (
-  Id_historial INT NOT NULL,
+  Id_historial INT NOT NULL,  
   Fecha_cambio DATE NOT NULL,
   Hora_cambio TIME NOT NULL,
   Estado_anterior INT NOT NULL,
@@ -293,6 +293,7 @@ CREATE TABLE Orden_de_trabajo
   Id_Orden INT NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
   Fecha_Orden DATE NOT NULL,
+  estado INT NOT NULL,
   PRIMARY KEY (Id_Orden)
 );
 
@@ -308,6 +309,7 @@ CREATE TABLE Actividad_empleado
   Id_empleado INT,
   id_estado INT,
   Id_Orden INT NOT NULL,
+  visible 
   PRIMARY KEY (Id_actvempleado),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (id_estado) REFERENCES Estado_actv(id_estado),
@@ -394,8 +396,8 @@ CREATE TABLE Mantenimiento
   Id_maquina INT NOT NULL,
   id_estado INT NOT NULL,
   PRIMARY KEY (Id_Act_mantto),
-  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden),
-  FOREIGN KEY (Id_plan) REFERENCES Plan_de_mantenimiento(Id_plan),
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden) ON DELETE CASCADE,
+  FOREIGN KEY (Id_plan) REFERENCES Plan_de_mantenimiento(Id_plan) ON DELETE CASCADE,
   FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento(id_tipo_mant),
   FOREIGN KEY (id_maquina) REFERENCES Maquina(Id_maquina),
   FOREIGN KEY (id_estado) REFERENCES Estado_mantto(id_estado)

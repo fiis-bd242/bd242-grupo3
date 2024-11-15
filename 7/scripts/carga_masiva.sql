@@ -315,10 +315,11 @@ INSERT INTO Estado_mantto (id_estado, estado) VALUES
 (1, 'Borrador'),
 (2, 'Notificado'),
 (3, 'Aceptado'),
-(4, 'En ejecución'),
-(5, 'Ejecutado'),
-(6, 'En auditoría'),
-(7, 'Auditado');
+(4, 'Rechazado'),
+(5, 'En curso'),
+(6, 'Completa'),
+(7, 'Pendiente'),
+(8, 'Eliminado');
 
 -- Poblamiento de la tabla Mantenimiento
 COPY mantenimiento FROM 'C:\DBD-2024-2\datos\Mantenimiento.csv' DELIMITER ',' CSV HEADER;
