@@ -13,4 +13,5 @@ public class Orden_de_trabajo {
     private int id_orden;
     private String descripcion;
     private Date fecha_orden;
+    private String visible;
 }
