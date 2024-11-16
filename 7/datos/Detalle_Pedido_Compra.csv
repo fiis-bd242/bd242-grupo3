@@ -144,7 +144,7 @@ id_detalle_pedido,id_producto,precio_unitario,cantidad,id_pedido_compra
 143,28,4766.76,10,47
 144,72,NULL,9,61
 145,5,NULL,9,63
-146,50,3856.83,7,28,
+146,50,3856.83,7,28
 147,7,1451.02,10,11
 148,14,2514.35,6,47
 149,5,NULL,3,39
