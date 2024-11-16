@@ -1,151 +1,151 @@
-id_pedido_compra,descripcion,id_urgencia,id_estado_pedido,id_empleado,id_orden_compra
-1,Compra de compresor de aire rotativo eficiente y silencioso.,3,1,340,NULL
-2,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,1,2,475,1
-3,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,4,972,2
-4,Generador portatil de gasolina para suministro temporal de energia.,2,4,567,3
-5,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,3,4,933,4
-6,Compra de compresor de aire movil para operaciones de mantenimiento.,2,3,660,5
-7,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,4,3,806,6
-8,Pedido de generador industrial de 45 kVA para construccion.,1,1,573,NULL
-9,Adquisicion de torre de iluminacion ecologica con luces LED.,3,3,366,7
-10,Compra de compresor de aire de velocidad variable para maquinaria.,2,3,973,8
-11,Compra de compresor de aire rotativo eficiente y silencioso.,1,2,538,9
-12,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,2,1,813,NULL
-13,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,4,959,10
-14,Generador portatil de gasolina para suministro temporal de energia.,4,3,735,11
-15,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,1,483,NULL
-16,Compra de compresor de aire movil para operaciones de mantenimiento.,1,3,89,12
-17,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,2,2,973,13
-18,Pedido de generador industrial de 45 kVA para construccion.,3,1,637,NULL
-19,Adquisicion de torre de iluminacion ecologica con luces LED.,2,3,388,14
-20,Compra de compresor de aire de velocidad variable para maquinaria.,3,5,917,15
-21,Compra de compresor de aire rotativo eficiente y silencioso.,2,1,891,NULL
-22,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,2,3,373,16
-23,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,4,652,17
-24,Generador portatil de gasolina para suministro temporal de energia.,2,1,364,NULL
-25,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,3,5,789,18
-26,Compra de compresor de aire movil para operaciones de mantenimiento.,4,4,698,19
-27,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,2,3,580,20
-28,Pedido de generador industrial de 45 kVA para construccion.,1,4,284,21
-29,Adquisicion de torre de iluminacion ecologica con luces LED.,1,4,182,22
-30,Compra de compresor de aire de velocidad variable para maquinaria.,2,3,586,23
-31,Compra de compresor de aire rotativo eficiente y silencioso.,3,3,226,24
-32,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,3,1,36,NULL
-33,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,3,152,25
-34,Generador portatil de gasolina para suministro temporal de energia.,1,3,835,26
-35,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,4,4,946,27
-36,Compra de compresor de aire movil para operaciones de mantenimiento.,3,5,857,28
-37,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,3,1,403,NULL
-38,Pedido de generador industrial de 45 kVA para construccion.,2,5,91,29
-39,Adquisicion de torre de iluminacion ecologica con luces LED.,2,1,232,NULL
-40,Compra de compresor de aire de velocidad variable para maquinaria.,3,4,411,30
-41,Compra de compresor de aire rotativo eficiente y silencioso.,3,3,109,31
-42,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,4,4,408,32
-43,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,2,844,33
-44,Generador portatil de gasolina para suministro temporal de energia.,2,5,806,34
-45,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,2,803,35
-46,Compra de compresor de aire movil para operaciones de mantenimiento.,2,2,653,36
-47,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,2,4,199,37
-48,Pedido de generador industrial de 45 kVA para construccion.,4,2,789,38
-49,Adquisicion de torre de iluminacion ecologica con luces LED.,2,5,518,39
-50,Compra de compresor de aire de velocidad variable para maquinaria.,2,4,567,40
-51,Compra de compresor de aire rotativo eficiente y silencioso.,3,2,31,41
-52,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,3,1,969,NULL
-53,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,2,144,42
-54,Generador portatil de gasolina para suministro temporal de energia.,2,1,453,NULL
-55,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,5,792,43
-56,Compra de compresor de aire movil para operaciones de mantenimiento.,3,5,387,44
-57,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,3,5,794,45
-58,Pedido de generador industrial de 45 kVA para construccion.,2,1,612,NULL
-59,Adquisicion de torre de iluminacion ecologica con luces LED.,3,2,64,46
-60,Compra de compresor de aire de velocidad variable para maquinaria.,4,4,526,47
-61,Compra de compresor de aire rotativo eficiente y silencioso.,3,1,136,NULL
-62,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,2,4,700,48
-63,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,1,488,NULL
-64,Generador portatil de gasolina para suministro temporal de energia.,3,3,94,49
-65,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,5,473,50
-66,Compra de compresor de aire movil para operaciones de mantenimiento.,4,5,848,51
-67,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,3,3,685,52
-68,Pedido de generador industrial de 45 kVA para construccion.,2,1,252,NULL
-69,Adquisicion de torre de iluminacion ecologica con luces LED.,2,5,500,53
-70,Compra de compresor de aire de velocidad variable para maquinaria.,2,5,663,54
-71,Compra de compresor de aire rotativo eficiente y silencioso.,2,3,308,55
-72,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,1,4,639,56
-73,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,4,918,57
-74,Generador portatil de gasolina para suministro temporal de energia.,4,1,901,NULL
-75,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,3,790,58
-76,Compra de compresor de aire movil para operaciones de mantenimiento.,1,2,248,59
-77,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,1,5,481,60
-78,Pedido de generador industrial de 45 kVA para construccion.,2,4,673,61
-79,Adquisicion de torre de iluminacion ecologica con luces LED.,4,2,726,62
-80,Compra de compresor de aire de velocidad variable para maquinaria.,2,5,268,63
-81,Compra de compresor de aire rotativo eficiente y silencioso.,1,1,292,NULL
-82,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,1,4,803,64
-83,Pedido de compresor de aire industrial resistente para talleres mecanicos.,3,5,151,65
-84,Generador portatil de gasolina para suministro temporal de energia.,1,2,311,66
-85,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,4,810,67
-86,Compra de compresor de aire movil para operaciones de mantenimiento.,4,1,428,NULL
-87,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,1,4,297,68
-88,Pedido de generador industrial de 45 kVA para construccion.,3,2,114,69
-89,Adquisicion de torre de iluminacion ecologica con luces LED.,4,5,126,70
-90,Compra de compresor de aire de velocidad variable para maquinaria.,2,1,729,NULL
-91,Compra de compresor de aire rotativo eficiente y silencioso.,1,5,528,71
-92,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,4,2,808,72
-93,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,2,712,73
-94,Generador portatil de gasolina para suministro temporal de energia.,3,1,70,NULL
-95,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,3,1,857,NULL
-96,Compra de compresor de aire movil para operaciones de mantenimiento.,1,3,734,74
-97,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,1,2,448,75
-98,Pedido de generador industrial de 45 kVA para construccion.,4,4,874,76
-99,Adquisicion de torre de iluminacion ecologica con luces LED.,3,4,672,77
-100,Compra de compresor de aire de velocidad variable para maquinaria.,2,1,180,NULL
-101,Aceite multiuso para mantenimiento preventivo,2,1,501,NULL
-102,Insumos de aceite hidraulico para maquinaria,2,4,498,78
-103,Solicitud de lubricantes especializados,2,1,500,NULL
-104,Solicitud de lubricantes especializados,4,2,498,79
-105,Aceite multiuso para mantenimiento preventivo,2,5,495,80
-106,Compra urgente de lubricantes para equipos de planta,2,4,496,81
-107,Compra de lubricantes para maquinaria pesada,1,5,501,82
-108,Insumos de aceite hidraulico para maquinaria,4,5,498,83
-109,Pedido de aceites industriales para mantenimiento,2,4,496,84
-110,Solicitud de lubricantes especializados,1,5,495,85
-111,Aceite multiuso para mantenimiento preventivo,3,5,499,86
-112,Insumos de aceite hidraulico para maquinaria,4,5,496,87
-113,Solicitud de lubricantes especializados,2,3,498,88
-114,Solicitud de lubricantes especializados,1,1,494,NULL
-115,Aceite multiuso para mantenimiento preventivo,1,4,496,89
-116,Compra urgente de lubricantes para equipos de planta,1,4,499,90
-117,Compra de lubricantes para maquinaria pesada,1,4,494,91
-118,Insumos de aceite hidraulico para maquinaria,4,5,496,92
-119,Pedido de aceites industriales para mantenimiento,2,1,494,NULL
-120,Solicitud de lubricantes especializados,3,4,496,93
-121,Solicitud de lubricantes especializados,2,4,500,94
-122,Compra de lubricantes para maquinaria pesada,4,3,497,95
-123,Pedido de aceites industriales para mantenimiento,3,3,497,96
-124,Aceite multiuso para mantenimiento preventivo,1,2,501,97
-125,Pedido de aceite para motores industriales,4,2,497,98
-126,Aceite multiuso para mantenimiento preventivo,1,5,498,99
-127,Insumos de aceite hidraulico para maquinaria,2,1,495,NULL
-128,Solicitud de lubricantes especializados,1,5,496,100
-129,Solicitud de lubricantes especializados,1,1,500,NULL
-130,Aceite multiuso para mantenimiento preventivo,3,1,496,NULL
-131,Compra urgente de lubricantes para equipos de planta,2,1,498,NULL
-132,Compra de lubricantes para maquinaria pesada,4,3,501,101
-133,Insumos de aceite hidraulico para maquinaria,2,3,498,102
-134,Pedido de aceites industriales para mantenimiento,1,5,500,103
-135,Solicitud de lubricantes especializados,4,5,495,104
-136,Aceite multiuso para mantenimiento preventivo,3,1,499,NULL
-137,Insumos de aceite hidraulico para maquinaria,1,3,498,105
-138,Solicitud de lubricantes especializados,2,5,494,106
-139,Solicitud de lubricantes especializados,1,2,500,107
-140,Aceite multiuso para mantenimiento preventivo,2,5,499,108
-141,Compra urgente de lubricantes para equipos de planta,3,4,497,109
-142,Compra de lubricantes para maquinaria pesada,4,2,499,110
-143,Insumos de aceite hidraulico para maquinaria,3,4,495,111
-144,Pedido de aceites industriales para mantenimiento,3,4,495,112
-145,Solicitud de lubricantes especializados,2,5,496,113
-146,Reabastecimiento de lubricantes para mantenimiento predictivo,4,2,497,114
-147,Aceite multiuso para mantenimiento preventivo,1,4,500,115
-148,Insumos de aceite hidraulico para maquinaria,4,1,500,NULL
-149,Solicitud de lubricantes especializados,3,4,494,116
-150,Solicitud de lubricantes especializados,1,1,501,NULL
+id_pedido_compra,descripcion,id_urgencia,id_estado_pedido,id_empleado,id_orden_compra,2
+1,Compra de compresor de aire rotativo eficiente y silencioso.,3,1,340,NULL,2
+2,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,1,2,475,1,2
+3,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,4,972,2,2
+4,Generador portatil de gasolina para suministro temporal de energia.,2,4,567,3,2
+5,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,3,4,933,4,2
+6,Compra de compresor de aire movil para operaciones de mantenimiento.,2,3,660,5,2
+7,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,4,3,806,6,2
+8,Pedido de generador industrial de 45 kVA para construccion.,1,1,573,NULL,2
+9,Adquisicion de torre de iluminacion ecologica con luces LED.,3,3,366,7,2
+10,Compra de compresor de aire de velocidad variable para maquinaria.,2,3,973,8,2
+11,Compra de compresor de aire rotativo eficiente y silencioso.,1,2,538,9,2
+12,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,2,1,813,NULL,2
+13,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,4,959,10,2
+14,Generador portatil de gasolina para suministro temporal de energia.,4,3,735,11,2
+15,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,1,483,NULL,2
+16,Compra de compresor de aire movil para operaciones de mantenimiento.,1,3,89,12,2
+17,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,2,2,973,13,2
+18,Pedido de generador industrial de 45 kVA para construccion.,3,1,637,NULL,2
+19,Adquisicion de torre de iluminacion ecologica con luces LED.,2,3,388,14,2
+20,Compra de compresor de aire de velocidad variable para maquinaria.,3,5,917,15,2
+21,Compra de compresor de aire rotativo eficiente y silencioso.,2,1,891,NULL,2
+22,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,2,3,373,16,2
+23,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,4,652,17,2
+24,Generador portatil de gasolina para suministro temporal de energia.,2,1,364,NULL,2
+25,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,3,5,789,18,2
+26,Compra de compresor de aire movil para operaciones de mantenimiento.,4,4,698,19,2
+27,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,2,3,580,20,2
+28,Pedido de generador industrial de 45 kVA para construccion.,1,4,284,21,2
+29,Adquisicion de torre de iluminacion ecologica con luces LED.,1,4,182,22,2
+30,Compra de compresor de aire de velocidad variable para maquinaria.,2,3,586,23,2
+31,Compra de compresor de aire rotativo eficiente y silencioso.,3,3,226,24,2
+32,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,3,1,36,NULL,2
+33,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,3,152,25,2
+34,Generador portatil de gasolina para suministro temporal de energia.,1,3,835,26,2
+35,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,4,4,946,27,2
+36,Compra de compresor de aire movil para operaciones de mantenimiento.,3,5,857,28,2
+37,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,3,1,403,NULL,2
+38,Pedido de generador industrial de 45 kVA para construccion.,2,5,91,29,2
+39,Adquisicion de torre de iluminacion ecologica con luces LED.,2,1,232,NULL,2
+40,Compra de compresor de aire de velocidad variable para maquinaria.,3,4,411,30,2
+41,Compra de compresor de aire rotativo eficiente y silencioso.,3,3,109,31,2
+42,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,4,4,408,32,2
+43,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,2,844,33,2
+44,Generador portatil de gasolina para suministro temporal de energia.,2,5,806,34,2
+45,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,2,803,35,2
+46,Compra de compresor de aire movil para operaciones de mantenimiento.,2,2,653,36,2
+47,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,2,4,199,37,2
+48,Pedido de generador industrial de 45 kVA para construccion.,4,2,789,38,2
+49,Adquisicion de torre de iluminacion ecologica con luces LED.,2,5,518,39,2
+50,Compra de compresor de aire de velocidad variable para maquinaria.,2,4,567,40,2
+51,Compra de compresor de aire rotativo eficiente y silencioso.,3,2,31,41,2
+52,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,3,1,969,NULL,2
+53,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,2,144,42,2
+54,Generador portatil de gasolina para suministro temporal de energia.,2,1,453,NULL,2
+55,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,5,792,43,2
+56,Compra de compresor de aire movil para operaciones de mantenimiento.,3,5,387,44,2
+57,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,3,5,794,45,2
+58,Pedido de generador industrial de 45 kVA para construccion.,2,1,612,NULL,2
+59,Adquisicion de torre de iluminacion ecologica con luces LED.,3,2,64,46,2
+60,Compra de compresor de aire de velocidad variable para maquinaria.,4,4,526,47,2
+61,Compra de compresor de aire rotativo eficiente y silencioso.,3,1,136,NULL,2
+62,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,2,4,700,48,2
+63,Pedido de compresor de aire industrial resistente para talleres mecanicos.,2,1,488,NULL,2
+64,Generador portatil de gasolina para suministro temporal de energia.,3,3,94,49,2
+65,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,5,473,50,2
+66,Compra de compresor de aire movil para operaciones de mantenimiento.,4,5,848,51,2
+67,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,3,3,685,52,2
+68,Pedido de generador industrial de 45 kVA para construccion.,2,1,252,NULL,2
+69,Adquisicion de torre de iluminacion ecologica con luces LED.,2,5,500,53,2
+70,Compra de compresor de aire de velocidad variable para maquinaria.,2,5,663,54,2
+71,Compra de compresor de aire rotativo eficiente y silencioso.,2,3,308,55,2
+72,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,1,4,639,56,2
+73,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,4,918,57,2
+74,Generador portatil de gasolina para suministro temporal de energia.,4,1,901,NULL,2
+75,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,3,790,58,2
+76,Compra de compresor de aire movil para operaciones de mantenimiento.,1,2,248,59,2
+77,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,1,5,481,60,2
+78,Pedido de generador industrial de 45 kVA para construccion.,2,4,673,61,2
+79,Adquisicion de torre de iluminacion ecologica con luces LED.,4,2,726,62,2
+80,Compra de compresor de aire de velocidad variable para maquinaria.,2,5,268,63,2
+81,Compra de compresor de aire rotativo eficiente y silencioso.,1,1,292,NULL,2
+82,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,1,4,803,64,2
+83,Pedido de compresor de aire industrial resistente para talleres mecanicos.,3,5,151,65,2
+84,Generador portatil de gasolina para suministro temporal de energia.,1,2,311,66,2
+85,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,1,4,810,67,2
+86,Compra de compresor de aire movil para operaciones de mantenimiento.,4,1,428,NULL,2
+87,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,1,4,297,68,2
+88,Pedido de generador industrial de 45 kVA para construccion.,3,2,114,69,2
+89,Adquisicion de torre de iluminacion ecologica con luces LED.,4,5,126,70,2
+90,Compra de compresor de aire de velocidad variable para maquinaria.,2,1,729,NULL,2
+91,Compra de compresor de aire rotativo eficiente y silencioso.,1,5,528,71,2
+92,Solicitud de torre de iluminacion portatil con luces LED para eventos nocturnos.,4,2,808,72,2
+93,Pedido de compresor de aire industrial resistente para talleres mecanicos.,1,2,712,73,2
+94,Generador portatil de gasolina para suministro temporal de energia.,3,1,70,NULL,2
+95,Adquisicion de generador de respaldo de 8000 vatios para emergencia.,3,1,857,NULL,2
+96,Compra de compresor de aire movil para operaciones de mantenimiento.,1,3,734,74,2
+97,Solicitud de sistema de bombeo de agua diesel para drenaje de areas.,1,2,448,75,2
+98,Pedido de generador industrial de 45 kVA para construccion.,4,4,874,76,2
+99,Adquisicion de torre de iluminacion ecologica con luces LED.,3,4,672,77,2
+100,Compra de compresor de aire de velocidad variable para maquinaria.,2,1,180,NULL,2
+101,Aceite multiuso para mantenimiento preventivo,2,1,501,NULL,1
+102,Insumos de aceite hidraulico para maquinaria,2,4,498,78,1
+103,Solicitud de lubricantes especializados,2,1,500,NULL,1
+104,Solicitud de lubricantes especializados,4,2,498,79,1
+105,Aceite multiuso para mantenimiento preventivo,2,5,495,80,1
+106,Compra urgente de lubricantes para equipos de planta,2,4,496,81,1
+107,Compra de lubricantes para maquinaria pesada,1,5,501,82,1
+108,Insumos de aceite hidraulico para maquinaria,4,5,498,83,1
+109,Pedido de aceites industriales para mantenimiento,2,4,496,84,1
+110,Solicitud de lubricantes especializados,1,5,495,85,1
+111,Aceite multiuso para mantenimiento preventivo,3,5,499,86,1
+112,Insumos de aceite hidraulico para maquinaria,4,5,496,87,1
+113,Solicitud de lubricantes especializados,2,3,498,88,1
+114,Solicitud de lubricantes especializados,1,1,494,NULL,1
+115,Aceite multiuso para mantenimiento preventivo,1,4,496,89,1
+116,Compra urgente de lubricantes para equipos de planta,1,4,499,90,1
+117,Compra de lubricantes para maquinaria pesada,1,4,494,91,1
+118,Insumos de aceite hidraulico para maquinaria,4,5,496,92,1
+119,Pedido de aceites industriales para mantenimiento,2,1,494,NULL,1
+120,Solicitud de lubricantes especializados,3,4,496,93,1
+121,Solicitud de lubricantes especializados,2,4,500,94,1
+122,Compra de lubricantes para maquinaria pesada,4,3,497,95,1
+123,Pedido de aceites industriales para mantenimiento,3,3,497,96,1
+124,Aceite multiuso para mantenimiento preventivo,1,2,501,97,1
+125,Pedido de aceite para motores industriales,4,2,497,98,1
+126,Aceite multiuso para mantenimiento preventivo,1,5,498,99,1
+127,Insumos de aceite hidraulico para maquinaria,2,1,495,NULL,1
+128,Solicitud de lubricantes especializados,1,5,496,100,1
+129,Solicitud de lubricantes especializados,1,1,500,NULL,1
+130,Aceite multiuso para mantenimiento preventivo,3,1,496,NULL,1
+131,Compra urgente de lubricantes para equipos de planta,2,1,498,NULL,1
+132,Compra de lubricantes para maquinaria pesada,4,3,501,101,1
+133,Insumos de aceite hidraulico para maquinaria,2,3,498,102,1
+134,Pedido de aceites industriales para mantenimiento,1,5,500,103,1
+135,Solicitud de lubricantes especializados,4,5,495,104,1
+136,Aceite multiuso para mantenimiento preventivo,3,1,499,NULL,1
+137,Insumos de aceite hidraulico para maquinaria,1,3,498,105,1
+138,Solicitud de lubricantes especializados,2,5,494,106,1
+139,Solicitud de lubricantes especializados,1,2,500,107,1
+140,Aceite multiuso para mantenimiento preventivo,2,5,499,108,1
+141,Compra urgente de lubricantes para equipos de planta,3,4,497,109,1
+142,Compra de lubricantes para maquinaria pesada,4,2,499,110,1
+143,Insumos de aceite hidraulico para maquinaria,3,4,495,111,1
+144,Pedido de aceites industriales para mantenimiento,3,4,495,112,1
+145,Solicitud de lubricantes especializados,2,5,496,113,1
+146,Reabastecimiento de lubricantes para mantenimiento predictivo,4,2,497,114,1
+147,Aceite multiuso para mantenimiento preventivo,1,4,500,115,1
+148,Insumos de aceite hidraulico para maquinaria,4,1,500,NULL,1
+149,Solicitud de lubricantes especializados,3,4,494,116,1
+150,Solicitud de lubricantes especializados,1,1,501,NULL,1
