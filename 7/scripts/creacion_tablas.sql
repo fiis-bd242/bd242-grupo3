@@ -145,6 +145,14 @@ CREATE TABLE Orden_de_compra
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
 
+DROP TABLE IF EXISTS Tipo_producto CASCADE;
+CREATE TABLE Tipo_producto
+(
+  Id_tipo_producto INT NOT NULL,
+  nombre_tipo_producto VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_tipo_producto)
+);
+
 DROP TABLE IF EXISTS Pedido_Compra CASCADE;
 CREATE TABLE Pedido_Compra
 (
@@ -154,11 +162,13 @@ CREATE TABLE Pedido_Compra
   Id_estado_pedido INT NOT NULL,
   Id_empleado INT NOT NULL,
   Id_orden_compra INT NULL,
+  Id_tipo_producto INT NOT NULL,
   PRIMARY KEY (Id_pedido_compra),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (Id_urgencia) REFERENCES Tipo_Urgencia(Id_urgencia),
   FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_Pedido(Id_estado_pedido),
-  FOREIGN KEY (Id_orden_compra) REFERENCES Orden_de_compra(Id_orden_compra)
+  FOREIGN KEY (Id_orden_compra) REFERENCES Orden_de_compra(Id_orden_compra),
+  FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
 );
 
 DROP TABLE IF EXISTS Estado_actv CASCADE;
@@ -252,14 +262,6 @@ CREATE TABLE Equipo_de_Soporte
   FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen)
 );
 
-DROP TABLE IF EXISTS Tipo_producto CASCADE;
-CREATE TABLE Tipo_producto
-(
-  Id_tipo_producto INT NOT NULL,
-  nombre_tipo_producto VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Id_tipo_producto)
-);
-
 DROP TABLE IF EXISTS Detalle_Pedido_Compra CASCADE;
 CREATE TABLE Detalle_Pedido_Compra
 (
@@ -268,16 +270,14 @@ CREATE TABLE Detalle_Pedido_Compra
   Precio_unitario FLOAT NULL,
   Cantidad INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
-  Id_tipo_producto INT NOT NULL,
   PRIMARY KEY (Id_detalle_pedido),
-  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
-  FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
+  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra)
 );
 
 DROP TABLE IF EXISTS Historial_Estados_Pedido CASCADE;
 CREATE TABLE Historial_Estados_Pedido
 (
-  Id_historial INT NOT NULL,
+  Id_historial INT NOT NULL,  
   Fecha_cambio DATE NOT NULL,
   Hora_cambio TIME NOT NULL,
   Estado_anterior INT NOT NULL,
@@ -293,6 +293,7 @@ CREATE TABLE Orden_de_trabajo
   Id_Orden INT NOT NULL,
   Descripcion VARCHAR(255) NOT NULL,
   Fecha_Orden DATE NOT NULL,
+  visible VARCHAR(1) NOT NULL,
   PRIMARY KEY (Id_Orden)
 );
 
@@ -394,8 +395,8 @@ CREATE TABLE Mantenimiento
   Id_maquina INT NOT NULL,
   id_estado INT NOT NULL,
   PRIMARY KEY (Id_Act_mantto),
-  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden),
-  FOREIGN KEY (Id_plan) REFERENCES Plan_de_mantenimiento(Id_plan),
+  FOREIGN KEY (Id_Orden) REFERENCES Orden_de_trabajo(Id_Orden) ON DELETE CASCADE,
+  FOREIGN KEY (Id_plan) REFERENCES Plan_de_mantenimiento(Id_plan) ON DELETE CASCADE,
   FOREIGN KEY (id_tipo_mant) REFERENCES Tipo_mantenimiento(id_tipo_mant),
   FOREIGN KEY (id_maquina) REFERENCES Maquina(Id_maquina),
   FOREIGN KEY (id_estado) REFERENCES Estado_mantto(id_estado)
@@ -733,14 +734,14 @@ CREATE TABLE Registro
   FOREIGN KEY (Id_Act_mantto) REFERENCES Mantenimiento(Id_Act_mantto)
 );
 
-DROP TABLE IF EXISTS Incidencias_Tags CASCADE;
+DROP TABLE IF EXISTS Incidencias_Tag CASCADE;
 CREATE TABLE Incidencias_Tags
 (
   Id_incidencias SERIAL,
   Incidencia VARCHAR(50) NOT NULL,
   id_Registro INT NOT NULL, 
   PRIMARY KEY (Id_incidencias),
-  FOREIGN KEY (id_Registro) REFERENCES Registro(Id_registro)
+  FOREIGN KEY (id_Registro) REFERENCES Registro(Id_registro) ON DELETE CASCADE
 );
 
 DROP TABLE IF EXISTS Tipo_notificacion CASCADE;
@@ -757,7 +758,7 @@ CREATE TABLE Notificaciones
   id_notificacion INT NOT NULL,
   Asunto VARCHAR(255) NOT NULL,
   mensaje VARCHAR(255) NOT NULL,
-  fecha_notificacion DATE NOT NULL,
+  fecha_notificacion TIMESTAMP NOT NULL,
   id_remitente INT NOT NULL,
   id_destinatario INT NOT NULL,
   Id_registro INT,

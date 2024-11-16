@@ -1,37 +1,37 @@
 Columna1;Cantidad;Nombre
 1;100;Aceite para cadenas
 2;43;Agua destilada para enfriamiento
-3;92;Inhibidor de corrosión
+3;92;Inhibidor de corrosion
 4;91;Grasa para altas temperaturas
-5;53;Líquido anticorrosivo
+5;53;Liquido anticorrosivo
 6;62;Agua destilada para enfriamiento
 7;97;Detergente desengrasante
-8;38;Limpiador de componentes eléctricos
+8;38;Limpiador de componentes electricos
 9;63;Limpiador de circuitos
 10;94;Limpiador de frenos
 11;62;Aceite de alta viscosidad
-12;92;Grasa dieléctrica
-13;70;Fluido de transmisión
+12;92;Grasa dielectrica
+13;70;Fluido de transmision
 14;45;Grasa industrial
 15;94;Desengrasante
 16;94;Detergente desengrasante
 17;69;Lubricante para cadenas
-18;37;Inhibidor de corrosión
+18;37;Inhibidor de corrosion
 19;91;Aceite para engranajes
 20;62;Aceite para cadenas
 21;38;Protector de cauchos
-22;62;Aceite de transmisión
+22;62;Aceite de transmision
 23;35;Aceite para cadenas
 24;37;Limpiador de frenos
 25;80;Detergente desengrasante
 26;62;Detergente desengrasante
 27;72;Aceite de alta viscosidad
 28;88;Detergente desengrasante
-29;32;Aditivo antifricción
+29;32;Aditivo antifriccion
 30;57;Fluido para frenos
 31;39;Aceite de silicona
 32;31;Refrigerante industrial
-33;61;Aditivo para transmisión automática
+33;61;Aditivo para transmision automatica
 34;67;Solvente limpiador
 35;93;Aditivo para engranajes
 36;30;Aceite para engranajes
@@ -41,21 +41,21 @@ Columna1;Cantidad;Nombre
 40;40;Protector de cauchos
 41;84;Grasa para rodamientos
 42;87;Lubricante para altas temperaturas
-43;86;Aceite de transmisión
-44;49;Aditivo para sistemas hidráulicos
+43;86;Aceite de transmision
+44;49;Aditivo para sistemas hidraulicos
 45;60;Agua destilada para enfriamiento
 46;56;Refrigerante para motor
 47;76;Detergente desengrasante
 48;81;Lubricante para componentes delicados
-49;40;Grasa dieléctrica
+49;40;Grasa dielectrica
 50;37;Lubricante multiusos
 51;70;Desinfectante de piezas
-52;96;Aditivo antifricción
-53;83;Inhibidor de corrosión
+52;96;Aditivo antifriccion
+53;83;Inhibidor de corrosion
 54;73;Limpiador de frenos
 55;97;Aditivo para engranajes
 56;75;Lubricante para cadenas
 57;58;Solvente limpiador
-58;81;Aceite de alta presión
+58;81;Aceite de alta presion
 59;66;Agente desoxidante
 60;42;Aditivo para frenos

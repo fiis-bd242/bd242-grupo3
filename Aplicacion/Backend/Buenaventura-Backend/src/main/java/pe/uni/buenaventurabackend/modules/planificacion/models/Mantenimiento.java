@@ -13,11 +13,10 @@ public class Mantenimiento {
     private int id_act_mantto;
     private Date fecha_inicio_programado;
     private Date fecha_fin_programado;
-    private int id_equipo_soporte;
+    private int id_orden;
     private int id_plan;
     private int id_tipo_mant;
     private int id_maquina;
     private int id_estado;
-    private int id_orden;
 
 }
