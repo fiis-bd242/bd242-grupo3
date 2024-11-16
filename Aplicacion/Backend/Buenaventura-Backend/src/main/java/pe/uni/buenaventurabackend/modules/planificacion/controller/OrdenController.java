@@ -4,7 +4,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pe.uni.buenaventurabackend.models.ApiResponse;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevaOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IOrdenService;
 
 import java.util.List;
@@ -28,4 +30,20 @@ public class OrdenController {
         var result = iOrdenService.find10(offset);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
+
+    @PostMapping("/nuevaOrden")
+    public ResponseEntity<?> nuevaOrden(@RequestBody NuevaOrdenRequest request){
+        try {
+            iOrdenService.nuevaOrden(
+                    request.getOrden(),
+                    request.getId_plan(),
+                    request.getLista_empleados()
+            );
+            return ResponseEntity.ok(new ApiResponse("Orden creada exitosamente"));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponse("Error al crear la orden: " + e.getMessage()));
+        }
+    }
+
 }

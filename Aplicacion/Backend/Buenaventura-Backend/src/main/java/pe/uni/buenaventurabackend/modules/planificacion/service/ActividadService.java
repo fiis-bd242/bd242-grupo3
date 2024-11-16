@@ -20,10 +20,11 @@ public class ActividadService implements IActividadService{
     }
 
     @Override
-    public List<Map<String,Object>> find9(int id_orden, int offset){
+    public List<Map<String,Object>> findX(int id_orden, int offset){
+        // Se define el límite como 9 de momento.
+        int limit = 9;
         List<Map<String,Object>> list;
-        list = iActividadRepository.find9(id_orden, offset);
-        System.out.println(list.toString());
+        list = iActividadRepository.findX(id_orden, limit, offset);
         return list;
     }
 }

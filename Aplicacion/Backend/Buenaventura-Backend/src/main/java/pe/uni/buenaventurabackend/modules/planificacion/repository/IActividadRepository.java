@@ -7,5 +7,6 @@ import java.util.Map;
 
 public interface IActividadRepository {
     List<Actividad_empleado> findAll();
-    List<Map<String,Object>> find9(int id_orden, int offset);
+    List<Map<String,Object>> findX(int id_orden, int limit, int offset);
+    int conteoActividad();
 }

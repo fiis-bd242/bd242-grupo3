@@ -20,7 +20,7 @@ public class ActividadRepository implements IActividadRepository{
     }
 
     @Override
-    public List<Map<String,Object>> find9(int id_orden, int offset){
+    public List<Map<String,Object>> findX(int id_orden, int limit, int offset){
         String sql = "SELECT LPAD(a.id_actvempleado::TEXT, 4, '0'), emp.nombre, CONCAT('ES-',LPAD(es.id_equipo_soporte::TEXT, 4, '0')), a.fecha_inicio " +
                 "FROM Actividad_empleado a " +
                 "INNER JOIN Empleado emp " +
@@ -28,8 +28,14 @@ public class ActividadRepository implements IActividadRepository{
                 "LEFT JOIN Equipo_de_Soporte es " +
                 "ON es.id_equipo_soporte = a.id_equipo_soporte " +
                 "WHERE a.id_orden = ? " +
-                "LIMIT 9 " +
+                "LIMIT ? " +
                 "OFFSET ?-1;";
-        return jdbcTemplate.queryForList(sql,id_orden, offset);
+        return jdbcTemplate.queryForList(sql,id_orden, limit, offset);
+    }
+
+    @Override
+    public int conteoActividad(){
+        String sql = "SELECT COUNT(*) FROM Actividad_empleado;";
+        return jdbcTemplate.queryForObject(sql,Integer.class);
     }
 }

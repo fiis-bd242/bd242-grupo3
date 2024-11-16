@@ -27,16 +27,17 @@ public class PlanController {
 
     @GetMapping("/listaplanes/{offset}")
     public ResponseEntity<List<Map<String,Object>>> list(@PathVariable int offset){
-        var result = iPlanService.find10(offset);
+        var result = iPlanService.findX(offset);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
     @PostMapping("/nuevoPlan")
     public ResponseEntity<?> nuevoPlan(@RequestBody NuevoPlanRequest request){
+        System.out.println(request.toString());
         try {
             iPlanService.nuevoPlan(
                     request.getPlan(),
-                    request.getMant(),
+                    request.getMantenimiento(),
                     request.getListaEquipos(),
                     request.getListaInsumos()
             );
