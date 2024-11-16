@@ -106,7 +106,8 @@ INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
 
 INSERT INTO Tipo_notificacion(id_tipo, tipo) VALUES 
 (1, 'Error'),
-(2, 'Comunicación');
+(2, 'Comunicación'),
+(3, 'Solicitud');
 
 -- Poblamiento de la tabla Disponibilidad_equipo_soporte
 INSERT INTO Disponibilidad_Equipo_Soporte (Id_disponibilidad, Nombre_disponibilidad) 
