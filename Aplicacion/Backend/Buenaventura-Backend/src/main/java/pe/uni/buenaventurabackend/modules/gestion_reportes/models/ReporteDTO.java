@@ -16,8 +16,7 @@ public class ReporteDTO {
     private int numeroRegistrosDia;
     private Timestamp fechaReporte;
     private String estadoReporte;
-    private int idJefe;
+    private String jefe;
 
-    // Getters and setters
 }
 

@@ -22,6 +22,8 @@ public class ReporteController {
     private final IResultadoService ResultadoService;
     private final RegistroService registroService;
     private final NotificacionService notificacionService;
+    private final IncidenciasTagService incidenciasTagService;
+
     @GetMapping("/allreports")
     public ResponseEntity<List<Reporte>> list() {
         var result = iReporteService.findAll();
@@ -87,6 +89,63 @@ public class ReporteController {
     public ResponseEntity<Void> eliminarRegistro(@PathVariable("id") int idRegistro) {
         registroService.eliminarRegistro(idRegistro);
         return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/{idReporte}/estado")
+    public ResponseEntity<String> actualizarEstadoReporte(
+            @PathVariable Integer idReporte,
+            @RequestParam Integer nuevoEstado) {
+
+        int rowsUpdated = iReporteService.actualizarEstadoReporte(idReporte, nuevoEstado);
+
+        if (rowsUpdated > 0) {
+            return ResponseEntity.ok("Estado del reporte actualizado correctamente.");
+        } else {
+            return ResponseEntity.status(404).body("Reporte no encontrado.");
+        }
+    }
+
+    @PutMapping("/{idRegistro}/observaciones")
+    public ResponseEntity<String> actualizarObservaciones(
+            @PathVariable Integer idRegistro,
+            @RequestParam String observaciones) {
+
+        boolean actualizado = registroService.actualizarObservaciones(idRegistro, observaciones);
+
+        if (actualizado) {
+            return ResponseEntity.ok("Observaciones actualizadas correctamente.");
+        } else {
+            return ResponseEntity.status(404).body("Registro no encontrado.");
+        }
+    }
+
+
+    @DeleteMapping("/incidencias/{idRegistro}")
+    public ResponseEntity<String> eliminarIncidencia(
+            @PathVariable Integer idRegistro,
+            @RequestParam String incidencia) {
+
+        boolean eliminado = incidenciasTagService.eliminarIncidencia(idRegistro, incidencia);
+
+        if (eliminado) {
+            return ResponseEntity.ok("Incidencia eliminada correctamente.");
+        } else {
+            return ResponseEntity.status(404).body("No se encontró la incidencia para eliminar.");
+        }
+    }
+
+    @PostMapping("/incidencias/{idRegistro}")
+    public ResponseEntity<String> agregarIncidencia(
+            @PathVariable Integer idRegistro,
+            @RequestParam String incidencia) {
+
+        boolean agregado = incidenciasTagService.agregarIncidencia(incidencia, idRegistro);
+
+        if (agregado) {
+            return ResponseEntity.ok("Incidencia agregada correctamente.");
+        } else {
+            return ResponseEntity.status(400).body("Error al agregar la incidencia.");
+        }
     }
 }
 

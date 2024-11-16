@@ -6,7 +6,6 @@
         <input type="datetime-local" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
         <input type="datetime-local" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
       </form>
-  
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table class="w-full text-sm text-left rtl:text-right text-gray-500">
           <thead class="text-xs text-gray-700 uppercase bg-gray-300">
@@ -20,17 +19,17 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(registro, index) in Registros" :key="index" class="bg-white border-b">
-              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">{{ registro.CodRegistro }}</td>
-              <td class="px-6 py-4">{{ registro.fecha }}</td>
-              <td class="px-6 py-4">{{ registro.num_mant }}</td>
+            <tr v-for="(registro, index) in registros" :key="index" class="bg-white border-b">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">{{ registro.codigoRegistro }}</td>
+              <td class="px-6 py-4">{{ registro.fechaDelDia }}</td>
+              <td class="px-6 py-4">{{ registro.numeroRegistrosDia }}</td>
               <td class="px-6 py-4">{{ registro.jefe }}</td>
-              <td class="px-6 py-4">{{ registro.estado }}</td>
+              <td class="px-6 py-4">{{ registro.estadoReporte }}</td>
               <td class="px-6 py-4 flex space-x-2 items-center">
                 <button @click="showDetailsDialog = true" class="p-2 rounded-full bg-blue-500 hover:bg-blue-400 duration-100 border-black border text-white">
                   <PaperIcon />
                 </button>
-                <button @click="openConfirmationDialog(registro.CodRegistro)" class="p-2 rounded-full bg-green-500 hover:bg-green-400 duration-100 border-black border text-white">
+                <button @click="openConfirmationDialog(registro.codigoRegistro)" class="p-2 rounded-full bg-green-500 hover:bg-green-400 duration-100 border-black border text-white">
                   <CheckIcon />
                 </button>
                 <button @click="showMessageDialog = true" class="p-2 rounded-full bg-red-500 hover:bg-red-400 duration-100 border-black border text-white">
@@ -63,19 +62,23 @@
               <tr class="bg-gray-200">
                 <th class="px-2 py-1 border">CodRegistro</th>
                 <th class="px-2 py-1 border">Fecha</th>
+                <th class="px-2 py-1 border">Actividades de Mantenimiento</th>
                 <th class="px-2 py-1 border">Jefe a Cargo</th>
                 <th class="px-2 py-1 border">Estado</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="registro in Registros" :key="registro.CodRegistro" class="text-gray-700">
-                <td class="px-2 py-1 border">{{ registro.CodRegistro }}</td>
-                <td class="px-2 py-1 border">{{ registro.fecha }}</td>
+              <tr v-for="registro in registros" :key="registro.codigoRegistro" class="text-gray-700">
+                <td class="px-2 py-1 border">{{ registro.codigoRegistro }}</td>
+                <td class="px-2 py-1 border">{{ registro.fechaDelDia }}</td>
+                <td class="px-2 py-1 border">{{ registro.numeroRegistrosDia }}</td>
                 <td class="px-2 py-1 border">{{ registro.jefe }}</td>
-                <td class="px-2 py-1 border">{{ registro.estado }}</td>
+                <td class="px-2 py-1 border">{{ registro.estadoReporte }}</td>
               </tr>
             </tbody>
           </table>
+          
+          {{ registros }}
           <div class="flex justify-end mt-4">
             <button @click="showDetailsDialog = false" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Cerrar</button>
           </div>
@@ -101,6 +104,7 @@
   import CheckIcon from '@/components/icons/CheckIcon.vue';
   import MessageIcon from '@/components/icons/MessageIcon.vue';
   import PaperIcon from '@/components/icons/PaperIcon.vue';
+  import axios from 'axios';
   
   export default {
     components: {
@@ -110,12 +114,8 @@
     },
     data() {
       return {
-        Registros: [
-          { CodRegistro: "R001", fecha: "2024-11-10", num_mant: 12, jefe: "Juan Perez", estado: "Notificado" },
-          { CodRegistro: "R002", fecha: "2024-11-10", num_mant: 3, jefe: "Ana Gomez", estado: "Sin Verificar" },
-          { CodRegistro: "R003", fecha: "2024-11-10", num_mant: 15, jefe: "Luis Rojas", estado: "Verificado" },
-          { CodRegistro: "R004", fecha: "2024-11-10", num_mant: 5, jefe: "Maria Lopez", estado: "Sin Verificar" },
-        ],
+        
+        registros : [],
         showConfirmationDialog: false,
         showDetailsDialog: false,
         showMessageDialog: false,
@@ -123,6 +123,9 @@
         subject: "",
         description: ""
       };
+    },
+    mounted() {
+      this.getReportes()
     },
     methods: {
       openConfirmationDialog(codRegistro) {
@@ -138,8 +141,20 @@
         // Acción de confirmación para enviar mensaje
         console.log(`Asunto: ${this.subject}, Descripción: ${this.description}`);
         this.showMessageDialog = false;
+      },
+      async getReportes(){
+        await axios.get("/api/reportes/por-fecha?fechaInicial=2024-11-01&fechaFinal=2024-11-15")
+        .then(response => {
+          
+          this.registros = response.data
+          console.log(this.registros)
+        })
+        .catch(error => {
+          console.log("Se tuvo el siguiente error " + error);
+        })
       }
-    }
+    },
+    
   };
   </script>
   

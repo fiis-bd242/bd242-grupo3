@@ -1,11 +1,9 @@
-package pe.uni.buenaventurabackend.modules.gestion_reportes.repository;// En el paquete pe.uni.buenaventurabackend.modules.mantenimiento.repository
+package pe.uni.buenaventurabackend.modules.gestion_reportes.repository;
 
 import lombok.RequiredArgsConstructor;
 import pe.uni.buenaventurabackend.modules.gestion_reportes.models.Resultado;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import pe.uni.buenaventurabackend.modules.gestion_reportes.repository.IResultadoRepository;
 
 import java.util.List;
 

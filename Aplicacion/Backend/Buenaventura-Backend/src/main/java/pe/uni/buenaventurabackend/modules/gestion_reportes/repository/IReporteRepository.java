@@ -12,4 +12,5 @@ public interface IReporteRepository {
     List<ReporteDia> obtenerReportes();
     int insertarReporte(int idJefe);
     List<ReporteDTO> obtenerReportesPorFecha(Date fechaInicial, Date fechaFinal );
+    int actualizarEstadoReporte(Integer idReporte, Integer nuevoEstado);
 }

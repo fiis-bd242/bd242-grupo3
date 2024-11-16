@@ -57,7 +57,7 @@ public class ReporteRepository implements IReporteRepository {
                 "registros_por_dia.Numero_Registros_Dia, " +
                 "rep.Fecha_reporte, " +
                 "est.nombre_estado AS Estado_Reporte, " +
-                "rep.id_jefe " +
+                "nombre as jefe " +
                 "FROM " +
                 "Reportes AS rep " +
                 "JOIN " +
@@ -77,6 +77,8 @@ public class ReporteRepository implements IReporteRepository {
                 "TO_CHAR(rep.Fecha_reporte, 'YYYY-MM-DD') = registros_por_dia.Fecha_del_Dia " +
                 "JOIN " +
                 "Estado_Reporte AS est ON rep.id_estado_reporte = est.id_estado_reporte " +
+                "INNER JOIN " +
+                "empleado ON empleado.id_empleado = rep.id_jefe "+
                 "ORDER BY " +
                 "Fecha_del_Dia";
 
@@ -88,8 +90,14 @@ public class ReporteRepository implements IReporteRepository {
             reporte.setNumeroRegistrosDia(rs.getInt("Numero_Registros_Dia"));
             reporte.setFechaReporte(rs.getTimestamp("Fecha_reporte"));
             reporte.setEstadoReporte(rs.getString("Estado_Reporte"));
-            reporte.setIdJefe(rs.getInt("id_jefe"));
+            reporte.setJefe(rs.getString("jefe"));
             return reporte;
         });
+    }
+
+    @Override
+    public int actualizarEstadoReporte(Integer idReporte, Integer nuevoEstado) {
+        String sql = "UPDATE Reportes SET id_estado_reporte = ? WHERE Id_reporte = ?";
+        return jdbcTemplate.update(sql, nuevoEstado, idReporte);
     }
 }

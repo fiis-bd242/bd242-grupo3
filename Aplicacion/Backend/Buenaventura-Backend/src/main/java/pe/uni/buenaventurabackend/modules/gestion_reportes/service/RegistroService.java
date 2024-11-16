@@ -34,4 +34,9 @@ public class RegistroService {
             throw new IllegalArgumentException("El registro con ID " + idRegistro + " no existe.");
         }
     }
+
+    public boolean actualizarObservaciones(Integer idRegistro, String observaciones) {
+        int rowsUpdated = registroRepository.actualizarObservaciones(idRegistro, observaciones);
+        return rowsUpdated > 0;
+    }
 }

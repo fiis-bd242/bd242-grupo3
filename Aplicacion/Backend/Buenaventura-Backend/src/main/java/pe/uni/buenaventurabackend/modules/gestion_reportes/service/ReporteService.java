@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ReporteService implements pe.uni.buenaventurabackend.modules.gestion_reportes.service.IReporteService {
+public class ReporteService implements IReporteService {
     private final IReporteRepository iReporteRepository;
     @Override
     public List<Reporte> findAll() {
@@ -40,6 +40,12 @@ public class ReporteService implements pe.uni.buenaventurabackend.modules.gestio
         List<ReporteDTO> lists;
         lists = iReporteRepository.obtenerReportesPorFecha(fechaInicial,fechaFinal);
         return lists;
+    }
+
+    @Override
+    public int actualizarEstadoReporte(Integer idReporte, Integer nuevoEstado) {
+        int number = iReporteRepository.actualizarEstadoReporte(idReporte,nuevoEstado);
+        return 1;
     }
 
 }
