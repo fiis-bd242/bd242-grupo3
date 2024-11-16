@@ -34,7 +34,7 @@
                 </button>
                 <button @click="showEditDialog = true" class="p-2 rounded-full bg-yellow-500 hover:bg-yellow-400 duration-100 border-black border text-white">
                   <PencilIcon />
-                </button>
+                </button> 
                 <button @click="showMessageDialog = true" class="p-2 rounded-full bg-red-500 hover:bg-red-400 duration-100 border-black border text-white">
                   <MessageIcon />
                 </button>
@@ -61,12 +61,15 @@
         <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
           <h3 class="text-2xl font-bold mb-4 text-center text-gray-700">Detalles de Registro</h3>
           <table class="w-full text-left border-collapse">
-            <tr><th class="border-b px-2 py-1">Hora:</th><td class="border-b px-2 py-1">18:06</td></tr>
-            <tr><th class="border-b px-2 py-1">Plan Mantenimiento:</th><td class="border-b px-2 py-1">M00001</td></tr>
-            <tr><th class="border-b px-2 py-1">Nombre del Equipo:</th><td class="border-b px-2 py-1">Compresor de Aire</td></tr>
-            <tr><th class="border-b px-2 py-1">Técnico Responsable:</th><td class="border-b px-2 py-1">Juan Perez</td></tr>
-            <tr><th class="border-b px-2 py-1">Tipo Mantenimiento:</th><td class="border-b px-2 py-1">Preventivo</td></tr>
-          </table>
+            <tbody>
+              <tr><th class="border-b px-2 py-1">Hora:</th><td class="border-b px-2 py-1">18:06</td></tr>
+              <tr><th class="border-b px-2 py-1">Plan Mantenimiento:</th><td class="border-b px-2 py-1">M00001</td></tr>
+              <tr><th class="border-b px-2 py-1">Nombre del Equipo:</th><td class="border-b px-2 py-1">Compresor de Aire</td></tr>
+              <tr><th class="border-b px-2 py-1">Técnico Responsable:</th><td class="border-b px-2 py-1">Juan Perez</td></tr>
+              <tr><th class="border-b px-2 py-1">Tipo Mantenimiento:</th><td class="border-b px-2 py-1">Preventivo</td></tr>
+          
+            </tbody>
+             </table>
           <div class="flex justify-end mt-4">
             <button @click="showDetailsDialog = false" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Cerrar</button>
           </div>
@@ -107,7 +110,7 @@
   import PencilIcon from '@/components/icons/PencilIcon.vue';
   import PaperIcon from '@/components/icons/PaperIcon.vue';
   import MessageIcon from '@/components/icons/MessageIcon.vue';
-  
+  import axios from 'axios';
   export default {
     components: {
       PencilIcon,
@@ -155,6 +158,10 @@
         description: ""
       };
     },
+
+    mounted() {
+      this.getReportes()
+    },
     methods: {
       getCurrentDateFormatted() {
         const today = new Date();
@@ -174,12 +181,17 @@
       confirmMessage() {
         // Acción de confirmación de envío de mensaje
         this.showMessageDialog = false;
+      },
+
+      async getReportes(){
+        await axios.get("/api/reportes/por-fecha?fechaInicial=2024-11-01&fechaFinal=2024-11-15")
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.log("Se tuvo el siguiente error " + error);
+        })
       }
     }
   };
   </script>
-  
-  <style scoped>
-  /* Puedes añadir estilos personalizados aquí */
-  </style>
-  

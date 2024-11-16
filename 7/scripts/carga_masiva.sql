@@ -40,10 +40,10 @@ INSERT INTO Estado_actv (Id_estado, estado) VALUES
 (1, 'Borrador'),
 (2, 'Notificado'),
 (3, 'Aceptado'),
-(4, 'En ejecución'),
-(5, 'Ejecutado'),
-(6, 'En auditoría'),
-(7, 'Auditado');
+(4, 'Rechazado'),
+(5, 'Encurso'),
+(6, 'Completa'),
+(7, 'Pendiente');
 
 -- Poblamiento de la tabla Orden_de_trabajo
 COPY orden_de_trabajo FROM 'C:\DBD-2024-2\datos\Orden_trabajo.csv' DELIMITER ',' CSV HEADER;
@@ -63,17 +63,11 @@ VALUES
 
 -- Poblamiento de la tabla Almacen
 COPY Almacen FROM 'C:\DBD-2024-2\datos\Almacen.csv' DELIMITER ',' CSV HEADER;
-
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-ERROR:  secuencia de bytes no válida para codificación «UTF8»: 0xf3 0x6e 0x0d 0x0a
-CONTEXT:  COPY insumo, line 4
-AYUDA: Revisa la codificación del csv, posiblemente no sea UTF8 (por esto las tildes generan problemas)
 --Poblamiento insumo
 COPY Insumo (Id_insumo,Cantidad, Nombre)
 FROM 'C:\DBD-2024-2\datos\Insumo.csv'
 DELIMITER ';'
 CSV HEADER;
-*/
 
 ---Poblamiento Estado_reserva
 INSERT INTO Estado_reserva (Id_estado_reserva, Nombre_estado) VALUES
@@ -87,14 +81,12 @@ FROM 'C:\DBD-2024-2\datos\Reserva.csv'
 DELIMITER ','
 CSV HEADER;
 
-/* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-AYUDA: Es necesario corregir la tabla insumo primero
 --Poblamiento Detalle_reserva
 COPY Detalle_reserva (Id_detalle,Cant_reserv, Id_insumo,Id_reserva)
 FROM 'C:\DBD-2024-2\datos\detalle_reserva.csv'
 DELIMITER ';'
 CSV HEADER;
-*/
+
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -323,10 +315,11 @@ INSERT INTO Estado_mantto (id_estado, estado) VALUES
 (1, 'Borrador'),
 (2, 'Notificado'),
 (3, 'Aceptado'),
-(4, 'En ejecución'),
-(5, 'Ejecutado'),
-(6, 'En auditoría'),
-(7, 'Auditado');
+(4, 'Rechazado'),
+(5, 'En curso'),
+(6, 'Completa'),
+(7, 'Pendiente'),
+(8, 'Eliminado');
 
 -- Poblamiento de la tabla Mantenimiento
 COPY mantenimiento FROM 'C:\DBD-2024-2\datos\Mantenimiento.csv' DELIMITER ',' CSV HEADER;
@@ -433,13 +426,12 @@ COPY historial_estados_pedido FROM 'C:\DBD-2024-2\datos\Historial_estados_pedido
 
 
 COPY Registro FROM 'C:\DBD-2024-2\datos\Registros.csv' DELIMITER ',' CSV HEADER;
-
-COPY Incidencias_Tags FROM 'C:\DBD-2024-2\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
-
+SELECT setval('registro_id_registro_seq', (SELECT MAX(id_registro) FROM Registro) + 1);
+COPY Incidencias_Tag FROM 'C:\DBD-2024-2\datos\Incidencias_Tags.csv' DELIMITER ',' CSV HEADER;
+SELECT setval('incidencias_tag_id_incidencias_seq', (SELECT MAX(id_incidencias) FROM Incidencias_Tag) + 1);
 COPY Reportes FROM 'C:\DBD-2024-2\datos\Reportes.csv' DELIMITER ',' CSV HEADER;
-
+SELECT setval('reportes_id_reporte_seq', (SELECT MAX(id_reporte) FROM Reportes) + 1);
 COPY Notificaciones FROM 'C:\DBD-2024-2\datos\Notificaciones.csv' DELIMITER ',' CSV HEADER;
-
 
 -- Estado_autenticador 
 INSERT INTO Estado_autenticador (Id_estado_autenticador, Descripcion)
