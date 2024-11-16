@@ -145,6 +145,14 @@ CREATE TABLE Orden_de_compra
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado)
 );
 
+DROP TABLE IF EXISTS Tipo_producto CASCADE;
+CREATE TABLE Tipo_producto
+(
+  Id_tipo_producto INT NOT NULL,
+  nombre_tipo_producto VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Id_tipo_producto)
+);
+
 DROP TABLE IF EXISTS Pedido_Compra CASCADE;
 CREATE TABLE Pedido_Compra
 (
@@ -154,11 +162,13 @@ CREATE TABLE Pedido_Compra
   Id_estado_pedido INT NOT NULL,
   Id_empleado INT NOT NULL,
   Id_orden_compra INT NULL,
+  Id_tipo_producto INT NOT NULL,
   PRIMARY KEY (Id_pedido_compra),
   FOREIGN KEY (Id_empleado) REFERENCES Empleado(Id_empleado),
   FOREIGN KEY (Id_urgencia) REFERENCES Tipo_Urgencia(Id_urgencia),
   FOREIGN KEY (Id_estado_pedido) REFERENCES Estado_Pedido(Id_estado_pedido),
-  FOREIGN KEY (Id_orden_compra) REFERENCES Orden_de_compra(Id_orden_compra)
+  FOREIGN KEY (Id_orden_compra) REFERENCES Orden_de_compra(Id_orden_compra),
+  FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
 );
 
 DROP TABLE IF EXISTS Estado_actv CASCADE;
@@ -252,14 +262,6 @@ CREATE TABLE Equipo_de_Soporte
   FOREIGN KEY (Id_almacen) REFERENCES Almacen(Id_almacen)
 );
 
-DROP TABLE IF EXISTS Tipo_producto CASCADE;
-CREATE TABLE Tipo_producto
-(
-  Id_tipo_producto INT NOT NULL,
-  nombre_tipo_producto VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Id_tipo_producto)
-);
-
 DROP TABLE IF EXISTS Detalle_Pedido_Compra CASCADE;
 CREATE TABLE Detalle_Pedido_Compra
 (
@@ -268,10 +270,8 @@ CREATE TABLE Detalle_Pedido_Compra
   Precio_unitario FLOAT NULL,
   Cantidad INT NOT NULL,
   Id_pedido_compra INT NOT NULL,
-  Id_tipo_producto INT NOT NULL,
   PRIMARY KEY (Id_detalle_pedido),
-  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra),
-  FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto)
+  FOREIGN KEY (Id_pedido_compra) REFERENCES Pedido_Compra(Id_pedido_compra)
 );
 
 DROP TABLE IF EXISTS Historial_Estados_Pedido CASCADE;
