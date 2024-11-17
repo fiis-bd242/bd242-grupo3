@@ -1,10 +1,12 @@
 package pe.uni.buenaventurabackend.modules.planificacion.repository;
 
+import pe.uni.buenaventurabackend.modules.gestion_reportes.models.Notificacion;
 import pe.uni.buenaventurabackend.modules.planificacion.models.EquipoSXMantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoXMantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 
 import java.util.List;
 import java.util.Map;
@@ -20,4 +22,6 @@ public interface IPlanRepository {
     int conteoPlanInsumo();
     int conteoMantenimiento();
     DetallePlanRequest detallePlan(int id_plan);
+    void envioNotificacion(Notificacion noti, int id_plan);
+    void guardarPlan(GuardarPlanRequest req);
 }

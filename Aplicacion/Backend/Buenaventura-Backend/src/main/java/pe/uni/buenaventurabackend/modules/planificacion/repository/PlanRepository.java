@@ -4,11 +4,13 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import pe.uni.buenaventurabackend.modules.gestion_reportes.models.Notificacion;
 import pe.uni.buenaventurabackend.modules.planificacion.models.EquipoSXMantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoXMantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 
 import java.util.List;
 import java.util.Map;
@@ -123,4 +125,64 @@ public class PlanRepository implements IPlanRepository{
         return jdbcTemplate.queryForObject(sql, DetallePlanRequest.class);
     }
 
+    @Override
+    public void envioNotificacion(Notificacion noti, int id_plan){
+        String sql = "INSERT INTO Notificaciones (id_notificacion, asunto, mensaje, fecha_notificacion, id_remitente, id_destinatario, id_registro, id_reporte, id_tipo) " +
+                "SELECT ?,'Nuevo plan por aceptar',CONCAT('Nuevo plan de mantenimiento disponible con fecha ' , ?), ?, ?, e.id_empleado, null, null, 2 " +
+                "FROM Empleado e " +
+                "INNER JOIN Actividad_empleado act " +
+                "ON act.id_empleado = e.id_empleado " +
+                "INNER JOIN Orden_de_trabajo o " +
+                "ON o.id_orden = act.id_orden " +
+                "INNER JOIN Mantenimiento m " +
+                "ON m.id_orden = o.id_orden " +
+                "INNER JOIN Plan_de_Mantenimiento p " +
+                "ON p.id_plan = m.id_plan " +
+                " WHERE p.id_plan = ? AND act.nombre_actv = 'Responsable';";
+        jdbcTemplate.update(sql, noti.getId_notificacion(), noti.getFecha_notificacion(), noti.getFecha_notificacion(), noti.getId_remitente(), id_plan);
+
+        sql = "UPDATE Mantenimiento " +
+                "SET id_estado = 2 " +
+                "WHERE id_plan = ?;";
+        jdbcTemplate.update(sql, id_plan);
+    }
+
+    @Override
+    public void guardarPlan(GuardarPlanRequest req){
+        String sql = "UPDATE Plan_de_Mantenimiento\n" +
+                "\tSET descripcion = <2>, id_criticidad = <3>\n" +
+                "\tWHERE id_plan = <1>;" +
+                "UPDATE Mantenimiento\n" +
+                "\tSET id_orden = <4>, id_tipo_mant = <5>, id_maquina = <6>, fecha_inicio_programado = DATE('<7>'), fecha_fin_programado = DATE('<8>')\n" +
+                "\tWHERE id_plan = <1>;\n" +
+                "\n" +
+                "\t--- Restablecer fechas del responsable ---\n" +
+                "\tUPDATE Actividad_empleado\n" +
+                "\tSET fecha_inicio = DATE('<7>'), fecha_fin = DATE('<8>')\n" +
+                "\tWHERE a.nombre_actv IN (\n" +
+                "\t\tSELECT a.nombre_actv FROM Actividad_empleado a\n" +
+                "\t\tINNER JOIN Orden_de_trabajo o ON a.id_orden = o.id_orden\n" +
+                "\t\tINNER JOIN Mantenimiento m ON m.id_orden = o.id_orden\n" +
+                "\t\tINNER JOIN Plan_de_mantenimiento p ON p.id_plan = m.id_plan\n" +
+                "\t\tWHERE p.id_plan = <1> AND a.nombre_actv = 'Responsable'\n" +
+                "\t);";
+        jdbcTemplate.update(sql);
+
+        // Eliminación de los equipos de soporte e insumos
+        sql = "DELETE FROM EquipoSXMantenimiento " +
+                "WHERE id_act_mantto IN ( " +
+                "SELECT m.id_act_mantto " +
+                "FROM Mantenimiento m " +
+                "WHERE m.id_plan = <1>; " +
+                "DELETE FROM InsumoXMantenimiento " +
+                "WHERE id_act_mantto IN ( " +
+                "SELECT m.id_act_mantto " +
+                "FROM Mantenimiento m " +
+                "WHERE m.id_plan = <1>;";
+        jdbcTemplate.update(sql);
+
+        for (int i : req.getListaEquipos()){
+
+        }
+    }
 }
