@@ -88,6 +88,8 @@ public class PlanRepository implements IPlanRepository{
 
     @Override
     public DetallePlanRequest detallePlan(int id_plan){
+        System.out.println("EL ID ESSSSS:");
+        System.out.println(id_plan);
         String sql = "SELECT CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')), " +
                 "tm.nombre_tipo_mant, " +
                 "CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')), " +
@@ -118,7 +120,7 @@ public class PlanRepository implements IPlanRepository{
                 "INNER JOIN Empleado responsable ON responsable.id_empleado = act.id_empleado " +
                 "INNER JOIN Estado_mantto est ON m.id_estado = est.id_estado " +
                 "INNER JOIN Criticidad crit ON crit.id_criticidad = p.id_criticidad " +
-                "WHERE act.nombre_actv = 'Responsable' AND p.id_plan = <1> AND m.id_estado != 8;";
+                "WHERE act.nombre_actv = 'Responsable' AND p.id_plan = ? AND m.id_estado != 8;";
         return jdbcTemplate.queryForObject(sql, DetallePlanRequest.class, id_plan);
     }
 
