@@ -22,12 +22,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(registro, index) in Registros" :key="index" class="bg-white border-b">
-              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">{{ registro.hora }}</td>
-              <td class="px-6 py-4">{{ registro.plan_mant }}</td>
-              <td class="px-6 py-4">{{ registro.equipo }}</td>
-              <td class="px-6 py-4">{{ registro.tecnico }}</td>
-              <td class="px-6 py-4">{{ registro.tipo_mant }}</td>
+            <tr v-for="(registro, index) in registros_dia" :key="index" class="bg-white border-b">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">{{ registro.horaRegistro }}</td>
+              <td class="px-6 py-4">{{ registro.codigoActividad }}</td>
+              <td class="px-6 py-4">{{ registro.nombreEquipo }}</td>
+              <td class="px-6 py-4">{{ registro.tecnicoResponsable }}</td>
+              <td class="px-6 py-4">{{ registro.tipoMantenimiento }}</td>
               <td class="px-6 py-4 flex space-x-2">
                 <button @click="showDetailsDialog = true" class="p-2 rounded-full bg-blue-500 hover:bg-blue-400 duration-100 border-black border text-white">
                   <PaperIcon />
@@ -149,6 +149,7 @@
                 tipo_mant : "Preventivo",
             },
         ],
+        registros_dia : [],
         showConfirmationDialog: false,
         showDetailsDialog: false,
         showEditDialog: false,
@@ -159,9 +160,6 @@
       };
     },
 
-    mounted() {
-      this.getReportes()
-    },
     methods: {
       getCurrentDateFormatted() {
         const today = new Date();
@@ -171,27 +169,29 @@
         return `${day}/${month}/${year}`;
       },
       confirmRegistration() {
-        // Acción de confirmación de registro
         this.showConfirmationDialog = false;
       },
       confirmEdit() {
-        // Acción de confirmación de edición
         this.showEditDialog = false;
       },
       confirmMessage() {
-        // Acción de confirmación de envío de mensaje
         this.showMessageDialog = false;
       },
-
-      async getReportes(){
-        await axios.get("/api/reportes/por-fecha?fechaInicial=2024-11-01&fechaFinal=2024-11-15")
+      async getRegistros(){
+        await axios.get("http://localhost:8080/api/reportes/resultados-dia")
         .then(response => {
           console.log(response.data);
+          this.registros_dia = response.data
         })
         .catch(error => {
-          console.log("Se tuvo el siguiente error " + error);
+          console.log(error);
         })
       }
-    }
+
+      
+    },
+    mounted() {
+      this.getRegistros()
+    },
   };
   </script>

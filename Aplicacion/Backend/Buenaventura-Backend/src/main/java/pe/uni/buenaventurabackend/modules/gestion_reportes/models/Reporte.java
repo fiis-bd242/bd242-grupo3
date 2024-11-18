@@ -14,5 +14,5 @@ public class Reporte {
     private Date fecha_reporte;
     private int id_estado_reporte;
     private int id_jefe;
-    private int id_supervisor;
+    private Integer id_supervisor ;
 }

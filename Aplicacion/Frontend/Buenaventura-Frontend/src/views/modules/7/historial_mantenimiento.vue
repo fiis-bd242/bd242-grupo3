@@ -2,8 +2,8 @@
     <div class="mx-4 my-2  w-full">
         <h3 class="font-extrabold text-3xl">Verificacion de Datos</h3>
         <form @submit.prevent="console.log('1');" class="flex space-x-2 mt-2 justify-end mx-2 mb-5">
-            <input type="datetime-local" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
-            <input type="datetime-local" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
+            <input type="date" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
+            <input type="date" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
         </form>
         <div class="relative overflow-x-auto mt-4 shadow-md sm:rounded-lg">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
@@ -30,21 +30,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(registro, index) in Registros" :key="index" class="bg-white border-b">
+                        <tr v-for="(registro, index) in registros_hist.slice(0,10)" :key="index" class="bg-white border-b">
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                                {{formattedDate}}
+                                {{registro.fechaInicio}}
                             </th>
                             <td class="px-6 py-4">
-                                {{formattedDate}}
+                                {{registro.fechaFinal}}
                             </td>
                             <td class="px-6 py-4">
-                                {{registro.equipo }}
+                                {{registro.nombreMaquina }}
                             </td>
                             <td class="px-6 py-4">
-                                {{registro.tecnico }}
+                                {{registro.tecnicoResponsable }}
                             </td>
                             <td class="px-6 py-4">
-                                {{registro.tarea }}
+                                {{registro.tipoMantenimiento }}
                             </td>
                             <td class="px-6 py-4">
                                 <a href="#" class="font-medium cursor-pointer block text-center no-underline hover:bg-blue-400 duration-100 text-white  px-2 py-1 rounded-md bg-blue-600 hover:underline">Detalles</a>
@@ -56,6 +56,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
 export default {
     data() {
         return {
@@ -89,7 +90,8 @@ export default {
                 tecnico : "Juan Perez",
                 tarea : "Tarea 3",
             },
-            ]
+            ],
+            registros_hist : []
         }
     },
     computed: {
@@ -104,7 +106,22 @@ export default {
         hour12: false
       });
     }
-  }
+  },
+  methods: {
+        async getHistorial(){
+            await axios.get("http://localhost:8080/api/reportes/historial?fechaInicio=2024-01-01&fechaFin=2024-12-31")
+            .then(response => {
+                console.log(response.data);
+                this.registros_hist = response.data
+            })
+            .catch(error => {
+                console.log(error);
+            })
+        }
+    },
+    mounted() {
+        this.getHistorial()
+    },
 
 }
 

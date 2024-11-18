@@ -16,7 +16,7 @@ public class Notificacion {
     private Date fecha_notificacion;
     private int id_remitente;
     private int id_destinatario;
-    private int Id_registro;
-    private int Id_reporte;
+    private Integer Id_registro;
+    private Integer Id_reporte;
     private int id_tipo;
 }
