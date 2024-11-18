@@ -1,10 +1,10 @@
 package pe.uni.buenaventurabackend.modules.planificacion.service;
 
 import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTO;
-import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoXMantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 
 import java.util.List;
 import java.util.Map;
@@ -17,4 +17,6 @@ public interface IPlanService {
     void reservaInsumo(List<InsumoDTO> listaInsumos);
     void envioNotificacion(int id_plan);
     DetallePlanRequest detallePlan(int id_plan);
+    void guardarPlan(int id_plan, Plan_de_mantenimiento p, Mantenimiento m, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos);
+    void borrarPlan(int id_plan);
 }

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Actividad_empleado;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IActividadRepository;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IOrdenRepository;
 
@@ -61,4 +62,8 @@ public class OrdenService implements IOrdenService{
         }
     }
 
+    @Override
+    public DetalleOrdenRequest detalleOrden(int id_plan){
+        return iOrdenRepository.detalleOrden(id_plan);
+    }
 }

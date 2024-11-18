@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.models.ApiResponse;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevaOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IOrdenService;
 
@@ -46,4 +47,9 @@ public class OrdenController {
         }
     }
 
+    @GetMapping("/detalleOrden/{id_orden}")
+    public ResponseEntity<DetalleOrdenRequest> detalleOrden(@PathVariable int id_orden){
+        var result = iOrdenService.detalleOrden(id_orden);
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 }

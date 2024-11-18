@@ -5,10 +5,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import pe.uni.buenaventurabackend.modules.gestion_reportes.models.Notificacion;
-import pe.uni.buenaventurabackend.modules.planificacion.models.EquipoSXMantenimiento;
-import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoXMantenimiento;
-import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
-import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
+import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 
@@ -92,26 +89,26 @@ public class PlanRepository implements IPlanRepository{
     @Override
     public DetallePlanRequest detallePlan(int id_plan){
         String sql = "SELECT CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')), " +
-                "       tm.nombre_tipo_mant, " +
-                "       CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')), " +
-                "       creador.nombre AS creador, " +
-                "       est.estado, " +
-                "       p.fecha_plan, " +
-                "       m.fecha_inicio_programado, " +
-                "       m.fecha_fin_programado, " +
-                "       responsable.nombre AS responsable, " +
-                "       crit.nivel, " +
-                "       CONCAT('OT-', LPAD(o.id_orden::TEXT, 4, '0')), " +
-                "       -- Lista de equipos de soporte " +
-                "       (SELECT string_agg(DISTINCT es.nombre_equipo_soporte, ',') " +
-                "        FROM EquipoSXMantenimiento esm " +
-                "        INNER JOIN Equipo_de_Soporte es ON es.id_equipo_soporte = esm.id_equipo_soporte " +
-                "        WHERE esm.id_act_mantto = m.id_act_mantto) AS equipos_soporte, " +
-                "       -- Lista de insumos con cantidad " +
-                "       (SELECT string_agg(DISTINCT i.nombre || ' (Cantidad: ' || im.cantidad || ')', ', ') " +
-                "        FROM InsumoXMantenimiento im " +
-                "        INNER JOIN Insumo i ON i.id_insumo = im.id_insumo " +
-                "        WHERE im.id_act_mantto = m.id_act_mantto) AS insumos_utilizados " +
+                "tm.nombre_tipo_mant, " +
+                "CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')), " +
+                "creador.nombre AS creador, " +
+                "est.estado, " +
+                "p.fecha_plan, " +
+                "m.fecha_inicio_programado, " +
+                "m.fecha_fin_programado, " +
+                "responsable.nombre AS responsable, " +
+                "crit.nivel, " +
+                "CONCAT('OT-', LPAD(o.id_orden::TEXT, 4, '0')), " +
+
+                "(SELECT string_agg(DISTINCT es.nombre_equipo_soporte, ',') " +
+                "FROM EquipoSXMantenimiento esm " +
+                "INNER JOIN Equipo_de_Soporte es ON es.id_equipo_soporte = esm.id_equipo_soporte " +
+                "WHERE esm.id_act_mantto = m.id_act_mantto) AS equipos_soporte, " +
+
+                "(SELECT string_agg(DISTINCT i.nombre || ' (Cantidad: ' || im.cantidad || ')', ', ') " +
+                "FROM InsumoXMantenimiento im " +
+                "INNER JOIN Insumo i ON i.id_insumo = im.id_insumo " +
+                "WHERE im.id_act_mantto = m.id_act_mantto) AS insumos_utilizados " +
                 "FROM Plan_de_mantenimiento p " +
                 "INNER JOIN Mantenimiento m ON m.id_plan = p.id_plan " +
                 "INNER JOIN Tipo_mantenimiento tm ON tm.id_tipo_mant = m.id_tipo_mant " +
@@ -122,7 +119,7 @@ public class PlanRepository implements IPlanRepository{
                 "INNER JOIN Estado_mantto est ON m.id_estado = est.id_estado " +
                 "INNER JOIN Criticidad crit ON crit.id_criticidad = p.id_criticidad " +
                 "WHERE act.nombre_actv = 'Responsable' AND p.id_plan = <1> AND m.id_estado != 8;";
-        return jdbcTemplate.queryForObject(sql, DetallePlanRequest.class);
+        return jdbcTemplate.queryForObject(sql, DetallePlanRequest.class, id_plan);
     }
 
     @Override
@@ -148,41 +145,73 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public void guardarPlan(GuardarPlanRequest req){
-        String sql = "UPDATE Plan_de_Mantenimiento\n" +
-                "\tSET descripcion = <2>, id_criticidad = <3>\n" +
-                "\tWHERE id_plan = <1>;" +
-                "UPDATE Mantenimiento\n" +
-                "\tSET id_orden = <4>, id_tipo_mant = <5>, id_maquina = <6>, fecha_inicio_programado = DATE('<7>'), fecha_fin_programado = DATE('<8>')\n" +
-                "\tWHERE id_plan = <1>;\n" +
-                "\n" +
-                "\t--- Restablecer fechas del responsable ---\n" +
-                "\tUPDATE Actividad_empleado\n" +
-                "\tSET fecha_inicio = DATE('<7>'), fecha_fin = DATE('<8>')\n" +
-                "\tWHERE a.nombre_actv IN (\n" +
-                "\t\tSELECT a.nombre_actv FROM Actividad_empleado a\n" +
-                "\t\tINNER JOIN Orden_de_trabajo o ON a.id_orden = o.id_orden\n" +
-                "\t\tINNER JOIN Mantenimiento m ON m.id_orden = o.id_orden\n" +
-                "\t\tINNER JOIN Plan_de_mantenimiento p ON p.id_plan = m.id_plan\n" +
-                "\t\tWHERE p.id_plan = <1> AND a.nombre_actv = 'Responsable'\n" +
-                "\t);";
-        jdbcTemplate.update(sql);
+    public void guardarPlan(int id_plan, Plan_de_mantenimiento p, Mantenimiento m, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos){
+        String sql = "UPDATE Plan_de_Mantenimiento " +
+                "SET descripcion = ?, id_criticidad = ? " +
+                "WHERE id_plan = ?;" +
+                "UPDATE Mantenimiento " +
+                "SET id_orden = ?, id_tipo_mant = ?, id_maquina = ?, fecha_inicio_programado = ?, fecha_fin_programado = ? " +
+                "WHERE id_plan = ?; ";
+        jdbcTemplate.update(sql, p.getDescripcion(),
+                p.getId_criticidad(), id_plan,
+                m.getId_orden(), m.getId_tipo_mant(),
+                m.getId_maquina(), m.getFecha_inicio_programado(),
+                m.getFecha_fin_programado(), id_plan);
+
+        sql = "UPDATE Actividad_empleado " +
+                "SET fecha_inicio = ?, fecha_fin = ? " +
+                "WHERE a.nombre_actv IN ( " +
+                "SELECT a.nombre_actv FROM Actividad_empleado a " +
+                "INNER JOIN Orden_de_trabajo o ON a.id_orden = o.id_orden " +
+                "INNER JOIN Mantenimiento m ON m.id_orden = o.id_orden " +
+                "INNER JOIN Plan_de_mantenimiento p ON p.id_plan = m.id_plan " +
+                "WHERE p.id_plan = ? AND a.nombre_actv = 'Responsable');";
+        jdbcTemplate.update(sql, m.getFecha_inicio_programado(),
+                m.getFecha_fin_programado(), id_plan);
 
         // Eliminación de los equipos de soporte e insumos
         sql = "DELETE FROM EquipoSXMantenimiento " +
                 "WHERE id_act_mantto IN ( " +
                 "SELECT m.id_act_mantto " +
                 "FROM Mantenimiento m " +
-                "WHERE m.id_plan = <1>; " +
+                "WHERE m.id_plan = ?); " +
+
                 "DELETE FROM InsumoXMantenimiento " +
                 "WHERE id_act_mantto IN ( " +
                 "SELECT m.id_act_mantto " +
                 "FROM Mantenimiento m " +
-                "WHERE m.id_plan = <1>;";
-        jdbcTemplate.update(sql);
+                "WHERE m.id_plan = ?);";
+        jdbcTemplate.update(sql, id_plan, id_plan);
 
-        for (int i : req.getListaEquipos()){
-
+        int id_equipo_mant = conteoPlanEquipo() +1;
+        sql = "INSERT INTO EquipoSXMantenimiento (id_equipo_mant, id_act_mantto, id_equipo_soporte) " +
+                "VALUES(?,?,?);";
+        for (int i : listaEquipos){
+            jdbcTemplate.update(sql, id_equipo_mant, m.getId_act_mantto(), i);
+            id_equipo_mant++;
         }
+
+        int id_insum_mant = conteoPlanInsumo() +1;
+        sql = "INSERT INTO InsumoXMantenimiento (id_insum_mant, cantidad, id_act_mantto, id_insumo)\n" +
+                "VALUES (?, ?, ?, ?);";
+        for (InsumoDTO insumoDTO : listaInsumos){
+            jdbcTemplate.update(sql, id_insum_mant, insumoDTO.getCantidad(), m.getId_act_mantto(), insumoDTO.getId_insumo());
+            id_insum_mant++;
+        }
+
+    }
+
+    @Override
+    public void borrarPlan(int id_plan){
+        String sql = "UPDATE Orden_de_trabajo " +
+                "SET visible = 'N' " +
+                "WHERE id_orden IN ( " +
+                "SELECT m.id_orden FROM Mantenimiento m " +
+                "WHERE m.id_plan = ?); " +
+
+                "UPDATE Mantenimiento " +
+                "SET id_estado = 8 " +
+                "WHERE id_plan = ?;";
+        jdbcTemplate.update(sql, id_plan, id_plan);
     }
 }

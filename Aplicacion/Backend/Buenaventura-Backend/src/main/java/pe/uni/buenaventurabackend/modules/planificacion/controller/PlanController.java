@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.models.ApiResponse;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevoPlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IPlanService;
 
@@ -63,5 +64,33 @@ public class PlanController {
     public ResponseEntity<DetallePlanRequest> detallePlan(@PathVariable int id_plan) {
         var result = iPlanService.detallePlan(id_plan);
         return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @PostMapping("/guardarPlan/{id_plan}")
+    public ResponseEntity<?> guardarPlan(@PathVariable int id_plan, @RequestBody GuardarPlanRequest request) {
+        try {
+            iPlanService.guardarPlan(
+                    id_plan,
+                    request.getPlan(),
+                    request.getMant(),
+                    request.getListaEquipos(),
+                    request.getListaInsumos()
+            );
+            return ResponseEntity.ok(new ApiResponse("Plan guardado exitosamente"));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponse("Error al guardar el plan: " + e.getMessage()));
+        }
+    }
+
+    @PostMapping("/borrarPlan/{id_plan}")
+    public ResponseEntity<?> borrarPlan(@PathVariable int id_plan){
+        try{
+            iPlanService.borrarPlan(id_plan);
+            return ResponseEntity.ok(new ApiResponse("Plan borrado exitosamente"));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponse("Error al borrar el plan: " + e.getMessage()));
+        }
     }
 }
