@@ -12,6 +12,7 @@ import java.util.Date;
 public class Actividad_empleado {
     private int id_actvempleado;
     private String nombre_actv;
+    private String descripcion_actv;
     private Date fecha_inicio;
     private Date fecha_fin;
     private int id_equipo_soporte;

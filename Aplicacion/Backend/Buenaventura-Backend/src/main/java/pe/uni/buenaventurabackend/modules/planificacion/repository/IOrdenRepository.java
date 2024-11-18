@@ -16,5 +16,6 @@ public interface IOrdenRepository {
     void nuevaOrdenActv(Actividad_empleado actividad_empleado, boolean responsable);
     List<String> findAllVisible();
     DetalleOrdenRequest detalleOrden(int id_orden);
-    void guardarOrden(int id_orden, String descripcion, int id_plan, List<Integer> listaEmpleados);
+    void guardarOrden(int id_orden, String descripcion, int id_plan, List<Integer> listaEmpleados, int  num_responsable);
+    void borrarOrden(int id_orden);
 }

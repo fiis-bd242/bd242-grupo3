@@ -129,7 +129,7 @@ public class OrdenRepository implements IOrdenRepository {
     }
 
     @Override
-    public void guardarOrden(int id_orden, String descripcion, int id_plan, List<Integer> listaEmpleados){
+    public void guardarOrden(int id_orden, String descripcion, int id_plan, List<Integer> listaEmpleados, int num_responsable){
         String sql = "UPDATE Orden_de_Trabajo " +
                 "SET descripcion = ?, " +
                 "WHERE id_orden = ?; " +
@@ -144,12 +144,21 @@ public class OrdenRepository implements IOrdenRepository {
         jdbcTemplate.update(sql, id_orden);
 
         int id_actvempleado = iActividadRepository.conteoActividad() +1;
-        sql = "INSERT INTO Actividad_Empleado (id_empleado, id_actvempleado)" +
-                "VALUES (?, ?);";
-        for(int i : listaEmpleados){
-            jdbcTemplate.update(sql, i, id_actvempleado);
+        Actividad_empleado act = new Actividad_empleado();
+        act.setId_orden(id_orden);
+        for(int i = 0; i < listaEmpleados.size(); i++){
+            act.setId_actvempleado(id_actvempleado);
+            act.setId_empleado(listaEmpleados.get(i));
+            nuevaOrdenActv(act, num_responsable == i);
             id_actvempleado++;
         }
+    }
 
+    @Override
+    public void borrarOrden(int id_orden){
+        String sql = "UPDATE Orden_de_trabajo " +
+                "SET visible = 'N' " +
+                "WHERE id_orden = ?;";
+        jdbcTemplate.update(sql, id_orden);
     }
 }

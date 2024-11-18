@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.models.ApiResponse;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevaOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IOrdenService;
 
@@ -51,5 +52,33 @@ public class OrdenController {
     public ResponseEntity<DetalleOrdenRequest> detalleOrden(@PathVariable int id_orden){
         var result = iOrdenService.detalleOrden(id_orden);
         return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @PostMapping("/guardarOrden/{id_orden}")
+    public ResponseEntity<?> guardarOrden(@PathVariable int id_orden, @RequestBody GuardarOrdenRequest request) {
+        try{
+            iOrdenService.guardarOrden(
+                    id_orden,
+                    request.getDescripcion(),
+                    request.getId_plan(),
+                    request.getListaEmpleados(),
+                    request.getNum_responsable()
+            );
+            return ResponseEntity.ok(new ApiResponse("Orden guardada exitosamente"));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponse("Error al guardar la orden: " + e.getMessage()));
+        }
+    }
+
+    @PostMapping("/borrarOrden/{id_orden}")
+    public ResponseEntity<?> borrarOrden(@PathVariable int id_orden){
+        try{
+            iOrdenService.borrarOrden(id_orden);
+            return ResponseEntity.ok(new ApiResponse("Orden borrada exitosamente"));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(new ApiResponse("Error al guardar la orden: " + e.getMessage()));
+        }
     }
 }
