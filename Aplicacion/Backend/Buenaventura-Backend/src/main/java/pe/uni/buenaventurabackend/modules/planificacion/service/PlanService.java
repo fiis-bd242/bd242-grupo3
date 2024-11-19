@@ -5,10 +5,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
-import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IOrdenRepository;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IPlanRepository;
-import pe.uni.buenaventurabackend.modules.planificacion.repository.PlanRepository;
 
 import java.util.List;
 import java.util.Map;

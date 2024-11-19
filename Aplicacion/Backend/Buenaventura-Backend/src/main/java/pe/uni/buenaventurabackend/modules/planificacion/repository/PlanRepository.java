@@ -7,10 +7,11 @@ import org.springframework.stereotype.Repository;
 import pe.uni.buenaventurabackend.modules.gestion_reportes.models.Notificacion;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
-import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Repository
 @RequiredArgsConstructor
@@ -88,29 +89,27 @@ public class PlanRepository implements IPlanRepository{
 
     @Override
     public DetallePlanRequest detallePlan(int id_plan){
-        System.out.println("EL ID ESSSSS:");
-        System.out.println(id_plan);
-        String sql = "SELECT CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')), " +
+        String sql = "SELECT CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')) AS id_plan, " +
                 "tm.nombre_tipo_mant, " +
-                "CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')), " +
+                "CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina, " +
                 "creador.nombre AS creador, " +
                 "est.estado, " +
                 "p.fecha_plan, " +
                 "m.fecha_inicio_programado, " +
                 "m.fecha_fin_programado, " +
                 "responsable.nombre AS responsable, " +
-                "crit.nivel, " +
-                "CONCAT('OT-', LPAD(o.id_orden::TEXT, 4, '0')), " +
+                "crit.nivel AS criticidad, " +
+                "CONCAT('OT-', LPAD(o.id_orden::TEXT, 4, '0')) AS id_orden, " +
 
                 "(SELECT string_agg(DISTINCT es.nombre_equipo_soporte, ',') " +
                 "FROM EquipoSXMantenimiento esm " +
                 "INNER JOIN Equipo_de_Soporte es ON es.id_equipo_soporte = esm.id_equipo_soporte " +
-                "WHERE esm.id_act_mantto = m.id_act_mantto) AS equipos_soporte, " +
+                "WHERE esm.id_act_mantto = m.id_act_mantto) AS listaEquipos, " +
 
                 "(SELECT string_agg(DISTINCT i.nombre || ' (Cantidad: ' || im.cantidad || ')', ', ') " +
                 "FROM InsumoXMantenimiento im " +
                 "INNER JOIN Insumo i ON i.id_insumo = im.id_insumo " +
-                "WHERE im.id_act_mantto = m.id_act_mantto) AS insumos_utilizados " +
+                "WHERE im.id_act_mantto = m.id_act_mantto) AS listaInsumos " +
                 "FROM Plan_de_mantenimiento p " +
                 "INNER JOIN Mantenimiento m ON m.id_plan = p.id_plan " +
                 "INNER JOIN Tipo_mantenimiento tm ON tm.id_tipo_mant = m.id_tipo_mant " +
@@ -121,7 +120,44 @@ public class PlanRepository implements IPlanRepository{
                 "INNER JOIN Estado_mantto est ON m.id_estado = est.id_estado " +
                 "INNER JOIN Criticidad crit ON crit.id_criticidad = p.id_criticidad " +
                 "WHERE act.nombre_actv = 'Responsable' AND p.id_plan = ? AND m.id_estado != 8;";
-        return jdbcTemplate.queryForObject(sql, DetallePlanRequest.class, id_plan);
+        return jdbcTemplate.query(sql, rs -> {
+            if (rs.next()) {
+                DetallePlanRequest detalle = new DetallePlanRequest();
+                detalle.setId_plan(rs.getString("id_plan"));
+                detalle.setNombre_tipo_mant(rs.getString("nombre_tipo_mant"));
+                detalle.setId_maquina(rs.getString("id_maquina"));
+                detalle.setCreador(rs.getString("creador"));
+                detalle.setEstado(rs.getString("estado"));
+                detalle.setFecha_plan(rs.getString("fecha_plan"));
+                detalle.setFecha_inicio_programado(rs.getString("fecha_inicio_programado"));
+                detalle.setFecha_fin_programado(rs.getString("fecha_fin_programado"));
+                detalle.setResponsable(rs.getString("responsable"));
+                detalle.setCriticidad(rs.getString("criticidad"));
+                detalle.setId_orden(rs.getString("id_orden"));
+
+                // Convertir lista de equipos y lista de insumos en arrays separados
+                String listaEquipos = rs.getString("listaEquipos");
+                if (listaEquipos != null) {
+                    detalle.setListaEquipos(List.of(listaEquipos.split(",")));
+                }
+
+                String listaInsumos = rs.getString("listaInsumos");
+                if (listaInsumos != null) {
+                    List<InsumoDTON> insumos = Arrays.stream(listaInsumos.split(","))
+                            .map(insumo -> {
+                                String[] parts = insumo.split("\\(Cantidad: ");
+                                String nombre_insumo = parts[0].trim();
+                                int cantidad = Integer.parseInt(parts[1].replace(")", "").trim());
+                                return new InsumoDTON(nombre_insumo, cantidad);
+                            })
+                            .collect(Collectors.toList());
+                    detalle.setListaInsumos(insumos);
+                }
+
+                return detalle;
+            }
+            return null;
+        }, id_plan);
     }
 
     @Override

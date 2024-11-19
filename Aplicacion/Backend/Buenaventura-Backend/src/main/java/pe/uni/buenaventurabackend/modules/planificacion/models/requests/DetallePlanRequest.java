@@ -3,7 +3,8 @@ package pe.uni.buenaventurabackend.modules.planificacion.models.requests;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTO;
+import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTON;
+
 import java.util.List;
 
 @Data
@@ -21,6 +22,6 @@ public class DetallePlanRequest {
     private String responsable;
     private String criticidad;
     private String id_orden;
-    private List<String> lista_equipos;
-    private List<InsumoDTO> lista_insumos;
+    private List<String> listaEquipos;
+    private List<InsumoDTON> listaInsumos;
 }
