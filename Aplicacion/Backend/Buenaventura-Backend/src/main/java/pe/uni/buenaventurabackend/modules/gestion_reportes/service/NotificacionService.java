@@ -9,7 +9,7 @@ import pe.uni.buenaventurabackend.modules.gestion_reportes.repository.Notificaci
 public class NotificacionService {
     private final NotificacionRepository notificacionRepository;
 
-    public void crearNotificacion(int idRegistro, String asunto, String mensaje, int idRemitente) {
-        notificacionRepository.insertarNotificacion(idRegistro, asunto, mensaje, idRemitente);
+    public void crearNotificacion(Integer idRegistro, String asunto, String mensaje, int idRemitente, String fecha_Reporte, int id_tipo) {
+        notificacionRepository.insertarNotificacion(idRegistro, asunto, mensaje, idRemitente,fecha_Reporte, id_tipo);
     }
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.modules.gestion_reportes.models.*;
 import pe.uni.buenaventurabackend.modules.gestion_reportes.service.*;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -45,9 +46,10 @@ public class ReporteController {
     @GetMapping("/por-fecha")
     public ResponseEntity<List<ReporteDTO>> obtenerReportesPorFecha(
             @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaInicial,
-            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaFinal) {
+            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaFinal,
+            @RequestParam int offset) {
 
-        List<ReporteDTO> reportes = iReporteService.obtenerReportesPorFecha(fechaInicial, fechaFinal);
+        List<ReporteDTO> reportes = iReporteService.obtenerReportesPorFecha(fechaInicial, fechaFinal, offset);
         return new ResponseEntity<>(reportes, HttpStatus.OK);
     }
 
@@ -76,14 +78,40 @@ public class ReporteController {
 
     @PostMapping("/notificacion-registros")
     public ResponseEntity<Void> crearNotificacion(@RequestBody Map<String, Object> payload) {
-        int Id_registro = (int) payload.get("Id_registro");
-        String Asunto = (String) payload.get("Asunto");
-        String Mensaje = (String) payload.get("Mensaje");
-        int Id_remitente = (int) payload.get("Id_remitente");
+        try {
+            Integer Id_registro = (Integer) payload.get("Id_registro");
+            String Asunto = (String) payload.get("Asunto");
+            String Mensaje = (String) payload.get("Mensaje");
+            int Id_remitente = (int) payload.get("Id_remitente");
+            String fechaReporteStr = (String) payload.get("fecha_Reporte"); // Fecha en formato "yyyy-MM-dd"
+            int id_tipo = (int) payload.get("id_tipo");
 
-        notificacionService.crearNotificacion(Id_registro, Asunto, Mensaje, Id_remitente);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+            // Parsear la fecha si no es nula
+            Date fecha_Reporte = null;
+            if (fechaReporteStr != null) {
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                fecha_Reporte = sdf.parse(fechaReporteStr);
+            }
+
+            // Si la fecha es válida, puedes convertirla a formato string
+            String fechaReporteFormatted = null;  // Aquí declaramos la variable correctamente
+            if (fecha_Reporte != null) {
+                SimpleDateFormat sdfOut = new SimpleDateFormat("yyyy-MM-dd");
+                fechaReporteFormatted = sdfOut.format(fecha_Reporte); // Formato 'yyyy-MM-dd'
+            }
+
+            // Llamar al servicio con la fecha, ya sea en formato String o Date
+            // Pasamos fechaReporteFormatted, que es el String con formato 'yyyy-MM-dd'
+            notificacionService.crearNotificacion(Id_registro, Asunto, Mensaje, Id_remitente, fechaReporteFormatted, id_tipo);
+
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        } catch (Exception e) {
+            System.out.println("ID_REMITENTE:" + payload.get("Id_remitente"));
+            System.out.println(e);
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
+
 
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<Void> eliminarRegistro(@PathVariable("id") int idRegistro) {
@@ -91,12 +119,13 @@ public class ReporteController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/{idReporte}/estado")
+    @PutMapping("/estado")
     public ResponseEntity<String> actualizarEstadoReporte(
-            @PathVariable Integer idReporte,
+            @RequestParam("fechaReporte")
+            @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaReporte,
             @RequestParam Integer nuevoEstado) {
 
-        int rowsUpdated = iReporteService.actualizarEstadoReporte(idReporte, nuevoEstado);
+        int rowsUpdated = iReporteService.actualizarEstadoReporte(fechaReporte, nuevoEstado);
 
         if (rowsUpdated > 0) {
             return ResponseEntity.ok("Estado del reporte actualizado correctamente.");

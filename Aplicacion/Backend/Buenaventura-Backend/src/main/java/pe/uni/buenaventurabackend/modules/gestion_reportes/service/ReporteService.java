@@ -36,15 +36,15 @@ public class ReporteService implements IReporteService {
     }
 
     @Override
-    public List<ReporteDTO> obtenerReportesPorFecha(Date fechaInicial, Date fechaFinal) {
+    public List<ReporteDTO> obtenerReportesPorFecha(Date fechaInicial, Date fechaFinal, Integer offset) {
         List<ReporteDTO> lists;
-        lists = iReporteRepository.obtenerReportesPorFecha(fechaInicial,fechaFinal);
+        lists = iReporteRepository.obtenerReportesPorFecha(fechaInicial,fechaFinal, offset);
         return lists;
     }
 
     @Override
-    public int actualizarEstadoReporte(Integer idReporte, Integer nuevoEstado) {
-        int number = iReporteRepository.actualizarEstadoReporte(idReporte,nuevoEstado);
+    public int actualizarEstadoReporte(Date fechaReporte, Integer nuevoEstado) {
+        int number = iReporteRepository.actualizarEstadoReporte(fechaReporte,nuevoEstado);
         return 1;
     }
 

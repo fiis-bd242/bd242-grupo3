@@ -28,7 +28,7 @@ public class ReporteRepository implements IReporteRepository {
         String sql = "SELECT " +
                 "TO_CHAR(r.Fecha_registro, 'HH24:MI') AS Hora_registro, " +
                 "'M00' || r.Id_Act_mantto AS Codigo_actividad, " +
-                "pm.Descripcion AS Nombre_equipo, " +
+                "nombre_tipo AS Nombre_equipo, " +
                 "e.Nombre AS Tecnico_responsable, " +
                 "tm.nombre_tipo_mant AS Tipo_mantenimiento, " +
                 "TO_CHAR(r.Fecha_registro, 'YYYY-MM-DD') AS Fecha_dia " +
@@ -37,6 +37,8 @@ public class ReporteRepository implements IReporteRepository {
                 "INNER JOIN Plan_de_mantenimiento pm ON m.Id_plan = pm.Id_plan " +
                 "INNER JOIN Empleado e ON r.Id_empleado = e.Id_empleado " +
                 "INNER JOIN Maquina ma ON m.Id_maquina = ma.Id_maquina " +
+                "INNER JOIN " +
+                "tipo_maquina tma ON ma.id_tipo_maquina = tma.id_tipo_maquina "+
                 "INNER JOIN Tipo_mantenimiento tm ON m.id_tipo_mant = tm.id_tipo_mant " +
                 "WHERE DATE(r.Fecha_registro) = DATE(CURRENT_DATE);";
 
@@ -50,7 +52,7 @@ public class ReporteRepository implements IReporteRepository {
     }
 
     @Override
-    public List<ReporteDTO> obtenerReportesPorFecha(Date fechaInicial, Date fechaFinal) {
+    public List<ReporteDTO> obtenerReportesPorFecha(Date fechaInicial, Date fechaFinal, Integer offset) {
         String sql = "SELECT " +
                 "'R' || TO_CHAR(rep.Fecha_reporte, 'YYYYMMDD') AS Codigo_Registro, " +
                 "TO_CHAR(rep.Fecha_reporte, 'YYYY-MM-DD') AS Fecha_del_Dia, " +
@@ -68,8 +70,8 @@ public class ReporteRepository implements IReporteRepository {
                 "FROM " +
                 "Registro " +
                 "WHERE " +
-                "Fecha_inicial >= ? " +
-                "AND Fecha_inicial <= ? " +
+                "Fecha_registro >= ? " +
+                "AND Fecha_registro <= ? " +
                 "GROUP BY " +
                 "TO_CHAR(Fecha_registro, 'YYYY-MM-DD') " +
                 ") AS registros_por_dia " +
@@ -80,10 +82,11 @@ public class ReporteRepository implements IReporteRepository {
                 "INNER JOIN " +
                 "empleado ON empleado.id_empleado = rep.id_jefe "+
                 "ORDER BY " +
-                "Fecha_del_Dia";
+                "Fecha_del_Dia "+
+                "LIMIT 7 OFFSET (7 * (? - 1))";
 
         // Ejecutar la consulta con parámetros y mapear el resultado
-        return jdbcTemplate.query(sql, new Object[]{fechaInicial, fechaFinal}, (rs, rowNum) -> {
+        return jdbcTemplate.query(sql, new Object[]{fechaInicial, fechaFinal, offset}, (rs, rowNum) -> {
             ReporteDTO reporte = new ReporteDTO();
             reporte.setCodigoRegistro(rs.getString("Codigo_Registro"));
             reporte.setFechaDelDia(rs.getString("Fecha_del_Dia"));
@@ -96,8 +99,8 @@ public class ReporteRepository implements IReporteRepository {
     }
 
     @Override
-    public int actualizarEstadoReporte(Integer idReporte, Integer nuevoEstado) {
-        String sql = "UPDATE Reportes SET id_estado_reporte = ? WHERE Id_reporte = ?";
-        return jdbcTemplate.update(sql, nuevoEstado, idReporte);
+    public int actualizarEstadoReporte(Date fechaReporte, Integer nuevoEstado) {
+        String sql = "UPDATE Reportes SET id_estado_reporte = ? WHERE fecha_reporte = ?";
+        return jdbcTemplate.update(sql, nuevoEstado, fechaReporte);
     }
 }

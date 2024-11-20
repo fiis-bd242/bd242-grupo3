@@ -37,7 +37,7 @@
     methods: {
       async fetchData() {
         try {
-          const response = await axios.get(`/api/planificacion/listaplanes/1?offset=${this.offset}`);
+          const response = await axios.get(`/api/planificacion/listaplanes/1`);
           this.dataList = response.data;
         } catch (error) {
           console.error("Error al obtener los datos:", error);

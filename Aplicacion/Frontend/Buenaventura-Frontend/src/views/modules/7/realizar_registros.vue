@@ -4,11 +4,11 @@
     <form @submit.prevent="showConfirmation" class="space-y-2">
       <h4 class="text-3xl font-semibold">Fecha</h4>
       <div class="flex space-x-2">
-        <input type="datetime-local" class="border rounded p-1 border-black">
-        <input type="datetime-local" class="border rounded p-1 border-black">
+        <input v-model="fecha_inicial" type="datetime-local" class="border rounded p-1 border-black">
+        <input v-model="fecha_registro" type="datetime-local" class="border rounded p-1 border-black">
       </div>
       <h4 class="text-3xl font-semibold">Descripcion de la Actividad</h4>
-      <textarea class="border p-1 w-full border-black" placeholder="Describa el mantenimiento" name="desc" rows="4"></textarea>
+      <textarea v-model="observaciones" class="border p-1 w-full border-black" placeholder="Describa el mantenimiento" name="desc" rows="4"></textarea>
       <h4 class="text-3xl font-semibold">Incidencias</h4>
       <div class="flex space-x-2 w-full items-center">
         <input v-model="messageError" type="text" class="border border-black p-2 w-96" placeholder="Escriba la incidencia presentada">
@@ -57,14 +57,12 @@
             <input type="date" placeholder="Fecha del mantenimiento" class="border p-2 rounded-md w-full md:w-1/2">
           </div>
 
-          <!-- Select -->
           <select class="border p-2 rounded-md w-full mt-4">
             <option>Opción 1</option>
             <option>Opción 2</option>
             <option>Opción 3</option>
           </select>
 
-          <!-- Botones Asignar y Cerrar -->
           <div class="flex justify-end space-x-4 mt-6">
             <button @click="closeDialog" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Cerrar</button>
             <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Asignar</button>
@@ -72,8 +70,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Dialogo de Confirmación de Registro -->
     <div v-if="isConfirmationDialogOpen" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
       <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
         <h3 class="text-lg font-bold mb-4">¿Confirmar Registro?</h3>
@@ -90,6 +86,7 @@
 <script>
 import ErrorTags from '@/components/ErrorTags.vue';
 import Estrella from '@/components/icons/StartIcon.vue';
+import axios from 'axios';
 
 export default {
   components: {
@@ -98,14 +95,59 @@ export default {
   },
   data() {
     return {
+      fecha_registro: "",
+      fecha_inicial: "",
+      id_act_mantto: 4,
+      observaciones: "",
       ranked: 0,
       messages: [],
       messageError: '',
-      isDialogOpen: false,           // Estado para controlar el dialogo de Seleccionar Actividad
-      isConfirmationDialogOpen: false // Estado para controlar el dialogo de confirmación
+      isDialogOpen: false,         
+      isConfirmationDialogOpen: false 
     };
   },
   methods: {
+    convertirFechaAFormatoISOConZonaHoraria(fechaISO) {
+      const fecha = new Date(fechaISO); // Crear un objeto Date a partir de la fecha proporcionada
+      const offset = fecha.getTimezoneOffset(); // Desplazamiento en minutos
+
+      const offsetHoras = Math.abs(Math.floor(offset / 60));
+      const offsetMinutos = Math.abs(offset % 60);
+      
+      // Construir el desplazamiento del huso horario
+      const signo = offset > 0 ? "-" : "+";
+      const offsetString = `${signo}${String(offsetHoras).padStart(2, '0')}:${String(offsetMinutos).padStart(2, '0')}`;
+      
+      // Formatear la fecha a `YYYY-MM-DDTHH:mm:ss`
+      const fechaFormateada = fecha.toISOString().replace("Z", ""); // Eliminar la Z del final
+      const fechaSinMilisegundos = fechaFormateada.split(".")[0]; // Quitar milisegundos
+
+      return `${fechaSinMilisegundos}${offsetString}`;
+    },
+    async crearRegistro(){
+      let to_message = []
+      for (const message of this.messages){
+        to_message.push({incidencia : message})
+      }
+      
+      await axios.post("http://localhost:8080/api/reportes/nuevo-con-incidencias", {
+        registro: {
+          fecha_registro: this.convertirFechaAFormatoISOConZonaHoraria(this.fecha_registro),
+          fecha_inicial : this.convertirFechaAFormatoISOConZonaHoraria(this.fecha_inicial),
+          id_empleado: 4,
+          id_act_mantto: 4,
+          calificacion: this.ranked,
+          observaciones: this.observaciones
+        },
+        incidencias : to_message
+      })
+      .then(response => {
+        console.log("POST realizado con exito");
+      })
+      .catch(error => {
+        console.log(error);
+      })
+    },
     setStar(index) {
       this.ranked = index + 1;
     },
@@ -113,6 +155,7 @@ export default {
       // Evitar duplicados
       this.messages = this.messages.filter((message) => message !== this.messageError);
       this.messages.push(this.messageError);
+      
       this.messageError = '';
     },
     removeMessage(message) {
@@ -132,10 +175,10 @@ export default {
       this.isConfirmationDialogOpen = false;
     },
     confirmRegistration() {
-      // Lógica para confirmar el registro
-      console.log("Registro confirmado");
-      this.isConfirmationDialogOpen = false; // Cerrar el dialogo de confirmación
-    }
+      this.crearRegistro()
+      this.isConfirmationDialogOpen = false; 
+    },
+    
   },
 };
 </script>

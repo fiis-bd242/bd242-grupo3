@@ -2,9 +2,10 @@
     <div class="mx-4 my-2 space-y-3 w-full">
       <h3 class="font-extrabold text-3xl">Verificación de Datos</h3>
   
-      <form @submit.prevent="console.log('1');" class="flex space-x-2 justify-end mx-2 mb-5">
-        <input type="datetime-local" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
-        <input type="datetime-local" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
+      <form @submit.prevent="this.offset= 1; getReportes();" class="flex space-x-2 justify-end mx-2 mb-5">
+        <button class="bg-blue-500 px-2 py-1 text-white font-bold rounded border border-black">Cargar Datos</button>
+        <input v-model="filtro_inicio" type="date" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
+        <input v-model="filtro_final" type="date" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
       </form>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table class="w-full text-sm text-left rtl:text-right text-gray-500">
@@ -29,18 +30,30 @@
                 <button @click="showDetailsDialog = true" class="p-2 rounded-full bg-blue-500 hover:bg-blue-400 duration-100 border-black border text-white">
                   <PaperIcon />
                 </button>
-                <button @click="openConfirmationDialog(registro.codigoRegistro)" class="p-2 rounded-full bg-green-500 hover:bg-green-400 duration-100 border-black border text-white">
+                <button v-if="registro.estadoReporte === 'No Verificado'" @click="openConfirmationDialog(registro.codigoRegistro,registro.fechaDelDia)" class="p-2 rounded-full bg-green-500 hover:bg-green-400 duration-100 border-black border text-white">
                   <CheckIcon />
                 </button>
-                <button @click="showMessageDialog = true" class="p-2 rounded-full bg-red-500 hover:bg-red-400 duration-100 border-black border text-white">
+                <button v-if="registro.estadoReporte === 'No Verificado'"  @click="showMessageDialog = true; fecha_seleccionada = registro.fechaDelDia" class="p-2 rounded-full bg-red-500 hover:bg-red-400 duration-100 border-black border text-white">
                   <MessageIcon />
                 </button>
               </td>
             </tr>
           </tbody>
         </table>
+        
       </div>
-  
+      <div class="flex space-x-2 items-center justify-end">
+        <button
+          @click="backPage"  
+          class="border p-3 border-black "
+          :disabled="offset === 1"
+        ><</button>
+        <p class="">{{ offset }}</p>
+        <button 
+        @click="nextPage"
+        :disabled=" activate && registros.length === 0"
+        class="border p-3 border-black">></button>
+      </div>
       <!-- Dialogo de Confirmación (Check) -->
       <div v-if="showConfirmationDialog" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
@@ -48,7 +61,7 @@
           <p class="text-gray-700 mb-6">¿Estás seguro de que deseas verificar el registro {{ selectedCodRegistro }}?</p>
           <div class="flex justify-center space-x-4">
             <button @click="showConfirmationDialog = false" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Cancelar</button>
-            <button @click="confirmVerification" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Confirmar</button>
+            <button @click="confirmVerification()" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Confirmar</button>
           </div>
         </div>
       </div>
@@ -98,6 +111,7 @@
         </div>
       </div>
     </div>
+    
   </template>
   
   <script>
@@ -105,17 +119,22 @@
   import MessageIcon from '@/components/icons/MessageIcon.vue';
   import PaperIcon from '@/components/icons/PaperIcon.vue';
   import axios from 'axios';
-  
+
   export default {
     components: {
       CheckIcon,
       PaperIcon,
-      MessageIcon
+      MessageIcon,
+
     },
     data() {
       return {
-        
+        filtro_inicio: "",
+        filtro_final: "",
+        fecha_seleccionada : "",
+        activate : false,
         registros : [],
+        offset : 1,
         showConfirmationDialog: false,
         showDetailsDialog: false,
         showMessageDialog: false,
@@ -124,26 +143,62 @@
         description: ""
       };
     },
-    mounted() {
-      this.getReportes()
-    },
+
     methods: {
-      openConfirmationDialog(codRegistro) {
+      nextPage() {
+        this.offset +=1
+        this.getReportes()
+      },
+      async creacion_notificacion(){
+        await axios.post("http://localhost:8080/api/reportes/notificacion-registros", {
+          Id_registro: null,
+          Asunto: this.subject,
+          Mensaje: this.description,
+          Id_remitente: 5,
+          fecha_Reporte: this.fecha_seleccionada,
+          id_tipo: 1
+        })
+        .then(response => {
+          console.log(response);
+        })
+        .catch(error => {
+          console.log(error);
+        })
+      },
+      backPage() {
+        this.offset -=1
+        this.getReportes()
+      },
+      async aceptarReporte(){
+        await axios.put(`http://localhost:8080/api/reportes/estado?nuevoEstado=2&fechaReporte=${this.fecha_seleccionada}`)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(error => {
+          console.log(error);
+        })
+      },
+      openConfirmationDialog(codRegistro, fecha) {
         this.selectedCodRegistro = codRegistro;
+        this.fecha_seleccionada = fecha;
         this.showConfirmationDialog = true;
       },
       confirmVerification() {
         // Acción de confirmación para el registro seleccionado
+        this.aceptarReporte()
         console.log(`Registro ${this.selectedCodRegistro} verificado.`);
         this.showConfirmationDialog = false;
       },
       confirmMessage() {
         // Acción de confirmación para enviar mensaje
+        this.creacion_notificacion()
         console.log(`Asunto: ${this.subject}, Descripción: ${this.description}`);
         this.showMessageDialog = false;
       },
       async getReportes(){
-        await axios.get("/api/reportes/por-fecha?fechaInicial=2024-11-01&fechaFinal=2024-11-15")
+        
+        this.activate = true
+        await axios.get(`/api/reportes/por-fecha?fechaInicial=${this.filtro_inicio}&fechaFinal=${this.filtro_final}&offset=${this.offset}`)
         .then(response => {
           
           this.registros = response.data

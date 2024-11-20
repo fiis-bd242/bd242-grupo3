@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IOrdenRepository;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IPlanRepository;
 
@@ -81,6 +82,29 @@ public class PlanService implements IPlanService{
     @Override
     public void reservaInsumo(List<InsumoDTO> listaInsumos){
 
+    }
+
+    @Transactional
+    @Override
+    public void envioNotificacion(int id_plan){
+        //Obtener el id del remitente(usuario autenticado)
+    }
+
+    @Override
+    public DetallePlanRequest detallePlan(int id_plan){
+        return iPlanRepository.detallePlan(id_plan);
+    }
+
+    @Transactional
+    @Override
+    public void guardarPlan(int id_plan, Plan_de_mantenimiento p, Mantenimiento m, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos){
+        iPlanRepository.guardarPlan(id_plan, p, m, listaEquipos, listaInsumos);
+    }
+
+    @Transactional
+    @Override
+    public void borrarPlan(int id_plan){
+        iPlanRepository.borrarPlan(id_plan);
     }
 
 }
