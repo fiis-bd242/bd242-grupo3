@@ -3,6 +3,7 @@ package pe.uni.buenaventurabackend.modules.planificacion.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import pe.uni.buenaventurabackend.modules.planificacion.models.Notificaciones;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IOrdenRepository;
@@ -69,25 +70,35 @@ public class PlanService implements IPlanService{
         }
 
         //Reserva de los equipos de soporte e insumos (interaccion con otros modulos)
+        reservaEquipo(listaEquipos);
+        reservaInsumo(listaInsumos);
 
     }
 
     @Transactional
     @Override
     public void reservaEquipo(List<Integer> listaEquipos){
-
+        for (int i : listaEquipos){
+            iPlanRepository.reservaEquipo(i);
+        }
     }
 
     @Transactional
     @Override
     public void reservaInsumo(List<InsumoDTO> listaInsumos){
-
+        for (InsumoDTO insumo : listaInsumos){
+            iPlanRepository.reservaInsumo(insumo.getId_insumo(), insumo.getCantidad());
+        }
     }
 
     @Transactional
     @Override
-    public void envioNotificacion(int id_plan){
-        //Obtener el id del remitente(usuario autenticado)
+    public void envioNotificacion(int id_usuario, int id_plan){
+        Notificaciones noti = new Notificaciones();
+        noti.setId_notificacion(iPlanRepository.conteoNotificaciones() +1);
+        noti.setId_remitente(id_usuario);
+        noti.setId_plan(id_plan);
+        iPlanRepository.envioNotificacion(noti);
     }
 
     @Override

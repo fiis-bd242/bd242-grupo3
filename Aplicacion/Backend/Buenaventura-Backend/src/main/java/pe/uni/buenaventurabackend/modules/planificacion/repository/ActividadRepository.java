@@ -5,10 +5,14 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Actividad_empleado;
+import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleActividadRequest;
+import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Repository
 @RequiredArgsConstructor
@@ -42,7 +46,18 @@ public class ActividadRepository implements IActividadRepository{
 
     @Override
     public DetalleActividadRequest detalleActividad(int id_actvempleado){
-        String sql = "SELECT CONCAT('AC-', LPAD(act.id_actvempleado::TEXT, 4, '0')), act.id_estado, CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')), act.nombre_actv, emp.id_empleado, emp.nombre, act.fecha_inicio, act.fecha_fin, es.id_equipo_soporte, es.nombre_equipo_soporte, o.id_orden, act.descripcion_actv " +
+        String sql = "SELECT CONCAT('AC-', LPAD(act.id_actvempleado::TEXT, 4, '0')) AS id_actvempleado, " +
+                "act.id_estado," +
+                " CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
+                " act.nombre_actv," +
+                " emp.id_empleado," +
+                " emp.nombre AS nombre_empleado," +
+                " act.fecha_inicio AS act_fecha_inicio," +
+                " act.fecha_fin AS act_fecha_fin," +
+                " es.id_equipo_soporte," +
+                " es.nombre_equipo_soporte," +
+                " o.id_orden," +
+                " act.descripcion_actv " +
                 "FROM Actividad_empleado act " +
                 "INNER JOIN Empleado emp ON emp.id_empleado = act.id_empleado " +
                 "INNER JOIN Orden_de_trabajo o ON o.id_orden = act.id_orden " +
@@ -51,7 +66,26 @@ public class ActividadRepository implements IActividadRepository{
                 "LEFT JOIN Equipo_de_Soporte es ON es.id_equipo_soporte = act.id_equipo_soporte " +
 
                 "WHERE act.id_actvempleado = ?";
-        return jdbcTemplate.queryForObject(sql, DetalleActividadRequest.class, id_actvempleado);
+        return jdbcTemplate.query(sql, new Object[]{id_actvempleado}, rs -> {
+            if (rs.next()) {
+                DetalleActividadRequest detalle = new DetalleActividadRequest();
+                detalle.setId_actvempleado(rs.getString("id_actvempleado"));
+                detalle.setId_estado(rs.getString("id_estado"));
+                detalle.setId_maquina(rs.getString("id_maquina"));
+                detalle.setNombre_actv(rs.getString("nombre_actv"));
+                detalle.setId_empleado(rs.getString("id_empleado"));
+                detalle.setNombre_empleado(rs.getString("nombre_empleado"));
+                detalle.setAct_fecha_inicio(rs.getString("act_fecha_inicio"));
+                detalle.setAct_fecha_fin(rs.getString("act_fecha_fin"));
+                detalle.setId_equipo_soporte(rs.getString("id_equipo_soporte"));
+                detalle.setNombre_equipo_soporte(rs.getString("nombre_equipo_soporte"));
+                detalle.setId_orden(rs.getString("id_orden"));
+                detalle.setDescripcion_actv(rs.getString("descripcion_actv"));
+
+                return detalle;
+            }
+            return null;
+        });
     }
 
     @Override

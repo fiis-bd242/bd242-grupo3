@@ -15,7 +15,7 @@ public interface IPlanService {
     void nuevoPlan(Plan_de_mantenimiento p, Mantenimiento mant, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos);
     void reservaEquipo(List<Integer> listaEquipos);
     void reservaInsumo(List<InsumoDTO> listaInsumos);
-    void envioNotificacion(int id_plan);
+    void envioNotificacion(int id_usuario, int id_plan);
     DetallePlanRequest detallePlan(int id_plan);
     void guardarPlan(int id_plan, Plan_de_mantenimiento p, Mantenimiento m, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos);
     void borrarPlan(int id_plan);

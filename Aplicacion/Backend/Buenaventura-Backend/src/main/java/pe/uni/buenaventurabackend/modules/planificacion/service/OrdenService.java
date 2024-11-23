@@ -71,20 +71,30 @@ public class OrdenService implements IOrdenService{
     @Transactional
     @Override
     public void guardarOrden(int id_orden, String descripcion, int id_plan, List<Integer> lista_empleados, int  num_responsable){
+        int id_actvempleado = iActividadRepository.conteoActividad() +1;
         iOrdenRepository.guardarOrden(id_orden, descripcion, id_plan);
 
         //Añadir responsable
         Actividad_empleado act = new Actividad_empleado();
-        int id_actvempleado = iActividadRepository.conteoActividad() +1;
         act.setId_actvempleado(id_actvempleado);
         id_actvempleado++;
         act.setId_empleado(lista_empleados.get(num_responsable));
         act.setId_orden(id_orden);
+        System.out.println("Antes de responsable");
+        System.out.println(id_actvempleado);
+        System.out.println(act.getId_actvempleado());
         iOrdenRepository.nuevaOrdenActv(act,true, id_plan);
+        System.out.println("Despues de responsable");
+        System.out.println(id_actvempleado);
+        System.out.println(act.getId_actvempleado());
 
 
         //Añadir el resto de empleados
+        System.out.println("Antes de bucle");
         for (int i = 0; i < lista_empleados.size(); i++){
+            System.out.println("Dentro del bucle con i,id-act");
+            System.out.println(i);
+            System.out.println(id_actvempleado);
             if (num_responsable != i){
                 act.setId_actvempleado(id_actvempleado);
                 act.setId_empleado(lista_empleados.get(i));

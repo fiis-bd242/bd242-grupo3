@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import pe.uni.buenaventurabackend.modules.gestion_reportes.models.Notificacion;
+import pe.uni.buenaventurabackend.modules.planificacion.models.Notificaciones;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 
@@ -161,7 +161,7 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public void envioNotificacion(Notificacion noti, int id_plan){
+    public void envioNotificacion(Notificaciones noti){
         String sql = "INSERT INTO Notificaciones (id_notificacion, asunto, mensaje, fecha_notificacion, id_remitente, id_destinatario, id_registro, id_reporte, id_tipo) " +
                 "SELECT ?,'Nuevo plan por aceptar',CONCAT('Nuevo plan de mantenimiento disponible con fecha ' , current_date), current_date, ?, e.id_empleado, null, null, 2 " +
                 "FROM Empleado e " +
@@ -174,12 +174,12 @@ public class PlanRepository implements IPlanRepository{
                 "INNER JOIN Plan_de_Mantenimiento p " +
                 "ON p.id_plan = m.id_plan " +
                 " WHERE p.id_plan = ? AND act.nombre_actv = 'Responsable';";
-        jdbcTemplate.update(sql, noti.getId_notificacion(), noti.getId_remitente(), id_plan);
+        jdbcTemplate.update(sql, noti.getId_notificacion(), noti.getId_remitente(), noti.getId_plan());
 
         sql = "UPDATE Mantenimiento " +
                 "SET id_estado = 2 " +
                 "WHERE id_plan = ?;";
-        jdbcTemplate.update(sql, id_plan);
+        jdbcTemplate.update(sql, noti.getId_plan());
     }
 
     @Override
@@ -250,4 +250,58 @@ public class PlanRepository implements IPlanRepository{
                 "WHERE id_plan = ?;";
         jdbcTemplate.update(sql, id_plan, id_plan);
     }
+
+    @Override
+    public void reservaEquipo(int id_equipo_soporte){
+        String sql = "UPDATE Equipo_de_soporte " +
+                "SET id_disponibilidad = 1 " +
+                "WHERE id_equipo_soporte = ?";
+        jdbcTemplate.update(sql, id_equipo_soporte);
+    }
+
+    @Override
+    public void reservaInsumo(int id_insumo, int cantidad){
+        String sql = "SELECT cantidad FROM Insumo " +
+                "WHERE id_insumo = ?";
+        int cant_actual = jdbcTemplate.queryForObject(sql, Integer.class, id_insumo);
+        if(cant_actual < cantidad){
+            return;
+        }
+
+        sql = "UPDATE Insumo " +
+                "SET cantidad = ? " +
+                "WHERE id_insumo = ?";
+        jdbcTemplate.update(sql, cantidad-cant_actual, id_insumo);
+
+        String sql_cant = "SELECT cantidad FROM InsumoXAlmacen " +
+                "WHERE id_insumo = ? AND cantidad > 0 LIMIT 1";
+        String sql_id = "SELECT id_insum_alm FROM InsumoXAlmacen " +
+                "WHERE id_insumo = ? AND cantidad > 0 LIMIT 1";
+        String sql_alm = "UPDATE InsumoXAlmacen " +
+                "SET cantidad = ? " +
+                "WHERE id_insum_alm = ?";
+
+        int id_insum_alm;
+        while (cantidad > 0){
+            cant_actual = jdbcTemplate.queryForObject(sql_cant, Integer.class, id_insumo);
+            id_insum_alm = jdbcTemplate.queryForObject(sql_id, Integer.class, id_insumo);
+            if(cantidad >= cant_actual){
+                jdbcTemplate.update(sql_alm, cantidad - cant_actual, id_insum_alm);
+                cantidad = cantidad - cant_actual;
+
+            }
+            else{
+                jdbcTemplate.update(sql_alm, cant_actual - cantidad, id_insum_alm);
+                cantidad = 0;
+            }
+        }
+        jdbcTemplate.queryForObject(sql, Integer.class, id_insumo);
+    }
+
+    @Override
+    public int conteoNotificaciones(){
+        String sql = "SELECT COUNT(*) FROM Notificaciones";
+        return jdbcTemplate.queryForObject(sql, Integer.class);
+    }
+
 }

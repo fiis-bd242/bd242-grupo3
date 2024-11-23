@@ -68,10 +68,15 @@ public class OrdenRepository implements IOrdenRepository {
 
     @Override
     public void nuevaOrdenActv(Actividad_empleado act, boolean responsable, int id_plan){
+        System.out.println("Info del act");
+        System.out.println(act.getId_actvempleado());
+        System.out.println(act.getId_empleado());
+        System.out.println(act.getId_orden());
+        System.out.println(id_plan);
         String sql = "";
         if(responsable){
             sql = "INSERT INTO Actividad_empleado (id_actvempleado, nombre_actv, descripcion_actv, fecha_inicio, fecha_fin, id_equipo_soporte, id_empleado, id_estado, id_orden) " +
-                    "SELECT " +
+                    "(SELECT " +
                     "?, " +
                     "'Responsable', " +
                     "'Es responsable de la ejecución completa del mantenimiento y su supervisión', " +
@@ -82,7 +87,7 @@ public class OrdenRepository implements IOrdenRepository {
                     "1, " +
                     "? " +
                     "FROM Mantenimiento m " +
-                    "WHERE id_plan = ?;";
+                    "WHERE id_plan = ? LIMIT 1);";
             jdbcTemplate.update(sql, act.getId_actvempleado(), act.getId_empleado(), act.getId_orden(), id_plan);
         }
         else {

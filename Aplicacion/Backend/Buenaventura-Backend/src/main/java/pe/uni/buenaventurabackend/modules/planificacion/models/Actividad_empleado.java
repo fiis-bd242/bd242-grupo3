@@ -15,7 +15,7 @@ public class Actividad_empleado {
     private String descripcion_actv;
     private Date fecha_inicio;
     private Date fecha_fin;
-    private int id_equipo_soporte;
+    private Integer id_equipo_soporte;
     private int id_empleado;
     private int id_estado;
     private int id_orden;

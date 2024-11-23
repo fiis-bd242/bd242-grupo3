@@ -93,4 +93,15 @@ public class PlanController {
                     .body(new ApiResponse("Error al borrar el plan: " + e.getMessage()));
         }
     }
+
+    @PostMapping("/envioNotificacion/{id_usuario}/{id_plan}")
+    public ResponseEntity<?> envioNotificacion(@PathVariable int id_usuario, @PathVariable int id_plan){
+        try{
+            iPlanService.envioNotificacion(id_usuario, id_plan);
+            return ResponseEntity.ok(new ApiResponse("Notificación enviada exitosamente"));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponse("Error al enviar la notificación: " + e.getMessage()));
+        }
+    }
 }

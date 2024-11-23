@@ -1,9 +1,8 @@
 package pe.uni.buenaventurabackend.modules.planificacion.repository;
 
-import pe.uni.buenaventurabackend.modules.gestion_reportes.models.Notificacion;
+import pe.uni.buenaventurabackend.modules.planificacion.models.Notificaciones;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
-import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 
 import java.util.List;
 import java.util.Map;
@@ -19,7 +18,16 @@ public interface IPlanRepository {
     int conteoPlanInsumo();
     int conteoMantenimiento();
     DetallePlanRequest detallePlan(int id_plan);
-    void envioNotificacion(Notificacion noti, int id_plan);
+    void envioNotificacion(Notificaciones noti);
     void guardarPlan(int id_plan, Plan_de_mantenimiento p, Mantenimiento m, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos);
     void borrarPlan(int id_plan);
+
+    //Módulo de equipo de soporte
+    void reservaEquipo(int id_equipo);
+
+    //Módulo de insumo
+    void reservaInsumo(int id_insumo, int id_cantidad);
+
+    //Módulo de gestión de reportes
+    int conteoNotificaciones();
 }
