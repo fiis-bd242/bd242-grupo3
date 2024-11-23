@@ -41,8 +41,8 @@ public class PlanRepository implements IPlanRepository{
     @Override
     public void nuevoPlanMant(Plan_de_mantenimiento plan, Mantenimiento mantenimiento){
         String sql = "INSERT INTO Plan_de_mantenimiento (id_plan,descripcion,fecha_plan,empleado_asigna,id_criticidad) " +
-                "VALUES (?,?,?,?,?); ";
-        jdbcTemplate.update(sql, plan.getId_plan(), plan.getDescripcion(), plan.getFecha_plan(), plan.getEmpleado_asigna(), plan.getId_criticidad());
+                "VALUES (?,?,current_date,?,?); ";
+        jdbcTemplate.update(sql, plan.getId_plan(), plan.getDescripcion(), plan.getEmpleado_asigna(), plan.getId_criticidad());
 
         sql = "INSERT INTO Mantenimiento (id_act_mantto,fecha_inicio_programado,fecha_fin_programado,id_orden,id_plan,id_tipo_mant,id_maquina,id_estado) " +
                 "VALUES (?,?,?,?,?,?,?,?);";
@@ -163,7 +163,7 @@ public class PlanRepository implements IPlanRepository{
     @Override
     public void envioNotificacion(Notificacion noti, int id_plan){
         String sql = "INSERT INTO Notificaciones (id_notificacion, asunto, mensaje, fecha_notificacion, id_remitente, id_destinatario, id_registro, id_reporte, id_tipo) " +
-                "SELECT ?,'Nuevo plan por aceptar',CONCAT('Nuevo plan de mantenimiento disponible con fecha ' , ?), ?, ?, e.id_empleado, null, null, 2 " +
+                "SELECT ?,'Nuevo plan por aceptar',CONCAT('Nuevo plan de mantenimiento disponible con fecha ' , current_date), current_date, ?, e.id_empleado, null, null, 2 " +
                 "FROM Empleado e " +
                 "INNER JOIN Actividad_empleado act " +
                 "ON act.id_empleado = e.id_empleado " +
@@ -174,7 +174,7 @@ public class PlanRepository implements IPlanRepository{
                 "INNER JOIN Plan_de_Mantenimiento p " +
                 "ON p.id_plan = m.id_plan " +
                 " WHERE p.id_plan = ? AND act.nombre_actv = 'Responsable';";
-        jdbcTemplate.update(sql, noti.getId_notificacion(), noti.getFecha_notificacion(), noti.getFecha_notificacion(), noti.getId_remitente(), id_plan);
+        jdbcTemplate.update(sql, noti.getId_notificacion(), noti.getId_remitente(), id_plan);
 
         sql = "UPDATE Mantenimiento " +
                 "SET id_estado = 2 " +
@@ -196,7 +196,11 @@ public class PlanRepository implements IPlanRepository{
                 m.getId_maquina(), m.getFecha_inicio_programado(),
                 m.getFecha_fin_programado(), id_plan);
 
-        sql = "UPDATE Actividad_empleado " +
+        sql = "SELECT id_act_mantto FROM Mantenimiento " +
+                "WHERE id_plan = ?";
+        m.setId_act_mantto(jdbcTemplate.queryForObject(sql, Integer.class, id_plan));
+
+        sql = "UPDATE Actividad_empleado a " +
                 "SET fecha_inicio = ?, fecha_fin = ? " +
                 "WHERE a.nombre_actv IN ( " +
                 "SELECT a.nombre_actv FROM Actividad_empleado a " +
@@ -209,21 +213,15 @@ public class PlanRepository implements IPlanRepository{
 
         // Eliminación de los equipos de soporte e insumos
         sql = "DELETE FROM EquipoSXMantenimiento " +
-                "WHERE id_act_mantto IN ( " +
-                "SELECT m.id_act_mantto " +
-                "FROM Mantenimiento m " +
-                "WHERE m.id_plan = ?); " +
+                "WHERE id_act_mantto = ?; " +
 
                 "DELETE FROM InsumoXMantenimiento " +
-                "WHERE id_act_mantto IN ( " +
-                "SELECT m.id_act_mantto " +
-                "FROM Mantenimiento m " +
-                "WHERE m.id_plan = ?);";
-        jdbcTemplate.update(sql, id_plan, id_plan);
+                "WHERE id_act_mantto = ?;";
+        jdbcTemplate.update(sql, m.getId_act_mantto(), m.getId_act_mantto());
 
         int id_equipo_mant = conteoPlanEquipo() +1;
         sql = "INSERT INTO EquipoSXMantenimiento (id_equipo_mant, id_act_mantto, id_equipo_soporte) " +
-                "VALUES(?,?,?);";
+                "VALUES(?,?,?)";
         for (int i : listaEquipos){
             jdbcTemplate.update(sql, id_equipo_mant, m.getId_act_mantto(), i);
             id_equipo_mant++;

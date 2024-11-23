@@ -22,7 +22,7 @@ public class OrdenController {
     private final IOrdenService iOrdenService;
 
     @GetMapping("/allordenes")
-    public ResponseEntity<List<Orden_de_trabajo>> list(){
+    public ResponseEntity<List<String>> list(){
         var result = iOrdenService.findAll();
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
@@ -61,7 +61,7 @@ public class OrdenController {
                     id_orden,
                     request.getDescripcion(),
                     request.getId_plan(),
-                    request.getListaEmpleados(),
+                    request.getLista_empleados(),
                     request.getNum_responsable()
             );
             return ResponseEntity.ok(new ApiResponse("Orden guardada exitosamente"));

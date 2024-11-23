@@ -12,6 +12,6 @@ import java.util.List;
 public class GuardarOrdenRequest {
     private String descripcion;
     private int id_plan;
-    private List<Integer> listaEmpleados;
+    private List<Integer> lista_empleados;
     private int num_responsable;
 }
