@@ -30,19 +30,20 @@ public class OrdenRepository implements IOrdenRepository {
     }
 
     @Override
-    public List<Map<String,Object>> find10(int offset){
-        String sql = "SELECT LPAD(p.id_plan::TEXT, 4, '0'), CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')), tm.nombre_tipo_mant, m.fecha_inicio_programado " +
-                "FROM Plan_de_Mantenimiento p " +
+    public List<Map<String,Object>> findX(int limit, int offset){
+        String sql = "SELECT LPAD(o.id_orden::TEXT, 4, '0') AS id_orden," +
+                " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
+                " tm.nombre_tipo_mant," +
+                " m.fecha_inicio_programado " +
+                "FROM orden_de_trabajo o " +
                 "INNER JOIN Mantenimiento m " +
-                "ON m.id_plan = p.id_plan " +
+                "ON m.id_plan = o.id_orden " +
                 "INNER JOIN Tipo_mantenimiento tm " +
                 "ON tm.id_tipo_mant = m.id_tipo_mant " +
-                "INNER JOIN Orden_de_trabajo o " +
-                "ON o.id_orden = m.id_orden " +
                 "WHERE o.visible = 'Y' " +
-                "LIMIT 10 " +
+                "LIMIT ? " +
                 "OFFSET ?-1;";
-        return jdbcTemplate.queryForList(sql,offset);
+        return jdbcTemplate.queryForList(sql,limit,offset);
     }
 
     @Override

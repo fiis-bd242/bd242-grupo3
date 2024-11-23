@@ -5,7 +5,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.models.ApiResponse;
-import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevaOrdenRequest;
@@ -28,8 +27,8 @@ public class OrdenController {
     }
 
     @GetMapping("/listaordenes/{offset}")
-    public ResponseEntity<List<Map<String,Object>>> list(@PathVariable int offset){
-        var result = iOrdenService.find10(offset);
+    public ResponseEntity<List<Map<String,Object>>> find10(@PathVariable int offset){
+        var result = iOrdenService.findX(offset);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
@@ -80,5 +79,11 @@ public class OrdenController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(new ApiResponse("Error al guardar la orden: " + e.getMessage()));
         }
+    }
+
+    @GetMapping("/conteoOrden")
+    public ResponseEntity<Integer> conteoOrden(){
+        var result = iOrdenService.conteoOrden();
+        return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }

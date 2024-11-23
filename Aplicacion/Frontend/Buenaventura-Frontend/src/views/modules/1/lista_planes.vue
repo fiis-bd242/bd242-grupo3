@@ -151,13 +151,13 @@ export default {
       this.visiblePages = pages;
     },
     redirectToDetail(idPlan) {
-      window.location.href = `http://localhost:5173/moduloplanificacion/detallePlan/${idPlan}`;
+      window.location.href = `http://localhost:5173/moduloplanificacion/detalle_plan/${idPlan}`;
     },
     redirectToEdit(idPlan) {
-      window.location.href = `http://localhost:5173/moduloplanificacion/editaPlan/${idPlan}`;
+      window.location.href = `http://localhost:5173/moduloplanificacion/edita_plan/${idPlan}`;
     },
     redirectToCreate() {
-      window.location.href = "http://localhost:5173/moduloplanificacion/creaPlan";
+      window.location.href = "http://localhost:5173/moduloplanificacion/crea_plan";
     },
     async searchByMachine() {
       try {

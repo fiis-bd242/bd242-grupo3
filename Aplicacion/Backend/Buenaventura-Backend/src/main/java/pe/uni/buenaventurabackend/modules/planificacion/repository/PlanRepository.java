@@ -25,7 +25,11 @@ public class PlanRepository implements IPlanRepository{
 
     @Override
     public List<Map<String,Object>> findX(int limit, int offset){
-        String sql = "SELECT p.id_plan, m.id_maquina, tm.nombre_tipo_mant, c.nivel, m.fecha_inicio_programado " +
+        String sql = "SELECT LPAD(p.id_plan::TEXT, 4, '0') AS id_plan," +
+                " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
+                " tm.nombre_tipo_mant," +
+                " c.nivel," +
+                " m.fecha_inicio_programado " +
                 "FROM Plan_de_Mantenimiento p " +
                 "INNER JOIN Mantenimiento m " +
                 "ON m.id_plan = p.id_plan " +

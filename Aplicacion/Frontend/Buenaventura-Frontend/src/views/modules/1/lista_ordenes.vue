@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="title">Lista de Órdenes de Mantenimiento</h1>
+    <h1 class="title"><b>LISTA DE ÓRDENES DE TRABAJO</b></h1>
 
     <!-- Botón de nueva orden -->
-    <button class="new-order-button" @click="redirectToCreateOrder">Nueva orden</button>
+    <button class="new-orden-button" @click="redirectToCreate">Nueva orden</button>
 
     <!-- Buscadores -->
     <div class="search-container">
@@ -43,7 +43,6 @@
           <td>{{ item.nombre_tipo_mant }}</td>
           <td>{{ item.fecha_inicio_programado }}</td>
           <td>
-            <button class="action-button blue" @click="redirectToActivities(item.id_orden)">Actividades</button>
             <button class="action-button" @click="redirectToDetail(item.id_orden)">Ver</button>
             <button class="action-button" @click="redirectToEdit(item.id_orden)">Editar</button>
           </td>
@@ -153,12 +152,9 @@ export default {
       window.location.href = `http://localhost:5173/moduloplanificacion/detalle_orden/${idOrden}`;
     },
     redirectToEdit(idOrden) {
-      window.location.href = `http://localhost:5173/moduloplanificacion/editaOrden/${idOrden}`;
+      window.location.href = `http://localhost:5173/moduloplanificacion/edita_orden/${idOrden}`;
     },
-    redirectToActivities(idOrden) {
-      window.location.href = `http://localhost:5173/moduloplanificacion/lista_actividades/${idOrden}`;
-    },
-    redirectToCreateOrder() {
+    redirectToCreate() {
       window.location.href = "http://localhost:5173/moduloplanificacion/crea_orden";
     },
     async searchByMachine() {
@@ -186,10 +182,15 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos idénticos a los del componente de planes, con ajustes menores para nombres y nuevas clases */
+/* Título */
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 /* Botón nueva orden */
-.new-order-button {
+.new-orden-button {
   background-color: #007bff;
   color: white;
   border: none;
@@ -198,16 +199,83 @@ export default {
   float: right;
   margin-bottom: 10px;
 }
-.new-order-button:hover {
+.new-orden-button:hover {
   background-color: #0056b3;
 }
 
-/* Botón Actividades */
-.action-button.blue {
+/* Buscadores */
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-box input {
+  padding: 5px;
+  width: 180px;
+}
+.search-button {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Tabla */
+.maintenance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.maintenance-table th,
+.maintenance-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.maintenance-table th {
+  background-color: #f2f2f2;
+}
+
+/* Botones de acción */
+.action-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.action-button:hover {
+  background-color: darkgreen;
+}
+
+/* Paginación */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.pagination-button {
+  background-color: #e0f7ff;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #007bff;
+}
+.pagination-button:hover {
+  background-color: #cceeff;
+}
+button.active {
   background-color: #007bff;
   color: white;
-}
-.action-button.blue:hover {
-  background-color: #0056b3;
 }
 </style>

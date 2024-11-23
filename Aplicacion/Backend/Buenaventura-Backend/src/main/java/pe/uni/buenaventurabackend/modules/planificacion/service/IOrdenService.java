@@ -8,9 +8,11 @@ import java.util.Map;
 
 public interface IOrdenService {
     List<String> findAll();
-    List<Map<String,Object>> find10(int offset);
+    List<Map<String,Object>> findX(int offset);
     void nuevaOrden(Orden_de_trabajo orden, int id_plan, List<Integer> lista_empleados);
     DetalleOrdenRequest detalleOrden(int id_orden);
     void guardarOrden(int id_orden, String descripcion, int id_plan, List<Integer> lista_empleados, int  num_responsable);
     void borrarOrden(int id_orden);
+
+    int conteoOrden();
 }

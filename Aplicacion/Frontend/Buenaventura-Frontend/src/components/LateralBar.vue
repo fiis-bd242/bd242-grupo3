@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       menuItems: [
-        { name: 'Planificacion de Mantenimiento', route_name: 'listaplanes', module: 'moduloplanificacion' },
+        { name: 'Planificacion de Mantenimiento', route_name: 'lista_planes', module: 'moduloplanificacion' },
         { name: 'Control de Mantenimiento', route_name: 'dash_perso', module: 'modulogmantenimiento' },
         { name: 'Reportes e Insumos', route_name: 'dash_perso', module: 'moduloreportesinsumos' },
         { name: 'IPERC', route_name: 'dash_perso', module: 'moduloiperc' },

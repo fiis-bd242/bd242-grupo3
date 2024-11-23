@@ -9,7 +9,7 @@ import java.util.Map;
 
 public interface IOrdenRepository {
     List<String> findAll();
-    List<Map<String,Object>> find10(int offset);
+    List<Map<String,Object>> findX(int limit, int offset);
     int conteoOrden();
     void nuevaOrden(Orden_de_trabajo orden);
     void nuevaOrdenMant(int id_orden, int id_plan);

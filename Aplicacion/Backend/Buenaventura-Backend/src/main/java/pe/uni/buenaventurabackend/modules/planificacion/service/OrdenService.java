@@ -26,10 +26,10 @@ public class OrdenService implements IOrdenService{
     }
 
     @Override
-    public List<Map<String,Object>> find10(int offset){
+    public List<Map<String,Object>> findX(int offset){
+        int limit = 10;
         List<Map<String,Object>> list;
-        list = iOrdenRepository.find10(offset);
-        System.out.println(list.toString());
+        list = iOrdenRepository.findX(limit,offset);
         return list;
     }
 
@@ -108,5 +108,10 @@ public class OrdenService implements IOrdenService{
     @Override
     public void borrarOrden(int id_orden){
         iOrdenRepository.borrarOrden(id_orden);
+    }
+
+    @Override
+    public int conteoOrden(){
+        return iOrdenRepository.conteoOrden();
     }
 }
