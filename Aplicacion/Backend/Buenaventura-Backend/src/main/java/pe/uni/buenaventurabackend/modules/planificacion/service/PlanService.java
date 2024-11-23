@@ -118,4 +118,8 @@ public class PlanService implements IPlanService{
         iPlanRepository.borrarPlan(id_plan);
     }
 
+    @Override
+    public int conteoPlan(){
+        return iPlanRepository.conteoPlan();
+    }
 }

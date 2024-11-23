@@ -19,4 +19,6 @@ public interface IPlanService {
     DetallePlanRequest detallePlan(int id_plan);
     void guardarPlan(int id_plan, Plan_de_mantenimiento p, Mantenimiento m, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos);
     void borrarPlan(int id_plan);
+
+    int conteoPlan();
 }
