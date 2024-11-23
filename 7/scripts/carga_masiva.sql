@@ -250,6 +250,7 @@ AYUDA: Hazlo con Mockaroo para evitar que se repita el id
 COPY tareas FROM 'C:\DBD-2024-2\datos\tareas.csv' DELIMITER ',' CSV HEADER;
 */
 
+/*
 -- Poblamiento de tabla Identificacion_del_riesgo
 COPY Identificacion_del_riesgo FROM 'C:\DBD-2024-2\datos\Identificacion_del_riesgo.csv' DELIMITER ',' CSV HEADER;
 
@@ -276,6 +277,7 @@ COPY PlanaccionxEmpleado FROM 'C:\DBD-2024-2\datos\PlanaccionxEmpleado.csv' DELI
 
 -- Poblamiento de tabla informe_iperc
 COPY informe_iperc FROM 'C:\DBD-2024-2\datos\informe_iperc.csv' DELIMITER ',' CSV HEADER;
+*/
 
 -- Poblamiento de la tabla Tipo_maquina
 INSERT INTO Tipo_maquina (id_tipo_maquina, nombre_tipo) VALUES
