@@ -19,8 +19,8 @@ public class PlanService implements IPlanService{
     private final IPlanRepository iPlanRepository;
     private final IOrdenRepository iOrdenRepository;
     @Override
-    public List<Plan_de_mantenimiento> findAll() {
-        List<Plan_de_mantenimiento> list;
+    public List<String> findAll() {
+        List<String> list;
         list = iPlanRepository.findAll();
         return list;
     }
@@ -121,5 +121,15 @@ public class PlanService implements IPlanService{
     @Override
     public int conteoPlan(){
         return iPlanRepository.conteoPlan();
+    }
+
+    @Override
+    public List<String> listaInsumos(){
+        return iPlanRepository.listaInsumos();
+    }
+
+    @Override
+    public List<Integer> listaEquipos(){
+        return  iPlanRepository.listaEquipos();
     }
 }

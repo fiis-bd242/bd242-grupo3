@@ -12,4 +12,6 @@ public interface IActividadService {
     DetalleActividadRequest detalleActividad(int id_actvempleado);
     void guardarActividad(Actividad_empleado actividad_empleado);
     void borrarActividad(int id_actvempleado);
+
+    int conteoActividadOrden(int id_orden);
 }

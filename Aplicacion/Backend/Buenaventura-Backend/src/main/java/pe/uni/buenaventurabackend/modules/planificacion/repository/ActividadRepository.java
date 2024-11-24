@@ -26,7 +26,10 @@ public class ActividadRepository implements IActividadRepository{
 
     @Override
     public List<Map<String,Object>> findX(int id_orden, int limit, int offset){
-        String sql = "SELECT LPAD(a.id_actvempleado::TEXT, 4, '0'), emp.nombre, CONCAT('ES-',LPAD(es.id_equipo_soporte::TEXT, 4, '0')), a.fecha_inicio " +
+        String sql = "SELECT LPAD(a.id_actvempleado::TEXT, 4, '0') AS id_actvempleado," +
+                " emp.nombre AS empleado," +
+                " CONCAT('ES-',LPAD(es.id_equipo_soporte::TEXT, 4, '0')) AS id_equipo_soporte," +
+                " a.fecha_inicio AS fecha_inicio " +
                 "FROM Actividad_empleado a " +
                 "INNER JOIN Empleado emp " +
                 "ON emp.id_empleado = a.id_empleado " +
@@ -101,5 +104,12 @@ public class ActividadRepository implements IActividadRepository{
         String sql = "DELETE FROM Actividad_empleado " +
                 "WHERE id_actvempleado = ?";
         jdbcTemplate.update(sql, id_actvempleado);
+    }
+
+    @Override
+    public int conteoActividadOrden(int id_orden){
+        String sql = "SELECT COUNT (*) FROM Actividad_empleado " +
+                "WHERE id_orden = ?";
+        return jdbcTemplate.queryForObject(sql, Integer.class, id_orden);
     }
 }

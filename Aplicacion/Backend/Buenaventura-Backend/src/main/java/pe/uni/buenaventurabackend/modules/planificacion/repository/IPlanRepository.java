@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface IPlanRepository {
-    List<Plan_de_mantenimiento> findAll();
+    List<String> findAll();
     List<Map<String,Object>> findX(int limit, int offset);
     void nuevoPlanMant(Plan_de_mantenimiento plan, Mantenimiento mantenimiento);
     void nuevoPlanEquipo(EquipoSXMantenimiento equipoSXMantenimiento);
@@ -27,7 +27,9 @@ public interface IPlanRepository {
 
     //Módulo de insumo
     void reservaInsumo(int id_insumo, int id_cantidad);
+    List<String> listaInsumos();
 
     //Módulo de gestión de reportes
     int conteoNotificaciones();
+    List<Integer> listaEquipos();
 }

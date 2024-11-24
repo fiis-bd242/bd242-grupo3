@@ -22,7 +22,7 @@ public class PlanController {
     private final IPlanService iPlanService;
 
     @GetMapping("/allplans")
-    public ResponseEntity<List<Plan_de_mantenimiento>> list(){
+    public ResponseEntity<List<String>> list(){
         var result = iPlanService.findAll();
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
@@ -100,5 +100,15 @@ public class PlanController {
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
+    @GetMapping("/listaInsumos")
+    public ResponseEntity<List<String>> listaInsumos(){
+        var result = iPlanService.listaInsumos();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 
+    @GetMapping("/listaEquipos")
+    public ResponseEntity<List<Integer>> listaEquipos(){
+        var result = iPlanService.listaEquipos();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 }

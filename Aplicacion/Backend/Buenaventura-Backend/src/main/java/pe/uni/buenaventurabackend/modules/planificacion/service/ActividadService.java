@@ -46,4 +46,9 @@ public class ActividadService implements IActividadService{
     public void borrarActividad(int id_actvempleado){
         iActividadRepository.borrarActividad(id_actvempleado);
     }
+
+    @Override
+    public int conteoActividadOrden(int id_orden){
+        return iActividadRepository.conteoActividadOrden(id_orden);
+    }
 }

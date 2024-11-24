@@ -58,4 +58,10 @@ public class ActividadController {
                     .body(new ApiResponse("Error al borrar la actividad: " + e.getMessage()));
         }
     }
+
+    @GetMapping("/conteoActividad/{id_orden}")
+    public ResponseEntity<Integer> conteoActividad(@PathVariable int id_orden){
+        var result = iActividadService.conteoActividadOrden(id_orden);
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 }

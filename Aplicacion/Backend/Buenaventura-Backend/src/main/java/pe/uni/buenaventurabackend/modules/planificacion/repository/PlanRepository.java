@@ -18,9 +18,10 @@ import java.util.stream.Collectors;
 public class PlanRepository implements IPlanRepository{
     private final JdbcTemplate jdbcTemplate;
     @Override
-    public List<Plan_de_mantenimiento> findAll() {
-        String SQL = "SELECT * FROM Plan_de_mantenimiento";
-        return jdbcTemplate.query(SQL, BeanPropertyRowMapper.newInstance(Plan_de_mantenimiento.class));
+    public List<String> findAll() {
+        String SQL = "SELECT CONCAT('OT-', LPAD(id_plan::TEXT, 4, '0')) AS id_plan " +
+                "FROM plan_de_mantenimiento";
+        return jdbcTemplate.queryForList(SQL, String.class);
     }
 
     @Override
@@ -308,4 +309,15 @@ public class PlanRepository implements IPlanRepository{
         return jdbcTemplate.queryForObject(sql, Integer.class);
     }
 
+    @Override
+    public List<String> listaInsumos(){
+        String sql = "SELECT nombre FROM Insumo";
+        return jdbcTemplate.queryForList(sql, String.class);
+    }
+
+    @Override
+    public List<Integer> listaEquipos(){
+        String sql = "SELECT id_equipo_soporte FROM Equipo_de_soporte";
+        return jdbcTemplate.queryForList(sql, Integer.class);
+    }
 }

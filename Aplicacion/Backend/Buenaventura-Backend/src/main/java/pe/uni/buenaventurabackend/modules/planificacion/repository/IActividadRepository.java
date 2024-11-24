@@ -13,4 +13,6 @@ public interface IActividadRepository {
     DetalleActividadRequest detalleActividad(int id_actvempleado);
     void guardarActividad(Actividad_empleado act);
     void borrarActividad(int id_actvempleado);
+
+    int conteoActividadOrden(int orden);
 }
