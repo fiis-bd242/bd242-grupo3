@@ -2,10 +2,9 @@
     <div class="mx-4 my-2 space-y-3 w-full">
       <h3 class="font-extrabold text-3xl">Verificación de Datos</h3>
   
-      <form @submit.prevent="this.offset= 1; getReportes();" class="flex space-x-2 justify-end mx-2 mb-5">
-        <button class="bg-blue-500 px-2 py-1 text-white font-bold rounded border border-black">Cargar Datos</button>
-        <input v-model="filtro_inicio" type="date" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
-        <input v-model="filtro_final" type="date" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
+      <form class="flex space-x-2 justify-end mx-2 mb-5">
+        <input @change="this.offset= 1; getReportes();" v-model="filtro_inicio" type="date" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
+        <input @change="this.offset= 1; getReportes();" v-model="filtro_final" type="date" class="px-2 py-1 rounded ring-[2px] outline-none ring-black duration-150 focus:ring-purple-400">
       </form>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table class="w-full text-sm text-left rtl:text-right text-gray-500">
@@ -54,7 +53,7 @@
         :disabled=" activate && registros.length === 0"
         class="border p-3 border-black">></button>
       </div>
-      <!-- Dialogo de Confirmación (Check) -->
+
       <div v-if="showConfirmationDialog" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
           <h3 class="text-lg font-bold mb-4">Confirmar Verificación</h3>
@@ -66,7 +65,6 @@
         </div>
       </div>
   
-      <!-- Dialogo de Detalles (Paper) -->
       <div v-if="showDetailsDialog" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
           <h3 class="text-2xl font-bold mb-4 text-center text-gray-700">Detalles de Registros del Día</h3>
@@ -98,7 +96,6 @@
         </div>
       </div>
   
-      <!-- Dialogo de Mensaje (Message) -->
       <div v-if="showMessageDialog" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
           <h3 class="text-2xl font-bold mb-4 text-center text-gray-700">Enviar Notificación</h3>
@@ -150,7 +147,7 @@
         this.getReportes()
       },
       async creacion_notificacion(){
-        await axios.post("http://localhost:8080/api/reportes/notificacion-registros", {
+        await axios.post("/api/reportes/notificacion-registros", {
           Id_registro: null,
           Asunto: this.subject,
           Mensaje: this.description,
@@ -170,7 +167,7 @@
         this.getReportes()
       },
       async aceptarReporte(){
-        await axios.put(`http://localhost:8080/api/reportes/estado?nuevoEstado=2&fechaReporte=${this.fecha_seleccionada}`)
+        await axios.put(`/api/reportes/estado?nuevoEstado=2&fechaReporte=${this.fecha_seleccionada}`)
         .then(response => {
           console.log(response);
         })

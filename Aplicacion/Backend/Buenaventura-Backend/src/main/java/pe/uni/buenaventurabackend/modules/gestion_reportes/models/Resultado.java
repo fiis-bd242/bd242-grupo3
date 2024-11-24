@@ -8,4 +8,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Resultado {
     private String resultado;
+    private int id_mantenimiento;
 }

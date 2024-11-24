@@ -53,19 +53,16 @@
 
           <!-- Filtros -->
           <div class="flex flex-col md:flex-row md:space-x-4">
-            <input type="text" placeholder="Maquina del mantenimiento" class="border p-2 rounded-md w-full md:w-1/2">
-            <input type="date" placeholder="Fecha del mantenimiento" class="border p-2 rounded-md w-full md:w-1/2">
+            <input @change="busquedaMantenimiento" v-model="marca" type="text" placeholder="Maquina del mantenimiento" class="border p-2 rounded-md w-full md:w-1/2">
           </div>
 
-          <select class="border p-2 rounded-md w-full mt-4">
-            <option>Opción 1</option>
-            <option>Opción 2</option>
-            <option>Opción 3</option>
+          <select v-model="id_act_mantto" class="border p-2 rounded-md w-full mt-4">
+            <option v-for="(item, index) in actividades_disponibles" :key="index" :value="item.id_mantenimiento"> {{ item.resultado }}</option>
           </select>
 
           <div class="flex justify-end space-x-4 mt-6">
             <button @click="closeDialog" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Cerrar</button>
-            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Asignar</button>
+            <button @click="closeDialog" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Asignar</button>
           </div>
         </div>
       </div>
@@ -95,10 +92,12 @@ export default {
   },
   data() {
     return {
+      actividades_disponibles : [],
       fecha_registro: "",
       fecha_inicial: "",
       id_act_mantto: 4,
       observaciones: "",
+      marca: "",
       ranked: 0,
       messages: [],
       messageError: '',
@@ -107,6 +106,7 @@ export default {
     };
   },
   methods: {
+    
     convertirFechaAFormatoISOConZonaHoraria(fechaISO) {
       const fecha = new Date(fechaISO); // Crear un objeto Date a partir de la fecha proporcionada
       const offset = fecha.getTimezoneOffset(); // Desplazamiento en minutos
@@ -124,18 +124,29 @@ export default {
 
       return `${fechaSinMilisegundos}${offsetString}`;
     },
+
+    async busquedaMantenimiento(){
+      await axios.get(`/api/reportes/resultados?nombreMarca=${this.marca}`)
+      .then(response => {
+        this.actividades_disponibles = response.data
+      })
+      .catch(error => {
+        console.log(error);
+      })
+    },
+
     async crearRegistro(){
       let to_message = []
       for (const message of this.messages){
         to_message.push({incidencia : message})
       }
       
-      await axios.post("http://localhost:8080/api/reportes/nuevo-con-incidencias", {
+      await axios.post("/api/reportes/nuevo-con-incidencias", {
         registro: {
           fecha_registro: this.convertirFechaAFormatoISOConZonaHoraria(this.fecha_registro),
           fecha_inicial : this.convertirFechaAFormatoISOConZonaHoraria(this.fecha_inicial),
           id_empleado: 4,
-          id_act_mantto: 4,
+          id_act_mantto: this.id_act_mantto,
           calificacion: this.ranked,
           observaciones: this.observaciones
         },
@@ -182,7 +193,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Opcional: Estilo adicional para mejorar la apariencia del dialogo */
-</style>

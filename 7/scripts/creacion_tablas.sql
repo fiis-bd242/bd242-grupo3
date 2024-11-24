@@ -709,7 +709,7 @@ DROP TABLE IF EXISTS Reportes CASCADE;
 CREATE TABLE Reportes
 (
   Id_reporte SERIAL,
-  Fecha_reporte TIMESTAMP NOT NULL,
+  Fecha_reporte DATE NOT NULL,
   id_estado_reporte INT NOT NULL,
   Id_supervisor INT,
   id_jefe INT NOT NULL,

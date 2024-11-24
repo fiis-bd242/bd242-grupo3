@@ -119,36 +119,6 @@
     },
     data() {
       return {
-        Registros : [
-            {
-                hora: "18: 06",
-                plan_mant : "M00001",
-                equipo : "Compresor de Aire",
-                tecnico : "Juan Perez",
-                tipo_mant : "Preventivo",
-            },
-            {
-                hora: "18: 06",
-                plan_mant : "M00001",
-                equipo : "Compresor de Aire",
-                tecnico : "Juan Perez",
-                tipo_mant : "Preventivo",
-            },
-            {
-                hora: "18: 06",
-                plan_mant : "M00001",
-                equipo : "Compresor de Aire",
-                tecnico : "Juan Perez",
-                tipo_mant : "Preventivo",
-            },
-            {
-                hora: "18: 06",
-                plan_mant : "M00001",
-                equipo : "Compresor de Aire",
-                tecnico : "Juan Perez",
-                tipo_mant : "Preventivo",
-            },
-        ],
         registros_dia : [],
         showConfirmationDialog: false,
         showDetailsDialog: false,
@@ -168,8 +138,17 @@
         const year = today.getFullYear();
         return `${day}/${month}/${year}`;
       },
-      confirmRegistration() {
-        this.showConfirmationDialog = false;
+      async confirmRegistration() {
+        await axios.post("/api/reportes/crear-reporte?idJefe=2")
+        .then(response => {
+          console.log(response.data);
+          console.log("POST realizado con Exito");
+          this.showConfirmationDialog = false;
+
+        })
+        .catch(error => {
+          console.log(error);
+        })
       },
       confirmEdit() {
         this.showEditDialog = false;
@@ -178,7 +157,7 @@
         this.showMessageDialog = false;
       },
       async getRegistros(){
-        await axios.get("http://localhost:8080/api/reportes/resultados-dia")
+        await axios.get("/api/reportes/resultados-dia")
         .then(response => {
           console.log(response.data);
           this.registros_dia = response.data

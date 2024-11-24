@@ -2,8 +2,8 @@
     <div class="mx-4 my-2  w-full">
         <h3 class="font-extrabold text-3xl">Verificacion de Datos</h3>
         <form @submit.prevent="console.log('1');" class="flex space-x-2 mt-2 justify-end mx-2 mb-5">
-            <input type="date" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
-            <input type="date" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
+            <input @change="getHistorial" v-model="init_date" type="date" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
+            <input @change="getHistorial" v-model="final_date" type="date" class="px-2 py-1 rounded ring-[2px] outline-none  ring-black duration-150 focus:ring-purple-400">
         </form>
         <div class="relative overflow-x-auto mt-4 shadow-md sm:rounded-lg">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
@@ -60,6 +60,8 @@ import axios from 'axios';
 export default {
     data() {
         return {
+            init_date: null,
+            final_date : null,
             date_local : new Date("2022-03-25 11:13:00"),
             Registros : [
             {
@@ -109,7 +111,7 @@ export default {
   },
   methods: {
         async getHistorial(){
-            await axios.get("http://localhost:8080/api/reportes/historial?fechaInicio=2024-01-01&fechaFin=2024-12-31")
+            await axios.get(`/api/reportes/historial?fechaInicio=${this.init_date}&fechaFin=${this.final_date}`)
             .then(response => {
                 console.log(response.data);
                 this.registros_hist = response.data
@@ -118,9 +120,6 @@ export default {
                 console.log(error);
             })
         }
-    },
-    mounted() {
-        this.getHistorial()
     },
 
 }
