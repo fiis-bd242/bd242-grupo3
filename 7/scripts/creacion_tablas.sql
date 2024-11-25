@@ -100,7 +100,7 @@ CREATE TABLE Reserva
 DROP TABLE IF EXISTS Detalle_reserva CASCADE;
 CREATE TABLE Detalle_reserva
 (
-  Id_detalle INT NOT NULL,
+  Id_detalle SERIAL NOT NULL,
   Cant_reserv INT NOT NULL,
   Id_insumo INT NOT NULL,
   Id_reserva INT NOT NULL,

@@ -82,7 +82,7 @@ DELIMITER ','
 CSV HEADER;
 
 --Poblamiento Detalle_reserva
-COPY Detalle_reserva (Id_detalle,Cant_reserv, Id_insumo,Id_reserva)
+COPY Detalle_reserva (Cant_reserv, Id_insumo,Id_reserva)
 FROM 'C:\DBD-2024-2\datos\detalle_reserva.csv'
 DELIMITER ';'
 CSV HEADER;
