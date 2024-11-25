@@ -1,6 +1,7 @@
 package pe.uni.buenaventurabackend.modules.planificacion.repository;
 
 import pe.uni.buenaventurabackend.modules.planificacion.models.Actividad_empleado;
+import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 
@@ -18,4 +19,6 @@ public interface IOrdenRepository {
     DetalleOrdenRequest detalleOrden(int id_orden);
     void guardarOrden(int id_orden, String descripcion, int id_plan);
     void borrarOrden(int id_orden);
+
+    List<EmpleadoDTO> listaEmpleados();
 }

@@ -40,7 +40,7 @@ const router = createRouter({
       component: () => import("../views/modules/1/detalle_orden.vue")
     },
     {
-      path: '/moduloplanificacion/detalle_plan',
+      path: '/moduloplanificacion/detalle_plan/:id_plan',
       name: 'detalle_plan',
       component: () => import("../views/modules/1/detalle_plan.vue")
     },

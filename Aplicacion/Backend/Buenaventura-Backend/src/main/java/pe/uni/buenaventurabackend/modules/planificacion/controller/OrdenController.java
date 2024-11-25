@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.models.ApiResponse;
+import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevaOrdenRequest;
@@ -84,6 +85,12 @@ public class OrdenController {
     @GetMapping("/conteoOrden")
     public ResponseEntity<Integer> conteoOrden(){
         var result = iOrdenService.conteoOrden();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @GetMapping("/listaEmpleados")
+    public ResponseEntity<List<EmpleadoDTO>> listaEmpleados(){
+        var result = iOrdenService.listaEmpleados();
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }

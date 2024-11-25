@@ -193,4 +193,16 @@ public class OrdenRepository implements IOrdenRepository {
                 "WHERE id_orden = ?;";
         jdbcTemplate.update(sql, id_orden);
     }
+
+    @Override
+    public List<EmpleadoDTO> listaEmpleados() {
+        String sql = "SELECT id_empleado, nombre FROM Empleado";
+        return jdbcTemplate.query(sql, (rs, rowNum) -> {
+            EmpleadoDTO detalle = new EmpleadoDTO();
+            detalle.setId_empleado(rs.getInt("id_empleado"));
+            detalle.setNombre(rs.getString("nombre"));
+            return detalle;
+        });
+    }
+
 }

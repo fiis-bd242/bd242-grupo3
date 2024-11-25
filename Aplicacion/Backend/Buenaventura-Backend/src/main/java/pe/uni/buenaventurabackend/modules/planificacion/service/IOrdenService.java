@@ -1,5 +1,6 @@
 package pe.uni.buenaventurabackend.modules.planificacion.service;
 
+import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 
@@ -15,4 +16,6 @@ public interface IOrdenService {
     void borrarOrden(int id_orden);
 
     int conteoOrden();
+
+    List<EmpleadoDTO> listaEmpleados();
 }

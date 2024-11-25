@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Actividad_empleado;
+import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IActividadRepository;
@@ -113,5 +114,10 @@ public class OrdenService implements IOrdenService{
     @Override
     public int conteoOrden(){
         return iOrdenRepository.conteoOrden();
+    }
+
+    @Override
+    public List<EmpleadoDTO> listaEmpleados(){
+        return iOrdenRepository.listaEmpleados();
     }
 }

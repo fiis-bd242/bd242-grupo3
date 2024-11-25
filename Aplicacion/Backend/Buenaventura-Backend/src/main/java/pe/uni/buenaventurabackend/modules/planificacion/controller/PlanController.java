@@ -11,6 +11,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarP
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevoPlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IPlanService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -62,9 +63,24 @@ public class PlanController {
 
     @GetMapping("/detallePlan/{id_plan}")
     public ResponseEntity<DetallePlanRequest> detallePlan(@PathVariable int id_plan) {
-        var result = iPlanService.detallePlan(id_plan);
-        return new ResponseEntity<>(result, HttpStatus.OK);
+        try {
+            DetallePlanRequest result = iPlanService.detallePlan(id_plan);
+
+            // Inicializa listas vacías si son null
+            if (result.getListaEquipos() == null) {
+                result.setListaEquipos(new ArrayList<>());
+            }
+            if (result.getListaInsumos() == null) {
+                result.setListaInsumos(new ArrayList<>());
+            }
+
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(null); // Devuelve null en caso de error.
+        }
     }
+
 
     @PostMapping("/guardarPlan/{id_plan}")
     public ResponseEntity<?> guardarPlan(@PathVariable int id_plan, @RequestBody GuardarPlanRequest request) {
