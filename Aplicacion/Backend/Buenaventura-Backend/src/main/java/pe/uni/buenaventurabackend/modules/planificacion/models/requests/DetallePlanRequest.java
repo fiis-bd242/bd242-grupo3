@@ -22,6 +22,7 @@ public class DetallePlanRequest {
     private String responsable;
     private String criticidad;
     private String id_orden;
+    private String descripcion;
     private List<String> listaEquipos;
     private List<InsumoDTON> listaInsumos;
 }

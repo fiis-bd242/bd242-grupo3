@@ -25,5 +25,6 @@ public class DetallesRequest {
     private String id_orden;
     private List<String> listaEquipos;
     private List<InsumoDTON> listaInsumos;
+    private String descripcion;
 
 }
