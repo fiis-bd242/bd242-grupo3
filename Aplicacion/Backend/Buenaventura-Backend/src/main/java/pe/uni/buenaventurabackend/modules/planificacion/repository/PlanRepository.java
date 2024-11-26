@@ -38,6 +38,7 @@ public class PlanRepository implements IPlanRepository{
                 "ON tm.id_tipo_mant = m.id_tipo_mant " +
                 "INNER JOIN Criticidad c " +
                 "ON c.id_criticidad = p.id_criticidad " +
+                "ORDER BY p.id_plan " +
                 "LIMIT ? " +
                 "OFFSET ?-1;";
         return jdbcTemplate.queryForList(sql,limit,offset);
