@@ -516,6 +516,8 @@ COPY Recuperacion_de_contraseña  FROM 'C:\DBD-2024-2\datos\notificacion_adminis
 CREATE SEQUENCE notificaciones_id_notificacion_seq;
 ALTER TABLE Notificaciones 
 ALTER COLUMN id_notificacion SET DEFAULT nextval('notificaciones_id_notificacion_seq');
+INSERT INTO Estado_Reporte (id_estado_reporte,nombre_estado) VALUES 
+(4, 'Vencido');
 
 SELECT setval('notificaciones_id_notificacion_seq', (SELECT MAX(id_notificacion) FROM Notificaciones));
 
