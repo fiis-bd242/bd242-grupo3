@@ -104,6 +104,16 @@ const router = createRouter({
       name: 'exportaciondatos',
       component: () => import("../views/modules/7/exportacion_datos.vue")
     },
+    {
+      path: '/modulocontrol/trabajos',
+      name: 'trabajos',
+      component: () => import("../views/modules/2/trabajos.vue")
+    },
+    {
+      path: '/modulocontrol/detalles/:id_plan',
+      name: 'detalles',
+      component: () => import("../views/modules/2/detalles.vue")
+    },
   ]
 })
 
