@@ -1,6 +1,6 @@
 <template>
   
-  <div class="detalle-plan-container">
+  <div class="detalle-plan-container w-full mx-auto p-4">
     <!-- Título centrado -->
     <h1 class="title"><b>DETALLE DEL PLAN DE MANTENIMIENTO</b></h1>
     <!-- Contenedor de los botones superiores -->
