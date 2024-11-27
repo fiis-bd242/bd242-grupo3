@@ -47,7 +47,7 @@
     computed: {
       tituloModulo() {
         // Obtén el título del módulo basado en la ruta actual
-        return this.titulos[this.$route.path] || 'Módulo desconocido';
+        return this.titulos[this.$route.path] || 'Bienvenido a Buenaventura';
       }
     }
   };
