@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="w-full mx-auto p-4">
       <h1 class="title"><b>CREACIÓN DE ORDEN DE TRABAJO</b></h1>
       <form @submit.prevent="guardarOrden">
         <!-- Relacionar a un plan de mantenimiento -->

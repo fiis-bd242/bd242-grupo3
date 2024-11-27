@@ -17,5 +17,6 @@ public class NuevoPlanRequest {
     private Mantenimiento mantenimiento;
     private List<Integer> listaEquipos;
     private List<InsumoDTO> listaInsumos;
+    private int id_usuario;
 }
 

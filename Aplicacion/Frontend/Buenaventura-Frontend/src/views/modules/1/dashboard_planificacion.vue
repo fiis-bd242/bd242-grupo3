@@ -1,5 +1,6 @@
 <template>
-    <div class="dashboard">
+    <div class="dashboard w-full mx-auto p-4">
+      <!-- Fila 1 -->
       <div class="row">
         <div class="card" @click="irACrearPlan">
           <h2><b>Crear nuevo plan de mantenimiento</b></h2>
