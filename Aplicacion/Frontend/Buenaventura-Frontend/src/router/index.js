@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    
+
     {
       path: '/',
       name: 'home',
@@ -104,6 +104,26 @@ const router = createRouter({
       name: 'exportaciondatos',
       component: () => import("../views/modules/7/exportacion_datos.vue")
     },
+    {
+      path: '/modulocontrol/trabajos',
+      name: 'trabajos',
+      component: () => import("../views/modules/2/trabajos.vue")
+    },
+    {
+      path: '/modulocontrol/detalles/:id_plan',
+      name: 'detalles',
+      component: () => import("../views/modules/2/detalles.vue")
+    },
+    {
+      path: '/modulocontrol/notificacion/:id_plan',
+      name: 'notificacion',
+      component: () => import("../views/modules/2/notificacion.vue")
+    },
+    {
+      path: '/moduloreportesinsumos/Insumos',
+      name: 'Insumos',
+      component: () => import("../views/modules/3/Solicitudes.vue")
+    }
   ]
 })
 
