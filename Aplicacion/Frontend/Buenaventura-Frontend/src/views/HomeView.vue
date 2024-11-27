@@ -1,42 +1,35 @@
-<script setup>
-
-
-</script>
 <template>
-    <main>
+  <main class="flex flex-col w-full items-center justify-center min-h-screen bg-gray-100">
+    <header class="text-center mb-8">
+      <h1 class="text-6xl font-bold text-purple-600">Buenaventura</h1>
+      <p class="text-xl text-gray-700 mt-4">
+        Líder en innovación y desarrollo sostenible.
+      </p>
+    </header>
 
-      <router-link class="p-3 m-1 blue" :to="{name: a}"></router-link>
-      <h1 class="text-5xl">Buenaventura</h1>
-      <input class="rounded ring-1 ring-black mx-2 px-2 py-1 w-96" placeholder="El nombre de algun pokemon" type="text" name="mode" id="a" v-model="name_of">
-      <button @click="getPokemons(name_of)" class="bg-blue-500 p-1 text-white hover:bg-blue-400 duration-150 rounded-md border border-black">Presioname pa tener datos</button>
-      <img :src="image" v-if="image" alt="im">
-    </main>
-   
+    <!-- Call to Action Section -->
+    <section class="text-center">
+      <p class="text-lg text-gray-600 mb-6">
+        Comprometidos con el progreso de las comunidades y el cuidado del medio ambiente.
+      </p>
+      <router-link
+        to="/about"
+        class="bg-purple-500 text-white px-6 py-2 rounded-md shadow-md hover:bg-purple-400 transition duration-150"
+      >
+        Conócenos más
+      </router-link>
+    </section>
+  </main>
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
-  data() {
-    return {
-      name_of : "",
-      image: ""
-    }
-  },
-  methods: {
-  async getPokemons(data){
-      await axios.get(`pokemon/${data.toLowerCase()}`)
-      .then(response => {
-        console.log(response);
-        console.log(response.data);
-        this.image = response.data.sprites.front_default
-      }).catch(error => {
-        console.log(error);
-      })
-  },
-  
-  },
-}
-
+  name: "Home",
+};
 </script>
+
+<style scoped>
+main {
+  font-family: 'Arial', sans-serif;
+}
+</style>

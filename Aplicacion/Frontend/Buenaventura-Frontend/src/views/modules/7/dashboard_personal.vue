@@ -42,7 +42,7 @@ const list_of_routes = [
   },
 ];
 
-const list_of_routes_availables = list_of_routes.filter(route => route.role_needed === userStore.user.role)
+const list_of_routes_availables = list_of_routes.filter(route => route.role_needed === 'Student') //userStore.user.role
 </script>
 
 <template>
