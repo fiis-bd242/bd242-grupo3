@@ -337,7 +337,6 @@ public class PlanRepository implements IPlanRepository{
             if(cantidad >= cant_actual){
                 jdbcTemplate.update(sql_alm, cantidad - cant_actual, id_insum_alm);
                 cantidad = cantidad - cant_actual;
-
             }
             else{
                 jdbcTemplate.update(sql_alm, cant_actual - cantidad, id_insum_alm);
@@ -345,6 +344,9 @@ public class PlanRepository implements IPlanRepository{
             }
         }
         jdbcTemplate.queryForObject(sql, Integer.class, id_insumo);
+
+        sql = "INSERT INTO Reserva " +
+                "VALUES ()"
     }
 
     @Override

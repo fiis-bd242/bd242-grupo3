@@ -735,7 +735,7 @@ CREATE TABLE Registro
 );
 
 DROP TABLE IF EXISTS Incidencias_Tag CASCADE;
-CREATE TABLE Incidencias_Tags
+CREATE TABLE Incidencias_Tag
 (
   Id_incidencias SERIAL,
   Incidencia VARCHAR(50) NOT NULL,

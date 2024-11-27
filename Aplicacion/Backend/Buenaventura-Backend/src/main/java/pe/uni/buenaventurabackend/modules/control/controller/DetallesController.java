@@ -7,8 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.modules.control.models.requests.DetallesRequest;
 import pe.uni.buenaventurabackend.modules.control.service.IDetallesService;
-import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
-import pe.uni.buenaventurabackend.modules.planificacion.service.IPlanService;
 
 import java.util.ArrayList;
 
