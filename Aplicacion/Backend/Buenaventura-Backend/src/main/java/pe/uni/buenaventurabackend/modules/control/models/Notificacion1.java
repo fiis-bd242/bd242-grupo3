@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Notificacion {
+public class Notificacion1 {
 
     private int id_notificacion;
     private int id_remitente;

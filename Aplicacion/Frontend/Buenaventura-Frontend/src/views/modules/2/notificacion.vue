@@ -2,12 +2,12 @@
   
     <div class="detalle-plan-container">
       <!-- Título centrado -->
-      <h1 class="title"><b>DETALLE DEL TRABAJO DE MANTENIMIENTO</b></h1>
+      <h1 class="title"><b>ESTADO Y DISPONIBILIDAD</b></h1>
       <!-- Contenedor de los botones superiores -->
       <div class="botones-superiores">
         <!-- Botón para regresar -->
         <button @click="volverListaPlanes" class="btn btn-secondary">
-          Volver a la lista de trabajos
+          Regresar
         </button>
       </div>
   
@@ -28,36 +28,6 @@
           <p><strong>Criticidad:</strong> {{ detallePlan.criticidad }}</p>
           <p><strong>ID Plan:</strong> {{ detallePlan.id_plan }}</p>
           <p><strong>Descripcion:</strong> {{ detallePlan.descripcion }}</p>
-        </div>
-  
-        <!-- Equipos e insumos lado a lado -->
-        <div class="listas-container">
-          <!-- Lista de equipos -->
-          <div class="equipos">
-            <h4><b>Equipos:</b></h4>
-            <ul>
-              <li v-for="(equipo, index) in detallePlan.listaEquipos" :key="index">{{ equipo }}</li>
-            </ul>
-          </div>
-  
-          <!-- Lista de insumos -->
-          <div class="insumos">
-            <h4><b>Insumos:</b></h4>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Nombre Insumo</th>
-                  <th>Cantidad</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="(insumo, index) in detallePlan.listaInsumos" :key="index">
-                  <td>{{ insumo.nombre_insumo }}</td>
-                  <td>{{ insumo.cantidad }}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </div>
       </div>
   

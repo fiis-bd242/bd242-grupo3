@@ -9,7 +9,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.repository.IPlanReposito
 
 @Service
 @RequiredArgsConstructor
-public class NotificacionService implements INotificacionService{
+public class Notificacion1Service implements INotificacion1Service {
     private final IPlanRepository iPlanRepository;
 
     @Transactional

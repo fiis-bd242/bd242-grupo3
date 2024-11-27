@@ -1,6 +1,6 @@
 package pe.uni.buenaventurabackend.modules.control.service;
 
-public interface INotificacionService {
+public interface INotificacion1Service {
 
     void aceptarNotificacion(int id_usuario, int id_plan);
 

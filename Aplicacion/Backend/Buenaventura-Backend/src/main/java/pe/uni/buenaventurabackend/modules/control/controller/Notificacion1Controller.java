@@ -11,7 +11,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.service.IPlanService;
 @RequestMapping("/api/control")
 @RequiredArgsConstructor
 @CrossOrigin(origins = "${url.client}")
-public class NotificacionController {
+public class Notificacion1Controller {
     private final IPlanService iPlanService;
     @PostMapping("/aceptarNotificacion/{id_usuario}/{id_plan}")
     public ResponseEntity<?> aceptarNotificacion(@PathVariable int id_usuario, @PathVariable int id_plan) {

@@ -154,7 +154,7 @@ export default {
       window.location.href = `http://localhost:5173/modulocontrol/detalles/${idPlan}`;
     },
     redirectToEdit(idPlan) {
-      window.location.href = `http://localhost:5173/moduloplanificacion/edita_plan/${idPlan}`;
+      window.location.href = `http://localhost:5173/modulocontrol/notificacion/${idPlan}`;
     },
     async searchByMachine() {
       try {

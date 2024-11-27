@@ -114,6 +114,11 @@ const router = createRouter({
       name: 'detalles',
       component: () => import("../views/modules/2/detalles.vue")
     },
+    {
+      path: '/modulocontrol/notificacion/:id_plan',
+      name: 'notificacion',
+      component: () => import("../views/modules/2/notificacion.vue")
+    },
   ]
 })
 
