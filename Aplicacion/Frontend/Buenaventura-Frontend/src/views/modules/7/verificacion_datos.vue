@@ -165,7 +165,14 @@
           console.log("noseeee");
           this.registros.filter(registro => registro.fechaDelDia === this.fecha_seleccionada)[0].estadoReporte = 'Notificado'
           console.log("noseeee");
-          this.toastStore.showToast(3000, "Se ha generado la notificación", "Surprise", 'bg-blue-600');        
+          axios.put(`/api/reportes/estado?nuevoEstado=3&fechaReporte=${this.fecha_seleccionada}`)
+          .then(response => {
+            console.log(response.data);
+          })
+          .catch(error => {
+            console.log("OCURRIO UN ERRORRORO", error);
+          })
+          this.toastStore.showToast(3000, "Se ha generado la notificación", "Surprise", 'bg-blue-600');
         })
         .catch(error => {
           console.log(error);
@@ -179,6 +186,8 @@
         await axios.put(`/api/reportes/estado?nuevoEstado=2&fechaReporte=${this.fecha_seleccionada}`)
         .then(response => {
           console.log(response);
+          this.toastStore.showToast(3000, "Se ha confirmado el reporte", "Check", 'bg-green-600');        
+          this.registros.filter(registro => registro.fechaDelDia === this.fecha_seleccionada)[0].estadoReporte = 'Verificado'
         })
         .catch(error => {
           console.log(error);
