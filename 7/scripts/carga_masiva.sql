@@ -529,8 +529,10 @@ DECLARE
     reporte_cursor CURSOR FOR
         SELECT Id_reporte, id_jefe, id_supervisor
         FROM Reportes
-        WHERE Fecha_reporte < CURRENT_DATE AND id_jefe is not null and id_supervisor is not null
-          AND id_estado_reporte != 2; 
+        WHERE Fecha_reporte < CURRENT_DATE 
+          AND id_jefe IS NOT NULL 
+          AND id_supervisor IS NOT NULL
+          AND id_estado_reporte != 4; -- Filtra reportes no vencidos
     
     reporte_record RECORD;
 BEGIN
@@ -540,10 +542,12 @@ BEGIN
         FETCH reporte_cursor INTO reporte_record;
         EXIT WHEN NOT FOUND;
 
+        -- Actualizar estado de reporte a "Vencido" (id_estado_reporte = 4)
         UPDATE Reportes
-        SET id_estado_reporte = 2
+        SET id_estado_reporte = 4
         WHERE Id_reporte = reporte_record.Id_reporte;
 
+        -- Insertar notificación
         INSERT INTO Notificaciones (
             id_notificacion, Asunto, mensaje, fecha_notificacion, id_remitente, id_destinatario, Id_reporte, id_tipo
         )
@@ -552,14 +556,22 @@ BEGIN
             'Reporte vencido',
             'El reporte con ID ' || reporte_record.Id_reporte || ' ha sido marcado como vencido.',
             NOW(),
-            reporte_record.id_jefe,
-            reporte_record.id_supervisor, 
+            reporte_record.id_jefe, -- Remitente: Jefe
+            reporte_record.id_supervisor, -- Destinatario: Supervisor
             reporte_record.Id_reporte,
+            1 -- Tipo de notificación: Alerta de vencimiento
         );
+
+        -- Marcar el reporte como "Notificado" después de enviar la notificación (id_estado_reporte = 3)
+        UPDATE Reportes
+        SET id_estado_reporte = 3
+        WHERE Id_reporte = reporte_record.Id_reporte;
+
     END LOOP;
 
     CLOSE reporte_cursor;
 END;
 $$ LANGUAGE plpgsql;
+
 
 SELECT actualizar_reportes_vencidos();
