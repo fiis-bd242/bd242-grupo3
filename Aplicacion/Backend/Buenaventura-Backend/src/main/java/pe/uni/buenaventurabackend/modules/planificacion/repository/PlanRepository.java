@@ -375,8 +375,14 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public List<Integer> listaEquipos(){
-        String sql = "SELECT id_equipo_soporte FROM Equipo_de_soporte";
-        return jdbcTemplate.queryForList(sql, Integer.class);
+    public List<String> listaEquipos(){
+        String sql = "SELECT CONCAT('MQ-',LPAD(es.id_equipo_soporte::TEXT, 4, '0')) AS id_maquina FROM Equipo_de_soporte es";
+        return jdbcTemplate.queryForList(sql, String.class);
+    }
+
+    @Override
+    public List<String> listaMaquinas(){
+        String sql = "SELECT CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina FROM Maquina m";
+        return jdbcTemplate.queryForList(sql, String.class);
     }
 }

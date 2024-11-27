@@ -28,5 +28,7 @@ public interface IPlanService {
 
     List<String> listaInsumos();
 
-    List<Integer> listaEquipos();
+    List<String> listaEquipos();
+
+    List<String> listaMaquinas();
 }

@@ -35,5 +35,8 @@ public interface IPlanRepository {
 
     //Módulo de gestión de reportes
     int conteoNotificaciones();
-    List<Integer> listaEquipos();
+    List<String> listaEquipos();
+
+    //Modulo Control
+    List<String> listaMaquinas();
 }

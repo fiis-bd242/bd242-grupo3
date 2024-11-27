@@ -137,8 +137,14 @@ public class PlanController {
     }
 
     @GetMapping("/listaEquipos")
-    public ResponseEntity<List<Integer>> listaEquipos(){
+    public ResponseEntity<List<String>> listaEquipos(){
         var result = iPlanService.listaEquipos();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @GetMapping("/listaMaquinas")
+    public ResponseEntity<List<String>> listaMaquinas(){
+        var result = iPlanService.listaMaquinas();
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }

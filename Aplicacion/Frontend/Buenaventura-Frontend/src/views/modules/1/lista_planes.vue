@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="title w-full mx-auto p-4"><b>LISTA DE PLANES DE MANTENIMIENTO</b></h1>
+  <div class = "w-full mx-auto p-4">
+    <h1 class="title"><b>LISTA DE PLANES DE MANTENIMIENTO</b></h1>
 
     <!-- Botón de nuevo plan -->
     <button class="new-plan-button" @click="redirectToCreate">Nuevo plan</button>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="title w-full mx-auto p-4"><b>LISTA DE ACTIVIDADES DE EMPLEADO</b></h1>
+  <div class = "w-full mx-auto p-4">
+    <h1 class="title"><b>LISTA DE ACTIVIDADES DE EMPLEADO</b></h1>
 
     <!-- Campo para seleccionar la orden de trabajo -->
     <div class="order-selection">
