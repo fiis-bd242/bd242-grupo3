@@ -7,7 +7,7 @@
       <div class="botones-superiores">
         <!-- Botón para regresar -->
         <button @click="volverListaPlanes" class="btn btn-secondary">
-          Volver a la lista de planes
+          Volver a la lista de trabajos
         </button>
       </div>
   
@@ -27,6 +27,7 @@
           <p><strong>Responsable:</strong> {{ detallePlan.responsable }}</p>
           <p><strong>Criticidad:</strong> {{ detallePlan.criticidad }}</p>
           <p><strong>ID Orden:</strong> {{ detallePlan.id_orden }}</p>
+          <p><strong>Descripcion:</strong> {{ detallePlan.descripcion }}</p>
         </div>
   
         <!-- Equipos e insumos lado a lado -->
@@ -61,7 +62,7 @@
       </div>
   
       <div v-else>
-        <p>Cargando detalles del plan...</p>
+        <p>Cargando detalles del trabajo...</p>
       </div>
     </div>
   </template>
@@ -82,14 +83,14 @@
       async obtenerDetallePlan() {
         const id_plan = this.$route.params.id_plan;
         try {
-          const response = await axios.get(`/api/planificacion/detallePlan/${id_plan}`);
+          const response = await axios.get(`/api/control/detalles/${id_plan}`);
           this.detallePlan = response.data;
         } catch (error) {
           console.error("Error al obtener los detalles del plan:", error);
         }
       },
       volverListaPlanes() {
-        this.$router.push("/moduloplanificacion/lista_planes");
+        this.$router.push("/modulocontrol/trabajos");
       },
       async enviarNotificacion() {
         try {

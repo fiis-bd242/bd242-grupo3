@@ -32,6 +32,9 @@
           '/moduloplanificacion/edita_orden': 'Planificación del mantenimiento',
           '/moduloplanificacion/edita_actividad': 'Planificación del mantenimiento',
           //Módulo 2: Control del mantenimiento
+          '/modulocontrol/trabajos':'Control de Mantenimiento',
+          '/modulocontrol/detalles/0008' : 'Control de Mantenimiento',
+          '/modulocontrol/detalles/0010' : 'Control de Mantenimiento',
           //Módulo 7: Gestión de reportes e insumos
           '/modulogestionreportes/dash': 'Gestión de reportes e historial de mantenimiento',
           '/modulogestionreportes/registros': 'Gestión de reportes e historial de mantenimiento',

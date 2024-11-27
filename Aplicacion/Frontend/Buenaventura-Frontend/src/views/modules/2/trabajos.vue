@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-auto my-2">
     <h1 class="title"><b>LISTA DE TRABAJOS ASIGNADOS</b></h1>
 
     <!-- Buscadores -->
