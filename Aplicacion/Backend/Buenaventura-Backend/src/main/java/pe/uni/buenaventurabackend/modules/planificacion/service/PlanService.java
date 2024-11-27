@@ -167,4 +167,5 @@ public class PlanService implements IPlanService{
     public List<String> listaMaquinas(){
         return iPlanRepository.listaMaquinas();
     }
+
 }

@@ -20,7 +20,7 @@ public class PlanRepository implements IPlanRepository{
     private final JdbcTemplate jdbcTemplate;
     @Override
     public List<String> findAll() {
-        String SQL = "SELECT CONCAT('OT-', LPAD(id_plan::TEXT, 4, '0')) AS id_plan " +
+        String SQL = "SELECT CONCAT('PL-', LPAD(id_plan::TEXT, 4, '0')) AS id_plan " +
                 "FROM plan_de_mantenimiento";
         return jdbcTemplate.queryForList(SQL, String.class);
     }
@@ -393,4 +393,5 @@ public class PlanRepository implements IPlanRepository{
         String sql = "SELECT CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina FROM Maquina m";
         return jdbcTemplate.queryForList(sql, String.class);
     }
+
 }

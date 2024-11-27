@@ -12,6 +12,6 @@ import java.util.List;
 @NoArgsConstructor
 public class NuevaOrdenRequest {
     private Orden_de_trabajo orden;
-    private int id_plan;
+    private String id_plan;
     private List<Integer> lista_empleados;
 }

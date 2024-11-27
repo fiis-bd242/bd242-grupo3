@@ -39,4 +39,5 @@ public interface IPlanRepository {
 
     //Modulo Control
     List<String> listaMaquinas();
+
 }

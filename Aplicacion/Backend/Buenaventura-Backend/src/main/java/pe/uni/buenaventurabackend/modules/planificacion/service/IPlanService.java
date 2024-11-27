@@ -1,5 +1,6 @@
 package pe.uni.buenaventurabackend.modules.planificacion.service;
 
+import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
@@ -31,4 +32,5 @@ public interface IPlanService {
     List<String> listaEquipos();
 
     List<String> listaMaquinas();
+
 }

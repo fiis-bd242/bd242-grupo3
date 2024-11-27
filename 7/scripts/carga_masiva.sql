@@ -87,6 +87,23 @@ FROM 'C:\DBD-2024-2\datos\detalle_reserva.csv'
 DELIMITER ';'
 CSV HEADER;
 
+INSERT INTO insumoxalmacen (id_insum_alm, cantidad, id_insumo, id_almacen) VALUES
+(1, 81, 58, 1),
+(2, 72, 27, 1),
+(3, 62, 11, 1),
+(4, 39, 31, 1),
+(5, 86, 43, 1),
+(6, 62, 22, 1),
+(7, 100, 1, 1),
+(8, 35, 23, 1),
+(9, 62, 20, 1),
+(10, 30, 36, 1),
+(11, 91, 19, 1),
+(12, 96, 52, 1),
+(13, 32, 29, 1),
+(14, 97, 55, 1),
+(15, 93, 35, 1);
+
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -513,11 +530,9 @@ AYUDA: Revisa los atributos que tiene la tabla y por favor, hazlo con MOCKAROO
 COPY Recuperacion_de_contraseña  FROM 'C:\DBD-2024-2\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
 */
 
-CREATE SEQUENCE notificaciones_id_notificacion_seq;
+
 ALTER TABLE Notificaciones 
 ALTER COLUMN id_notificacion SET DEFAULT nextval('notificaciones_id_notificacion_seq');
-INSERT INTO Estado_Reporte (id_estado_reporte,nombre_estado) VALUES 
-(4, 'Vencido');
 
 SELECT setval('notificaciones_id_notificacion_seq', (SELECT MAX(id_notificacion) FROM Notificaciones));
 
