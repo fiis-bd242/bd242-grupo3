@@ -87,6 +87,23 @@ FROM 'C:\DBD-2024-2\datos\detalle_reserva.csv'
 DELIMITER ';'
 CSV HEADER;
 
+INSERT INTO insumoxalmacen (id_insum_alm, cantidad, id_insumo, id_almacen) VALUES
+(1, 81, 58, 1),
+(2, 72, 27, 1),
+(3, 62, 11, 1),
+(4, 39, 31, 1),
+(5, 86, 43, 1),
+(6, 62, 22, 1),
+(7, 100, 1, 1),
+(8, 35, 23, 1),
+(9, 62, 20, 1),
+(10, 30, 36, 1),
+(11, 91, 19, 1),
+(12, 96, 52, 1),
+(13, 32, 29, 1),
+(14, 97, 55, 1),
+(15, 93, 35, 1);
+
 
 -- Poblamiento de la tabla Tipo_equipo_soporte
 INSERT INTO Tipo_Equipo_Soporte (Id_tipo, Nombre_tipo) VALUES
@@ -386,7 +403,8 @@ VALUES
 INSERT INTO Estado_Reporte (id_estado_reporte,nombre_estado) VALUES 
 (1,'No Verificado'),
 (2,'Verificado'),
-(3,'Notificado');
+(3,'Notificado'),
+(4, 'Vencido');
 
 -- Poblamiento de la tabla tipo_urgencia
 INSERT INTO Tipo_urgencia (Id_urgencia, Tipo_urgencia)
@@ -511,3 +529,64 @@ AYUDA: Revisa los atributos que tiene la tabla y por favor, hazlo con MOCKAROO
 
 COPY Recuperacion_de_contraseña  FROM 'C:\DBD-2024-2\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
 */
+
+
+ALTER TABLE Notificaciones 
+ALTER COLUMN id_notificacion SET DEFAULT nextval('notificaciones_id_notificacion_seq');
+
+SELECT setval('notificaciones_id_notificacion_seq', (SELECT MAX(id_notificacion) FROM Notificaciones));
+
+select * from registro;
+
+CREATE OR REPLACE FUNCTION actualizar_reportes_vencidos()
+RETURNS VOID AS $$
+DECLARE
+    reporte_cursor CURSOR FOR
+        SELECT Id_reporte, id_jefe, id_supervisor
+        FROM Reportes
+        WHERE Fecha_reporte < CURRENT_DATE 
+          AND id_jefe IS NOT NULL 
+          AND id_supervisor IS NOT NULL
+          AND id_estado_reporte != 4; -- Filtra reportes no vencidos
+    
+    reporte_record RECORD;
+BEGIN
+    OPEN reporte_cursor;
+
+    LOOP
+        FETCH reporte_cursor INTO reporte_record;
+        EXIT WHEN NOT FOUND;
+
+        -- Actualizar estado de reporte a "Vencido" (id_estado_reporte = 4)
+        UPDATE Reportes
+        SET id_estado_reporte = 4
+        WHERE Id_reporte = reporte_record.Id_reporte;
+
+        -- Insertar notificación
+        INSERT INTO Notificaciones (
+            id_notificacion, Asunto, mensaje, fecha_notificacion, id_remitente, id_destinatario, Id_reporte, id_tipo
+        )
+        VALUES (
+            DEFAULT, 
+            'Reporte vencido',
+            'El reporte con ID ' || reporte_record.Id_reporte || ' ha sido marcado como vencido.',
+            NOW(),
+            reporte_record.id_jefe, -- Remitente: Jefe
+            reporte_record.id_supervisor, -- Destinatario: Supervisor
+            reporte_record.Id_reporte,
+            1 -- Tipo de notificación: Alerta de vencimiento
+        );
+
+        -- Marcar el reporte como "Notificado" después de enviar la notificación (id_estado_reporte = 3)
+        UPDATE Reportes
+        SET id_estado_reporte = 3
+        WHERE Id_reporte = reporte_record.Id_reporte;
+
+    END LOOP;
+
+    CLOSE reporte_cursor;
+END;
+$$ LANGUAGE plpgsql;
+
+
+SELECT actualizar_reportes_vencidos();

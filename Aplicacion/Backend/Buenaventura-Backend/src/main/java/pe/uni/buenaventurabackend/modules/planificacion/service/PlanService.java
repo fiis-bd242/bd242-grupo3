@@ -3,6 +3,7 @@ package pe.uni.buenaventurabackend.modules.planificacion.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import pe.uni.buenaventurabackend.modules.gestion_insumos.models.Insumo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Notificaciones;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
@@ -38,20 +39,31 @@ public class PlanService implements IPlanService{
     @Transactional
     @Override
     public void nuevoPlan(Plan_de_mantenimiento plan, Mantenimiento mant, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos, int id_usuario){
+
         //Intentar reservar
+        System.out.println("Paso a");
         reservaEquipo(listaEquipos);
+        System.out.println("id_usu" + id_usuario);
+        System.out.println("listaInsumos" + listaInsumos);
         reservaInsumo(id_usuario, listaInsumos);
+        System.out.println("Paso c");
 
         //Establecimiento de parámetros estándar y calculados
         // IDs de plan, mantenimiento son calculados:
+        System.out.println("Paso d");
         plan.setId_plan(iPlanRepository.conteoPlan()+1);
+        System.out.println("Paso e");
         mant.setId_plan(iPlanRepository.conteoPlan()+1);
+        System.out.println("Paso f");
         mant.setId_orden(iOrdenRepository.conteoOrden());
+        System.out.println("Paso g");
         int id_act_mantto = iPlanRepository.conteoMantenimiento()+1;
+        System.out.println("Paso h");
         mant.setId_act_mantto(id_act_mantto);
         //El id de mantenimiento = 1 (Borrador)
+        System.out.println("Paso i");
         mant.setId_estado(1);
-
+        System.out.println("Paso j");
         iPlanRepository.nuevoPlanMant(plan,mant);
         EquipoSXMantenimiento elemEquipo = new EquipoSXMantenimiento();
         int id_equipo_mant = iPlanRepository.conteoPlanEquipo() +1;
@@ -142,7 +154,7 @@ public class PlanService implements IPlanService{
     }
 
     @Override
-    public List<String> listaInsumos(){
+    public List<InsumoDTO> listaInsumos(){
         return iPlanRepository.listaInsumos();
     }
 
@@ -155,4 +167,5 @@ public class PlanService implements IPlanService{
     public List<String> listaMaquinas(){
         return iPlanRepository.listaMaquinas();
     }
+
 }

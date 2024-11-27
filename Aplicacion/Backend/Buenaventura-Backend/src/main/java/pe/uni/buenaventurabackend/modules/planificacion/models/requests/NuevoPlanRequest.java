@@ -15,8 +15,9 @@ import java.util.List;
 public class NuevoPlanRequest {
     private Plan_de_mantenimiento plan;
     private Mantenimiento mantenimiento;
-    private List<Integer> listaEquipos;
+    private List<String> listaEquipos;
     private List<InsumoDTO> listaInsumos;
     private int id_usuario;
+    private String id_maquina;
 }
 

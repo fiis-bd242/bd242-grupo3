@@ -31,8 +31,8 @@ public class TrabajosRepository implements ITrabajosRepository{
                 "INNER JOIN Criticidad c " +
                 "ON c.id_criticidad = p.id_criticidad " +
                 "ORDER BY p.id_plan " +
-                "LIMIT 6 " +
-                "OFFSET 103-1;";
+                "LIMIT ? " +
+                "OFFSET ?-1;";
         return jdbcTemplate.queryForList(sql,limit,offset);
     }
 }

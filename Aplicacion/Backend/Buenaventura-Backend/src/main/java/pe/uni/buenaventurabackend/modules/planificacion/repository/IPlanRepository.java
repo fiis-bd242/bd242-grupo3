@@ -31,7 +31,7 @@ public interface IPlanRepository {
 
     //Módulo de insumo
     void reservaInsumo(int id_insumo, int cantidad, int id_usuario);
-    List<String> listaInsumos();
+    List<InsumoDTO> listaInsumos();
 
     //Módulo de gestión de reportes
     int conteoNotificaciones();
@@ -39,4 +39,5 @@ public interface IPlanRepository {
 
     //Modulo Control
     List<String> listaMaquinas();
+
 }

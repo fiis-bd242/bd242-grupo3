@@ -772,8 +772,7 @@ CREATE TABLE Notificaciones
   FOREIGN KEY (id_tipo) REFERENCES Tipo_notificacion(id_tipo)
 );
 
-
-
+CREATE SEQUENCE IF NOT EXISTS notificaciones_id_notificacion_seq;
 
 
 DROP TABLE IF EXISTS Estado_Sesion CASCADE;
@@ -873,4 +872,6 @@ CREATE TABLE Notificacion_Administrador (
     FOREIGN KEY (Id_autenticacion) REFERENCES Sesion_sospechosa(Id_autenticacion),
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
 );
+
+
 

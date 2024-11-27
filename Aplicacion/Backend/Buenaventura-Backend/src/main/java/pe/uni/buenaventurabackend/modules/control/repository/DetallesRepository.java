@@ -64,6 +64,7 @@ public class DetallesRepository implements IDetallesRepository{
                 detalles.setResponsable(rs.getString("responsable"));
                 detalles.setCriticidad(rs.getString("criticidad"));
                 detalles.setId_orden(rs.getString("id_orden"));
+                detalles.setDescripcion(rs.getString("descripcion"));
 
                 // Convertir lista de equipos y lista de insumos en arrays separados
                 String listaEquipos = rs.getString("listaEquipos");

@@ -36,9 +36,11 @@ public class OrdenController {
     @PostMapping("/nuevaOrden")
     public ResponseEntity<?> nuevaOrden(@RequestBody NuevaOrdenRequest request){
         try {
+            int id_plan = Integer.parseInt(request.getId_plan().substring(3,7));
+
             iOrdenService.nuevaOrden(
                     request.getOrden(),
-                    request.getId_plan(),
+                    id_plan,
                     request.getLista_empleados()
             );
             return ResponseEntity.ok(new ApiResponse("Orden creada exitosamente"));

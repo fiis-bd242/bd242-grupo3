@@ -7,8 +7,8 @@
           <label for="planMantenimiento">Relacionar a un Plan de Mantenimiento (Opcional):</label>
           <select v-model="orden.id_plan">
             <option value="" disabled>Seleccionar un Plan</option>
-            <option v-for="plan in listaPlanes" :key="plan.id" :value="plan.id">
-              {{ plan.nombre }}
+            <option v-for="plan in listaPlanes" :key="plan.id" :value="plan">
+              {{ plan }}
             </option>
           </select>
         </div>
@@ -82,7 +82,7 @@ export default {
         this.listaPlanes = planesResponse.data;
 
         // Cargar lista de empleados
-        const empleadosResponse = await axios.get("/api/empleados/lista");
+        const empleadosResponse = await axios.get("/api/planificacion/listaEmpleados");
         this.listaEmpleados = empleadosResponse.data.map((empleado) => ({
           id: empleado.id_empleado,
           nombre: empleado.nombre,
@@ -114,9 +114,9 @@ export default {
             .map((empleado) => empleado.id),
         };
 
-        const response = await axios.post("/api/ordenes/nuevaOrden", requestBody);
+        const response = await axios.post("/api/planificacion/nuevaOrden", requestBody);
         alert(response.data.message || "Orden creada exitosamente.");
-        this.$router.push("/moduloordenes/lista_ordenes"); // Redirigir tras guardar
+        this.$router.push("/moduloplanificacion/lista_ordenes"); // Redirigir tras guardar
       } catch (error) {
         console.error("Error al guardar la orden:", error);
         alert("Error al guardar la orden. Por favor, inténtalo de nuevo.");
