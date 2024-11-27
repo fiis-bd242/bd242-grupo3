@@ -27,10 +27,10 @@ public interface IPlanRepository {
     List<Map<String,Object>> findXbyDate(int limit, int offset, Date fecha_inicio_programado);
 
     //Módulo de equipo de soporte
-    void reservaEquipo(int id_equipo);
+    void reservaEquipo(List<Integer> listaEquipos);
 
     //Módulo de insumo
-    void reservaInsumo(int id_insumo, int id_cantidad);
+    void reservaInsumo(int id_insumo, int cantidad, int id_usuario);
     List<String> listaInsumos();
 
     //Módulo de gestión de reportes

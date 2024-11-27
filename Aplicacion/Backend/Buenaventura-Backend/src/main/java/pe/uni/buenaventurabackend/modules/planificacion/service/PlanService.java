@@ -37,7 +37,11 @@ public class PlanService implements IPlanService{
 
     @Transactional
     @Override
-    public void nuevoPlan(Plan_de_mantenimiento plan, Mantenimiento mant, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos){
+    public void nuevoPlan(Plan_de_mantenimiento plan, Mantenimiento mant, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos, int id_usuario){
+        //Intentar reservar
+        reservaEquipo(listaEquipos);
+        reservaInsumo(id_usuario, listaInsumos);
+
         //Establecimiento de parámetros estándar y calculados
         // IDs de plan, mantenimiento son calculados:
         plan.setId_plan(iPlanRepository.conteoPlan()+1);
@@ -70,10 +74,6 @@ public class PlanService implements IPlanService{
             id_insum_mant++;
         }
 
-        //Reserva de los equipos de soporte e insumos (interaccion con otros modulos)
-        reservaEquipo(listaEquipos);
-        reservaInsumo(listaInsumos);
-
     }
 
     @Override
@@ -97,16 +97,15 @@ public class PlanService implements IPlanService{
     @Transactional
     @Override
     public void reservaEquipo(List<Integer> listaEquipos){
-        for (int i : listaEquipos){
-            iPlanRepository.reservaEquipo(i);
-        }
+        iPlanRepository.reservaEquipo(listaEquipos);
+
     }
 
     @Transactional
     @Override
-    public void reservaInsumo(List<InsumoDTO> listaInsumos){
-        for (InsumoDTO insumo : listaInsumos){
-            iPlanRepository.reservaInsumo(insumo.getId_insumo(), insumo.getCantidad());
+    public void reservaInsumo(int id_usuario, List<InsumoDTO> listaInsumos){
+        for (InsumoDTO insumo : listaInsumos) {
+            iPlanRepository.reservaInsumo(insumo.getId_insumo(), insumo.getCantidad(), id_usuario);
         }
     }
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title"><b>LISTA DE ÓRDENES DE TRABAJO</b></h1>
+    <h1 class="title w-full mx-auto p-4"><b>LISTA DE ÓRDENES DE TRABAJO</b></h1>
 
     <!-- Botón de nueva orden -->
     <button class="new-orden-button" @click="redirectToCreate">Nueva orden</button>
