@@ -301,15 +301,17 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public void reservaEquipo(int id_equipo_soporte){
+    public void reservaEquipo(List<Integer> listaEquipos){
         String sql = "UPDATE Equipo_de_soporte " +
                 "SET id_disponibilidad = 1 " +
                 "WHERE id_equipo_soporte = ?";
-        jdbcTemplate.update(sql, id_equipo_soporte);
+        for (int id_equipo_soporte: listaEquipos){
+            jdbcTemplate.update(sql, id_equipo_soporte);
+        }
     }
 
     @Override
-    public void reservaInsumo(int id_insumo, int cantidad){
+    public void reservaInsumo(int id_insumo, int cantidad, int id_usuario){
         String sql = "SELECT cantidad FROM Insumo " +
                 "WHERE id_insumo = ?";
         int cant_actual = jdbcTemplate.queryForObject(sql, Integer.class, id_insumo);
@@ -345,8 +347,19 @@ public class PlanRepository implements IPlanRepository{
         }
         jdbcTemplate.queryForObject(sql, Integer.class, id_insumo);
 
-        sql = "INSERT INTO Reserva " +
-                "VALUES ()"
+        sql = "INSERT INTO Reserva (fecha, hora, id_estado_reserva, id_empleado)" +
+                "VALUES (current_date,current_time,1,?)";
+        jdbcTemplate.update(sql, id_usuario);
+
+        sql = "SELECT COUNT(*) FROM Detalle_reserva";
+        int id_detalle = jdbcTemplate.queryForObject(sql, Integer.class) +1;
+
+        sql = "SELECT COUNT (*) FROM Reserva";
+        int id_reserva = jdbcTemplate.queryForObject(sql, Integer.class) +1;
+
+        sql = "INSERT INTO Detalle_reserva (id_detalle, cant_reserv, id_insumo, id_reserva) " +
+                "VALUES (?, ?, ?, ?) ";
+        jdbcTemplate.update(sql, id_detalle, cantidad, id_insumo, id_reserva);
     }
 
     @Override

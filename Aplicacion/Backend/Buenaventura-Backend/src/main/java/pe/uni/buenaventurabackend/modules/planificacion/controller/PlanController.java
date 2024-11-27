@@ -42,7 +42,8 @@ public class PlanController {
                     request.getPlan(),
                     request.getMantenimiento(),
                     request.getListaEquipos(),
-                    request.getListaInsumos()
+                    request.getListaInsumos(),
+                    request.getId_usuario()
             );
             return ResponseEntity.ok(new ApiResponse("Plan creado exitosamente"));
         } catch (Exception e){
