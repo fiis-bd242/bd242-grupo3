@@ -9,5 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class InsumoDTO {
     private int id_insumo;
+    private String nombre;
     private int cantidad;
 }

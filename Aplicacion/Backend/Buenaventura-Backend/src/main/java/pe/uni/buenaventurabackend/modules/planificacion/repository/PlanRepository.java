@@ -318,11 +318,11 @@ public class PlanRepository implements IPlanRepository{
         if(cant_actual < cantidad){
             return;
         }
-
-        sql = "UPDATE Insumo " +
+        int cant_nueva = cant_actual - cantidad;
+        String sql1 = "UPDATE Insumo " +
                 "SET cantidad = ? " +
                 "WHERE id_insumo = ?";
-        jdbcTemplate.update(sql, cantidad-cant_actual, id_insumo);
+        jdbcTemplate.update(sql1,cant_nueva, id_insumo);
 
         String sql_cant = "SELECT cantidad FROM InsumoXAlmacen " +
                 "WHERE id_insumo = ? AND cantidad > 0 LIMIT 1";
@@ -332,7 +332,7 @@ public class PlanRepository implements IPlanRepository{
                 "SET cantidad = ? " +
                 "WHERE id_insum_alm = ?";
 
-        int id_insum_alm;
+        int id_insum_alm = 0;
         while (cantidad > 0){
             cant_actual = jdbcTemplate.queryForObject(sql_cant, Integer.class, id_insumo);
             id_insum_alm = jdbcTemplate.queryForObject(sql_id, Integer.class, id_insumo);
@@ -347,15 +347,17 @@ public class PlanRepository implements IPlanRepository{
         }
         jdbcTemplate.queryForObject(sql, Integer.class, id_insumo);
 
-        sql = "INSERT INTO Reserva (fecha, hora, id_estado_reserva, id_empleado)" +
-                "VALUES (current_date,current_time,1,?)";
-        jdbcTemplate.update(sql, id_usuario);
+        sql = "SELECT COUNT (*) FROM Reserva";
+        int id_reserva = jdbcTemplate.queryForObject(sql, Integer.class) +1;
+
+        String sql2 = "INSERT INTO Reserva (id_reserva, fecha, hora, id_estado_reserva, id_empleado)" +
+                "VALUES (?,current_date,current_time,1,?)";
+        jdbcTemplate.update(sql2, id_reserva, id_usuario);
 
         sql = "SELECT COUNT(*) FROM Detalle_reserva";
         int id_detalle = jdbcTemplate.queryForObject(sql, Integer.class) +1;
 
-        sql = "SELECT COUNT (*) FROM Reserva";
-        int id_reserva = jdbcTemplate.queryForObject(sql, Integer.class) +1;
+
 
         sql = "INSERT INTO Detalle_reserva (id_detalle, cant_reserv, id_insumo, id_reserva) " +
                 "VALUES (?, ?, ?, ?) ";
@@ -369,14 +371,20 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public List<String> listaInsumos(){
-        String sql = "SELECT nombre FROM Insumo";
-        return jdbcTemplate.queryForList(sql, String.class);
+    public List<InsumoDTO> listaInsumos(){
+        String sql = "SELECT id_insumo, nombre FROM Insumo " +
+                "ORDER BY nombre";
+        return jdbcTemplate.query(sql, (rs, rowNum) -> {
+            InsumoDTO detalle = new InsumoDTO();
+            detalle.setId_insumo(rs.getInt("id_insumo"));
+            detalle.setNombre(rs.getString("nombre"));
+            return detalle;
+        });
     }
 
     @Override
     public List<String> listaEquipos(){
-        String sql = "SELECT CONCAT('MQ-',LPAD(es.id_equipo_soporte::TEXT, 4, '0')) AS id_maquina FROM Equipo_de_soporte es";
+        String sql = "SELECT CONCAT('ES-',LPAD(es.id_equipo_soporte::TEXT, 4, '0')) AS id_equipo_soporte FROM Equipo_de_soporte es";
         return jdbcTemplate.queryForList(sql, String.class);
     }
 

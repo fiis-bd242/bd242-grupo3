@@ -5,55 +5,67 @@
         <!-- Tipo de Mantenimiento -->
         <div class="form-group">
           <label for="tipoMantenimiento">Tipo de Mantenimiento:</label>
-          <select v-model="plan.tipoMantenimiento" required>
-            <option value="Preventivo">Preventivo</option>
-            <option value="Correctivo">Correctivo</option>
-            <option value="Predictivo">Predictivo</option>
+          <select v-model="mantenimiento.tipoMantenimiento" required>
+            <option value=1>Preventivo</option>
+            <option value=2>Correctivo</option>
+            <option value=3>Predictivo</option>
           </select>
         </div>
   
         <!-- Código de la máquina -->
-        <div class="form-group">
-          <h3>Código de la máquina:</h3>
-          <div v-for="(maquina, index) in maquinas" :key="index">
-            <select v-model="maquinas[index]" @change="agregarCampoMaquina(index)">
-              <option value="" disabled>Seleccionar Máquina</option>
-              <option v-for="id in listaMaquinas" :key="id" :value="id">
-                {{ id }}
-              </option>
-            </select>
-          </div>
-        </div>
+      <div class="form-group">
+        <label for="codigoMaquina">Código de la Máquina:</label>
+        <select v-model="id_maquina" required>
+          <option value="" disabled>Seleccionar Máquina</option>
+          <option v-for="id in listaMaquinas" :key="id" :value="id">
+            {{ id }}
+          </option>
+        </select>
+      </div>
   
         <!-- Fechas -->
         <div class="form-group">
-          <label for="fechaInicio">Fecha de Inicio:</label>
-          <input type="date" id="fechaInicio" v-model="plan.fechaInicio" required />
+          <label for="fecha_inicio_programado">Fecha de Inicio:</label>
+          <input type="date" id="fecha_inicio_programado" v-model="mantenimiento.fecha_inicio_programado" required />
   
-          <label for="fechaFin">Fecha de Fin:</label>
-          <input type="date" id="fechaFin" v-model="plan.fechaFin" required />
+          <label for="fecha_fin_programado">Fecha de Fin:</label>
+          <input type="date" id="fecha_fin_programado" v-model="mantenimiento.fecha_fin_programado" required />
         </div>
   
         <!-- Criticidad -->
         <div class="form-group">
           <label for="criticidad">Criticidad:</label>
           <select v-model="plan.criticidad" required>
-            <option value="1">Baja</option>
-            <option value="2">Media</option>
-            <option value="3">Alta</option>
+            <option value=1>Baja</option>
+            <option value=2>Media</option>
+            <option value=3>Alta</option>
           </select>
         </div>
   
         <!-- Insumos Necesarios -->
         <div class="form-group">
           <h3>Insumos Necesarios:</h3>
-          <div v-for="(insumo, index) in insumos" :key="index">
-            <select v-model="insumos[index]" @change="agregarCampoInsumo(index)">
+          <div v-for="(insumo, index) in insumos" :key="index" class="insumo-item" style="display: flex; gap: 10px;">
+            <select
+              v-model="insumo.id_insumo"
+              @change="agregarCampoInsumo(index)"
+              required
+              style="flex: 2;"
+            >
               <option value="" disabled>Seleccionar Insumo</option>
-              <option v-for="item in listaInsumos" :key="item" :value="item">
-                {{ item }}
+              <option v-for="item in listaInsumos" :key="item.id_insumo" :value="item.id_insumo">
+              {{ item.nombre }}
               </option>
             </select>
+            <input
+              type="number"
+              v-model="insumo.cantidad"
+              min="1"
+              placeholder="Cantidad"
+              required
+              style="flex: 1;"
+            />
+            <button type="button" @click="removerCampoInsumo(index)" v-if="index > 0">Eliminar</button>
           </div>
         </div>
   
@@ -91,16 +103,18 @@ export default {
   data() {
     return {
       plan: {
-        tipoMantenimiento: "",
-        codigoMaquina: "",
-        fechaInicio: "",
-        fechaFin: "",
-        criticidad: "",
+        criticidad: 0,
         descripcion: "",
       },
-      maquinas: [],
-      insumos: [""],
+      mantenimiento: {
+        tipoMantenimiento: 0,
+        fecha_inicio_programado: "",
+        fecha_fin_programado: ""
+      },
+      id_maquina: "",
+      insumos: [{ id_insumo: "", cantidad: 1 }],
       equipos: [""],
+      listaMaquinas: [""],
       listaInsumos: [],
       listaEquipos: [],
     };
@@ -120,15 +134,17 @@ export default {
         console.error("Error al cargar listas:", error);
       }
     },
-    agregarCampoMaquina(index) {
-      if (this.maquinas[index] && index === this.maquinas.length - 1) {
-        this.maquinas.push("");
+    agregarCampoInsumo(index) {
+      if (
+        this.insumos[index].id_insumo &&
+        this.insumos[index].cantidad &&
+        index === this.insumos.length - 1
+      ) {
+        this.insumos.push({ id_insumo: "", cantidad: 1 });
       }
     },
-    agregarCampoInsumo(index) {
-      if (this.insumos[index] && index === this.insumos.length - 1) {
-        this.insumos.push("");
-      }
+    removerCampoInsumo(index) {
+      this.insumos.splice(index, 1);
     },
     agregarCampoEquipo(index) {
       if (this.equipos[index] && index === this.equipos.length - 1) {
@@ -137,18 +153,27 @@ export default {
     },
     async guardarPlan() {
       try {
+        const listaInsumos = this.insumos
+          .filter((insumo) => insumo.id_insumo && insumo.cantidad > 0)
+          .map((insumo) => ({
+            id_insumo: parseInt(insumo.id_insumo), // Aseguramos que sea numérico
+            cantidad: insumo.cantidad,
+          }));
+
         const requestBody = {
-          plan: {
-            tipoMantenimiento: this.plan.tipoMantenimiento,
-            codigoMaquina: this.plan.codigoMaquina,
-            fechaInicio: this.plan.fechaInicio,
-            fechaFin: this.plan.fechaFin,
-            criticidad: this.plan.criticidad,
-            descripcion: this.plan.descripcion,
-            id_usuario: this.idCuenta
+          plan: {  
+            id_criticidad: this.plan.criticidad,
+            descripcion: this.plan.descripcion
+          },
+          mantenimiento: {
+            id_tipo_mant: this.mantenimiento.tipoMantenimiento,
+            fecha_inicio_programado: this.mantenimiento.fecha_inicio_programado,
+            fecha_fin_programado: this.mantenimiento.fecha_fin_programado
           },
           listaEquipos: this.equipos.filter((equipo) => equipo),
-          listaInsumos: this.insumos.filter((insumo) => insumo),
+          listaInsumos,
+          id_usuario: this.idCuenta,
+          id_maquina: this.id_maquina
         };
 
         const response = await axios.post("/api/planificacion/nuevoPlan", requestBody);

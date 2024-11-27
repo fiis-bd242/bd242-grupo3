@@ -5,6 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.models.ApiResponse;
+import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTO;
+import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
@@ -38,12 +40,24 @@ public class PlanController {
     @PostMapping("/nuevoPlan")
     public ResponseEntity<?> nuevoPlan(@RequestBody NuevoPlanRequest request){
         try {
+            List<String> listaEquipos = request.getListaEquipos();
+            List<Integer> listaEquiposI = new ArrayList<>();
+            for (String equipo:listaEquipos){
+                listaEquiposI.add(Integer.parseInt(equipo.substring(3,7)));
+            }
+            Plan_de_mantenimiento plan = request.getPlan();
+            plan.setEmpleado_asigna(request.getId_usuario());
+
+            int id_maquina = Integer.parseInt(request.getId_maquina().substring(3,7));
+            Mantenimiento mant = request.getMantenimiento();
+            mant.setId_maquina(id_maquina);
             iPlanService.nuevoPlan(
-                    request.getPlan(),
-                    request.getMantenimiento(),
-                    request.getListaEquipos(),
+                    plan,
+                    mant,
+                    listaEquiposI,
                     request.getListaInsumos(),
                     request.getId_usuario()
+
             );
             return ResponseEntity.ok(new ApiResponse("Plan creado exitosamente"));
         } catch (Exception e){
@@ -131,7 +145,7 @@ public class PlanController {
     }
 
     @GetMapping("/listaInsumos")
-    public ResponseEntity<List<String>> listaInsumos(){
+    public ResponseEntity<List<InsumoDTO>> listaInsumos(){
         var result = iPlanService.listaInsumos();
         return new ResponseEntity<>(result, HttpStatus.OK);
     }

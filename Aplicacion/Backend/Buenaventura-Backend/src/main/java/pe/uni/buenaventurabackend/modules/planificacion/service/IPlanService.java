@@ -26,7 +26,7 @@ public interface IPlanService {
 
     int conteoPlan();
 
-    List<String> listaInsumos();
+    List<InsumoDTO> listaInsumos();
 
     List<String> listaEquipos();
 
