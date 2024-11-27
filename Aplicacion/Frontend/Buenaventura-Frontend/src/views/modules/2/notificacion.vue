@@ -1,17 +1,13 @@
 <template>
-  
     <div class="detalle-plan-container">
       <!-- Título centrado -->
       <h1 class="title"><b>ESTADO Y DISPONIBILIDAD</b></h1>
+  
       <!-- Contenedor de los botones superiores -->
       <div class="botones-superiores">
         <!-- Botón para regresar -->
-        <button @click="volverListaPlanes" class="btn btn-secondary">
-          Regresar
-        </button>
+        <button @click="volverListaPlanes" class="btn btn-secondary">Regresar</button>
       </div>
-  
-      
   
       <!-- Información detallada del plan -->
       <div v-if="detallePlan">
@@ -29,6 +25,13 @@
           <p><strong>ID Plan:</strong> {{ detallePlan.id_plan }}</p>
           <p><strong>Descripcion:</strong> {{ detallePlan.descripcion }}</p>
         </div>
+  
+        <!-- Contenedor para la disponibilidad -->
+        <div class="disponibilidad">
+          <p><strong>Disponibilidad:</strong></p>
+          <button class="btn btn-success" @click="aceptarPlan">Aceptar</button>
+          <button class="btn btn-danger" @click="rechazarPlan">Rechazar</button>
+        </div>
       </div>
   
       <div v-else>
@@ -39,14 +42,20 @@
   
   <script>
   import { useUserStore } from "@/stores/user";
+  import { useToastStore } from '@/stores/toast';
   import axios from "axios";
   
   export default {
+    setup(){
+        const toastStore = useToastStore()
+        return {
+            toastStore
+        }
+    },
     data() {
       return {
         detallePlan: null,
         idCuenta: null,
-        notificacionEnviada: false
       };
     },
     methods: {
@@ -62,24 +71,33 @@
       volverListaPlanes() {
         this.$router.push("/modulocontrol/trabajos");
       },
-      async enviarNotificacion() {
+      async aceptarPlan() {
         try {
           const id_plan = this.$route.params.id_plan;
-          await axios.post(`/api/planificacion/envioNotificacion/${this.idCuenta}/${id_plan}`);
-          alert("Notificación enviada con éxito.");
-          this.notificacionEnviada = true;
+          await axios.post(`/api/control/aceptarNotificacion/${this.idCuenta}/${id_plan}`);
+          this.toastStore.showToast(3000, "Aceptado", "Check", 'bg-green-600');
         } catch (error) {
-          console.error("Error al enviar la notificación:", error);
-          alert("Error al enviar la notificación.");
+          this.toastStore.showToast(3000, "Rechazado", "Check", 'bg-red-600');
+
         }
-      }
+      },
+      async rechazarPlan() {
+        try {
+          const id_plan = this.$route.params.id_plan;
+          await axios.post(`/api/control/rechazarNotificacion/${this.idCuenta}/${id_plan}`);
+          this.toastStore.showToast(3000, "Rechazado", "Wrong", 'bg-red-600');
+        } catch (error) {
+          console.error("Error al rechazar el plan:", error);
+          alert("Error al rechazar el plan.");
+        }
+      },
     },
     created() {
       this.obtenerDetallePlan();
       const userStore = useUserStore();
       this.idCuenta = userStore.user.id_cuenta;
-      this.idCuenta = 1;
-    }
+      this.idCuenta = 1; // Simulación de usuario
+    },
   };
   </script>
   
@@ -103,12 +121,6 @@
     cursor: pointer;
   }
   
-  .botones-superiores button:disabled {
-    background-color: lightgray;
-    cursor: not-allowed;
-  }
-  
-  
   .title {
     text-align: center;
     margin-bottom: 20px;
@@ -121,18 +133,28 @@
     margin-bottom: 20px;
   }
   
-  .listas-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  .disponibilidad {
+    text-align: center;
+    margin-top: 20px;
   }
   
-  .equipos, .insumos {
-    flex: 1;
+  .disponibilidad button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
   }
   
-  .table {
-    width: 100%;
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
   }
   </style>
   
