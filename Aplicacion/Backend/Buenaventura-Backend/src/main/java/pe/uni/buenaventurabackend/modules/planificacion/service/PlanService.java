@@ -147,7 +147,12 @@ public class PlanService implements IPlanService{
     }
 
     @Override
-    public List<Integer> listaEquipos(){
-        return  iPlanRepository.listaEquipos();
+    public List<String> listaEquipos(){
+        return iPlanRepository.listaEquipos();
+    }
+
+    @Override
+    public List<String> listaMaquinas(){
+        return iPlanRepository.listaMaquinas();
     }
 }

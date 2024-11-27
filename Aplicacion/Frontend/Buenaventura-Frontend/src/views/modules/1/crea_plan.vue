@@ -14,13 +14,15 @@
   
         <!-- Código de la máquina -->
         <div class="form-group">
-          <label for="codigoMaquina">Código de la Máquina:</label>
-          <input
-            type="text"
-            id="codigoMaquina"
-            v-model="plan.codigoMaquina"
-            required
-          />
+          <h3>Código de la máquina:</h3>
+          <div v-for="(maquina, index) in maquinas" :key="index">
+            <select v-model="maquinas[index]" @change="agregarCampoMaquina(index)">
+              <option value="" disabled>Seleccionar Máquina</option>
+              <option v-for="id in listaMaquinas" :key="id" :value="id">
+                {{ id }}
+              </option>
+            </select>
+          </div>
         </div>
   
         <!-- Fechas -->
@@ -82,6 +84,7 @@
     </div>
   </template>
 <script>
+import { useUserStore } from "@/stores/user";
 import axios from "axios";
 
 export default {
@@ -95,6 +98,7 @@ export default {
         criticidad: "",
         descripcion: "",
       },
+      maquinas: [],
       insumos: [""],
       equipos: [""],
       listaInsumos: [],
@@ -104,6 +108,9 @@ export default {
   methods: {
     async cargarDatos() {
       try {
+        const maquinasResponse = await axios.get("/api/planificacion/listaMaquinas");
+        this.listaMaquinas = maquinasResponse.data;
+
         const insumosResponse = await axios.get("/api/planificacion/listaInsumos");
         this.listaInsumos = insumosResponse.data;
 
@@ -111,6 +118,11 @@ export default {
         this.listaEquipos = equiposResponse.data;
       } catch (error) {
         console.error("Error al cargar listas:", error);
+      }
+    },
+    agregarCampoMaquina(index) {
+      if (this.maquinas[index] && index === this.maquinas.length - 1) {
+        this.maquinas.push("");
       }
     },
     agregarCampoInsumo(index) {
@@ -133,6 +145,7 @@ export default {
             fechaFin: this.plan.fechaFin,
             criticidad: this.plan.criticidad,
             descripcion: this.plan.descripcion,
+            id_usuario: this.idCuenta
           },
           listaEquipos: this.equipos.filter((equipo) => equipo),
           listaInsumos: this.insumos.filter((insumo) => insumo),
@@ -151,6 +164,11 @@ export default {
   mounted() {
     this.cargarDatos();
   },
+  created() {
+    const userStore = useUserStore();
+    this.idCuenta = userStore.user.id_cuenta;
+    this.idCuenta = 1;
+  }
 };
 </script>
 <style scoped>
