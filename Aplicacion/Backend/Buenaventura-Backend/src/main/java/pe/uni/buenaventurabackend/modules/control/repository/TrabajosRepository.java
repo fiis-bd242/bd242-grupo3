@@ -13,6 +13,7 @@ import java.util.Map;
 public class TrabajosRepository implements ITrabajosRepository{
     private final JdbcTemplate jdbcTemplate;
 
+    @Override
     public List<Map<String,Object>> findX(int limit, int offset){
         String sql = "SELECT LPAD(p.id_plan::TEXT, 4, '0') AS id_plan," +
                 " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +

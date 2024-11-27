@@ -6,11 +6,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import pe.uni.buenaventurabackend.modules.control.models.requests.DetallesRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTON;
-import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Repository
@@ -18,6 +16,7 @@ import java.util.stream.Collectors;
 public class DetallesRepository implements IDetallesRepository{
     private final JdbcTemplate jdbcTemplate;
 
+    @Override
     public DetallesRequest detalles(int id_plan){
         String sql = "SELECT CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')) AS id_plan, " +
                 "tm.nombre_tipo_mant, " +
