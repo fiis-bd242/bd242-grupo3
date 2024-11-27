@@ -1,17 +1,19 @@
 <template>
-    <div class="detalle-plan-container">
+    <div class="p-6 relative">
       <!-- Título centrado -->
-      <h1 class="title"><b>ESTADO Y DISPONIBILIDAD</b></h1>
+      <h1 class="text-center text-2xl font-bold mb-6">ESTADO Y DISPONIBILIDAD</h1>
   
-      <!-- Contenedor de los botones superiores -->
-      <div class="botones-superiores">
-        <!-- Botón para regresar -->
-        <button @click="volverListaPlanes" class="btn btn-secondary">Regresar</button>
+      <!-- Botón superior -->
+      <div class="flex justify-between mb-6">
+        <button @click="volverListaPlanes" class="bg-gray-600 text-white py-2 px-4 rounded">
+          Regresar
+        </button>
       </div>
   
       <!-- Información detallada del plan -->
       <div v-if="detallePlan">
-        <div class="detalle-grid">
+        <!-- Grid de detalles -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
           <p><strong>ID Orden:</strong> {{ detallePlan.id_orden }}</p>
           <p><strong>Tipo de Mantenimiento:</strong> {{ detallePlan.nombre_tipo_mant }}</p>
           <p><strong>ID Máquina:</strong> {{ detallePlan.id_maquina }}</p>
@@ -23,34 +25,50 @@
           <p><strong>Responsable:</strong> {{ detallePlan.responsable }}</p>
           <p><strong>Criticidad:</strong> {{ detallePlan.criticidad }}</p>
           <p><strong>ID Plan:</strong> {{ detallePlan.id_plan }}</p>
-          <p><strong>Descripcion:</strong> {{ detallePlan.descripcion }}</p>
+          <p><strong>Descripción:</strong> {{ detallePlan.descripcion }}</p>
         </div>
   
-        <!-- Contenedor para la disponibilidad -->
-        <div class="disponibilidad">
-          <p><strong>Disponibilidad:</strong></p>
-          <button class="btn btn-success" @click="aceptarPlan">Aceptar</button>
-          <button class="btn btn-danger" @click="rechazarPlan">Rechazar</button>
+        <!-- Botones de disponibilidad -->
+        <div class="text-center mt-6">
+          <p class="text-lg font-semibold mb-4">Disponibilidad:</p>
+          <div class="flex justify-center gap-4">
+            <button @click="aceptarPlan" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded">
+              Aceptar
+            </button>
+            <button @click="rechazarPlan" class="bg-red-500 hover:bg-red-600 text-white py-2 px-6 rounded">
+              Rechazar
+            </button>
+          </div>
+        </div>
+  
+        <!-- Visualización de estado -->
+        <div class="text-center mt-8">
+          <p class="text-lg font-semibold mb-4">Estado:</p>
+          <div class="flex justify-center gap-4">
+            <button class="bg-green-500 text-white py-2 px-6 rounded">Completada</button>
+            <button class="bg-yellow-400 text-black py-2 px-6 rounded">En curso</button>
+            <button class="bg-red-500 text-white py-2 px-6 rounded">Pendiente</button>
+          </div>
         </div>
       </div>
   
       <div v-else>
-        <p>Cargando detalles del trabajo...</p>
+        <p class="text-center text-gray-500">Cargando detalles del trabajo...</p>
       </div>
     </div>
   </template>
   
   <script>
   import { useUserStore } from "@/stores/user";
-  import { useToastStore } from '@/stores/toast';
+  import { useToastStore } from "@/stores/toast";
   import axios from "axios";
   
   export default {
-    setup(){
-        const toastStore = useToastStore()
-        return {
-            toastStore
-        }
+    setup() {
+      const toastStore = useToastStore();
+      return {
+        toastStore,
+      };
     },
     data() {
       return {
@@ -75,17 +93,16 @@
         try {
           const id_plan = this.$route.params.id_plan;
           await axios.post(`/api/control/aceptarNotificacion/${this.idCuenta}/${id_plan}`);
-          this.toastStore.showToast(3000, "Aceptado", "Check", 'bg-green-600');
+          this.toastStore.showToast(3000, "Aceptado", "Check", "bg-green-600");
         } catch (error) {
-          this.toastStore.showToast(3000, "Rechazado", "Check", 'bg-red-600');
-
+          this.toastStore.showToast(3000, "Error al aceptar", "Check", "bg-red-600");
         }
       },
       async rechazarPlan() {
         try {
           const id_plan = this.$route.params.id_plan;
           await axios.post(`/api/control/rechazarNotificacion/${this.idCuenta}/${id_plan}`);
-          this.toastStore.showToast(3000, "Rechazado", "Wrong", 'bg-red-600');
+          this.toastStore.showToast(3000, "Rechazado", "Wrong", "bg-red-600");
         } catch (error) {
           console.error("Error al rechazar el plan:", error);
           alert("Error al rechazar el plan.");
@@ -102,59 +119,6 @@
   </script>
   
   <style scoped>
-  .detalle-plan-container {
-    padding: 20px;
-    position: relative;
-  }
-  
-  .botones-superiores {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .botones-superiores button:first-child {
-    background-color: gray;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  
-  .title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .detalle-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .disponibilidad {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .disponibilidad button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .btn-success {
-    background-color: #28a745;
-    color: white;
-    border: none;
-  }
-  
-  .btn-danger {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-  }
+  /* Sin estilos adicionales, Tailwind lo maneja todo */
   </style>
   
