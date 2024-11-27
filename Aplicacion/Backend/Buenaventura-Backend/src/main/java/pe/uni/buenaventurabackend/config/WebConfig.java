@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebConfig {
     @Value("${url.client}")
-    private String urlClient;
+    private String[] urlClients; // Cargar múltiples URLs como array
 
     @Bean
     public WebMvcConfigurer cors() {
@@ -19,7 +19,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins(urlClient)
+                        .allowedOrigins(urlClients)
                         .allowedHeaders(HttpHeaders.CONTENT_TYPE, "X-CSRF-TOKEN")
                         .allowedMethods(HttpMethod.GET.name(), HttpMethod.POST.name(), HttpMethod.PUT.name())
                         .allowCredentials(true);

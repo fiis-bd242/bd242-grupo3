@@ -115,9 +115,15 @@
   import CheckIcon from '@/components/icons/CheckIcon.vue';
   import MessageIcon from '@/components/icons/MessageIcon.vue';
   import PaperIcon from '@/components/icons/PaperIcon.vue';
+  import { useToastStore } from '@/stores/toast';
   import axios from 'axios';
-
   export default {
+    setup(){
+        const toastStore = useToastStore()
+        return {
+            toastStore
+        }
+    },
     components: {
       CheckIcon,
       PaperIcon,
@@ -156,7 +162,10 @@
           id_tipo: 1
         })
         .then(response => {
-          console.log(response);
+          console.log("noseeee");
+          this.registros.filter(registro => registro.fechaDelDia === this.fecha_seleccionada)[0].estadoReporte = 'Notificado'
+          console.log("noseeee");
+          this.toastStore.showToast(3000, "Se ha generado la notificación", "Surprise", 'bg-blue-600');        
         })
         .catch(error => {
           console.log(error);
