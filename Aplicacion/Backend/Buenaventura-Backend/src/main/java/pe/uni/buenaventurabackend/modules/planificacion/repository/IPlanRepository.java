@@ -4,6 +4,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.Notificaciones;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -21,6 +22,9 @@ public interface IPlanRepository {
     void envioNotificacion(Notificaciones noti);
     void guardarPlan(int id_plan, Plan_de_mantenimiento p, Mantenimiento m, List<Integer> listaEquipos, List<InsumoDTO> listaInsumos);
     void borrarPlan(int id_plan);
+
+    List<Map<String,Object>> findXbyMachine(int limit, int offset, int id_maquina);
+    List<Map<String,Object>> findXbyDate(int limit, int offset, Date fecha_inicio_programado);
 
     //Módulo de equipo de soporte
     void reservaEquipo(int id_equipo);

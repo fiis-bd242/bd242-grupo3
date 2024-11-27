@@ -12,6 +12,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevoPla
 import pe.uni.buenaventurabackend.modules.planificacion.service.IPlanService;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -108,6 +109,18 @@ public class PlanController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(new ApiResponse("Error al borrar el plan: " + e.getMessage()));
         }
+    }
+
+    @GetMapping("/listaPlanesPorMaquina/{offset}/{id_maquina}")
+    public ResponseEntity<List<Map<String,Object>>> findXbyMachine(@PathVariable int offset, @PathVariable int id_maquina){
+        var result = iPlanService.findXbyMachine(offset,id_maquina);
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @GetMapping("/listaPlanesPorFecha/{offset}/{fecha_inicio_programado}")
+    public ResponseEntity<List<Map<String,Object>>> findXbyDate(@PathVariable int offset, @PathVariable Date fecha_inicio_programado){
+        var result = iPlanService.findXbyDate(offset,fecha_inicio_programado);
+        return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
     @GetMapping("/conteoPlan")

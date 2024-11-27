@@ -9,6 +9,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleP
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IOrdenRepository;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IPlanRepository;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -73,6 +74,24 @@ public class PlanService implements IPlanService{
         reservaEquipo(listaEquipos);
         reservaInsumo(listaInsumos);
 
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyMachine(int offset, int id_maquina){
+        // Limite
+        int limit = 10;
+        List<Map<String,Object>> list;
+        list = iPlanRepository.findXbyMachine(limit, offset, id_maquina);
+        return list;
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyDate(int offset, Date fecha_inicio_programado){
+        // Limite
+        int limit = 10;
+        List<Map<String,Object>> list;
+        list = iPlanRepository.findXbyDate(limit, offset, fecha_inicio_programado);
+        return list;
     }
 
     @Transactional

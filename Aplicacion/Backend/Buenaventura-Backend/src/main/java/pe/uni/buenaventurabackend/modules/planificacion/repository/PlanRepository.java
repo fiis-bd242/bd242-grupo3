@@ -9,6 +9,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -255,6 +256,48 @@ public class PlanRepository implements IPlanRepository{
                 "SET id_estado = 8 " +
                 "WHERE id_plan = ?;";
         jdbcTemplate.update(sql, id_plan, id_plan);
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyMachine(int limit, int offset, int id_maquina){
+        String sql = "SELECT LPAD(p.id_plan::TEXT, 4, '0') AS id_plan," +
+                " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
+                " tm.nombre_tipo_mant," +
+                " c.nivel," +
+                " m.fecha_inicio_programado " +
+                "FROM Plan_de_Mantenimiento p " +
+                "INNER JOIN Mantenimiento m " +
+                "ON m.id_plan = p.id_plan " +
+                "INNER JOIN Tipo_mantenimiento tm " +
+                "ON tm.id_tipo_mant = m.id_tipo_mant " +
+                "INNER JOIN Criticidad c " +
+                "ON c.id_criticidad = p.id_criticidad " +
+                "WHERE m.id_maquina = ? " +
+                "ORDER BY p.id_plan " +
+                "LIMIT ? " +
+                "OFFSET ?-1;";
+        return jdbcTemplate.queryForList(sql,id_maquina,limit,offset);
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyDate(int limit, int offset, Date fecha_inicio_programado){
+        String sql = "SELECT LPAD(p.id_plan::TEXT, 4, '0') AS id_plan," +
+                " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
+                " tm.nombre_tipo_mant," +
+                " c.nivel," +
+                " m.fecha_inicio_programado " +
+                "FROM Plan_de_Mantenimiento p " +
+                "INNER JOIN Mantenimiento m " +
+                "ON m.id_plan = p.id_plan " +
+                "INNER JOIN Tipo_mantenimiento tm " +
+                "ON tm.id_tipo_mant = m.id_tipo_mant " +
+                "INNER JOIN Criticidad c " +
+                "ON c.id_criticidad = p.id_criticidad " +
+                "WHERE m.fecha_inicio_programado = ? " +
+                "ORDER BY p.id_plan " +
+                "LIMIT ? " +
+                "OFFSET ?-1;";
+        return jdbcTemplate.queryForList(sql,fecha_inicio_programado,limit,offset);
     }
 
     @Override

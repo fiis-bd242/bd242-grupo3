@@ -161,7 +161,8 @@ export default {
     },
     async searchByMachine() {
       try {
-        const response = await axios.get(`/api/planificacion/planSegunMaquina/${this.searchMachineId}`);
+        const offset = (page - 1) * this.itemsPerPage + 1;
+        const response = await axios.get(`/api/planificacion/listaPlanesPorMaquina/${offset}/${this.searchMachineId}`);
         this.dataList = response.data;
       } catch (error) {
         console.error("Error al buscar por máquina:", error);
@@ -169,7 +170,8 @@ export default {
     },
     async searchByDate() {
       try {
-        const response = await axios.get(`/api/planificacion/planSegunFecha/${this.searchDate}`);
+        const offset = (page - 1) * this.itemsPerPage + 1;
+        const response = await axios.get(`/api/planificacion/listaPlanesPorFecha/${offset}/${this.searchDate}`);
         this.dataList = response.data;
       } catch (error) {
         console.error("Error al buscar por fecha:", error);
