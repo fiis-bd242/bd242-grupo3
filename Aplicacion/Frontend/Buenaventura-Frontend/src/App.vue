@@ -13,7 +13,7 @@ userStore.initStore();
   </header>
   <div class="flex">
     <LateralBar/>
-    <RouterView class="overflow-y-scroll"/>
+    <RouterView class="overflow-y-scroll max-h-[80vh]"/>
   </div>
 
 </template>
