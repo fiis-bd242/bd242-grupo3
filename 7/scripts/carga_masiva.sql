@@ -344,6 +344,36 @@ INSERT INTO Estado_mantto (id_estado, estado) VALUES
 -- Poblamiento de la tabla Mantenimiento
 COPY mantenimiento FROM 'C:\DBD-2024-2\datos\Mantenimiento.csv' DELIMITER ',' CSV HEADER;
 
+INSERT INTO insumoxmantenimiento (id_insum_mant, cantidad, id_act_mantto, id_insumo) VALUES
+(1, 10, 1, 58),
+(2, 15, 1, 27),
+(3, 5, 2, 11),
+(4, 20, 2, 31),
+(5, 8, 3, 43),
+(6, 12, 3, 22),
+(7, 25, 4, 1),
+(8, 10, 4, 23),
+(9, 18, 5, 20),
+(10, 9, 5, 36),
+(11, 14, 6, 19),
+(12, 6, 6, 52),
+(13, 30, 7, 29),
+(14, 20, 7, 55),
+(15, 7, 8, 35),
+(16, 12, 8, 58),
+(17, 10, 9, 27),
+(18, 15, 10, 11),
+(19, 8, 11, 31),
+(20, 13, 12, 43),
+(21, 7, 13, 22),
+(22, 9, 14, 1),
+(23, 16, 15, 23),
+(24, 19, 16, 20),
+(25, 8, 17, 36),
+(26, 14, 18, 19),
+(27, 5, 19, 52),
+(28, 22, 20, 29);
+
 -- Poblamiento de la tabla EquipoSXMantenimiento
 COPY equiposxmantenimiento FROM 'C:\DBD-2024-2\datos\EquipoSXMantenimiento.csv' DELIMITER ',' CSV HEADER;
 
