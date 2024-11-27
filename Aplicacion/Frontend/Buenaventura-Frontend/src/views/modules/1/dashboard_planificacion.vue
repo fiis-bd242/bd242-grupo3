@@ -1,6 +1,5 @@
 <template>
     <div class="dashboard">
-      <!-- Fila 1 -->
       <div class="row">
         <div class="card" @click="irACrearPlan">
           <h2><b>Crear nuevo plan de mantenimiento</b></h2>
@@ -15,7 +14,6 @@
         </div>
       </div>
   
-      <!-- Fila 2 -->
       <div class="row">
         <div class="card" @click="irACrearOrden">
           <h2><b>Crear nueva orden de trabajo</b></h2>

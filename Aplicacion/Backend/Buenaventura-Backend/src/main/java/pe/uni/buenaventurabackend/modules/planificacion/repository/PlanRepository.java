@@ -345,8 +345,6 @@ public class PlanRepository implements IPlanRepository{
         }
         jdbcTemplate.queryForObject(sql, Integer.class, id_insumo);
 
-        sql = "INSERT INTO Reserva " +
-                "VALUES ()"
     }
 
     @Override
