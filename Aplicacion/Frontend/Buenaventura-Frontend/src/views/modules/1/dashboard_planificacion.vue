@@ -15,7 +15,6 @@
         </div>
       </div>
   
-      <!-- Fila 2 -->
       <div class="row">
         <div class="card" @click="irACrearOrden">
           <h2><b>Crear nueva orden de trabajo</b></h2>

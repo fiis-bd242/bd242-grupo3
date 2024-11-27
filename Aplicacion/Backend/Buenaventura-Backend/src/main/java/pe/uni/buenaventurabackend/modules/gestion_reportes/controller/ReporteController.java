@@ -58,9 +58,11 @@ public class ReporteController {
     @GetMapping("/historial")
     public ResponseEntity<List<HistorialMantenimientoDTO>> obtenerHistorialMantenimiento(
             @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaInicio,
-            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaFin) {
+            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaFin,
+            @RequestParam int offset)
+             {
 
-        List<HistorialMantenimientoDTO> historial = mantenimientoService.obtenerHistorialMantenimiento(fechaInicio, fechaFin);
+        List<HistorialMantenimientoDTO> historial = mantenimientoService.obtenerHistorialMantenimiento(fechaInicio, fechaFin, offset);
         return new ResponseEntity<>(historial, HttpStatus.OK);
     }
 

@@ -110,7 +110,8 @@
   import PencilIcon from '@/components/icons/PencilIcon.vue';
   import PaperIcon from '@/components/icons/PaperIcon.vue';
   import MessageIcon from '@/components/icons/MessageIcon.vue';
-  import axios from 'axios';
+  import axios from 'axios';  
+  import { useToastStore } from '@/stores/toast';
   export default {
     components: {
       PencilIcon,
@@ -128,6 +129,13 @@
         subject: "",
         description: ""
       };
+    },
+
+    setup(){
+        const toastStore = useToastStore()
+        return {
+            toastStore
+        }
     },
 
     methods: {

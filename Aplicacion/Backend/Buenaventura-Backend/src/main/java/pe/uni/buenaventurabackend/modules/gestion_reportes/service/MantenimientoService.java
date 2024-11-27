@@ -15,7 +15,7 @@ public class MantenimientoService {
 
     private final JdbcTemplate jdbcTemplate;
 
-    public List<HistorialMantenimientoDTO> obtenerHistorialMantenimiento(Date fechaInicio, Date fechaFin) {
+    public List<HistorialMantenimientoDTO> obtenerHistorialMantenimiento(Date fechaInicio, Date fechaFin, int offset) {
         String sql = "SELECT " +
                 "nombre_tipo AS \"Nombre de la Máquina\", " +
                 "e.Nombre AS \"Técnico Responsable\", " +
@@ -39,9 +39,10 @@ public class MantenimientoService {
                 "WHERE " +
                 "r.Fecha_inicial BETWEEN ? AND ? " + // Filtro de fechas
                 "ORDER BY " +
-                "r.Fecha_inicial";
+                "r.Fecha_inicial " +
+                "LIMIT 7 offset ? ";
 
-        return jdbcTemplate.query(sql, new Object[]{fechaInicio, fechaFin}, (rs, rowNum) -> {
+        return jdbcTemplate.query(sql, new Object[]{fechaInicio, fechaFin, offset}, (rs, rowNum) -> {
             HistorialMantenimientoDTO historial = new HistorialMantenimientoDTO();
             historial.setNombreMaquina(rs.getString("Nombre de la Máquina"));
             historial.setTecnicoResponsable(rs.getString("Técnico Responsable"));
