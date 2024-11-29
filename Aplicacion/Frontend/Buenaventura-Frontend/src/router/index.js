@@ -55,7 +55,7 @@ const router = createRouter({
       component: () => import("../views/modules/1/edita_orden.vue")
     },
     {
-      path: '/moduloplanificacion/edita_plan',
+      path: '/moduloplanificacion/edita_plan/:id_plan',
       name: 'edita_plan',
       component: () => import("../views/modules/1/edita_plan.vue")
     },

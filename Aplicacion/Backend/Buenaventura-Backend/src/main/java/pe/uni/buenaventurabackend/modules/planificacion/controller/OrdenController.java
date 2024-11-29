@@ -1,6 +1,7 @@
 package pe.uni.buenaventurabackend.modules.planificacion.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarO
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevaOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IOrdenService;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -93,6 +95,20 @@ public class OrdenController {
     @GetMapping("/listaEmpleados")
     public ResponseEntity<List<EmpleadoDTO>> listaEmpleados(){
         var result = iOrdenService.listaEmpleados();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @GetMapping("/listaOrdenesPorMaquina/{offset}/{id_maquina}")
+    public ResponseEntity<List<Map<String,Object>>> findXbyMachine(@PathVariable int offset, @PathVariable int id_maquina){
+        var result = iOrdenService.findXbyMachine(offset,id_maquina);
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @GetMapping("/listaOrdenesPorFecha/{offset}/{fecha_inicio_programado}")
+    public ResponseEntity<List<Map<String, Object>>> findXbyDate(
+            @PathVariable int offset,
+            @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate fecha_inicio_programado) {
+        var result = iOrdenService.findXbyDate(offset, fecha_inicio_programado);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }

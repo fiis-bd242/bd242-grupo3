@@ -10,6 +10,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleP
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IOrdenRepository;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IPlanRepository;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -98,7 +99,7 @@ public class PlanService implements IPlanService{
     }
 
     @Override
-    public List<Map<String,Object>> findXbyDate(int offset, Date fecha_inicio_programado){
+    public List<Map<String,Object>> findXbyDate(int offset, LocalDate fecha_inicio_programado){
         // Limite
         int limit = 10;
         List<Map<String,Object>> list;
@@ -159,7 +160,7 @@ public class PlanService implements IPlanService{
     }
 
     @Override
-    public List<String> listaEquipos(){
+    public List<EquipoDTO> listaEquipos(){
         return iPlanRepository.listaEquipos();
     }
 

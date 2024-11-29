@@ -23,6 +23,7 @@
         />
         <button class="search-button" @click="searchByDate">Buscar</button>
       </div>
+      <button class="refresh-button" @click="refreshPage">Refrescar</button>
     </div>
 
     <!-- Tabla de órdenes -->
@@ -131,6 +132,14 @@ export default {
         console.error("Error al obtener el conteo total:", error);
       }
     },
+
+    refreshPage() {
+    this.searchMachineId = "";
+    this.searchDate = "";
+    this.fetchTotalPages();
+    this.fetchData(1);
+    },
+
     changePage(page) {
       if (page >= 1 && page <= this.totalPages) {
         this.fetchData(page);
@@ -159,7 +168,8 @@ export default {
     },
     async searchByMachine() {
       try {
-        const response = await axios.get(`/api/planificacion/ordenSegunMaquina/${this.searchMachineId}`);
+        const offset = (this.currentPage - 1) * this.itemsPerPage + 1;
+        const response = await axios.get(`/api/planificacion/listaOrdenesPorMaquina/${offset}/${this.searchMachineId}`);
         this.dataList = response.data;
       } catch (error) {
         console.error("Error al buscar por máquina:", error);
@@ -167,7 +177,8 @@ export default {
     },
     async searchByDate() {
       try {
-        const response = await axios.get(`/api/planificacion/ordenSegunFecha/${this.searchDate}`);
+        const offset = (this.currentPage - 1) * this.itemsPerPage + 1;
+        const response = await axios.get(`/api/planificacion/listaOrdenesPorFecha/${offset}/${this.searchDate}`);
         this.dataList = response.data;
       } catch (error) {
         console.error("Error al buscar por fecha:", error);
@@ -191,13 +202,14 @@ export default {
 
 /* Botón nueva orden */
 .new-orden-button {
-  background-color: #007bff;
+  background-color: #1414b8;
   color: white;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   float: right;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 .new-orden-button:hover {
   background-color: #0056b3;
@@ -207,6 +219,7 @@ export default {
 .search-container {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -218,6 +231,8 @@ export default {
 .search-box input {
   padding: 5px;
   width: 180px;
+  border: 1px solid black; /* Línea negra */
+  border-radius: 5px; /* Bordes redondeados */
 }
 .search-button {
   padding: 5px 10px;
@@ -227,6 +242,19 @@ export default {
 }
 .search-button:hover {
   background-color: #e0e0e0;
+}
+
+/* Botón Refrescar */
+.refresh-button {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Bordes redondeados */
+}
+.refresh-button:hover {
+  background-color: #0056b3;
 }
 
 /* Tabla */

@@ -1,10 +1,12 @@
 package pe.uni.buenaventurabackend.modules.planificacion.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.uni.buenaventurabackend.models.ApiResponse;
+import pe.uni.buenaventurabackend.modules.planificacion.models.EquipoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
@@ -13,6 +15,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarP
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevoPlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.service.IPlanService;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -99,13 +102,18 @@ public class PlanController {
 
 
     @PostMapping("/guardarPlan/{id_plan}")
-    public ResponseEntity<?> guardarPlan(@PathVariable int id_plan, @RequestBody GuardarPlanRequest request) {
+    public ResponseEntity<?> guardarPlan(@PathVariable String id_plan, @RequestBody GuardarPlanRequest request) {
         try {
+            int id_plan_int = Integer.parseInt(id_plan.substring(3,7));
+            List<Integer> listaEquiposInt = new ArrayList<>();
+            for(EquipoDTO equipo:request.getListaEquipos()){
+                listaEquiposInt.add(equipo.getId_equipo_soporte());
+            }
             iPlanService.guardarPlan(
-                    id_plan,
+                    id_plan_int,
                     request.getPlan(),
                     request.getMant(),
-                    request.getListaEquipos(),
+                    listaEquiposInt,
                     request.getListaInsumos()
             );
             return ResponseEntity.ok(new ApiResponse("Plan guardado exitosamente"));
@@ -133,8 +141,10 @@ public class PlanController {
     }
 
     @GetMapping("/listaPlanesPorFecha/{offset}/{fecha_inicio_programado}")
-    public ResponseEntity<List<Map<String,Object>>> findXbyDate(@PathVariable int offset, @PathVariable Date fecha_inicio_programado){
-        var result = iPlanService.findXbyDate(offset,fecha_inicio_programado);
+    public ResponseEntity<List<Map<String, Object>>> findXbyDate(
+            @PathVariable int offset,
+            @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate fecha_inicio_programado) {
+        var result = iPlanService.findXbyDate(offset, fecha_inicio_programado);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
@@ -151,7 +161,7 @@ public class PlanController {
     }
 
     @GetMapping("/listaEquipos")
-    public ResponseEntity<List<String>> listaEquipos(){
+    public ResponseEntity<List<EquipoDTO>> listaEquipos(){
         var result = iPlanService.listaEquipos();
         return new ResponseEntity<>(result, HttpStatus.OK);
     }

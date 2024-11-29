@@ -1,12 +1,10 @@
 package pe.uni.buenaventurabackend.modules.planificacion.service;
 
-import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
-import pe.uni.buenaventurabackend.modules.planificacion.models.InsumoDTO;
-import pe.uni.buenaventurabackend.modules.planificacion.models.Mantenimiento;
-import pe.uni.buenaventurabackend.modules.planificacion.models.Plan_de_mantenimiento;
+import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.GuardarPlanRequest;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -23,13 +21,13 @@ public interface IPlanService {
     void borrarPlan(int id_plan);
 
     List<Map<String,Object>> findXbyMachine(int offset, int id_maquina);
-    List<Map<String,Object>> findXbyDate(int offset, Date fecha_inicio_programado);
+    List<Map<String,Object>> findXbyDate(int offset, LocalDate fecha_inicio_programado);
 
     int conteoPlan();
 
     List<InsumoDTO> listaInsumos();
 
-    List<String> listaEquipos();
+    List<EquipoDTO> listaEquipos();
 
     List<String> listaMaquinas();
 

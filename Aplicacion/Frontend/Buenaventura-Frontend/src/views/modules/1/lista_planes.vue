@@ -1,9 +1,9 @@
 <template>
-  <div class = "w-full mx-auto p-4">
+  <div class="w-full mx-auto p-4">
     <h1 class="title"><b>LISTA DE PLANES DE MANTENIMIENTO</b></h1>
 
     <!-- Botón de nuevo plan -->
-    <button class="new-plan-button" @click="redirectToCreate">Nuevo plan</button>
+    <button class="new-plan-button" @click="redirectToCreate"><b>Nuevo plan</b></button>
 
     <!-- Buscadores -->
     <div class="search-container">
@@ -23,6 +23,7 @@
         />
         <button class="search-button" @click="searchByDate">Buscar</button>
       </div>
+      <button class="refresh-button" @click="refreshPage">Refrescar</button>
     </div>
 
     <!-- Tabla de planes -->
@@ -96,6 +97,7 @@
   </div>
 </template>
 
+
 <script>
 import axios from "axios";
 
@@ -159,9 +161,17 @@ export default {
     redirectToCreate() {
       window.location.href = "http://localhost:5173/moduloplanificacion/crea_plan";
     },
+
+    refreshPage() {
+    this.searchMachineId = "";
+    this.searchDate = "";
+    this.fetchTotalPages();
+    this.fetchData(1);
+    },
+
     async searchByMachine() {
       try {
-        const offset = (page - 1) * this.itemsPerPage + 1;
+        const offset = (this.currentPage - 1) * this.itemsPerPage + 1;
         const response = await axios.get(`/api/planificacion/listaPlanesPorMaquina/${offset}/${this.searchMachineId}`);
         this.dataList = response.data;
       } catch (error) {
@@ -170,7 +180,7 @@ export default {
     },
     async searchByDate() {
       try {
-        const offset = (page - 1) * this.itemsPerPage + 1;
+        const offset = (this.currentPage - 1) * this.itemsPerPage + 1;
         const response = await axios.get(`/api/planificacion/listaPlanesPorFecha/${offset}/${this.searchDate}`);
         this.dataList = response.data;
       } catch (error) {
@@ -195,13 +205,14 @@ export default {
 
 /* Botón nuevo plan */
 .new-plan-button {
-  background-color: #007bff;
+  background-color: #1414b8;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 25px;
   cursor: pointer;
   float: right;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 .new-plan-button:hover {
   background-color: #0056b3;
@@ -211,6 +222,7 @@ export default {
 .search-container {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -222,6 +234,8 @@ export default {
 .search-box input {
   padding: 5px;
   width: 180px;
+  border: 1px solid black; /* Línea negra */
+  border-radius: 5px; /* Bordes redondeados */
 }
 .search-button {
   padding: 5px 10px;
@@ -231,6 +245,19 @@ export default {
 }
 .search-button:hover {
   background-color: #e0e0e0;
+}
+
+/* Botón Refrescar */
+.refresh-button {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Bordes redondeados */
+}
+.refresh-button:hover {
+  background-color: #0056b3;
 }
 
 /* Tabla */

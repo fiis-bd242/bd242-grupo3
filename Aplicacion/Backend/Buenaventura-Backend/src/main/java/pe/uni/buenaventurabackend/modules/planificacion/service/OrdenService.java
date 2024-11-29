@@ -10,6 +10,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleO
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IActividadRepository;
 import pe.uni.buenaventurabackend.modules.planificacion.repository.IOrdenRepository;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -119,5 +120,23 @@ public class OrdenService implements IOrdenService{
     @Override
     public List<EmpleadoDTO> listaEmpleados(){
         return iOrdenRepository.listaEmpleados();
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyMachine(int offset, int id_maquina){
+        // Limite
+        int limit = 10;
+        List<Map<String,Object>> list;
+        list = iOrdenRepository.findXbyMachine(limit, offset, id_maquina);
+        return list;
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyDate(int offset, LocalDate fecha_inicio_programado){
+        // Limite
+        int limit = 10;
+        List<Map<String,Object>> list;
+        list = iOrdenRepository.findXbyDate(limit, offset, fecha_inicio_programado);
+        return list;
     }
 }

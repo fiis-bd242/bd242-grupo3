@@ -11,6 +11,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -41,6 +42,7 @@ public class OrdenRepository implements IOrdenRepository {
                 "INNER JOIN Tipo_mantenimiento tm " +
                 "ON tm.id_tipo_mant = m.id_tipo_mant " +
                 "WHERE o.visible = 'Y' " +
+                "ORDER BY o.id_orden " +
                 "LIMIT ? " +
                 "OFFSET ?-1;";
         return jdbcTemplate.queryForList(sql,limit,offset);
@@ -203,6 +205,42 @@ public class OrdenRepository implements IOrdenRepository {
             detalle.setNombre(rs.getString("nombre"));
             return detalle;
         });
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyMachine(int limit, int offset, int id_maquina){
+        String sql = "SELECT LPAD(o.id_orden::TEXT, 4, '0') AS id_orden," +
+                " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
+                " tm.nombre_tipo_mant," +
+                " m.fecha_inicio_programado " +
+                "FROM Orden_de_trabajo o " +
+                "INNER JOIN Mantenimiento m " +
+                "ON m.id_plan = o.id_orden " +
+                "INNER JOIN Tipo_mantenimiento tm " +
+                "ON tm.id_tipo_mant = m.id_tipo_mant " +
+                "WHERE m.id_maquina = ? " +
+                "ORDER BY o.id_orden " +
+                "LIMIT ? " +
+                "OFFSET ?-1;";
+        return jdbcTemplate.queryForList(sql,id_maquina,limit,offset);
+    }
+
+    @Override
+    public List<Map<String,Object>> findXbyDate(int limit, int offset, LocalDate fecha_inicio_programado){
+        String sql = "SELECT LPAD(o.id_orden::TEXT, 4, '0') AS id_orden," +
+                " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
+                " tm.nombre_tipo_mant," +
+                " m.fecha_inicio_programado " +
+                "FROM Orden_de_trabajo o " +
+                "INNER JOIN Mantenimiento m " +
+                "ON m.id_plan = o.id_orden " +
+                "INNER JOIN Tipo_mantenimiento tm " +
+                "ON tm.id_tipo_mant = m.id_tipo_mant " +
+                "WHERE m.fecha_inicio_programado = ? " +
+                "ORDER BY o.id_orden " +
+                "LIMIT ? " +
+                "OFFSET ?-1;";
+        return jdbcTemplate.queryForList(sql,fecha_inicio_programado,limit,offset);
     }
 
 }

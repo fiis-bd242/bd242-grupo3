@@ -4,7 +4,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.Notificaciones;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -24,7 +24,7 @@ public interface IPlanRepository {
     void borrarPlan(int id_plan);
 
     List<Map<String,Object>> findXbyMachine(int limit, int offset, int id_maquina);
-    List<Map<String,Object>> findXbyDate(int limit, int offset, Date fecha_inicio_programado);
+    List<Map<String,Object>> findXbyDate(int limit, int offset, LocalDate fecha_inicio_programado);
 
     //Módulo de equipo de soporte
     void reservaEquipo(List<Integer> listaEquipos);
@@ -35,7 +35,7 @@ public interface IPlanRepository {
 
     //Módulo de gestión de reportes
     int conteoNotificaciones();
-    List<String> listaEquipos();
+    List<EquipoDTO> listaEquipos();
 
     //Modulo Control
     List<String> listaMaquinas();

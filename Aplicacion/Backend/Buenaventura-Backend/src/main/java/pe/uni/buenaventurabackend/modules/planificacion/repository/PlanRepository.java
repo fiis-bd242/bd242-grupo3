@@ -1,5 +1,8 @@
 package pe.uni.buenaventurabackend.modules.planificacion.repository;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -8,6 +11,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.Notificaciones;
 import pe.uni.buenaventurabackend.modules.planificacion.models.*;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetallePlanRequest;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -95,7 +99,7 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public DetallePlanRequest detallePlan(int id_plan){
+    public DetallePlanRequest detallePlan(int id_plan) {
         String sql = "SELECT CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')) AS id_plan, " +
                 "tm.nombre_tipo_mant, " +
                 "CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina, " +
@@ -107,13 +111,14 @@ public class PlanRepository implements IPlanRepository{
                 "responsable.nombre AS responsable, " +
                 "crit.nivel AS criticidad, " +
                 "CONCAT('OT-', LPAD(o.id_orden::TEXT, 4, '0')) AS id_orden, " +
+                "p.descripcion, " + // Suponiendo que este campo ya existe en la tabla Plan_de_mantenimiento
 
-                "(SELECT string_agg(DISTINCT es.nombre_equipo_soporte, ',') " +
+                "(SELECT json_agg(json_build_object('id_equipo_soporte', es.id_equipo_soporte, 'nombre_equipo_soporte', es.nombre_equipo_soporte)) " +
                 "FROM EquipoSXMantenimiento esm " +
                 "INNER JOIN Equipo_de_Soporte es ON es.id_equipo_soporte = esm.id_equipo_soporte " +
                 "WHERE esm.id_act_mantto = m.id_act_mantto) AS listaEquipos, " +
 
-                "(SELECT string_agg(DISTINCT i.nombre || ' (Cantidad: ' || im.cantidad || ')', ', ') " +
+                "(SELECT json_agg(json_build_object('id_insumo', i.id_insumo, 'nombre', i.nombre, 'cantidad', im.cantidad)) " +
                 "FROM InsumoXMantenimiento im " +
                 "INNER JOIN Insumo i ON i.id_insumo = im.id_insumo " +
                 "WHERE im.id_act_mantto = m.id_act_mantto) AS listaInsumos " +
@@ -127,6 +132,7 @@ public class PlanRepository implements IPlanRepository{
                 "INNER JOIN Estado_mantto est ON m.id_estado = est.id_estado " +
                 "INNER JOIN Criticidad crit ON crit.id_criticidad = p.id_criticidad " +
                 "WHERE act.nombre_actv = 'Responsable' AND p.id_plan = ? AND m.id_estado != 8;";
+
         return jdbcTemplate.query(sql, rs -> {
             if (rs.next()) {
                 DetallePlanRequest detalle = new DetallePlanRequest();
@@ -141,24 +147,30 @@ public class PlanRepository implements IPlanRepository{
                 detalle.setResponsable(rs.getString("responsable"));
                 detalle.setCriticidad(rs.getString("criticidad"));
                 detalle.setId_orden(rs.getString("id_orden"));
+                detalle.setDescripcion(rs.getString("descripcion"));
 
-                // Convertir lista de equipos y lista de insumos en arrays separados
-                String listaEquipos = rs.getString("listaEquipos");
-                if (listaEquipos != null) {
-                    detalle.setListaEquipos(List.of(listaEquipos.split(",")));
+                // Convertir lista de equipos
+                String listaEquiposJson = rs.getString("listaEquipos");
+                if (listaEquiposJson != null) {
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    try {
+                        List<EquipoDTO> listaEquipos = objectMapper.readValue(listaEquiposJson, new TypeReference<List<EquipoDTO>>() {});
+                        detalle.setListaEquipos(listaEquipos);
+                    } catch (JsonProcessingException e) {
+                        throw new RuntimeException("Error al procesar la lista de equipos: " + e.getMessage(), e);
+                    }
                 }
 
-                String listaInsumos = rs.getString("listaInsumos");
-                if (listaInsumos != null) {
-                    List<InsumoDTON> insumos = Arrays.stream(listaInsumos.split(","))
-                            .map(insumo -> {
-                                String[] parts = insumo.split("\\(Cantidad: ");
-                                String nombre_insumo = parts[0].trim();
-                                int cantidad = Integer.parseInt(parts[1].replace(")", "").trim());
-                                return new InsumoDTON(nombre_insumo, cantidad);
-                            })
-                            .collect(Collectors.toList());
-                    detalle.setListaInsumos(insumos);
+                // Convertir lista de insumos
+                String listaInsumosJson = rs.getString("listaInsumos");
+                if (listaInsumosJson != null) {
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    try {
+                        List<InsumoDTO> listaInsumos = objectMapper.readValue(listaInsumosJson, new TypeReference<List<InsumoDTO>>() {});
+                        detalle.setListaInsumos(listaInsumos);
+                    } catch (JsonProcessingException e) {
+                        throw new RuntimeException("Error al procesar la lista de insumos: " + e.getMessage(), e);
+                    }
                 }
 
                 return detalle;
@@ -166,6 +178,7 @@ public class PlanRepository implements IPlanRepository{
             return null;
         }, id_plan);
     }
+
 
     @Override
     public void envioNotificacion(Notificaciones noti){
@@ -280,7 +293,7 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public List<Map<String,Object>> findXbyDate(int limit, int offset, Date fecha_inicio_programado){
+    public List<Map<String,Object>> findXbyDate(int limit, int offset, LocalDate fecha_inicio_programado){
         String sql = "SELECT LPAD(p.id_plan::TEXT, 4, '0') AS id_plan," +
                 " CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina," +
                 " tm.nombre_tipo_mant," +
@@ -372,8 +385,8 @@ public class PlanRepository implements IPlanRepository{
 
     @Override
     public List<InsumoDTO> listaInsumos(){
-        String sql = "SELECT id_insumo, nombre FROM Insumo " +
-                "ORDER BY nombre";
+        String sql = "SELECT id_insumo, nombre, cantidad FROM Insumo " +
+                "ORDER BY id_insumo";
         return jdbcTemplate.query(sql, (rs, rowNum) -> {
             InsumoDTO detalle = new InsumoDTO();
             detalle.setId_insumo(rs.getInt("id_insumo"));
@@ -383,14 +396,23 @@ public class PlanRepository implements IPlanRepository{
     }
 
     @Override
-    public List<String> listaEquipos(){
-        String sql = "SELECT CONCAT('ES-',LPAD(es.id_equipo_soporte::TEXT, 4, '0')) AS id_equipo_soporte FROM Equipo_de_soporte es";
-        return jdbcTemplate.queryForList(sql, String.class);
+    public List<EquipoDTO> listaEquipos(){
+        String sql = "SELECT id_equipo_soporte, nombre_equipo_soporte " +
+                "FROM Equipo_de_soporte es " +
+                "ORDER BY id_equipo_soporte";
+        return jdbcTemplate.query(sql, (rs, rowNum) -> {
+            EquipoDTO detalle = new EquipoDTO();
+            detalle.setId_equipo_soporte(rs.getInt("id_equipo_soporte"));
+            detalle.setNombre_equipo_soporte(rs.getString("nombre_equipo_soporte"));
+            return detalle;
+        });
     }
 
     @Override
     public List<String> listaMaquinas(){
-        String sql = "SELECT CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina FROM Maquina m";
+        String sql = "SELECT CONCAT('MQ-',LPAD(m.id_maquina::TEXT, 4, '0')) AS id_maquina " +
+                "FROM Maquina m " +
+                "ORDER BY m.id_maquina";
         return jdbcTemplate.queryForList(sql, String.class);
     }
 

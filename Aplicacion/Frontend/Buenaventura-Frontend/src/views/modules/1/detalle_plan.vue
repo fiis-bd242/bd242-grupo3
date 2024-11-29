@@ -37,13 +37,16 @@
         <p><strong>ID Orden:</strong> {{ detallePlan.id_orden }}</p>
       </div>
 
-      <!-- Equipos e insumos lado a lado -->
+      <!-- Listas de equipos e insumos -->
       <div class="listas-container">
         <!-- Lista de equipos -->
         <div class="equipos">
           <h4><b>Equipos:</b></h4>
           <ul>
-            <li v-for="(equipo, index) in detallePlan.listaEquipos" :key="index">{{ equipo }}</li>
+            <li v-for="(equipo, index) in detallePlan.listaEquipos" :key="index">
+              <strong>ID:</strong> {{ equipo.id_equipo_soporte }} - 
+              <strong>Nombre:</strong> {{ equipo.nombre_equipo_soporte }}
+            </li>
           </ul>
         </div>
 
@@ -53,13 +56,15 @@
           <table class="table">
             <thead>
               <tr>
+                <th>ID Insumo</th>
                 <th>Nombre Insumo</th>
                 <th>Cantidad</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(insumo, index) in detallePlan.listaInsumos" :key="index">
-                <td>{{ insumo.nombre_insumo }}</td>
+                <td>{{ insumo.id_insumo }}</td>
+                <td>{{ insumo.nombre }}</td>
                 <td>{{ insumo.cantidad }}</td>
               </tr>
             </tbody>

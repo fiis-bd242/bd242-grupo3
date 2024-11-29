@@ -4,6 +4,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.EmpleadoDTO;
 import pe.uni.buenaventurabackend.modules.planificacion.models.Orden_de_trabajo;
 import pe.uni.buenaventurabackend.modules.planificacion.models.requests.DetalleOrdenRequest;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -18,4 +19,7 @@ public interface IOrdenService {
     int conteoOrden();
 
     List<EmpleadoDTO> listaEmpleados();
+
+    List<Map<String,Object>> findXbyMachine(int offset, int id_maquina);
+    List<Map<String,Object>> findXbyDate(int offset, LocalDate fecha_inicio_programado);
 }
