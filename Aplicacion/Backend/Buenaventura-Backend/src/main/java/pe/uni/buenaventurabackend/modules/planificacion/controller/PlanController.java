@@ -102,15 +102,14 @@ public class PlanController {
 
 
     @PostMapping("/guardarPlan/{id_plan}")
-    public ResponseEntity<?> guardarPlan(@PathVariable String id_plan, @RequestBody GuardarPlanRequest request) {
+    public ResponseEntity<?> guardarPlan(@PathVariable int id_plan, @RequestBody GuardarPlanRequest request) {
         try {
-            int id_plan_int = Integer.parseInt(id_plan.substring(3,7));
             List<Integer> listaEquiposInt = new ArrayList<>();
             for(EquipoDTO equipo:request.getListaEquipos()){
                 listaEquiposInt.add(equipo.getId_equipo_soporte());
             }
             iPlanService.guardarPlan(
-                    id_plan_int,
+                    id_plan,
                     request.getPlan(),
                     request.getMant(),
                     listaEquiposInt,

@@ -73,7 +73,7 @@
         <div class="form-group">
           <h3>Equipos de Soporte:</h3>
           <div v-for="(equipo, index) in equipos" :key="index">
-            <select v-model="equipos[index]" @change="agregarCampoEquipo(index)">
+            <select v-model="equipos[index].id_equipo_soporte" @change="agregarCampoEquipo(index)">
               <option value="" disabled>Seleccionar Equipo</option>
               <option v-for="id in listaEquipos" :key="id" :value="id">
                 {{ id }}

@@ -179,7 +179,7 @@ export default {
     },
     async cargarDetallePlan(idPlan) {
       try {
-        const response = await axios.get(`/api/planificacion/detallePlan/${idPlan}`);
+        const response = await axios.get(`/api/planificacion/detallePlan/${parseInt(idPlan)}`);
         this.detallePlan = response.data;
       } catch (error) {
         console.error("Error cargando detalle del plan:", error);
@@ -220,35 +220,34 @@ export default {
     },
     async guardarPlan() {
       try {
+        const idPlan = this.$route.params.id_plan; 
+        let id_criticidad; // Declarar variable con `let` en un ámbito superior
+        if (this.detallePlan.criticidad === "Baja") {
+            id_criticidad = 1;
+        } else if (this.detallePlan.criticidad === "Media") {
+            id_criticidad = 2;
+        } else {
+            id_criticidad = 3;
+        }
 
-        if(this.detallePlan.criticidad === "Baja"){
-            const id_criticidad = 1;
-        }
-        else if (this.detallePlan.criticidad === "Media"){
-          const id_criticidad = 2;
-        }
-        else{
-          const id_criticidad = 3;
-        }
-
-        if(this.id_tipo_mant === "Preventivo"){
-          const id_tipo_mant_int = 1;
-        }
-        else if (this.id_tipo_mant === "Correctivo"){
-          const id_tipo_mant_int = 2;
-        }
-        else{
-          const id_tipo_mant_int = 3;
+        let id_tipo_mant_int; // Declarar variable con `let` en un ámbito superior
+        if (this.id_tipo_mant === "Preventivo") {
+            id_tipo_mant_int = 1;
+        } else if (this.id_tipo_mant === "Correctivo") {
+            id_tipo_mant_int = 2;
+        } else {
+            id_tipo_mant_int = 3;
         }
 
         const requestBody = {
           plan: {
             descripcion: this.detallePlan.descripcion,
-            criticidad: id_criticidad
+            id_criticidad: id_criticidad
           },
           mant: {
             id_orden: parseInt(this.detallePlan.id_orden.substring(3,7)),
             id_tipo_mant: id_tipo_mant_int,
+            id_maquina: parseInt(this.detallePlan.id_maquina.substring(3,7)),
             fecha_inicio_programado: this.detallePlan.fecha_inicio_programado,
             fecha_fin_programado: this.detallePlan.fecha_fin_programado
           },
@@ -257,10 +256,11 @@ export default {
 
         }
         const response = await axios.post(
-          `/api/planificacion/guardarPlan/${this.detallePlan.id_plan}`,
+          `/api/planificacion/guardarPlan/${parseInt(idPlan)}`,
           requestBody
         );
         alert("Plan guardado exitosamente.");
+        this.$router.push("/moduloplanificacion/lista_planes"); // Redirigir tras guardar
       } catch (error) {
         console.error("Error guardando el plan:", error);
         alert("Error al guardar el plan.");
@@ -268,10 +268,11 @@ export default {
     },
     async eliminarPlan() {
       try {
-        const idPlan = this.detallePlan.id_plan;
+        const idPlan = this.$route.params.id_plan; 
         if (confirm("¿Estás seguro de eliminar este plan?")) {
-          await axios.post(`/borrarPlan/${idPlan}`);
+          await axios.post(`/api/planificacion/borrarPlan/${parseInt(idPlan)}`);
           alert("Plan eliminado exitosamente.");
+          this.$router.push("/moduloplanificacion/lista_planes"); // Redirigir tras guardar
         }
       } catch (error) {
         console.error("Error eliminando el plan:", error);
@@ -303,6 +304,23 @@ export default {
 </script>
 
 <style>
+/* Estilo para cuadros de texto con borde negro redondeado */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+  border: 2px solid black; /* Borde negro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 8px; /* Espaciado interno */
+  box-sizing: border-box; /* Ajustar el tamaño considerando el padding y borde */
+}
+
+input[disabled] {
+  background-color: #f8f9fa; /* Fondo gris claro para deshabilitados */
+  cursor: not-allowed; /* Mostrar que no se puede editar */
+}
+
 /* Contenedor general para filas con varios campos */
 .row {
   display: flex;

@@ -76,25 +76,25 @@ public class PlanRepository implements IPlanRepository{
 
     @Override
     public int conteoPlan(){
-        String sql = "SELECT COUNT(*) FROM Plan_de_mantenimiento;";
+        String sql = "SELECT MAX(id_plan) FROM Plan_de_mantenimiento;";
         return jdbcTemplate.queryForObject(sql, Integer.class);
     }
 
     @Override
     public int conteoPlanEquipo(){
-        String sql = "SELECT COUNT(*) FROM EquipoSXMantenimiento;";
+        String sql = "SELECT MAX(id_equipo_mant) FROM EquipoSXMantenimiento;";
         return jdbcTemplate.queryForObject(sql, Integer.class);
     }
 
     @Override
     public int conteoPlanInsumo(){
-        String sql = "SELECT COUNT(*) FROM InsumoXMantenimiento ";
+        String sql = "SELECT MAX(id_insum_mant) FROM InsumoXMantenimiento ";
         return jdbcTemplate.queryForObject(sql, Integer.class);
     }
 
     @Override
     public int conteoMantenimiento(){
-        String sql = "SELECT COUNT(*) FROM Mantenimiento;";
+        String sql = "SELECT MAX(id_act_mantto) FROM Mantenimiento;";
         return jdbcTemplate.queryForObject(sql, Integer.class);
     }
 
@@ -231,6 +231,7 @@ public class PlanRepository implements IPlanRepository{
         jdbcTemplate.update(sql, m.getFecha_inicio_programado(),
                 m.getFecha_fin_programado(), id_plan);
 
+        System.out.println("PASO A");
         // Eliminación de los equipos de soporte e insumos
         sql = "DELETE FROM EquipoSXMantenimiento " +
                 "WHERE id_act_mantto = ?; " +
@@ -240,17 +241,20 @@ public class PlanRepository implements IPlanRepository{
         jdbcTemplate.update(sql, m.getId_act_mantto(), m.getId_act_mantto());
 
         int id_equipo_mant = conteoPlanEquipo() +1;
+        System.out.println("conteo: " +  id_equipo_mant);
         sql = "INSERT INTO EquipoSXMantenimiento (id_equipo_mant, id_act_mantto, id_equipo_soporte) " +
                 "VALUES(?,?,?)";
         for (int i : listaEquipos){
+            System.out.println("conteo: " +  id_equipo_mant);
             jdbcTemplate.update(sql, id_equipo_mant, m.getId_act_mantto(), i);
             id_equipo_mant++;
         }
 
         int id_insum_mant = conteoPlanInsumo() +1;
-        sql = "INSERT INTO InsumoXMantenimiento (id_insum_mant, cantidad, id_act_mantto, id_insumo)\n" +
+        sql = "INSERT INTO InsumoXMantenimiento (id_insum_mant, cantidad, id_act_mantto, id_insumo) " +
                 "VALUES (?, ?, ?, ?);";
         for (InsumoDTO insumoDTO : listaInsumos){
+            System.out.println(insumoDTO);
             jdbcTemplate.update(sql, id_insum_mant, insumoDTO.getCantidad(), m.getId_act_mantto(), insumoDTO.getId_insumo());
             id_insum_mant++;
         }
@@ -379,7 +383,7 @@ public class PlanRepository implements IPlanRepository{
 
     @Override
     public int conteoNotificaciones(){
-        String sql = "SELECT COUNT(*) FROM Notificaciones";
+        String sql = "SELECT MAX(id_notificacion) FROM Notificaciones";
         return jdbcTemplate.queryForObject(sql, Integer.class);
     }
 
