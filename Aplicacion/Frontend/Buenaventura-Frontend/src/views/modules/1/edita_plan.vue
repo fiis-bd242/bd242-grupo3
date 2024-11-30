@@ -222,18 +222,18 @@ export default {
       try {
         const idPlan = this.$route.params.id_plan; 
         let id_criticidad; // Declarar variable con `let` en un ámbito superior
-        if (this.detallePlan.criticidad === "Baja") {
+        if (this.detallePlan.criticidad == "Bajo") {
             id_criticidad = 1;
-        } else if (this.detallePlan.criticidad === "Media") {
+        } else if (this.detallePlan.criticidad == "Medio") {
             id_criticidad = 2;
         } else {
             id_criticidad = 3;
         }
 
         let id_tipo_mant_int; // Declarar variable con `let` en un ámbito superior
-        if (this.id_tipo_mant === "Preventivo") {
+        if (this.detallePlan.nombre_tipo_mant == "Preventivo") {
             id_tipo_mant_int = 1;
-        } else if (this.id_tipo_mant === "Correctivo") {
+        } else if (this.detallePlan.nombre_tipo_mant == "Correctivo") {
             id_tipo_mant_int = 2;
         } else {
             id_tipo_mant_int = 3;
@@ -259,7 +259,7 @@ export default {
           `/api/planificacion/guardarPlan/${parseInt(idPlan)}`,
           requestBody
         );
-        alert("Plan guardado exitosamente.");
+        alert(response.data.message || "Plan guardado exitosamente.");
         this.$router.push("/moduloplanificacion/lista_planes"); // Redirigir tras guardar
       } catch (error) {
         console.error("Error guardando el plan:", error);

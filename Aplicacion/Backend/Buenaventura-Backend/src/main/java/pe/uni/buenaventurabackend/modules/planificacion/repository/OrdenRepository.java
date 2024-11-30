@@ -199,7 +199,8 @@ public class OrdenRepository implements IOrdenRepository {
 
     @Override
     public List<EmpleadoDTO> listaEmpleados() {
-        String sql = "SELECT id_empleado, nombre FROM Empleado";
+        String sql = "SELECT id_empleado, nombre FROM Empleado " +
+                "ORDER BY id_empleado";
         return jdbcTemplate.query(sql, (rs, rowNum) -> {
             EmpleadoDTO detalle = new EmpleadoDTO();
             detalle.setId_empleado(rs.getInt("id_empleado"));
