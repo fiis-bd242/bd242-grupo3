@@ -43,10 +43,9 @@ public class PlanController {
     @PostMapping("/nuevoPlan")
     public ResponseEntity<?> nuevoPlan(@RequestBody NuevoPlanRequest request){
         try {
-            List<String> listaEquipos = request.getListaEquipos();
             List<Integer> listaEquiposI = new ArrayList<>();
-            for (String equipo:listaEquipos){
-                listaEquiposI.add(Integer.parseInt(equipo.substring(3,7)));
+            for (EquipoDTO equipo:request.getListaEquipos()){
+                listaEquiposI.add(equipo.getId_equipo_soporte());
             }
             Plan_de_mantenimiento plan = request.getPlan();
             plan.setEmpleado_asigna(request.getId_usuario());

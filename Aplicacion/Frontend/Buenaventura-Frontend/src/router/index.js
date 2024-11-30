@@ -30,12 +30,12 @@ const router = createRouter({
       component: () => import("../views/modules/1/dashboard_planificacion.vue")
     },
     {
-      path: '/moduloplanificacion/detalle_actividad',
+      path: '/moduloplanificacion/detalle_actividad/:id_actividad',
       name: 'detalle_actividad',
       component: () => import("../views/modules/1/detalle_actividad.vue")
     },
     {
-      path: '/moduloplanificacion/detalle_orden',
+      path: '/moduloplanificacion/detalle_orden/:id_orden',
       name: 'detalle_orden',
       component: () => import("../views/modules/1/detalle_orden.vue")
     },
@@ -45,12 +45,12 @@ const router = createRouter({
       component: () => import("../views/modules/1/detalle_plan.vue")
     },
     {
-      path: '/moduloplanificacion/edita_actividad',
+      path: '/moduloplanificacion/edita_actividad/:id_actividad',
       name: 'edita_actividad',
       component: () => import("../views/modules/1/edita_actividad.vue")
     },
     {
-      path: '/moduloplanificacion/edita_orden',
+      path: '/moduloplanificacion/edita_orden/:id_orden',
       name: 'edita_orden',
       component: () => import("../views/modules/1/edita_orden.vue")
     },

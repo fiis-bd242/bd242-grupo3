@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-[85vh]">
     <aside class="w-64 border-r-2 h-full text-sm border-r-black text-gray-100 flex flex-col p-4 overflow-y-auto" style="background-color: #5C46D8;">
-      <h2 class="font-bold mb-6">Otros Modulos</h2>
+      <h2 class="font-bold mb-6"><b>Módulos</b></h2>
 
       <nav class="flex-1">
         <ul>
@@ -28,9 +28,9 @@ export default {
       menuItems: [
         { name: 'Planificacion de Mantenimiento', route_name: 'dashboard_planificacion', module: 'moduloplanificacion' },
         { name: 'Control de Mantenimiento', route_name: 'trabajos', module: 'modulocontrol' },
-        { name: 'Reportes e Insumos', route_name: 'Insumos', module: 'moduloreportesinsumos' },
+        { name: 'Insumos', route_name: 'Insumos', module: 'moduloreportesinsumos' },
         { name: 'IPERC', route_name: 'dash_perso', module: 'moduloiperc' },
-        { name: 'Maquinaria', route_name: 'dash_perso', module: 'modulomaquinaria' },
+        { name: 'Equipos de soporte', route_name: 'dash_perso', module: 'modulomaquinaria' },
         { name: 'Reportes e Historial de Mantenimiento', route_name: 'dash_perso', module: 'modulogestionreportes' },
         { name: 'Usuarios', route_name: 'dash_perso', module: 'otrosmodulos' },
       ],
