@@ -36,6 +36,7 @@ public class ActividadRepository implements IActividadRepository{
                 "LEFT JOIN Equipo_de_Soporte es " +
                 "ON es.id_equipo_soporte = a.id_equipo_soporte " +
                 "WHERE a.id_orden = ? " +
+                "ORDER BY a.id_actvempleado " +
                 "LIMIT ? " +
                 "OFFSET ?-1;";
         return jdbcTemplate.queryForList(sql,id_orden, limit, offset);
@@ -93,6 +94,7 @@ public class ActividadRepository implements IActividadRepository{
 
     @Override
     public void guardarActividad(Actividad_empleado act){
+        System.out.println(act);
         String sql = "UPDATE Actividad_Empleado " +
                 "SET nombre_actv = ?, id_empleado = ?, id_equipo_soporte = ?, fecha_inicio = ?, fecha_fin = ?, descripcion_actv = ? " +
                 "WHERE id_actvempleado = ?;";

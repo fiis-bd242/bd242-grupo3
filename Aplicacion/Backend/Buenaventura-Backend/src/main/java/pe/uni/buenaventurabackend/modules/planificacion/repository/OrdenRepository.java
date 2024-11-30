@@ -110,30 +110,30 @@ public class OrdenRepository implements IOrdenRepository {
 
     @Override
     public DetalleOrdenRequest detalleOrden(int id_orden) {
-        String sql = "SELECT " +
-                "CONCAT('OT-', LPAD(o.id_orden::TEXT, 4, '0')) AS id_orden, " +
-                "o.descripcion, " +
-                "est.estado, " +
-                "CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')) AS maquina, " +
-                "o.fecha_orden, " +
-                "tm.nombre_tipo_mant, " +
-                "m.fecha_inicio_programado, " +
-                "m.fecha_fin_programado, " +
-                "responsable.nombre AS responsable, " +
-                "CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')) AS id_plan, " +
-                "string_agg(DISTINCT CONCAT(emp.id_empleado, '-', emp.nombre), ', ') AS lista_empleados " +
+        String sql = "SELECT  " +
+                "    CONCAT('OT-', LPAD(o.id_orden::TEXT, 4, '0')) AS id_orden, " +
+                "    o.descripcion, " +
+                "    est.estado, " +
+                "    CONCAT('MQ-', LPAD(m.id_maquina::TEXT, 4, '0')) AS maquina, " +
+                "    o.fecha_orden, " +
+                "    tm.nombre_tipo_mant, " +
+                "    m.fecha_inicio_programado, " +
+                "    m.fecha_fin_programado, " +
+                "    responsable.nombre AS responsable, " +
+                "    CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')) AS id_plan, " +
+                "    string_agg(DISTINCT CONCAT(emp.id_empleado, '|', emp.nombre, '|', act.id_actvempleado), ',') AS lista_empleados " +
                 "FROM Orden_de_Trabajo o " +
-                "INNER JOIN Actividad_empleado act ON act.id_orden = o.id_orden " +
-                "INNER JOIN Empleado emp ON emp.id_empleado = act.id_empleado " +
-                "INNER JOIN Mantenimiento m ON m.id_plan = o.id_orden " +
+                "INNER JOIN Mantenimiento m ON m.id_orden = o.id_orden " +
                 "INNER JOIN Tipo_mantenimiento tm ON tm.id_tipo_mant = m.id_tipo_mant " +
                 "INNER JOIN Plan_de_mantenimiento p ON p.id_plan = m.id_plan " +
+                "INNER JOIN Actividad_empleado act ON act.id_orden = o.id_orden " +
+                "INNER JOIN Empleado emp ON emp.id_empleado = act.id_empleado " +
                 "INNER JOIN Empleado responsable ON p.empleado_asigna = responsable.id_empleado " +
                 "INNER JOIN Estado_mantto est ON est.id_estado = m.id_estado " +
                 "WHERE o.id_orden = ? " +
-                "GROUP BY " +
-                "o.id_orden, o.descripcion, est.estado, m.id_maquina, o.fecha_orden, tm.nombre_tipo_mant, " +
-                "m.fecha_inicio_programado, m.fecha_fin_programado, responsable.nombre, p.id_plan " +
+                "GROUP BY  " +
+                "    o.id_orden, o.descripcion, est.estado, m.id_maquina, o.fecha_orden, tm.nombre_tipo_mant, " +
+                "    m.fecha_inicio_programado, m.fecha_fin_programado, responsable.nombre, p.id_plan " +
                 "ORDER BY o.id_orden;";
 
         return jdbcTemplate.query(sql, new Object[]{id_orden}, rs -> {
@@ -155,10 +155,11 @@ public class OrdenRepository implements IOrdenRepository {
                 if (listaEmpleados != null) {
                     List<EmpleadoDTO> empleados = Arrays.stream(listaEmpleados.split(","))
                             .map(empleado -> {
-                                String[] parts = empleado.split("-");
+                                String[] parts = empleado.split("\\|"); // Usa el separador correcto
                                 EmpleadoDTO emp = new EmpleadoDTO();
                                 emp.setId_empleado(Integer.parseInt(parts[0].trim()));
                                 emp.setNombre(parts[1].trim());
+                                emp.setId_actividad(Integer.parseInt(parts[2].trim()));
                                 return emp;
                             })
                             .collect(Collectors.toList());
@@ -198,7 +199,8 @@ public class OrdenRepository implements IOrdenRepository {
 
     @Override
     public List<EmpleadoDTO> listaEmpleados() {
-        String sql = "SELECT id_empleado, nombre FROM Empleado";
+        String sql = "SELECT id_empleado, nombre FROM Empleado " +
+                "ORDER BY id_empleado";
         return jdbcTemplate.query(sql, (rs, rowNum) -> {
             EmpleadoDTO detalle = new EmpleadoDTO();
             detalle.setId_empleado(rs.getInt("id_empleado"));

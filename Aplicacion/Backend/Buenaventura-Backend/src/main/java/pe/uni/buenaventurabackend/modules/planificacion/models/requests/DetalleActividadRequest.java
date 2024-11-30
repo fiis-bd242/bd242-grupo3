@@ -3,7 +3,6 @@ package pe.uni.buenaventurabackend.modules.planificacion.models.requests;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pe.uni.buenaventurabackend.modules.planificacion.models.Actividad_empleado;
 
 @Data
 @AllArgsConstructor

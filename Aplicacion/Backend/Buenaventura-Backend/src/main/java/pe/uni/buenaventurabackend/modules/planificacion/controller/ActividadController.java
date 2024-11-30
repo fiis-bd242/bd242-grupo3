@@ -40,6 +40,7 @@ public class ActividadController {
     @PostMapping("/guardarActividad/{id_actvempleado}")
     public ResponseEntity<?> guardarActividad(@PathVariable int id_actvempleado, @RequestBody Actividad_empleado act){
         try {
+            act.setId_actvempleado(id_actvempleado);
             iActividadService.guardarActividad(act);
             return ResponseEntity.ok(new ApiResponse("Actividad guardada exitosamente"));
         } catch (Exception e){

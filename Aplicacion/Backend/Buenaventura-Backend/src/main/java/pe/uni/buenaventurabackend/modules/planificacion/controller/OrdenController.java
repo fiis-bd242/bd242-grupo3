@@ -13,6 +13,7 @@ import pe.uni.buenaventurabackend.modules.planificacion.models.requests.NuevaOrd
 import pe.uni.buenaventurabackend.modules.planificacion.service.IOrdenService;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -61,11 +62,16 @@ public class OrdenController {
     @PostMapping("/guardarOrden/{id_orden}")
     public ResponseEntity<?> guardarOrden(@PathVariable int id_orden, @RequestBody GuardarOrdenRequest request) {
         try{
+            List<Integer> lista_empleados_int = new ArrayList<>();
+            for (EmpleadoDTO empleado: request.getLista_empleados()){
+                lista_empleados_int.add(empleado.getId_empleado());
+            }
+
             iOrdenService.guardarOrden(
                     id_orden,
                     request.getDescripcion(),
                     request.getId_plan(),
-                    request.getLista_empleados(),
+                    lista_empleados_int,
                     request.getNum_responsable()
             );
             return ResponseEntity.ok(new ApiResponse("Orden guardada exitosamente"));

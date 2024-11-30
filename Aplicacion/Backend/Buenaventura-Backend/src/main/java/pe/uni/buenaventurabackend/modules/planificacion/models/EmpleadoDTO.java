@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class EmpleadoDTO {
     private int id_empleado;
     private String nombre;
+    private int id_actividad;
 }

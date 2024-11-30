@@ -321,7 +321,7 @@ public class PlanRepository implements IPlanRepository{
     public void reservaEquipo(List<Integer> listaEquipos){
         String sql = "UPDATE Equipo_de_soporte " +
                 "SET id_disponibilidad = 1 " +
-                "WHERE id_equipo_soporte = ?";
+                "WHERE id_equipo_soporte = ? ";
         for (int id_equipo_soporte: listaEquipos){
             jdbcTemplate.update(sql, id_equipo_soporte);
         }
