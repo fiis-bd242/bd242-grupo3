@@ -1,16 +1,24 @@
-# 9.2. Vistas
+-- Índices
+--- Planificacion
+CREATE INDEX IDX_Maquina_mantto ON Mantenimiento(id_maquina);
+CREATE INDEX IDX_Fecha_mantto ON Mantenimiento(fecha_inicio_programado)
 
-## Módulos
+--- Control
+--- Equipos de soporte
+--- IPERC
+--- Insumos
+CREATE INDEX idx_reserva_fecha_hora ON Reserva(Fecha, Hora);
+CREATE INDEX idx_estado_reserva ON Estado_reserva(Id_estado_reserva);
 
-### 1. Planificación del mantenimiento:
+--- Seguridad
+--- Reportes
+CREATE INDEX idx_registros_fecha ON Registro(Fecha_inicial, fecha_registro);
+CREATE INDEX idx_reportes_fecha ON reportes (fecha_reporte);
 
-1) Vista para los equipos de soporte:
 
-* Justificación: El query utilizado en la vista representa una consulta recurrente en distintas partes del módulo, especialmente en la consulta de lista de equipos de soporte y el detalle del plan de mantenimiento.
 
-* Implementación de la vista:
-  
-```sql
+-- Vistas
+--- Planificacion
 CREATE VIEW vista_equipos_soporte AS
 SELECT 
     esm.id_act_mantto,
@@ -23,15 +31,7 @@ SELECT
 FROM EquipoSXMantenimiento esm
 INNER JOIN Equipo_de_Soporte es ON es.id_equipo_soporte = esm.id_equipo_soporte
 GROUP BY esm.id_act_mantto;
-```
 
-2) Vista para los insumos:
-
-* Justificación: El query utilizado en la vista representa una consulta recurrente en distintas partes del módulo, especialmente en la consulta de lista de insumos y el detalle del plan de mantenimiento.
-
-* Implementación de la vista:
-  
-```sql
 CREATE VIEW vista_insumos AS
 SELECT 
     im.id_act_mantto,
@@ -45,15 +45,7 @@ SELECT
 FROM InsumoXMantenimiento im
 INNER JOIN Insumo i ON i.id_insumo = im.id_insumo
 GROUP BY im.id_act_mantto;
-```
 
-3) Vista para el detalle del plan de mantenimiento:
-
-* Justificación: El query es muy complejo y siempre es estándar para este módulo. Por lo que se decidió crear una tabla virtual que permita obtener el detalle a través de un simple SELECT.
-
-* Implementación de la vista:
-  
-```sql
 CREATE VIEW vista_plan_mantenimiento AS
 SELECT 
     CONCAT('PL-', LPAD(p.id_plan::TEXT, 4, '0')) AS id_plan,
@@ -83,17 +75,30 @@ LEFT JOIN vista_equipos_soporte equipos ON equipos.id_act_mantto = m.id_act_mant
 LEFT JOIN vista_insumos insumos ON insumos.id_act_mantto = m.id_act_mantto
 WHERE act.nombre_actv = 'Responsable' AND m.id_estado != 8
 ORDER BY p.id_plan;
-```
 
-### 2. Control del mantenimiento
+--- Control
+--- Equipos de soporte
+--- IPERC
+--- Insumos
+--- Seguridad
+--- Reportes
 
-### 3. Gestión de equipos de soporte
 
-### 4. Gestión del IPERC
+-- Secuencias
+--- Planificacion
+--- Control
+--- Equipos de soporte
+--- IPERC
+--- Insumos
+--- Seguridad
+--- Reportes
 
-### 5. Gestión de insumos
 
-### 6. Seguridad
-
-### 7. Gestión de reportes e historial de mantenimiento
-
+-- Otros
+--- Planificacion
+--- Control
+--- Equipos de soporte
+--- IPERC
+--- Insumos
+--- Seguridad
+--- Reportes
