@@ -22,8 +22,6 @@
       </div>
     </div>
 
-    <!-- Botón para crear nueva notificación -->
-    <button class="new-plan-button" @click="redirectToCreate">Nueva Notificación</button>
 
     <!-- Tabla de notificaciones -->
     <table class="maintenance-table">
@@ -44,7 +42,7 @@
           <td>{{ item.idNotificacion }}</td>
           <td>{{ item.idAdministrador }}</td>
           <td>{{ item.tipoEvento }}</td>
-          <td>{{ item.fechaNotificacion }}</td>
+          <td>{{ item.fechaHoraNotificacion }}</td>
           <td>{{ item.estadoNotificacion }}</td>
           <td>{{ item.prioridad }}</td>
           <td>{{ item.mensajeNotificacion }}</td>
@@ -119,8 +117,8 @@ export default {
   methods: {
     async fetchData(page) {
       try {
-        const offset = (page - 1) * this.itemsPerPage + 1;
-        const response = await axios.get(`/api/seguridad/notificaciones/?page=${offset}&size=${this.itemsPerPage}`);
+        const offset = (page - 1) * this.itemsPerPage;
+        const response = await axios.get(`/api/seguridad/ver_notificaciones?page=${offset}&size=${this.itemsPerPage}`);
         this.dataList = response.data;
         this.currentPage = page;
         this.updateVisiblePages();
@@ -130,7 +128,7 @@ export default {
     },
     async fetchTotalPages() {
       try {
-        const response = await axios.get(`/api/seguridad/notificaciones/conteoNotificaciones`);
+        const response = await axios.get(`/api/seguridad/ver_notificaciones/conteoNotificaciones`);
         const totalItems = response.data;
         this.totalPages = Math.ceil(totalItems / this.itemsPerPage);
         this.updateVisiblePages();
@@ -156,13 +154,13 @@ export default {
       this.visiblePages = pages;
     },
     redirectToDetail(idNotificacion) {
-      window.location.href = `http://localhost:5173/moduloseguridad/detalle/${idNotificacion}`;
+      window.location.href = `/moduloseguridad/detalle/${idNotificacion}`;
     },
     redirectToEdit(idNotificacion) {
-      window.location.href = `http://localhost:5173/moduloseguridad/editar/${idNotificacion}`;
+      window.location.href = `/moduloseguridad/editar/${idNotificacion}`;
     },
     redirectToCreate() {
-      window.location.href = `http://localhost:5173/moduloseguridad/crear`;
+      window.location.href = `/moduloseguridad/crear`;
     },
     async deleteNotificacion(idNotificacion) {
       try {
@@ -184,7 +182,7 @@ export default {
     },
     async searchByDate() {
       try {
-        const response = await axios.get(`/api/seguridad/notificaciones/buscarPorFecha/${this.searchDate}`);
+        const response = await axios.get(`/api/seguridad/ver_notificaciones/buscarPorFecha/${this.searchDate}`);
         this.dataList = response.data;
       } catch (error) {
         console.error("Error al buscar por fecha:", error);
