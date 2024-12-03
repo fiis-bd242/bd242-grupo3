@@ -794,19 +794,20 @@ CREATE TABLE Estado_autenticador (
     Descripcion VARCHAR(50) NOT NULL
 );
 
-DROP TABLE IF EXISTS Sesion_Empleado CASCADE;
-CREATE TABLE Sesion_Empleado (
+DROP TABLE IF EXISTS sesion_empleado CASCADE;
+
+CREATE TABLE sesion_empleado (
     Id_Sesion INT PRIMARY KEY,
     Id_Empleado INT NOT NULL,
-    Fecha_Hora_Inicio TIMESTAMP NOT NULL,  
-    Fecha_Hora_Final TIMESTAMP,            
+    Fecha_Hora_Inicio TIMESTAMP NOT NULL,
+    Fecha_Hora_Final TIMESTAMP,
     Direccion_IP VARCHAR(45),
-    Id_estado_sesion INT,            
-    Cargo VARCHAR(50),
-    t_inactividad INTERVAL,  
+    Id_estado_sesion INT,
+    Id_acceso INT,  -- Columna que hace referencia a Acceso_empleado
+    t_inactividad INTERVAL,
     FOREIGN KEY (Id_Empleado) REFERENCES Empleado(Id_Empleado),
     FOREIGN KEY (Id_estado_sesion) REFERENCES Estado_Sesion(Id_estado_sesion),
-    FOREIGN KEY (Cargo) REFERENCES Tiempo_max_sesion(Cargo)
+    FOREIGN KEY (Id_acceso) REFERENCES Acceso_empleado(Id_acceso)  -- Nueva clave foránea
 );
 
 
