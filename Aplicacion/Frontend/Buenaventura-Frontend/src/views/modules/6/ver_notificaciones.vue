@@ -22,6 +22,9 @@
       </div>
     </div>
 
+    <!-- Botón para crear nueva notificación -->
+    <button class="new-plan-button" @click="redirectToCreate">Nueva Notificación</button>
+
     <!-- Tabla de notificaciones -->
     <table class="maintenance-table">
       <thead>
@@ -38,16 +41,17 @@
       </thead>
       <tbody>
         <tr v-for="(item, index) in dataList" :key="index">
-          <td>{{ item.Id_Notificacion }}</td>
-          <td>{{ item.Id_Administrador }}</td>
-          <td>{{ item.Tipo_Evento }}</td>
-          <td>{{ item.Fecha_Hora_Notificacion }}</td>
-          <td>{{ item.Estado_Notificacion }}</td>
-          <td>{{ item.Prioridad }}</td>
-          <td>{{ item.Mensaje_Notificacion }}</td>
+          <td>{{ item.idNotificacion }}</td>
+          <td>{{ item.idAdministrador }}</td>
+          <td>{{ item.tipoEvento }}</td>
+          <td>{{ item.fechaNotificacion }}</td>
+          <td>{{ item.estadoNotificacion }}</td>
+          <td>{{ item.prioridad }}</td>
+          <td>{{ item.mensajeNotificacion }}</td>
           <td>
-            <button class="action-button" @click="redirectToDetail(item.Id_Notificacion)">Ver</button>
-            <button class="action-button" @click="redirectToEdit(item.Id_Notificacion)">Editar</button>
+            <button class="action-button" @click="redirectToDetail(item.idNotificacion)">Ver</button>
+            <button class="action-button" @click="redirectToEdit(item.idNotificacion)">Editar</button>
+            <button class="action-button" @click="deleteNotificacion(item.idNotificacion)">Eliminar</button>
           </td>
         </tr>
       </tbody>
@@ -116,7 +120,7 @@ export default {
     async fetchData(page) {
       try {
         const offset = (page - 1) * this.itemsPerPage + 1;
-        const response = await axios.get(`/api/notificacion/listarNotificaciones/${offset}`);
+        const response = await axios.get(`/api/seguridad/notificaciones/?page=${offset}&size=${this.itemsPerPage}`);
         this.dataList = response.data;
         this.currentPage = page;
         this.updateVisiblePages();
@@ -126,7 +130,7 @@ export default {
     },
     async fetchTotalPages() {
       try {
-        const response = await axios.get(`/api/notificacion/conteoNotificaciones`);
+        const response = await axios.get(`/api/seguridad/notificaciones/conteoNotificaciones`);
         const totalItems = response.data;
         this.totalPages = Math.ceil(totalItems / this.itemsPerPage);
         this.updateVisiblePages();
@@ -152,14 +156,27 @@ export default {
       this.visiblePages = pages;
     },
     redirectToDetail(idNotificacion) {
-      window.location.href = `http://localhost:5173/modulonotificacion/detalle/${idNotificacion}`;
+      window.location.href = `http://localhost:5173/moduloseguridad/detalle/${idNotificacion}`;
     },
     redirectToEdit(idNotificacion) {
-      window.location.href = `http://localhost:5173/modulonotificacion/editar/${idNotificacion}`;
+      window.location.href = `http://localhost:5173/moduloseguridad/editar/${idNotificacion}`;
+    },
+    redirectToCreate() {
+      window.location.href = `http://localhost:5173/moduloseguridad/crear`;
+    },
+    async deleteNotificacion(idNotificacion) {
+      try {
+        const response = await axios.delete(`/api/seguridad/notificaciones/${idNotificacion}`);
+        this.fetchData(this.currentPage);  // Refrescar la lista después de eliminar
+        alert("Notificación eliminada exitosamente");
+      } catch (error) {
+        console.error("Error al eliminar la notificación:", error);
+        alert("Error al eliminar la notificación");
+      }
     },
     async searchByAdmin() {
       try {
-        const response = await axios.get(`/api/notificacion/buscarPorAdministrador/${this.searchAdminId}`);
+        const response = await axios.get(`/api/seguridad/notificaciones/buscarPorAdministrador/${this.searchAdminId}`);
         this.dataList = response.data;
       } catch (error) {
         console.error("Error al buscar por administrador:", error);
@@ -167,7 +184,7 @@ export default {
     },
     async searchByDate() {
       try {
-        const response = await axios.get(`/api/notificacion/buscarPorFecha/${this.searchDate}`);
+        const response = await axios.get(`/api/seguridad/notificaciones/buscarPorFecha/${this.searchDate}`);
         this.dataList = response.data;
       } catch (error) {
         console.error("Error al buscar por fecha:", error);

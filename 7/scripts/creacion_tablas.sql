@@ -874,6 +874,15 @@ CREATE TABLE Notificacion_Administrador (
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
 );
 
+DROP TABLE IF EXISTS Incidente_Cibernetico;
 
+CREATE TABLE Incidente_Cibernetico (
+    id_incidente SERIAL PRIMARY KEY,
+    descripcion_incidente VARCHAR(255) NOT NULL,
+    fecha DATE NOT NULL,
+    criticidad VARCHAR(20) NOT NULL,
+    usuario_involucrado VARCHAR(100),
+    medidas_tomadas VARCHAR(255) NOT NULL
+);
 
 

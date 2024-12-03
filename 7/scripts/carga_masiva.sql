@@ -515,7 +515,7 @@
 
     COPY Notificacion_Administrador  FROM 'C:\DBD-2024-2\datos\Notificacion_Administrador.csv' DELIMITER ',' CSV HEADER;
     
-    COPY incidente_cibernetico FROM 'C:\DBD-2024-2\datos\incidentes_ciberneticos.csv' DELIMITER ',' CSV HEADER;
+    
 
 
     INSERT INTO Estado_codigo (Id_estado_codigo, Descripcion)
@@ -535,7 +535,7 @@
 
     COPY Recuperacion_de_contraseña  FROM 'C:\DBD-2024-2\datos\recuperacion_de_contrasenia.csv' DELIMITER ',' CSV HEADER;
     
-
+    COPY incidente_cibernetico FROM 'C:\DBD-2024-2\datos\incidentes_ciberneticos.csv' DELIMITER ',' CSV HEADER;
 
     ALTER TABLE Notificaciones
     ALTER COLUMN id_notificacion SET DEFAULT nextval('notificaciones_id_notificacion_seq');
