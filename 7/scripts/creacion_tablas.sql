@@ -858,13 +858,13 @@ CREATE TABLE Sesion_sospechosa (
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
 );
 
--- Eliminar la tabla Notificacion_Administrador si existe
 DROP TABLE IF EXISTS Notificacion_Administrador CASCADE;
+
 CREATE TABLE Notificacion_Administrador (
     Id_Notificacion INT PRIMARY KEY,
     Id_Administrador INT NOT NULL,
     Tipo_Evento VARCHAR(50) NOT NULL,
-    Fecha_Hora_Notificacion TIMESTAMP NOT NULL,  
+    Fecha_Notificacion DATE NOT NULL,  -- Cambio de TIMESTAMP a DATE
     Estado_Notificacion VARCHAR(20) NOT NULL,
     Mensaje_Notificacion VARCHAR(255) NOT NULL,
     Prioridad VARCHAR(10) NOT NULL,
@@ -873,6 +873,7 @@ CREATE TABLE Notificacion_Administrador (
     FOREIGN KEY (Id_autenticacion) REFERENCES Sesion_sospechosa(Id_autenticacion),
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
 );
+
 
 
 
