@@ -513,7 +513,7 @@
 
     COPY Sesion_sospechosa  FROM 'C:\DBD-2024-2\datos\sesion_sospechosa.csv' DELIMITER ',' CSV HEADER;
 
-    COPY Notificacion_Administrador  FROM 'C:\DBD-2024-2\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
+    COPY Notificacion_Administrador  FROM 'C:\DBD-2024-2\datos\Notificacion_Administrador.csv' DELIMITER ',' CSV HEADER;
     
     COPY incidente_cibernetico FROM 'C:\DBD-2024-2\datos\incidentes_ciberneticos.csv' DELIMITER ',' CSV HEADER;
 
