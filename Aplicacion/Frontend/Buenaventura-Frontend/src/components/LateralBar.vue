@@ -32,7 +32,7 @@ export default {
         { name: 'IPERC', route_name: 'dash_perso', module: 'moduloiperc' },
         { name: 'Equipos de soporte', route_name: 'dashboard_equipos_soporte', module: 'moduloequiposoporte' },
         { name: 'Reportes e Historial de Mantenimiento', route_name: 'dash_perso', module: 'modulogestionreportes' },
-        { name: 'Usuarios', route_name: 'dash_perso', module: 'otrosmodulos' },
+        { name: 'Administrador', route_name: 'dashboard_admin', module: 'moduloseguridad' },
       ],
     };
   },

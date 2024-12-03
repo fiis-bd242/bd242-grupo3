@@ -42,6 +42,15 @@
           '/moduloequiposoporte/solicitar_pedidos': 'Equipos de Soporte',
           '/moduloequiposoporte/gestionar_pedidos': 'Equipos de Soporte',
 
+          //Módulo 6: Administradores de buenaventura
+          '/moduloseguridad/dashboard_admin': 'Administracion de buenaventura',
+          '/moduloseguridad/crea_usuario': 'Administracion de buenaventura',
+          '/moduloseguridad/lista_usuario': 'Administracion de buenaventura',
+          '/moduloseguridad/ver_notificaciones': 'Administracion de buenaventura',
+          '/moduloseguridad/informe_incidente': 'Administracion de buenaventura',
+          '/moduloseguridad/editar_info_roles': 'Administracion de buenaventura',
+
+
           //Módulo 7: Gestión de reportes e insumos
           '/modulogestionreportes/dash': 'Gestión de reportes e historial de mantenimiento',
           '/modulogestionreportes/registros': 'Gestión de reportes e historial de mantenimiento',
