@@ -144,6 +144,31 @@ const router = createRouter({
       name: 'gestionar_pedidos',
       component: () => import("../views/modules/5/gestion_pedido_equipo.vue")
     },
+    {
+      path: '/moduloseguridad/dashboard_admin',
+      name: 'dashboard_admin',
+      component: () => import("../views/modules/6/dashboard_admin.vue")
+    },
+    {
+      path: '/moduloseguridad/crea_usuario',
+      name: 'crea_usuario',
+      component: () => import("../views/modules/6/crea_usuario.vue")
+    },
+    {
+      path: '/moduloseguridad/informe_incidente',
+      name: 'informe_incidente',
+      component: () => import("../views/modules/6/informe_incidente.vue")
+    },
+    {
+      path: '/moduloseguridad/lista_usuario',
+      name: 'lista_usuario',
+      component: () => import("../views/modules/6/lista_usuario.vue")
+    },
+    {
+      path: '/moduloseguridad/ver_notificaciones',
+      name: 'ver_notificacion',
+      component: () => import("../views/modules/6/ver_notificaciones.vue")
+    },
   ]
 })
 
