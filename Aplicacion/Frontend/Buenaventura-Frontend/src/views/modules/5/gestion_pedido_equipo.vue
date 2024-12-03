@@ -1,6 +1,6 @@
 <template>
   <div class="w-full mx-auto p-4">
-    <h1 class="title"><b>INVENTARIO DE EQUIPOS DE SOPORTE</b></h1>
+    <h1 class="title"><b>CONTROL DE PEDIDOS DE COMPRA</b></h1>
 
     <!-- Buscadores -->
     <div class="search-container">
@@ -19,27 +19,41 @@
       <thead>
       <tr>
         <th>ID</th>
-        <th>Nombre</th>
-        <th>Tipo</th>
+        <th>Empleado</th>
+        <th>Urgencia</th>
         <th>Estado</th>
-        <th>Disponibilidad</th>
-        <th>Detalle</th>
+        <th>Detalles</th>
+        <th>Cancelar</th>
       </tr>
       </thead>
       <tbody>
       <!-- Filtrar los datos según la página actual -->
       <tr v-for="(item, index) in paginatedData" :key="index">
         <td>{{ item.id }}</td>
-        <td>{{ item.nombre }}</td>
-        <td>{{ item.tipo }}</td>
-        <td>{{ item.estado }}</td>
-        <td>
-            <span :class="availabilityClass(item.disponibilidad)">
-              <b>{{ item.disponibilidad }}</b>
-            </span>
-        </td>
+        <td>{{ item.empleado }}</td>
+        <td>{{ item.urgencia }}</td>
+        <td><b>
+          <span :class="{
+            'estado-pendiente': item.estado === 'pendiente',
+            'estado-confirmado': item.estado === 'confirmado',
+            'estado-en-transito': item.estado === 'en transito',
+            'estado-completado': item.estado === 'completado',
+            'estado-cancelado': item.estado === 'cancelado'
+          }">
+            {{ item.estado }}
+          </span>
+
+        </b></td>
         <td>
           <button class="search-detalles" @click="viewDetails(item)">Ver</button>
+        </td>
+        <td>
+          <button
+              :class="['cancel-button', { 'cancel-button-disabled': item.estado !== 'pendiente' }]"
+              @click="item.estado === 'pendiente' ? cancelOrder(item) : null"
+              :disabled="item.estado !== 'pendiente'">
+            X
+          </button>
         </td>
       </tr>
       </tbody>
@@ -89,20 +103,35 @@
       <div v-if="showModal" class="modal-overlay" @click="closeModal">
         <div class="modal-content" @click.stop>
           <button class="close-button" @click="closeModal">X</button>
-          <h2><b>Detalle Equipo de Soporte</b></h2>
+          <h2><b>Detalle del Pedido de Compra</b></h2>
+
           <div class="modal-body">
-            <p><strong>ID:</strong> {{ currentItem.id }}</p>
-            <p><strong>Nombre:</strong> {{ currentItem.nombre }}</p>
-            <p><strong>Tipo:</strong> {{ currentItem.tipo }}</p>
-            <p><strong>Estado:</strong> {{ currentItem.estado }}</p>
-            <p><strong>Mtto Asignado:</strong> {{ currentItem.mttoAsignado || 'No asignado' }}</p>
-            <p><strong>Horas de uso:</strong> {{ currentItem.horasUso || 0 }}</p>
-            <p><strong>Descripción:</strong></p>
-            <p class="description-text">{{ currentItem.descripcion || 'No disponible' }}</p>
+
+            <h3><strong><b>Tipo de Producto:</b></strong> {{ currentItem.tipoProducto }}</h3>
+
+            <h3><b>Lista de Productos:</b></h3>
+            <table class="productos-table">
+              <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr v-for="(producto, index) in currentItem.productos" :key="index">
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.cantidad }}</td>
+                <td>{{ producto.precioUnitario | currency }}</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <h3><strong><b>Descripción:</b></strong></h3>
+            <textarea v-model="currentItem.descripcion" class="textarea-description" readonly></textarea>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -112,37 +141,26 @@ export default {
   data() {
     return {
       dataList: [
-        { id: 1, nombre: 'Nombre 1', tipo: 'Tipo 1', estado: 'Óptimo', disponibilidad: 'Disponible' },
-        { id: 2, nombre: 'Nombre 2', tipo: 'Tipo 1', estado: 'Bueno', disponibilidad: 'Disponible' },
-        { id: 3, nombre: 'Nombre 3', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 4, nombre: 'Nombre 4', tipo: 'Tipo 3', estado: 'Óptimo', disponibilidad: 'Disponible' },
-        { id: 5, nombre: 'Nombre 5', tipo: 'Tipo 3', estado: 'Regular', disponibilidad: 'Ocupado' },
-        { id: 6, nombre: 'Nombre 6', tipo: 'Tipo 3', estado: 'Bueno', disponibilidad: 'Ocupado' },
-        { id: 7, nombre: 'Nombre 7', tipo: 'Tipo 1', estado: 'Óptimo', disponibilidad: 'Disponible' },
-        { id: 8, nombre: 'Nombre 8', tipo: 'Tipo 2', estado: 'Deficiente', disponibilidad: 'Disponible' },
-        { id: 9, nombre: 'Nombre 9', tipo: 'Tipo 3', estado: 'Bueno', disponibilidad: 'Disponible' },
-        { id: 10, nombre: 'Nombre 10', tipo: 'Tipo 1', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 11, nombre: 'Nombre 11', tipo: 'Tipo 1', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 12, nombre: 'Nombre 12', tipo: 'Tipo 2', estado: 'Bueno', disponibilidad: 'Disponible' },
-        { id: 13, nombre: 'Nombre 13', tipo: 'Tipo 3', estado: 'Óptimo', disponibilidad: 'Ocupado' },
-        { id: 14, nombre: 'Nombre 14', tipo: 'Tipo 1', estado: 'Deficiente', disponibilidad: 'Disponible' },
-        { id: 15, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 16, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 17, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 18, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 19, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 20, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 21, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 22, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 23, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 24, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 25, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 26, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 27, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 28, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 29, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 30, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Deficiente', disponibilidad: 'Disponible' },
-
+        {
+          id: 1, empleado: 'Empleado 1', urgencia: 'Alta', estado: 'pendiente', tipoProducto: 'Insumo', descripcion: 'Pedido urgente de insumo', productos: [
+            { nombre: 'Insumo 1', cantidad: 5, precioUnitario: 10 },
+            { nombre: 'Insumo 2', cantidad: 3, precioUnitario: 8 }
+          ]
+        },
+        { id: 3, empleado: 'Empleado 3', urgencia: 'Baja', estado: 'confirmado', descripcion: '' },
+        { id: 4, empleado: 'Empleado 4', urgencia: 'Alta', estado: 'en transito', descripcion: '' },
+        { id: 5, empleado: 'Empleado 5', urgencia: 'Media', estado: 'completado', descripcion: '' },
+        { id: 6, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 7, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 8, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'pendiente', descripcion: '' },
+        { id: 9, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'pendiente', descripcion: '' },
+        { id: 10, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 11, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 12, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 13, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 14, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 15, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
+        { id: 16, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'cancelado', descripcion: '' },
       ],
       searchParametro: '',
       currentPage: 1,
@@ -156,10 +174,10 @@ export default {
     // Filtrar los datos según el parámetro de búsqueda
     filteredData() {
       return this.dataList.filter(item =>
-          item.nombre.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.tipo.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
+          item.empleado.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
+          item.urgencia.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
           item.estado.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.disponibilidad.toLowerCase().includes(this.searchParametro.toLowerCase())
+          item.descripcion.toLowerCase().includes(this.searchParametro.toLowerCase())
       );
     },
     // Filtrar los datos y aplicar la paginación
@@ -183,15 +201,6 @@ export default {
         this.currentPage = page;
       }
     },
-    // Calcular la clase de disponibilidad
-    availabilityClass(disponibilidad) {
-      if (disponibilidad === 'Disponible') {
-        return 'text-green-500';
-      } else if (disponibilidad === 'En mantenimiento') {
-        return 'text-orange-500';
-      }
-      return 'text-red-500';
-    },
     // Actualizar la paginación
     updatePagination() {
       this.totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage);
@@ -202,6 +211,9 @@ export default {
     },
     closeModal() {
       this.showModal = false;
+    },
+    cancelOrder(item) {
+      item.estado = 'cancelado'; // Cambiar el estado a cancelado
     },
   },
   watch: {
@@ -280,6 +292,48 @@ export default {
   background-color: #2980b9;
 }
 
+.cancel-button {
+  width: 30px;
+  background-color: #e74c3c; /* Rojo */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b; /* Rojo oscuro */
+}
+
+.cancel-button-disabled {
+  background-color: #f2d7d5; /* Rojo más claro */
+  cursor: not-allowed;
+}
+
+.search-button,
+.search-detalles,
+.pagination-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-button:hover,
+.search-detalles:hover,
+.pagination-button:hover {
+  background-color: #2980b9;
+}
+
+.estado-pendiente { color: blue; }
+.estado-confirmado { color: orange; }
+.estado-en-transito { color: yellow; }
+.estado-completado { color: green; }
+.estado-cancelado { color: red; }
+
 .maintenance-table {
   width: 100%;
   border-collapse: collapse;
@@ -290,6 +344,7 @@ export default {
   text-align: center;
   border: 1px solid #ddd;
 }
+
 .maintenance-table th {
   background-color: #f2f2f2;
 }
@@ -317,16 +372,16 @@ export default {
 }
 
 .modal-overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background-color: rgba(0, 0, 0, 0.5);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
@@ -336,6 +391,13 @@ export default {
   width: 500px; /* Ajusta el tamaño del modal */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative; /* Necesario para que el botón 'X' se posicione dentro del modal */
+}
+
+.modal-content h2 {
+  font-size: 20px; /* Tamaño de fuente más grande */
+  font-weight: bold;
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px; /* Espacio debajo del encabezado */
 }
 
 .close-button {
@@ -358,25 +420,41 @@ export default {
   background-color: #c0392b; /* Rojo oscuro */
 }
 
-.modal-body p {
-  margin-bottom: 10px;
+.modal-body {
+  margin-top: 20px;
 }
 
-.modal-content h2 {
-  font-size: 20px; /* Tamaño de fuente más grande */
-  font-weight: bold;
-  text-align: center; /* Centrar el texto */
-  margin-bottom: 20px; /* Espacio debajo del encabezado */
-}
-
-.description-text {
-  background-color: #f9f9f9;
+textarea.textarea-description {
+  width: 100%;
+  height: 100px;
   padding: 10px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
-  min-height: 100px; /* Ajusta según lo necesites */
+  resize: none;
+  background-color: #f4f4f4;
 }
 
+.productos-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.productos-table th, .productos-table td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.productos-table th {
+  background-color: #f2f2f2;
+}
+
+h3 {
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+}
 
 </style>
