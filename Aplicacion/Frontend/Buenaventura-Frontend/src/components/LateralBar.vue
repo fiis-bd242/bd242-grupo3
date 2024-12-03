@@ -30,7 +30,7 @@ export default {
         { name: 'Control de Mantenimiento', route_name: 'trabajos', module: 'modulocontrol' },
         { name: 'Insumos', route_name: 'Insumos', module: 'moduloreportesinsumos' },
         { name: 'IPERC', route_name: 'dash_perso', module: 'moduloiperc' },
-        { name: 'Equipos de soporte', route_name: 'dash_perso', module: 'modulomaquinaria' },
+        { name: 'Equipos de soporte', route_name: 'dashboard_equipos_soporte', module: 'moduloequiposoporte' },
         { name: 'Reportes e Historial de Mantenimiento', route_name: 'dash_perso', module: 'modulogestionreportes' },
         { name: 'Usuarios', route_name: 'dash_perso', module: 'otrosmodulos' },
       ],

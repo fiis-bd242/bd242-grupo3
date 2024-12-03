@@ -35,6 +35,13 @@
           '/modulocontrol/trabajos':'Control de Mantenimiento',
           '/modulocontrol/detalles/0008' : 'Control de Mantenimiento',
           '/modulocontrol/detalles/0010' : 'Control de Mantenimiento',
+
+          //Modulo 5: Gestion de Equipos de Soporte
+          '/moduloequiposoporte/dashboard_equipos_soporte': 'Equipos de Soporte',
+          '/moduloequiposoporte/ver_inventario': 'Equipos de Soporte',
+          '/moduloequiposoporte/solicitar_pedidos': 'Equipos de Soporte',
+          '/moduloequiposoporte/gestionar_pedidos': 'Equipos de Soporte',
+
           //Módulo 7: Gestión de reportes e insumos
           '/modulogestionreportes/dash': 'Gestión de reportes e historial de mantenimiento',
           '/modulogestionreportes/registros': 'Gestión de reportes e historial de mantenimiento',

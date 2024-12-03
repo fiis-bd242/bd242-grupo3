@@ -123,6 +123,21 @@ const router = createRouter({
       path: '/moduloreportesinsumos/Insumos',
       name: 'Insumos',
       component: () => import("../views/modules/3/Solicitudes.vue")
+    },
+    {
+      path: '/moduloequiposoporte/dashboard_equipos_soporte',
+      name: 'dashboard_equipos_soporte',
+      component: () => import("../views/modules/5/dashboard_equipos_soporte.vue")
+    },
+    {
+      path: '/moduloequiposoporte/ver_inventario',
+      name: 'ver_inventario',
+      component: () => import("../views/modules/5/inventario_equipos_soporte.vue")
+    },
+    {
+      path: '/moduloequiposoporte/solicitar_pedidos',
+      name: 'solicitar_pedidos',
+      component: () => import("../views/modules/5/solicitud_equipos_soporte.vue")
     }
   ]
 })
