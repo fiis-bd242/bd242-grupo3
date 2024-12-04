@@ -596,3 +596,4 @@
 
 
     SELECT actualizar_reportes_vencidos();
+    SELECT setval('incidente_cibernetico_id_incidente_seq', (SELECT MAX(id_incidente) FROM Incidente_Cibernetico));
