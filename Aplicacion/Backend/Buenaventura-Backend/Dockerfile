@@ -18,7 +18,7 @@ FROM amazoncorretto:17-alpine-jdk
 WORKDIR /app
 
 # Copiar el .jar generado desde la etapa de construcción
-COPY --from=builder /app/target/Buenaventura-Backend-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /app/target/Buenaventura-Backend-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Definir el comando de entrada
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
