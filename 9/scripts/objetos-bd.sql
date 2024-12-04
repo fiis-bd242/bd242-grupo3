@@ -207,21 +207,7 @@ LEFT JOIN
     Notificaciones nt ON nt.Id_reporte = r.Id_reporte;
 
 -- Secuencias
---- Planificacion
---- Control
---- Equipos de soporte
---- IPERC
---- Insumos
---- Seguridad
---- Reportes
 CREATE SEQUENCE IF NOT EXISTS notificaciones_id_notificacion_seq;
 
 
--- Otros
---- Planificacion
---- Control
---- Equipos de soporte
---- IPERC
---- Insumos
---- Seguridad
---- Reportes
+-- Otros Objetos de BD
