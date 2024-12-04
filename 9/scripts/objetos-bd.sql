@@ -102,7 +102,47 @@ WHERE act.nombre_actv = 'Responsable' AND m.id_estado != 8
 ORDER BY p.id_plan;
 
 --- Control
+
 --- Equipos de soporte
+DROP VIEW IF EXISTS vista_detalle_equipo;
+CREATE VIEW vista_detalle_equipo AS
+SELECT
+	es.id_equipo_soporte AS ID,
+	es.nombre_equipo_soporte AS Nombre,
+	tes.nombre_tipo AS Tipo,
+	ees.nombre_estado AS Estado,
+	des.nombre_disponibilidad AS Disponibilidad,
+	es.horas_uso AS "horas de uso",
+	es.descripcion AS descripcion
+FROM equipo_de_soporte es
+INNER JOIN tipo_equipo_soporte tes
+ON es.id_tipo = tes.id_tipo
+INNER JOIN estado_equipo_soporte ees
+ON es.id_estado = ees.id_estado
+INNER JOIN disponibilidad_equipo_soporte des
+ON es.id_disponibilidad = des.id_disponibilidad
+ORDER BY es.id_equipo_soporte
+
+DROP VIEW IF EXISTS vista_detalle_pedido_equipo;
+CREATE VIEW vista_detalle_pedido_equipo AS
+SELECT
+	pc.id_pedido_compra AS id,
+	e.nombre AS nombre,
+	tu.tipo_urgencia AS urgencia,
+	ep.nombre_estado_pedido AS estado,
+	pc.descripción AS descripcion
+FROM Pedido_compra pc
+INNER JOIN tipo_urgencia tu
+ON pc.id_urgencia = tu.id_urgencia
+INNER JOIN Estado_pedido ep
+ON pc.id_estado_pedido = ep.id_estado_pedido
+INNER JOIN tipo_producto tp
+ON tp.id_tipo_producto = pc.id_tipo_producto
+INNER JOIN empleado e
+ON e.id_empleado = pc.id_empleado
+WHERE tp.nombre_tipo_producto ILIKE 'Equipos de Soporte'
+ORDER BY pc.id_pedido_compra
+
 --- IPERC
 --- Insumos
 --- Seguridad
