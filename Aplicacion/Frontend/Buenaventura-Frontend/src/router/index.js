@@ -135,11 +135,6 @@ const router = createRouter({
       component: () => import("../views/modules/5/inventario_equipos_soporte.vue")
     },
     {
-      path: '/moduloequiposoporte/solicitar_pedidos',
-      name: 'solicitar_pedidos',
-      component: () => import("../views/modules/5/solicitud_equipos_soporte.vue")
-    },
-    {
       path: '/moduloequiposoporte/gestionar_pedidos',
       name: 'gestionar_pedidos',
       component: () => import("../views/modules/5/gestion_pedido_equipo.vue")

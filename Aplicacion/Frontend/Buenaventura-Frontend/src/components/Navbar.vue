@@ -39,7 +39,6 @@
           //Modulo 5: Gestion de Equipos de Soporte
           '/moduloequiposoporte/dashboard_equipos_soporte': 'Equipos de Soporte',
           '/moduloequiposoporte/ver_inventario': 'Equipos de Soporte',
-          '/moduloequiposoporte/solicitar_pedidos': 'Equipos de Soporte',
           '/moduloequiposoporte/gestionar_pedidos': 'Equipos de Soporte',
 
           //Módulo 6: Administradores de buenaventura

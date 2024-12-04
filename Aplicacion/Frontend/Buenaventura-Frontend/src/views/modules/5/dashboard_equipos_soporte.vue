@@ -8,21 +8,11 @@
         <button class="btn btn-celeste">Ver inventario</button>
       </div>
 
-      <div class="card" @click="irASolicitarEquipos">
-        <h2><b>Solicitud de Pedido de Compra de Equipo</b></h2>
-        <p>Pedido de compra de algun o algunos equipos de soporte solicitados</p>
-        <button class="btn btn-amarillo">Solicitar Equipos</button>
-      </div>
-    </div>
-
-    <!-- Fila 2 -->
-    <div class="row">
       <div class="card" @click="irAGestionarPedidos">
         <h2><b>Gestion de Pedido de Compra de Equipos</b></h2>
         <p>Gestión y visualización de los pedidos de compra de equipos de soporte</p>
         <button class="btn btn-verde-claro">Gestionar Compras</button>
       </div>
-
     </div>
 
   </div>
@@ -49,9 +39,9 @@ export default {
 /* Estilo general del dashboard */
 .dashboard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+  gap: 1rem;
 }
 
 /* Filas de recuadros */
@@ -119,8 +109,4 @@ export default {
   background-color: #20a91e;
 }
 
-/* Centrar el recuadro de la fila final */
-.center {
-  margin: 0 auto;
-}
 </style>
