@@ -227,7 +227,36 @@ LEFT JOIN
     Notificaciones nt ON nt.Id_reporte = r.Id_reporte;
 
 -- Secuencias
+
 CREATE SEQUENCE IF NOT EXISTS notificaciones_id_notificacion_seq;
 
 
 -- Otros Objetos de BD
+
+WITH cte_mantenimiento AS (
+    SELECT 
+        m.id_plan,
+        m.id_maquina,
+        m.id_tipo_mant,
+        m.id_estado,
+        m.fecha_inicio_programado
+    FROM Mantenimiento m
+    WHERE m.fecha_inicio_programado = DATE('2023-08-15')
+)
+SELECT 
+    LPAD(p.id_plan::TEXT, 4, '0') AS id_plan,
+    CONCAT('MQ-', LPAD(cte.id_maquina::TEXT, 4, '0')) AS id_maquina,
+    tm.nombre_tipo_mant,
+    c.nivel,
+    cte.fecha_inicio_programado,
+    em.estado
+FROM cte_mantenimiento cte
+INNER JOIN Plan_de_Mantenimiento p
+    ON cte.id_plan = p.id_plan
+INNER JOIN estado_mantto em
+    ON cte.id_estado = em.id_estado
+INNER JOIN Tipo_mantenimiento tm
+    ON cte.id_tipo_mant = tm.id_tipo_mant
+INNER JOIN Criticidad c
+    ON c.id_criticidad = p.id_criticidad
+ORDER BY p.id_plan;
