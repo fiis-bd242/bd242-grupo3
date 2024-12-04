@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+<<<<<<< HEAD
     <data-source source="LOCAL" name="buenaventura@localhost" uuid="5b373881-ab5d-4342-b312-63e3200c6fbc">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/Buenaventura-Backend/src/main/resources/application.properties</remarks>
+=======
+    <data-source source="LOCAL" name="buenaventura@localhost" uuid="cdb6d021-e4a8-412d-9b14-f34557930eeb">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+>>>>>>> 508dc61f88ee3aa2e4419dd5c84a8ad62cdb478f
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/buenaventura</jdbc-url>
       <jdbc-additional-properties>

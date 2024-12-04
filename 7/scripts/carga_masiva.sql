@@ -506,37 +506,17 @@
     ('Administrador', 120, 102),
     ('Master', 180, 103);
 
-    /* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-
-    -- Poblamiento de la tabla Sesion_Empleado
-    ERROR:  la sintaxis de entrada no es válida para tipo interval: «INTERVAL '15.0 minutes'»
-    CONTEXT:  COPY sesion_empleado, line 2, column t_inactividad: "INTERVAL '15.0 minutes'"
-    AYUDA: No deberías usar interval sin conocer el formato adecuado
-    COPY Sesion_Empleado FROM 'C:\DBD-2024-2\datos\sesion_empleado.csv' DELIMITER ',' CSV HEADER;
-    */
-
-    /* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-    AYUDA: Es necesario corregir la tabla sesion_empleado primero
-    --Autenticacion_en_2_pasos
-
+    COPY sesion_empleado  FROM 'C:\DBD-2024-2\datos\sesion_empleado.csv' DELIMITER ',' CSV HEADER;
     COPY Autenticacion_en_2_pasos  FROM 'C:\DBD-2024-2\datos\autenticacion_en_2_pasos.csv' DELIMITER ',' CSV HEADER;
-    */
 
-    /* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
 
-    -- Poblar la tabla Sesion_sospechosa
-    ERROR:  Ya existe la llave (id_autenticacion)=(506).llave duplicada viola restricción de unicidad «sesion_sospechosa_pkey»
-    ERROR:  llave duplicada viola restricción de unicidad «sesion_sospechosa_pkey»
-    AYUDA: USA MOCKAROO para evitar que se repitan los ids
+
     COPY Sesion_sospechosa  FROM 'C:\DBD-2024-2\datos\sesion_sospechosa.csv' DELIMITER ',' CSV HEADER;
-    */
 
-    /* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-    AYUDA: Es necesario corregir Sesion sospechosa primero
-    -- Poblar la tabla Notificacion_Administrador
+    COPY Notificacion_Administrador  FROM 'C:\DBD-2024-2\datos\Notificacion_Administrador.csv' DELIMITER ',' CSV HEADER;
+    
+    
 
-    COPY Notificacion_Administrador  FROM 'C:\DBD-2024-2\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
-    */
 
     INSERT INTO Estado_codigo (Id_estado_codigo, Descripcion)
     VALUES
@@ -551,15 +531,11 @@
     ('Revocado', 'Código revocado por seguridad'),
     ('Deshabilitado', 'Recuperación deshabilitada temporalmente');
 
-    /* DEBEN CORREGIR LOS DATOS DE ESTA TABLA
-    ERROR:  datos extra después de la última columna esperada
-    CONTEXT:  COPY recuperacion_de_contraseña, line 2: ""1","3","Acceso Bloqueado","2023-12-13 07:12:59","Leída","Acceso Bloqueado detectado desde Tumbes, ..."
-    AYUDA: Revisa los atributos que tiene la tabla y por favor, hazlo con MOCKAROO
-    -- Poblar la tabla Recuperacion_de_contraseña
 
-    COPY Recuperacion_de_contraseña  FROM 'C:\DBD-2024-2\datos\notificacion_administrador.csv' DELIMITER ',' CSV HEADER;
-    */
 
+    COPY Recuperacion_de_contraseña  FROM 'C:\DBD-2024-2\datos\recuperacion_de_contrasenia.csv' DELIMITER ',' CSV HEADER;
+    
+    COPY incidente_cibernetico FROM 'C:\DBD-2024-2\datos\incidentes_ciberneticos.csv' DELIMITER ',' CSV HEADER;
 
     ALTER TABLE Notificaciones
     ALTER COLUMN id_notificacion SET DEFAULT nextval('notificaciones_id_notificacion_seq');
@@ -620,3 +596,4 @@
 
 
     SELECT actualizar_reportes_vencidos();
+    SELECT setval('incidente_cibernetico_id_incidente_seq', (SELECT MAX(id_incidente) FROM Incidente_Cibernetico));

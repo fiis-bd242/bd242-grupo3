@@ -1,13 +1,16 @@
 <script setup>
-import {RouterView} from 'vue-router'
+import { useRoute } from 'vue-router';
+import { useEmployeeStore } from './stores/user';
 import Navbar from './components/Navbar.vue';
 import LateralBar from '@/components/LateralBar.vue';
-import { useUserStore } from './stores/user';
 import PopupToast from './components/PopupToast.vue';
-const userStore = useUserStore();
-userStore.initStore(); 
 
+const route = useRoute();
+const empleadoStore = useEmployeeStore();
 
+empleadoStore.initStore();
+
+const isAuthenticated = empleadoStore.idEmpleado !== null;
 </script>
 
 <template>
@@ -15,11 +18,9 @@ userStore.initStore();
     <Navbar />
   </header>
   <div class="flex">
-    <LateralBar/>
-    <RouterView class="overflow-y-scroll max-h-[80vh]"/>
+    <LateralBar v-if="isAuthenticated && route.path !== '/'"/>
+    <RouterView class="overflow-y-scroll max-h-[80vh] w-full" />
     <PopupToast />
   </div>
-
 </template>
-
 

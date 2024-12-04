@@ -96,6 +96,7 @@
   </template>
   
   <script>
+  import axios from 'axios';
   export default {
     data() {
       return {
@@ -110,7 +111,7 @@
           numeroContacto: '',
           emailContacto: '',
           contraseña: '',
-          idCargo: 1, // Jefe por defecto
+          idCargo: 1, 
           role: 'USER',
         },
       };
@@ -118,10 +119,9 @@
     methods: {
       async guardarEmpleado() {
         try {
-          // Aquí deberías llamar a la API que almacena el empleado en la base de datos
-          const response = await axios.post('/api/empleado/crear', this.empleado);
+          const response = await axios.post('/api/seguridad/register', this.empleado);
           alert(response.data.message || "Empleado creado exitosamente.");
-          this.$router.push("/empleados/lista"); // Redirigir a la lista de empleados
+          this.$router.push({name: "dashboard_admin"}); 
         } catch (error) {
           console.error("Error al guardar el empleado:", error);
           alert("Error al guardar el empleado. Por favor, inténtalo de nuevo.");

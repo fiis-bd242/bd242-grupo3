@@ -1,4 +1,5 @@
 <template>
+
     <div class="w-full mx-auto p-4">
       <h1 class="title"><b>LISTA DE USUARIOS DE BUENAVENTURA</b></h1>
   
@@ -7,14 +8,6 @@
   
       <!-- Buscadores -->
       <div class="search-container">
-        <div class="search-box">
-          <input
-            v-model="searchMachineId"
-            type="text"
-            placeholder="Buscar ID de Usuario"
-          />
-          <button class="search-button" @click="searchByMachine">Buscar</button>
-        </div>
         <div class="search-box">
           <input
             v-model="searchDate"
@@ -30,22 +23,21 @@
       <table class="maintenance-table">
         <thead>
           <tr>
-            <th>ID Empleado</th>
             <th>Nombre</th>
             <th>DNI</th>
             <th>Email de Contacto</th>
             <th>Número de Contacto</th>
             <th>Rol</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="(item, index) in dataList" :key="index">
-            <td>{{ item.id_empleado }}</td>
             <td>{{ item.nombre }}</td>
             <td>{{ item.dni }}</td>
-            <td>{{ item.email_contacto }}</td>
-            <td>{{ item.numero_contacto }}</td>
-            <td>{{ item.role }}</td>
+            <td>{{ item.emailContacto }}</td>
+            <td>{{ item.numeroContacto }}</td>
+            <td>{{ roles[item.idCargo] }}</td>
             <td>
               <button class="action-button" @click="redirectToDetail(item.id_empleado)">Ver</button>
               <button class="action-button" @click="redirectToEdit(item.id_empleado)">Editar</button>
@@ -58,14 +50,14 @@
       <div class="pagination">
         <button
           class="pagination-button"
-          @click="changePage(1)"
+          @click="fetchData(1)"
           :disabled="currentPage === 1"
         >
           Primero
         </button>
         <button
           class="pagination-button"
-          @click="changePage(currentPage - 1)"
+          @click="fetchData(currentPage - 1)"
           :disabled="currentPage === 1"
         >
           Anterior
@@ -75,35 +67,40 @@
           v-for="page in visiblePages"
           :key="page"
           :class="['pagination-button', { active: page === currentPage }]"
-          @click="changePage(page)"
+          @click="fetchData(page)"
         >
           {{ page }}
         </button>
   
         <button
           class="pagination-button"
-          @click="changePage(currentPage + 1)"
+          @click="fetchData(currentPage + 1)"
           :disabled="currentPage === totalPages"
         >
           Siguiente
         </button>
-        <button
-          class="pagination-button"
-          @click="changePage(totalPages)"
-          :disabled="currentPage === totalPages"
-        >
-          Último
-        </button>
       </div>
     </div>
+
   </template>
-  
   <script>
   import axios from "axios";
-  
+  import { useEmployeeStore } from "@/stores/user";
   export default {
+    setup() {
+      const userStore = useEmployeeStore()
+      return {
+        userStore
+      }
+    },
     data() {
       return {
+        roles: {
+          1:	"Jefe",
+          2:	"Técnico",
+          3:	"Supervisor",
+          4:	"Encargado de sistema"
+        },
         dataList: [],
         currentPage: 1,
         totalPages: 0,
@@ -117,22 +114,12 @@
       async fetchData(page) {
         try {
           const offset = (page - 1) * this.itemsPerPage + 1;
-          const response = await axios.get(`/api/empleados/listaempleados/${offset}`);
+          const response = await axios.get(`/api/seguridad/todos?offset=${offset}`);
           this.dataList = response.data;
           this.currentPage = page;
           this.updateVisiblePages();
         } catch (error) {
           console.error("Error al obtener los datos:", error);
-        }
-      },
-      async fetchTotalPages() {
-        try {
-          const response = await axios.get(`/api/empleados/conteoEmpleados`);
-          const totalItems = response.data;
-          this.totalPages = Math.ceil(totalItems / this.itemsPerPage);
-          this.updateVisiblePages();
-        } catch (error) {
-          console.error("Error al obtener el conteo total:", error);
         }
       },
       changePage(page) {
@@ -165,7 +152,6 @@
       refreshPage() {
         this.searchMachineId = "";
         this.searchDate = "";
-        this.fetchTotalPages();
         this.fetchData(1);
       },
   
@@ -189,7 +175,6 @@
       }
     },
     mounted() {
-      this.fetchTotalPages();
       this.fetchData(this.currentPage);
     }
   };

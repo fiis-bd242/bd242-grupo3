@@ -794,19 +794,20 @@ CREATE TABLE Estado_autenticador (
     Descripcion VARCHAR(50) NOT NULL
 );
 
-DROP TABLE IF EXISTS Sesion_Empleado CASCADE;
-CREATE TABLE Sesion_Empleado (
+DROP TABLE IF EXISTS sesion_empleado CASCADE;
+
+CREATE TABLE sesion_empleado (
     Id_Sesion INT PRIMARY KEY,
     Id_Empleado INT NOT NULL,
-    Fecha_Hora_Inicio TIMESTAMP NOT NULL,  
-    Fecha_Hora_Final TIMESTAMP,            
+    Fecha_Hora_Inicio TIMESTAMP NOT NULL,
+    Fecha_Hora_Final TIMESTAMP,
     Direccion_IP VARCHAR(45),
-    Id_estado_sesion INT,            
-    Cargo VARCHAR(50),
-    t_inactividad INTERVAL,  
+    Id_estado_sesion INT,
+    Id_acceso INT,  -- Columna que hace referencia a Acceso_empleado
+    t_inactividad INTERVAL,
     FOREIGN KEY (Id_Empleado) REFERENCES Empleado(Id_Empleado),
     FOREIGN KEY (Id_estado_sesion) REFERENCES Estado_Sesion(Id_estado_sesion),
-    FOREIGN KEY (Cargo) REFERENCES Tiempo_max_sesion(Cargo)
+    FOREIGN KEY (Id_acceso) REFERENCES Acceso_empleado(Id_acceso)  -- Nueva clave foránea
 );
 
 
@@ -857,13 +858,13 @@ CREATE TABLE Sesion_sospechosa (
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
 );
 
--- Eliminar la tabla Notificacion_Administrador si existe
 DROP TABLE IF EXISTS Notificacion_Administrador CASCADE;
+
 CREATE TABLE Notificacion_Administrador (
     Id_Notificacion INT PRIMARY KEY,
     Id_Administrador INT NOT NULL,
     Tipo_Evento VARCHAR(50) NOT NULL,
-    Fecha_Hora_Notificacion TIMESTAMP NOT NULL,  
+    Fecha_Notificacion DATE NOT NULL,  -- Cambio de TIMESTAMP a DATE
     Estado_Notificacion VARCHAR(20) NOT NULL,
     Mensaje_Notificacion VARCHAR(255) NOT NULL,
     Prioridad VARCHAR(10) NOT NULL,
@@ -873,5 +874,15 @@ CREATE TABLE Notificacion_Administrador (
     FOREIGN KEY (Id_sesion) REFERENCES Sesion_empleado(Id_sesion)
 );
 
+DROP TABLE IF EXISTS Incidente_Cibernetico;
+
+CREATE TABLE Incidente_Cibernetico (
+    id_incidente SERIAL PRIMARY KEY,
+    descripcion_incidente VARCHAR(255) NOT NULL,
+    fecha DATE NOT NULL,
+    criticidad VARCHAR(20) NOT NULL,
+    usuario_involucrado VARCHAR(100),
+    medidas_tomadas VARCHAR(255) NOT NULL
+);
 
 
