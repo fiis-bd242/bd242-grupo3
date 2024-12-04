@@ -8,6 +8,10 @@ DROP INDEX IF EXISTS IDX_Fecha_mantto;
 CREATE INDEX IDX_Fecha_mantto ON Mantenimiento(fecha_inicio_programado);
 
 --- Control
+DROP INDEX IF EXISTS IDX_Fecha_program;
+CREATE INDEX IDX_Fecha_program
+    ON Mantenimiento(fecha_inicio_programado);
+
 --- Equipos de soporte
 DROP INDEX IF EXISTS idx_disponibilidad_equipo;
 CREATE INDEX idx_disponibilidad_equipo ON Equipo_de_soporte(id_disponibilidad);
