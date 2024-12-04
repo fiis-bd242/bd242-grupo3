@@ -174,7 +174,33 @@ JOIN
 
 
 --- Reportes
-
+CREATE VIEW vista_reportes_historial AS
+SELECT 
+    r.Id_reporte AS "ID_Reporte",
+    r.Fecha_reporte AS "Fecha_Reporte",
+    er.nombre_estado AS "Estado_Reporte",
+    e_jefe.Nombre AS "Jefe",
+    e_supervisor.Nombre AS "Supervisor",
+    reg.Id_registro AS "ID_Registro",
+    reg.Fecha_registro AS "Fecha_Registro",
+    reg.Fecha_inicial AS "Fecha_Inicial",
+    reg.Calificacion AS "Calificacion",
+    reg.Observaciones AS "Observaciones",
+    nt.Asunto AS "Notificacion_Asunto",
+    nt.mensaje AS "Notificacion_Mensaje",
+    nt.fecha_notificacion AS "Fecha_Notificacion"
+FROM 
+    Reportes r
+JOIN 
+    Estado_Reporte er ON r.id_estado_reporte = er.id_estado_reporte
+LEFT JOIN 
+    Empleado e_jefe ON r.id_jefe = e_jefe.Id_empleado
+LEFT JOIN 
+    Empleado e_supervisor ON r.Id_supervisor = e_supervisor.Id_empleado
+LEFT JOIN 
+    Registro reg ON reg.Id_empleado = e_supervisor.Id_empleado
+LEFT JOIN 
+    Notificaciones nt ON nt.Id_reporte = r.Id_reporte;
 
 -- Secuencias
 --- Planificacion
@@ -184,6 +210,7 @@ JOIN
 --- Insumos
 --- Seguridad
 --- Reportes
+CREATE SEQUENCE IF NOT EXISTS notificaciones_id_notificacion_seq;
 
 
 -- Otros
