@@ -29,14 +29,6 @@
       </div>
     </div>
 
-    <!-- Fila 3 -->
-    <div class="row">
-      <div class="card center" @click="irAEditarInformacionRoles">
-        <h2><b>Editar información y roles de usuario</b></h2>
-        <p>Modifica la información y los roles asignados a los usuarios</p>
-        <button class="btn btn-rosa">Ir a Editar Información</button>
-      </div>
-    </div>
   </div>
 </template>
 
