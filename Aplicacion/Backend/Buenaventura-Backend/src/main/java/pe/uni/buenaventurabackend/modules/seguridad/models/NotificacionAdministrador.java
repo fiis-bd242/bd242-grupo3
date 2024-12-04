@@ -13,7 +13,7 @@ public class NotificacionAdministrador {
     private int idNotificacion;
     private int idAdministrador;
     private String tipoEvento;
-    private Date fechaHoraNotificacion;  // Tipo java.sql.Date para solo manejar fechas
+    private Date fechaHoraNotificacion;
     private String estadoNotificacion;
     private String mensajeNotificacion;
     private String prioridad;

@@ -18,7 +18,6 @@ public class NotificacionAdministradorController {
 
     private final NotificacionAdministradorService notificacionService;
 
-    // Crear notificación
     @PostMapping("/crearNotificacion")
     public ResponseEntity<?> createNotificacion(@RequestBody NotificacionAdministrador notificacion) {
         try {
@@ -32,9 +31,9 @@ public class NotificacionAdministradorController {
 
     // Obtener todas las notificaciones
     @GetMapping("/obtenerNotificaciones")
-    public ResponseEntity<List<NotificacionAdministrador>> getAllNotificaciones() {
+    public ResponseEntity<List<NotificacionAdministrador>> getAllNotificaciones(@RequestParam int offset) {
         try {
-            List<NotificacionAdministrador> notificaciones = notificacionService.findAll();
+            List<NotificacionAdministrador> notificaciones = notificacionService.getAllNotificaciones(offset);
             return ResponseEntity.ok(notificaciones);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)

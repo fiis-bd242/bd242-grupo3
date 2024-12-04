@@ -43,4 +43,3 @@ public class ApplicationConfig {
         return iAuthRepository::findUserByEmail;
     }
 }
-

@@ -3,6 +3,8 @@ package pe.uni.buenaventurabackend.modules.seguridad.controller;
 import jakarta.servlet.http.HttpServletResponse;
 import pe.uni.buenaventurabackend.exception.AuthenticationException;
 import pe.uni.buenaventurabackend.models.*;
+import pe.uni.buenaventurabackend.modules.seguridad.models.Empleado;
+import pe.uni.buenaventurabackend.modules.seguridad.models.IncidenteCibernetico;
 import pe.uni.buenaventurabackend.modules.seguridad.models.LoginRequest;
 import pe.uni.buenaventurabackend.modules.seguridad.models.RegisterRequest;
 import pe.uni.buenaventurabackend.modules.seguridad.service.IAuthService;
@@ -15,10 +17,11 @@ import lombok.RequiredArgsConstructor;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/seguridad")
 @RequiredArgsConstructor
 @CrossOrigin(origins = "${url.client}")
 public class AuthController {
@@ -28,27 +31,45 @@ public class AuthController {
     @Autowired
     CodeVerificationService codeVerificationService;
 
+    @GetMapping("/todos")
+    public ResponseEntity<ArrayList<Empleado>> getAllEmpleados(@RequestParam int offset) {
+        try {
+            ArrayList<Empleado> empleados = iAuthService.getAllEmpleados(offset);
+            return new ResponseEntity<>(empleados, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<Empleado> login(@RequestBody LoginRequest loginRequest) {
+        Empleado empleado = iAuthService.login(loginRequest.getEmail(), loginRequest.getPassword());
+
+        if (empleado != null) {
+            return ResponseEntity.ok(empleado);
+        } else {
+            return ResponseEntity.status(401).body(null);
+        }
+    }
+
+    @PostMapping("/crearIncidente")
+    public ResponseEntity<String> createIncidente(@RequestBody IncidenteCibernetico incidente) {
+        iAuthService.createIncidente(incidente);
+        return ResponseEntity.status(HttpStatus.CREATED).body("Incidente cibernético creado con éxito");
+    }
+
     @ExceptionHandler(AuthenticationException.class)
     public ResponseEntity<ErrorResponse> handleAuthenticationException(AuthenticationException ex) {
         ErrorResponse errorResponse = new ErrorResponse(ex.getMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<?> login(HttpServletResponse httpServletResponse,@RequestBody LoginRequest request)
-    {
-        try {
-            iAuthService.login(httpServletResponse,request);
-            return ResponseEntity.ok().build();
-        } catch (AuthenticationException e) {
-            return handleAuthenticationException(e);
-        }
-    }
 
     @PostMapping("/register")
-    public ResponseEntity<?> register(@RequestBody RegisterRequest request){
+    public ResponseEntity<?> register(@RequestBody Empleado request){
         try {
-            ApiResponse response = iAuthService.register(request);
+            iAuthService.register(request);
+            String response = "Todo ok";
             return ResponseEntity.ok(response);
         } catch (AuthenticationException e) {
             return handleAuthenticationException(e);

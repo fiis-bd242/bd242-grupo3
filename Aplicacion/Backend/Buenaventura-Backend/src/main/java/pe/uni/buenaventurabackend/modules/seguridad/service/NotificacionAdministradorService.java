@@ -21,8 +21,8 @@ public class NotificacionAdministradorService {
         notificacionRepository.createNotificacion(notificacion);
     }
 
-    public List<NotificacionAdministrador> findAll() {
-        return notificacionRepository.findAll();
+    public List<NotificacionAdministrador> getAllNotificaciones(int offset) {
+        return notificacionRepository.getAllNotificaciones(offset);
     }
 
     public NotificacionAdministrador findById(int idNotificacion) {

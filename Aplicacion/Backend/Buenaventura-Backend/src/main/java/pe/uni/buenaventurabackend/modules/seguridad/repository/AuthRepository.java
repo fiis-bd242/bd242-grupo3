@@ -8,10 +8,11 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import pe.uni.buenaventurabackend.modules.seguridad.models.Empleado;
+import pe.uni.buenaventurabackend.modules.seguridad.models.IncidenteCibernetico;
 
-import java.util.Date;
-import java.util.Map;
-import java.util.Objects;
+import java.time.LocalDate;
+import java.util.*;
 
 @Repository
 @RequiredArgsConstructor
@@ -20,54 +21,95 @@ public class AuthRepository implements IAuthRepository {
     private final JdbcTemplate jdbcTemplate;
 
     @Override
-    public int register(User user) {
-        /*
-        int userId = -1;
-        String img_user="img_user";
-        String SQL_SELECT = "SELECT id_empleado FROM empleado WHERE email = ?";
-        String SQL_INSERT = "INSERT INTO empleado(nombre_user,email,password,role,id_carrera,genero,img_user,exp_code,enabled) VALUES(?,?,?,?,?,?,?,?,?)";
-        try {
-            Map<String, Object> userMap = jdbcTemplate.queryForMap(SQL_SELECT, user.getEmail());
-            Integer existingUserId = (Integer) userMap.get("id_user");
-            boolean existingUserEnabled = (boolean) userMap.get("enabled");
-            String existingUserExpCode= (String) userMap.get("exp_code");
-            if (existingUserId != null) {
-                if (existingUserEnabled) {
-                    throw new AuthenticationException("El usuario ya existe");
-                }
-                Date expirationDate = new Date(Long.parseLong(existingUserExpCode) * 1000L);
-                if (expirationDate.after(new Date())) {
-                    throw new AuthenticationException("El código de verificación no se ha verificado");
-                }
-                return existingUserId;
-            }
-        } catch (EmptyResultDataAccessException ignored) {
-        } catch (DataAccessException e) {
-            throw new AuthenticationException("Error al buscar el usuario existente en la base de datos");
-        }
-        try {
-            Date exp_code = new Date(System.currentTimeMillis()+1000*60*60);
-            jdbcTemplate.update(SQL_INSERT,
-                    user.getNombre_user(),
-                    user.getEmail(),
-                    user.getPassword(),
-                    user.getRole().name(),
-                    user.getId_carrera(),
-                    user.getGenero(),
-                    img_user,
-                    String.valueOf(exp_code.getTime() / 1000),
-                    user.getEnabled());
+    public int register(Empleado user) {
+        String sql = "INSERT INTO Empleado (Id_empleado, Nombre, DNI, Direccion, Estado_civil, Sexo, Fecha_Nacimiento, Fecha_ingreso, Numero_contacto, Email_contacto, Contraseña, Id_cargo, Id_acceso) "
+                + "VALUES ((SELECT MAX(id_empleado) FROM Empleado) + 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 3)";
 
-            Map<String, Object> userMap = jdbcTemplate.queryForMap(SQL_SELECT, user.getEmail());
-            userId= (Integer) userMap.get("id_user");
-        }catch (DataAccessException e) {
-            throw new AuthenticationException("Error en el servidor al registrar el usuario.");
-        }
-
-         */
-        return 0;
-
+        return jdbcTemplate.update(sql,
+                user.getNombre(),
+                user.getDni(),
+                user.getDireccion(),
+                user.getEstadoCivil(),
+                user.getSexo(),
+                user.getFechaNacimiento(),
+                user.getFechaIngreso(),
+                user.getNumeroContacto(),
+                user.getEmailContacto(),
+                user.getContraseña(),
+                user.getIdCargo()
+        );
     }
+
+    @Override
+    public ArrayList<Empleado> readAllEmpleados(int offset) {
+        String sql = "SELECT * FROM Empleado LIMIT 7 OFFSET ?";
+
+        List<Empleado> empleados = jdbcTemplate.query(sql, new Object[]{(7 * (offset - 1))}, (rs, rowNum) -> {
+            int idEmpleado = rs.getInt("Id_empleado");
+            String nombre = rs.getString("Nombre");
+            String dni = rs.getString("DNI");
+            String direccion = rs.getString("Direccion");
+            String estadoCivil = rs.getString("Estado_civil");
+            String sexo = rs.getString("Sexo");
+            LocalDate fechaNacimiento = rs.getDate("Fecha_Nacimiento") != null ? rs.getDate("Fecha_Nacimiento").toLocalDate() : null;
+            LocalDate fechaIngreso = rs.getDate("Fecha_ingreso") != null ? rs.getDate("Fecha_ingreso").toLocalDate() : null;
+            int numeroContacto = rs.getInt("Numero_contacto");
+            String emailContacto = rs.getString("Email_contacto");
+            String contraseña = rs.getString("Contraseña");
+            int idCargo = rs.getInt("Id_cargo");
+            int idAcceso = rs.getInt("Id_acceso");
+
+            return new Empleado(
+                    idEmpleado,
+                    nombre,
+                    dni,
+                    direccion,
+                    estadoCivil,
+                    sexo,
+                    fechaNacimiento,
+                    fechaIngreso,
+                    numeroContacto,
+                    emailContacto,
+                    contraseña,
+                    idCargo,
+                    idAcceso
+            );
+        });
+
+        return new ArrayList<>(empleados);
+    }
+
+    public void saveIncidente(IncidenteCibernetico incidente) {
+        String sql = "INSERT INTO Incidente_Cibernetico (descripcion_incidente, fecha, criticidad, usuario_involucrado, medidas_tomadas) " +
+                "VALUES (?, ?, ?, ?, ?)";
+        jdbcTemplate.update(sql, incidente.getDescripcionIncidente(), incidente.getFecha(),
+                incidente.getCriticidad(), incidente.getUsuarioInvolucrado(), incidente.getMedidasTomadas());
+    }
+
+    public Empleado login(String email, String contraseña) {
+        String sql = "SELECT * FROM empleado WHERE email_contacto = ? AND contraseña = ?";
+
+        Empleado empleado = jdbcTemplate.queryForObject(sql, new Object[]{email, contraseña}, (rs, rowNum) -> {
+            Empleado e = new Empleado();
+            e.setIdEmpleado(rs.getInt("id_empleado"));
+            e.setNombre(rs.getString("nombre"));
+            e.setDni(rs.getString("dni"));
+            e.setDireccion(rs.getString("direccion"));
+            e.setEstadoCivil(rs.getString("estado_civil"));
+            e.setSexo(rs.getString("sexo"));
+            e.setFechaNacimiento(rs.getDate("fecha_nacimiento").toLocalDate());
+            e.setFechaIngreso(rs.getDate("fecha_ingreso").toLocalDate());
+            e.setNumeroContacto(rs.getInt("numero_contacto"));
+            e.setEmailContacto(rs.getString("email_contacto"));
+            e.setContraseña(rs.getString("contraseña"));
+            e.setIdCargo(rs.getInt("id_cargo"));
+            e.setIdAcceso(rs.getInt("id_acceso"));
+            return e;
+        });
+
+        return empleado;
+    }
+
 
     @Override
     public User findUserByEmail(String email) {

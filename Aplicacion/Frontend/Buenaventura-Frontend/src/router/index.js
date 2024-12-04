@@ -7,12 +7,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import("../views/HomeView.vue")
+      component: () => import("../views/modules/6/login.vue")
     },
     {
-      path: '/casa/',
-      name: 'casa',
-      component: () => import("../views/hola.vue")
+      path: '/inicio/',
+      name: 'inicio',
+      component: () => import("../views/HomeView.vue")
     },
     {
       path: '/moduloplanificacion/crea_orden',

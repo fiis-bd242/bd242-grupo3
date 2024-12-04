@@ -107,7 +107,6 @@ export default {
     return {
       dataList: [],
       currentPage: 1,
-      totalPages: 0,
       visiblePages: [],
       itemsPerPage: 10,
       searchAdminId: "",
@@ -117,8 +116,8 @@ export default {
   methods: {
     async fetchData(page) {
       try {
-        const offset = (page - 1) * this.itemsPerPage;
-        const response = await axios.get(`/api/seguridad/ver_notificaciones?page=${offset}&size=${this.itemsPerPage}`);
+        const offset = page;
+        const response = await axios.get(`/api/seguridad/obtenerNotificaciones?offset=${offset}`);
         this.dataList = response.data;
         this.currentPage = page;
         this.updateVisiblePages();
@@ -126,33 +125,13 @@ export default {
         console.error("Error al obtener los datos:", error);
       }
     },
-    async fetchTotalPages() {
-      try {
-        const response = await axios.get(`/api/seguridad/ver_notificaciones/conteoNotificaciones`);
-        const totalItems = response.data;
-        this.totalPages = Math.ceil(totalItems / this.itemsPerPage);
-        this.updateVisiblePages();
-      } catch (error) {
-        console.error("Error al obtener el conteo total:", error);
-      }
-    },
+
     changePage(page) {
-      if (page >= 1 && page <= this.totalPages) {
+      if (page >= 1) {
         this.fetchData(page);
       }
     },
-    updateVisiblePages() {
-      const maxVisible = 5;
-      const pages = [];
-      const startPage = Math.max(this.currentPage - Math.floor(maxVisible / 2), 1);
-      const endPage = Math.min(startPage + maxVisible - 1, this.totalPages);
-
-      for (let i = startPage; i <= endPage; i++) {
-        pages.push(i);
-      }
-
-      this.visiblePages = pages;
-    },
+    
     redirectToDetail(idNotificacion) {
       window.location.href = `/moduloseguridad/detalle/${idNotificacion}`;
     },
@@ -190,7 +169,6 @@ export default {
     },
   },
   mounted() {
-    this.fetchTotalPages();
     this.fetchData(this.currentPage);
   },
 };

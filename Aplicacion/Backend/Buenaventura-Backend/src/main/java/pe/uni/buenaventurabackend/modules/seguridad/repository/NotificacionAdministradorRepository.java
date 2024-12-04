@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.sql.Date;
 
@@ -16,24 +17,40 @@ public class NotificacionAdministradorRepository implements INotificacionAdminis
 
     @Override
     public void createNotificacion(NotificacionAdministrador notificacion) {
-        String sql = "INSERT INTO Notificacion_Administrador (Id_Administrador, Tipo_Evento, Fecha_Hora_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, Id_Sesion, Id_autenticacion) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-        jdbcTemplate.update(sql, notificacion.getIdAdministrador(), notificacion.getTipoEvento(), notificacion.getFechaHoraNotificacion(),
-                notificacion.getEstadoNotificacion(), notificacion.getMensajeNotificacion(), notificacion.getPrioridad(),
-                notificacion.getIdSesion(), notificacion.getIdAutenticacion());
+        String sql = "INSERT INTO Notificacion_Administrador (Id_Notificacion,Id_Administrador, Tipo_Evento, Fecha_Notificacion, Estado_Notificacion, Mensaje_Notificacion, Prioridad, Id_Sesion, Id_autenticacion) " +
+                "VALUES ((SELECT MAX(Id_Notificacion) FROM Notificacion_Administrador) + 1,?, ?, ?, ?, ?, ?, ?, ?)";
+
+        jdbcTemplate.update(sql,
+                notificacion.getIdAdministrador(),
+                notificacion.getTipoEvento(),
+                notificacion.getFechaHoraNotificacion(),
+                notificacion.getEstadoNotificacion(),
+                notificacion.getMensajeNotificacion(),
+                notificacion.getPrioridad(),
+                notificacion.getIdSesion(),
+                notificacion.getIdAutenticacion()
+        );
     }
 
+
+
     @Override
-    public List<NotificacionAdministrador> findAll() {
-        String sql = "SELECT * FROM Notificacion_Administrador";
-        return jdbcTemplate.query(sql, (rs, rowNum) -> {
+    public List<NotificacionAdministrador> getAllNotificaciones(int offset) {
+
+        // Consulta SQL con paginación
+        String sql = "SELECT * FROM Notificacion_Administrador " +
+                "LIMIT 7 OFFSET ?";
+
+        // Calcular el valor del OFFSET
+        int offsetValue = (offset - 1) * 7;
+
+        // Ejecutar la consulta con el parámetro de OFFSET
+        return jdbcTemplate.query(sql, new Object[]{offsetValue}, (rs, rowNum) -> {
             NotificacionAdministrador notificacion = new NotificacionAdministrador();
             notificacion.setIdNotificacion(rs.getInt("Id_Notificacion"));
             notificacion.setIdAdministrador(rs.getInt("Id_Administrador"));
             notificacion.setTipoEvento(rs.getString("Tipo_Evento"));
-            // Ajuste aquí: usaremos rs.getDate para obtener solo la fecha
-            Date fechaHora = rs.getDate("Fecha_Hora_Notificacion");
-            notificacion.setFechaHoraNotificacion(fechaHora);  // Al ser solo fecha, podemos usar java.sql.Date
+            notificacion.setFechaHoraNotificacion(rs.getDate("Fecha_Notificacion"));
             notificacion.setEstadoNotificacion(rs.getString("Estado_Notificacion"));
             notificacion.setMensajeNotificacion(rs.getString("Mensaje_Notificacion"));
             notificacion.setPrioridad(rs.getString("Prioridad"));

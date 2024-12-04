@@ -4,33 +4,33 @@
     <form @submit.prevent="generateReport" class="space-y-2">
       <h4 class="text-3xl font-semibold">Descripción del Incidente</h4>
       <textarea 
-        v-model="incident.description" 
+        v-model="incident.descripcionIncidente" 
         class="border p-1 w-full border-black" 
         placeholder="Describa el incidente" 
-        name="description" 
+        name="descripcionIncidente" 
         rows="4">
       </textarea>
       
       <h4 class="text-3xl font-semibold">Fecha del Incidente</h4>
       <input 
-        v-model="incident.date" 
-        type="datetime-local" 
+        v-model="incident.fecha" 
+        type="date" 
         class="border rounded p-1 border-black" 
       />
 
       <h4 class="text-3xl font-semibold">Criticidad</h4>
       <select 
-        v-model="incident.criticality" 
+        v-model="incident.criticidad" 
         class="border p-2 rounded-md w-full mt-2"
       >
-        <option value="alta">Alta</option>
-        <option value="media">Media</option>
-        <option value="baja">Baja</option>
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
       </select>
 
       <h4 class="text-3xl font-semibold">Usuario Involucrado (Opcional)</h4>
       <input 
-        v-model="incident.userInvolved" 
+        v-model="incident.usuarioInvolucrado" 
         type="text" 
         class="border p-2 w-full border-black" 
         placeholder="Nombre del usuario (opcional)"
@@ -38,10 +38,10 @@
 
       <h4 class="text-3xl font-semibold">Medidas Tomadas</h4>
       <textarea 
-        v-model="incident.actionsTaken" 
+        v-model="incident.medidasTomadas" 
         class="border p-1 w-full border-black" 
         placeholder="Describa las medidas tomadas" 
-        name="actionsTaken" 
+        name="medidasTomadas" 
         rows="4">
       </textarea>
 
@@ -83,11 +83,11 @@ export default {
   data() {
     return {
       incident: {
-        description: '',
-        date: '',
-        criticality: 'alta',
-        userInvolved: '',
-        actionsTaken: '',
+        descripcionIncidente: '',
+        fecha: '',
+        criticidad: 'Alta',
+        usuarioInvolucrado: '',
+        medidasTomadas: '',
       },
       isConfirmationDialogOpen: false,
     };
@@ -99,12 +99,12 @@ export default {
     async confirmReport() {
       // Enviar el informe a la API
       await axios
-        .post('/api/incidentes', {
-          descripcion: this.incident.description,
-          fecha: this.incident.date,
-          criticidad: this.incident.criticality,
-          usuario_involucrado: this.incident.userInvolved,
-          medidas_tomadas: this.incident.actionsTaken,
+        .post('http://localhost:8080/api/seguridad/crearIncidente', {
+          descripcionIncidente: this.incident.descripcionIncidente,
+          fecha: this.incident.fecha,
+          criticidad: this.incident.criticidad,
+          usuarioInvolucrado: this.incident.usuarioInvolucrado,
+          medidasTomadas: this.incident.medidasTomadas,
         })
         .then((response) => {
           console.log('Informe generado con éxito');
@@ -121,11 +121,11 @@ export default {
     },
     resetForm() {
       this.incident = {
-        description: '',
-        date: '',
-        criticality: 'alta',
-        userInvolved: '',
-        actionsTaken: '',
+        descripcionIncidente: '',
+        fecha: '',
+        criticidad: 'Alta',
+        usuarioInvolucrado: '',
+        medidasTomadas: '',
       };
     },
   },
