@@ -105,6 +105,7 @@ ORDER BY p.id_plan;
 
 --- Gestión de insumos
 
+DROP VIEW IF EXISTS vista_reservas;
 CREATE VIEW vista_reservas AS
 SELECT id_reserva, fecha, hora, id_estado_reserva
 FROM reserva;
