@@ -1,16 +1,16 @@
 <script setup>
 import { useRoute } from 'vue-router';
-import { useEmployeeStore } from './stores/user';
+import { useUserStore } from './stores/user';
 import Navbar from './components/Navbar.vue';
 import LateralBar from '@/components/LateralBar.vue';
 import PopupToast from './components/PopupToast.vue';
 
 const route = useRoute();
-const empleadoStore = useEmployeeStore();
+const empleadoStore = useUserStore();
 
 empleadoStore.initStore();
 
-const isAuthenticated = empleadoStore.idEmpleado !== null;
+const isAuthenticated = empleadoStore.user.idEmpleado !== null;
 </script>
 
 <template>

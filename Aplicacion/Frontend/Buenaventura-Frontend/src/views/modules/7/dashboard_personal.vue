@@ -1,8 +1,6 @@
 <script setup>
 import RouterBox from '@/components/RouterBox.vue';
-import { useEmployeeStore } from '@/stores/user';
 
-const userStore = useEmployeeStore();
 
 const list_of_routes = [
   {
@@ -59,6 +57,5 @@ const list_of_routes_availables = list_of_routes.filter(route => route.role_need
         :description="route.description"
       />
     </div>
-    <p>Role actual: {{ userStore.employee.idCargo }}</p>
   </div>
 </template>

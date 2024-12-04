@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
 
-export const useEmployeeStore = defineStore({
+export const useUserStore = defineStore({
   id: "employee",
   state: () => ({
-    employee: {
+    user: {
       isAuthenticated: false,
       idEmpleado: null,
       nombre: null,
@@ -19,46 +19,46 @@ export const useEmployeeStore = defineStore({
       idCargo: null,
       idAcceso: null,
     },
-  }),
+  }), 
 
   actions: {
     // Inicializar el store con los datos de localStorage
     initStore() {
-      this.employee.idEmpleado = localStorage.getItem("employee.idEmpleado");
-      this.employee.nombre = localStorage.getItem("employee.nombre");
-      this.employee.dni = localStorage.getItem("employee.dni");
-      this.employee.direccion = localStorage.getItem("employee.direccion");
-      this.employee.estadoCivil = localStorage.getItem("employee.estadoCivil");
-      this.employee.sexo = localStorage.getItem("employee.sexo");
-      this.employee.fechaNacimiento = localStorage.getItem("employee.fechaNacimiento");
-      this.employee.fechaIngreso = localStorage.getItem("employee.fechaIngreso");
-      this.employee.numeroContacto = localStorage.getItem("employee.numeroContacto");
-      this.employee.emailContacto = localStorage.getItem("employee.emailContacto");
-      this.employee.contraseña = localStorage.getItem("employee.contraseña");
-      this.employee.idCargo = localStorage.getItem("employee.idCargo");
-      this.employee.idAcceso = localStorage.getItem("employee.idAcceso");
+      this.user.idEmpleado = localStorage.getItem("employee.idEmpleado");
+      this.user.nombre = localStorage.getItem("employee.nombre");
+      this.user.dni = localStorage.getItem("employee.dni");
+      this.user.direccion = localStorage.getItem("employee.direccion");
+      this.user.estadoCivil = localStorage.getItem("employee.estadoCivil");
+      this.user.sexo = localStorage.getItem("employee.sexo");
+      this.user.fechaNacimiento = localStorage.getItem("employee.fechaNacimiento");
+      this.user.fechaIngreso = localStorage.getItem("employee.fechaIngreso");
+      this.user.numeroContacto = localStorage.getItem("employee.numeroContacto");
+      this.user.emailContacto = localStorage.getItem("employee.emailContacto");
+      this.user.contraseña = localStorage.getItem("employee.contraseña");
+      this.user.idCargo = localStorage.getItem("employee.idCargo");
+      this.user.idAcceso = localStorage.getItem("employee.idAcceso");
 
       // Verifica si el empleado está autenticado
-      if (this.employee.emailContacto) {
-        this.employee.isAuthenticated = true;
+      if (this.user.emailContacto) {
+        this.user.isAuthenticated = true;
       }
     },
 
     // Login y guardar la información del empleado en el store y en localStorage
     login(data) {
-      this.employee.idEmpleado = data.idEmpleado;
-      this.employee.nombre = data.nombre;
-      this.employee.dni = data.dni;
-      this.employee.direccion = data.direccion;
-      this.employee.estadoCivil = data.estadoCivil;
-      this.employee.sexo = data.sexo;
-      this.employee.fechaNacimiento = data.fechaNacimiento;
-      this.employee.fechaIngreso = data.fechaIngreso;
-      this.employee.numeroContacto = data.numeroContacto;
-      this.employee.emailContacto = data.emailContacto;
-      this.employee.contraseña = data.contraseña;
-      this.employee.idCargo = data.idCargo;
-      this.employee.idAcceso = data.idAcceso;
+      this.user.idEmpleado = data.idEmpleado;
+      this.user.nombre = data.nombre;
+      this.user.dni = data.dni;
+      this.user.direccion = data.direccion;
+      this.user.estadoCivil = data.estadoCivil;
+      this.user.sexo = data.sexo;
+      this.user.fechaNacimiento = data.fechaNacimiento;
+      this.user.fechaIngreso = data.fechaIngreso;
+      this.user.numeroContacto = data.numeroContacto;
+      this.user.emailContacto = data.emailContacto;
+      this.user.contraseña = data.contraseña;
+      this.user.idCargo = data.idCargo;
+      this.user.idAcceso = data.idAcceso;
 
       // Guardar en localStorage
       localStorage.setItem("employee.idEmpleado", data.idEmpleado);
@@ -75,25 +75,25 @@ export const useEmployeeStore = defineStore({
       localStorage.setItem("employee.idCargo", data.idCargo);
       localStorage.setItem("employee.idAcceso", data.idAcceso);
 
-      this.employee.isAuthenticated = true;
+      this.user.isAuthenticated = true;
     },
 
     // Logout y eliminar la información del empleado del store y localStorage
     logout() {
-      this.employee.idEmpleado = null;
-      this.employee.nombre = null;
-      this.employee.dni = null;
-      this.employee.direccion = null;
-      this.employee.estadoCivil = null;
-      this.employee.sexo = null;
-      this.employee.fechaNacimiento = null;
-      this.employee.fechaIngreso = null;
-      this.employee.numeroContacto = null;
-      this.employee.emailContacto = null;
-      this.employee.contraseña = null;
-      this.employee.idCargo = null;
-      this.employee.idAcceso = null;
-      this.employee.isAuthenticated = false;
+      this.user.idEmpleado = null;
+      this.user.nombre = null;
+      this.user.dni = null;
+      this.user.direccion = null;
+      this.user.estadoCivil = null;
+      this.user.sexo = null;
+      this.user.fechaNacimiento = null;
+      this.user.fechaIngreso = null;
+      this.user.numeroContacto = null;
+      this.user.emailContacto = null;
+      this.user.contraseña = null;
+      this.user.idCargo = null;
+      this.user.idAcceso = null;
+      this.user.isAuthenticated = false;
 
       // Eliminar datos de localStorage
       localStorage.removeItem("employee.idEmpleado");
