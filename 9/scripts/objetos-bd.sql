@@ -24,6 +24,14 @@ DROP INDEX IF EXISTS idx_estado_reserva;
 CREATE INDEX idx_estado_reserva ON Estado_reserva(Id_estado_reserva);
 
 --- Seguridad
+CREATE INDEX id_email_contacto_empleado ON Empleado(Email_contacto);
+DROP INDEX id_email_contacto_empleado;
+
+CREATE INDEX idx_fecha_estado ON Notificacion_Administrador(Fecha_Notificacion, Estado_Notificacion);
+DROP INDEX IF EXISTS idx_fecha_estado;
+
+
+
 --- Reportes
 DROP INDEX IF EXISTS idx_registros_fecha;
 CREATE INDEX idx_registros_fecha ON Registro(Fecha_inicial, fecha_registro);
@@ -139,6 +147,25 @@ ORDER BY pc.id_pedido_compra
 --- IPERC
 --- Insumos
 --- Seguridad
+DROP VIEW IF EXISTS vista_empleados_cargo_rol;
+CREATE VIEW vista_empleados_cargo_rol AS
+SELECT 
+    e.Id_empleado,
+    e.Nombre AS "Nombre_Empleado",
+    e.DNI,
+    e.Email_contacto AS "Correo_Empleado",
+    e.Numero_contacto AS "Numero_Contacto",
+    e.Sexo,
+    c.Nombre_cargo AS "Cargo",
+    a.Nombre_acceso AS "Rol"
+FROM 
+    Empleado e
+JOIN 
+    Cargo_empleado c ON e.Id_cargo = c.Id_cargo
+JOIN 
+    Acceso_empleado a ON e.Id_acceso = a.Id_acceso;
+
+
 --- Reportes
 
 
