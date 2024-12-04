@@ -1,4 +1,5 @@
 -- Índices
+
 --- Planificacion
 DROP INDEX IF EXISTS IDX_Maquina_mantto;
 CREATE INDEX IDX_Maquina_mantto ON Mantenimiento(id_maquina);
@@ -7,8 +8,18 @@ DROP INDEX IF EXISTS IDX_Fecha_mantto;
 CREATE INDEX IDX_Fecha_mantto ON Mantenimiento(fecha_inicio_programado);
 
 --- Control
+
+
 --- Equipos de soporte
+DROP INDEX IF EXISTS idx_disponibilidad_equipo;
+CREATE INDEX idx_disponibilidad_equipo ON Equipo_de_soporte(id_disponibilidad);
+
+DROP INDEX IF EXISTS idx_estado_pedido;
+CREATE INDEX idx_estado_pedido ON pedido_compra(id_estado_pedido);
+
 --- IPERC
+
+
 --- Insumos
 DROP INDEX IF EXISTS idx_reserva_fecha_hora;
 CREATE INDEX idx_reserva_fecha_hora ON Reserva(Fecha, Hora);
@@ -17,6 +28,8 @@ DROP INDEX IF EXISTS idx_estado_reserva;
 CREATE INDEX idx_estado_reserva ON Estado_reserva(Id_estado_reserva);
 
 --- Seguridad
+
+
 --- Reportes
 DROP INDEX IF EXISTS idx_registros_fecha;
 CREATE INDEX idx_registros_fecha ON Registro(Fecha_inicial, fecha_registro);
