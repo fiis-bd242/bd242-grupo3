@@ -103,6 +103,12 @@ LEFT JOIN vista_insumos insumos ON insumos.id_act_mantto = m.id_act_mantto
 WHERE act.nombre_actv = 'Responsable' AND m.id_estado != 8
 ORDER BY p.id_plan;
 
+--- Gestión de insumos
+
+CREATE VIEW vista_reservas AS
+SELECT id_reserva, fecha, hora, id_estado_reserva
+FROM reserva;
+
 --- Control
 --- Equipos de soporte
 DROP VIEW IF EXISTS vista_detalle_equipo;
@@ -145,7 +151,7 @@ WHERE tp.nombre_tipo_producto ILIKE 'Equipos de Soporte'
 ORDER BY pc.id_pedido_compra
 
 --- IPERC
---- Insumos
+
 --- Seguridad
 DROP VIEW IF EXISTS vista_empleados_cargo_rol;
 CREATE VIEW vista_empleados_cargo_rol AS
