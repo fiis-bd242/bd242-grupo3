@@ -11,7 +11,7 @@
             placeholder="Ingresar algún parámetro"
             class="search-input"
         />
-        <button class="search-button" @click="searchParametro">Buscar</button>
+        <button class="search-button" @click="handleSearch">Buscar</button>
       </div>
     </div>
 
@@ -34,24 +34,24 @@
         <td>{{ item.urgencia }}</td>
         <td><b>
           <span :class="{
-            'estado-pendiente': item.estado === 'pendiente',
-            'estado-confirmado': item.estado === 'confirmado',
-            'estado-en-transito': item.estado === 'en transito',
-            'estado-completado': item.estado === 'completado',
-            'estado-cancelado': item.estado === 'cancelado'
+            'estado-pendiente': item.estado === 'Pendiente',
+            'estado-confirmado': item.estado === 'Confirmado',
+            'estado-en-transito': item.estado === 'En transito',
+            'estado-completado': item.estado === 'Completado',
+            'estado-cancelado': item.estado === 'Cancelado'
           }">
             {{ item.estado }}
           </span>
 
         </b></td>
         <td>
-          <button class="search-detalles" @click="viewDetails(item)">Ver</button>
+          <button class="search-detalles" @click="viewDetails(item.id)">Ver</button>
         </td>
         <td>
           <button
-              :class="['cancel-button', { 'cancel-button-disabled': item.estado !== 'pendiente' }]"
-              @click="item.estado === 'pendiente' ? cancelOrder(item) : null"
-              :disabled="item.estado !== 'pendiente'">
+              :class="['cancel-button', { 'cancel-button-disabled': item.estado !== 'Pendiente' }]"
+              @click="item.estado === 'Pendiente' ? cancelOrder(item) : null"
+              :disabled="item.estado !== 'Pendiente'">
             X
           </button>
         </td>
@@ -99,69 +99,51 @@
       >
         Último
       </button>
+    </div>
 
-      <div v-if="showModal" class="modal-overlay" @click="closeModal">
-        <div class="modal-content" @click.stop>
-          <button class="close-button" @click="closeModal">X</button>
-          <h2><b>Detalle del Pedido de Compra</b></h2>
+    <div v-if="showModal" class="modal-overlay" @click="closeModal">
+      <div class="modal-content" @click.stop>
+        <button class="close-button" @click="closeModal">X</button>
+        <h2><b>Detalle del Pedido de Compra</b></h2>
 
-          <div class="modal-body">
+        <div class="modal-body">
 
-            <h3><strong><b>Tipo de Producto:</b></strong> {{ currentItem.tipoProducto }}</h3>
+          <h3><strong><b>Tipo de Producto:</b></strong> {{ currentItem.tipoProducto }}</h3>
 
-            <h3><b>Lista de Productos:</b></h3>
-            <table class="productos-table">
-              <thead>
-              <tr>
-                <th>Producto</th>
-                <th>Cantidad</th>
-                <th>Precio Unitario</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr v-for="(producto, index) in currentItem.productos" :key="index">
-                <td>{{ producto.nombre }}</td>
-                <td>{{ producto.cantidad }}</td>
-                <td>{{ producto.precioUnitario | currency }}</td>
-              </tr>
-              </tbody>
-            </table>
+          <h3><b>Lista de Productos:</b></h3>
+          <table class="productos-table">
+            <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio Unitario</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(producto, index) in currentItem.productos" :key="index">
+              <td>{{ producto.nombre }}</td>
+              <td>{{ producto.cantidad }}</td>
+              <td>{{ producto.precioUnitario | currency }}</td>
+            </tr>
+            </tbody>
+          </table>
 
-            <h3><strong><b>Descripción:</b></strong></h3>
-            <textarea v-model="currentItem.descripcion" class="textarea-description" readonly></textarea>
-          </div>
+          <h3><strong><b>Descripción:</b></strong></h3>
+          <textarea v-model="currentItem.descripcion" class="textarea-description" readonly></textarea>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
-      dataList: [
-        {
-          id: 1, empleado: 'Empleado 1', urgencia: 'Alta', estado: 'pendiente', tipoProducto: 'Insumo', descripcion: 'Pedido urgente de insumo', productos: [
-            { nombre: 'Insumo 1', cantidad: 5, precioUnitario: 10 },
-            { nombre: 'Insumo 2', cantidad: 3, precioUnitario: 8 }
-          ]
-        },
-        { id: 3, empleado: 'Empleado 3', urgencia: 'Baja', estado: 'confirmado', descripcion: '' },
-        { id: 4, empleado: 'Empleado 4', urgencia: 'Alta', estado: 'en transito', descripcion: '' },
-        { id: 5, empleado: 'Empleado 5', urgencia: 'Media', estado: 'completado', descripcion: '' },
-        { id: 6, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 7, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 8, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'pendiente', descripcion: '' },
-        { id: 9, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'pendiente', descripcion: '' },
-        { id: 10, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 11, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 12, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 13, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 14, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 15, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'completado', descripcion: '' },
-        { id: 16, empleado: 'Empleado 6', urgencia: 'Baja', estado: 'cancelado', descripcion: '' },
-      ],
+      dataList: [],
       searchParametro: '',
       currentPage: 1,
       itemsPerPage: 10,
@@ -171,13 +153,13 @@ export default {
     };
   },
   computed: {
-    // Filtrar los datos según el parámetro de búsqueda
     filteredData() {
       return this.dataList.filter(item =>
-          item.empleado.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.urgencia.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.estado.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.descripcion.toLowerCase().includes(this.searchParametro.toLowerCase())
+          item.id ||
+          item.nombre ||
+          item.tipo ||
+          item.estado ||
+          item.disponibilidad
       );
     },
     // Filtrar los datos y aplicar la paginación
@@ -187,44 +169,92 @@ export default {
     },
     // Calcular las páginas visibles para la paginación
     visiblePages() {
+      const maxVisible = 5;
       const pages = [];
-      for (let i = 1; i <= this.totalPages; i++) {
+      const startPage = Math.max(this.currentPage - Math.floor(maxVisible / 2), 1);
+      const endPage = Math.min(startPage + maxVisible - 1, this.totalPages);
+
+      for (let i = startPage; i <= endPage; i++) {
         pages.push(i);
       }
+
       return pages;
     },
   },
   methods: {
+
+    async fetchData(parametro = '') {
+      try {
+        // Construir la URL con el parámetro si existe
+        const url = parametro
+            ? `/api/equipo_soporte/buscarPedidos/${parametro}`
+            : '/api/equipo_soporte/obtenerPedidos';
+        const response = await axios.get(url);
+        this.dataList = response.data; // Actualizar la lista de datos
+        this.updatePagination(); // Actualizar la paginación
+      } catch (error) {
+        console.error("Error al obtener los datos:", error);
+      }
+    },
+
     // Metodo para cambiar de página
     changePage(page) {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page;
       }
     },
+
     // Actualizar la paginación
     updatePagination() {
       this.totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage);
     },
-    viewDetails(item) {
-      this.currentItem = item;
-      this.showModal = true;
+    // Manejar la búsqueda
+    handleSearch() {
+      this.fetchData(this.searchParametro); // Llamar a fetchData con el parámetro de búsqueda
+      this.currentPage = 1; // Reiniciar a la primera página
     },
+
+    // Función para obtener los detalles de un equipo
+    async viewDetails(id) {
+      try {
+        const response = await axios.get(`/api/equipo_soporte/detallePedido/${id}`);
+        this.currentItem = response.data;
+        this.showModal = true;
+      } catch (error) {
+        console.error("Error al obtener los detalles del equipo:", error);
+      }
+    },
+
     closeModal() {
       this.showModal = false;
     },
-    cancelOrder(item) {
-      item.estado = 'cancelado'; // Cambiar el estado a cancelado
+
+    async cancelOrder(item) {
+      try {
+        // Realizar una solicitud PUT para cancelar el pedido
+        const response = await axios.put(`/api/equipo_soporte/cancelarPedido/${item.id}`);
+
+        if (response.status === 200) {
+          item.estado = 'Cancelado';
+        } else {
+          alert('No se pudo cancelar el pedido');
+        }
+      } catch (error) {
+        console.error('Error al cancelar el pedido:', error);
+        alert('Hubo un error al intentar cancelar el pedido.');
+      }
     },
+
   },
   watch: {
-    // Cada vez que cambie el parámetro de búsqueda, actualiza la paginación
     filteredData() {
       this.updatePagination();
       this.currentPage = 1; // Regresar a la primera página al buscar
     },
   },
   mounted() {
-    this.updatePagination(); // Actualizar la paginación al inicio
+    this.fetchData();
+    this.updatePagination();
   },
 };
 </script>
@@ -330,7 +360,7 @@ export default {
 
 .estado-pendiente { color: blue; }
 .estado-confirmado { color: orange; }
-.estado-en-transito { color: yellow; }
+.estado-en-transito { color: #dddd32; }
 .estado-completado { color: green; }
 .estado-cancelado { color: red; }
 

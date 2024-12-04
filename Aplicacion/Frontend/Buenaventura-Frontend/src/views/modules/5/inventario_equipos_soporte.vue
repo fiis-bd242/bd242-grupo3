@@ -11,7 +11,7 @@
             placeholder="Ingresar algún parámetro"
             class="search-input"
         />
-        <button class="search-button" @click="searchParametro">Buscar</button>
+        <button class="search-button" @click="handleSearch">Buscar</button>
       </div>
     </div>
 
@@ -39,7 +39,7 @@
             </span>
         </td>
         <td>
-          <button class="search-detalles" @click="viewDetails(item)">Ver</button>
+          <button class="search-detalles" @click="viewDetails(item.id)">Ver</button>
         </td>
       </tr>
       </tbody>
@@ -85,65 +85,36 @@
       >
         Último
       </button>
+    </div>
 
-      <div v-if="showModal" class="modal-overlay" @click="closeModal">
-        <div class="modal-content" @click.stop>
-          <button class="close-button" @click="closeModal">X</button>
-          <h2><b>Detalle Equipo de Soporte</b></h2>
-          <div class="modal-body">
-            <p><strong>ID:</strong> {{ currentItem.id }}</p>
-            <p><strong>Nombre:</strong> {{ currentItem.nombre }}</p>
-            <p><strong>Tipo:</strong> {{ currentItem.tipo }}</p>
-            <p><strong>Estado:</strong> {{ currentItem.estado }}</p>
-            <p><strong>Mtto Asignado:</strong> {{ currentItem.mttoAsignado || 'No asignado' }}</p>
-            <p><strong>Horas de uso:</strong> {{ currentItem.horasUso || 0 }}</p>
-            <p><strong>Descripción:</strong></p>
-            <p class="description-text">{{ currentItem.descripcion || 'No disponible' }}</p>
-          </div>
+    <!-- Modal para ver detalles -->
+    <div v-if="showModal" class="modal-overlay" @click="closeModal">
+      <div class="modal-content" @click.stop>
+        <button class="close-button" @click="closeModal">X</button>
+        <h2><b>Detalle Equipo de Soporte</b></h2>
+        <div class="modal-body">
+          <p><strong>ID:</strong> {{ currentItem.id }}</p>
+          <p><strong>Nombre:</strong> {{ currentItem.nombre }}</p>
+          <p><strong>Tipo:</strong> {{ currentItem.tipo }}</p>
+          <p><strong>Estado:</strong> {{ currentItem.estado }}</p>
+          <p><strong>Horas de Uso:</strong> {{ currentItem.horasUso || 0 }}</p>
+          <p><strong>Mtto Asignado:</strong> {{ currentItem.mttoAsignado || 'No asignado' }}</p>
+          <h3><strong>Descripción:</strong></h3>
+          <textarea v-model="currentItem.descripcion" class="textarea-description" readonly></textarea>
         </div>
       </div>
-
     </div>
+
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
-      dataList: [
-        { id: 1, nombre: 'Nombre 1', tipo: 'Tipo 1', estado: 'Óptimo', disponibilidad: 'Disponible' },
-        { id: 2, nombre: 'Nombre 2', tipo: 'Tipo 1', estado: 'Bueno', disponibilidad: 'Disponible' },
-        { id: 3, nombre: 'Nombre 3', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 4, nombre: 'Nombre 4', tipo: 'Tipo 3', estado: 'Óptimo', disponibilidad: 'Disponible' },
-        { id: 5, nombre: 'Nombre 5', tipo: 'Tipo 3', estado: 'Regular', disponibilidad: 'Ocupado' },
-        { id: 6, nombre: 'Nombre 6', tipo: 'Tipo 3', estado: 'Bueno', disponibilidad: 'Ocupado' },
-        { id: 7, nombre: 'Nombre 7', tipo: 'Tipo 1', estado: 'Óptimo', disponibilidad: 'Disponible' },
-        { id: 8, nombre: 'Nombre 8', tipo: 'Tipo 2', estado: 'Deficiente', disponibilidad: 'Disponible' },
-        { id: 9, nombre: 'Nombre 9', tipo: 'Tipo 3', estado: 'Bueno', disponibilidad: 'Disponible' },
-        { id: 10, nombre: 'Nombre 10', tipo: 'Tipo 1', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 11, nombre: 'Nombre 11', tipo: 'Tipo 1', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 12, nombre: 'Nombre 12', tipo: 'Tipo 2', estado: 'Bueno', disponibilidad: 'Disponible' },
-        { id: 13, nombre: 'Nombre 13', tipo: 'Tipo 3', estado: 'Óptimo', disponibilidad: 'Ocupado' },
-        { id: 14, nombre: 'Nombre 14', tipo: 'Tipo 1', estado: 'Deficiente', disponibilidad: 'Disponible' },
-        { id: 15, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 16, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 17, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 18, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 19, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 20, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 21, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 22, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 23, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 24, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 25, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 26, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 27, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 28, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 29, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Regular', disponibilidad: 'Disponible' },
-        { id: 30, nombre: 'Nombre 15', tipo: 'Tipo 2', estado: 'Deficiente', disponibilidad: 'Disponible' },
-
-      ],
+      dataList: [],
       searchParametro: '',
       currentPage: 1,
       itemsPerPage: 10,
@@ -153,13 +124,13 @@ export default {
     };
   },
   computed: {
-    // Filtrar los datos según el parámetro de búsqueda
     filteredData() {
       return this.dataList.filter(item =>
-          item.nombre.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.tipo.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.estado.toLowerCase().includes(this.searchParametro.toLowerCase()) ||
-          item.disponibilidad.toLowerCase().includes(this.searchParametro.toLowerCase())
+          item.id ||
+          item.nombre ||
+          item.tipo ||
+          item.estado ||
+          item.disponibilidad
       );
     },
     // Filtrar los datos y aplicar la paginación
@@ -169,20 +140,40 @@ export default {
     },
     // Calcular las páginas visibles para la paginación
     visiblePages() {
+      const maxVisible = 5;
       const pages = [];
-      for (let i = 1; i <= this.totalPages; i++) {
+      const startPage = Math.max(this.currentPage - Math.floor(maxVisible / 2), 1);
+      const endPage = Math.min(startPage + maxVisible - 1, this.totalPages);
+
+      for (let i = startPage; i <= endPage; i++) {
         pages.push(i);
       }
+
       return pages;
     },
   },
   methods: {
+    async fetchData(parametro = '') {
+      try {
+        // Construir la URL con el parámetro si existe
+        const url = parametro
+            ? `/api/equipo_soporte/buscarEquipos/${parametro}`
+            : '/api/equipo_soporte/obtenerEquipos';
+        const response = await axios.get(url);
+        this.dataList = response.data; // Actualizar la lista de datos
+        this.updatePagination(); // Actualizar la paginación
+      } catch (error) {
+        console.error("Error al obtener los datos:", error);
+      }
+    },
+
     // Metodo para cambiar de página
     changePage(page) {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page;
       }
     },
+
     // Calcular la clase de disponibilidad
     availabilityClass(disponibilidad) {
       if (disponibilidad === 'Disponible') {
@@ -192,27 +183,42 @@ export default {
       }
       return 'text-red-500';
     },
+
     // Actualizar la paginación
     updatePagination() {
       this.totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage);
     },
-    viewDetails(item) {
-      this.currentItem = item;
-      this.showModal = true;
+
+    // Manejar la búsqueda
+    handleSearch() {
+      this.fetchData(this.searchParametro); // Llamar a fetchData con el parámetro de búsqueda
+      this.currentPage = 1; // Reiniciar a la primera página
     },
+
+    // Función para obtener los detalles de un equipo
+    async viewDetails(id) {
+      try {
+        const response = await axios.get(`/api/equipo_soporte/detalleEquipo/${id}`);
+        this.currentItem = response.data;
+        this.showModal = true;
+      } catch (error) {
+        console.error("Error al obtener los detalles del equipo:", error);
+      }
+    },
+
     closeModal() {
       this.showModal = false;
     },
   },
   watch: {
-    // Cada vez que cambie el parámetro de búsqueda, actualiza la paginación
     filteredData() {
       this.updatePagination();
       this.currentPage = 1; // Regresar a la primera página al buscar
     },
   },
   mounted() {
-    this.updatePagination(); // Actualizar la paginación al inicio
+    this.fetchData();
+    this.updatePagination();
   },
 };
 </script>
@@ -378,5 +384,15 @@ export default {
   min-height: 100px; /* Ajusta según lo necesites */
 }
 
+textarea.textarea-description {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  background-color: #f4f4f4;
+}
 
 </style>
