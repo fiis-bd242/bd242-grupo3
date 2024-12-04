@@ -10,39 +10,39 @@ const list_of_routes = [
     name: "registros",
     description: "Registrar los datos del mantenimiento diario",
     button_text: "Digitalizar Datos",
-    role_needed: "Student",
+    role_needed: "TODO",
   },
   {
     msg: "Historial de Mantenimiento",
     name: "historial",
     description: "Visualiza el historial de Mantenimiento",
     button_text: "Historial de Mantenimiento",
-    role_needed: "Student",
+    role_needed: "TODO",
   },
   {
     msg: "Verificar Reporte Diario",
     name: "reporte",
     description: "Verificación de reporte del día",
     button_text: "Verificación del Reporte",
-    role_needed: "Student",
+    role_needed: "TODO",
   },
   {
     msg: "Verificar Datos",
     name: "sup_datos",
     description: "Verificación de los registros entregados",
     button_text: "Verificación de Datos",
-    role_needed: "Student",
+    role_needed: "TODO",
   },
   {
     msg: "Exportar Datos",
     name: "exportaciondatos",
     description: "Exportar los datos del Historial",
     button_text: "Exportar Datos",
-    role_needed: "Jefe Personal",
+    role_needed: "TODO",
   },
 ];
 
-const list_of_routes_availables = list_of_routes.filter(route => route.role_needed === 'Student') //userStore.user.role
+const list_of_routes_availables = list_of_routes.filter(route => route.role_needed === 'TODO') //userStore.user.role
 </script>
 
 <template>
